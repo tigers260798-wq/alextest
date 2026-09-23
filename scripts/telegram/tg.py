@@ -4,6 +4,7 @@
   tg.py wait        — ждёт сообщения владельца (long polling) и завершается,
                       напечатав их; чужие сообщения молча пропускает.
   tg.py send ТЕКСТ  — отправляет владельцу; без ТЕКСТА читает stdin.
+  tg.py photo ПУТЬ [ПОДПИСЬ] — отправляет владельцу картинку.
 
 Реквизиты: переменные окружения TELEGRAM_BOT_TOKEN и TELEGRAM_CHAT_ID,
 иначе файл /root/.config/telegram/chief.env. Токен в вывод не попадает.
@@ -111,9 +112,34 @@ def send(text):
     print("отправлено")
 
 
+def photo(path, caption=""):
+    """Отправляет владельцу картинку (multipart), подпись до 1024 знаков."""
+    token, chat = creds()
+    boundary = "----tgboundary" + str(int(time.time() * 1000))
+    parts = []
+    for name, value in (("chat_id", chat), ("caption", caption[:1024])):
+        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"\r\n\r\n{value}\r\n'.encode())
+    fname = os.path.basename(path)
+    parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="{fname}"\r\n'
+                 f'Content-Type: application/octet-stream\r\n\r\n'.encode() + open(path, "rb").read() + b"\r\n")
+    parts.append(f"--{boundary}--\r\n".encode())
+    req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendPhoto", data=b"".join(parts),
+                                 headers={"Content-Type": f"multipart/form-data; boundary={boundary}"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            res = json.load(resp)
+    except urllib.error.HTTPError as err:
+        res = json.load(err)
+    if not res.get("ok"):
+        sys.exit(f"Telegram отказал: {res.get('description')}")
+    print("отправлено")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
-    if cmd == "wait":
+    if cmd == "photo" and len(sys.argv) > 2:
+        photo(sys.argv[2], " ".join(sys.argv[3:]))
+    elif cmd == "wait":
         wait()
     elif cmd == "send":
         send(" ".join(sys.argv[2:]) if len(sys.argv) > 2 else sys.stdin.read())
