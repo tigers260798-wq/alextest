@@ -47,6 +47,21 @@ def call(token, method, params, timeout=70):
         return json.load(err)
 
 
+def download(token, media):
+    """Скачивает фото или файл из сообщения в CONF/media, возвращает путь или None."""
+    try:
+        info = call(token, "getFile", {"file_id": media["file_id"]}, timeout=30)
+        remote = info["result"]["file_path"]
+        os.makedirs(os.path.join(CONF, "media"), exist_ok=True)
+        local = os.path.join(CONF, "media", f"{media['file_unique_id']}{os.path.splitext(remote)[1]}")
+        with urllib.request.urlopen(f"https://api.telegram.org/file/bot{token}/{remote}", timeout=60) as resp, open(local, "wb") as f:
+            f.write(resp.read())
+        return local
+    except Exception as exc:
+        print(f"ошибка скачивания вложения: {type(exc).__name__}", file=sys.stderr)
+        return None
+
+
 def wait():
     token, chat = creds()
     while True:
@@ -66,7 +81,12 @@ def wait():
             offset = upd["update_id"] + 1
             msg = upd.get("message") or {}
             if str(msg.get("chat", {}).get("id")) == chat and str(msg.get("from", {}).get("id")) == chat:
-                texts.append(msg.get("text") or msg.get("caption") or "[сообщение без текста]")
+                text = msg.get("text") or msg.get("caption") or ""
+                media = msg.get("photo") and msg["photo"][-1] or msg.get("document")
+                if media:
+                    path = download(token, media)
+                    text = (text + "\n" if text else "") + (f"[вложение: {path}]" if path else "[вложение не скачалось]")
+                texts.append(text or "[сообщение без текста]")
         os.makedirs(CONF, exist_ok=True)
         with open(OFFSET_FILE, "w") as f:
             f.write(str(offset))
