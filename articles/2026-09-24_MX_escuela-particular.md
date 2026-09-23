@@ -132,7 +132,7 @@ Comparar dos o tres escuelas particulares con la misma lista hace mucho más fá
 
 ## Пост РК (adPosts)
 
-- **РК 1** — зацепка: «сколько стоит частная школа» (94 знаков вместе с переносом строки, без эмодзи)
+- **РК 1** — зацепка: «сколько стоит частная школа» (символов: 94 вместе с переносом строки, без эмодзи)
   - es: ¿Cuánto cuesta una escuela particular en 2026? / Colegiatura de kínder a prepa, nivel por nivel.
   - ru: Сколько стоит частная школа в 2026? / Плата от садика до старшей школы, по уровням.
 

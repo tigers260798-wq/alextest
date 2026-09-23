@@ -127,7 +127,7 @@ Vraag bij twee of drie bedrijven een offerte aan op basis van dezelfde uitgangsp
 
 ## Пост РК (adPosts)
 
-- **РК 1** — зацепка: «человек или пульт — что ночью» (89 знаков вместе с переносом строки, без эмодзи)
+- **РК 1** — зацепка: «человек или пульт — что ночью» (символов: 89 вместе с переносом строки, без эмодзи)
   - nl: Kantoor 's nachts: beveiliger, surveillance of alarm met meldkamer? / Wat bepaalt de prijs?
   - ru: Офис ночью: охранник, патруль или сигнализация с пультом? / От чего зависит цена?
 
