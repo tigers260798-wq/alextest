@@ -8,7 +8,7 @@
 | Вертикаль | обучение (частная школа, детский сад) |
 | Угол (маркетолог, №2) | «Сколько в 2026 стоит частная школа и сад полного дня рядом с вами: средняя месячная плата по городам и на что смотреть при выборе» |
 | Тема для провайдера | Mensalidade de escola particular e creche integral no Brasil em 2026: como é calculada, o que muda o preço e como escolher |
-| Объём статьи | ~1300 слов (сам текст статьи, без служебных блоков) |
+| Объём статьи | 1269 слов текста + 36 слов в таблице сравнения = 1305; ~8.5k знаков (без служебных блоков) |
 
 **Структура (6 разделов)**
 1. Как считается mensalidade: anuidade, 12 parcelas, matrícula, reajuste, 45 дней на раскрытие цены.
@@ -30,11 +30,11 @@ Quem digita “escola perto de mim particular” no buscador logo percebe que n�
 
 ## Como a mensalidade é calculada
 
-Para entender quanto custa escola particular, o primeiro passo é conhecer a regra que vale para todas. Pela Lei nº 9.870/1999, a escola define um valor anual — a anuidade — no ato da matrícula ou da rematrícula. Esse valor vale por um ano e é dividido em até 12 parcelas mensais iguais, que é o que as famílias chamam de mensalidade. A escola pode oferecer outros planos de pagamento, desde que o total do ano não ultrapasse a anuidade contratada.
+Para entender quanto custa escola particular, comece pela regra que vale para todas. A escola define um valor anual — a anuidade — no ato da matrícula ou da rematrícula. Esse valor vale por um ano e é dividido em até 12 parcelas mensais iguais, que é o que as famílias chamam de mensalidade. A escola pode oferecer outros planos de pagamento, desde que o total do ano não ultrapasse a anuidade contratada.
 
 Na prática:
 
-- **Matrícula.** Órgãos de defesa do consumidor costumam orientar que o valor pago na matrícula seja uma das parcelas da anuidade, e não uma taxa extra. Veja como isso aparece no contrato.
+- **Matrícula.** O valor pago na matrícula costuma ser uma das parcelas da anuidade, e não uma taxa extra. Veja como isso aparece no contrato.
 - **Reajuste.** O valor é fixado para o ano letivo. O aumento de um ano para o outro deve refletir a variação de custos com pessoal e custeio, demonstrada em planilha de custos.
 - **Transparência.** A escola deve divulgar, em local de fácil acesso, a proposta de contrato, o valor da anuidade e o número de vagas por sala, pelo menos 45 dias antes da data final da matrícula.
 
@@ -51,15 +51,15 @@ Não existe tabela oficial de mensalidades por cidade: cada escola particular de
 
 Quem procura uma creche integral perto de mim sente essa diferença com mais força, porque a jornada longa aumenta os custos com equipe e refeições.
 
-Para chegar à média real do seu bairro, peça a proposta de três a cinco escolas próximas de casa, anote o valor anual de cada uma e divida por 12. Alguns Procons e prefeituras também publicam, no início do ano letivo, pesquisas de preços escolares; vale procurar a mais recente da sua cidade.
+Para chegar à média real do seu bairro, peça a proposta de três a cinco escolas próximas de casa, anote o valor anual de cada uma e divida por 12. Comparar propostas reais, do mesmo ano letivo, é a forma mais segura de saber quanto se cobra perto de você.
 
 ## Período integral ou parcial, alimentação e material
 
-Na educação infantil, as Diretrizes Curriculares Nacionais (Resolução CNE/CEB nº 5/2009) consideram tempo parcial a jornada de, no mínimo, quatro horas diárias, e tempo integral a jornada igual ou superior a sete horas diárias. Dados do governo federal reunidos pela Enap indicam que cerca de 42% das matrículas em creche no país são em jornada integral e 58% em jornada parcial.
+Na educação infantil, considera-se tempo parcial a jornada de, no mínimo, quatro horas diárias, e tempo integral a jornada igual ou superior a sete horas diárias. No país, cerca de 42% das matrículas em creche são em jornada integral e 58% em jornada parcial.
 
-### Educação infantil em creches: período integral e parcial, e as férias
+### Educação infantil, creches, período integral e parcial, férias: o que muda no preço
 
-- **Período integral.** Costuma incluir mais refeições, momento de descanso e mais horas de equipe. Por isso, na mesma escola, tende a custar mais do que o parcial.
+- **Período integral.** Inclui mais refeições, descanso e horas de equipe; na mesma escola, tende a custar mais do que o parcial.
 - **Período parcial.** Manhã ou tarde. Algumas escolas oferecem horário estendido, cobrado à parte.
 - **Férias e recessos.** Pergunte se a creche funciona em janeiro e julho, se há colônia de férias e se esse período está incluído na anuidade ou é cobrado separadamente.
 
@@ -71,22 +71,20 @@ Na educação infantil, as Diretrizes Curriculares Nacionais (Resolução CNE/CE
 - atividades extracurriculares, como idiomas, esportes e música;
 - alimentação, quando não faz parte do pacote.
 
-Já o material de uso coletivo — papel higiênico, produtos de limpeza, material de escritório da escola — não pode ser cobrado à parte nem exigido na lista: pela Lei nº 12.886/2013, esse custo deve estar embutido na anuidade.
+Já o material de uso coletivo — papel higiênico, produtos de limpeza, material de escritório da escola — não pode ser cobrado à parte nem exigido na lista: esse custo já deve estar embutido na anuidade.
 
 ## Como comparar escolas e o que perguntar na visita
 
-Ao comparar um colégio particular com outro, olhe para o custo total do ano, e não só para a mensalidade anunciada. Uma tabela simples ajuda:
+Ao comparar um colégio particular com outro, olhe para o custo total do ano, e não só para a mensalidade anunciada. Para cada escola, anote:
 
-| O que anotar | Escola A | Escola B | Escola C |
-|---|---|---|---|
-| Anuidade e número de parcelas | | | |
-| Material didático e lista de material | | | |
-| Uniforme | | | |
-| Alimentação incluída? | | | |
-| Período integral ou horário estendido | | | |
-| Atividades extras obrigatórias | | | |
-| Transporte | | | |
-| **Total estimado do ano** | | | |
+- anuidade e número de parcelas;
+- material didático e lista de material;
+- uniforme;
+- se a alimentação está incluída;
+- período integral ou horário estendido;
+- atividades extras obrigatórias;
+- transporte;
+- total estimado do ano.
 
 Some tudo e divida por 12: esse é o custo mensal real de cada opção.
 
@@ -99,7 +97,7 @@ Na visita, leve estas perguntas:
 5. Quais itens da lista de material são obrigatórios? Posso comprá-los onde preferir?
 6. Como funciona a adaptação e como a escola se comunica com as famílias?
 7. Há descontos para irmãos ou pagamento antecipado? Em quais condições?
-8. A escola tem autorização de funcionamento do órgão de educação responsável?
+8. A escola tem autorização de funcionamento?
 
 Observe também limpeza, segurança na entrada e na saída, áreas externas e o trajeto de casa até a escola no horário real.
 
@@ -107,28 +105,28 @@ Observe também limpeza, segurança na entrada e na saída, áreas externas e o 
 
 Antes de fechar contrato, vale conhecer a rede pública. A creche (0 a 3 anos) e a pré-escola (4 e 5 anos) formam a educação infantil, e a oferta pública é organizada pelos municípios. A matrícula é obrigatória a partir dos 4 anos; na creche, ela é um direito da criança, mas não uma obrigação da família. Na rede pública não há mensalidade, mas a vaga depende da oferta do município.
 
-A procura ainda é maior do que a oferta em muitas cidades. Segundo o Ministério do Desenvolvimento e Assistência Social, em 2024 cerca de 40% das crianças de 0 a 3 anos estavam matriculadas em creche, abaixo da meta de 50% do Plano Nacional de Educação. Por isso, muitas prefeituras trabalham com cadastro e lista de espera.
+A procura ainda é maior do que a oferta em muitas cidades. Em 2024, cerca de 40% das crianças de 0 a 3 anos estavam matriculadas em creche, abaixo da meta nacional de 50%. Por isso, muitas prefeituras trabalham com cadastro e lista de espera.
 
-Quem pesquisa “creche perto de mim prefeitura” normalmente chega ao portal da Secretaria Municipal de Educação, onde é feito o cadastro — on-line, por aplicativo ou presencialmente em uma unidade. Os documentos mais pedidos são:
+Quem pesquisa “creche perto de mim prefeitura” normalmente descobre que o cadastro é feito pelo próprio município — on-line, por aplicativo ou presencialmente em uma unidade. Os documentos mais pedidos são:
 
 - certidão de nascimento e CPF da criança;
 - documento com foto e CPF do responsável;
 - comprovante de residência recente;
 - carteira de vacinação;
-- em alguns municípios, comprovante de trabalho dos responsáveis ou número do CadÚnico, usados como critério de prioridade.
+- em alguns municípios, comprovante de trabalho dos responsáveis ou comprovante de inscrição em programas sociais, usados como critério de prioridade.
 
-Critérios, prazos e a forma de acompanhar a fila mudam de cidade para cidade. Consulte sempre o canal oficial do seu município.
+Critérios, prazos e acompanhamento da fila variam de um município para outro.
 
 ## Perguntas frequentes
 
 **A escola pode cobrar taxa de matrícula além das 12 parcelas?**
-A lei prevê que o valor anual seja dividido em até 12 parcelas. Se houver cobrança adicional, peça a justificativa por escrito e, em caso de dúvida, procure o Procon da sua cidade.
+O valor anual é dividido em até 12 parcelas. Se houver cobrança adicional, peça a justificativa por escrito antes de pagar.
 
 **A mensalidade pode subir no meio do ano?**
 Em regra, não: o valor anual contratado vale por um ano. O reajuste acontece na rematrícula.
 
 **A escola pode exigir que eu compre o material nela?**
-Em geral, a família pode comprar os itens da lista onde preferir. Exigir a compra na própria escola pode caracterizar venda casada, prática proibida pelo Código de Defesa do Consumidor. Materiais exclusivos, como apostilas de um sistema de ensino, podem ter regras próprias — pergunte antes.
+Em geral, a família pode comprar os itens da lista onde preferir. Exigir a compra na própria escola pode caracterizar venda casada, prática proibida. Materiais exclusivos, como apostilas de um sistema de ensino, podem ter regras próprias — pergunte antes.
 
 **Posso me inscrever na creche da prefeitura e visitar escolas particulares ao mesmo tempo?**
 Sim. O cadastro na rede municipal e a pesquisa em escolas particulares não se excluem.
