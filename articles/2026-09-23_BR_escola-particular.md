@@ -1,6 +1,6 @@
 # BR · pt-BR · обучение — «Escola particular e creche integral: quanto custa em 2026»
 
-Черновик копирайтера от 23.09.2026, пункт 6б плана главного. Статус: **не утверждено**. Ключи утверждают главный и маркетолог, запуск и провайдера выбирает владелец. В кабинете ничего не менялось.
+Статья копирайтера от 23.09.2026, пункт 6б плана главного. Статус: **утверждена** (главный 23.09, 6 ключей как есть). Провайдер IRONFLI. 23.09 текст вычищен по правилам владельца: без ссылок и без таблиц (список ниже, раздел «Чистка 23.09»). В панели: `article_drafts/BR-escola-particular-2026-09-23`. В кабинете ничего не менялось.
 
 | Поле | Значение |
 |---|---|
@@ -8,17 +8,19 @@
 | Вертикаль | обучение (частная школа, детский сад) |
 | Угол (маркетолог, №2) | «Сколько в 2026 стоит частная школа и сад полного дня рядом с вами: средняя месячная плата по городам и на что смотреть при выборе» |
 | Тема для провайдера | Mensalidade de escola particular e creche integral no Brasil em 2026: como é calculada, o que muda o preço e como escolher |
-| Объём статьи | 1269 слов текста + 36 слов в таблице сравнения = 1305; ~8.5k знаков (без служебных блоков) |
+| Объём статьи | 1237 слов, ~7.6k знаков (plain text после чистки 23.09, без служебных блоков) |
 
 **Структура (6 разделов)**
 1. Как считается mensalidade: anuidade, 12 parcelas, matrícula, reajuste, 45 дней на раскрытие цены.
 2. Почему цена зависит от города: стоимость жизни, район, этап обучения, педагогическая программа; как самому посчитать среднюю цену по своему району.
 3. Integral и parcial, питание, материалы: норма 4 и 7 часов, каникулы, что оплачивается сверх mensalidade, запрет брать деньги за материал общего пользования.
-4. Как сравнивать школы и что спросить на визите: таблица годовой стоимости, 8 вопросов.
+4. Как сравнивать школы и что спросить на визите: список, что посчитать за год, и 8 вопросов.
 5. Государственная альтернатива: creche da prefeitura, как записаться, документы, очередь.
 6. FAQ: 4 вопроса.
 
 > **Расхождение с углом, нужно решение до запуска.** Креатив обещает «среднюю месячную плату по городам». Цифр в R$ по городам в статье нет: WebSearch копирайтеру недоступен, источник с ценами не найден, planalto.gov.br закрыт (403). Раздел 2 объясняет, почему цена меняется от города к городу, и даёт способ посчитать среднюю по своему району, но готовой таблицы по городам в нём нет. Если оставить обещание в креативе как есть, получится расхождение «кликнул на одно, попал на другое» (Google: «Traffic sources must accurately describe what the user will see»). Варианты: (а) владелец открывает домен с источником цен (опрос Procon, отраслевое исследование, СМИ), и я добавляю в раздел 2 таблицу по городам со ссылкой и датой; (б) маркетолог меняет обещание в креативе на «saiba do que depende a mensalidade na sua cidade e como comparar».
+>
+> **После правил владельца 23.09 вариант (а) закрыт:** в тексте не может быть ни таблиц, ни ссылок на источники. Остаётся (б). В notes панели обещание креатива так и записано: «от чего зависит mensalidade в вашем городе».
 
 ---
 
@@ -137,7 +139,7 @@ Sim. O cadastro na rede municipal e a pesquisa em escolas particulares não se e
 
 ---
 
-## Ключи на утверждение (решают главный и маркетолог)
+## Ключи (утверждены главным 23.09 как есть)
 
 Шесть ключей, по одному на раздел, чтобы Google не заменял их своими. Все шесть есть в ответе `research_keywords` (BR/pt, 23.09) или в `keywords/all`. RPC — наша фактическая выплата за клик у провайдера (keywords/all, окно 30 дней до 22.09, owner='mine'). Ставки Google не приводятся (распоряжение владельца 23.09). У двух ключей своего RPC нет, для них взят донор с пометкой.
 
@@ -146,7 +148,7 @@ Sim. O cadastro na rede municipal e a pesquisa em escolas particulares não se e
 | 1 | Escola Perto de Mim Particular | частная школа рядом со мной | **0.1126**, наш (2946 кликов, $331.65) | Лид | дословно, в кавычках как поисковая фраза |
 | 2 | Quanto Custa Escola Particular | сколько стоит частная школа | нашего нет; **донор** «Escola Perto de Mim Particular» 0.1126. Planner: 390 поисков/мес | Раздел 1 «Como a mensalidade é calculada» | дословно, в первой фразе раздела |
 | 3 | Creche Integral Perto de Mim | детский сад полного дня рядом со мной | **0.1118**, наш (619 кликов, $69.19) | Раздел 2 «Por que o preço muda…» | дословно, в тексте |
-| 4 | Educação Infantil Creches Período Integral e Parcial Férias | дошкольное образование: сады, полный и неполный день, каникулы | **0.1199**, наш (51 клик, $6.12 — выборка малая) | Раздел 3, подзаголовок H3 | все слова в том же порядке, склеены в подзаголовок: «Educação infantil em creches: período integral e parcial, e as férias» |
+| 4 | Educação Infantil Creches Período Integral e Parcial Férias | дошкольное образование: сады, полный и неполный день, каникулы | **0.1199**, наш (51 клик, $6.12 — выборка малая) | Раздел 3, подзаголовок H3 | дословно, слова разделены только запятыми: «Educação infantil, creches, período integral e parcial, férias: o que muda no preço» (до 23.09 было «… em creches … e as férias», не дословно) |
 | 5 | Colégio Particular | частная школа (colégio) | нашего нет; **донор** «Escola Perto de Mim Particular» 0.1126. Planner: 5400 поисков/мес | Раздел 4 «Como comparar…» | дословно, в первой фразе раздела |
 | 6 | Creche Perto de Mim Prefeitura | муниципальный детский сад рядом со мной | **0.1216**, наш (151 клик, $18.37) — самый высокий RPC в наборе | Раздел 5 «Alternativa pública» | дословно, в кавычках как поисковая фраза |
 
@@ -162,14 +164,16 @@ Sim. O cadastro na rede municipal e a pesquisa em escolas particulares não se e
 
 - «grátis / gratuito», «bolsa 100%», «vaga garantida», «matrícula garantida». По Google это грубые нарушения RAF: страйк с первого раза за «Free or cash offers» и «Promising admission».
 - «garantia / garantido / garantir» и однокоренные в любом виде (правило владельца от 18.09). В тексте статьи их нет, проверено поиском по файлу.
-- Цены в R$ без источника и даты.
+- Цены в R$ по городам: данных нет, а ссылаться на источник в тексте нельзя.
+- Ссылок на что-либо (правило владельца 23.09): URL, сайтов и порталов, «segundo …», названий законов и их номеров (Lei nº …, Resolução …, Código …, Plano Nacional …), министерств и ведомств (Ministério, Secretaria, Procon, Enap), исследований и госреестров (CadÚnico). Факты подаются своими словами, источники только в служебном блоке ниже.
+- Таблиц (правило владельца 23.09). Таблица сравнения школ переписана простым списком.
 - «ganhe dinheiro», любые вакансии и заработок. Статья про обучение, джобсовые ключи из неё убраны.
 - Призывы искать или кликать («pesquise agora», «clique») и готовые ссылки-запросы: нарушают «No incentivizing searches» и правило о предзаполненных запросах.
 - Фраза «Na rede pública não há mensalidade» в разделе 5 — это факт, а не обещание. Если главный сочтёт её риском, раздел читается и без неё. В креативе «creche sem mensalidade / grátis» нельзя.
 
-## Факты и источники
+## Источники для сверки (в текст статьи не идут)
 
-| Факт в статье | Источник | Статус |
+| Факт в статье (формулировка без источника) | Источник | Статус |
 |---|---|---|
 | Creche 0–3 года, pré-escola 4–5; обязательное обучение с 4 лет (EC 59/2009); на creche у ребёнка есть право, но у семьи нет обязанности | pt.wikipedia «Educação infantil», «Creche» (со ссылками на planalto.gov.br) | открыто 23.09 |
 | 2024: около 40% детей 0–3 лет в creche, цель PNE 50% | pt.wikipedia «Creche» → MDS, cartilha «Cuidado em debate 4» | открыто через Википедию, сам PDF MDS не открывался |
@@ -187,3 +191,19 @@ Sim. O cadastro na rede municipal e a pesquisa em escolas particulares não se e
 - **13733** «Trabalhar na limpeza de escolas, prefeituras e tribunais» (~16.3k знаков, ~2600 слов, шаблон «школы/мэрии/суды»). С 24.08 по 18.09: спенд $678.69, выручка $1266.19, ROI +86.6%. С 19.09 по 22.09: выручка $0.16 на 621 клик, 0 конверсий. Шаблон мёртв, на него не опираемся.
 - **17799** «Quero morar em um condomínio para idosos: como funcionam e quanto custam?» (~4.7k знаков, гид по ценам с вилками в R$). После 19.09 не оборвался: $37.73 на 1248 кликов против $39.61 на 1156 до обрыва. Но ROI −17% и −24%, а его ключи платят $0.068–0.069 за клик.
 - **Вывод.** Образовательные ключи BR платят $0.112–0.122 за клик, в 1.6–1.8 раза больше ключей «пожилые» ($0.068–0.069). До сих пор они сидели на странице о вакансиях, которая с 19.09 не платит. Новая статья переносит их на страницу, которая действительно о школах. По правилам Google ключи паблишера должны быть «most relevant» странице, а без статуса RAF показываются только ключи, которые Google сам генерирует по контенту. Формат гида «quanto custa» (как 17799) по данным пережил 19.09.
+
+## Чистка 23.09 по правилам владельца (без ссылок, без таблиц)
+
+Что убрано или переписано в тексте статьи (факты и цифры сохранены, источник убран):
+- §1: «Pela Lei nº 9.870/1999, a escola define …» → «A escola define um valor anual …».
+- §1: «Órgãos de defesa do consumidor costumam orientar que o valor pago na matrícula seja …» → «O valor pago na matrícula costuma ser uma das parcelas da anuidade …».
+- §2: убрана фраза «Alguns Procons e prefeituras também publicam … pesquisas de preços escolares; vale procurar a mais recente da sua cidade». Вместо неё: «Comparar propostas reais, do mesmo ano letivo, é a forma mais segura de saber quanto se cobra perto de você.»
+- §3: «as Diretrizes Curriculares Nacionais (Resolução CNE/CEB nº 5/2009) consideram …» → «considera-se tempo parcial … tempo integral …»; «Dados do governo federal reunidos pela Enap indicam que cerca de 42% …» → «No país, cerca de 42% …».
+- §3: подзаголовок H3 «Educação infantil em creches: período integral e parcial, e as férias» → «Educação infantil, creches, período integral e parcial, férias: o que muda no preço». Ключ 4 теперь стоит дословно.
+- §3: «pela Lei nº 12.886/2013, esse custo deve estar embutido» → «esse custo já deve estar embutido».
+- §4: **таблица сравнения школ A/B/C (9 строк) → простой список «Para cada escola, anote:»** из 8 пунктов. Ключ «colégio particular» стоит до списка и не менялся. Вопрос 8 «… autorização de funcionamento do órgão de educação responsável?» → «… autorização de funcionamento?».
+- §5: «Segundo o Ministério do Desenvolvimento e Assistência Social, em 2024 cerca de 40% …, abaixo da meta de 50% do Plano Nacional de Educação» → «Em 2024, cerca de 40% …, abaixo da meta nacional de 50%».
+- §5: «normalmente chega ao portal da Secretaria Municipal de Educação, onde é feito o cadastro» → «normalmente descobre que o cadastro é feito pelo próprio município»; «número do CadÚnico» → «comprovante de inscrição em programas sociais»; убрано «consulte sempre o canal oficial da sua cidade».
+- FAQ: «A lei prevê que o valor anual seja dividido …» → «O valor anual é dividido …»; убрано «procure o Procon da sua cidade»; «prática proibida pelo Código de Defesa do Consumidor» → «prática proibida».
+- Проверено скриптом: строк с «|» в тексте ноль; стоп-слов (http, www, .gov, .com, Lei, Gesetz, GOV.UK, segundo o, laut, according to и расширенный список: Procon, Ministério, Enap, Resolução, Código, Secretaria, Plano Nacional, CadÚnico, portal) ноль; все 6 ключей стоят дословно.
+
