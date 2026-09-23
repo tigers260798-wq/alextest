@@ -1,6 +1,6 @@
 # RO · ro · тепловые насосы — «Pompa de căldură aer-apă cu montaj: de ce depinde prețul»
 
-Черновик копирайтера от 23.09.2026, тест-пакет новых направлений (владелец 23.09: «на всё, что ты написал, да, окей»). Статус: **не утверждено**. Ключи утверждают главный и маркетолог. В кабинете ничего не менялось.
+Черновик копирайтера от 23.09.2026, тест-пакет новых направлений (владелец 23.09: «на всё, что ты написал, да, окей»). Статус: **утверждено главным 23.09** (статья и все 6 ключей; решение главного 23.09). В кабинете ничего не менялось.
 
 | Поле | Значение |
 |---|---|
@@ -10,7 +10,7 @@
 | Угол (маркетолог, №3) | «От чего зависит цена теплового насоса с монтажом: площадь дома, утепление, старые радиаторы — и в каком ценовом классе Panasonic, Mitsubishi, Daikin перед сезоном» (бренды — только как ценовые классы, без логотипов и обещаний) |
 | Тема для провайдера | Pompa de căldură aer-apă cu montaj: de ce depinde prețul (suprafață, izolație, calorifere) și clasele de preț ale producătorilor |
 | Образец | IRONFLI:66406 LT «Šilumos siurbliai: įrengimo galimybės, pasiūlymai ir aptarnavimas» |
-| Объём статьи | 1196 слов, 7737 знаков (текст от «# …» до «---», считано скриптом) |
+| Объём статьи | 1193 слов, 7722 знаков (текст от «# …» до «---», считано скриптом) |
 
 **Структура (лид + 6 разделов + FAQ)**
 1. De ce prețurile la pompe de căldură diferă — aparat, boiler, instalații, lucrări electrice, punere în funcțiune; monobloc și split.
@@ -44,7 +44,7 @@ Contează și tipul aparatului: la monobloc, în casă intră doar țeava cu ap�
 
 Cea mai frecventă greșeală este alegerea pompei doar după metri pătrați. Suprafața contează, dar puterea este dată de necesarul de căldură al casei, adică de câtă căldură se pierde într-o zi geroasă prin pereți, acoperiș, ferestre și ventilație. Două case de 150 mp pot avea nevoie de puteri foarte diferite dacă una este nouă și bine izolată, iar cealaltă are câteva decenii, pereți subțiri și ferestre vechi.
 
-De aceea, o întrebare scurtă de tipul „pompa de căldură aer-apă, casa 120 mp: ce putere?” nu are un răspuns universal. Greșeala în oricare direcție costă:
+De aceea, pentru pompa de căldură aer-apă casa 120 mp bine izolată și aceeași casă fără izolație cer puteri diferite. Greșeala în oricare direcție costă:
 
 - **o pompă prea mare** pornește și se oprește des, funcționează inegal și este ea însăși mai scumpă;
 - **o pompă prea mică** nu face față gerului, așa că pornește mai des rezistența electrică, iar factura crește.
@@ -88,7 +88,7 @@ Marca oferă doar o imagine generală a prețului, pentru că fiecare producăto
 - **Mitsubishi Electric** – asociat adesea cu funcționarea la temperaturi scăzute și cu opțiuni avansate de control; de regulă clasă medie spre superioară sau superioară.
 - **Daikin** – gamă largă de puteri și dotări; în funcție de serie, de la clasa medie până la segmentul premium.
 
-Acestea sunt doar clase generale de preț, nu oferte. Diferența dintre două oferte pentru aceeași marcă poate fi mai mare decât cea dintre mărci, pentru că suma finală depinde în primul rând de putere, de mărimea boilerului și de complexitatea montajului. Așadar, formula „pompa de căldură Daikin, preț” nu are un singur răspuns, la fel ca pentru oricare altă marcă.
+Acestea sunt doar clase generale de preț, nu oferte. Diferența dintre două oferte pentru aceeași marcă poate fi mai mare decât cea dintre mărci, pentru că suma finală depinde în primul rând de putere, de mărimea boilerului și de complexitatea montajului. Așadar, pentru pompa de căldură Daikin preț unic nu există, la fel ca pentru oricare altă marcă.
 
 Comparați mai degrabă parametri concreți:
 
@@ -132,10 +132,10 @@ Nu. Consumul de curent depinde mai mult de puterea aleasă corect, de temperatur
 |---|---|---|---|---|
 | 1 | pompa de căldură aer apa | тепловой насос воздух-вода | 0.0996, донор LT D1. Planner 2900/мес | Заголовок и лид: «pompa de căldură aer-apă potrivită pentru locuința lor» (дословно, «apă» с диакритикой и дефисом) |
 | 2 | pompe de căldură | тепловые насосы | 0.101, донор D4. Planner 3600/мес | Раздел 1, H2 «De ce prețurile la pompe de căldură diferă atât de mult» (дословно) |
-| 3 | pompa de caldura aer apa casa 120 mp | тепловой насос воздух-вода, дом 120 м² | 0.1041, донор LT D3 (подбор под площадь, 49 кликов). Planner 390/мес, +191% за месяц | Раздел 2 «Suprafața casei și izolația», второй абзац: «„pompa de căldură aer-apă, casa 120 mp: ce putere?”» (слова в том же порядке, в кавычках) |
+| 3 | pompa de caldura aer apa casa 120 mp | тепловой насос воздух-вода, дом 120 м² | 0.1041, донор LT D3 (подбор под площадь, 49 кликов). Planner 390/мес, +191% за месяц | Раздел 2 «Suprafața casei și izolația», второй абзац: «pentru pompa de căldură aer-apă casa 120 mp bine izolată…» (слова подряд, без кавычек) |
 | 4 | pompa de caldura aer apa cu calorifere | тепловой насос воздух-вода с радиаторами | 0.101, донор D4 (радиаторного донора нет). Planner 480/мес | Раздел 3, H2 «Pompa de căldură aer-apă cu calorifere: ce se întâmplă cu instalația veche» (дословно) |
 | 5 | montaj pompa de caldura aer apa pret | цена монтажа теплового насоса воздух-вода | 0.0996, донор LT D1. Planner 40/мес, +150% | Раздел 4, H2 «Montaj pompă de căldură aer-apă: preț și ce lucrări include» (слова в том же порядке) |
-| 6 | pompa de caldura daikin pret | тепловой насос Daikin, цена | 0.101, донор D4 (у брендовых ключей донора нет). Planner 40/мес | Раздел 5 «Clase de preț», второй абзац: «formula „pompa de căldură Daikin, preț”» (слова в том же порядке, в кавычках) |
+| 6 | pompa de caldura daikin pret | тепловой насос Daikin, цена | 0.101, донор D4 (у брендовых ключей донора нет). Planner 40/мес | Раздел 5 «Clase de preț», второй абзац: «pentru pompa de căldură Daikin preț unic nu există» (слова подряд, без кавычек) |
 
 **Доноры (все LT, наши, `keywords/all`, owner='mine', 30 дней до 22.09):**
 - D1 «Oras Vanduo Kaina su Montavimu» (воздух-вода, цена с установкой): $0.0996, 76 кликов, $7.57.

@@ -1,6 +1,6 @@
 # PL · pl · тепловые насосы — «Pompa ciepła z montażem: od czego zależy cena»
 
-Черновик копирайтера от 23.09.2026, тест-пакет новых направлений (владелец 23.09: «на всё, что ты написал, да, окей»). Статус: **не утверждено**. Ключи утверждают главный и маркетолог. В кабинете ничего не менялось.
+Черновик копирайтера от 23.09.2026, тест-пакет новых направлений (владелец 23.09: «на всё, что ты написал, да, окей»). Статус: **утверждено главным 23.09** (статья и все 6 ключей; решение главного 23.09). В кабинете ничего не менялось.
 
 | Поле | Значение |
 |---|---|
@@ -10,7 +10,7 @@
 | Угол (маркетолог, №3) | «От чего зависит цена теплового насоса с монтажом: площадь дома, утепление, старые радиаторы — и в каком ценовом классе Panasonic, Mitsubishi, Daikin перед сезоном» (бренды — только как ценовые классы, без логотипов и обещаний) |
 | Тема для провайдера | Pompa ciepła powietrze-woda z montażem: od czego zależy cena (metraż, ocieplenie, grzejniki) i klasy cenowe producentów |
 | Образец | IRONFLI:66406 LT «Šilumos siurbliai: įrengimo galimybės, pasiūlymai ir aptarnavimas» |
-| Объём статьи | 1178 слов, 8313 знаков (текст от «# …» до «---», считано скриптом) |
+| Объём статьи | 1178 слов, 8293 знаков (текст от «# …» до «---», считано скриптом) |
 
 **Структура (лид + 6 разделов + FAQ)**
 1. Koszt założenia pompy ciepła: z czego się składa — urządzenie, zasobnik, instalacja, elektryka, uruchomienie; monoblok i split.
@@ -44,7 +44,7 @@ Znaczenie ma też typ urządzenia. W pompie typu monoblok cały obieg czynnika c
 
 Najczęstszy błąd to dobieranie pompy wyłącznie po metrażu. Powierzchnia ma znaczenie, ale moc wyznacza zapotrzebowanie budynku na ciepło, czyli to, ile ciepła ucieka w mroźny dzień przez ściany, dach, okna i wentylację. Dwa domy po 150 m² mogą potrzebować zupełnie innej mocy, jeśli jeden jest nowy i dobrze ocieplony, a drugi ma kilkadziesiąt lat, cienkie ściany i stare okna.
 
-Dlatego zestawienie „pompa ciepła 8 kW cena z montażem” warto czytać ostrożnie: ma sens dopiero wtedy, gdy wiadomo, że dom rzeczywiście potrzebuje 8 kW, a nie 5 albo 12. Pomyłka w każdą stronę kosztuje:
+Dlatego jeśli w ofercie jest pompa ciepła 8 kW, cena z montażem ma sens dopiero wtedy, gdy wiadomo, że dom naprawdę potrzebuje 8 kW, a nie 5 albo 12. Pomyłka w każdą stronę kosztuje:
 
 - **za duża pompa** często się włącza i wyłącza, pracuje nierówno i sama jest droższa;
 - **za mała pompa** nie radzi sobie w mrozy, wtedy częściej włącza się grzałka elektryczna, a rachunki rosną.
@@ -135,7 +135,7 @@ Nie. Zużycie prądu zależy bardziej od dobrze dobranej mocy, temperatury wody 
 |---|---|---|---|---|
 | 1 | pompa ciepła | тепловой насос | 0.101, донор D4. Planner 60 500/мес | Заголовок и лид: «ile kosztuje pompa ciepła razem z montażem?» (дословно) |
 | 2 | koszt założenia pompy ciepła | стоимость установки теплового насоса «под ключ» | 0.0996, донор LT D1. Planner 170/мес | Раздел 1, H2 «Koszt założenia pompy ciepła: z czego się składa» (дословно) |
-| 3 | pompa ciepła 8 kw cena z montażem | тепловой насос 8 кВт, цена с монтажом | 0.0996, донор LT D1 (тот же паттерн «цена с монтажом»). Planner 90/мес, в прошлом месяце 140 | Раздел 2 «Metraż i ocieplenie», второй абзац: «zestawienie „pompa ciepła 8 kW cena z montażem”» (дословно, в кавычках) |
+| 3 | pompa ciepła 8 kw cena z montażem | тепловой насос 8 кВт, цена с монтажом | 0.0996, донор LT D1 (тот же паттерн «цена с монтажом»). Planner 90/мес, в прошлом месяце 140 | Раздел 2 «Metraż i ocieplenie», второй абзац: «jeśli w ofercie jest pompa ciepła 8 kW, cena z montażem ma sens…» (слова подряд, без кавычек; между «kW» и «cena» граница придаточного, запятая) |
 | 4 | cop pompa ciepła | COP теплового насоса (коэффициент эффективности) | 0.101, донор D4. Planner 590/мес | Раздел 3, H2 «Stare grzejniki, temperatura zasilania i COP: pompa ciepła w starszym domu» (слова в том же порядке, через двоеточие) |
 | 5 | instalacja pompy ciepła | установка теплового насоса | 0.1013, донор LT D2 (27 кликов, выборка малая). Planner 880/мес | Раздел 4, H2 «Instalacja pompy ciepła: co obejmuje montaż» (дословно) |
 | 6 | pompa ciepła panasonic | тепловой насос Panasonic | 0.101, донор D4 (у брендовых ключей донора нет). Planner 4400/мес | Раздел 5, H2 «Pompa ciepła Panasonic, Mitsubishi Electric, Daikin: klasy cenowe» и в тексте «pompa ciepła Panasonic u jednego instalatora…» (дословно) |
