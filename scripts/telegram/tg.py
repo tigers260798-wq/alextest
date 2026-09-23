@@ -63,6 +63,29 @@ def download(token, media):
         return None
 
 
+def transcribe(path):
+    """Расшифровка голосового через OpenAI, если в /root/.config/openai.env есть ключ; иначе None."""
+    try:
+        key = os.environ.get("OPENAI_API_KEY")
+        env = "/root/.config/openai.env"
+        if not key and os.path.exists(env):
+            key = open(env).read().strip().split("=", 1)[1]
+        if not key:
+            return None
+        boundary = "----tgvoice" + str(int(time.time() * 1000))
+        body = (f'--{boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\ngpt-4o-mini-transcribe\r\n'
+                f'--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="{os.path.basename(path)}"\r\n'
+                f'Content-Type: application/octet-stream\r\n\r\n').encode() + open(path, "rb").read() + f"\r\n--{boundary}--\r\n".encode()
+        req = urllib.request.Request("https://api.openai.com/v1/audio/transcriptions", data=body,
+                                     headers={"Authorization": "Bearer " + key,
+                                              "Content-Type": f"multipart/form-data; boundary={boundary}"})
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            return json.load(resp).get("text")
+    except Exception as exc:
+        print(f"ошибка расшифровки: {type(exc).__name__}", file=sys.stderr)
+        return None
+
+
 def wait():
     token, chat = creds()
     while True:
@@ -83,10 +106,15 @@ def wait():
             msg = upd.get("message") or {}
             if str(msg.get("chat", {}).get("id")) == chat and str(msg.get("from", {}).get("id")) == chat:
                 text = msg.get("text") or msg.get("caption") or ""
-                media = msg.get("photo") and msg["photo"][-1] or msg.get("document")
+                media = (msg.get("photo") and msg["photo"][-1]) or msg.get("document") or msg.get("voice") \
+                    or msg.get("audio") or msg.get("video") or msg.get("video_note") or msg.get("sticker")
                 if media:
                     path = download(token, media)
                     text = (text + "\n" if text else "") + (f"[вложение: {path}]" if path else "[вложение не скачалось]")
+                    if path and (msg.get("voice") or msg.get("audio")):
+                        heard = transcribe(path)
+                        if heard:
+                            text += f"\n[голосовое, расшифровка]: {heard}"
                 texts.append(text or "[сообщение без текста]")
         os.makedirs(CONF, exist_ok=True)
         with open(OFFSET_FILE, "w") as f:
