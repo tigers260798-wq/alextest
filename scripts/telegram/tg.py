@@ -5,6 +5,8 @@
                       напечатав их; чужие сообщения молча пропускает.
   tg.py send ТЕКСТ  — отправляет владельцу; без ТЕКСТА читает stdin.
   tg.py photo ПУТЬ [ПОДПИСЬ] — отправляет владельцу картинку.
+  tg.py button ТЕКСТ -- НАДПИСЬ URL [НАДПИСЬ URL ...]
+                    — сообщение с кнопками-ссылками под ним.
 
 Реквизиты: переменные окружения TELEGRAM_BOT_TOKEN и TELEGRAM_CHAT_ID,
 иначе файл /root/.config/telegram/chief.env. Токен в вывод не попадает.
@@ -142,6 +144,20 @@ def send(text):
     print("отправлено")
 
 
+def button(text, buttons):
+    """buttons — список пар (надпись, url); каждая кнопка в своём ряду."""
+    token, chat = creds()
+    text = text.strip()
+    if not text or not buttons:
+        sys.exit("нужен текст и хотя бы одна кнопка")
+    markup = {"inline_keyboard": [[{"text": t, "url": u}] for t, u in buttons]}
+    res = call(token, "sendMessage", {"chat_id": chat, "text": text[:LIMIT],
+                                      "reply_markup": json.dumps(markup, ensure_ascii=False)}, timeout=30)
+    if not res.get("ok"):
+        sys.exit(f"Telegram отказал: {res.get('description')}")
+    print("отправлено")
+
+
 def photo(path, caption=""):
     """Отправляет владельцу картинку (multipart), подпись до 1024 знаков."""
     token, chat = creds()
@@ -169,6 +185,12 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "photo" and len(sys.argv) > 2:
         photo(sys.argv[2], " ".join(sys.argv[3:]))
+    elif cmd == "button" and "--" in sys.argv:
+        i = sys.argv.index("--")
+        rest = sys.argv[i + 1:]
+        if len(rest) < 2 or len(rest) % 2:
+            sys.exit("после -- нужны пары: НАДПИСЬ URL")
+        button(" ".join(sys.argv[2:i]), list(zip(rest[::2], rest[1::2])))
     elif cmd == "wait":
         wait()
     elif cmd == "send":
