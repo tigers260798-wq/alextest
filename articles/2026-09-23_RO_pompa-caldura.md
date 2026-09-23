@@ -10,7 +10,7 @@
 | Угол (маркетолог, №3) | «От чего зависит цена теплового насоса с монтажом: площадь дома, утепление, старые радиаторы — и в каком ценовом классе Panasonic, Mitsubishi, Daikin перед сезоном» (бренды — только как ценовые классы, без логотипов и обещаний) |
 | Тема для провайдера | Pompa de căldură aer-apă cu montaj: de ce depinde prețul (suprafață, izolație, calorifere) și clasele de preț ale producătorilor |
 | Образец | IRONFLI:66406 LT «Šilumos siurbliai: įrengimo galimybės, pasiūlymai ir aptarnavimas» |
-| Объём статьи | см. строку «Объём» в конце файла (считано скриптом) |
+| Объём статьи | 1196 слов, 7737 знаков (текст от «# …» до «---», считано скриптом) |
 
 **Структура (лид + 6 разделов + FAQ)**
 1. De ce prețurile la pompe de căldură diferă — aparat, boiler, instalații, lucrări electrice, punere în funcțiune; monobloc și split.
@@ -18,8 +18,8 @@
 3. Pompa de căldură aer-apă cu calorifere — patru variante, spălarea instalației și filtrul, aer-aer ca alternativă.
 4. Montaj: preț și lucrări — locul unității, suport și condens, lucrări electrice, lucrări suplimentare, zgomot.
 5. Clase de preț: Panasonic, Mitsubishi Electric, Daikin — doar clase de preț și ce să comparați.
-6. Înainte de sezonul rece — când să începeți, 5 întrebări pentru instalator, revizia.
-7. Întrebări frecvente — 4 întrebări.
+6. Înainte de sezonul rece — când să începeți, 4 întrebări pentru instalator, revizia.
+7. Întrebări frecvente — 2 întrebări.
 
 ---
 
@@ -38,7 +38,7 @@ Când comparați oferte, rețineți că suma finală nu înseamnă doar prețul 
 - **lucrările electrice**: circuit separat și siguranță, uneori mărirea puterii contractate;
 - **punerea în funcțiune și configurarea**, plus demontarea centralei vechi, dacă este cazul.
 
-Contează și tipul aparatului. La pompele monobloc, tot circuitul de agent frigorific se află în unitatea exterioară, iar în casă intră o țeavă cu apă, care trebuie protejată la îngheț. La sistemele split, între unități circulă agentul frigorific, iar racordarea o face un specialist calificat pentru astfel de lucrări. Niciuna dintre variante nu este mai bună din principiu: alegerea depinde de casa dumneavoastră și de locul disponibil pentru unitatea exterioară.
+Contează și tipul aparatului: la monobloc, în casă intră doar țeava cu apă, care trebuie protejată la îngheț; la split, între unități circulă agent frigorific, iar racordarea o face un specialist calificat. Niciuna dintre variante nu este mai bună din principiu, alegerea depinde de casă.
 
 ## Suprafața casei și izolația: ce putere vă trebuie
 
@@ -47,11 +47,11 @@ Cea mai frecventă greșeală este alegerea pompei doar după metri pătrați. S
 De aceea, o întrebare scurtă de tipul „pompa de căldură aer-apă, casa 120 mp: ce putere?” nu are un răspuns universal. Greșeala în oricare direcție costă:
 
 - **o pompă prea mare** pornește și se oprește des, funcționează inegal și este ea însăși mai scumpă;
-- **o pompă prea mică** nu face față gerului, atunci pornește mai des rezistența electrică, iar factura crește.
+- **o pompă prea mică** nu face față gerului, așa că pornește mai des rezistența electrică, iar factura crește.
 
-Ca instalatorul să poată calcula corect puterea, pregătiți datele de bază: suprafața încălzită, anul construcției, grosimea izolației pereților și a podului, vârsta ferestrelor, tipul ventilației și consumul anual de până acum, adică câți metri cubi de gaz, câți metri steri de lemne sau câți kilowați-oră de curent consuma casa. Este o cifră de control foarte bună, pentru că arată nevoia reală a clădirii.
+Pentru un calcul corect, pregătiți-i instalatorului datele de bază: suprafața încălzită, anul construcției, izolația pereților și a podului, vârsta ferestrelor și consumul anual de până acum (gaz, lemne sau curent). Consumul real este o cifră de control foarte utilă.
 
-Dacă plănuiți în următorii ani izolarea podului sau a fațadei, spuneți acest lucru de la început. Izolația reduce puterea necesară, așa că poate fi suficient un aparat mai mic și mai ieftin. În ordine inversă, riscați să plătiți pentru o putere de care, după izolare, nu mai aveți nevoie.
+Dacă plănuiți izolarea podului sau a fațadei, spuneți-o de la început: după izolare poate fi suficient un aparat mai mic și mai ieftin.
 
 ## Pompa de căldură aer-apă cu calorifere: ce se întâmplă cu instalația veche
 
@@ -60,27 +60,25 @@ Pompa de căldură lucrează cel mai eficient când apa din instalație este rel
 Asta nu înseamnă că toate caloriferele trebuie schimbate imediat. Variantele obișnuite sunt:
 
 - **Un calcul de verificare.** În multe case caloriferele au fost alese cu rezervă, iar după schimbarea ferestrelor sau izolare fac față și la o temperatură mai mică.
-- **Înlocuirea doar a unor calorifere.** Adesea ajung calorifere mai mari sau de joasă temperatură doar în camerele cele mai reci.
-- **Un model de temperatură înaltă.** Unele pompe pot livra apă mai caldă, dar sunt de regulă mai scumpe și consumă mai mult când lucrează la temperaturi mari.
+- **Înlocuirea doar a unor calorifere.** Adesea sunt suficiente calorifere mai mari sau de joasă temperatură doar în camerele cele mai reci.
+- **Un model de temperatură înaltă.** Unele pompe pot livra apă mai caldă, dar sunt de regulă mai scumpe și consumă mai mult.
 - **Un sistem hibrid.** Pompa acoperă cea mai mare parte a sezonului, iar centrala existentă pornește doar în zilele cele mai geroase.
 
-Într-o instalație veche, înainte de racordare merită spălate țevile și montat un filtru magnetic, pentru că depunerile și nămolul pot deteriora aparatul nou.
+Instalația veche merită spălată înainte de racordare, iar un filtru magnetic protejează aparatul nou de nămol.
 
-Dacă în casă nu există deloc instalație pe apă, varianta aer-apă înseamnă țevi și calorifere noi. În acest caz, mulți o compară cu o pompă aer-aer, care se montează mai simplu, dar încălzește aerul din camere și nu prepară apă caldă.
+Dacă în casă nu există instalație pe apă, varianta aer-apă înseamnă țevi și calorifere noi; de aceea mulți o compară cu o pompă aer-aer, mai simplă la montaj, dar care încălzește doar aerul și nu prepară apă caldă.
 
 ## Montaj pompă de căldură aer-apă: preț și ce lucrări include
 
 Prețul montajului depinde mai mult de casă decât de marca aparatului. Cel mai mult contează:
 
 - **locul unității exterioare** – distanța până la camera tehnică, numărul de treceri prin perete, montajul pe perete sau pe sol;
-- **suportul și condensul** – unitatea are nevoie de un suport care o ridică deasupra zăpezii și de scurgerea apei de la degivrare, astfel încât aceasta să nu înghețe pe alee;
+- **suportul și condensul** – un suport deasupra nivelului zăpezii și scurgere pentru apa de la degivrare;
 - **racordarea la instalația existentă** – modificări de țevi, vas tampon, vane de amestec;
 - **lucrările electrice** – alimentare separată, valoarea siguranței generale, starea tabloului electric;
-- **lucrări suplimentare** – demontarea centralei vechi, a racordului la coș sau a rezervorului de motorină, finisajele după treceri.
+- **lucrări suplimentare** – demontarea centralei vechi sau a rezervorului de motorină, finisaje.
 
-Cereți o ofertă în care aparatul, materialele și manopera sunt pe rânduri separate și în care este scris și ce nu include prețul. Suma finală se stabilește de obicei abia după vizita la fața locului, pentru că doar acolo se vede cât de multe lucrări sunt necesare.
-
-Gândiți-vă și la zgomot. Unitatea exterioară se aude când funcționează, așa că într-un cartier cu case apropiate e mai bine să fie amplasată departe de ferestrele dormitoarelor și de gardul vecinului.
+Cereți o ofertă cu aparatul, materialele și manopera pe rânduri separate, în care să fie scris și ce nu include prețul. Suma finală se stabilește de obicei abia după vizita la fața locului, pentru că doar acolo se vede cât de multe lucrări sunt necesare.
 
 ## Clase de preț: Panasonic, Mitsubishi Electric și Daikin
 
@@ -97,12 +95,11 @@ Comparați mai degrabă parametri concreți:
 - puterea de încălzire la temperatură exterioară scăzută, nu doar puterea nominală într-o zi caldă;
 - randamentul sezonier (SCOP) pentru clima noastră;
 - nivelul de zgomot al unității exterioare;
-- temperatura exterioară minimă la care aparatul mai funcționează;
 - disponibilitatea service-ului și a pieselor în zona dumneavoastră.
 
 ## Înainte de sezonul rece: când să începeți și ce să întrebați instalatorul
 
-Toamna instalatorii au cele mai multe comenzi, așa că atât vizita la fața locului, cât și montajul pot dura mai mult. Cu cât evaluarea se face mai devreme, cu atât ofertele pot fi comparate mai liniștit.
+Toamna instalatorii au cele mai multe comenzi, așa că atât vizita la fața locului, cât și montajul pot dura mai mult.
 
 Întrebări pentru instalator:
 
@@ -110,20 +107,13 @@ Toamna instalatorii au cele mai multe comenzi, așa că atât vizita la fața lo
 - La ce temperatură de tur vor lucra caloriferele mele?
 - Ce este inclus în preț și ce nu?
 - Cât durează lucrările și rămâne casa fără încălzire între timp?
-- Cine face service-ul și cât de des?
 
-Dacă aveți deja o pompă, toamna este momentul potrivit pentru o revizie: curățarea lamelelor unității exterioare de frunze și praf, verificarea filtrelor, a presiunii din instalație și a scurgerii condensului. Circuitul frigorific și conexiunile electrice le verifică un specialist.
+Dacă aveți deja o pompă, toamna este momentul pentru o revizie: curățarea unității exterioare de frunze, verificarea filtrelor, a presiunii din instalație și a scurgerii condensului.
 
 ## Întrebări frecvente
 
 **Funcționează pompa de căldură pe ger puternic?**
-Pompele aer-apă actuale funcționează și pe ger puternic, dar cu cât e mai frig afară, cu atât scad puterea și randamentul lor. De aceea puterea trebuie aleasă gândindu-vă la zilele cele mai reci.
-
-**Trebuie neapărat schimbate caloriferele vechi?**
-Nu întotdeauna. Adesea ajung un calcul de verificare și înlocuirea câtorva calorifere în camerele cele mai reci.
-
-**Pot afla prețul fără o vizită la fața locului?**
-Puteți afla un ordin de mărime orientativ, dar suma finală se stabilește după evaluare, pentru că volumul lucrărilor de instalații și electrice diferă de la o casă la alta.
+Pompele aer-apă actuale funcționează și pe ger puternic, dar cu cât e mai frig afară, cu atât scad puterea și randamentul lor.
 
 **O marcă mai scumpă înseamnă întotdeauna o factură mai mică?**
 Nu. Consumul de curent depinde mai mult de puterea aleasă corect, de temperatura apei din instalație și de setări decât de sigla de pe carcasă.
@@ -191,4 +181,3 @@ Nu. Consumul de curent depinde mai mult de puterea aleasă corect, de temperatur
 - **66406 LT «Šilumos siurbliai…»** — единственная статья владельца о тепловых насосах. 23.05–22.09: спенд $236.30, выручка $346.65, ROI +46.7%, CPC $0.044. До 19.09: ROI +48.3% на $222.56. С 19.09 по 22.09: ROI +20.2% на $13.74, одна адгруппа. Статья не оборвалась, но после 19.09 даёт меньше, а выборка мала.
 - Трендов по тепловым насосам в RO нет. Метка `trendMatch: related` у нескольких ключей — ложное совпадение по слову «căldură» с трендом «dom de căldură» от 22.09 («тепловой купол», погодный термин о жаре). К углу относится только закончившийся тренд 16–19.09 «vortex polar» / «val de aer rece» (волна холода): люди думают об отоплении, и это совпадает с «перед сезоном».
 
-Объём: будет пересчитан скриптом.

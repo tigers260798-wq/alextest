@@ -10,7 +10,7 @@
 | Угол (маркетолог, №3) | «От чего зависит цена теплового насоса с монтажом: площадь дома, утепление, старые радиаторы — и в каком ценовом классе Panasonic, Mitsubishi, Daikin перед сезоном» (бренды — только как ценовые классы, без логотипов и обещаний) |
 | Тема для провайдера | Pompa ciepła powietrze-woda z montażem: od czego zależy cena (metraż, ocieplenie, grzejniki) i klasy cenowe producentów |
 | Образец | IRONFLI:66406 LT «Šilumos siurbliai: įrengimo galimybės, pasiūlymai ir aptarnavimas» |
-| Объём статьи | см. строку «Объём» в конце файла (считано скриптом) |
+| Объём статьи | 1178 слов, 8313 знаков (текст от «# …» до «---», считано скриптом) |
 
 **Структура (лид + 6 разделов + FAQ)**
 1. Koszt założenia pompy ciepła: z czego się składa — urządzenie, zasobnik, instalacja, elektryka, uruchomienie; monoblok i split.
@@ -19,7 +19,7 @@
 4. Instalacja pompy ciepła — miejsce jednostki, podstawa i skropliny, elektryka, prace dodatkowe, hałas.
 5. Pompa ciepła Panasonic, Mitsubishi Electric, Daikin — tylko klasy cenowe i co porównywać.
 6. Przed sezonem — kiedy zacząć, 5 pytań do instalatora, przegląd.
-7. FAQ — 4 pytania.
+7. FAQ — 3 pytania.
 
 ---
 
@@ -80,8 +80,6 @@ Cena montażu zależy bardziej od domu niż od marki urządzenia. Najbardziej wp
 
 Poproś o ofertę, w której urządzenie, materiały i robocizna są osobnymi pozycjami, i o zapisanie, czego cena nie obejmuje. Ostateczna kwota wyjaśnia się zwykle dopiero po wizji lokalnej, bo dopiero na miejscu widać, ile naprawdę jest pracy.
 
-Pomyśl też o hałasie. Jednostkę zewnętrzną słychać podczas pracy, dlatego na gęstym osiedlu lepiej ustawić ją z dala od okien sypialni i granicy z sąsiadem.
-
 ## Pompa ciepła Panasonic, Mitsubishi Electric, Daikin: klasy cenowe
 
 Marka daje jedynie ogólny obraz ceny, bo każdy producent ma w ofercie zarówno prostsze, jak i droższe serie. W uproszczeniu:
@@ -102,7 +100,7 @@ Porównuj raczej konkretne parametry:
 
 ## Przed sezonem: kiedy zacząć i o co zapytać instalatora
 
-Jesienią instalatorzy mają najwięcej zleceń, więc zarówno wizja lokalna, jak i sam montaż mogą się przeciągnąć. Im wcześniej odbędą się oględziny, tym spokojniej można porównać oferty.
+Jesienią instalatorzy mają najwięcej zleceń, więc zarówno wizja lokalna, jak i sam montaż mogą się przeciągnąć.
 
 Pytania do instalatora:
 
@@ -112,7 +110,7 @@ Pytania do instalatora:
 - Ile potrwają prace i czy dom zostanie w tym czasie bez ogrzewania?
 - Kto zajmie się serwisem i jak często?
 
-Jeśli pompa już pracuje, jesień to dobry moment na przegląd: oczyszczenie lamel jednostki zewnętrznej z liści i kurzu, kontrolę filtrów i ciśnienia w instalacji oraz drożności odpływu skroplin. Szczelność obiegu czynnika i połączenia elektryczne sprawdza serwisant.
+Jeśli pompa już pracuje, jesień to dobry moment na przegląd: oczyszczenie jednostki zewnętrznej z liści, kontrola filtrów, ciśnienia w instalacji i odpływu skroplin.
 
 ## Najczęstsze pytania
 
@@ -121,9 +119,6 @@ Współczesne pompy powietrze-woda pracują także przy silnym mrozie, ale im zi
 
 **Czy stare grzejniki trzeba koniecznie wymienić?**
 Nie zawsze. Często wystarczy obliczenie kontrolne i wymiana kilku grzejników w najchłodniejszych pomieszczeniach.
-
-**Czy można poznać cenę bez wizji lokalnej?**
-Można poznać orientacyjny rząd wielkości, ale ostateczna kwota wychodzi po oględzinach, bo zakres prac instalacyjnych i elektrycznych jest w każdym domu inny.
 
 **Czy droższa marka zawsze oznacza niższe rachunki?**
 Nie. Zużycie prądu zależy bardziej od dobrze dobranej mocy, temperatury wody w instalacji i ustawień niż od logo na obudowie.
@@ -190,4 +185,3 @@ Nie. Zużycie prądu zależy bardziej od dobrze dobranej mocy, temperatury wody 
 - **66406 LT «Šilumos siurbliai…»** — единственная статья владельца о тепловых насосах. 23.05–22.09: спенд $236.30, выручка $346.65, ROI +46.7%, CPC $0.044. До 19.09: ROI +48.3% на $222.56. С 19.09 по 22.09: ROI +20.2% на $13.74, одна адгруппа. Статья не оборвалась, но после 19.09 даёт меньше, а выборка мала.
 - **PL у владельца сейчас:** статья IRONFLI:23207 «Sprzątanie biur…» (джобсы, офисный шаблон), 23.05–22.09: $184.71 спенда, ROI +53.5%, клик $0.014, выручка $0.021 на клик по объявлению. LT-насосы дают $0.064 на клик по объявлению, втрое больше, но и клик у них дороже: $0.044 против $0.014. Даст ли PL-насос такую же разницу, покажет только запуск.
 
-Объём: будет пересчитан скриптом.
