@@ -73,8 +73,10 @@ def transcribe(path):
         if not key:
             return None
         boundary = "----tgvoice" + str(int(time.time() * 1000))
+        # Telegram отдаёт голосовые как .oga — OpenAI принимает тот же файл только с расширением .ogg
+        name = os.path.basename(path).replace(".oga", ".ogg")
         body = (f'--{boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\ngpt-4o-mini-transcribe\r\n'
-                f'--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="{os.path.basename(path)}"\r\n'
+                f'--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="{name}"\r\n'
                 f'Content-Type: application/octet-stream\r\n\r\n').encode() + open(path, "rb").read() + f"\r\n--{boundary}--\r\n".encode()
         req = urllib.request.Request("https://api.openai.com/v1/audio/transcriptions", data=body,
                                      headers={"Authorization": "Bearer " + key,
