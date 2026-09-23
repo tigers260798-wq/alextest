@@ -5,11 +5,12 @@
 - **Тема (как её поймёт провайдер):** Büroreinigung in Deutschland — wie die Arbeit organisiert ist: Arbeitgeber (Reinigungsfirma), Aufgaben, Schichten, Lohnregeln 2026, Arbeitsvertrag.
 - **Угол (с входа, от главного по распоряжению владельца):** информационный — как устроена работа в уборке офисов, смены, условия, как искать работодателя, на что смотреть в договоре. Без обещаний найма и зарплаты.
 - **Образец структуры:** FR IRONFLI:14744 «Nettoyage de bureaux» — лид, кто работодатель, задачи, конкретные временные слоты, оплата как ориентир с расчётом, что проверить перед подписанием.
-- **Объём текста статьи:** 1 002 слова (заголовок + лид + 6 разделов + вывод; служебные блоки не считаются).
+- **Статус:** утверждена главным 23.09. В панели: `article_drafts/DE-bueroreinigung-2026-09-23`.
+- **Объём текста статьи:** 1 028 слов (заголовок + лид + 6 разделов + вывод; служебные блоки не считаются).
 
 **Структура:**
 1. Reinigungsfirma in Deutschland — кто заказывает уборку офисов и кто работодатель уборщика.
-2. Aufgaben und Objekte — что входит в ежедневную уборку, что не входит, какие объекты бывают в одном графике (офис, детский сад, практика).
+2. Aufgaben und Objekte — что входит в ежедневную уборку, что не входит, какие объекты бывают в одном графике (офис, практика, лестницы), большой город против сельской местности.
 3. Schichten und Arbeitsweg — утро / день / вечер с часами, разделённые смены, почему важна близость фирмы.
 4. Eine Reinigungsfirma finden — где искать работодателя и как отличить серьёзную фирму.
 5. Lohnregeln 2026 — общий минимум, отраслевой минимум, миниджоб, расчёт для проверки расчётного листа.
@@ -104,21 +105,21 @@ Büroreinigung ist eine klar strukturierte Tätigkeit mit festen Zeitfenstern, m
 
 ---
 
-## Ключи на утверждение
+## Ключи (утверждены главным 23.09)
 
-Решение по ключам — за главным и маркетологом. На статью 6 ключей (лимит владельца 5–6). RPC — только наш фактический из `keywords/all` / `research_keywords.ourKeywords` (DE, окно 30 дней) или перенос с ключа-донора; ставку Google не брал.
+На статью 6 ключей (лимит владельца 5–6). RPC — только наш фактический из `keywords/all` / `research_keywords.ourKeywords` (DE, окно 30 дней) или перенос с ключа-донора; ставку Google не брал.
 
 | # | Ключ | Перевод | RPC $ | Раздел / где в тексте |
 |---|------|---------|-------|------------------------|
 | 1 | Büroreinigung | уборка офисов | нашего RPC нет. Донор: «Reinigung» (DE, наш) $0.405. У других команд класс mid («Büroreinigung München», «Berlin Büroreinigung») | заголовок, лид, §2, вывод |
 | 2 | Reinigung | уборка | **$0.405, наш** (61 клик / $24.69) | лид («zur regelmäßigen Reinigung von Gebäuden»), §1 |
-| 3 | Reinigungsfirma Deutschland | клининговая компания Германия | **$0.419, наш** (79 кликов / $33.06) | §1: подзаголовок «Reinigungsfirma in Deutschland» + фраза «Die typische Reinigungsfirma – Deutschland hat …» |
-| 4 | Reinigung Kindergarten | уборка детского сада | **$0.409, наш** (71 клик / $29.03). **Риск, см. ниже** | §2: строка графика «Reinigung Kindergarten, 16:30–18:30 Uhr» + подзаголовок |
+| 3 | Reinigungsfirma Deutschland | клининговая компания Германия | **$0.419, наш** (79 кликов / $33.06) | §1: подзаголовок «Reinigungsfirma in Deutschland» + фраза «… bundesweit tätige Reinigungsfirma: Deutschland hat beides …» |
+| 4 | Reinigungsfirma München | клининговая компания Мюнхен | нашего RPC нет. Донор: «Reinigungsfirma Deutschland» $0.419, наш (тот же паттерн «компания + место»). У других команд класс mid | §2: «Eine Reinigungsfirma – München steht hier für viele Großstädte – betreut …» |
 | 5 | Reinigungsfirma in der Nähe | клининговая компания рядом | нашего RPC нет. Донор: FR «Entreprise de Nettoyage Autour de Moi» $0.308, наш, 465 кликов (тот же паттерн «компания рядом»). У других команд класс mid | §3: подзаголовок + «Unternehmen, die eine Reinigungsfirma in der Nähe beauftragen …» |
 | 6 | Reinigungsfirma finden | найти клининговую компанию | **$0.442, наш** (37 кликов / $16.37) — самый дорогой наш ключ в DE | §4: подзаголовок + «Wer eine Reinigungsfirma finden möchte …» |
 
-**К решению:**
-- **Reinigung Kindergarten.** Детский сад стоит рядом с мёртвым шаблоном «школы/мэрии/суды», который с 19.09 не платит. Из данных не видно, с какой статьи пришёл этот ключ: RPC по ключам к статье не привязан. В тексте детский сад упомянут один раз, как одна из точек в графике уборщицы, а не как тема статьи. Если ключ снимают, замена без нашего RPC: «Reinigungsfirma München» или «Reinigungsfirma Hamburg» (у других команд класс mid, донор «Reinigungsfirma Deutschland» $0.419). Но тогда в §3 нужен абзац про конкретный город.
+**Решение главного 23.09 и оговорки:**
+- **«Reinigung Kindergarten» ($0.409, наш) снят:** его RPC, скорее всего, набран на мёртвом шаблоне «школы». Строка графика про детский сад и абзац про гигиену в Kita стояли только под этот ключ, поэтому убраны из текста. На их месте в §2 абзац «большой город против сельской местности» с ключом «Reinigungsfirma München» (вместо Hamburg, потому что по Мюнхену у других команд два ключа: «Reinigungsfirma München» и «Büroreinigung München»).
 - **Не брал:** города («Gebäudereinigung Essen», «Reinigungsfirma Dortmund» и т.п.), потому что статья не про город; «Kreditkarte …» и охрану («Sicherheitsdienst …»), потому что они нерелевантны странице, а по правилу RSOC ключ должен быть самым релевантным странице.
 - Все 4 наших DE-ключа — это данные по гео и теме за 30 дней. Какие ключи приносили деньги именно на 50754, у меня нет данных: у статьи `terms` пустые, IRONFLI выплату по ключам не показывает (said_log 21.09).
 
@@ -126,7 +127,7 @@ Büroreinigung ist eine klar strukturierte Tätigkeit mit festen Zeitfenstern, m
 
 | | Старая 50754 | Новая |
 |---|---|---|
-| Объём | 12 041 знак, около 1 650 слов | 1 002 слова |
+| Объём | 12 041 знак, около 1 650 слов | 1 028 слов |
 | Заголовок | «… Aufgaben, Einstieg, Arbeitszeiten und Verdienst» | «… Schichten, Aufgaben, Lohnregeln und worauf man im Arbeitsvertrag achten sollte»: ушли «Einstieg» (вход в профессию) и «Verdienst» (заработок) |
 | Наши дорогие ключи дословно | «Büroreinigung», «Reinigung». Слов «Reinigungsfirma» и «Kindergarten» в тексте нет ни разу | все 6 ключей, каждый в своём разделе |
 | «garantiert» | «Zahl der garantierten Stunden» (в выводе) | нет. Вместо этого «vertraglich vereinbarte Wochenstunden» (правило 18.09) |
@@ -142,6 +143,8 @@ Büroreinigung ist eine klar strukturierte Tätigkeit mit festen Zeitfenstern, m
 - Обещаний найма, зарплаты, «свободных мест», призывов «jetzt bewerben». Про школы, мэрии, суды и «Behörden» не писать: это мёртвый шаблон.
 - Слов «garantiert», «Garantie» и однокоренных ни в каком виде (правило владельца 18.09).
 - Списков «ищите по запросам …» и готовых поисковых фраз (правило AFS против подталкивания к поиску).
+- Ссылок на что-либо (правило владельца 23.09): URL, сайтов, «laut …», названий законов и их номеров, министерств и ведомств, исследований. Факты подаются своими словами, источники только в служебном блоке ниже.
+- Таблиц (правило владельца 23.09). Только абзацы и простые списки.
 - Креатив к этой статье может обещать только «узнать / erfahren»: как устроена работа, смены, правила оплаты. «Stellen verfügbar», «XX €/Stunde verdienen» нельзя: на странице нет вакансий, это грубое нарушение RAF («Promise to hire»).
 
 ## На каких данных (get_performance_rows, groupBy=article, IRONFLI)
@@ -151,3 +154,26 @@ Büroreinigung ist eine klar strukturierte Tätigkeit mit festen Zeitfenstern, m
 - Образец FR 14744: 01.06–18.09 $1 556.20 → $2 336.01, ROI +50.1%. 19–22.09: $212.75 → $293.03, ROI +37.7%, 617 конверсий у провайдера.
 - Шаблон «школы/мэрии/суды» после 19.09 для сравнения: DE 13700 $13.47 → $6.77 (−49.7%), FR 7668 $38.72 → $0.36 (−99.1%).
 - Статус контента 50754 и 14744: `NOT_COLLECTED`. Текст IRONFLI отдал, картинок в базе нет.
+
+## Чистка 23.09 по правилам владельца (без ссылок, без таблиц)
+
+Что убрано из текста статьи:
+- «die Jobsuche der Bundesagentur für Arbeit» → «Online-Jobbörsen» (ведомство).
+- «Nach dem Nachweisgesetz müssen …» → «Die wesentlichen Arbeitsbedingungen müssen schriftlich festgehalten werden.» (название закона).
+- «gesetzliche Mindestlohn» (2 раза) → «allgemeine Mindestlohn»; «gesetzliche und tarifliche Untergrenzen» → «verbindliche Untergrenzen»; «(gesetzlich mindestens 20 Tage …)» → «(mindestens 20 Tage …)». Это ссылки на закон вида «по закону».
+- Ключ «Reinigung Kindergarten», строка графика «Reinigung Kindergarten, 16:30–18:30 Uhr» и абзац про гигиену в Kita (решение главного). Подзаголовок §2 стал «vom Großraumbüro bis zur Arztpraxis».
+- Добавлено: абзац про большой город и сельскую местность с ключом «Reinigungsfirma München». В §1 фраза с ключом «Reinigungsfirma Deutschland» перестроена, чтобы не повторять конструкцию из §2.
+- Таблиц в тексте не было и нет. Проверено скриптом: строк с «|» ноль; стоп-слов (http, www, .gov, .com, Lei, Gesetz, GOV.UK, segundo o, laut, according to и расширенный список) ноль; все 6 ключей стоят дословно.
+
+## Источники для сверки (в текст статьи не идут)
+
+| Факт в тексте | Источник | Статус |
+|---|---|---|
+| Mindestlohn 13,90 € с 01.01.2026 | Mindestlohngesetz; Fünfte Mindestlohnanpassungsverordnung | из старой версии 50754 и по памяти, онлайн не сверено |
+| Branchenmindestlohn Gebäudereinigung 2026: LG1 15,00 €, LG6 18,40 €, до 31.12.2026 | тарифный договор о минимальной оплате в Gebäudereinigung (объявлен общеобязательным) | из старой версии, не сверено |
+| Minijob-Grenze 603 €/мес в 2026 | § 8 SGB IV (граница привязана к Mindestlohn) | из старой версии, не сверено |
+| Оплачиваемый отпуск и оплата больничного у миниджоберов | BUrlG, EFZG | по памяти |
+| Письменная фиксация условий труда | Nachweisgesetz | по памяти |
+| Отпуск не меньше 20 дней при пятидневке | § 3 BUrlG (24 рабочих дня при шестидневке) | по памяти |
+| Учёт рабочего времени и обязанность носить удостоверение в Gebäudereinigung | § 17 MiLoG, § 2a SchwarzArbG | по памяти |
+
