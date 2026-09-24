@@ -1,0 +1,66 @@
+{
+ "docId": "DE-kredit-angle2-2026-09-25",
+ "kind": "static",
+ "geo": "DE",
+ "lang": "de",
+ "name": "DE кредиты · угол «пенсия 60+» · РК статика ×4",
+ "angle": "Узнать, до какого возраста банки в Германии реально дают кредит и какую сумму можно взять с пенсией в 2026.",
+ "article": {
+  "id": "B",
+  "title": "Kredit mit Rente 2026: Welche Summe ist realistisch und worauf schaut die Bank?",
+  "titleRu": "Кредит с пенсией 2026: какая сумма реальна и на что смотрит банк?",
+  "provider": "IRONFLI (пенсионерские статьи платили именно там)."
+ },
+ "payoutCheck": "Статья B новая (пишет копирайтер), в кабинете её ещё нет — выплату за 2 последних закрытых дня проверить нельзя. Проверить после первого закрытого дня. Ориентир маркетолога: похожая AT-статья 23382 (пенсионеры) за 19–22.09 — $0 на $2.07 спенда, мало для вывода.",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). У маркетолога план: FB. Формат — статика 1:1 / 4:5 (60+ на FB; видео и статику в одной РК не смешиваем). FB IRONFLI $5–10/день. Эти 4 — статика; видео к углу — отдельной РК/карточкой, не смешивать.",
+ "creatives": [
+  {
+   "id": "DEK2-1",
+   "file": "cr/DE-kredit-angle2-2026-09-25/DEK2-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото: пара ~70 в шребергартене (домик, подсолнухи), мужчина читает письмо; кремовая полоса с хуком serif сверху, белая плашка с подстрокой и кнопкой снизу",
+   "concept": "Визуал 2a: пенсионеры на садовом участке с письмом. Хук «Kein Gesetz verbietet einen Kredit mit 70. Warum sagen Banken trotzdem so oft Nein?»",
+   "primaryText": "Kein Gesetz verbietet einen Kredit mit 70. Warum sagen Banken trotzdem so oft Nein? Was Banken bei Rentnern wirklich prüfen – Stand 2026.",
+   "headline": "Kredit mit Rente 2026: Welche Summe ist realistisch und worauf schaut die Bank?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a2-1.png; тексты — de5/hooks.json angle2 n1 (копирайтер)",
+   "note": "Хук и подстрока копирайтера дословно, «mit 70.» выделено. Отличается от прошлых DE/AT-пенсионных (там дома за столом/в кресле). Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK2-2",
+   "file": "cr/DE-kredit-angle2-2026-09-25/DEK2-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · макро: морщинистые руки ~75 держат очки над размытым документом, калькулятор без цифр, чай; тёмный верх с serif-хуком, золотая кнопка",
+   "concept": "Визуал 2b: руки, очки, документ — «банк считает не так, как вы думаете».",
+   "primaryText": "Wie viel Kredit ist mit der Rente drin? Die Bank rechnet anders, als viele denken. Netto-Rente, Ausgaben, Laufzeit: So entsteht die mögliche Summe.",
+   "headline": "Kredit mit Rente 2026: Welche Summe ist realistisch und worauf schaut die Bank?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a2-2.png; тексты — de5/hooks.json angle2 n2 (копирайтер)",
+   "note": "Кадр сдвинут вниз, верх достроен тёмным фоном под текст. Текст документа размыт, цифр нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK2-3",
+   "file": "cr/DE-kredit-angle2-2026-09-25/DEK2-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · формат G: винтажная рамка-карточка слева поверх тёплого фото бабушки ~76 с чаем в зимнем саду; шапка хука капсом serif, бордовая кнопка",
+   "concept": "Визуал 2c: карточка «KREDIT MIT RENTE 2026» в рамке + «Welche Summe ist realistisch…». Хук = заголовок статьи B.",
+   "primaryText": "60+, 70+, 75+: Was sich bei der Bank mit dem Alter ändert.",
+   "headline": "Kredit mit Rente 2026: Welche Summe ist realistisch und worauf schaut die Bank?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a2-3.png; тексты — de5/hooks.json angle2 n3 (копирайтер)",
+   "note": "Часть хука до двоеточия набрана капсом (текст не менялся). Рамка нарисована Pillow, без гербов и госсимволики. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK2-4",
+   "file": "cr/DE-kredit-angle2-2026-09-25/DEK2-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото: клубничный торт со свечами-цифрами «70», кофейный сервиз, руки пожилого мужчины; тёмно-синяя полоса с хуком сверху, «70» жёлтым, жёлтая кнопка",
+   "concept": "Визуал 2d (улучшен: вместо голой типографики «70?» — торт со свечами «70»). Хук «Mit 70 noch einen Kredit? Entscheidend ist nicht das Alter von heute.»",
+   "primaryText": "Mit 70 noch einen Kredit? Entscheidend ist nicht das Alter von heute. Sondern das Alter bei der letzten Rate. Was das für die Summe bedeutet.",
+   "headline": "Kredit mit Rente 2026: Welche Summe ist realistisch und worauf schaut die Bank?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a2-4.png; тексты — de5/hooks.json angle2 n4 (копирайтер)",
+   "note": "Свечи «70» — единственные цифры, нарисованные моделью (проверено: читаются как 70). Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  }
+ ]
+}

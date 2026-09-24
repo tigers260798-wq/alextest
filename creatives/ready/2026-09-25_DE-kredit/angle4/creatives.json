@@ -1,0 +1,66 @@
+{
+ "docId": "DE-kredit-angle4-2026-09-25",
+ "kind": "static",
+ "geo": "DE",
+ "lang": "de",
+ "name": "DE кредиты · угол «до зарплаты» · РК статика ×4",
+ "angle": "Узнать, как немцы перекрывают внезапную дыру за 1–2 недели до зарплаты: Dispo, мини-кредит или рассрочка, что быстрее приходит на счёт и что дешевле.",
+ "article": {
+  "id": "C",
+  "title": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+  "titleRu": "Счёт в минусе: овердрафт, срочный кредит или перекредитование — что реально помогает в 2026",
+  "provider": "IRONFLI (статья C)."
+ },
+ "payoutCheck": "Статья C новая (пишет копирайтер), в кабинете её ещё нет — выплату за 2 последних закрытых дня проверить нельзя. Проверить после первого закрытого дня.",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). У маркетолога план: TT + FB. Формат — видео 9:16. TT IRONFLI $20/день; FB IRONFLI $5/день. Эти 4 — статика; видео к углу — отдельной РК/карточкой, не смешивать.",
+ "creatives": [
+  {
+   "id": "DEK4-1",
+   "file": "cr/DE-kredit-angle4-2026-09-25/DEK4-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото: ванная, стиральная машина с открытым люком и вода на полу, женщина ~33 с телефоном у уха; хук чёрным по жёлтым маркерным полосам справа сверху, чёрная кнопка",
+   "concept": "Визуал 4a: стиралка сломалась за 12 дней до зарплаты.",
+   "primaryText": "Noch 12 Tage bis zum Gehalt – und die Waschmaschine gibt den Geist auf. Und jetzt? Dispo, Minikredit oder Ratenzahlung: was schneller hilft und was mehr kostet.",
+   "headline": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a4-1.png; тексты — de5/hooks.json angle4 n1 (копирайтер)",
+   "note": "Хук и подстрока копирайтера дословно, «Noch 12 Tage» красным. Машина без логотипа. Боль через ситуацию, без «Schulden/pleite». Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK4-2",
+   "file": "cr/DE-kredit-angle4-2026-09-25/DEK4-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото: просёлочная дорога осенью, машина с открытым капотом и аварийным знаком, мужчина ~40 смотрит в камеру с телефоном; хук — два чат-пузыря (серый/синий) в небе",
+   "concept": "Визуал 4b: поломка на трассе — «Die Werkstatt will 900 €. Das Gehalt kommt erst in zwei Wochen.»",
+   "primaryText": "Die Werkstatt will 900 €. Das Gehalt kommt erst in zwei Wochen. Drei Wege, die Lücke zu überbrücken – und was jeder davon am Ende kostet.",
+   "headline": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a4-2.png; тексты — de5/hooks.json angle4 n2 (копирайтер)",
+   "note": "Хук разделён на два сообщения-пузыря (текст не менялся). «900 €» — счёт мастерской, не цена кредита. Машина без номера и эмблемы. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK4-3",
+   "file": "cr/DE-kredit-angle4-2026-09-25/DEK4-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · Pillow: настенный календарь «September 2026», дни 1–13 зачёркнуты красным маркером, 25 обведено зелёным; хук = заголовок статьи C сверху, подстрока от руки на жёлтом стикере",
+   "concept": "Визуал 4c: календарь до зарплаты — «Noch 12 Tage bis zum 25.?»",
+   "primaryText": "Noch 12 Tage bis zum 25.? Welcher Weg wie schnell hilft – und was er kostet.",
+   "headline": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "Pillow; основа de5/base/a4-3.png; тексты — de5/hooks.json angle4 n3 (копирайтер)",
+   "note": "«Sofortkredit» на картинке (из заголовка статьи C): инструкция запрещает «сразу/быстрый» рядом с «кредит» (Google «Promising loans»), но это заголовок статьи и сравнение, не обещание; если Google/FB отклонит — заменить на «Minikredit». Решает главный. «Konto im Minus» — зона Personal hardship у Meta (маркетолог: риск средний–высокий). Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK4-4",
+   "file": "cr/DE-kredit-angle4-2026-09-25/DEK4-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · ночное фото: молодой отец ~30 в профиль на тёмной кухне, лицо в свете телефона, на холодильнике детские рисунки; крупный белый хук с голубым свечением снизу, голубая кнопка",
+   "concept": "Визуал 4d: отец ночью на кухне — «Benötigen Sie vorübergehend Geld?»",
+   "primaryText": "Benötigen Sie vorübergehend Geld? Dispo, Minikredit oder Ratenzahlung – der Unterschied ist größer, als man denkt.",
+   "headline": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a4-4.png; тексты — de5/hooks.json angle4 n4 (копирайтер)",
+   "note": "Запасной хук копирайтера, если Meta сочтёт прямой вопрос указанием на финансовое положение: «Wenn vorübergehend Geld fehlt: Dispo, Minikredit oder Ratenzahlung?» (рус.: «Если на время не хватает денег: овердрафт, мини-кредит или рассрочка?»). Экран телефона не виден. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  }
+ ]
+}

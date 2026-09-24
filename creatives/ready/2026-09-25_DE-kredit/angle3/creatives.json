@@ -1,0 +1,66 @@
+{
+ "docId": "DE-kredit-angle3-2026-09-25",
+ "kind": "static",
+ "geo": "DE",
+ "lang": "de",
+ "name": "DE кредиты · угол «кредитка на 5 000» · РК статика ×4",
+ "angle": "Узнать, кому в Германии дают кредитку с лимитом 5 000 € и почему у двоих с одной и той же картой лимит отличается в 10 раз.",
+ "article": {
+  "id": "A",
+  "title": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+  "titleRu": "Цифровые мини-кредиты 2026: мини-кредит в приложении или кредитка с лимитом 5 000 €?",
+  "provider": "VISYMO — основной (locale de_DE, выплата по ключам видна); IRONFLI — 1 РК на статью A сплитом."
+ },
+ "payoutCheck": "Статья A новая (пишет копирайтер), в кабинете её ещё нет — выплату за 2 последних закрытых дня проверить нельзя. Проверить после первого закрытого дня.",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). У маркетолога план: FB. Формат — статика. FB VISYMO $5/день + FB IRONFLI $5/день. TT — после первых выплат. Эти 4 — статика; видео к углу — отдельной РК/карточкой, не смешивать.",
+ "creatives": [
+  {
+   "id": "DEK3-1",
+   "file": "cr/DE-kredit-angle3-2026-09-25/DEK3-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · 3D-рендер: две одинаковые пустые карты, перед левой 3 монеты, перед правой высокая стопка; бирки «Er: 500 € Limit» / «Sie: 5.000 €» над картами, «Warum?» коралловым",
+   "concept": "Визуал 3a (улучшен: вместо мрамора — 3D с монетами, разница лимита видна без слов).",
+   "primaryText": "Gleiche Karte, gleiche Bank. Er: 500 € Limit. Sie: 5.000 €. Warum? Wovon der Verfügungsrahmen einer Kreditkarte wirklich abhängt.",
+   "headline": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a3-1.png; тексты — de5/hooks.json angle3 n1 (копирайтер)",
+   "note": "Хук разбит на три места: «Gleiche Karte, gleiche Bank.» сверху, бирки над картами (точки в конце бирок убраны), «Warum?» внизу. Карты без логотипов и чипа. Сумма «5.000 €» на креативе — при отклонении убрать первой (прежние правила кредитов суммы запрещали; оставлено по слову владельца о кликбейте 24.09). Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK3-2",
+   "file": "cr/DE-kredit-angle3-2026-09-25/DEK3-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото в бордовой рамке-паспарту: женщина ~42 в тренче на ресепшене отеля протягивает тёмную карту без логотипа, чемодан; хук сверху, подстрока и кнопка снизу",
+   "concept": "Визуал 3b: отель блокирует 800 € на карте — и лимита не хватает.",
+   "primaryText": "Das Hotel blockiert 800 € auf der Karte – und plötzlich reicht das Limit nicht. Wie hoch der Kartenrahmen sein sollte – und wie man ihn erhöht.",
+   "headline": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a3-2.png; тексты — de5/hooks.json angle3 n2 (копирайтер)",
+   "note": "«800 €» — сумма блокировки в отеле, не цена кредита. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK3-3",
+   "file": "cr/DE-kredit-angle3-2026-09-25/DEK3-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото: касса супермаркета, терминал с красным крестом (без надписей), корзина с продуктами, удивлённый мужчина ~35; хук в карточке-уведомлении слева сверху, красная кнопка",
+   "concept": "Визуал 3c: момент отказа на кассе — «„Zahlung abgelehnt“ – obwohl auf dem Konto genug Geld ist?»",
+   "primaryText": "„Zahlung abgelehnt“ – obwohl auf dem Konto genug Geld ist? Warum das Kartenlimit oft früher erreicht ist, als man denkt.",
+   "headline": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a3-3.png; тексты — de5/hooks.json angle3 n3 (копирайтер)",
+   "note": "Слово «Abgelehnt» не на экране терминала, а в тексте уведомления; у уведомления нет названия банка/приложения. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK3-4",
+   "file": "cr/DE-kredit-angle3-2026-09-25/DEK3-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · флэтлей на голубом: белая карта без логотипа, очки, соломенная шляпа, ключ, кошелёк, ракушка, самолётик; хук капсом (Anton) на расширенном синем поле",
+   "concept": "Визуал 3d: отпуск и карта — «запас на поездку». Хук = заголовок статьи A.",
+   "primaryText": "Vor der nächsten Reise: zwei Wege zu mehr Spielraum und ihre echten Kosten.",
+   "headline": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a3-4.png; тексты — de5/hooks.json angle3 n4 (копирайтер)",
+   "note": "Фото уменьшено до 80% и вписано в синий фон того же цвета. Без паспорта и эмблем. Сумма «5.000 €» на креативе — при отклонении убрать первой (прежние правила кредитов суммы запрещали; оставлено по слову владельца о кликбейте 24.09). Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  }
+ ]
+}
