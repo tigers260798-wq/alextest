@@ -1,0 +1,8629 @@
+{
+ "meta": {
+  "generatedAt": "2026-09-24T18:37Z",
+  "period": "2026-06-01 — 2026-09-24 (UTC-дни трекера; 24.09 неполный)",
+  "source": "Roots MCP: get_performance_rows groupBy=campaign по каждому дню (116 дней; 99.8 проц. спенда разнесено по РК, остаток — хвост РК с копеечным спендом, учтён в итогах по дням через totalRow), get_adgroup_stats 01.06–24.09 (1447 адгрупп со спендом ≥ 0.5: аккаунт, провайдер, гео, статус), get_launch_activity, get_performance_daily, groupBy=article по окнам; панель: article_drafts, said_log, top_buyers.",
+  "roiDefinition": "ROI и прибыль везде чистые: revenueAdjusted = выручка × 0.97, profitAdjusted = revenueAdjusted − спенд − плата за гео (как в правилах).",
+  "caveats": [
+   "Выручка RSOC доезжает до D+3: 22–24.09 занижены, выводы по пакетам 23–24.09 преждевременны.",
+   "История бюджетов и бида в трекере не хранится: «бюджет $5 против $10–20» — прокси по медиане дневного спенда РК; РК на $10+ получали подъём, потому что уже были в плюсе (эффект отбора).",
+   "Содержание крео (превью/текст) в трекере нет; «видео/статика» на FB — по наличию просмотров видео.",
+   "Сигналы правил считаются по финальной выручке закрытых дней — это мягче, чем реальное внутридневное решение.",
+   "Сумма по adgroup_stats ($33.6k) выше суммы по performance ($31.5k) — другой учёт дней/аккаунтов; деньги брались из performance, adgroup_stats — только для аккаунта/провайдера/гео."
+  ],
+  "counts": {
+   "campaignsWithSpend": 1346,
+   "launchedInPanel": 1951,
+   "bundles": 189
+  }
+ },
+ "dynamics_monthly": [
+  {
+   "period": "2026-06",
+   "days": 30,
+   "spend": 4331.58,
+   "revenueRaw": 5088.35,
+   "revenueNet": 4935.7,
+   "profitNet": 604.12,
+   "roiNet": 13.9,
+   "profitPerDay": 20.14,
+   "spendPerDay": 144.39,
+   "clicks": 54147,
+   "leads": 4973,
+   "cpc": 0.08,
+   "rpcNet": 0.091,
+   "cpl": 0.871,
+   "rplNet": 0.992,
+   "cpm": 4.83,
+   "ctr": 6.04,
+   "activeRK": 178,
+   "avgActiveRKperDay": 25.5,
+   "newRKwithSpend": 173,
+   "newRKlaunched_panel": 361,
+   "creativesLaunched": 935,
+   "creativesUniq": 443,
+   "fbSpend": 4000.35,
+   "fbRoi": 12.7,
+   "ttSpend": 331.23,
+   "ttRoi": 29.2,
+   "ttShare": 7.6
+  },
+  {
+   "period": "2026-07",
+   "days": 31,
+   "spend": 6976.69,
+   "revenueRaw": 9169.87,
+   "revenueNet": 8894.77,
+   "profitNet": 1865.4,
+   "roiNet": 26.7,
+   "profitPerDay": 60.17,
+   "spendPerDay": 225.05,
+   "clicks": 99781,
+   "leads": 12374,
+   "cpc": 0.07,
+   "rpcNet": 0.089,
+   "cpl": 0.564,
+   "rplNet": 0.719,
+   "cpm": 2.9,
+   "ctr": 4.14,
+   "activeRK": 286,
+   "avgActiveRKperDay": 62.7,
+   "newRKwithSpend": 304,
+   "newRKlaunched_panel": 403,
+   "creativesLaunched": 1625,
+   "creativesUniq": 1043,
+   "fbSpend": 5209.15,
+   "fbRoi": 27.0,
+   "ttSpend": 1767.54,
+   "ttRoi": 26.0,
+   "ttShare": 25.3
+  },
+  {
+   "period": "2026-08",
+   "days": 31,
+   "spend": 14062.34,
+   "revenueRaw": 17359.72,
+   "revenueNet": 16838.93,
+   "profitNet": 2696.15,
+   "roiNet": 19.2,
+   "profitPerDay": 86.97,
+   "spendPerDay": 453.62,
+   "clicks": 213288,
+   "leads": 26330,
+   "cpc": 0.066,
+   "rpcNet": 0.079,
+   "cpl": 0.534,
+   "rplNet": 0.64,
+   "cpm": 2.44,
+   "ctr": 3.7,
+   "activeRK": 685,
+   "avgActiveRKperDay": 126.8,
+   "newRKwithSpend": 571,
+   "newRKlaunched_panel": 840,
+   "creativesLaunched": 2878,
+   "creativesUniq": 1788,
+   "fbSpend": 8417.9,
+   "fbRoi": 16.9,
+   "ttSpend": 5594.46,
+   "ttRoi": 22.6,
+   "ttShare": 39.9
+  },
+  {
+   "period": "2026-09",
+   "days": 24,
+   "spend": 6200.25,
+   "revenueRaw": 7855.83,
+   "revenueNet": 7620.16,
+   "profitNet": 1370.43,
+   "roiNet": 22.1,
+   "profitPerDay": 57.1,
+   "spendPerDay": 258.34,
+   "clicks": 151198,
+   "leads": 18341,
+   "cpc": 0.041,
+   "rpcNet": 0.05,
+   "cpl": 0.338,
+   "rplNet": 0.415,
+   "cpm": 3.1,
+   "ctr": 7.57,
+   "activeRK": 368,
+   "avgActiveRKperDay": 73.7,
+   "newRKwithSpend": 281,
+   "newRKlaunched_panel": 347,
+   "creativesLaunched": 1299,
+   "creativesUniq": 842,
+   "fbSpend": 4591.88,
+   "fbRoi": 29.9,
+   "ttSpend": 1605.46,
+   "ttRoi": -0.2,
+   "ttShare": 25.9
+  }
+ ],
+ "dynamics_weekly": [
+  {
+   "period": "нед. с 2026-06-01",
+   "days": 7,
+   "spend": 898.29,
+   "revenueRaw": 1117.13,
+   "revenueNet": 1083.62,
+   "profitNet": 185.33,
+   "roiNet": 20.6,
+   "profitPerDay": 26.48,
+   "spendPerDay": 128.33,
+   "clicks": 15926,
+   "leads": 1247,
+   "cpc": 0.056,
+   "rpcNet": 0.068,
+   "cpl": 0.72,
+   "rplNet": 0.869,
+   "cpm": 4.08,
+   "ctr": 7.24,
+   "activeRK": 27,
+   "avgActiveRKperDay": 14.1,
+   "newRKwithSpend": 13,
+   "newRKlaunched_panel": 7,
+   "creativesLaunched": 53,
+   "creativesUniq": 30,
+   "fbSpend": 898.29,
+   "fbRoi": 20.6,
+   "ttSpend": 0.0,
+   "ttRoi": null,
+   "ttShare": 0.0
+  },
+  {
+   "period": "нед. с 2026-06-08",
+   "days": 7,
+   "spend": 1395.37,
+   "revenueRaw": 1754.6,
+   "revenueNet": 1701.96,
+   "profitNet": 306.59,
+   "roiNet": 22.0,
+   "profitPerDay": 43.8,
+   "spendPerDay": 199.34,
+   "clicks": 19194,
+   "leads": 1805,
+   "cpc": 0.073,
+   "rpcNet": 0.089,
+   "cpl": 0.773,
+   "rplNet": 0.943,
+   "cpm": 5.04,
+   "ctr": 6.93,
+   "activeRK": 75,
+   "avgActiveRKperDay": 31.4,
+   "newRKwithSpend": 65,
+   "newRKlaunched_panel": 120,
+   "creativesLaunched": 357,
+   "creativesUniq": 162,
+   "fbSpend": 1395.37,
+   "fbRoi": 22.0,
+   "ttSpend": 0.0,
+   "ttRoi": null,
+   "ttShare": 0.0
+  },
+  {
+   "period": "нед. с 2026-06-15",
+   "days": 7,
+   "spend": 1664.49,
+   "revenueRaw": 1704.0,
+   "revenueNet": 1652.88,
+   "profitNet": -11.61,
+   "roiNet": -0.7,
+   "profitPerDay": -1.66,
+   "spendPerDay": 237.78,
+   "clicks": 16532,
+   "leads": 1521,
+   "cpc": 0.101,
+   "rpcNet": 0.1,
+   "cpl": 1.094,
+   "rplNet": 1.087,
+   "cpm": 8.74,
+   "ctr": 8.68,
+   "activeRK": 97,
+   "avgActiveRKperDay": 48.4,
+   "newRKwithSpend": 63,
+   "newRKlaunched_panel": 103,
+   "creativesLaunched": 288,
+   "creativesUniq": 59,
+   "fbSpend": 1664.49,
+   "fbRoi": -0.7,
+   "ttSpend": 0.0,
+   "ttRoi": null,
+   "ttShare": 0.0
+  },
+  {
+   "period": "нед. с 2026-06-22",
+   "days": 7,
+   "spend": 250.91,
+   "revenueRaw": 348.03,
+   "revenueNet": 337.59,
+   "profitNet": 86.68,
+   "roiNet": 34.5,
+   "profitPerDay": 12.38,
+   "spendPerDay": 35.84,
+   "clicks": 1523,
+   "leads": 264,
+   "cpc": 0.165,
+   "rpcNet": 0.222,
+   "cpl": 0.95,
+   "rplNet": 1.279,
+   "cpm": 1.54,
+   "ctr": 0.93,
+   "activeRK": 28,
+   "avgActiveRKperDay": 11.0,
+   "newRKwithSpend": 32,
+   "newRKlaunched_panel": 123,
+   "creativesLaunched": 225,
+   "creativesUniq": 180,
+   "fbSpend": 19.64,
+   "fbRoi": -75.3,
+   "ttSpend": 231.27,
+   "ttRoi": 43.9,
+   "ttShare": 92.2
+  },
+  {
+   "period": "нед. с 2026-06-29",
+   "days": 7,
+   "spend": 552.96,
+   "revenueRaw": 931.21,
+   "revenueNet": 903.27,
+   "profitNet": 348.34,
+   "roiNet": 63.0,
+   "profitPerDay": 49.76,
+   "spendPerDay": 78.99,
+   "clicks": 4891,
+   "leads": 650,
+   "cpc": 0.113,
+   "rpcNet": 0.185,
+   "cpl": 0.851,
+   "rplNet": 1.39,
+   "cpm": 2.54,
+   "ctr": 2.25,
+   "activeRK": 32,
+   "avgActiveRKperDay": 17.0,
+   "newRKwithSpend": 14,
+   "newRKlaunched_panel": 25,
+   "creativesLaunched": 100,
+   "creativesUniq": 100,
+   "fbSpend": 210.08,
+   "fbRoi": 135.4,
+   "ttSpend": 342.88,
+   "ttRoi": 18.7,
+   "ttShare": 62.0
+  },
+  {
+   "period": "нед. с 2026-07-06",
+   "days": 7,
+   "spend": 1296.41,
+   "revenueRaw": 1752.7,
+   "revenueNet": 1700.12,
+   "profitNet": 391.58,
+   "roiNet": 30.2,
+   "profitPerDay": 55.94,
+   "spendPerDay": 185.2,
+   "clicks": 13815,
+   "leads": 1681,
+   "cpc": 0.094,
+   "rpcNet": 0.123,
+   "cpl": 0.771,
+   "rplNet": 1.011,
+   "cpm": 2.34,
+   "ctr": 2.49,
+   "activeRK": 101,
+   "avgActiveRKperDay": 47.0,
+   "newRKwithSpend": 71,
+   "newRKlaunched_panel": 71,
+   "creativesLaunched": 302,
+   "creativesUniq": 236,
+   "fbSpend": 936.84,
+   "fbRoi": 29.1,
+   "ttSpend": 359.57,
+   "ttRoi": 33.0,
+   "ttShare": 27.7
+  },
+  {
+   "period": "нед. с 2026-07-13",
+   "days": 7,
+   "spend": 1329.06,
+   "revenueRaw": 1925.48,
+   "revenueNet": 1867.72,
+   "profitNet": 526.3,
+   "roiNet": 39.6,
+   "profitPerDay": 75.19,
+   "spendPerDay": 189.87,
+   "clicks": 15815,
+   "leads": 1902,
+   "cpc": 0.084,
+   "rpcNet": 0.118,
+   "cpl": 0.699,
+   "rplNet": 0.982,
+   "cpm": 3.08,
+   "ctr": 3.66,
+   "activeRK": 116,
+   "avgActiveRKperDay": 65.4,
+   "newRKwithSpend": 47,
+   "newRKlaunched_panel": 55,
+   "creativesLaunched": 219,
+   "creativesUniq": 115,
+   "fbSpend": 950.09,
+   "fbRoi": 40.9,
+   "ttSpend": 378.97,
+   "ttRoi": 36.2,
+   "ttShare": 28.5
+  },
+  {
+   "period": "нед. с 2026-07-20",
+   "days": 7,
+   "spend": 2139.85,
+   "revenueRaw": 2621.5,
+   "revenueNet": 2542.85,
+   "profitNet": 387.0,
+   "roiNet": 18.1,
+   "profitPerDay": 55.29,
+   "spendPerDay": 305.69,
+   "clicks": 35326,
+   "leads": 4561,
+   "cpc": 0.061,
+   "rpcNet": 0.072,
+   "cpl": 0.469,
+   "rplNet": 0.558,
+   "cpm": 3.52,
+   "ctr": 5.81,
+   "activeRK": 124,
+   "avgActiveRKperDay": 79.6,
+   "newRKwithSpend": 36,
+   "newRKlaunched_panel": 29,
+   "creativesLaunched": 113,
+   "creativesUniq": 41,
+   "fbSpend": 1762.74,
+   "fbRoi": 18.7,
+   "ttSpend": 377.11,
+   "ttRoi": 15.0,
+   "ttShare": 17.6
+  },
+  {
+   "period": "нед. с 2026-07-27",
+   "days": 7,
+   "spend": 2738.28,
+   "revenueRaw": 3274.51,
+   "revenueNet": 3176.27,
+   "profitNet": 422.58,
+   "roiNet": 15.4,
+   "profitPerDay": 60.37,
+   "spendPerDay": 391.18,
+   "clicks": 44828,
+   "leads": 5441,
+   "cpc": 0.061,
+   "rpcNet": 0.071,
+   "cpl": 0.503,
+   "rplNet": 0.584,
+   "cpm": 2.52,
+   "ctr": 4.12,
+   "activeRK": 221,
+   "avgActiveRKperDay": 110.7,
+   "newRKwithSpend": 179,
+   "newRKlaunched_panel": 287,
+   "creativesLaunched": 1147,
+   "creativesUniq": 723,
+   "fbSpend": 2005.06,
+   "fbRoi": 15.5,
+   "ttSpend": 733.22,
+   "ttRoi": 15.2,
+   "ttShare": 26.8
+  },
+  {
+   "period": "нед. с 2026-08-03",
+   "days": 7,
+   "spend": 3553.86,
+   "revenueRaw": 3965.45,
+   "revenueNet": 3846.49,
+   "profitNet": 270.25,
+   "roiNet": 7.6,
+   "profitPerDay": 38.61,
+   "spendPerDay": 507.69,
+   "clicks": 53970,
+   "leads": 6098,
+   "cpc": 0.066,
+   "rpcNet": 0.071,
+   "cpl": 0.583,
+   "rplNet": 0.631,
+   "cpm": 2.56,
+   "ctr": 3.89,
+   "activeRK": 246,
+   "avgActiveRKperDay": 138.6,
+   "newRKwithSpend": 99,
+   "newRKlaunched_panel": 135,
+   "creativesLaunched": 476,
+   "creativesUniq": 215,
+   "fbSpend": 2583.72,
+   "fbRoi": 1.5,
+   "ttSpend": 961.43,
+   "ttRoi": 24.5,
+   "ttShare": 27.1
+  },
+  {
+   "period": "нед. с 2026-08-10",
+   "days": 7,
+   "spend": 3270.29,
+   "revenueRaw": 4319.96,
+   "revenueNet": 4190.36,
+   "profitNet": 902.35,
+   "roiNet": 27.6,
+   "profitPerDay": 128.91,
+   "spendPerDay": 467.18,
+   "clicks": 48854,
+   "leads": 5908,
+   "cpc": 0.067,
+   "rpcNet": 0.086,
+   "cpl": 0.554,
+   "rplNet": 0.709,
+   "cpm": 2.2,
+   "ctr": 3.28,
+   "activeRK": 302,
+   "avgActiveRKperDay": 126.7,
+   "newRKwithSpend": 178,
+   "newRKlaunched_panel": 279,
+   "creativesLaunched": 949,
+   "creativesUniq": 537,
+   "fbSpend": 1948.13,
+   "fbRoi": 28.7,
+   "ttSpend": 1304.81,
+   "ttRoi": 26.0,
+   "ttShare": 40.1
+  },
+  {
+   "period": "нед. с 2026-08-17",
+   "days": 7,
+   "spend": 2849.3,
+   "revenueRaw": 3211.41,
+   "revenueNet": 3115.07,
+   "profitNet": 252.72,
+   "roiNet": 8.9,
+   "profitPerDay": 36.1,
+   "spendPerDay": 407.04,
+   "clicks": 35688,
+   "leads": 4546,
+   "cpc": 0.08,
+   "rpcNet": 0.087,
+   "cpl": 0.627,
+   "rplNet": 0.685,
+   "cpm": 2.61,
+   "ctr": 3.27,
+   "activeRK": 291,
+   "avgActiveRKperDay": 130.6,
+   "newRKwithSpend": 165,
+   "newRKlaunched_panel": 252,
+   "creativesLaunched": 707,
+   "creativesUniq": 393,
+   "fbSpend": 1497.93,
+   "fbRoi": -2.8,
+   "ttSpend": 1337.07,
+   "ttRoi": 21.9,
+   "ttShare": 47.2
+  },
+  {
+   "period": "нед. с 2026-08-24",
+   "days": 7,
+   "spend": 2909.15,
+   "revenueRaw": 3977.06,
+   "revenueNet": 3857.75,
+   "profitNet": 929.22,
+   "roiNet": 31.9,
+   "profitPerDay": 132.75,
+   "spendPerDay": 415.59,
+   "clicks": 47315,
+   "leads": 6347,
+   "cpc": 0.061,
+   "rpcNet": 0.082,
+   "cpl": 0.458,
+   "rplNet": 0.608,
+   "cpm": 2.59,
+   "ctr": 4.22,
+   "activeRK": 174,
+   "avgActiveRKperDay": 111.7,
+   "newRKwithSpend": 71,
+   "newRKlaunched_panel": 99,
+   "creativesLaunched": 417,
+   "creativesUniq": 398,
+   "fbSpend": 1466.84,
+   "fbRoi": 38.0,
+   "ttSpend": 1432.69,
+   "ttRoi": 25.5,
+   "ttShare": 49.4
+  },
+  {
+   "period": "нед. с 2026-08-31",
+   "days": 7,
+   "spend": 3099.11,
+   "revenueRaw": 4141.23,
+   "revenueNet": 4016.99,
+   "profitNet": 899.77,
+   "roiNet": 29.0,
+   "profitPerDay": 128.54,
+   "spendPerDay": 442.73,
+   "clicks": 85481,
+   "leads": 8691,
+   "cpc": 0.036,
+   "rpcNet": 0.047,
+   "cpl": 0.357,
+   "rplNet": 0.462,
+   "cpm": 2.45,
+   "ctr": 6.76,
+   "activeRK": 212,
+   "avgActiveRKperDay": 113.4,
+   "newRKwithSpend": 96,
+   "newRKlaunched_panel": 117,
+   "creativesLaunched": 490,
+   "creativesUniq": 406,
+   "fbSpend": 1914.17,
+   "fbRoi": 43.6,
+   "ttSpend": 1184.94,
+   "ttRoi": 5.6,
+   "ttShare": 38.2
+  },
+  {
+   "period": "нед. с 2026-09-07",
+   "days": 7,
+   "spend": 1771.56,
+   "revenueRaw": 2133.58,
+   "revenueNet": 2069.57,
+   "profitNet": 281.7,
+   "roiNet": 15.9,
+   "profitPerDay": 40.24,
+   "spendPerDay": 253.08,
+   "clicks": 39554,
+   "leads": 4824,
+   "cpc": 0.045,
+   "rpcNet": 0.052,
+   "cpl": 0.367,
+   "rplNet": 0.429,
+   "cpm": 3.29,
+   "ctr": 7.35,
+   "activeRK": 190,
+   "avgActiveRKperDay": 77.3,
+   "newRKwithSpend": 84,
+   "newRKlaunched_panel": 97,
+   "creativesLaunched": 270,
+   "creativesUniq": 184,
+   "fbSpend": 1288.7,
+   "fbRoi": 24.7,
+   "ttSpend": 480.8,
+   "ttRoi": -7.2,
+   "ttShare": 27.2
+  },
+  {
+   "period": "нед. с 2026-09-14",
+   "days": 7,
+   "spend": 1412.0,
+   "revenueRaw": 1830.57,
+   "revenueNet": 1775.65,
+   "profitNet": 351.93,
+   "roiNet": 24.9,
+   "profitPerDay": 50.28,
+   "spendPerDay": 201.71,
+   "clicks": 33393,
+   "leads": 5534,
+   "cpc": 0.042,
+   "rpcNet": 0.053,
+   "cpl": 0.255,
+   "rplNet": 0.321,
+   "cpm": 4.1,
+   "ctr": 9.69,
+   "activeRK": 148,
+   "avgActiveRKperDay": 56.4,
+   "newRKwithSpend": 81,
+   "newRKlaunched_panel": 101,
+   "creativesLaunched": 377,
+   "creativesUniq": 197,
+   "fbSpend": 1271.29,
+   "fbRoi": 28.3,
+   "ttSpend": 140.41,
+   "ttRoi": -5.2,
+   "ttShare": 9.9
+  },
+  {
+   "period": "нед. с 2026-09-21",
+   "days": 4,
+   "spend": 439.97,
+   "revenueRaw": 465.35,
+   "revenueNet": 451.39,
+   "profitNet": 5.37,
+   "roiNet": 1.2,
+   "profitPerDay": 1.34,
+   "spendPerDay": 109.99,
+   "clicks": 6309,
+   "leads": 998,
+   "cpc": 0.07,
+   "rpcNet": 0.072,
+   "cpl": 0.441,
+   "rplNet": 0.452,
+   "cpm": 5.18,
+   "ctr": 7.43,
+   "activeRK": 85,
+   "avgActiveRKperDay": 38.5,
+   "newRKwithSpend": 35,
+   "newRKlaunched_panel": 51,
+   "creativesLaunched": 247,
+   "creativesUniq": 140,
+   "fbSpend": 405.9,
+   "fbRoi": 8.4,
+   "ttSpend": 33.52,
+   "ttRoi": -84.4,
+   "ttShare": 7.6
+  }
+ ],
+ "dynamics_total": {
+  "period": "01.06–24.09",
+  "days": 116,
+  "spend": 31570.86,
+  "revenueRaw": 39473.77,
+  "revenueNet": 38289.56,
+  "profitNet": 6536.1,
+  "roiNet": 20.7,
+  "profitPerDay": 56.35,
+  "spendPerDay": 272.16,
+  "clicks": 518414,
+  "leads": 62018,
+  "cpc": 0.061,
+  "rpcNet": 0.074,
+  "cpl": 0.509,
+  "rplNet": 0.617,
+  "cpm": 2.85,
+  "ctr": 4.68,
+  "activeRK": 1234,
+  "avgActiveRKperDay": 72.5,
+  "newRKwithSpend": 1329,
+  "newRKlaunched_panel": 1951,
+  "creativesLaunched": 6737,
+  "creativesUniq": 4116,
+  "fbSpend": 22219.28,
+  "fbRoi": 21.2,
+  "ttSpend": 9298.69,
+  "ttRoi": 19.5,
+  "ttShare": 29.5
+ },
+ "dynamics_daily": [
+  {
+   "day": "2026-06-01",
+   "spend": 120.09,
+   "profitNet": -4.42,
+   "roiNet": -3.7,
+   "activeRK": 19,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-02",
+   "spend": 99.96,
+   "profitNet": 41.16,
+   "roiNet": 41.2,
+   "activeRK": 14,
+   "launched": 1
+  },
+  {
+   "day": "2026-06-03",
+   "spend": 140.74,
+   "profitNet": 27.01,
+   "roiNet": 19.2,
+   "activeRK": 13,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-04",
+   "spend": 197.18,
+   "profitNet": 26.1,
+   "roiNet": 13.2,
+   "activeRK": 12,
+   "launched": 1
+  },
+  {
+   "day": "2026-06-05",
+   "spend": 125.87,
+   "profitNet": 29.87,
+   "roiNet": 23.7,
+   "activeRK": 16,
+   "launched": 5
+  },
+  {
+   "day": "2026-06-06",
+   "spend": 125.2,
+   "profitNet": 26.91,
+   "roiNet": 21.5,
+   "activeRK": 14,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-07",
+   "spend": 89.25,
+   "profitNet": 38.69,
+   "roiNet": 43.4,
+   "activeRK": 11,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-08",
+   "spend": 263.96,
+   "profitNet": 30.93,
+   "roiNet": 11.7,
+   "activeRK": 14,
+   "launched": 1
+  },
+  {
+   "day": "2026-06-09",
+   "spend": 159.52,
+   "profitNet": 29.37,
+   "roiNet": 18.4,
+   "activeRK": 24,
+   "launched": 29
+  },
+  {
+   "day": "2026-06-10",
+   "spend": 134.56,
+   "profitNet": 22.29,
+   "roiNet": 16.6,
+   "activeRK": 25,
+   "launched": 24
+  },
+  {
+   "day": "2026-06-11",
+   "spend": 162.74,
+   "profitNet": 67.5,
+   "roiNet": 41.5,
+   "activeRK": 28,
+   "launched": 35
+  },
+  {
+   "day": "2026-06-12",
+   "spend": 204.12,
+   "profitNet": 51.67,
+   "roiNet": 25.3,
+   "activeRK": 43,
+   "launched": 19
+  },
+  {
+   "day": "2026-06-13",
+   "spend": 254.37,
+   "profitNet": -6.19,
+   "roiNet": -2.4,
+   "activeRK": 53,
+   "launched": 10
+  },
+  {
+   "day": "2026-06-14",
+   "spend": 216.1,
+   "profitNet": 111.02,
+   "roiNet": 51.4,
+   "activeRK": 33,
+   "launched": 2
+  },
+  {
+   "day": "2026-06-15",
+   "spend": 246.09,
+   "profitNet": 64.67,
+   "roiNet": 26.3,
+   "activeRK": 33,
+   "launched": 17
+  },
+  {
+   "day": "2026-06-16",
+   "spend": 233.62,
+   "profitNet": 35.78,
+   "roiNet": 15.3,
+   "activeRK": 31,
+   "launched": 25
+  },
+  {
+   "day": "2026-06-17",
+   "spend": 265.12,
+   "profitNet": -21.29,
+   "roiNet": -8.0,
+   "activeRK": 47,
+   "launched": 16
+  },
+  {
+   "day": "2026-06-18",
+   "spend": 376.51,
+   "profitNet": -8.99,
+   "roiNet": -2.4,
+   "activeRK": 60,
+   "launched": 37
+  },
+  {
+   "day": "2026-06-19",
+   "spend": 396.89,
+   "profitNet": -41.63,
+   "roiNet": -10.5,
+   "activeRK": 83,
+   "launched": 8
+  },
+  {
+   "day": "2026-06-20",
+   "spend": 127.4,
+   "profitNet": -31.43,
+   "roiNet": -24.7,
+   "activeRK": 78,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-21",
+   "spend": 18.86,
+   "profitNet": -8.72,
+   "roiNet": -46.3,
+   "activeRK": 7,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-22",
+   "spend": 13.14,
+   "profitNet": -9.86,
+   "roiNet": -75.0,
+   "activeRK": 8,
+   "launched": 41
+  },
+  {
+   "day": "2026-06-23",
+   "spend": 19.04,
+   "profitNet": 16.5,
+   "roiNet": 86.7,
+   "activeRK": 6,
+   "launched": 10
+  },
+  {
+   "day": "2026-06-24",
+   "spend": 13.75,
+   "profitNet": 8.21,
+   "roiNet": 59.7,
+   "activeRK": 4,
+   "launched": 59
+  },
+  {
+   "day": "2026-06-25",
+   "spend": 65.54,
+   "profitNet": 10.41,
+   "roiNet": 15.9,
+   "activeRK": 15,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-26",
+   "spend": 43.97,
+   "profitNet": 19.5,
+   "roiNet": 44.3,
+   "activeRK": 14,
+   "launched": 13
+  },
+  {
+   "day": "2026-06-27",
+   "spend": 37.05,
+   "profitNet": 17.18,
+   "roiNet": 46.4,
+   "activeRK": 14,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-28",
+   "spend": 58.42,
+   "profitNet": 24.74,
+   "roiNet": 42.3,
+   "activeRK": 16,
+   "launched": 0
+  },
+  {
+   "day": "2026-06-29",
+   "spend": 59.49,
+   "profitNet": 11.13,
+   "roiNet": 18.7,
+   "activeRK": 17,
+   "launched": 8
+  },
+  {
+   "day": "2026-06-30",
+   "spend": 63.03,
+   "profitNet": 26.01,
+   "roiNet": 41.3,
+   "activeRK": 14,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-01",
+   "spend": 64.72,
+   "profitNet": 34.9,
+   "roiNet": 53.9,
+   "activeRK": 14,
+   "launched": 4
+  },
+  {
+   "day": "2026-07-02",
+   "spend": 63.87,
+   "profitNet": 83.47,
+   "roiNet": 130.7,
+   "activeRK": 17,
+   "launched": 5
+  },
+  {
+   "day": "2026-07-03",
+   "spend": 76.37,
+   "profitNet": 30.26,
+   "roiNet": 39.6,
+   "activeRK": 17,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-04",
+   "spend": 101.0,
+   "profitNet": 54.67,
+   "roiNet": 54.1,
+   "activeRK": 18,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-05",
+   "spend": 124.48,
+   "profitNet": 107.9,
+   "roiNet": 86.7,
+   "activeRK": 22,
+   "launched": 8
+  },
+  {
+   "day": "2026-07-06",
+   "spend": 109.32,
+   "profitNet": 52.01,
+   "roiNet": 47.6,
+   "activeRK": 29,
+   "launched": 5
+  },
+  {
+   "day": "2026-07-07",
+   "spend": 163.21,
+   "profitNet": 99.81,
+   "roiNet": 61.2,
+   "activeRK": 30,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-08",
+   "spend": 183.06,
+   "profitNet": 73.5,
+   "roiNet": 40.1,
+   "activeRK": 44,
+   "launched": 27
+  },
+  {
+   "day": "2026-07-09",
+   "spend": 192.02,
+   "profitNet": 32.05,
+   "roiNet": 16.7,
+   "activeRK": 53,
+   "launched": 11
+  },
+  {
+   "day": "2026-07-10",
+   "spend": 146.38,
+   "profitNet": 10.56,
+   "roiNet": 7.2,
+   "activeRK": 51,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-11",
+   "spend": 284.24,
+   "profitNet": -10.76,
+   "roiNet": -3.8,
+   "activeRK": 56,
+   "launched": 28
+  },
+  {
+   "day": "2026-07-12",
+   "spend": 218.18,
+   "profitNet": 134.4,
+   "roiNet": 61.6,
+   "activeRK": 66,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-13",
+   "spend": 167.02,
+   "profitNet": 60.01,
+   "roiNet": 35.9,
+   "activeRK": 60,
+   "launched": 9
+  },
+  {
+   "day": "2026-07-14",
+   "spend": 207.94,
+   "profitNet": 81.5,
+   "roiNet": 39.2,
+   "activeRK": 71,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-15",
+   "spend": 98.95,
+   "profitNet": 51.99,
+   "roiNet": 52.5,
+   "activeRK": 50,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-16",
+   "spend": 113.26,
+   "profitNet": 54.18,
+   "roiNet": 47.8,
+   "activeRK": 48,
+   "launched": 2
+  },
+  {
+   "day": "2026-07-17",
+   "spend": 195.81,
+   "profitNet": 86.67,
+   "roiNet": 44.3,
+   "activeRK": 69,
+   "launched": 8
+  },
+  {
+   "day": "2026-07-18",
+   "spend": 268.84,
+   "profitNet": 50.64,
+   "roiNet": 18.8,
+   "activeRK": 81,
+   "launched": 26
+  },
+  {
+   "day": "2026-07-19",
+   "spend": 277.24,
+   "profitNet": 141.32,
+   "roiNet": 51.0,
+   "activeRK": 79,
+   "launched": 10
+  },
+  {
+   "day": "2026-07-20",
+   "spend": 343.06,
+   "profitNet": 96.13,
+   "roiNet": 28.0,
+   "activeRK": 91,
+   "launched": 10
+  },
+  {
+   "day": "2026-07-21",
+   "spend": 412.7,
+   "profitNet": 74.26,
+   "roiNet": 18.0,
+   "activeRK": 101,
+   "launched": 8
+  },
+  {
+   "day": "2026-07-22",
+   "spend": 344.43,
+   "profitNet": 65.08,
+   "roiNet": 18.9,
+   "activeRK": 84,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-23",
+   "spend": 269.8,
+   "profitNet": 38.61,
+   "roiNet": 14.3,
+   "activeRK": 75,
+   "launched": 1
+  },
+  {
+   "day": "2026-07-24",
+   "spend": 219.01,
+   "profitNet": 33.75,
+   "roiNet": 15.4,
+   "activeRK": 67,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-25",
+   "spend": 240.81,
+   "profitNet": 8.95,
+   "roiNet": 3.7,
+   "activeRK": 65,
+   "launched": 10
+  },
+  {
+   "day": "2026-07-26",
+   "spend": 310.04,
+   "profitNet": 70.23,
+   "roiNet": 22.7,
+   "activeRK": 74,
+   "launched": 0
+  },
+  {
+   "day": "2026-07-27",
+   "spend": 334.16,
+   "profitNet": 131.66,
+   "roiNet": 39.4,
+   "activeRK": 71,
+   "launched": 19
+  },
+  {
+   "day": "2026-07-28",
+   "spend": 328.08,
+   "profitNet": 118.23,
+   "roiNet": 36.0,
+   "activeRK": 86,
+   "launched": 22
+  },
+  {
+   "day": "2026-07-29",
+   "spend": 357.71,
+   "profitNet": 54.02,
+   "roiNet": 15.1,
+   "activeRK": 104,
+   "launched": 85
+  },
+  {
+   "day": "2026-07-30",
+   "spend": 413.8,
+   "profitNet": -47.89,
+   "roiNet": -11.6,
+   "activeRK": 135,
+   "launched": 65
+  },
+  {
+   "day": "2026-07-31",
+   "spend": 347.18,
+   "profitNet": -6.72,
+   "roiNet": -1.9,
+   "activeRK": 115,
+   "launched": 40
+  },
+  {
+   "day": "2026-08-01",
+   "spend": 411.98,
+   "profitNet": 57.31,
+   "roiNet": 13.9,
+   "activeRK": 127,
+   "launched": 19
+  },
+  {
+   "day": "2026-08-02",
+   "spend": 545.37,
+   "profitNet": 115.96,
+   "roiNet": 21.3,
+   "activeRK": 137,
+   "launched": 37
+  },
+  {
+   "day": "2026-08-03",
+   "spend": 701.92,
+   "profitNet": -38.48,
+   "roiNet": -5.5,
+   "activeRK": 191,
+   "launched": 84
+  },
+  {
+   "day": "2026-08-04",
+   "spend": 731.07,
+   "profitNet": 2.79,
+   "roiNet": 0.4,
+   "activeRK": 192,
+   "launched": 6
+  },
+  {
+   "day": "2026-08-05",
+   "spend": 417.12,
+   "profitNet": 125.52,
+   "roiNet": 30.1,
+   "activeRK": 143,
+   "launched": 0
+  },
+  {
+   "day": "2026-08-06",
+   "spend": 359.05,
+   "profitNet": 55.94,
+   "roiNet": 15.6,
+   "activeRK": 104,
+   "launched": 0
+  },
+  {
+   "day": "2026-08-07",
+   "spend": 415.15,
+   "profitNet": 63.15,
+   "roiNet": 15.2,
+   "activeRK": 117,
+   "launched": 0
+  },
+  {
+   "day": "2026-08-08",
+   "spend": 484.84,
+   "profitNet": -44.51,
+   "roiNet": -9.2,
+   "activeRK": 111,
+   "launched": 22
+  },
+  {
+   "day": "2026-08-09",
+   "spend": 444.71,
+   "profitNet": 105.83,
+   "roiNet": 23.8,
+   "activeRK": 112,
+   "launched": 23
+  },
+  {
+   "day": "2026-08-10",
+   "spend": 550.17,
+   "profitNet": 187.81,
+   "roiNet": 34.1,
+   "activeRK": 126,
+   "launched": 9
+  },
+  {
+   "day": "2026-08-11",
+   "spend": 433.32,
+   "profitNet": 15.36,
+   "roiNet": 3.5,
+   "activeRK": 119,
+   "launched": 86
+  },
+  {
+   "day": "2026-08-12",
+   "spend": 429.68,
+   "profitNet": 173.99,
+   "roiNet": 40.5,
+   "activeRK": 118,
+   "launched": 30
+  },
+  {
+   "day": "2026-08-13",
+   "spend": 486.97,
+   "profitNet": 102.01,
+   "roiNet": 20.9,
+   "activeRK": 146,
+   "launched": 70
+  },
+  {
+   "day": "2026-08-14",
+   "spend": 533.16,
+   "profitNet": 129.16,
+   "roiNet": 24.2,
+   "activeRK": 148,
+   "launched": 21
+  },
+  {
+   "day": "2026-08-15",
+   "spend": 486.56,
+   "profitNet": 112.16,
+   "roiNet": 23.1,
+   "activeRK": 127,
+   "launched": 56
+  },
+  {
+   "day": "2026-08-16",
+   "spend": 350.43,
+   "profitNet": 181.84,
+   "roiNet": 51.9,
+   "activeRK": 103,
+   "launched": 7
+  },
+  {
+   "day": "2026-08-17",
+   "spend": 401.48,
+   "profitNet": 105.19,
+   "roiNet": 26.2,
+   "activeRK": 121,
+   "launched": 17
+  },
+  {
+   "day": "2026-08-18",
+   "spend": 413.58,
+   "profitNet": 62.39,
+   "roiNet": 15.1,
+   "activeRK": 123,
+   "launched": 84
+  },
+  {
+   "day": "2026-08-19",
+   "spend": 445.52,
+   "profitNet": -7.69,
+   "roiNet": -1.7,
+   "activeRK": 143,
+   "launched": 66
+  },
+  {
+   "day": "2026-08-20",
+   "spend": 488.8,
+   "profitNet": -118.77,
+   "roiNet": -24.3,
+   "activeRK": 191,
+   "launched": 47
+  },
+  {
+   "day": "2026-08-21",
+   "spend": 399.25,
+   "profitNet": -33.45,
+   "roiNet": -8.4,
+   "activeRK": 153,
+   "launched": 24
+  },
+  {
+   "day": "2026-08-22",
+   "spend": 291.61,
+   "profitNet": 45.81,
+   "roiNet": 15.7,
+   "activeRK": 85,
+   "launched": 14
+  },
+  {
+   "day": "2026-08-23",
+   "spend": 409.06,
+   "profitNet": 199.24,
+   "roiNet": 48.7,
+   "activeRK": 98,
+   "launched": 0
+  },
+  {
+   "day": "2026-08-24",
+   "spend": 354.97,
+   "profitNet": 144.32,
+   "roiNet": 40.7,
+   "activeRK": 99,
+   "launched": 14
+  },
+  {
+   "day": "2026-08-25",
+   "spend": 373.62,
+   "profitNet": 130.25,
+   "roiNet": 34.9,
+   "activeRK": 98,
+   "launched": 18
+  },
+  {
+   "day": "2026-08-26",
+   "spend": 393.97,
+   "profitNet": 145.09,
+   "roiNet": 36.8,
+   "activeRK": 114,
+   "launched": 36
+  },
+  {
+   "day": "2026-08-27",
+   "spend": 422.63,
+   "profitNet": 60.9,
+   "roiNet": 14.4,
+   "activeRK": 122,
+   "launched": 10
+  },
+  {
+   "day": "2026-08-28",
+   "spend": 429.91,
+   "profitNet": 161.17,
+   "roiNet": 37.5,
+   "activeRK": 122,
+   "launched": 20
+  },
+  {
+   "day": "2026-08-29",
+   "spend": 458.79,
+   "profitNet": 168.03,
+   "roiNet": 36.6,
+   "activeRK": 116,
+   "launched": 1
+  },
+  {
+   "day": "2026-08-30",
+   "spend": 475.26,
+   "profitNet": 119.46,
+   "roiNet": 25.1,
+   "activeRK": 111,
+   "launched": 0
+  },
+  {
+   "day": "2026-08-31",
+   "spend": 522.39,
+   "profitNet": 168.34,
+   "roiNet": 32.2,
+   "activeRK": 115,
+   "launched": 19
+  },
+  {
+   "day": "2026-09-01",
+   "spend": 503.3,
+   "profitNet": 253.1,
+   "roiNet": 50.3,
+   "activeRK": 104,
+   "launched": 14
+  },
+  {
+   "day": "2026-09-02",
+   "spend": 464.46,
+   "profitNet": 151.2,
+   "roiNet": 32.6,
+   "activeRK": 120,
+   "launched": 12
+  },
+  {
+   "day": "2026-09-03",
+   "spend": 477.07,
+   "profitNet": 98.58,
+   "roiNet": 20.7,
+   "activeRK": 124,
+   "launched": 21
+  },
+  {
+   "day": "2026-09-04",
+   "spend": 460.68,
+   "profitNet": 19.84,
+   "roiNet": 4.3,
+   "activeRK": 129,
+   "launched": 18
+  },
+  {
+   "day": "2026-09-05",
+   "spend": 273.4,
+   "profitNet": 51.12,
+   "roiNet": 18.7,
+   "activeRK": 83,
+   "launched": 20
+  },
+  {
+   "day": "2026-09-06",
+   "spend": 397.81,
+   "profitNet": 157.58,
+   "roiNet": 39.6,
+   "activeRK": 119,
+   "launched": 13
+  },
+  {
+   "day": "2026-09-07",
+   "spend": 332.67,
+   "profitNet": 118.0,
+   "roiNet": 35.5,
+   "activeRK": 76,
+   "launched": 16
+  },
+  {
+   "day": "2026-09-08",
+   "spend": 346.6,
+   "profitNet": 2.08,
+   "roiNet": 0.6,
+   "activeRK": 97,
+   "launched": 13
+  },
+  {
+   "day": "2026-09-09",
+   "spend": 256.32,
+   "profitNet": 67.46,
+   "roiNet": 26.3,
+   "activeRK": 75,
+   "launched": 0
+  },
+  {
+   "day": "2026-09-10",
+   "spend": 209.61,
+   "profitNet": 42.06,
+   "roiNet": 20.1,
+   "activeRK": 60,
+   "launched": 6
+  },
+  {
+   "day": "2026-09-11",
+   "spend": 235.9,
+   "profitNet": 8.27,
+   "roiNet": 3.5,
+   "activeRK": 81,
+   "launched": 38
+  },
+  {
+   "day": "2026-09-12",
+   "spend": 257.13,
+   "profitNet": -25.35,
+   "roiNet": -9.9,
+   "activeRK": 105,
+   "launched": 24
+  },
+  {
+   "day": "2026-09-13",
+   "spend": 133.33,
+   "profitNet": 69.18,
+   "roiNet": 51.9,
+   "activeRK": 47,
+   "launched": 0
+  },
+  {
+   "day": "2026-09-14",
+   "spend": 119.16,
+   "profitNet": 96.65,
+   "roiNet": 81.1,
+   "activeRK": 30,
+   "launched": 0
+  },
+  {
+   "day": "2026-09-15",
+   "spend": 224.89,
+   "profitNet": 94.78,
+   "roiNet": 42.1,
+   "activeRK": 53,
+   "launched": 0
+  },
+  {
+   "day": "2026-09-16",
+   "spend": 247.34,
+   "profitNet": 81.12,
+   "roiNet": 32.8,
+   "activeRK": 57,
+   "launched": 11
+  },
+  {
+   "day": "2026-09-17",
+   "spend": 286.71,
+   "profitNet": 95.89,
+   "roiNet": 33.4,
+   "activeRK": 66,
+   "launched": 19
+  },
+  {
+   "day": "2026-09-18",
+   "spend": 278.15,
+   "profitNet": 8.29,
+   "roiNet": 3.0,
+   "activeRK": 94,
+   "launched": 52
+  },
+  {
+   "day": "2026-09-19",
+   "spend": 150.67,
+   "profitNet": -8.7,
+   "roiNet": -5.8,
+   "activeRK": 58,
+   "launched": 13
+  },
+  {
+   "day": "2026-09-20",
+   "spend": 105.08,
+   "profitNet": -16.09,
+   "roiNet": -15.3,
+   "activeRK": 37,
+   "launched": 6
+  },
+  {
+   "day": "2026-09-21",
+   "spend": 200.3,
+   "profitNet": -8.32,
+   "roiNet": -4.2,
+   "activeRK": 67,
+   "launched": 1
+  },
+  {
+   "day": "2026-09-22",
+   "spend": 133.21,
+   "profitNet": 12.77,
+   "roiNet": 9.6,
+   "activeRK": 44,
+   "launched": 1
+  },
+  {
+   "day": "2026-09-23",
+   "spend": 52.45,
+   "profitNet": -0.31,
+   "roiNet": -0.6,
+   "activeRK": 19,
+   "launched": 26
+  },
+  {
+   "day": "2026-09-24",
+   "spend": 54.01,
+   "profitNet": 1.22,
+   "roiNet": 2.3,
+   "activeRK": 24,
+   "launched": 23
+  }
+ ],
+ "bundles_top15_profit": [
+  {
+   "vertical": "кредиты",
+   "bundle": "loanslt",
+   "geo": "LT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 62,
+   "accounts": [
+    "?",
+    "Account 1",
+    "Account 18",
+    "Account 19",
+    "Account 4",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 3771.18,
+   "profitNet": 1417.22,
+   "roiNet": 37.6,
+   "rpcNet": 0.111,
+   "cpc": 0.081,
+   "firstDay": "2026-06-01",
+   "lastDay": "2026-09-22",
+   "lifeDays": 114,
+   "activeDays": 106,
+   "peakWeek": "2026-06-08",
+   "peakWeekSpend": 553.72,
+   "peakWeekProfit": 288.48,
+   "peakWeekRoi": 52.1,
+   "peakWeekRpc": 0.117,
+   "last7Spend": 78.23,
+   "last7Roi": 2.3,
+   "last7Rpc": 0.073,
+   "bannedAccShareLast7": 0.0,
+   "end": "после бана IRNFL 18/19 не восстановилась: ROI до 15.08 42.9% на $3102 → после 13.0% на $669; жива: 19–24.09 спенд $58.68, ROI 11.3% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-06-01",
+     "spend": 188.3,
+     "profit": 142.58,
+     "roi": 75.7
+    },
+    {
+     "week": "2026-06-08",
+     "spend": 553.72,
+     "profit": 288.48,
+     "roi": 52.1
+    },
+    {
+     "week": "2026-06-15",
+     "spend": 621.19,
+     "profit": 2.48,
+     "roi": 0.4
+    },
+    {
+     "week": "2026-06-29",
+     "spend": 140.08,
+     "profit": 213.82,
+     "roi": 152.6
+    },
+    {
+     "week": "2026-07-06",
+     "spend": 363.64,
+     "profit": 109.15,
+     "roi": 30.0
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 236.77,
+     "profit": 86.2,
+     "roi": 36.4
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 296.75,
+     "profit": 57.12,
+     "roi": 19.2
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 287.17,
+     "profit": 113.89,
+     "roi": 39.7
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 258.16,
+     "profit": 193.23,
+     "roi": 74.8
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 182.35,
+     "profit": 128.64,
+     "roi": 70.5
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 153.5,
+     "profit": 38.67,
+     "roi": 25.2
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 137.97,
+     "profit": -9.69,
+     "roi": -7.0
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 178.26,
+     "profit": 51.14,
+     "roi": 28.7
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 90.53,
+     "profit": 2.92,
+     "roi": 3.2
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 47.82,
+     "profit": -0.86,
+     "roi": -1.8
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 34.97,
+     "profit": -0.54,
+     "roi": -1.6
+    }
+   ],
+   "preBanSpend": 3101.76,
+   "preBanRoi": 42.9,
+   "preBanProfit": 1330.31,
+   "postBanSpend": 669.42,
+   "postBanRoi": 13.0,
+   "postBanProfit": 86.92,
+   "preBanSpendInBannedAccs": 3101.33,
+   "spend_19_24": 58.68,
+   "roi_19_24": 11.3
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobsfr",
+   "geo": "FR",
+   "platform": "TIKTOK",
+   "provider": "IRONFLI",
+   "nRK": 64,
+   "accounts": [
+    "?",
+    "Account 45689",
+    "Account 53692",
+    "Account 608",
+    "Account 611",
+    "Account 84076",
+    "Account 844"
+   ],
+   "spend": 3816.23,
+   "profitNet": 1235.4,
+   "roiNet": 32.4,
+   "rpcNet": 0.189,
+   "cpc": 0.143,
+   "firstDay": "2026-07-02",
+   "lastDay": "2026-09-24",
+   "lifeDays": 85,
+   "activeDays": 80,
+   "peakWeek": "2026-08-17",
+   "peakWeekSpend": 737.67,
+   "peakWeekProfit": 278.8,
+   "peakWeekRoi": 37.8,
+   "peakWeekRpc": 0.181,
+   "last7Spend": 32.76,
+   "last7Roi": -25.2,
+   "last7Rpc": 0.131,
+   "bannedAccShareLast7": 0.0,
+   "end": "формально жива, но с 19.09 статья не платит: 19–24.09 спенд $18.69, ROI -95.0%",
+   "weekly": [
+    {
+     "week": "2026-06-29",
+     "spend": 4.52,
+     "profit": 3.38,
+     "roi": 74.7
+    },
+    {
+     "week": "2026-07-06",
+     "spend": 20.61,
+     "profit": 14.75,
+     "roi": 71.6
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 19.09,
+     "profit": 3.79,
+     "roi": 19.9
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 79.69,
+     "profit": 33.64,
+     "roi": 42.2
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 210.0,
+     "profit": 83.94,
+     "roi": 40.0
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 447.81,
+     "profit": 241.27,
+     "roi": 53.9
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 510.38,
+     "profit": 225.42,
+     "roi": 44.2
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 737.67,
+     "profit": 278.8,
+     "roi": 37.8
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 887.33,
+     "profit": 264.84,
+     "roi": 29.8
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 628.81,
+     "profit": 92.14,
+     "roi": 14.7
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 207.03,
+     "profit": -14.92,
+     "roi": -7.2
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 50.89,
+     "profit": 19.82,
+     "roi": 39.0
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 12.4,
+     "profit": -11.47,
+     "roi": -92.5
+    }
+   ],
+   "preBanSpend": 1114.65,
+   "preBanRoi": 45.1,
+   "preBanProfit": 502.19,
+   "postBanSpend": 2701.58,
+   "postBanRoi": 27.1,
+   "postBanProfit": 733.21,
+   "preBanSpendInBannedAccs": 0,
+   "spend_19_24": 18.69,
+   "roi_19_24": -95.0
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobsfr",
+   "geo": "FR",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 95,
+   "accounts": [
+    "?",
+    "Account 1",
+    "Account 18",
+    "Account 19",
+    "Account 2",
+    "Account 3",
+    "Account 4",
+    "Account 5"
+   ],
+   "spend": 2759.37,
+   "profitNet": 562.45,
+   "roiNet": 20.4,
+   "rpcNet": 0.07,
+   "cpc": 0.057,
+   "firstDay": "2026-07-02",
+   "lastDay": "2026-09-24",
+   "lifeDays": 85,
+   "activeDays": 80,
+   "peakWeek": "2026-08-24",
+   "peakWeekSpend": 460.12,
+   "peakWeekProfit": 236.45,
+   "peakWeekRoi": 51.4,
+   "peakWeekRpc": 0.07,
+   "last7Spend": 273.35,
+   "last7Roi": 8.5,
+   "last7Rpc": 0.083,
+   "bannedAccShareLast7": 0.0,
+   "end": "жива: 19–24.09 спенд $222.85, ROI 9.5% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-06-29",
+     "spend": 18.13,
+     "profit": -1.24,
+     "roi": -6.9
+    },
+    {
+     "week": "2026-07-06",
+     "spend": 43.53,
+     "profit": -9.63,
+     "roi": -22.1
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 32.55,
+     "profit": 2.26,
+     "roi": 6.9
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 18.49,
+     "profit": 6.11,
+     "roi": 33.0
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 61.82,
+     "profit": -3.32,
+     "roi": -5.4
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 318.91,
+     "profit": -9.78,
+     "roi": -3.1
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 343.69,
+     "profit": 87.0,
+     "roi": 25.3
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 220.75,
+     "profit": -32.32,
+     "roi": -14.6
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 460.12,
+     "profit": 236.45,
+     "roi": 51.4
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 443.7,
+     "profit": 210.56,
+     "roi": 47.5
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 350.49,
+     "profit": 18.92,
+     "roi": 5.4
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 296.12,
+     "profit": 33.52,
+     "roi": 11.3
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 151.07,
+     "profit": 23.94,
+     "roi": 15.8
+    }
+   ],
+   "preBanSpend": 781.82,
+   "preBanRoi": 4.3,
+   "preBanProfit": 33.45,
+   "postBanSpend": 1977.55,
+   "postBanRoi": 26.8,
+   "postBanProfit": 529.01,
+   "preBanSpendInBannedAccs": 781.82,
+   "spend_19_24": 222.85,
+   "roi_19_24": 9.5
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobsbr",
+   "geo": "BR",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 48,
+   "accounts": [
+    "?",
+    "Account 1",
+    "Account 2",
+    "Account 4",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 703.6,
+   "profitNet": 555.44,
+   "roiNet": 78.9,
+   "rpcNet": 0.043,
+   "cpc": 0.024,
+   "firstDay": "2026-08-31",
+   "lastDay": "2026-09-22",
+   "lifeDays": 23,
+   "activeDays": 22,
+   "peakWeek": "2026-09-14",
+   "peakWeekSpend": 473.68,
+   "peakWeekProfit": 260.89,
+   "peakWeekRoi": 55.1,
+   "peakWeekRpc": 0.04,
+   "last7Spend": 321.61,
+   "last7Roi": 35.8,
+   "last7Rpc": 0.036,
+   "bannedAccShareLast7": 0.0,
+   "end": "формально жива, но с 19.09 статья не платит: 19–24.09 спенд $15.61, ROI -99.0%",
+   "weekly": [
+    {
+     "week": "2026-08-31",
+     "spend": 77.9,
+     "profit": 165.4,
+     "roi": 212.3
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 147.03,
+     "profit": 133.99,
+     "roi": 91.1
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 473.68,
+     "profit": 260.89,
+     "roi": 55.1
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 4.99,
+     "profit": -4.83,
+     "roi": -96.9
+    }
+   ],
+   "preBanSpend": 0,
+   "preBanRoi": null,
+   "preBanProfit": 0,
+   "postBanSpend": 703.6,
+   "postBanRoi": 78.9,
+   "postBanProfit": 555.44,
+   "preBanSpendInBannedAccs": 0,
+   "spend_19_24": 15.61,
+   "roi_19_24": -99.0
+  },
+  {
+   "vertical": "кредиты",
+   "bundle": "loanspt",
+   "geo": "PT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 19,
+   "accounts": [
+    "Account 18",
+    "Account 19",
+    "Account 3",
+    "Account 4",
+    "Account 5",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 948.46,
+   "profitNet": 333.12,
+   "roiNet": 35.1,
+   "rpcNet": 0.1,
+   "cpc": 0.074,
+   "firstDay": "2026-07-20",
+   "lastDay": "2026-09-24",
+   "lifeDays": 67,
+   "activeDays": 65,
+   "peakWeek": "2026-08-10",
+   "peakWeekSpend": 227.18,
+   "peakWeekProfit": 73.67,
+   "peakWeekRoi": 32.4,
+   "peakWeekRpc": 0.102,
+   "last7Spend": 17.26,
+   "last7Roi": 25.1,
+   "last7Rpc": 0.111,
+   "bannedAccShareLast7": 0.0,
+   "end": "жива: 19–24.09 спенд $9.11, ROI -16.3% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-07-20",
+     "spend": 57.81,
+     "profit": 48.55,
+     "roi": 84.0
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 69.0,
+     "profit": 56.28,
+     "roi": 81.6
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 160.85,
+     "profit": 15.8,
+     "roi": 9.8
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 227.18,
+     "profit": 73.67,
+     "roi": 32.4
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 158.04,
+     "profit": 28.91,
+     "roi": 18.3
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 121.67,
+     "profit": 63.59,
+     "roi": 52.3
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 99.28,
+     "profit": 36.46,
+     "roi": 36.7
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 32.53,
+     "profit": 3.6,
+     "roi": 11.1
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 15.97,
+     "profit": 7.77,
+     "roi": 48.6
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 6.13,
+     "profit": -1.49,
+     "roi": -24.4
+    }
+   ],
+   "preBanSpend": 479.52,
+   "preBanRoi": 36.5,
+   "preBanProfit": 174.99,
+   "postBanSpend": 468.94,
+   "postBanRoi": 33.7,
+   "postBanProfit": 158.14,
+   "preBanSpendInBannedAccs": 479.52,
+   "spend_19_24": 9.11,
+   "roi_19_24": -16.3
+  },
+  {
+   "vertical": "кредиты",
+   "bundle": "loanslv",
+   "geo": "LV",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 20,
+   "accounts": [
+    "Account 1",
+    "Account 18",
+    "Account 19",
+    "Account 2",
+    "Account 3",
+    "Account 5",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 425.83,
+   "profitNet": 290.92,
+   "roiNet": 68.3,
+   "rpcNet": 0.146,
+   "cpc": 0.087,
+   "firstDay": "2026-06-14",
+   "lastDay": "2026-09-04",
+   "lifeDays": 83,
+   "activeDays": 57,
+   "peakWeek": "2026-08-03",
+   "peakWeekSpend": 69.92,
+   "peakWeekProfit": 74.37,
+   "peakWeekRoi": 106.4,
+   "peakWeekRpc": 0.194,
+   "last7Spend": 36.64,
+   "last7Roi": -81.5,
+   "last7Rpc": 0.024,
+   "bannedAccShareLast7": 0.0,
+   "end": "умерла после бана IRNFL 18/19: ROI до 15.08 86.3% на $365 → после -40.0% на $61; выгорела: ROI с 106.4% в пиковую неделю до -81.5% за последние 7 дней, выключена",
+   "weekly": [
+    {
+     "week": "2026-06-08",
+     "spend": 4.07,
+     "profit": 0.3,
+     "roi": 7.2
+    },
+    {
+     "week": "2026-06-15",
+     "spend": 90.45,
+     "profit": 26.97,
+     "roi": 29.8
+    },
+    {
+     "week": "2026-07-06",
+     "spend": 16.53,
+     "profit": 39.31,
+     "roi": 237.8
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 34.71,
+     "profit": 33.71,
+     "roi": 97.1
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 58.63,
+     "profit": 43.64,
+     "roi": 74.4
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 71.77,
+     "profit": 63.09,
+     "roi": 87.9
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 69.92,
+     "profit": 74.37,
+     "roi": 106.4
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 34.55,
+     "profit": 37.74,
+     "roi": 109.2
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 36.16,
+     "profit": -21.12,
+     "roi": -58.4
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 8.95,
+     "profit": -6.99,
+     "roi": -78.1
+    }
+   ],
+   "preBanSpend": 365.1,
+   "preBanRoi": 86.3,
+   "preBanProfit": 315.24,
+   "postBanSpend": 60.73,
+   "postBanRoi": -40.0,
+   "postBanProfit": -24.32,
+   "preBanSpendInBannedAccs": 365.1,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "кредиты",
+   "bundle": "loansee",
+   "geo": "EE",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 32,
+   "accounts": [
+    "Account 18",
+    "Account 19",
+    "Account 2",
+    "Account 3",
+    "Account 4",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 548.5,
+   "profitNet": 284.61,
+   "roiNet": 51.9,
+   "rpcNet": 0.166,
+   "cpc": 0.109,
+   "firstDay": "2026-06-14",
+   "lastDay": "2026-09-24",
+   "lifeDays": 103,
+   "activeDays": 72,
+   "peakWeek": "2026-07-27",
+   "peakWeekSpend": 73.97,
+   "peakWeekProfit": 47.27,
+   "peakWeekRoi": 63.9,
+   "peakWeekRpc": 0.138,
+   "last7Spend": 18.62,
+   "last7Roi": -8.3,
+   "last7Rpc": 0.135,
+   "bannedAccShareLast7": 0.0,
+   "end": "жива: 19–24.09 спенд $2.31, ROI 233.0% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-06-08",
+     "spend": 10.64,
+     "profit": 0.82,
+     "roi": 7.7
+    },
+    {
+     "week": "2026-06-15",
+     "spend": 112.75,
+     "profit": -1.7,
+     "roi": -1.5
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 24.61,
+     "profit": 41.39,
+     "roi": 168.2
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 74.56,
+     "profit": 23.66,
+     "roi": 31.7
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 73.97,
+     "profit": 47.27,
+     "roi": 63.9
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 74.35,
+     "profit": 31.41,
+     "roi": 42.2
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 52.53,
+     "profit": 46.67,
+     "roi": 88.8
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 17.74,
+     "profit": 19.44,
+     "roi": 109.6
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 15.24,
+     "profit": 24.74,
+     "roi": 162.4
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 44.99,
+     "profit": 32.93,
+     "roi": 73.2
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 30.54,
+     "profit": 14.22,
+     "roi": 46.5
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 14.7,
+     "profit": -1.58,
+     "roi": -10.7
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 1.88,
+     "profit": 5.35,
+     "roi": 284.4
+    }
+   ],
+   "preBanSpend": 414.3,
+   "preBanRoi": 43.9,
+   "preBanProfit": 181.75,
+   "postBanSpend": 134.2,
+   "postBanRoi": 76.7,
+   "postBanProfit": 102.87,
+   "preBanSpendInBannedAccs": 414.3,
+   "spend_19_24": 2.31,
+   "roi_19_24": 233.0
+  },
+  {
+   "vertical": "кредиты",
+   "bundle": "loanshu",
+   "geo": "HU",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 14,
+   "accounts": [
+    "Account 1",
+    "Account 18",
+    "Account 19",
+    "Account 5",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 1000.67,
+   "profitNet": 235.29,
+   "roiNet": 23.5,
+   "rpcNet": 0.138,
+   "cpc": 0.112,
+   "firstDay": "2026-07-20",
+   "lastDay": "2026-09-24",
+   "lifeDays": 67,
+   "activeDays": 67,
+   "peakWeek": "2026-08-31",
+   "peakWeekSpend": 136.4,
+   "peakWeekProfit": 66.17,
+   "peakWeekRoi": 48.5,
+   "peakWeekRpc": 0.183,
+   "last7Spend": 51.6,
+   "last7Roi": 32.3,
+   "last7Rpc": 0.164,
+   "bannedAccShareLast7": 0.0,
+   "end": "жива: 19–24.09 спенд $42.66, ROI 27.6% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-07-20",
+     "spend": 55.12,
+     "profit": 14.05,
+     "roi": 25.5
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 75.69,
+     "profit": 21.85,
+     "roi": 28.9
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 192.47,
+     "profit": 15.27,
+     "roi": 7.9
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 96.38,
+     "profit": 28.19,
+     "roi": 29.2
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 135.31,
+     "profit": 37.65,
+     "roi": 27.8
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 175.06,
+     "profit": 32.37,
+     "roi": 18.5
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 136.4,
+     "profit": 66.17,
+     "roi": 48.5
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 46.13,
+     "profit": 8.99,
+     "roi": 19.5
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 58.49,
+     "profit": 4.23,
+     "roi": 7.2
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 29.62,
+     "profit": 6.51,
+     "roi": 22.0
+    }
+   ],
+   "preBanSpend": 406.44,
+   "preBanRoi": 16.8,
+   "preBanProfit": 68.11,
+   "postBanSpend": 594.23,
+   "postBanRoi": 28.1,
+   "postBanProfit": 167.18,
+   "preBanSpendInBannedAccs": 406.44,
+   "spend_19_24": 42.66,
+   "roi_19_24": 27.6
+  },
+  {
+   "vertical": "работа: стройка",
+   "bundle": "constructionjobspt",
+   "geo": "PT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 26,
+   "accounts": [
+    "Account 1",
+    "Account 18",
+    "Account 19",
+    "Account 5",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 526.92,
+   "profitNet": 232.72,
+   "roiNet": 44.2,
+   "rpcNet": 0.061,
+   "cpc": 0.042,
+   "firstDay": "2026-07-28",
+   "lastDay": "2026-09-16",
+   "lifeDays": 51,
+   "activeDays": 34,
+   "peakWeek": "2026-08-10",
+   "peakWeekSpend": 124.0,
+   "peakWeekProfit": 90.43,
+   "peakWeekRoi": 72.9,
+   "peakWeekRpc": 0.07,
+   "last7Spend": 56.76,
+   "last7Roi": 20.2,
+   "last7Rpc": 0.058,
+   "bannedAccShareLast7": 0.0,
+   "end": "выключена в плюсе (последние 7 дней ROI 20.2%)",
+   "weekly": [
+    {
+     "week": "2026-07-27",
+     "spend": 97.0,
+     "profit": 58.98,
+     "roi": 60.8
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 132.98,
+     "profit": 39.89,
+     "roi": 30.0
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 124.0,
+     "profit": 90.43,
+     "roi": 72.9
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 105.44,
+     "profit": 15.71,
+     "roi": 14.9
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 10.05,
+     "profit": 16.93,
+     "roi": 168.4
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 55.9,
+     "profit": 12.32,
+     "roi": 22.0
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 1.42,
+     "profit": -1.42,
+     "roi": -100.0
+    }
+   ],
+   "preBanSpend": 334.6,
+   "preBanRoi": 46.2,
+   "preBanProfit": 154.45,
+   "postBanSpend": 192.32,
+   "postBanRoi": 40.7,
+   "postBanProfit": 78.26,
+   "preBanSpendInBannedAccs": 334.6,
+   "spend_19_24": 0.21,
+   "roi_19_24": -100.0
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobsuk",
+   "geo": "GB",
+   "platform": "TIKTOK",
+   "provider": "IRONFLI",
+   "nRK": 16,
+   "accounts": [
+    "?",
+    "Account 45689",
+    "Account 53692",
+    "Account 608",
+    "Account 84076",
+    "Account 844"
+   ],
+   "spend": 325.96,
+   "profitNet": 216.92,
+   "roiNet": 66.5,
+   "rpcNet": 0.402,
+   "cpc": 0.241,
+   "firstDay": "2026-08-11",
+   "lastDay": "2026-09-17",
+   "lifeDays": 38,
+   "activeDays": 38,
+   "peakWeek": "2026-08-10",
+   "peakWeekSpend": 95.41,
+   "peakWeekProfit": 93.62,
+   "peakWeekRoi": 98.1,
+   "peakWeekRpc": 0.463,
+   "last7Spend": 16.68,
+   "last7Roi": -78.5,
+   "last7Rpc": 0.049,
+   "bannedAccShareLast7": 0.0,
+   "end": "выгорела: ROI с 98.1% в пиковую неделю до -78.5% за последние 7 дней, выключена",
+   "weekly": [
+    {
+     "week": "2026-08-10",
+     "spend": 95.41,
+     "profit": 93.62,
+     "roi": 98.1
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 76.11,
+     "profit": 70.79,
+     "roi": 93.0
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 73.8,
+     "profit": 40.42,
+     "roi": 54.8
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 50.53,
+     "profit": 1.42,
+     "roi": 2.8
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 22.32,
+     "profit": 18.46,
+     "roi": 82.7
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 7.64,
+     "profit": -7.64,
+     "roi": -100.0
+    }
+   ],
+   "preBanSpend": 61.8,
+   "preBanRoi": 104.6,
+   "preBanProfit": 64.67,
+   "postBanSpend": 264.16,
+   "postBanRoi": 57.6,
+   "postBanProfit": 152.25,
+   "preBanSpendInBannedAccs": 0,
+   "spend_19_24": 0.37,
+   "roi_19_24": -100.0
+  },
+  {
+   "vertical": "работа: стройка",
+   "bundle": "constructionjobsit",
+   "geo": "IT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 46,
+   "accounts": [
+    "Account 18",
+    "Account 19",
+    "Account 2",
+    "Account 3",
+    "Account 7"
+   ],
+   "spend": 1386.84,
+   "profitNet": 170.89,
+   "roiNet": 12.3,
+   "rpcNet": 0.092,
+   "cpc": 0.08,
+   "firstDay": "2026-06-01",
+   "lastDay": "2026-09-19",
+   "lifeDays": 111,
+   "activeDays": 70,
+   "peakWeek": "2026-07-06",
+   "peakWeekSpend": 323.83,
+   "peakWeekProfit": 122.71,
+   "peakWeekRoi": 37.9,
+   "peakWeekRpc": 0.137,
+   "last7Spend": 42.06,
+   "last7Roi": -25.4,
+   "last7Rpc": 0.044,
+   "bannedAccShareLast7": 0.0,
+   "end": "выгорела: ROI с 37.9% в пиковую неделю до -25.4% за последние 7 дней, выключена",
+   "weekly": [
+    {
+     "week": "2026-06-01",
+     "spend": 72.51,
+     "profit": 4.01,
+     "roi": 5.5
+    },
+    {
+     "week": "2026-06-08",
+     "spend": 42.21,
+     "profit": 16.39,
+     "roi": 38.8
+    },
+    {
+     "week": "2026-06-29",
+     "spend": 47.65,
+     "profit": 45.06,
+     "roi": 94.6
+    },
+    {
+     "week": "2026-07-06",
+     "spend": 323.83,
+     "profit": 122.71,
+     "roi": 37.9
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 245.21,
+     "profit": 102.54,
+     "roi": 41.8
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 329.97,
+     "profit": -36.9,
+     "roi": -11.2
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 167.89,
+     "profit": -51.78,
+     "roi": -30.8
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 52.54,
+     "profit": -11.05,
+     "roi": -21.0
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 26.64,
+     "profit": -0.12,
+     "roi": -0.5
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 26.8,
+     "profit": -14.79,
+     "roi": -55.2
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 8.97,
+     "profit": 6.08,
+     "roi": 67.8
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 38.4,
+     "profit": -6.91,
+     "roi": -18.0
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 4.15,
+     "profit": -4.27,
+     "roi": -103.0
+    }
+   ],
+   "preBanSpend": 1302.51,
+   "preBanRoi": 14.1,
+   "preBanProfit": 183.26,
+   "postBanSpend": 84.33,
+   "postBanRoi": -14.7,
+   "postBanProfit": -12.37,
+   "preBanSpendInBannedAccs": 1302.51,
+   "spend_19_24": 1.09,
+   "roi_19_24": -103.0
+  },
+  {
+   "vertical": "тепловые насосы",
+   "bundle": "heatpumpslt",
+   "geo": "LT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 11,
+   "accounts": [
+    "Account 1",
+    "Account 18",
+    "Account 19",
+    "Account 2",
+    "Account 5"
+   ],
+   "spend": 486.33,
+   "profitNet": 165.79,
+   "roiNet": 34.1,
+   "rpcNet": 0.053,
+   "cpc": 0.04,
+   "firstDay": "2026-07-20",
+   "lastDay": "2026-09-24",
+   "lifeDays": 67,
+   "activeDays": 62,
+   "peakWeek": "2026-08-10",
+   "peakWeekSpend": 65.86,
+   "peakWeekProfit": 52.88,
+   "peakWeekRoi": 80.3,
+   "peakWeekRpc": 0.065,
+   "last7Spend": 25.43,
+   "last7Roi": 20.1,
+   "last7Rpc": 0.051,
+   "bannedAccShareLast7": 0.0,
+   "end": "жива: 19–24.09 спенд $21.58, ROI 26.1% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-07-20",
+     "spend": 27.89,
+     "profit": 9.02,
+     "roi": 32.3
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 69.45,
+     "profit": -1.25,
+     "roi": -1.8
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 79.03,
+     "profit": 1.8,
+     "roi": 2.3
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 65.86,
+     "profit": 52.88,
+     "roi": 80.3
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 45.72,
+     "profit": 3.27,
+     "roi": 7.2
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 55.09,
+     "profit": 42.11,
+     "roi": 76.4
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 72.53,
+     "profit": 37.71,
+     "roi": 52.0
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 26.75,
+     "profit": 7.52,
+     "roi": 28.1
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 28.72,
+     "profit": 7.24,
+     "roi": 25.2
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 15.29,
+     "profit": 5.49,
+     "roi": 35.9
+    }
+   ],
+   "preBanSpend": 234.92,
+   "preBanRoi": 24.9,
+   "preBanProfit": 58.38,
+   "postBanSpend": 251.41,
+   "postBanRoi": 42.7,
+   "postBanProfit": 107.41,
+   "preBanSpendInBannedAccs": 234.92,
+   "spend_19_24": 21.58,
+   "roi_19_24": 26.1
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobspt",
+   "geo": "PT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 17,
+   "accounts": [
+    "Account 18",
+    "Account 19",
+    "Account 4",
+    "Account 5",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 277.24,
+   "profitNet": 163.2,
+   "roiNet": 58.9,
+   "rpcNet": 0.034,
+   "cpc": 0.021,
+   "firstDay": "2026-08-11",
+   "lastDay": "2026-09-09",
+   "lifeDays": 30,
+   "activeDays": 24,
+   "peakWeek": "2026-08-24",
+   "peakWeekSpend": 98.96,
+   "peakWeekProfit": 90.0,
+   "peakWeekRoi": 90.9,
+   "peakWeekRpc": 0.032,
+   "last7Spend": 41.14,
+   "last7Roi": 10.2,
+   "last7Rpc": 0.017,
+   "bannedAccShareLast7": 0.0,
+   "end": "выключена в плюсе (последние 7 дней ROI 10.2%)",
+   "weekly": [
+    {
+     "week": "2026-08-10",
+     "spend": 67.43,
+     "profit": 58.13,
+     "roi": 86.2
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 47.26,
+     "profit": -12.55,
+     "roi": -26.6
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 98.96,
+     "profit": 90.0,
+     "roi": 90.9
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 58.44,
+     "profit": 32.77,
+     "roi": 56.1
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 4.55,
+     "profit": -4.55,
+     "roi": -100.0
+    }
+   ],
+   "preBanSpend": 44.77,
+   "preBanRoi": 128.3,
+   "preBanProfit": 57.42,
+   "postBanSpend": 232.47,
+   "postBanRoi": 45.5,
+   "postBanProfit": 105.78,
+   "preBanSpendInBannedAccs": 44.77,
+   "spend_19_24": 0.57,
+   "roi_19_24": -98.3
+  },
+  {
+   "vertical": "кредиты",
+   "bundle": "loanssp",
+   "geo": "ES",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 13,
+   "accounts": [
+    "Account 1",
+    "Account 18",
+    "Account 19",
+    "Account 2",
+    "Account 3",
+    "Account 4",
+    "Account 6"
+   ],
+   "spend": 632.86,
+   "profitNet": 153.3,
+   "roiNet": 24.2,
+   "rpcNet": 0.154,
+   "cpc": 0.121,
+   "firstDay": "2026-06-11",
+   "lastDay": "2026-09-24",
+   "lifeDays": 106,
+   "activeDays": 76,
+   "peakWeek": "2026-08-24",
+   "peakWeekSpend": 77.56,
+   "peakWeekProfit": 42.0,
+   "peakWeekRoi": 54.2,
+   "peakWeekRpc": 0.182,
+   "last7Spend": 11.55,
+   "last7Roi": 102.3,
+   "last7Rpc": 0.199,
+   "bannedAccShareLast7": 0.0,
+   "end": "жива: 19–24.09 спенд $7.39, ROI 128.7% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-06-08",
+     "spend": 48.07,
+     "profit": -11.5,
+     "roi": -23.9
+    },
+    {
+     "week": "2026-06-15",
+     "spend": 87.23,
+     "profit": -7.54,
+     "roi": -8.6
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 24.93,
+     "profit": -0.15,
+     "roi": -0.6
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 45.09,
+     "profit": 26.7,
+     "roi": 59.2
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 45.77,
+     "profit": 21.67,
+     "roi": 47.3
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 59.29,
+     "profit": -10.75,
+     "roi": -18.1
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 38.4,
+     "profit": 16.08,
+     "roi": 41.9
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 67.27,
+     "profit": 36.7,
+     "roi": 54.6
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 77.56,
+     "profit": 42.0,
+     "roi": 54.2
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 77.59,
+     "profit": 17.92,
+     "roi": 23.1
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 43.6,
+     "profit": 10.81,
+     "roi": 24.8
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 13.23,
+     "profit": 1.35,
+     "roi": 10.2
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 4.83,
+     "profit": 10.0,
+     "roi": 207.1
+    }
+   ],
+   "preBanSpend": 339.94,
+   "preBanRoi": 9.8,
+   "preBanProfit": 33.3,
+   "postBanSpend": 292.92,
+   "postBanRoi": 41.0,
+   "postBanProfit": 120.0,
+   "preBanSpendInBannedAccs": 339.94,
+   "spend_19_24": 7.39,
+   "roi_19_24": 128.7
+  },
+  {
+   "vertical": "работа: стройка",
+   "bundle": "constructionjobsfr",
+   "geo": "FR",
+   "platform": "TIKTOK",
+   "provider": "IRONFLI",
+   "nRK": 23,
+   "accounts": [
+    "?",
+    "Account 53692",
+    "Account 608",
+    "Account 611",
+    "Account 844"
+   ],
+   "spend": 454.71,
+   "profitNet": 134.07,
+   "roiNet": 29.5,
+   "rpcNet": 0.218,
+   "cpc": 0.168,
+   "firstDay": "2026-06-23",
+   "lastDay": "2026-09-09",
+   "lifeDays": 79,
+   "activeDays": 77,
+   "peakWeek": "2026-06-29",
+   "peakWeekSpend": 53.64,
+   "peakWeekProfit": 35.76,
+   "peakWeekRoi": 66.7,
+   "peakWeekRpc": 0.356,
+   "last7Spend": 6.15,
+   "last7Roi": -7.6,
+   "last7Rpc": 0.109,
+   "bannedAccShareLast7": 0.0,
+   "end": "умерла после бана IRNFL 18/19: ROI до 15.08 41.8% на $383 → после -35.9% на $72; выгорела: ROI с 66.7% в пиковую неделю до -7.6% за последние 7 дней, выключена",
+   "weekly": [
+    {
+     "week": "2026-06-22",
+     "spend": 33.12,
+     "profit": 33.86,
+     "roi": 102.2
+    },
+    {
+     "week": "2026-06-29",
+     "spend": 53.64,
+     "profit": 35.76,
+     "roi": 66.7
+    },
+    {
+     "week": "2026-07-06",
+     "spend": 41.01,
+     "profit": 18.42,
+     "roi": 44.9
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 39.64,
+     "profit": 22.73,
+     "roi": 57.3
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 35.72,
+     "profit": -3.13,
+     "roi": -8.8
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 88.01,
+     "profit": 31.91,
+     "roi": 36.3
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 66.5,
+     "profit": 19.26,
+     "roi": 29.0
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 36.56,
+     "profit": -1.33,
+     "roi": -3.6
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 31.67,
+     "profit": -11.84,
+     "roi": -37.4
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 20.1,
+     "profit": -8.7,
+     "roi": -43.3
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 7.14,
+     "profit": -1.27,
+     "roi": -17.8
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 1.51,
+     "profit": -1.51,
+     "roi": -100.0
+    }
+   ],
+   "preBanSpend": 382.59,
+   "preBanRoi": 41.8,
+   "preBanProfit": 159.93,
+   "postBanSpend": 72.12,
+   "postBanRoi": -35.9,
+   "postBanProfit": -25.86,
+   "preBanSpendInBannedAccs": 0,
+   "spend_19_24": 0.04,
+   "roi_19_24": -100.0
+  }
+ ],
+ "bundles_top15_loss": [
+  {
+   "vertical": "кредиты",
+   "bundle": "loansde",
+   "geo": "DE",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 24,
+   "accounts": [
+    "Account 18",
+    "Account 19"
+   ],
+   "spend": 422.35,
+   "profitNet": -70.63,
+   "roiNet": -16.7,
+   "rpcNet": 0.291,
+   "cpc": 0.349,
+   "firstDay": "2026-06-11",
+   "lastDay": "2026-08-04",
+   "lifeDays": 55,
+   "activeDays": 31,
+   "peakWeek": "2026-07-20",
+   "peakWeekSpend": 49.67,
+   "peakWeekProfit": 17.78,
+   "peakWeekRoi": 35.8,
+   "peakWeekRpc": 0.321,
+   "last7Spend": 35.0,
+   "last7Roi": -17.5,
+   "last7Rpc": 0.208,
+   "bannedAccShareLast7": 100.0,
+   "end": "выгорела: ROI с 35.8% в пиковую неделю до -17.5% за последние 7 дней, выключена",
+   "weekly": [
+    {
+     "week": "2026-06-08",
+     "spend": 57.17,
+     "profit": 2.05,
+     "roi": 3.6
+    },
+    {
+     "week": "2026-06-15",
+     "spend": 176.07,
+     "profit": -42.04,
+     "roi": -23.9
+    },
+    {
+     "week": "2026-07-06",
+     "spend": 84.81,
+     "profit": -45.48,
+     "roi": -53.6
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 49.67,
+     "profit": 17.78,
+     "roi": 35.8
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 48.65,
+     "profit": 0.05,
+     "roi": 0.1
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 5.98,
+     "profit": -3.0,
+     "roi": -50.2
+    }
+   ],
+   "preBanSpend": 422.35,
+   "preBanRoi": -16.7,
+   "preBanProfit": -70.63,
+   "postBanSpend": 0,
+   "postBanRoi": null,
+   "postBanProfit": 0,
+   "preBanSpendInBannedAccs": 422.35,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "прочее",
+   "bundle": "other",
+   "geo": null,
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 3,
+   "accounts": [
+    "?",
+    "Account 1",
+    "Account 19"
+   ],
+   "spend": 55.78,
+   "profitNet": -55.82,
+   "roiNet": -100.1,
+   "rpcNet": 0.0,
+   "cpc": 0.061,
+   "firstDay": "2026-08-03",
+   "lastDay": "2026-09-23",
+   "lifeDays": 52,
+   "activeDays": 4,
+   "peakWeek": "2026-09-21",
+   "peakWeekSpend": 1.29,
+   "peakWeekProfit": -1.33,
+   "peakWeekRoi": -102.8,
+   "peakWeekRpc": 0.0,
+   "last7Spend": 55.78,
+   "last7Roi": -100.1,
+   "last7Rpc": 0.0,
+   "bannedAccShareLast7": 98.0,
+   "end": "жива: 19–24.09 спенд $1.29, ROI -102.8% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-08-03",
+     "spend": 54.49,
+     "profit": -54.49,
+     "roi": -100.0
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 1.29,
+     "profit": -1.33,
+     "roi": -102.8
+    }
+   ],
+   "preBanSpend": 54.49,
+   "preBanRoi": -100.0,
+   "preBanProfit": -54.49,
+   "postBanSpend": 1.29,
+   "postBanRoi": -102.8,
+   "postBanProfit": -1.33,
+   "preBanSpendInBannedAccs": 54.49,
+   "spend_19_24": 1.29,
+   "roi_19_24": -102.8
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobsmx",
+   "geo": "MX",
+   "platform": "TIKTOK",
+   "provider": "IRONFLI",
+   "nRK": 7,
+   "accounts": [
+    "Account 45689",
+    "Account 53692",
+    "Account 608",
+    "Account 84076"
+   ],
+   "spend": 66.69,
+   "profitNet": -49.15,
+   "roiNet": -73.7,
+   "rpcNet": 0.012,
+   "cpc": 0.045,
+   "firstDay": "2026-08-28",
+   "lastDay": "2026-09-22",
+   "lifeDays": 26,
+   "activeDays": 10,
+   "peakWeek": "2026-09-21",
+   "peakWeekSpend": 3.28,
+   "peakWeekProfit": -3.19,
+   "peakWeekRoi": -97.3,
+   "peakWeekRpc": 0.001,
+   "last7Spend": 53.58,
+   "last7Roi": -67.7,
+   "last7Rpc": 0.014,
+   "bannedAccShareLast7": 0.0,
+   "end": "жива: 19–24.09 спенд $4.55, ROI -95.3% (выручка 22–24.09 доезжает)",
+   "weekly": [
+    {
+     "week": "2026-08-24",
+     "spend": 9.08,
+     "profit": -8.83,
+     "roi": -97.2
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 3.46,
+     "profit": -3.46,
+     "roi": -100.0
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 45.47,
+     "profit": -28.4,
+     "roi": -62.5
+    },
+    {
+     "week": "2026-09-14",
+     "spend": 5.4,
+     "profit": -5.27,
+     "roi": -97.7
+    },
+    {
+     "week": "2026-09-21",
+     "spend": 3.28,
+     "profit": -3.19,
+     "roi": -97.3
+    }
+   ],
+   "preBanSpend": 0,
+   "preBanRoi": null,
+   "preBanProfit": 0,
+   "postBanSpend": 66.69,
+   "postBanRoi": -73.7,
+   "postBanProfit": -49.15,
+   "preBanSpendInBannedAccs": 0,
+   "spend_19_24": 4.55,
+   "roi_19_24": -95.3
+  },
+  {
+   "vertical": "туризм",
+   "bundle": "allinclusivedeatchge",
+   "geo": "INTL",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 16,
+   "accounts": [
+    "?",
+    "Account 18",
+    "Account 19",
+    "Account 5"
+   ],
+   "spend": 85.79,
+   "profitNet": -45.66,
+   "roiNet": -53.2,
+   "rpcNet": 0.071,
+   "cpc": 0.152,
+   "firstDay": "2026-06-22",
+   "lastDay": "2026-08-21",
+   "lifeDays": 61,
+   "activeDays": 9,
+   "peakWeek": "2026-08-17",
+   "peakWeekSpend": 8.95,
+   "peakWeekProfit": -5.49,
+   "peakWeekRoi": -61.3,
+   "peakWeekRpc": 0.055,
+   "last7Spend": 66.15,
+   "last7Roi": -46.7,
+   "last7Rpc": 0.072,
+   "bannedAccShareLast7": 86.0,
+   "end": "выключена в минусе (последние 7 дней ROI -46.7%)",
+   "weekly": [
+    {
+     "week": "2026-06-22",
+     "spend": 19.64,
+     "profit": -14.78,
+     "roi": -75.3
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 57.2,
+     "profit": -25.39,
+     "roi": -44.4
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 8.95,
+     "profit": -5.49,
+     "roi": -61.3
+    }
+   ],
+   "preBanSpend": 76.84,
+   "preBanRoi": -52.3,
+   "preBanProfit": -40.17,
+   "postBanSpend": 8.95,
+   "postBanRoi": -61.3,
+   "postBanProfit": -5.49,
+   "preBanSpendInBannedAccs": 75.97,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobspt",
+   "geo": "PT",
+   "platform": "TIKTOK",
+   "provider": "IRONFLI",
+   "nRK": 9,
+   "accounts": [
+    "Account 45689",
+    "Account 608",
+    "Account 844"
+   ],
+   "spend": 206.52,
+   "profitNet": -44.73,
+   "roiNet": -21.7,
+   "rpcNet": 0.069,
+   "cpc": 0.088,
+   "firstDay": "2026-08-12",
+   "lastDay": "2026-09-09",
+   "lifeDays": 29,
+   "activeDays": 17,
+   "peakWeek": "2026-08-10",
+   "peakWeekSpend": 103.98,
+   "peakWeekProfit": 2.6,
+   "peakWeekRoi": 2.5,
+   "peakWeekRpc": 0.123,
+   "last7Spend": 60.15,
+   "last7Roi": -73.3,
+   "last7Rpc": 0.013,
+   "bannedAccShareLast7": 0.0,
+   "end": "выключена в минусе (последние 7 дней ROI -73.3%)",
+   "weekly": [
+    {
+     "week": "2026-08-10",
+     "spend": 103.98,
+     "profit": 2.6,
+     "roi": 2.5
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 41.87,
+     "profit": -3.01,
+     "roi": -7.2
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 55.6,
+     "profit": -40.06,
+     "roi": -72.1
+    },
+    {
+     "week": "2026-09-07",
+     "spend": 4.64,
+     "profit": -4.15,
+     "roi": -89.3
+    }
+   ],
+   "preBanSpend": 58.72,
+   "preBanRoi": 18.7,
+   "preBanProfit": 10.96,
+   "postBanSpend": 147.8,
+   "postBanRoi": -37.7,
+   "postBanProfit": -55.69,
+   "preBanSpendInBannedAccs": 0,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "обучение",
+   "bundle": "study",
+   "geo": "INTL",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 32,
+   "accounts": [
+    "?",
+    "Account 18"
+   ],
+   "spend": 82.14,
+   "profitNet": -42.73,
+   "roiNet": -52.0,
+   "rpcNet": 0.023,
+   "cpc": 0.048,
+   "firstDay": "2026-08-12",
+   "lastDay": "2026-08-15",
+   "lifeDays": 4,
+   "activeDays": 4,
+   "peakWeek": "2026-08-10",
+   "peakWeekSpend": 82.14,
+   "peakWeekProfit": -42.73,
+   "peakWeekRoi": -52.0,
+   "peakWeekRpc": 0.023,
+   "last7Spend": 82.14,
+   "last7Roi": -52.0,
+   "last7Rpc": 0.023,
+   "bannedAccShareLast7": 98.0,
+   "end": "встала вместе с баном IRNFL 18/19 (14–15.08)",
+   "weekly": [
+    {
+     "week": "2026-08-10",
+     "spend": 82.14,
+     "profit": -42.73,
+     "roi": -52.0
+    }
+   ],
+   "preBanSpend": 70.73,
+   "preBanRoi": -51.7,
+   "preBanProfit": -36.57,
+   "postBanSpend": 11.41,
+   "postBanRoi": -54.0,
+   "postBanProfit": -6.17,
+   "preBanSpendInBannedAccs": 68.95,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobsit",
+   "geo": "IT",
+   "platform": "TIKTOK",
+   "provider": "IRONFLI",
+   "nRK": 6,
+   "accounts": [
+    "Account 45689",
+    "Account 608",
+    "Account 611",
+    "Account 84076",
+    "Account 844"
+   ],
+   "spend": 150.93,
+   "profitNet": -41.32,
+   "roiNet": -27.4,
+   "rpcNet": 0.036,
+   "cpc": 0.049,
+   "firstDay": "2026-08-03",
+   "lastDay": "2026-08-31",
+   "lifeDays": 29,
+   "activeDays": 10,
+   "peakWeek": "2026-08-10",
+   "peakWeekSpend": 60.02,
+   "peakWeekProfit": -1.61,
+   "peakWeekRoi": -2.7,
+   "peakWeekRpc": 0.045,
+   "last7Spend": 75.44,
+   "last7Roi": -16.5,
+   "last7Rpc": 0.037,
+   "bannedAccShareLast7": 0.0,
+   "end": "выключена в минусе (последние 7 дней ROI -16.5%)",
+   "weekly": [
+    {
+     "week": "2026-08-03",
+     "spend": 54.62,
+     "profit": -24.22,
+     "roi": -44.3
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 60.02,
+     "profit": -1.61,
+     "roi": -2.7
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 28.4,
+     "profit": -7.6,
+     "roi": -26.8
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 5.71,
+     "profit": -5.71,
+     "roi": -100.0
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 2.18,
+     "profit": -2.18,
+     "roi": -100.0
+    }
+   ],
+   "preBanSpend": 74.54,
+   "preBanRoi": -37.5,
+   "preBanProfit": -27.94,
+   "postBanSpend": 76.39,
+   "postBanRoi": -17.5,
+   "postBanProfit": -13.38,
+   "preBanSpendInBannedAccs": 0,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "донорство",
+   "bundle": "spermdonatuk",
+   "geo": "GB",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 14,
+   "accounts": [
+    "Account 18",
+    "Account 19",
+    "Account 6"
+   ],
+   "spend": 40.45,
+   "profitNet": -41.26,
+   "roiNet": -102.0,
+   "rpcNet": 0.0,
+   "cpc": 0.435,
+   "firstDay": "2026-07-18",
+   "lastDay": "2026-08-19",
+   "lifeDays": 33,
+   "activeDays": 9,
+   "peakWeek": "2026-08-17",
+   "peakWeekSpend": 1.54,
+   "peakWeekProfit": -1.57,
+   "peakWeekRoi": -102.0,
+   "peakWeekRpc": 0.0,
+   "last7Spend": 15.85,
+   "last7Roi": -102.0,
+   "last7Rpc": 0.0,
+   "bannedAccShareLast7": 82.0,
+   "end": "выключена в минусе (последние 7 дней ROI -102.0%)",
+   "weekly": [
+    {
+     "week": "2026-07-13",
+     "spend": 23.86,
+     "profit": -24.34,
+     "roi": -102.0
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 7.97,
+     "profit": -8.13,
+     "roi": -102.0
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 3.13,
+     "profit": -3.19,
+     "roi": -102.0
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 3.95,
+     "profit": -4.03,
+     "roi": -102.0
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 1.54,
+     "profit": -1.57,
+     "roi": -102.0
+    }
+   ],
+   "preBanSpend": 37.28,
+   "preBanRoi": -102.0,
+   "preBanProfit": -38.03,
+   "postBanSpend": 3.17,
+   "postBanRoi": -102.0,
+   "postBanProfit": -3.23,
+   "preBanSpendInBannedAccs": 37.28,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobsbe",
+   "geo": "BE",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 8,
+   "accounts": [
+    "Account 19",
+    "Account 4",
+    "Account 6",
+    "Account 7"
+   ],
+   "spend": 71.38,
+   "profitNet": -39.21,
+   "roiNet": -54.9,
+   "rpcNet": 0.022,
+   "cpc": 0.05,
+   "firstDay": "2026-08-09",
+   "lastDay": "2026-08-29",
+   "lifeDays": 21,
+   "activeDays": 11,
+   "peakWeek": "2026-08-31",
+   "peakWeekSpend": 0.06,
+   "peakWeekProfit": -0.06,
+   "peakWeekRoi": -100.0,
+   "peakWeekRpc": 0.0,
+   "last7Spend": 29.19,
+   "last7Roi": -61.0,
+   "last7Rpc": 0.018,
+   "bannedAccShareLast7": 29.0,
+   "end": "выключена в минусе (последние 7 дней ROI -61.0%)",
+   "weekly": [
+    {
+     "week": "2026-08-03",
+     "spend": 8.21,
+     "profit": -0.31,
+     "roi": -3.8
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 42.43,
+     "profit": -19.78,
+     "roi": -46.6
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 7.86,
+     "profit": -6.54,
+     "roi": -83.2
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 12.82,
+     "profit": -12.52,
+     "roi": -97.7
+    }
+   ],
+   "preBanSpend": 50.64,
+   "preBanRoi": -39.7,
+   "preBanProfit": -20.09,
+   "postBanSpend": 20.74,
+   "postBanRoi": -92.2,
+   "postBanProfit": -19.12,
+   "preBanSpendInBannedAccs": 50.64,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "кредиты",
+   "bundle": "loansit",
+   "geo": "IT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 8,
+   "accounts": [
+    "Account 18",
+    "Account 19"
+   ],
+   "spend": 144.08,
+   "profitNet": -36.78,
+   "roiNet": -25.5,
+   "rpcNet": 0.129,
+   "cpc": 0.174,
+   "firstDay": "2026-06-11",
+   "lastDay": "2026-06-21",
+   "lifeDays": 11,
+   "activeDays": 11,
+   "peakWeek": "2026-06-08",
+   "peakWeekSpend": 47.01,
+   "peakWeekProfit": -14.78,
+   "peakWeekRoi": -31.4,
+   "peakWeekRpc": 0.131,
+   "last7Spend": 97.07,
+   "last7Roi": -22.7,
+   "last7Rpc": 0.129,
+   "bannedAccShareLast7": 100.0,
+   "end": "выключена в минусе (последние 7 дней ROI -22.7%)",
+   "weekly": [
+    {
+     "week": "2026-06-08",
+     "spend": 47.01,
+     "profit": -14.78,
+     "roi": -31.4
+    },
+    {
+     "week": "2026-06-15",
+     "spend": 97.07,
+     "profit": -22.0,
+     "roi": -22.7
+    }
+   ],
+   "preBanSpend": 144.08,
+   "preBanRoi": -25.5,
+   "preBanProfit": -36.78,
+   "postBanSpend": 0,
+   "postBanRoi": null,
+   "postBanProfit": 0,
+   "preBanSpendInBannedAccs": 144.08,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "кредиты",
+   "bundle": "loansse",
+   "geo": "SE",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 9,
+   "accounts": [
+    "Account 18",
+    "Account 19",
+    "Account 3"
+   ],
+   "spend": 204.88,
+   "profitNet": -32.96,
+   "roiNet": -16.1,
+   "rpcNet": 0.156,
+   "cpc": 0.186,
+   "firstDay": "2026-07-20",
+   "lastDay": "2026-08-22",
+   "lifeDays": 34,
+   "activeDays": 18,
+   "peakWeek": "2026-07-20",
+   "peakWeekSpend": 68.1,
+   "peakWeekProfit": 13.0,
+   "peakWeekRoi": 19.1,
+   "peakWeekRpc": 0.198,
+   "last7Spend": 75.95,
+   "last7Roi": -28.6,
+   "last7Rpc": 0.147,
+   "bannedAccShareLast7": 92.0,
+   "end": "выключена в минусе (последние 7 дней ROI -28.6%)",
+   "weekly": [
+    {
+     "week": "2026-07-20",
+     "spend": 68.1,
+     "profit": 13.0,
+     "roi": 19.1
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 106.58,
+     "profit": -38.04,
+     "roi": -35.7
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 24.29,
+     "profit": -3.97,
+     "roi": -16.3
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 5.91,
+     "profit": -3.95,
+     "roi": -66.8
+    }
+   ],
+   "preBanSpend": 198.97,
+   "preBanRoi": -14.6,
+   "preBanProfit": -29.01,
+   "postBanSpend": 5.91,
+   "postBanRoi": -66.8,
+   "postBanProfit": -3.95,
+   "preBanSpendInBannedAccs": 198.97,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobspl",
+   "geo": "PL",
+   "platform": "TIKTOK",
+   "provider": "IRONFLI",
+   "nRK": 11,
+   "accounts": [
+    "?",
+    "Account 45689",
+    "Account 53692",
+    "Account 611",
+    "Account 84076",
+    "Account 844"
+   ],
+   "spend": 43.67,
+   "profitNet": -29.75,
+   "roiNet": -68.1,
+   "rpcNet": 0.011,
+   "cpc": 0.034,
+   "firstDay": "2026-08-14",
+   "lastDay": "2026-09-01",
+   "lifeDays": 19,
+   "activeDays": 7,
+   "peakWeek": "2026-09-14",
+   "peakWeekSpend": 0.18,
+   "peakWeekProfit": -0.18,
+   "peakWeekRoi": -100.0,
+   "peakWeekRpc": 0.0,
+   "last7Spend": 41.5,
+   "last7Roi": -66.5,
+   "last7Rpc": 0.012,
+   "bannedAccShareLast7": 0.0,
+   "end": "выключена в минусе (последние 7 дней ROI -66.5%)",
+   "weekly": [
+    {
+     "week": "2026-08-10",
+     "spend": 24.77,
+     "profit": -10.85,
+     "roi": -43.8
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 12.73,
+     "profit": -12.73,
+     "roi": -100.0
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 5.08,
+     "profit": -5.08,
+     "roi": -100.0
+    }
+   ],
+   "preBanSpend": 21.78,
+   "preBanRoi": -51.7,
+   "preBanProfit": -11.26,
+   "postBanSpend": 21.89,
+   "postBanRoi": -84.5,
+   "postBanProfit": -18.5,
+   "preBanSpendInBannedAccs": 0,
+   "spend_19_24": 0.48,
+   "roi_19_24": -100.0
+  },
+  {
+   "vertical": "кредиты",
+   "bundle": "loansfr",
+   "geo": "FR",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 4,
+   "accounts": [
+    "Account 18",
+    "Account 19"
+   ],
+   "spend": 108.39,
+   "profitNet": -28.79,
+   "roiNet": -26.6,
+   "rpcNet": 0.124,
+   "cpc": 0.169,
+   "firstDay": "2026-06-11",
+   "lastDay": "2026-06-20",
+   "lifeDays": 10,
+   "activeDays": 10,
+   "peakWeek": "2026-06-08",
+   "peakWeekSpend": 37.1,
+   "peakWeekProfit": -13.18,
+   "peakWeekRoi": -35.5,
+   "peakWeekRpc": 0.099,
+   "last7Spend": 81.46,
+   "last7Roi": -23.7,
+   "last7Rpc": 0.134,
+   "bannedAccShareLast7": 100.0,
+   "end": "выключена в минусе (последние 7 дней ROI -23.7%)",
+   "weekly": [
+    {
+     "week": "2026-06-08",
+     "spend": 37.1,
+     "profit": -13.18,
+     "roi": -35.5
+    },
+    {
+     "week": "2026-06-15",
+     "spend": 71.29,
+     "profit": -15.61,
+     "roi": -21.9
+    }
+   ],
+   "preBanSpend": 108.39,
+   "preBanRoi": -26.6,
+   "preBanProfit": -28.79,
+   "postBanSpend": 0,
+   "postBanRoi": null,
+   "postBanProfit": 0,
+   "preBanSpendInBannedAccs": 108.39,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "работа: стройка",
+   "bundle": "constructionjobsat",
+   "geo": "AT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 9,
+   "accounts": [
+    "Account 18",
+    "Account 19",
+    "Account 3"
+   ],
+   "spend": 73.67,
+   "profitNet": -25.88,
+   "roiNet": -35.1,
+   "rpcNet": 0.089,
+   "cpc": 0.127,
+   "firstDay": "2026-07-12",
+   "lastDay": "2026-08-20",
+   "lifeDays": 40,
+   "activeDays": 22,
+   "peakWeek": "2026-07-06",
+   "peakWeekSpend": 7.46,
+   "peakWeekProfit": 1.25,
+   "peakWeekRoi": 16.7,
+   "peakWeekRpc": 0.119,
+   "last7Spend": 20.05,
+   "last7Roi": -67.7,
+   "last7Rpc": 0.066,
+   "bannedAccShareLast7": 66.0,
+   "end": "выключена в минусе (последние 7 дней ROI -67.7%)",
+   "weekly": [
+    {
+     "week": "2026-07-06",
+     "spend": 7.46,
+     "profit": 1.25,
+     "roi": 16.7
+    },
+    {
+     "week": "2026-07-13",
+     "spend": 32.63,
+     "profit": -0.59,
+     "roi": -1.8
+    },
+    {
+     "week": "2026-07-20",
+     "spend": 7.65,
+     "profit": -7.46,
+     "roi": -97.5
+    },
+    {
+     "week": "2026-07-27",
+     "spend": 5.88,
+     "profit": -5.5,
+     "roi": -93.6
+    },
+    {
+     "week": "2026-08-03",
+     "spend": 13.26,
+     "profit": -6.43,
+     "roi": -48.5
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 6.79,
+     "profit": -7.13,
+     "roi": -105.0
+    }
+   ],
+   "preBanSpend": 66.88,
+   "preBanRoi": -28.0,
+   "preBanProfit": -18.75,
+   "postBanSpend": 6.79,
+   "postBanRoi": -105.0,
+   "postBanProfit": -7.13,
+   "preBanSpendInBannedAccs": 66.88,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  },
+  {
+   "vertical": "работа: уборка",
+   "bundle": "cleaningjobsit",
+   "geo": "IT",
+   "platform": "FACEBOOK",
+   "provider": "IRONFLI",
+   "nRK": 7,
+   "accounts": [
+    "Account 1",
+    "Account 18",
+    "Account 19",
+    "Account 2"
+   ],
+   "spend": 86.13,
+   "profitNet": -25.35,
+   "roiNet": -29.4,
+   "rpcNet": 0.017,
+   "cpc": 0.023,
+   "firstDay": "2026-08-03",
+   "lastDay": "2026-08-31",
+   "lifeDays": 29,
+   "activeDays": 17,
+   "peakWeek": "2026-08-10",
+   "peakWeekSpend": 15.14,
+   "peakWeekProfit": -1.41,
+   "peakWeekRoi": -9.3,
+   "peakWeekRpc": 0.016,
+   "last7Spend": 33.65,
+   "last7Roi": -38.9,
+   "last7Rpc": 0.017,
+   "bannedAccShareLast7": 16.0,
+   "end": "выключена в минусе (последние 7 дней ROI -38.9%)",
+   "weekly": [
+    {
+     "week": "2026-08-03",
+     "spend": 42.64,
+     "profit": -8.97,
+     "roi": -21.0
+    },
+    {
+     "week": "2026-08-10",
+     "spend": 15.14,
+     "profit": -1.41,
+     "roi": -9.3
+    },
+    {
+     "week": "2026-08-17",
+     "spend": 8.2,
+     "profit": -3.87,
+     "roi": -47.2
+    },
+    {
+     "week": "2026-08-24",
+     "spend": 12.62,
+     "profit": -5.33,
+     "roi": -42.2
+    },
+    {
+     "week": "2026-08-31",
+     "spend": 7.53,
+     "profit": -5.78,
+     "roi": -76.7
+    }
+   ],
+   "preBanSpend": 56.64,
+   "preBanRoi": -20.4,
+   "preBanProfit": -11.53,
+   "postBanSpend": 29.49,
+   "postBanRoi": -46.9,
+   "postBanProfit": -13.83,
+   "preBanSpendInBannedAccs": 56.64,
+   "spend_19_24": 0.0,
+   "roi_19_24": null
+  }
+ ],
+ "bundles_summary": {
+  "nBundles": 189,
+  "nProfitable": 65,
+  "profitFromProfitable": 7961.35,
+  "lossFromLosing": -1431.92,
+  "top5ShareOfGrossProfit": 51.5,
+  "top15ProfitSum": 6151.34
+ },
+ "losses": {
+  "note": "Убыток по РК с отрицательной чистой прибылью за 01.06–24.09. Приоритет классификации: TT без выручки → бан/отклонения → разделение минуса на «до сигнала правила» (тест) и «после сигнала» (держали). Сигнал правила — по закрытым дням: R12 (лайфтайм ≥ $10, ROI < 0, день не лучше прошлого), R4 (3 дня выручка 0 при ≥ $3), R11 мягкий (3 дня ≥ $7 и ROI < 0).",
+  "nLosingRK": 934,
+  "totalLossNet": -3031.43,
+  "nWinningRK": 411,
+  "totalWinNet": 9560.91,
+  "byReason": [
+   {
+    "reason": "тест не взлетел (минус до сигнала правила)",
+    "lossNet": -2163.91,
+    "nRK": 716,
+    "spendOfThoseRK": 6562.04
+   },
+   {
+    "reason": "держали слишком долго (минус после сигнала правила)",
+    "lossNet": -464.72,
+    "nRK": 177,
+    "spendOfThoseRK": 4545.6
+   },
+   {
+    "reason": "TT без выручки (выручка < 15% спенда)",
+    "lossNet": -263.48,
+    "nRK": 142,
+    "spendOfThoseRK": 268.25
+   },
+   {
+    "reason": "бан/отклонения (отклонённые объявления или тест, оборванный баном IRNFL 18/19)",
+    "lossNet": -139.32,
+    "nRK": 54,
+    "spendOfThoseRK": 357.87
+   }
+  ],
+  "giveBackFromWinners": {
+   "note": "Прибыльные РК, которые после пика накопленной прибыли отдали часть обратно (держали после выгорания)",
+   "amount": 1317.37,
+   "nRK": 283,
+   "top": [
+    {
+     "name": "vb-AlexZCleaningJobsMX-tg1-fb-mx-a-0828-GE01-p",
+     "finalProfit": 29.69,
+     "peakProfit": 51.32,
+     "givenBack": 21.63
+    },
+    {
+     "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0701-GE01",
+     "finalProfit": 85.39,
+     "peakProfit": 106.71,
+     "givenBack": 21.33
+    },
+    {
+     "name": "vb-AlexzLoansSE-tg_1-fb-se-a-0720-GE02-p",
+     "finalProfit": 2.64,
+     "peakProfit": 23.48,
+     "givenBack": 20.84
+    },
+    {
+     "name": "vb-AlexZConstructionJobsIT-tg1-fb-it-a-0708-GE04-p",
+     "finalProfit": 23.24,
+     "peakProfit": 43.98,
+     "givenBack": 20.74
+    },
+    {
+     "name": "vb-AlexZConstructionJobsIT-tg1-tk-it-a-0624-GE01",
+     "finalProfit": 75.64,
+     "peakProfit": 93.85,
+     "givenBack": 18.21
+    },
+    {
+     "name": "vb-AlexZConstructionJobsIT-tg1-fb-it-a-0703-GE01-p",
+     "finalProfit": 20.91,
+     "peakProfit": 37.8,
+     "givenBack": 16.89
+    },
+    {
+     "name": "vb-AlexZConstructionJobsIT-tg1-fb-it-a-0706-GE03-p",
+     "finalProfit": 20.57,
+     "peakProfit": 35.23,
+     "givenBack": 14.66
+    },
+    {
+     "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0823-GE05",
+     "finalProfit": 47.96,
+     "peakProfit": 62.2,
+     "givenBack": 14.24
+    },
+    {
+     "name": "vb-AlexZLoansRS-tg1_auto-fb-rs-a-0721-GE02-p",
+     "finalProfit": 29.31,
+     "peakProfit": 43.54,
+     "givenBack": 14.23
+    },
+    {
+     "name": "vb-AlexZCleaningJobsDK-tg1-fb-dk-a-0829-GE01-p",
+     "finalProfit": 20.11,
+     "peakProfit": 34.27,
+     "givenBack": 14.16
+    }
+   ]
+  },
+  "top15_campaigns_by_loss": [
+   {
+    "name": "New Sales Campaign",
+    "vertical": "прочее",
+    "geo": null,
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / IRNFL / Account 19",
+    "first": "2026-08-03",
+    "last": "2026-08-05",
+    "spend": 54.49,
+    "revenueNet": 0,
+    "profitNet": -54.49,
+    "roiNet": -100.0,
+    "ruleSignal": "2026-08-04",
+    "ruleName": "R12",
+    "spendAfterSignal": 5.78,
+    "profitAfterSignal": -5.78
+   },
+   {
+    "name": "vb-AlexZLoansDE-tg1_auto-fb-de-a-0618-GE30-p",
+    "vertical": "кредиты",
+    "geo": "DE",
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / IRNFL / Account 18",
+    "first": "2026-06-19",
+    "last": "2026-07-11",
+    "spend": 85.33,
+    "revenueNet": 48.45,
+    "profitNet": -36.88,
+    "roiNet": -43.2,
+    "ruleSignal": "2026-07-11",
+    "ruleName": "R11",
+    "spendAfterSignal": 0,
+    "profitAfterSignal": 1.05
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0611-GE02-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / IRNFL / Account 19",
+    "first": "2026-06-12",
+    "last": "2026-06-18",
+    "spend": 34.64,
+    "revenueNet": 13.2,
+    "profitNet": -21.44,
+    "roiNet": -61.9,
+    "ruleSignal": "2026-06-13",
+    "ruleName": "R12",
+    "spendAfterSignal": 23.34,
+    "profitAfterSignal": -11.94
+   },
+   {
+    "name": "it-it-fb-tz-aleksandr-580-construction-jobs-312-restart2-682-57207",
+    "vertical": "работа: стройка",
+    "geo": "IT",
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / Tarzo / Account 7",
+    "first": "2026-06-01",
+    "last": "2026-07-31",
+    "spend": 20.83,
+    "revenueNet": 0,
+    "profitNet": -20.95,
+    "roiNet": -100.6,
+    "ruleSignal": "2026-06-02",
+    "ruleName": "R12",
+    "spendAfterSignal": 4.03,
+    "profitAfterSignal": -4.15
+   },
+   {
+    "name": "vb-AlexZStudy-tg_eng_set-tk-intl-a-0813-GE08",
+    "vertical": "обучение",
+    "geo": "INTL",
+    "ts": "TIKTOK",
+    "account": "SBC_HERMES / AleksandrZhirov_910_COSMIC / Account 45689",
+    "first": "2026-08-13",
+    "last": "2026-08-15",
+    "spend": 24.89,
+    "revenueNet": 4.4,
+    "profitNet": -20.49,
+    "roiNet": -82.3,
+    "ruleSignal": "2026-08-15",
+    "ruleName": "R11",
+    "spendAfterSignal": 0,
+    "profitAfterSignal": 0
+   },
+   {
+    "name": "vb-AlexZLoansHR-tg1_auto-fb-hr-a-0819-GE06-p",
+    "vertical": "кредиты",
+    "geo": "HR",
+    "ts": "FACEBOOK",
+    "account": "G / AleksandrZhirov_910_COSMIC / IF / Account 4",
+    "first": "2026-08-19",
+    "last": "2026-09-24",
+    "spend": 45.06,
+    "revenueNet": 25.17,
+    "profitNet": -19.89,
+    "roiNet": -44.1,
+    "ruleSignal": "2026-08-25",
+    "ruleName": "R12",
+    "spendAfterSignal": 25.9,
+    "profitAfterSignal": -19.62
+   },
+   {
+    "name": "vb-alexzloansSP-tg1_auto-fb-es-a-0611-GE05-p",
+    "vertical": "кредиты",
+    "geo": "ES",
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / IRNFL / Account 18",
+    "first": "2026-06-11",
+    "last": "2026-06-18",
+    "spend": 57.54,
+    "revenueNet": 38.04,
+    "profitNet": -19.5,
+    "roiNet": -33.9,
+    "ruleSignal": "2026-06-13",
+    "ruleName": "R12",
+    "spendAfterSignal": 44.47,
+    "profitAfterSignal": -11.72
+   },
+   {
+    "name": "vb-AlexZCleaningJobsPT-tg1-tk-pt-a-0827-GE03",
+    "vertical": "работа: уборка",
+    "geo": "PT",
+    "ts": "TIKTOK",
+    "account": "GB / Search / Account 844",
+    "first": "2026-08-27",
+    "last": "2026-08-31",
+    "spend": 30.75,
+    "revenueNet": 11.56,
+    "profitNet": -19.19,
+    "roiNet": -62.4,
+    "ruleSignal": "2026-08-29",
+    "ruleName": "R11",
+    "spendAfterSignal": 19.99,
+    "profitAfterSignal": -8.66
+   },
+   {
+    "name": "vb-AlexZCleaningJobsMX-tg1-tk-mx-a-0908-GE01",
+    "vertical": "работа: уборка",
+    "geo": "MX",
+    "ts": "TIKTOK",
+    "account": "GB / Search / Account 608",
+    "first": "2026-09-08",
+    "last": "2026-09-09",
+    "spend": 28.89,
+    "revenueNet": 10.09,
+    "profitNet": -18.8,
+    "roiNet": -65.1,
+    "ruleSignal": "2026-09-09",
+    "ruleName": "R12",
+    "spendAfterSignal": 0,
+    "profitAfterSignal": 0
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0617-GE03-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / IRNFL / Account 18",
+    "first": "2026-06-17",
+    "last": "2026-06-21",
+    "spend": 15.35,
+    "revenueNet": 0,
+    "profitNet": -15.35,
+    "roiNet": -100.0,
+    "ruleSignal": "2026-06-19",
+    "ruleName": "R12",
+    "spendAfterSignal": 1.83,
+    "profitAfterSignal": -1.83
+   },
+   {
+    "name": "vb-AlexZLoansPL-tg1-fb-pl-a-0612-GE01-p",
+    "vertical": "кредиты",
+    "geo": "PL",
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / IRNFL / Account 18",
+    "first": "2026-06-12",
+    "last": "2026-06-15",
+    "spend": 18.0,
+    "revenueNet": 2.7,
+    "profitNet": -15.3,
+    "roiNet": -85.0,
+    "ruleSignal": "2026-06-14",
+    "ruleName": "R11",
+    "spendAfterSignal": 4,
+    "profitAfterSignal": -4
+   },
+   {
+    "name": "vb-AlexZConstructionJobsEUENG-tg1-tk-intl-a-0624-GE07",
+    "vertical": "работа: стройка",
+    "geo": "INTL",
+    "ts": "TIKTOK",
+    "account": "GB / Search / Account 844",
+    "first": "2026-06-25",
+    "last": "2026-07-19",
+    "spend": 103.27,
+    "revenueNet": 88.22,
+    "profitNet": -15.05,
+    "roiNet": -14.6,
+    "ruleSignal": "2026-06-27",
+    "ruleName": "R11",
+    "spendAfterSignal": 85.67,
+    "profitAfterSignal": -8.7
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0617-GE05-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / IRNFL / Account 19",
+    "first": "2026-06-17",
+    "last": "2026-06-21",
+    "spend": 14.58,
+    "revenueNet": 0,
+    "profitNet": -14.58,
+    "roiNet": -100.0,
+    "ruleSignal": "2026-06-19",
+    "ruleName": "R12",
+    "spendAfterSignal": 1.71,
+    "profitAfterSignal": -1.71
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0611-GE01-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "G / Cosmic / IRNFL / Account 18",
+    "first": "2026-06-12",
+    "last": "2026-06-15",
+    "spend": 20.96,
+    "revenueNet": 7.32,
+    "profitNet": -13.64,
+    "roiNet": -65.1,
+    "ruleSignal": "2026-06-14",
+    "ruleName": "R11",
+    "spendAfterSignal": 4.29,
+    "profitAfterSignal": -4.29
+   },
+   {
+    "name": "vb-AlexZCleaningJobsBR-tg1-tk-br-a-0907-GE03",
+    "vertical": "работа: уборка",
+    "geo": "BR",
+    "ts": "TIKTOK",
+    "account": "GB / Search / Account 608",
+    "first": "2026-09-07",
+    "last": "2026-09-21",
+    "spend": 49.32,
+    "revenueNet": 36.79,
+    "profitNet": -12.53,
+    "roiNet": -25.4,
+    "ruleSignal": "2026-09-11",
+    "ruleName": "R11",
+    "spendAfterSignal": 25.74,
+    "profitAfterSignal": -2.8
+   }
+  ]
+ },
+ "cohorts_by_launch_week": [
+  {
+   "cohort": "2026-06-01",
+   "launchedWithSpend": 13,
+   "spend": 989.63,
+   "profitNet": 101.21,
+   "roiNet": 10.2,
+   "pctPlusFirst3Days": 38.5,
+   "nWithClosed3Days": 13,
+   "roiFirst3Days": 1.2,
+   "pctPlusLifetime": 38.5,
+   "avgSpendUntilOff": 76.13,
+   "medianSpendUntilOff": 39.77,
+   "nWinners_ge20usd_roi30": 0,
+   "winnersProfit": 0,
+   "bestRK": "it-it-fb-tz-aleksandr-580-construction-jobs-312-IT old-910-45468",
+   "bestRKprofit": 45.23,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 7,
+   "creativesUniq": 30
+  },
+  {
+   "cohort": "до 01.06",
+   "launchedWithSpend": 17,
+   "spend": 1118.03,
+   "profitNet": 597.39,
+   "roiNet": 53.4,
+   "pctPlusFirst3Days": 52.9,
+   "nWithClosed3Days": 17,
+   "roiFirst3Days": 33.3,
+   "pctPlusLifetime": 41.2,
+   "avgSpendUntilOff": 65.77,
+   "medianSpendUntilOff": 13.78,
+   "nWinners_ge20usd_roi30": 3,
+   "winnersProfit": 536.18,
+   "bestRK": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0522-GE04-p",
+   "bestRKprofit": 476.54,
+   "avgRKperBundleLaunch": null
+  },
+  {
+   "cohort": "2026-06-08",
+   "launchedWithSpend": 61,
+   "spend": 1778.28,
+   "profitNet": 297.88,
+   "roiNet": 16.8,
+   "pctPlusFirst3Days": 27.9,
+   "nWithClosed3Days": 61,
+   "roiFirst3Days": 1.3,
+   "pctPlusLifetime": 29.5,
+   "avgSpendUntilOff": 29.15,
+   "medianSpendUntilOff": 10.1,
+   "nWinners_ge20usd_roi30": 7,
+   "winnersProfit": 470.02,
+   "bestRK": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0609-GE07-p",
+   "bestRKprofit": 156.84,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 120,
+   "creativesUniq": 162
+  },
+  {
+   "cohort": "2026-06-15",
+   "launchedWithSpend": 62,
+   "spend": 793.63,
+   "profitNet": -116.3,
+   "roiNet": -14.7,
+   "pctPlusFirst3Days": 29.0,
+   "nWithClosed3Days": 62,
+   "roiFirst3Days": -13.6,
+   "pctPlusLifetime": 27.4,
+   "avgSpendUntilOff": 12.8,
+   "medianSpendUntilOff": 8.24,
+   "nWinners_ge20usd_roi30": 1,
+   "winnersProfit": 31.97,
+   "bestRK": "vb-AlexZLoansBAh-tg1_auto-fb-ba-a-0617-GE02-p",
+   "bestRKprofit": 31.97,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 103,
+   "creativesUniq": 59
+  },
+  {
+   "cohort": "2026-06-22",
+   "launchedWithSpend": 30,
+   "spend": 1091.26,
+   "profitNet": 213.1,
+   "roiNet": 19.5,
+   "pctPlusFirst3Days": 36.7,
+   "nWithClosed3Days": 30,
+   "roiFirst3Days": 30.2,
+   "pctPlusLifetime": 30.0,
+   "avgSpendUntilOff": 36.38,
+   "medianSpendUntilOff": 4.02,
+   "nWinners_ge20usd_roi30": 5,
+   "winnersProfit": 246.72,
+   "bestRK": "vb-AlexZConstructionJobsFR-tg1-tk-fr-a-0623-GE01",
+   "bestRKprofit": 89.87,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 123,
+   "creativesUniq": 180
+  },
+  {
+   "cohort": "2026-06-29",
+   "launchedWithSpend": 13,
+   "spend": 1221.2,
+   "profitNet": 279.55,
+   "roiNet": 22.9,
+   "pctPlusFirst3Days": 84.6,
+   "nWithClosed3Days": 13,
+   "roiFirst3Days": 53.1,
+   "pctPlusLifetime": 84.6,
+   "avgSpendUntilOff": 93.94,
+   "medianSpendUntilOff": 80.65,
+   "nWinners_ge20usd_roi30": 1,
+   "winnersProfit": 85.39,
+   "bestRK": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0701-GE01",
+   "bestRKprofit": 85.39,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 25,
+   "creativesUniq": 100
+  },
+  {
+   "cohort": "2026-07-06",
+   "launchedWithSpend": 70,
+   "spend": 2944.85,
+   "profitNet": 933.97,
+   "roiNet": 31.7,
+   "pctPlusFirst3Days": 50.0,
+   "nWithClosed3Days": 70,
+   "roiFirst3Days": 35.3,
+   "pctPlusLifetime": 48.6,
+   "avgSpendUntilOff": 39.46,
+   "medianSpendUntilOff": 17.62,
+   "nWinners_ge20usd_roi30": 11,
+   "winnersProfit": 806.79,
+   "bestRK": "vb-AlexZLoansLV-tg1_auto-fb-lv-a-0711-GE01-p",
+   "bestRKprofit": 160.64,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 71,
+   "creativesUniq": 236
+  },
+  {
+   "cohort": "2026-07-13",
+   "launchedWithSpend": 46,
+   "spend": 1506.94,
+   "profitNet": 332.83,
+   "roiNet": 22.1,
+   "pctPlusFirst3Days": 50.0,
+   "nWithClosed3Days": 46,
+   "roiFirst3Days": 38.2,
+   "pctPlusLifetime": 45.7,
+   "avgSpendUntilOff": 31.45,
+   "medianSpendUntilOff": 17.68,
+   "nWinners_ge20usd_roi30": 8,
+   "winnersProfit": 314.04,
+   "bestRK": "vb-AlexZConstructionJobsBE-tg_1-tk-be-a-0714-GE02",
+   "bestRKprofit": 54.97,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 55,
+   "creativesUniq": 115
+  },
+  {
+   "cohort": "2026-07-20",
+   "launchedWithSpend": 33,
+   "spend": 1928.99,
+   "profitNet": 386.63,
+   "roiNet": 20.0,
+   "pctPlusFirst3Days": 42.4,
+   "nWithClosed3Days": 33,
+   "roiFirst3Days": 19.0,
+   "pctPlusLifetime": 54.5,
+   "avgSpendUntilOff": 58.45,
+   "medianSpendUntilOff": 45.76,
+   "nWinners_ge20usd_roi30": 6,
+   "winnersProfit": 310.79,
+   "bestRK": "vb-AlexZLoansHU-tg1_auto-fb-hu-a-0720-GE01-p",
+   "bestRKprofit": 84.9,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 29,
+   "creativesUniq": 41
+  },
+  {
+   "cohort": "2026-07-27",
+   "launchedWithSpend": 154,
+   "spend": 2695.13,
+   "profitNet": 397.93,
+   "roiNet": 14.8,
+   "pctPlusFirst3Days": 29.2,
+   "nWithClosed3Days": 154,
+   "roiFirst3Days": -2.0,
+   "pctPlusLifetime": 31.8,
+   "avgSpendUntilOff": 17.03,
+   "medianSpendUntilOff": 7.25,
+   "nWinners_ge20usd_roi30": 13,
+   "winnersProfit": 576.85,
+   "bestRK": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0730-GE01-p",
+   "bestRKprofit": 78.62,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 287,
+   "creativesUniq": 723
+  },
+  {
+   "cohort": "2026-08-03",
+   "launchedWithSpend": 98,
+   "spend": 3078.68,
+   "profitNet": 350.89,
+   "roiNet": 11.4,
+   "pctPlusFirst3Days": 30.6,
+   "nWithClosed3Days": 98,
+   "roiFirst3Days": 2.2,
+   "pctPlusLifetime": 30.6,
+   "avgSpendUntilOff": 23.69,
+   "medianSpendUntilOff": 10.42,
+   "nWinners_ge20usd_roi30": 5,
+   "winnersProfit": 457.19,
+   "bestRK": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0804-GE02",
+   "bestRKprofit": 278.75,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 135,
+   "creativesUniq": 215
+  },
+  {
+   "cohort": "2026-08-10",
+   "launchedWithSpend": 162,
+   "spend": 3922.14,
+   "profitNet": 912.08,
+   "roiNet": 23.3,
+   "pctPlusFirst3Days": 46.9,
+   "nWithClosed3Days": 162,
+   "roiFirst3Days": 16.5,
+   "pctPlusLifetime": 44.4,
+   "avgSpendUntilOff": 18.04,
+   "medianSpendUntilOff": 8.69,
+   "nWinners_ge20usd_roi30": 16,
+   "winnersProfit": 854.26,
+   "bestRK": "vb-AlexZCleaningJobsUK-tg1-tk-gb-a-0810-GE01",
+   "bestRKprofit": 118.8,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 279,
+   "creativesUniq": 537
+  },
+  {
+   "cohort": "2026-08-17",
+   "launchedWithSpend": 165,
+   "spend": 4431.74,
+   "profitNet": 1051.46,
+   "roiNet": 23.7,
+   "pctPlusFirst3Days": 29.1,
+   "nWithClosed3Days": 165,
+   "roiFirst3Days": 8.3,
+   "pctPlusLifetime": 25.5,
+   "avgSpendUntilOff": 14.52,
+   "medianSpendUntilOff": 4.52,
+   "nWinners_ge20usd_roi30": 19,
+   "winnersProfit": 1159.73,
+   "bestRK": "vb-AlexZCleaningJobsFR-tg_set-fb-fr-a-0822-GE01-p",
+   "bestRKprofit": 230.78,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 252,
+   "creativesUniq": 393
+  },
+  {
+   "cohort": "2026-08-24",
+   "launchedWithSpend": 68,
+   "spend": 1036.96,
+   "profitNet": 105.12,
+   "roiNet": 10.1,
+   "pctPlusFirst3Days": 26.5,
+   "nWithClosed3Days": 68,
+   "roiFirst3Days": 11.2,
+   "pctPlusLifetime": 25.0,
+   "avgSpendUntilOff": 15.25,
+   "medianSpendUntilOff": 7.24,
+   "nWinners_ge20usd_roi30": 10,
+   "winnersProfit": 330.97,
+   "bestRK": "vb-AlexZCleaningJobsRO-tg1-tk-ro-a-0829-GE01",
+   "bestRKprofit": 50.33,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 99,
+   "creativesUniq": 398
+  },
+  {
+   "cohort": "2026-08-31",
+   "launchedWithSpend": 95,
+   "spend": 1708.96,
+   "profitNet": 529.89,
+   "roiNet": 31.0,
+   "pctPlusFirst3Days": 31.6,
+   "nWithClosed3Days": 95,
+   "roiFirst3Days": 29.3,
+   "pctPlusLifetime": 30.5,
+   "avgSpendUntilOff": 13.83,
+   "medianSpendUntilOff": 5.36,
+   "nWinners_ge20usd_roi30": 13,
+   "winnersProfit": 658.76,
+   "bestRK": "vb-AlexZCleaningJobsBR-tg1-fb-br-a-0905-GE01-p",
+   "bestRKprofit": 245.17,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 117,
+   "creativesUniq": 406
+  },
+  {
+   "cohort": "2026-09-07",
+   "launchedWithSpend": 82,
+   "spend": 918.47,
+   "profitNet": 269.82,
+   "roiNet": 29.4,
+   "pctPlusFirst3Days": 22.0,
+   "nWithClosed3Days": 82,
+   "roiFirst3Days": 3.6,
+   "pctPlusLifetime": 20.7,
+   "avgSpendUntilOff": 4.44,
+   "medianSpendUntilOff": 2.38,
+   "nWinners_ge20usd_roi30": 6,
+   "winnersProfit": 388.37,
+   "bestRK": "vb-AlexZCleaningJobsBR-tg1-fb-br-a-0907-GE01-p",
+   "bestRKprofit": 88.63,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 97,
+   "creativesUniq": 184
+  },
+  {
+   "cohort": "2026-09-14",
+   "launchedWithSpend": 69,
+   "spend": 301.31,
+   "profitNet": -89.4,
+   "roiNet": -29.7,
+   "pctPlusFirst3Days": 17.6,
+   "nWithClosed3Days": 68,
+   "roiFirst3Days": -26.0,
+   "pctPlusLifetime": 17.4,
+   "avgSpendUntilOff": 4.6,
+   "medianSpendUntilOff": 2.41,
+   "nWinners_ge20usd_roi30": 0,
+   "winnersProfit": 0,
+   "bestRK": "vb-AlexZCleaningJobsBR-tg1-fb-br-a-0916-GE05-p",
+   "bestRKprofit": 5.78,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 101,
+   "creativesUniq": 197
+  },
+  {
+   "cohort": "2026-09-21",
+   "launchedWithSpend": 17,
+   "spend": 31.65,
+   "profitNet": -5.44,
+   "roiNet": -17.2,
+   "pctPlusFirst3Days": null,
+   "nWithClosed3Days": 0,
+   "roiFirst3Days": null,
+   "pctPlusLifetime": 11.8,
+   "avgSpendUntilOff": 2.36,
+   "medianSpendUntilOff": 2.36,
+   "nWinners_ge20usd_roi30": 0,
+   "winnersProfit": 0,
+   "bestRK": "vb-alexzloanssw-tg_auto-fb-ch-a-0920-GE01-p",
+   "bestRKprofit": 11.61,
+   "avgRKperBundleLaunch": null,
+   "launchedInPanel_all": 51,
+   "creativesUniq": 140
+  }
+ ],
+ "cohort_ai_era": {
+  "note": "С 16.09 решения по заливам принимаются вместе с агентами (said_log с 16.09). Пакеты главного (article_drafts.rkNames) залиты 23–24.09 — у них 0–1 закрытый день, выручка RSOC за 22–24.09 ещё доезжает.",
+  "all_since_16_09": {
+   "cohort": "все запуски с 16.09",
+   "launchedWithSpend": 86,
+   "spend": 332.96,
+   "profitNet": -94.84,
+   "roiNet": -28.5,
+   "pctPlusFirst3Days": 17.6,
+   "nWithClosed3Days": 68,
+   "roiFirst3Days": -26.0,
+   "pctPlusLifetime": 16.3,
+   "avgSpendUntilOff": 4.52,
+   "medianSpendUntilOff": 2.38,
+   "nWinners_ge20usd_roi30": 0,
+   "winnersProfit": 0,
+   "bestRK": "vb-alexzloanssw-tg_auto-fb-ch-a-0920-GE01-p",
+   "bestRKprofit": 11.61,
+   "avgRKperBundleLaunch": null
+  },
+  "agent_packages_23_24": {
+   "cohort": "пакеты главного 23–24.09",
+   "launchedWithSpend": 8,
+   "spend": 17.28,
+   "profitNet": -7.47,
+   "roiNet": -43.2,
+   "pctPlusFirst3Days": null,
+   "nWithClosed3Days": 0,
+   "roiFirst3Days": null,
+   "pctPlusLifetime": 0.0,
+   "avgSpendUntilOff": null,
+   "medianSpendUntilOff": null,
+   "nWinners_ge20usd_roi30": 0,
+   "winnersProfit": 0,
+   "bestRK": "vb-AlexZLoansEE-tg_2-fb-ee-a-0924-GE01-p",
+   "bestRKprofit": -0.17,
+   "avgRKperBundleLaunch": null
+  },
+  "other_since_16_09": {
+   "cohort": "прочие запуски 16–24.09",
+   "launchedWithSpend": 78,
+   "spend": 315.68,
+   "profitNet": -87.37,
+   "roiNet": -27.7,
+   "pctPlusFirst3Days": 17.6,
+   "nWithClosed3Days": 68,
+   "roiFirst3Days": -26.0,
+   "pctPlusLifetime": 17.9,
+   "avgSpendUntilOff": 4.52,
+   "medianSpendUntilOff": 2.38,
+   "nWinners_ge20usd_roi30": 0,
+   "winnersProfit": 0,
+   "bestRK": "vb-alexzloanssw-tg_auto-fb-ch-a-0920-GE01-p",
+   "bestRKprofit": 11.61,
+   "avgRKperBundleLaunch": null
+  },
+  "agent_by_approach": {
+   "ключ первым": {
+    "cohort": "ключ первым",
+    "launchedWithSpend": 3,
+    "spend": 9.68,
+    "profitNet": -4.18,
+    "roiNet": -43.2,
+    "pctPlusFirst3Days": null,
+    "nWithClosed3Days": 0,
+    "roiFirst3Days": null,
+    "pctPlusLifetime": 0.0,
+    "avgSpendUntilOff": null,
+    "medianSpendUntilOff": null,
+    "nWinners_ge20usd_roi30": 0,
+    "winnersProfit": 0,
+    "bestRK": "vb-alexzinstitutionshildrenbr-tg_1-fb-br-a-0923-GE08-p",
+    "bestRKprofit": -0.74,
+    "avgRKperBundleLaunch": null
+   },
+   "проверенная статья": {
+    "cohort": "проверенная статья",
+    "launchedWithSpend": 4,
+    "spend": 6.3,
+    "profitNet": -2.36,
+    "roiNet": -37.5,
+    "pctPlusFirst3Days": null,
+    "nWithClosed3Days": 0,
+    "roiFirst3Days": null,
+    "pctPlusLifetime": 0.0,
+    "avgSpendUntilOff": null,
+    "medianSpendUntilOff": null,
+    "nWinners_ge20usd_roi30": 0,
+    "winnersProfit": 0,
+    "bestRK": "vb-AlexZLoansEE-tg_2-fb-ee-a-0924-GE01-p",
+    "bestRKprofit": -0.17,
+    "avgRKperBundleLaunch": null
+   },
+   "угол первым": {
+    "cohort": "угол первым",
+    "launchedWithSpend": 1,
+    "spend": 1.3,
+    "profitNet": -0.93,
+    "roiNet": -71.5,
+    "pctPlusFirst3Days": null,
+    "nWithClosed3Days": 0,
+    "roiFirst3Days": null,
+    "pctPlusLifetime": 0.0,
+    "avgSpendUntilOff": null,
+    "medianSpendUntilOff": null,
+    "nWinners_ge20usd_roi30": 0,
+    "winnersProfit": 0,
+    "bestRK": "vb-AlexZLoansBR-tg_2-fb-br-a-0923-GE04-p",
+    "bestRKprofit": -0.93,
+    "avgRKperBundleLaunch": null
+   }
+  },
+  "agent_rk_list": [
+   {
+    "name": "vb-AlexZLoansBR-tg_3-fb-br-a-0923-GE01-p",
+    "package": "BR-inss-aposentado-2026-09-23-rk2",
+    "approach": "ключ первым",
+    "first": "2026-09-23",
+    "spend": 5.72,
+    "revenueNet": 3.63,
+    "profitNet": -2.09
+   },
+   {
+    "name": "vb-alexzinstitutionshildrenbr-tg_1-fb-br-a-0923-GE08-p",
+    "package": "BR-escola-particular-2026-09-23",
+    "approach": "ключ первым",
+    "first": "2026-09-23",
+    "spend": 2.19,
+    "revenueNet": 1.46,
+    "profitNet": -0.74
+   },
+   {
+    "name": "vb-AlexZLoansBR-tg_2-fb-br-a-0923-GE04-p",
+    "package": "BR-celular-boleto-2026-09-23",
+    "approach": "угол первым",
+    "first": "2026-09-23",
+    "spend": 1.3,
+    "revenueNet": 0.37,
+    "profitNet": -0.93
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_2-fb-fr-a-0924-GE03-p",
+    "package": "FR-14744-nettoyage-2026-09-23-rk6",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 3.14,
+    "revenueNet": 2.48,
+    "profitNet": -0.75
+   },
+   {
+    "name": "vb-AlexZLoansRO-tg_2-fb-ro-a-0924-GE01-p",
+    "package": "RO-53771-pensioner-loan-2026-09-23",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 2.06,
+    "revenueNet": 1.24,
+    "profitNet": -0.82
+   },
+   {
+    "name": "vb-AlexZLoansBR-tg_3-fb-br-a-0924-GE01-p",
+    "package": "BR-inss-aposentado-2026-09-23",
+    "approach": "ключ первым",
+    "first": "2026-09-24",
+    "spend": 1.77,
+    "revenueNet": 0.42,
+    "profitNet": -1.35
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_2-fb-fr-a-0924-GE01-p",
+    "package": "FR-14744-nettoyage-2026-09-23-rk7",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.6,
+    "revenueNet": 0,
+    "profitNet": -0.62
+   },
+   {
+    "name": "vb-AlexZLoansEE-tg_2-fb-ee-a-0924-GE01-p",
+    "package": "EE-14922-pensioner-loan-2026-09-23",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.5,
+    "revenueNet": 0.33,
+    "profitNet": -0.17
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_2-tk-fr-a-0924-GE03",
+    "package": "FR-14744-nettoyage-2026-09-23-rk6",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.44,
+    "revenueNet": 0.93,
+    "profitNet": 0.49
+   },
+   {
+    "name": "vb-AlexZLoansBR-tg_3-tk-br-a-0924-GE01",
+    "package": "BR-inss-aposentado-2026-09-23-rk2",
+    "approach": "ключ первым",
+    "first": "2026-09-24",
+    "spend": 0.42,
+    "revenueNet": 0,
+    "profitNet": -0.42
+   },
+   {
+    "name": "vb-alexzloanssw-tg_2-tk-ch-a-0924-GE02",
+    "package": "CH-113490-pensioner-loan-2026-09-23",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.4,
+    "revenueNet": 0,
+    "profitNet": -0.4
+   },
+   {
+    "name": "vb-AlexZLoansBR-tg_2-tk-br-a-0924-GE01",
+    "package": "BR-celular-boleto-2026-09-23",
+    "approach": "угол первым",
+    "first": "2026-09-24",
+    "spend": 0.34,
+    "revenueNet": 0,
+    "profitNet": -0.34
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_2-tk-fr-a-0924-GE02",
+    "package": "FR-14744-nettoyage-2026-09-23-rk8",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.26,
+    "revenueNet": 0,
+    "profitNet": -0.26
+   },
+   {
+    "name": "vb-alexzinstitutionshildrenbr-tg_1-tk-br-a-0924-GE01",
+    "package": "BR-escola-particular-2026-09-23",
+    "approach": "ключ первым",
+    "first": "2026-09-24",
+    "spend": 0.25,
+    "revenueNet": 0,
+    "profitNet": -0.25
+   },
+   {
+    "name": "vb-alexzsitesecurityde-tg_1-fb-de-a-0924-GE01-p",
+    "package": "DE-sicherheitsdienst-2026-09-23",
+    "approach": "угол первым",
+    "first": "2026-09-24",
+    "spend": 0.17,
+    "revenueNet": 0,
+    "profitNet": -0.17
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_2-tk-fr-a-0924-GE01",
+    "package": "FR-14744-nettoyage-2026-09-23-rk7",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.12,
+    "revenueNet": 0,
+    "profitNet": -0.12
+   },
+   {
+    "name": "vb-AlexZLoansEE-tg_2-tk-ee-a-0924-GE01",
+    "package": "EE-14922-pensioner-loan-2026-09-23",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.08,
+    "revenueNet": 0,
+    "profitNet": -0.08
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_2-fb-fr-a-0924-GE02-p",
+    "package": "FR-14744-nettoyage-2026-09-23-rk8",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.07,
+    "revenueNet": 0,
+    "profitNet": -0.07
+   },
+   {
+    "name": "vb-alexzloanssw-tg_2-tk-ch-a-0924-GE03",
+    "package": "CH-113490-pensioner-loan-2026-09-23-rk2",
+    "approach": "проверенная статья",
+    "first": "2026-09-24",
+    "spend": 0.02,
+    "revenueNet": 0,
+    "profitNet": -0.02
+   },
+   {
+    "name": "vb-alexzsitesecurityde-tg_1-tk-de-a-0924-GE01",
+    "package": "DE-sicherheitsdienst-2026-09-23",
+    "approach": "угол первым",
+    "first": "2026-09-24",
+    "spend": 0.01,
+    "revenueNet": 0,
+    "profitNet": -0.01
+   }
+  ],
+  "agent_packages_launched_total": 12,
+  "agent_rk_launched_total": 24,
+  "agent_rk_with_any_spend": 20,
+  "since_16_09_by_bundle": [
+   {
+    "bundle": "cleaningjobsbr",
+    "nRK": 28,
+    "spend": 93.35,
+    "profitNet": -4.1,
+    "roiNet": -4.4
+   },
+   {
+    "bundle": "test",
+    "nRK": 13,
+    "spend": 76.72,
+    "profitNet": -22.05,
+    "roiNet": -28.7
+   },
+   {
+    "bundle": "rehabilitationclinicsde",
+    "nRK": 3,
+    "spend": 27.71,
+    "profitNet": 1.72,
+    "roiNet": 6.2
+   },
+   {
+    "bundle": "paycar",
+    "nRK": 3,
+    "spend": 19.51,
+    "profitNet": -10.46,
+    "roiNet": -53.6
+   },
+   {
+    "bundle": "guttercleaning",
+    "nRK": 2,
+    "spend": 17.11,
+    "profitNet": -0.67,
+    "roiNet": -3.9
+   },
+   {
+    "bundle": "study",
+    "nRK": 3,
+    "spend": 14.33,
+    "profitNet": -7.29,
+    "roiNet": -50.9
+   },
+   {
+    "bundle": "visymo_cleaning",
+    "nRK": 13,
+    "spend": 13.93,
+    "profitNet": -14.17,
+    "roiNet": -101.7
+   },
+   {
+    "bundle": "packingjobsit",
+    "nRK": 2,
+    "spend": 11.55,
+    "profitNet": -10.96,
+    "roiNet": -94.9
+   },
+   {
+    "bundle": "loanssw",
+    "nRK": 8,
+    "spend": 10.34,
+    "profitNet": 5.9,
+    "roiNet": 57.1
+   },
+   {
+    "bundle": "loansbr",
+    "nRK": 5,
+    "spend": 9.55,
+    "profitNet": -5.13,
+    "roiNet": -53.7
+   },
+   {
+    "bundle": "cleaningjobsmx",
+    "nRK": 3,
+    "spend": 8.68,
+    "profitNet": -8.47,
+    "roiNet": -97.6
+   },
+   {
+    "bundle": "cleaningjobsfr",
+    "nRK": 8,
+    "spend": 7.52,
+    "profitNet": -4.3,
+    "roiNet": -57.2
+   },
+   {
+    "bundle": "cleaningjobsco",
+    "nRK": 1,
+    "spend": 5.66,
+    "profitNet": -5.66,
+    "roiNet": -100.0
+   },
+   {
+    "bundle": "cleaningjobscl",
+    "nRK": 1,
+    "spend": 4.91,
+    "profitNet": -4.91,
+    "roiNet": -100.0
+   },
+   {
+    "bundle": "rehabilitationclinicssw",
+    "nRK": 1,
+    "spend": 2.63,
+    "profitNet": -2.4,
+    "roiNet": -91.3
+   },
+   {
+    "bundle": "institutionshildrenbr",
+    "nRK": 2,
+    "spend": 2.44,
+    "profitNet": -0.99,
+    "roiNet": -40.6
+   },
+   {
+    "bundle": "rehabilitationclinicsuk",
+    "nRK": 1,
+    "spend": 2.36,
+    "profitNet": -2.16,
+    "roiNet": -91.5
+   },
+   {
+    "bundle": "cleaningjobsie",
+    "nRK": 2,
+    "spend": 2.12,
+    "profitNet": -2.12,
+    "roiNet": -100.0
+   },
+   {
+    "bundle": "loansro",
+    "nRK": 1,
+    "spend": 2.06,
+    "profitNet": -0.82,
+    "roiNet": -39.8
+   },
+   {
+    "bundle": "cleaningjobssk",
+    "nRK": 1,
+    "spend": 2.01,
+    "profitNet": -2.01,
+    "roiNet": -100.0
+   },
+   {
+    "bundle": "cleaningjobsde",
+    "nRK": 4,
+    "spend": 1.8,
+    "profitNet": 3.59,
+    "roiNet": 199.4
+   },
+   {
+    "bundle": "other",
+    "nRK": 2,
+    "spend": 1.29,
+    "profitNet": -1.33,
+    "roiNet": -103.1
+   },
+   {
+    "bundle": "loansee",
+    "nRK": 2,
+    "spend": 0.58,
+    "profitNet": -0.25,
+    "roiNet": -43.1
+   },
+   {
+    "bundle": "cleaningjobspl",
+    "nRK": 2,
+    "spend": 0.47,
+    "profitNet": -0.47,
+    "roiNet": -100.0
+   },
+   {
+    "bundle": "loanssp",
+    "nRK": 1,
+    "spend": 0.29,
+    "profitNet": -0.29,
+    "roiNet": -100.0
+   },
+   {
+    "bundle": "sitesecurityde",
+    "nRK": 2,
+    "spend": 0.18,
+    "profitNet": -0.18,
+    "roiNet": -100.0
+   },
+   {
+    "bundle": "cleaningjobsuk",
+    "nRK": 2,
+    "spend": 0.13,
+    "profitNet": -0.13,
+    "roiNet": -100.0
+   }
+  ],
+  "agent_packages_creatives": {
+   "note": "Все 12 залитых пакетов 23–24.09 — статика jpg; старые/владельца крео только в EE, RO (по 2) и BR escola (2 исправленных владельцем). 10 из 12 помечены как «гипотеза».",
+   "packages": [
+    {
+     "package": "BR-celular-boleto-2026-09-23",
+     "approach": "угол первым",
+     "bucket": "гипотеза",
+     "creatives": 4,
+     "static": 4,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-AlexZLoansBR-tg_2-tk-br-a-0924-GE01",
+      "vb-AlexZLoansBR-tg_2-fb-br-a-0923-GE04-p"
+     ]
+    },
+    {
+     "package": "BR-escola-particular-2026-09-23",
+     "approach": "ключ первым",
+     "bucket": "гипотеза",
+     "creatives": 5,
+     "static": 5,
+     "ownerOrOldCreatives": 2,
+     "rk": [
+      "vb-alexzinstitutionshildrenbr-tg_1-fb-br-a-0923-GE08-p",
+      "vb-alexzinstitutionshildrenbr-tg_1-tk-br-a-0924-GE01"
+     ]
+    },
+    {
+     "package": "BR-inss-aposentado-2026-09-23-rk2",
+     "approach": "ключ первым",
+     "bucket": "гипотеза",
+     "creatives": 4,
+     "static": 4,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-AlexZLoansBR-tg_3-fb-br-a-0923-GE01-p",
+      "vb-AlexZLoansBR-tg_3-tk-br-a-0924-GE01"
+     ]
+    },
+    {
+     "package": "BR-inss-aposentado-2026-09-23",
+     "approach": "ключ первым",
+     "bucket": "гипотеза",
+     "creatives": 4,
+     "static": 4,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-AlexZLoansBR-tg_3-fb-br-a-0924-GE01-p",
+      "vb-AlexZLoansBR-tg_3-tk-br-a-0925-GE02"
+     ]
+    },
+    {
+     "package": "CH-113490-pensioner-loan-2026-09-23-rk2",
+     "approach": "проверенная статья",
+     "bucket": "гипотеза",
+     "creatives": 4,
+     "static": 4,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-alexzloanssw-tg_2-tk-ch-a-0924-GE03",
+      "vb-alexzloanssw-tg_2-fb-ch-a-0924-GE02-p"
+     ]
+    },
+    {
+     "package": "CH-113490-pensioner-loan-2026-09-23",
+     "approach": "проверенная статья",
+     "bucket": "гипотеза",
+     "creatives": 4,
+     "static": 4,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-alexzloanssw-tg_2-fb-ch-a-0924-GE01-p",
+      "vb-alexzloanssw-tg_2-tk-ch-a-0924-GE02"
+     ]
+    },
+    {
+     "package": "DE-sicherheitsdienst-2026-09-23",
+     "approach": "угол первым",
+     "bucket": "гипотеза",
+     "creatives": 6,
+     "static": 6,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-alexzsitesecurityde-tg_1-fb-de-a-0924-GE01-p",
+      "vb-alexzsitesecurityde-tg_1-tk-de-a-0924-GE01"
+     ]
+    },
+    {
+     "package": "EE-14922-pensioner-loan-2026-09-23",
+     "approach": "проверенная статья",
+     "bucket": "перезапуск",
+     "creatives": 5,
+     "static": 3,
+     "ownerOrOldCreatives": 2,
+     "rk": [
+      "vb-AlexZLoansEE-tg_2-tk-ee-a-0924-GE01",
+      "vb-AlexZLoansEE-tg_2-fb-ee-a-0924-GE01-p"
+     ]
+    },
+    {
+     "package": "FR-14744-nettoyage-2026-09-23-rk6",
+     "approach": "проверенная статья",
+     "bucket": "гипотеза",
+     "creatives": 4,
+     "static": 4,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-AlexZCleaningJobsFR-tg_2-fb-fr-a-0924-GE03-p",
+      "vb-AlexZCleaningJobsFR-tg_2-tk-fr-a-0924-GE03"
+     ]
+    },
+    {
+     "package": "FR-14744-nettoyage-2026-09-23-rk7",
+     "approach": "проверенная статья",
+     "bucket": "гипотеза",
+     "creatives": 4,
+     "static": 4,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-AlexZCleaningJobsFR-tg_2-fb-fr-a-0924-GE01-p",
+      "vb-AlexZCleaningJobsFR-tg_2-tk-fr-a-0924-GE01"
+     ]
+    },
+    {
+     "package": "FR-14744-nettoyage-2026-09-23-rk8",
+     "approach": "проверенная статья",
+     "bucket": "гипотеза",
+     "creatives": 4,
+     "static": 4,
+     "ownerOrOldCreatives": 0,
+     "rk": [
+      "vb-AlexZCleaningJobsFR-tg_2-tk-fr-a-0924-GE02",
+      "vb-AlexZCleaningJobsFR-tg_2-fb-fr-a-0924-GE02-p"
+     ]
+    },
+    {
+     "package": "RO-53771-pensioner-loan-2026-09-23",
+     "approach": "проверенная статья",
+     "bucket": "перезапуск",
+     "creatives": 5,
+     "static": 3,
+     "ownerOrOldCreatives": 2,
+     "rk": [
+      "vb-AlexZLoansRO-tg_2-tk-ro-a-0925-GE01",
+      "vb-AlexZLoansRO-tg_2-fb-ro-a-0924-GE01-p"
+     ]
+    }
+   ]
+  },
+  "proven_vs_new_since_16_09": {
+   "proven": {
+    "n": 25,
+    "spend": 90.05,
+    "profitNet": 3.39
+   },
+   "new": {
+    "n": 61,
+    "spend": 242.91,
+    "profitNet": -98.23
+   },
+   "sept_1_15": {
+    "proven": {
+     "n": 80,
+     "spend": 1319,
+     "profitNet": 670,
+     "roi": 50.8
+    },
+    "new": {
+     "n": 82,
+     "spend": 955,
+     "profitNet": 30,
+     "roi": 3.1
+    }
+   }
+  }
+ },
+ "proven_vs_new": {
+  "note": "«Проверенная связка» = у той же связки (бандл статьи + платформа) за 14 дней до запуска РК было ≥ $20 спенда и чистый ROI ≥ +20%. Остальное — новая связка/угол или клон неработающей.",
+  "proven": {
+   "cohort": "клон проверенной связки",
+   "launchedWithSpend": 438,
+   "spend": 12947.84,
+   "profitNet": 3630.9,
+   "roiNet": 28.0,
+   "pctPlusFirst3Days": 42.4,
+   "nWithClosed3Days": 436,
+   "roiFirst3Days": 27.3,
+   "pctPlusLifetime": 42.0,
+   "avgSpendUntilOff": 25.51,
+   "medianSpendUntilOff": 8.52,
+   "nWinners_ge20usd_roi30": 52,
+   "winnersProfit": 3222.8,
+   "bestRK": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0804-GE02",
+   "bestRKprofit": 278.75,
+   "avgRKperBundleLaunch": null
+  },
+  "new": {
+   "cohort": "новая связка / клон слабой",
+   "launchedWithSpend": 800,
+   "spend": 17431.98,
+   "profitNet": 2320.32,
+   "roiNet": 13.3,
+   "pctPlusFirst3Days": 28.8,
+   "nWithClosed3Days": 784,
+   "roiFirst3Days": 1.2,
+   "pctPlusLifetime": 27.4,
+   "avgSpendUntilOff": 19.73,
+   "medianSpendUntilOff": 6.88,
+   "nWinners_ge20usd_roi30": 69,
+   "winnersProfit": 3469.05,
+   "bestRK": "vb-AlexZCleaningJobsFR-tg_set-fb-fr-a-0822-GE01-p",
+   "bestRKprofit": 230.78,
+   "avgRKperBundleLaunch": null
+  },
+  "by_month": {
+   "2026-06": {
+    "proven": {
+     "cohort": "proven 2026-06",
+     "launchedWithSpend": 36,
+     "spend": 1392.04,
+     "profitNet": 329.16,
+     "roiNet": 23.6,
+     "pctPlusFirst3Days": 36.1,
+     "nWithClosed3Days": 36,
+     "roiFirst3Days": -2.1,
+     "pctPlusLifetime": 36.1,
+     "avgSpendUntilOff": 38.67,
+     "medianSpendUntilOff": 18.12,
+     "nWinners_ge20usd_roi30": 5,
+     "winnersProfit": 409.88,
+     "bestRK": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0609-GE07-p",
+     "bestRKprofit": 156.84,
+     "avgRKperBundleLaunch": null
+    },
+    "new": {
+     "cohort": "new 2026-06",
+     "launchedWithSpend": 130,
+     "spend": 3260.76,
+     "profitNet": 166.73,
+     "roiNet": 5.1,
+     "pctPlusFirst3Days": 29.2,
+     "nWithClosed3Days": 130,
+     "roiFirst3Days": -0.4,
+     "pctPlusLifetime": 27.7,
+     "avgSpendUntilOff": 25.08,
+     "medianSpendUntilOff": 7.05,
+     "nWinners_ge20usd_roi30": 8,
+     "winnersProfit": 338.83,
+     "bestRK": "vb-AlexZConstructionJobsFR-tg1-tk-fr-a-0623-GE01",
+     "bestRKprofit": 89.87,
+     "avgRKperBundleLaunch": null
+    }
+   },
+   "2026-07": {
+    "proven": {
+     "cohort": "proven 2026-07",
+     "launchedWithSpend": 109,
+     "spend": 3708.99,
+     "profitNet": 956.36,
+     "roiNet": 25.8,
+     "pctPlusFirst3Days": 41.3,
+     "nWithClosed3Days": 109,
+     "roiFirst3Days": 24.3,
+     "pctPlusLifetime": 44.0,
+     "avgSpendUntilOff": 33.77,
+     "medianSpendUntilOff": 13.77,
+     "nWinners_ge20usd_roi30": 15,
+     "winnersProfit": 793.43,
+     "bestRK": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0711-GE05-p",
+     "bestRKprofit": 88.02,
+     "avgRKperBundleLaunch": null
+    },
+    "new": {
+     "cohort": "new 2026-07",
+     "launchedWithSpend": 164,
+     "spend": 5574.81,
+     "profitNet": 1209.29,
+     "roiNet": 21.7,
+     "pctPlusFirst3Days": 43.3,
+     "nWithClosed3Days": 164,
+     "roiFirst3Days": 21.3,
+     "pctPlusLifetime": 42.1,
+     "avgSpendUntilOff": 32.43,
+     "medianSpendUntilOff": 12.55,
+     "nWinners_ge20usd_roi30": 20,
+     "winnersProfit": 1103.17,
+     "bestRK": "vb-AlexZLoansLV-tg1_auto-fb-lv-a-0711-GE01-p",
+     "bestRKprofit": 160.64,
+     "avgRKperBundleLaunch": null
+    }
+   },
+   "2026-08": {
+    "proven": {
+     "cohort": "proven 2026-08",
+     "launchedWithSpend": 188,
+     "spend": 6437.63,
+     "profitNet": 1672.18,
+     "roiNet": 26.0,
+     "pctPlusFirst3Days": 50.0,
+     "nWithClosed3Days": 188,
+     "roiFirst3Days": 32.3,
+     "pctPlusLifetime": 47.3,
+     "avgSpendUntilOff": 25.22,
+     "medianSpendUntilOff": 9.2,
+     "nWinners_ge20usd_roi30": 23,
+     "winnersProfit": 1338.34,
+     "bestRK": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0804-GE02",
+     "bestRKprofit": 278.75,
+     "avgRKperBundleLaunch": null
+    },
+    "new": {
+     "cohort": "new 2026-08",
+     "launchedWithSpend": 363,
+     "spend": 7398.42,
+     "profitNet": 1012.72,
+     "roiNet": 13.7,
+     "pctPlusFirst3Days": 27.3,
+     "nWithClosed3Days": 363,
+     "roiFirst3Days": -1.9,
+     "pctPlusLifetime": 26.7,
+     "avgSpendUntilOff": 14.85,
+     "medianSpendUntilOff": 6.7,
+     "nWinners_ge20usd_roi30": 34,
+     "winnersProfit": 1746.93,
+     "bestRK": "vb-AlexZCleaningJobsFR-tg_set-fb-fr-a-0822-GE01-p",
+     "bestRKprofit": 230.78,
+     "avgRKperBundleLaunch": null
+    }
+   },
+   "2026-09": {
+    "proven": {
+     "cohort": "proven 2026-09",
+     "launchedWithSpend": 105,
+     "spend": 1409.18,
+     "profitNet": 673.2,
+     "roiNet": 47.8,
+     "pctPlusFirst3Days": 32.0,
+     "nWithClosed3Days": 103,
+     "roiFirst3Days": 46.7,
+     "pctPlusLifetime": 32.4,
+     "avgSpendUntilOff": 6.46,
+     "medianSpendUntilOff": 2.46,
+     "nWinners_ge20usd_roi30": 9,
+     "winnersProfit": 681.15,
+     "bestRK": "vb-AlexZCleaningJobsBR-tg1-fb-br-a-0905-GE01-p",
+     "bestRKprofit": 245.17,
+     "avgRKperBundleLaunch": null
+    },
+    "new": {
+     "cohort": "new 2026-09",
+     "launchedWithSpend": 143,
+     "spend": 1197.99,
+     "profitNet": -68.42,
+     "roiNet": -5.7,
+     "pctPlusFirst3Days": 14.2,
+     "nWithClosed3Days": 127,
+     "roiFirst3Days": -15.3,
+     "pctPlusLifetime": 11.9,
+     "avgSpendUntilOff": 8.64,
+     "medianSpendUntilOff": 4.6,
+     "nWinners_ge20usd_roi30": 7,
+     "winnersProfit": 280.12,
+     "bestRK": "vb-AlexZCleaningJobsDE-tg1-fb-de-a-0912-GE02-p",
+     "bestRKprofit": 68.82,
+     "avgRKperBundleLaunch": null
+    }
+   }
+  }
+ },
+ "cuts": {
+  "весь период 01.06–24.09": [
+   {
+    "cut": "FB против TT",
+    "rows": [
+     {
+      "group": "FACEBOOK",
+      "nRK": 980,
+      "spend": 22219.28,
+      "profitNet": 4712.29,
+      "roiNet": 21.2,
+      "cpc": 0.052,
+      "rpcNet": 0.063,
+      "rplNet": 0.557,
+      "pctRKinPlus": 30.3,
+      "pctPlusFirst3": 32.3
+     },
+     {
+      "group": "TIKTOK",
+      "nRK": 366,
+      "spend": 9298.69,
+      "profitNet": 1817.19,
+      "roiNet": 19.5,
+      "cpc": 0.107,
+      "rpcNet": 0.128,
+      "rplNet": 0.834,
+      "pctRKinPlus": 31.1,
+      "pctPlusFirst3": 31.7
+     }
+    ]
+   },
+   {
+    "cut": "провайдер",
+    "rows": [
+     {
+      "group": "IRONFLI",
+      "nRK": 1292,
+      "spend": 30628.68,
+      "profitNet": 6501.72,
+      "roiNet": 21.2,
+      "cpc": 0.061,
+      "rpcNet": 0.075,
+      "rplNet": 0.617,
+      "pctRKinPlus": 31.0,
+      "pctPlusFirst3": 32.6
+     },
+     {
+      "group": "TARZO",
+      "nRK": 41,
+      "spend": 875.36,
+      "profitNet": 41.93,
+      "roiNet": 4.8,
+      "cpc": 0.045,
+      "rpcNet": 0.047,
+      "rplNet": 0.598,
+      "pctRKinPlus": 26.8,
+      "pctPlusFirst3": 24.4
+     },
+     {
+      "group": "VISYMO",
+      "nRK": 13,
+      "spend": 13.93,
+      "profitNet": -14.17,
+      "roiNet": -101.7,
+      "cpc": 0.059,
+      "rpcNet": 0.0,
+      "rplNet": null,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     }
+    ]
+   },
+   {
+    "cut": "вертикаль",
+    "rows": [
+     {
+      "group": "кредиты",
+      "nRK": 365,
+      "spend": 12478.97,
+      "profitNet": 3011.04,
+      "roiNet": 24.1,
+      "cpc": 0.068,
+      "rpcNet": 0.084,
+      "rplNet": 0.661,
+      "pctRKinPlus": 40.0,
+      "pctPlusFirst3": 44.4
+     },
+     {
+      "group": "работа: уборка",
+      "nRK": 464,
+      "spend": 11097.92,
+      "profitNet": 2983.46,
+      "roiNet": 26.9,
+      "cpc": 0.049,
+      "rpcNet": 0.062,
+      "rplNet": 0.522,
+      "pctRKinPlus": 31.7,
+      "pctPlusFirst3": 33.3
+     },
+     {
+      "group": "работа: стройка",
+      "nRK": 333,
+      "spend": 6323.93,
+      "profitNet": 785.99,
+      "roiNet": 12.4,
+      "cpc": 0.083,
+      "rpcNet": 0.094,
+      "rplNet": 0.959,
+      "pctRKinPlus": 29.7,
+      "pctPlusFirst3": 28.5
+     },
+     {
+      "group": "работа: прочее",
+      "nRK": 50,
+      "spend": 567.34,
+      "profitNet": -144.04,
+      "roiNet": -25.4,
+      "cpc": 0.065,
+      "rpcNet": 0.049,
+      "rplNet": 0.79,
+      "pctRKinPlus": 10.0,
+      "pctPlusFirst3": 12.5
+     },
+     {
+      "group": "тепловые насосы",
+      "nRK": 11,
+      "spend": 486.33,
+      "profitNet": 165.79,
+      "roiNet": 34.1,
+      "cpc": 0.04,
+      "rpcNet": 0.053,
+      "rplNet": 0.305,
+      "pctRKinPlus": 54.5,
+      "pctPlusFirst3": 36.4
+     },
+     {
+      "group": "обучение",
+      "nRK": 48,
+      "spend": 152.43,
+      "profitNet": -89.28,
+      "roiNet": -58.6,
+      "cpc": 0.05,
+      "rpcNet": 0.021,
+      "rplNet": 0.228,
+      "pctRKinPlus": 6.2,
+      "pctPlusFirst3": 6.5
+     },
+     {
+      "group": "дома престарелых (BR test)",
+      "nRK": 20,
+      "spend": 117.26,
+      "profitNet": -36.28,
+      "roiNet": -30.9,
+      "cpc": 0.045,
+      "rpcNet": 0.031,
+      "rplNet": 0.151,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 5.0
+     },
+     {
+      "group": "туризм",
+      "nRK": 16,
+      "spend": 85.79,
+      "profitNet": -45.67,
+      "roiNet": -53.2,
+      "cpc": 0.152,
+      "rpcNet": 0.071,
+      "rplNet": 0.188,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     },
+     {
+      "group": "донорство",
+      "nRK": 22,
+      "spend": 72.68,
+      "profitNet": -48.0,
+      "roiNet": -66.0,
+      "cpc": 0.299,
+      "rpcNet": 0.105,
+      "rplNet": 1.274,
+      "pctRKinPlus": 9.1,
+      "pctPlusFirst3": 18.2
+     },
+     {
+      "group": "прочее",
+      "nRK": 4,
+      "spend": 60.13,
+      "profitNet": -59.04,
+      "roiNet": -98.2,
+      "cpc": 0.064,
+      "rpcNet": 0.001,
+      "rplNet": 0.056,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     },
+     {
+      "group": "реабилитация",
+      "nRK": 5,
+      "spend": 32.7,
+      "profitNet": -2.84,
+      "roiNet": -8.7,
+      "cpc": 0.098,
+      "rpcNet": 0.09,
+      "rplNet": 0.332,
+      "pctRKinPlus": 20.0,
+      "pctPlusFirst3": 33.3
+     },
+     {
+      "group": "услуги для дома",
+      "nRK": 4,
+      "spend": 21.3,
+      "profitNet": 19.74,
+      "roiNet": 92.7,
+      "cpc": 0.239,
+      "rpcNet": 0.465,
+      "rplNet": 1.217,
+      "pctRKinPlus": 50.0,
+      "pctPlusFirst3": 50.0
+     },
+     {
+      "group": "авто в рассрочку",
+      "nRK": 3,
+      "spend": 19.51,
+      "profitNet": -10.46,
+      "roiNet": -53.6,
+      "cpc": 0.091,
+      "rpcNet": 0.043,
+      "rplNet": 0.353,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     },
+     {
+      "group": "стоматология",
+      "nRK": 1,
+      "spend": 1.68,
+      "profitNet": -0.93,
+      "roiNet": -55.4,
+      "cpc": 0.052,
+      "rpcNet": 0.023,
+      "rplNet": 0.068,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     }
+    ]
+   },
+   {
+    "cut": "гео tier",
+    "rows": [
+     {
+      "group": "tier2",
+      "nRK": 589,
+      "spend": 17058.62,
+      "profitNet": 3787.48,
+      "roiNet": 22.2,
+      "cpc": 0.057,
+      "rpcNet": 0.07,
+      "rplNet": 0.625,
+      "pctRKinPlus": 36.0,
+      "pctPlusFirst3": 38.2
+     },
+     {
+      "group": "tier1",
+      "nRK": 520,
+      "spend": 11195.78,
+      "profitNet": 2223.26,
+      "roiNet": 19.9,
+      "cpc": 0.101,
+      "rpcNet": 0.122,
+      "rplNet": 0.84,
+      "pctRKinPlus": 29.6,
+      "pctPlusFirst3": 30.8
+     },
+     {
+      "group": "tier3",
+      "nRK": 129,
+      "spend": 1843.01,
+      "profitNet": 544.22,
+      "roiNet": 29.5,
+      "cpc": 0.02,
+      "rpcNet": 0.026,
+      "rplNet": 0.226,
+      "pctRKinPlus": 23.3,
+      "pctPlusFirst3": 25.0
+     },
+     {
+      "group": "мульти-гео",
+      "nRK": 105,
+      "spend": 1364.78,
+      "profitNet": 30.34,
+      "roiNet": 2.2,
+      "cpc": 0.098,
+      "rpcNet": 0.101,
+      "rplNet": 0.752,
+      "pctRKinPlus": 14.3,
+      "pctPlusFirst3": 12.9
+     },
+     {
+      "group": "?",
+      "nRK": 3,
+      "spend": 55.78,
+      "profitNet": -55.82,
+      "roiNet": -100.1,
+      "cpc": 0.061,
+      "rpcNet": 0.0,
+      "rplNet": 0.0,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     }
+    ]
+   },
+   {
+    "cut": "бюджет FB (прокси: медиана дневного спенда РК)",
+    "rows": [
+     {
+      "group": "FB ≈$5/день (медиана дневного спенда ≤ $6)",
+      "nRK": 889,
+      "spend": 16992.94,
+      "profitNet": 2457.82,
+      "roiNet": 14.5,
+      "cpc": 0.052,
+      "rpcNet": 0.06,
+      "rplNet": 0.545,
+      "pctRKinPlus": 28.8,
+      "pctPlusFirst3": 30.5
+     },
+     {
+      "group": "FB ≈$10/день ($6–12)",
+      "nRK": 51,
+      "spend": 4676.4,
+      "profitNet": 1995.17,
+      "roiNet": 42.7,
+      "cpc": 0.052,
+      "rpcNet": 0.074,
+      "rplNet": 0.614,
+      "pctRKinPlus": 74.5,
+      "pctPlusFirst3": 76.5
+     },
+     {
+      "group": "FB ≈$15–20/день ($12–25)",
+      "nRK": 4,
+      "spend": 538.95,
+      "profitNet": 268.6,
+      "roiNet": 49.8,
+      "cpc": 0.034,
+      "rpcNet": 0.051,
+      "rplNet": 0.453,
+      "pctRKinPlus": 75.0,
+      "pctPlusFirst3": 75.0
+     }
+    ]
+   },
+   {
+    "cut": "возраст аккаунта",
+    "rows": [
+     {
+      "group": "старый аккаунт (был до 01.06)",
+      "nRK": 536,
+      "spend": 14253.04,
+      "profitNet": 2610.86,
+      "roiNet": 18.3,
+      "cpc": 0.062,
+      "rpcNet": 0.074,
+      "rplNet": 0.679,
+      "pctRKinPlus": 35.3,
+      "pctPlusFirst3": 35.4
+     },
+     {
+      "group": "новый аккаунт (РК в первые 14 дней аккаунта)",
+      "nRK": 323,
+      "spend": 8783.23,
+      "profitNet": 1845.73,
+      "roiNet": 21.0,
+      "cpc": 0.058,
+      "rpcNet": 0.071,
+      "rplNet": 0.582,
+      "pctRKinPlus": 30.0,
+      "pctPlusFirst3": 33.7
+     },
+     {
+      "group": "аккаунт 15+ дней",
+      "nRK": 399,
+      "spend": 8462.82,
+      "profitNet": 2090.78,
+      "roiNet": 24.7,
+      "cpc": 0.062,
+      "rpcNet": 0.077,
+      "rplNet": 0.568,
+      "pctRKinPlus": 31.1,
+      "pctPlusFirst3": 31.8
+     }
+    ]
+   },
+   {
+    "cut": "тип крео FB (видео = есть просмотры видео)",
+    "rows": [
+     {
+      "group": "FB статика",
+      "nRK": 518,
+      "spend": 14144.8,
+      "profitNet": 2810.88,
+      "roiNet": 19.9,
+      "cpc": 0.061,
+      "rpcNet": 0.073,
+      "rplNet": 0.599,
+      "pctRKinPlus": 28.8,
+      "pctPlusFirst3": 31.2
+     },
+     {
+      "group": "FB видео",
+      "nRK": 462,
+      "spend": 8074.48,
+      "profitNet": 1901.41,
+      "roiNet": 23.5,
+      "cpc": 0.041,
+      "rpcNet": 0.051,
+      "rplNet": 0.498,
+      "pctRKinPlus": 32.0,
+      "pctPlusFirst3": 33.6
+     }
+    ]
+   },
+   {
+    "cut": "забаненные аккаунты",
+    "rows": [
+     {
+      "group": "остальные аккаунты",
+      "nRK": 849,
+      "spend": 18139.62,
+      "profitNet": 3961.22,
+      "roiNet": 21.8,
+      "cpc": 0.059,
+      "rpcNet": 0.072,
+      "rplNet": 0.576,
+      "pctRKinPlus": 27.4,
+      "pctPlusFirst3": 29.7
+     },
+     {
+      "group": "IRNFL 18/19 (забанены 14–15.08)",
+      "nRK": 497,
+      "spend": 13378.35,
+      "profitNet": 2568.26,
+      "roiNet": 19.2,
+      "cpc": 0.063,
+      "rpcNet": 0.076,
+      "rplNet": 0.684,
+      "pctRKinPlus": 35.8,
+      "pctPlusFirst3": 36.2
+     }
+    ]
+   },
+   {
+    "cut": "гео (топ по спенду)",
+    "rows": [
+     {
+      "group": "FR",
+      "nRK": 226,
+      "spend": 7378.58,
+      "profitNet": 1851.51,
+      "roiNet": 25.1,
+      "cpc": 0.09,
+      "rpcNet": 0.114,
+      "rplNet": 0.772,
+      "pctRKinPlus": 37.6,
+      "pctPlusFirst3": 36.4
+     },
+     {
+      "group": "LT",
+      "nRK": 79,
+      "spend": 4460.32,
+      "profitNet": 1613.1,
+      "roiNet": 36.2,
+      "cpc": 0.069,
+      "rpcNet": 0.094,
+      "rplNet": 0.889,
+      "pctRKinPlus": 54.4,
+      "pctPlusFirst3": 54.4
+     },
+     {
+      "group": "IT",
+      "nRK": 103,
+      "spend": 3213.87,
+      "profitNet": 170.5,
+      "roiNet": 5.3,
+      "cpc": 0.069,
+      "rpcNet": 0.073,
+      "rplNet": 0.786,
+      "pctRKinPlus": 31.1,
+      "pctPlusFirst3": 36.9
+     },
+     {
+      "group": "PT",
+      "nRK": 97,
+      "spend": 2523.07,
+      "profitNet": 594.55,
+      "roiNet": 23.6,
+      "cpc": 0.054,
+      "rpcNet": 0.066,
+      "rplNet": 0.558,
+      "pctRKinPlus": 37.1,
+      "pctPlusFirst3": 37.1
+     },
+     {
+      "group": "INTL",
+      "nRK": 105,
+      "spend": 1364.78,
+      "profitNet": 30.34,
+      "roiNet": 2.2,
+      "cpc": 0.098,
+      "rpcNet": 0.101,
+      "rplNet": 0.752,
+      "pctRKinPlus": 14.3,
+      "pctPlusFirst3": 12.9
+     },
+     {
+      "group": "ES",
+      "nRK": 86,
+      "spend": 1281.8,
+      "profitNet": 209.33,
+      "roiNet": 16.3,
+      "cpc": 0.12,
+      "rpcNet": 0.142,
+      "rplNet": 0.682,
+      "pctRKinPlus": 31.4,
+      "pctPlusFirst3": 26.7
+     },
+     {
+      "group": "HU",
+      "nRK": 20,
+      "spend": 1091.25,
+      "profitNet": 246.78,
+      "roiNet": 22.6,
+      "cpc": 0.074,
+      "rpcNet": 0.09,
+      "rplNet": 0.569,
+      "pctRKinPlus": 40.0,
+      "pctPlusFirst3": 45.0
+     },
+     {
+      "group": "DE",
+      "nRK": 93,
+      "spend": 1076.88,
+      "profitNet": 54.91,
+      "roiNet": 5.1,
+      "cpc": 0.154,
+      "rpcNet": 0.162,
+      "rplNet": 1.046,
+      "pctRKinPlus": 24.7,
+      "pctPlusFirst3": 27.8
+     },
+     {
+      "group": "BR",
+      "nRK": 80,
+      "spend": 953.21,
+      "profitNet": 497.19,
+      "roiNet": 52.2,
+      "cpc": 0.027,
+      "rpcNet": 0.041,
+      "rplNet": 0.23,
+      "pctRKinPlus": 23.8,
+      "pctPlusFirst3": 26.8
+     },
+     {
+      "group": "PL",
+      "nRK": 69,
+      "spend": 889.06,
+      "profitNet": 75.16,
+      "roiNet": 8.5,
+      "cpc": 0.041,
+      "rpcNet": 0.044,
+      "rplNet": 0.684,
+      "pctRKinPlus": 15.9,
+      "pctPlusFirst3": 16.4
+     },
+     {
+      "group": "RO",
+      "nRK": 17,
+      "spend": 826.3,
+      "profitNet": 175.74,
+      "roiNet": 21.3,
+      "cpc": 0.025,
+      "rpcNet": 0.03,
+      "rplNet": 0.272,
+      "pctRKinPlus": 47.1,
+      "pctPlusFirst3": 50.0
+     },
+     {
+      "group": "GB",
+      "nRK": 69,
+      "spend": 676.78,
+      "profitNet": 153.03,
+      "roiNet": 22.6,
+      "cpc": 0.115,
+      "rpcNet": 0.143,
+      "rplNet": 1.0,
+      "pctRKinPlus": 17.4,
+      "pctPlusFirst3": 22.4
+     },
+     {
+      "group": "AT",
+      "nRK": 33,
+      "spend": 623.41,
+      "profitNet": 96.01,
+      "roiNet": 15.4,
+      "cpc": 0.145,
+      "rpcNet": 0.171,
+      "rplNet": 1.166,
+      "pctRKinPlus": 27.3,
+      "pctPlusFirst3": 33.3
+     },
+     {
+      "group": "EE",
+      "nRK": 36,
+      "spend": 577.55,
+      "profitNet": 273.2,
+      "roiNet": 47.3,
+      "cpc": 0.1,
+      "rpcNet": 0.148,
+      "rplNet": 1.435,
+      "pctRKinPlus": 55.6,
+      "pctPlusFirst3": 58.8
+     },
+     {
+      "group": "SI",
+      "nRK": 14,
+      "spend": 559.62,
+      "profitNet": 94.87,
+      "roiNet": 17.0,
+      "cpc": 0.048,
+      "rpcNet": 0.056,
+      "rplNet": 0.414,
+      "pctRKinPlus": 35.7,
+      "pctPlusFirst3": 50.0
+     },
+     {
+      "group": "LV",
+      "nRK": 24,
+      "spend": 463.05,
+      "profitNet": 295.49,
+      "roiNet": 63.8,
+      "cpc": 0.077,
+      "rpcNet": 0.126,
+      "rplNet": 1.511,
+      "pctRKinPlus": 45.8,
+      "pctPlusFirst3": 45.8
+     },
+     {
+      "group": "BE",
+      "nRK": 31,
+      "spend": 454.49,
+      "profitNet": 32.9,
+      "roiNet": 7.2,
+      "cpc": 0.109,
+      "rpcNet": 0.117,
+      "rplNet": 1.373,
+      "pctRKinPlus": 29.0,
+      "pctPlusFirst3": 22.6
+     },
+     {
+      "group": "RS",
+      "nRK": 7,
+      "spend": 355.01,
+      "profitNet": 53.36,
+      "roiNet": 15.0,
+      "cpc": 0.014,
+      "rpcNet": 0.016,
+      "rplNet": 0.201,
+      "pctRKinPlus": 28.6,
+      "pctPlusFirst3": 28.6
+     },
+     {
+      "group": "HR",
+      "nRK": 12,
+      "spend": 342.71,
+      "profitNet": 54.82,
+      "roiNet": 16.0,
+      "cpc": 0.038,
+      "rpcNet": 0.044,
+      "rplNet": 0.326,
+      "pctRKinPlus": 50.0,
+      "pctPlusFirst3": 66.7
+     },
+     {
+      "group": "BG",
+      "nRK": 10,
+      "spend": 294.68,
+      "profitNet": -11.34,
+      "roiNet": -3.8,
+      "cpc": 0.023,
+      "rpcNet": 0.022,
+      "rplNet": 0.251,
+      "pctRKinPlus": 30.0,
+      "pctPlusFirst3": 20.0
+     },
+     {
+      "group": "MX",
+      "nRK": 15,
+      "spend": 267.57,
+      "profitNet": 53.98,
+      "roiNet": 20.2,
+      "cpc": 0.022,
+      "rpcNet": 0.027,
+      "rplNet": 0.208,
+      "pctRKinPlus": 40.0,
+      "pctPlusFirst3": 40.0
+     },
+     {
+      "group": "NL",
+      "nRK": 7,
+      "spend": 235.34,
+      "profitNet": 40.95,
+      "roiNet": 17.4,
+      "cpc": 0.135,
+      "rpcNet": 0.159,
+      "rplNet": 1.067,
+      "pctRKinPlus": 42.9,
+      "pctPlusFirst3": 28.6
+     },
+     {
+      "group": "GR",
+      "nRK": 8,
+      "spend": 231.64,
+      "profitNet": -32.75,
+      "roiNet": -14.1,
+      "cpc": 0.031,
+      "rpcNet": 0.027,
+      "rplNet": 0.175,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 37.5
+     },
+     {
+      "group": "SE",
+      "nRK": 13,
+      "spend": 218.44,
+      "profitNet": -45.7,
+      "roiNet": -20.9,
+      "cpc": 0.168,
+      "rpcNet": 0.133,
+      "rplNet": 0.659,
+      "pctRKinPlus": 15.4,
+      "pctPlusFirst3": 15.4
+     },
+     {
+      "group": "DK",
+      "nRK": 4,
+      "spend": 193.89,
+      "profitNet": 0.26,
+      "roiNet": 0.1,
+      "cpc": 0.121,
+      "rpcNet": 0.121,
+      "rplNet": 0.812,
+      "pctRKinPlus": 25.0,
+      "pctPlusFirst3": 50.0
+     },
+     {
+      "group": "SK",
+      "nRK": 7,
+      "spend": 192.79,
+      "profitNet": 7.49,
+      "roiNet": 3.9,
+      "cpc": 0.045,
+      "rpcNet": 0.047,
+      "rplNet": 0.347,
+      "pctRKinPlus": 14.3,
+      "pctPlusFirst3": 28.6
+     },
+     {
+      "group": "BA",
+      "nRK": 4,
+      "spend": 151.12,
+      "profitNet": 35.04,
+      "roiNet": 23.2,
+      "cpc": 0.019,
+      "rpcNet": 0.024,
+      "rplNet": 0.384,
+      "pctRKinPlus": 50.0,
+      "pctPlusFirst3": 50.0
+     }
+    ]
+   }
+  ],
+  "последние 30 дней 25.08–24.09": [
+   {
+    "cut": "FB против TT",
+    "rows": [
+     {
+      "group": "FACEBOOK",
+      "nRK": 297,
+      "spend": 6191.35,
+      "profitNet": 2015.18,
+      "roiNet": 32.5,
+      "cpc": 0.036,
+      "rpcNet": 0.048,
+      "rplNet": 0.405,
+      "pctRKinPlus": 33.3,
+      "pctPlusFirst3": 39.9
+     },
+     {
+      "group": "TIKTOK",
+      "nRK": 196,
+      "spend": 3077.51,
+      "profitNet": 307.11,
+      "roiNet": 10.0,
+      "cpc": 0.084,
+      "rpcNet": 0.093,
+      "rplNet": 0.64,
+      "pctRKinPlus": 24.0,
+      "pctPlusFirst3": 37.8
+     }
+    ]
+   },
+   {
+    "cut": "провайдер",
+    "rows": [
+     {
+      "group": "IRONFLI",
+      "nRK": 480,
+      "spend": 9254.93,
+      "profitNet": 2336.47,
+      "roiNet": 25.2,
+      "cpc": 0.045,
+      "rpcNet": 0.056,
+      "rplNet": 0.453,
+      "pctRKinPlus": 30.4,
+      "pctPlusFirst3": 39.9
+     },
+     {
+      "group": "VISYMO",
+      "nRK": 13,
+      "spend": 13.93,
+      "profitNet": -14.17,
+      "roiNet": -101.7,
+      "cpc": 0.059,
+      "rpcNet": 0.0,
+      "rplNet": null,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     }
+    ]
+   },
+   {
+    "cut": "вертикаль",
+    "rows": [
+     {
+      "group": "работа: уборка",
+      "nRK": 345,
+      "spend": 6806.04,
+      "profitNet": 1862.34,
+      "roiNet": 27.4,
+      "cpc": 0.039,
+      "rpcNet": 0.049,
+      "rplNet": 0.425,
+      "pctRKinPlus": 30.1,
+      "pctPlusFirst3": 36.5
+     },
+     {
+      "group": "кредиты",
+      "nRK": 68,
+      "spend": 1779.71,
+      "profitNet": 425.85,
+      "roiNet": 23.9,
+      "cpc": 0.095,
+      "rpcNet": 0.118,
+      "rplNet": 0.654,
+      "pctRKinPlus": 45.6,
+      "pctPlusFirst3": 71.2
+     },
+     {
+      "group": "работа: стройка",
+      "nRK": 32,
+      "spend": 231.77,
+      "profitNet": 27.04,
+      "roiNet": 11.7,
+      "cpc": 0.072,
+      "rpcNet": 0.081,
+      "rplNet": 0.84,
+      "pctRKinPlus": 25.0,
+      "pctPlusFirst3": 46.9
+     },
+     {
+      "group": "тепловые насосы",
+      "nRK": 1,
+      "spend": 192.68,
+      "profitNet": 97.68,
+      "roiNet": 50.7,
+      "cpc": 0.043,
+      "rpcNet": 0.064,
+      "rplNet": 0.364,
+      "pctRKinPlus": 100.0,
+      "pctPlusFirst3": 100.0
+     },
+     {
+      "group": "дома престарелых (BR test)",
+      "nRK": 15,
+      "spend": 100.38,
+      "profitNet": -24.4,
+      "roiNet": -24.3,
+      "cpc": 0.041,
+      "rpcNet": 0.031,
+      "rplNet": 0.144,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 6.7
+     },
+     {
+      "group": "работа: прочее",
+      "nRK": 12,
+      "spend": 62.52,
+      "profitNet": -38.19,
+      "roiNet": -61.1,
+      "cpc": 0.035,
+      "rpcNet": 0.015,
+      "rplNet": 1.178,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 10.0
+     },
+     {
+      "group": "реабилитация",
+      "nRK": 5,
+      "spend": 32.7,
+      "profitNet": -2.83,
+      "roiNet": -8.7,
+      "cpc": 0.098,
+      "rpcNet": 0.09,
+      "rplNet": 0.332,
+      "pctRKinPlus": 20.0,
+      "pctPlusFirst3": 33.3
+     },
+     {
+      "group": "обучение",
+      "nRK": 7,
+      "spend": 24.93,
+      "profitNet": -12.52,
+      "roiNet": -50.2,
+      "cpc": 0.147,
+      "rpcNet": 0.077,
+      "rplNet": 0.622,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     },
+     {
+      "group": "авто в рассрочку",
+      "nRK": 3,
+      "spend": 19.51,
+      "profitNet": -10.46,
+      "roiNet": -53.6,
+      "cpc": 0.091,
+      "rpcNet": 0.043,
+      "rplNet": 0.353,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     },
+     {
+      "group": "услуги для дома",
+      "nRK": 2,
+      "spend": 17.11,
+      "profitNet": -0.67,
+      "roiNet": -3.9,
+      "cpc": 0.204,
+      "rpcNet": 0.2,
+      "rplNet": 0.509,
+      "pctRKinPlus": 50.0,
+      "pctPlusFirst3": 50.0
+     },
+     {
+      "group": "прочее",
+      "nRK": 2,
+      "spend": 1.29,
+      "profitNet": -1.33,
+      "roiNet": -102.8,
+      "cpc": 0.161,
+      "rpcNet": 0.0,
+      "rplNet": null,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": null
+     },
+     {
+      "group": "донорство",
+      "nRK": 1,
+      "spend": 0.22,
+      "profitNet": -0.22,
+      "roiNet": -100.0,
+      "cpc": null,
+      "rpcNet": null,
+      "rplNet": null,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": 0.0
+     }
+    ]
+   },
+   {
+    "cut": "гео tier",
+    "rows": [
+     {
+      "group": "tier1",
+      "nRK": 217,
+      "spend": 4625.11,
+      "profitNet": 1098.21,
+      "roiNet": 23.7,
+      "cpc": 0.083,
+      "rpcNet": 0.103,
+      "rplNet": 0.692,
+      "pctRKinPlus": 31.8,
+      "pctPlusFirst3": 44.7
+     },
+     {
+      "group": "tier2",
+      "nRK": 141,
+      "spend": 3170.42,
+      "profitNet": 677.39,
+      "roiNet": 21.4,
+      "cpc": 0.034,
+      "rpcNet": 0.041,
+      "rplNet": 0.413,
+      "pctRKinPlus": 33.3,
+      "pctPlusFirst3": 43.4
+     },
+     {
+      "group": "tier3",
+      "nRK": 109,
+      "spend": 1247.69,
+      "profitNet": 498.26,
+      "roiNet": 39.9,
+      "cpc": 0.023,
+      "rpcNet": 0.032,
+      "rplNet": 0.229,
+      "pctRKinPlus": 23.9,
+      "pctPlusFirst3": 26.0
+     },
+     {
+      "group": "мульти-гео",
+      "nRK": 24,
+      "spend": 224.35,
+      "profitNet": 49.76,
+      "roiNet": 22.2,
+      "cpc": 0.067,
+      "rpcNet": 0.083,
+      "rplNet": 0.669,
+      "pctRKinPlus": 16.7,
+      "pctPlusFirst3": 20.0
+     },
+     {
+      "group": "?",
+      "nRK": 2,
+      "spend": 1.29,
+      "profitNet": -1.33,
+      "roiNet": -102.8,
+      "cpc": 0.161,
+      "rpcNet": 0.0,
+      "rplNet": null,
+      "pctRKinPlus": 0.0,
+      "pctPlusFirst3": null
+     }
+    ]
+   },
+   {
+    "cut": "бюджет FB (прокси: медиана дневного спенда РК)",
+    "rows": [
+     {
+      "group": "FB ≈$5/день (медиана дневного спенда ≤ $6)",
+      "nRK": 276,
+      "spend": 4791.08,
+      "profitNet": 1026.43,
+      "roiNet": 21.4,
+      "cpc": 0.037,
+      "rpcNet": 0.045,
+      "rplNet": 0.422,
+      "pctRKinPlus": 31.5,
+      "pctPlusFirst3": 37.2
+     },
+     {
+      "group": "FB ≈$10/день ($6–12)",
+      "nRK": 11,
+      "spend": 1260.09,
+      "profitNet": 744.99,
+      "roiNet": 59.1,
+      "cpc": 0.037,
+      "rpcNet": 0.059,
+      "rplNet": 0.377,
+      "pctRKinPlus": 100.0,
+      "pctPlusFirst3": 100.0
+     },
+     {
+      "group": "FB ≈$15–20/день ($12–25)",
+      "nRK": 1,
+      "spend": 138.46,
+      "profitNet": 245.17,
+      "roiNet": 177.1,
+      "cpc": 0.023,
+      "rpcNet": 0.065,
+      "rplNet": 0.328,
+      "pctRKinPlus": 100.0,
+      "pctPlusFirst3": 100.0
+     }
+    ]
+   },
+   {
+    "cut": "возраст аккаунта",
+    "rows": [
+     {
+      "group": "аккаунт 15+ дней",
+      "nRK": 328,
+      "spend": 4986.78,
+      "profitNet": 1045.69,
+      "roiNet": 21.0,
+      "cpc": 0.045,
+      "rpcNet": 0.055,
+      "rplNet": 0.428,
+      "pctRKinPlus": 25.3,
+      "pctPlusFirst3": 33.2
+     },
+     {
+      "group": "новый аккаунт (РК в первые 14 дней аккаунта)",
+      "nRK": 129,
+      "spend": 4275.16,
+      "profitNet": 1282.53,
+      "roiNet": 30.0,
+      "cpc": 0.044,
+      "rpcNet": 0.057,
+      "rplNet": 0.483,
+      "pctRKinPlus": 48.1,
+      "pctPlusFirst3": 57.4
+     }
+    ]
+   },
+   {
+    "cut": "тип крео FB (видео = есть просмотры видео)",
+    "rows": [
+     {
+      "group": "FB видео",
+      "nRK": 186,
+      "spend": 3562.77,
+      "profitNet": 1406.73,
+      "roiNet": 39.5,
+      "cpc": 0.027,
+      "rpcNet": 0.038,
+      "rplNet": 0.352,
+      "pctRKinPlus": 35.5,
+      "pctPlusFirst3": 42.2
+     },
+     {
+      "group": "FB статика",
+      "nRK": 111,
+      "spend": 2628.58,
+      "profitNet": 608.45,
+      "roiNet": 23.1,
+      "cpc": 0.068,
+      "rpcNet": 0.085,
+      "rplNet": 0.526,
+      "pctRKinPlus": 29.7,
+      "pctPlusFirst3": 36.0
+     }
+    ]
+   },
+   {
+    "cut": "забаненные аккаунты",
+    "rows": [
+     {
+      "group": "остальные аккаунты",
+      "nRK": 493,
+      "spend": 9268.86,
+      "profitNet": 2322.3,
+      "roiNet": 25.1,
+      "cpc": 0.045,
+      "rpcNet": 0.056,
+      "rplNet": 0.453,
+      "pctRKinPlus": 29.6,
+      "pctPlusFirst3": 39.1
+     }
+    ]
+   },
+   {
+    "cut": "гео (топ по спенду)",
+    "rows": [
+     {
+      "group": "FR",
+      "nRK": 105,
+      "spend": 3374.92,
+      "profitNet": 759.97,
+      "roiNet": 22.5,
+      "cpc": 0.081,
+      "rpcNet": 0.101,
+      "rplNet": 0.632,
+      "pctRKinPlus": 35.2,
+      "pctPlusFirst3": 51.5
+     },
+     {
+      "group": "BR",
+      "nRK": 78,
+      "spend": 901.74,
+      "profitNet": 509.98,
+      "roiNet": 56.6,
+      "cpc": 0.026,
+      "rpcNet": 0.041,
+      "rplNet": 0.236,
+      "pctRKinPlus": 24.4,
+      "pctPlusFirst3": 27.5
+     },
+     {
+      "group": "LT",
+      "nRK": 8,
+      "spend": 746.46,
+      "profitNet": 141.87,
+      "roiNet": 19.0,
+      "cpc": 0.05,
+      "rpcNet": 0.059,
+      "rplNet": 0.514,
+      "pctRKinPlus": 75.0,
+      "pctPlusFirst3": 100.0
+     },
+     {
+      "group": "PT",
+      "nRK": 24,
+      "spend": 594.33,
+      "profitNet": 193.43,
+      "roiNet": 32.5,
+      "cpc": 0.037,
+      "rpcNet": 0.049,
+      "rplNet": 0.4,
+      "pctRKinPlus": 41.7,
+      "pctPlusFirst3": 50.0
+     },
+     {
+      "group": "HU",
+      "nRK": 11,
+      "spend": 501.4,
+      "profitNet": 108.86,
+      "roiNet": 21.7,
+      "cpc": 0.055,
+      "rpcNet": 0.067,
+      "rplNet": 0.549,
+      "pctRKinPlus": 36.4,
+      "pctPlusFirst3": 45.5
+     },
+     {
+      "group": "RO",
+      "nRK": 7,
+      "spend": 348.18,
+      "profitNet": 95.59,
+      "roiNet": 27.5,
+      "cpc": 0.016,
+      "rpcNet": 0.021,
+      "rplNet": 0.222,
+      "pctRKinPlus": 71.4,
+      "pctPlusFirst3": 83.3
+     },
+     {
+      "group": "ES",
+      "nRK": 23,
+      "spend": 323.57,
+      "profitNet": 65.37,
+      "roiNet": 20.2,
+      "cpc": 0.115,
+      "rpcNet": 0.141,
+      "rplNet": 0.585,
+      "pctRKinPlus": 30.4,
+      "pctPlusFirst3": 34.8
+     },
+     {
+      "group": "GB",
+      "nRK": 30,
+      "spend": 295.04,
+      "profitNet": 90.69,
+      "roiNet": 30.7,
+      "cpc": 0.075,
+      "rpcNet": 0.099,
+      "rplNet": 0.797,
+      "pctRKinPlus": 33.3,
+      "pctPlusFirst3": 39.3
+     },
+     {
+      "group": "MX",
+      "nRK": 15,
+      "spend": 267.57,
+      "profitNet": 53.99,
+      "roiNet": 20.2,
+      "cpc": 0.022,
+      "rpcNet": 0.027,
+      "rplNet": 0.208,
+      "pctRKinPlus": 40.0,
+      "pctPlusFirst3": 40.0
+     },
+     {
+      "group": "DE",
+      "nRK": 23,
+      "spend": 265.05,
+      "profitNet": 147.7,
+      "roiNet": 55.7,
+      "cpc": 0.081,
+      "rpcNet": 0.127,
+      "rplNet": 0.816,
+      "pctRKinPlus": 30.4,
+      "pctPlusFirst3": 45.0
+     },
+     {
+      "group": "AT",
+      "nRK": 11,
+      "spend": 264.05,
+      "profitNet": 72.92,
+      "roiNet": 27.6,
+      "cpc": 0.128,
+      "rpcNet": 0.165,
+      "rplNet": 1.029,
+      "pctRKinPlus": 45.5,
+      "pctPlusFirst3": 54.5
+     },
+     {
+      "group": "INTL",
+      "nRK": 24,
+      "spend": 224.35,
+      "profitNet": 49.76,
+      "roiNet": 22.2,
+      "cpc": 0.067,
+      "rpcNet": 0.083,
+      "rplNet": 0.669,
+      "pctRKinPlus": 16.7,
+      "pctPlusFirst3": 20.0
+     },
+     {
+      "group": "PL",
+      "nRK": 19,
+      "spend": 200.01,
+      "profitNet": 72.21,
+      "roiNet": 36.1,
+      "cpc": 0.014,
+      "rpcNet": 0.019,
+      "rplNet": 0.346,
+      "pctRKinPlus": 15.8,
+      "pctPlusFirst3": 17.6
+     }
+    ]
+   }
+  ]
+ },
+ "periods_compare": [
+  {
+   "period": "пик 1: 06–19.07",
+   "days": 14,
+   "spend": 2625.47,
+   "revenueRaw": 3678.18,
+   "revenueNet": 3567.83,
+   "profitNet": 917.89,
+   "roiNet": 35.0,
+   "profitPerDay": 65.56,
+   "spendPerDay": 187.53,
+   "clicks": 29630,
+   "leads": 3583,
+   "cpc": 0.089,
+   "rpcNet": 0.12,
+   "cpl": 0.733,
+   "rplNet": 0.996,
+   "cpm": 2.66,
+   "ctr": 3.0,
+   "activeRK": 147,
+   "avgActiveRKperDay": 56.2,
+   "newRKwithSpend": 118,
+   "newRKlaunched_panel": 126,
+   "creativesLaunched": 521,
+   "creativesUniq": 351,
+   "fbSpend": 1886.93,
+   "fbRoi": 35.1,
+   "ttSpend": 738.54,
+   "ttRoi": 34.7,
+   "ttShare": 28.1,
+   "nBundlesWithSpend10": 32,
+   "top5RKshareOfSpend": 16.1,
+   "top1BundleShareOfSpend": 22.9,
+   "top1Bundle": "loanslt/FACEBOOK",
+   "top1BundleShareOfGrossProfit": 22.1,
+   "top1ProfitBundle": "constructionjobsit/FACEBOOK",
+   "hhiBundles": 1171.0,
+   "spendPerActiveRKperDay": 3.34,
+   "launchesPerDay": 9.0,
+   "shareSpendProvenClones": 47.5,
+   "shareSpendTier1": 20.1,
+   "shareFbSpendVideo": 55.2,
+   "shareSpendRKatLeast10perDay": 13.5,
+   "shareSpendBannedAccs": 71.9,
+   "topProfitBundles": [
+    {
+     "bundle": "constructionjobsit/FACEBOOK",
+     "spend": 569.04,
+     "profit": 225.25,
+     "roi": 39.6
+    },
+    {
+     "bundle": "loanslt/FACEBOOK",
+     "spend": 600.41,
+     "profit": 195.35,
+     "roi": 32.5
+    },
+    {
+     "bundle": "loanslv/FACEBOOK",
+     "spend": 51.24,
+     "profit": 73.03,
+     "roi": 142.5
+    },
+    {
+     "bundle": "loanshr/FACEBOOK",
+     "spend": 53.46,
+     "profit": 69.07,
+     "roi": 129.2
+    },
+    {
+     "bundle": "constructionjobsit/TIKTOK",
+     "spend": 210.71,
+     "profit": 50.36,
+     "roi": 23.9
+    }
+   ]
+  },
+  {
+   "period": "пик 2: 24.08–06.09",
+   "days": 14,
+   "spend": 6008.26,
+   "revenueRaw": 8118.29,
+   "revenueNet": 7874.74,
+   "profitNet": 1828.99,
+   "roiNet": 30.4,
+   "profitPerDay": 130.64,
+   "spendPerDay": 429.16,
+   "clicks": 132796,
+   "leads": 15038,
+   "cpc": 0.045,
+   "rpcNet": 0.059,
+   "cpl": 0.4,
+   "rplNet": 0.524,
+   "cpm": 2.52,
+   "ctr": 5.56,
+   "activeRK": 273,
+   "avgActiveRKperDay": 112.6,
+   "newRKwithSpend": 167,
+   "newRKlaunched_panel": 216,
+   "creativesLaunched": 907,
+   "creativesUniq": 804,
+   "fbSpend": 3381.01,
+   "fbRoi": 41.2,
+   "ttSpend": 2617.63,
+   "ttRoi": 16.5,
+   "ttShare": 43.6,
+   "nBundlesWithSpend10": 51,
+   "top5RKshareOfSpend": 14.2,
+   "top1BundleShareOfSpend": 25.3,
+   "top1Bundle": "cleaningjobsfr/TIKTOK",
+   "top1BundleShareOfGrossProfit": 20.0,
+   "top1ProfitBundle": "cleaningjobsfr/FACEBOOK",
+   "hhiBundles": 1012.0,
+   "spendPerActiveRKperDay": 3.81,
+   "launchesPerDay": 15.4,
+   "shareSpendProvenClones": 46.1,
+   "shareSpendTier1": 54.8,
+   "shareFbSpendVideo": 62.3,
+   "shareSpendRKatLeast10perDay": 21.6,
+   "shareSpendBannedAccs": 0.0,
+   "topProfitBundles": [
+    {
+     "bundle": "cleaningjobsfr/FACEBOOK",
+     "spend": 923.97,
+     "profit": 442.15,
+     "roi": 47.9
+    },
+    {
+     "bundle": "cleaningjobsfr/TIKTOK",
+     "spend": 1516.14,
+     "profit": 356.98,
+     "roi": 23.5
+    },
+    {
+     "bundle": "cleaningjobsbr/FACEBOOK",
+     "spend": 77.9,
+     "profit": 165.4,
+     "roi": 212.3
+    },
+    {
+     "bundle": "cleaningjobspt/FACEBOOK",
+     "spend": 157.4,
+     "profit": 122.77,
+     "roi": 78.0
+    },
+    {
+     "bundle": "loanspt/FACEBOOK",
+     "spend": 220.95,
+     "profit": 100.05,
+     "roi": 45.3
+    }
+   ]
+  },
+  {
+   "period": "пик 3 (BR): 12–18.09",
+   "days": 7,
+   "spend": 1546.71,
+   "revenueRaw": 2039.67,
+   "revenueNet": 1978.48,
+   "profitNet": 420.55,
+   "roiNet": 27.2,
+   "profitPerDay": 60.08,
+   "spendPerDay": 220.96,
+   "clicks": 38152,
+   "leads": 6178,
+   "cpc": 0.041,
+   "rpcNet": 0.052,
+   "cpl": 0.25,
+   "rplNet": 0.32,
+   "cpm": 3.91,
+   "ctr": 9.66,
+   "activeRK": 175,
+   "avgActiveRKperDay": 64.6,
+   "newRKwithSpend": 107,
+   "newRKlaunched_panel": 106,
+   "creativesLaunched": 351,
+   "creativesUniq": 151,
+   "fbSpend": 1354.62,
+   "fbRoi": 31.8,
+   "ttSpend": 191.79,
+   "ttRoi": -5.5,
+   "ttShare": 12.4,
+   "nBundlesWithSpend10": 21,
+   "top5RKshareOfSpend": 27.9,
+   "top1BundleShareOfSpend": 34.9,
+   "top1Bundle": "cleaningjobsbr/FACEBOOK",
+   "top1BundleShareOfGrossProfit": 64.2,
+   "top1ProfitBundle": "cleaningjobsbr/FACEBOOK",
+   "hhiBundles": 1738.0,
+   "spendPerActiveRKperDay": 3.42,
+   "launchesPerDay": 15.1,
+   "shareSpendProvenClones": 62.7,
+   "shareSpendTier1": 34.7,
+   "shareFbSpendVideo": 63.5,
+   "shareSpendRKatLeast10perDay": 41.0,
+   "shareSpendBannedAccs": 0.0,
+   "topProfitBundles": [
+    {
+     "bundle": "cleaningjobsbr/FACEBOOK",
+     "spend": 539.1,
+     "profit": 381.42,
+     "roi": 70.8
+    },
+    {
+     "bundle": "cleaningjobsde/FACEBOOK",
+     "spend": 105.54,
+     "profit": 109.03,
+     "roi": 103.3
+    },
+    {
+     "bundle": "cleaningjobsfr/FACEBOOK",
+     "spend": 305.43,
+     "profit": 42.32,
+     "roi": 13.9
+    },
+    {
+     "bundle": "cleaningjobsfr/TIKTOK",
+     "spend": 68.08,
+     "profit": 26.88,
+     "roi": 39.5
+    },
+    {
+     "bundle": "loansro/FACEBOOK",
+     "spend": 12.96,
+     "profit": 9.37,
+     "roi": 72.3
+    }
+   ]
+  },
+  {
+   "period": "провал: 03–09.08",
+   "days": 7,
+   "spend": 3553.86,
+   "revenueRaw": 3965.45,
+   "revenueNet": 3846.49,
+   "profitNet": 270.25,
+   "roiNet": 7.6,
+   "profitPerDay": 38.61,
+   "spendPerDay": 507.69,
+   "clicks": 53970,
+   "leads": 6098,
+   "cpc": 0.066,
+   "rpcNet": 0.071,
+   "cpl": 0.583,
+   "rplNet": 0.631,
+   "cpm": 2.56,
+   "ctr": 3.89,
+   "activeRK": 246,
+   "avgActiveRKperDay": 138.6,
+   "newRKwithSpend": 99,
+   "newRKlaunched_panel": 135,
+   "creativesLaunched": 476,
+   "creativesUniq": 215,
+   "fbSpend": 2583.72,
+   "fbRoi": 1.5,
+   "ttSpend": 961.43,
+   "ttRoi": 24.5,
+   "ttShare": 27.1,
+   "nBundlesWithSpend10": 49,
+   "top5RKshareOfSpend": 14.1,
+   "top1BundleShareOfSpend": 12.6,
+   "top1Bundle": "cleaningjobsfr/TIKTOK",
+   "top1BundleShareOfGrossProfit": 34.5,
+   "top1ProfitBundle": "cleaningjobsfr/TIKTOK",
+   "hhiBundles": 463.0,
+   "spendPerActiveRKperDay": 3.65,
+   "launchesPerDay": 19.3,
+   "shareSpendProvenClones": 39.0,
+   "shareSpendTier1": 36.9,
+   "shareFbSpendVideo": 26.9,
+   "shareSpendRKatLeast10perDay": 16.0,
+   "shareSpendBannedAccs": 72.9,
+   "topProfitBundles": [
+    {
+     "bundle": "cleaningjobsfr/TIKTOK",
+     "spend": 447.81,
+     "profit": 241.27,
+     "roi": 53.9
+    },
+    {
+     "bundle": "loanslt/FACEBOOK",
+     "spend": 258.16,
+     "profit": 193.23,
+     "roi": 74.8
+    },
+    {
+     "bundle": "loanslv/FACEBOOK",
+     "spend": 69.92,
+     "profit": 74.37,
+     "roi": 106.4
+    },
+    {
+     "bundle": "constructionjobspt/FACEBOOK",
+     "spend": 132.98,
+     "profit": 39.89,
+     "roi": 30.0
+    },
+    {
+     "bundle": "loansee/FACEBOOK",
+     "spend": 74.35,
+     "profit": 31.41,
+     "roi": 42.2
+    }
+   ]
+  },
+  {
+   "period": "сейчас: 19–24.09 (выручка 22–24.09 доезжает)",
+   "days": 6,
+   "spend": 695.72,
+   "revenueRaw": 706.94,
+   "revenueNet": 685.73,
+   "profitNet": -19.42,
+   "roiNet": -2.8,
+   "profitPerDay": -3.24,
+   "spendPerDay": 115.95,
+   "clicks": 10035,
+   "leads": 1491,
+   "cpc": 0.069,
+   "rpcNet": 0.068,
+   "cpl": 0.467,
+   "rplNet": 0.46,
+   "cpm": 5.23,
+   "ctr": 7.54,
+   "activeRK": 109,
+   "avgActiveRKperDay": 41.5,
+   "newRKwithSpend": 55,
+   "newRKlaunched_panel": 70,
+   "creativesLaunched": 333,
+   "creativesUniq": 186,
+   "fbSpend": 642.6,
+   "fbRoi": 3.2,
+   "ttSpend": 52.57,
+   "ttRoi": -75.5,
+   "ttShare": 7.6,
+   "nBundlesWithSpend10": 15,
+   "top5RKshareOfSpend": 33.2,
+   "top1BundleShareOfSpend": 39.8,
+   "top1Bundle": "cleaningjobsfr/FACEBOOK",
+   "top1BundleShareOfGrossProfit": 34.3,
+   "top1ProfitBundle": "cleaningjobsfr/FACEBOOK",
+   "hhiBundles": 1813.0,
+   "spendPerActiveRKperDay": 2.79,
+   "launchesPerDay": 11.7,
+   "shareSpendProvenClones": 43.6,
+   "shareSpendTier1": 46.2,
+   "shareFbSpendVideo": 17.1,
+   "shareSpendRKatLeast10perDay": 18.5,
+   "shareSpendBannedAccs": 0.0,
+   "topProfitBundles": [
+    {
+     "bundle": "cleaningjobsfr/FACEBOOK",
+     "spend": 276.64,
+     "profit": 45.38,
+     "roi": 16.4
+    },
+    {
+     "bundle": "cleaningjobscz/FACEBOOK",
+     "spend": 0.04,
+     "profit": 27.06,
+     "roi": 67654.5
+    },
+    {
+     "bundle": "loanshu/FACEBOOK",
+     "spend": 42.66,
+     "profit": 11.76,
+     "roi": 27.6
+    },
+    {
+     "bundle": "loanssp/FACEBOOK",
+     "spend": 7.39,
+     "profit": 9.51,
+     "roi": 128.7
+    },
+    {
+     "bundle": "loanssw/FACEBOOK",
+     "spend": 8.43,
+     "profit": 7.81,
+     "roi": 92.6
+    }
+   ]
+  }
+ ],
+ "articles_compare": [
+  {
+   "window": "17.08–03.09 (пик 2)",
+   "spend": 7725.67,
+   "profitNet": 1853.17,
+   "roiNet": 24.0,
+   "nArticles": 87,
+   "topArticleShareOfGrossProfit": 27.1,
+   "topArticle": "Nettoyage dans les établissements publics : horaires et salaire indicatif en France en 202",
+   "rows": [
+    {
+     "article": "Nettoyage dans les établissements publics : horaires et salaire indicatif en France en 202",
+     "bucket": "AlexZCleaningJobsFR",
+     "spend": 2502.89,
+     "profitNet": 642.74,
+     "roiNet": 25.7,
+     "rpcNet": 0.123
+    },
+    {
+     "article": "Nettoyage de bureaux : horaires flexibles et salaire indicatif en France",
+     "bucket": "AlexZCleaningJobsFR",
+     "spend": 472.57,
+     "profitNet": 383.31,
+     "roiNet": 81.1,
+     "rpcNet": 0.1
+    },
+    {
+     "article": "Jei turite pensiją – kiek daugiausia galite pasiskolinti 2026 metais Lietuvoje?",
+     "bucket": "AlexZLoansLT",
+     "spend": 416.43,
+     "profitNet": 69.75,
+     "roiNet": 16.8,
+     "rpcNet": 0.092
+    },
+    {
+     "article": "Hitel nyugdíjasoknak Magyarországon 2026-ban: elfogadható-e a nyugdíj jövedelemként, és me",
+     "bucket": "AlexZLoansHU",
+     "spend": 416.07,
+     "profitNet": 127.3,
+     "roiNet": 30.6,
+     "rpcNet": 0.18
+    },
+    {
+     "article": "Crédito para reformados em Portugal em 2026: quanto é possível pedir?",
+     "bucket": "AlexZloansPT",
+     "spend": 414.2,
+     "profitNet": 112.49,
+     "roiNet": 27.2,
+     "rpcNet": 0.109
+    },
+    {
+     "article": "Préstamos para Pensionistas en España: Opciones, Requisitos y Límites en 2026",
+     "bucket": "alexzloansSP",
+     "spend": 268.02,
+     "profitNet": 145.69,
+     "roiNet": 54.4,
+     "rpcNet": 0.185
+    },
+    {
+     "article": "Credite pentru pensionari în România în 2026: ce sumă pot obține persoanele de peste 60 de",
+     "bucket": "AlexZLoansRO",
+     "spend": 214.07,
+     "profitNet": 16.8,
+     "roiNet": 7.8,
+     "rpcNet": 0.06
+    },
+    {
+     "article": "Trabalhar nas limpezas de escolas, câmaras municipais e tribunais: horários, funções e sal",
+     "bucket": "AlexZCleaningJobsPT",
+     "spend": 210.41,
+     "profitNet": 85.6,
+     "roiNet": 40.7,
+     "rpcNet": 0.027
+    }
+   ]
+  },
+  {
+   "window": "15–18.09 (пик 3, до 19.09)",
+   "spend": 1037.09,
+   "profitNet": 280.07,
+   "roiNet": 27.0,
+   "nArticles": 52,
+   "topArticleShareOfGrossProfit": 54.7,
+   "topArticle": "Trabalhar na limpeza de escolas, prefeituras e tribunais: horários, funções e salários no ",
+   "rows": [
+    {
+     "article": "Trabalhar na limpeza de escolas, prefeituras e tribunais: horários, funções e salários no ",
+     "bucket": "AlexZCleaningJobsBR",
+     "spend": 422.3,
+     "profitNet": 213.51,
+     "roiNet": 50.6,
+     "rpcNet": 0.04
+    },
+    {
+     "article": "Nettoyage de bureaux : horaires flexibles et salaire indicatif en France",
+     "bucket": "AlexZCleaningJobsFR",
+     "spend": 161.66,
+     "profitNet": 32.62,
+     "roiNet": 20.2,
+     "rpcNet": 0.074
+    },
+    {
+     "article": "Nettoyage dans les établissements publics : horaires et salaire indicatif en France en 202",
+     "bucket": "AlexZCleaningJobsFR",
+     "spend": 85.94,
+     "profitNet": 40.43,
+     "roiNet": 47.0,
+     "rpcNet": 0.126
+    },
+    {
+     "article": "Arbeiten in der Reinigung von Schulen, Rathäusern und Gerichten in Deutschland 2026: Arbei",
+     "bucket": "AlexZCleaningJobsDE",
+     "spend": 63.29,
+     "profitNet": 77.68,
+     "roiNet": 122.7,
+     "rpcNet": 0.117
+    },
+    {
+     "article": "Hitel nyugdíjasoknak Magyarországon 2026-ban: elfogadható-e a nyugdíj jövedelemként, és me",
+     "bucket": "AlexZLoansHU",
+     "spend": 39.64,
+     "profitNet": -0.49,
+     "roiNet": -1.2,
+     "rpcNet": 0.107
+    },
+    {
+     "article": "Quero morar em um condomínio para idosos: como funcionam e quanto custam? (guia)",
+     "bucket": "AlexZtest",
+     "spend": 35.21,
+     "profitNet": -10.13,
+     "roiNet": -28.8,
+     "rpcNet": 0.032
+    },
+    {
+     "article": "Jei turite pensiją – kiek daugiausia galite pasiskolinti 2026 metais Lietuvoje?",
+     "bucket": "AlexZLoansLT",
+     "spend": 24.11,
+     "profitNet": -8.04,
+     "roiNet": -33.3,
+     "rpcNet": 0.046
+    },
+    {
+     "article": "Šilumos siurbliai: įrengimo galimybės, pasiūlymai ir aptarnavimas",
+     "bucket": "AlexZHeatPumpsLT",
+     "spend": 22.43,
+     "profitNet": 7.09,
+     "roiNet": 31.6,
+     "rpcNet": 0.055
+    }
+   ]
+  },
+  {
+   "window": "19–21.09 (после 19.09)",
+   "spend": 456.05,
+   "profitNet": -33.1,
+   "roiNet": -7.3,
+   "nArticles": 57,
+   "topArticleShareOfGrossProfit": 72.6,
+   "topArticle": "Nettoyage de bureaux : horaires flexibles et salaire indicatif en France",
+   "rows": [
+    {
+     "article": "Nettoyage de bureaux : horaires flexibles et salaire indicatif en France",
+     "bucket": "AlexZCleaningJobsFR",
+     "spend": 152.71,
+     "profitNet": 50.59,
+     "roiNet": 33.1,
+     "rpcNet": 0.102
+    },
+    {
+     "article": "Jei turite pensiją – kiek daugiausia galite pasiskolinti 2026 metais Lietuvoje?",
+     "bucket": "AlexZLoansLT",
+     "spend": 42.91,
+     "profitNet": 6.39,
+     "roiNet": 14.9,
+     "rpcNet": 0.079
+    },
+    {
+     "article": "Quero morar em um condomínio para idosos: como funcionam e quanto custam? (guia)",
+     "bucket": "AlexZtest",
+     "spend": 39.39,
+     "profitNet": -9.88,
+     "roiNet": -25.1,
+     "rpcNet": 0.029
+    },
+    {
+     "article": "Nettoyage dans les établissements publics : horaires et salaire indicatif en France en 202",
+     "bucket": "AlexZCleaningJobsFR",
+     "spend": 31.48,
+     "profitNet": -31.69,
+     "roiNet": -100.7,
+     "rpcNet": 0.001
+    },
+    {
+     "article": "Hitel nyugdíjasoknak Magyarországon 2026-ban: elfogadható-e a nyugdíj jövedelemként, és me",
+     "bucket": "AlexZLoansHU",
+     "spend": 25.1,
+     "profitNet": 3.33,
+     "roiNet": 13.3,
+     "rpcNet": 0.148
+    },
+    {
+     "article": "How to buy a car and pay later: smart choices for drivers",
+     "bucket": "AlexZPayCar",
+     "spend": 18.04,
+     "profitNet": -9.87,
+     "roiNet": -54.7,
+     "rpcNet": 0.043
+    },
+    {
+     "article": "Rehakliniken in Deutschland: Unsere Top 7 Empfehlungen für Ihre Genesung",
+     "bucket": "AlexZRehabilitationClinicsDE",
+     "spend": 16.94,
+     "profitNet": 5.88,
+     "roiNet": 34.7,
+     "rpcNet": 0.12
+    },
+    {
+     "article": "Trabalhar na limpeza de escolas, prefeituras e tribunais: horários, funções e salários no ",
+     "bucket": "AlexZCleaningJobsBR",
+     "spend": 14.96,
+     "profitNet": -14.96,
+     "roiNet": -100.0,
+     "rpcNet": 0.0
+    }
+   ]
+  },
+  {
+   "window": "10–24.09",
+   "spend": 2688.17,
+   "profitNet": 451.23,
+   "roiNet": 16.8,
+   "nArticles": 72,
+   "topArticleShareOfGrossProfit": 54.4,
+   "topArticle": "Trabalhar na limpeza de escolas, prefeituras e tribunais: horários, funções e salários no ",
+   "rows": [
+    {
+     "article": "Trabalhar na limpeza de escolas, prefeituras e tribunais: horários, funções e salários no ",
+     "bucket": "AlexZCleaningJobsBR",
+     "spend": 617.28,
+     "profitNet": 384.32,
+     "roiNet": 62.3,
+     "rpcNet": 0.043
+    },
+    {
+     "article": "Nettoyage de bureaux : horaires flexibles et salaire indicatif en France",
+     "bucket": "AlexZCleaningJobsFR",
+     "spend": 556.43,
+     "profitNet": 120.48,
+     "roiNet": 21.7,
+     "rpcNet": 0.086
+    },
+    {
+     "article": "Nettoyage dans les établissements publics : horaires et salaire indicatif en France en 202",
+     "bucket": "AlexZCleaningJobsFR",
+     "spend": 226.63,
+     "profitNet": -15.98,
+     "roiNet": -7.0,
+     "rpcNet": 0.097
+    },
+    {
+     "article": "Jei turite pensiją – kiek daugiausia galite pasiskolinti 2026 metais Lietuvoje?",
+     "bucket": "AlexZLoansLT",
+     "spend": 123.47,
+     "profitNet": 2.26,
+     "roiNet": 1.8,
+     "rpcNet": 0.073
+    },
+    {
+     "article": "Arbeiten in der Reinigung von Schulen, Rathäusern und Gerichten in Deutschland 2026: Arbei",
+     "bucket": "AlexZCleaningJobsDE",
+     "spend": 119.04,
+     "profitNet": 102.1,
+     "roiNet": 85.8,
+     "rpcNet": 0.103
+    },
+    {
+     "article": "Hitel nyugdíjasoknak Magyarországon 2026-ban: elfogadható-e a nyugdíj jövedelemként, és me",
+     "bucket": "AlexZLoansHU",
+     "spend": 116.54,
+     "profitNet": 17.81,
+     "roiNet": 15.3,
+     "rpcNet": 0.137
+    },
+    {
+     "article": "Quero morar em um condomínio para idosos: como funcionam e quanto custam? (guia)",
+     "bucket": "AlexZtest",
+     "spend": 97.75,
+     "profitNet": -22.07,
+     "roiNet": -22.6,
+     "rpcNet": 0.031
+    },
+    {
+     "article": "Préstamos para Pensionistas en España: Opciones, Requisitos y Límites en 2026",
+     "bucket": "alexzloansSP",
+     "spend": 71.37,
+     "profitNet": 13.47,
+     "roiNet": 18.9,
+     "rpcNet": 0.166
+    }
+   ]
+  }
+ ],
+ "decision_speed": {
+  "note": "Сигнал правила — по финальной (доехавшей) выручке закрытых дней, т.е. с оглядкой назад: реальная внутридневная картина хуже (выручка RSOC доезжает до D+3).",
+  "rkWithRuleSignal": 488,
+  "burnedAfterSignal": {
+   "amount": -815.88,
+   "nRK": 266,
+   "spendAfterSignal": 3259.24,
+   "medianDaysSignalToStop": 4.0,
+   "byMonth": {
+    "2026-06": {
+     "lossNet": -123.56,
+     "nRK": 37,
+     "spend": 562.05
+    },
+    "2026-07": {
+     "lossNet": -227.87,
+     "nRK": 54,
+     "spend": 1209.24
+    },
+    "2026-08": {
+     "lossNet": -345.5,
+     "nRK": 125,
+     "spend": 1179.97
+    },
+    "2026-09": {
+     "lossNet": -118.95,
+     "nRK": 50,
+     "spend": 307.98
+    }
+   }
+  },
+  "earnedAfterSignal_ruleWouldBeWrong": {
+   "amount": 2261.1,
+   "nRK": 129,
+   "top": [
+    {
+     "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0522-GE04-p",
+     "signal": "2026-06-19",
+     "profitAfter": 239.19
+    },
+    {
+     "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0709-GE01",
+     "signal": "2026-07-29",
+     "profitAfter": 98.2
+    },
+    {
+     "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0809-GE02",
+     "signal": "2026-08-22",
+     "profitAfter": 90.4
+    },
+    {
+     "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0612-GE01-p",
+     "signal": "2026-06-20",
+     "profitAfter": 86.75
+    },
+    {
+     "name": "vb-AlexZloansPT-tg1_auto-fb-pt-a-0720-GE02-p",
+     "signal": "2026-07-22",
+     "profitAfter": 84.03
+    },
+    {
+     "name": "vb-AlexZLoansHU-tg1_auto-fb-hu-a-0720-GE01-p",
+     "signal": "2026-07-25",
+     "profitAfter": 77.86
+    },
+    {
+     "name": "vb-AlexZConstructionJobsEUENG-tg1-tk-intl-a-0702-GE01",
+     "signal": "2026-07-08",
+     "profitAfter": 74.3
+    },
+    {
+     "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0609-GE07-p",
+     "signal": "2026-06-19",
+     "profitAfter": 67.06
+    }
+   ]
+  },
+  "netEffectOfStrictRule": -1445.22,
+  "killSpeedByLaunchPeriod": {
+   "июнь": {
+    "n": 173,
+    "avgSpendUntilOff": 26.91,
+    "medianSpendUntilOff": 8.49,
+    "pctKilledBelow5usd": 37.6,
+    "pctReached10usd": 46.8
+   },
+   "июль": {
+    "n": 300,
+    "avgSpendUntilOff": 29.59,
+    "medianSpendUntilOff": 9.97,
+    "pctKilledBelow5usd": 38.0,
+    "pctReached10usd": 50.0
+   },
+   "август": {
+    "n": 539,
+    "avgSpendUntilOff": 17.63,
+    "medianSpendUntilOff": 7.31,
+    "pctKilledBelow5usd": 39.7,
+    "pctReached10usd": 40.3
+   },
+   "01–15.09": {
+    "n": 137,
+    "avgSpendUntilOff": 8.25,
+    "medianSpendUntilOff": 3.27,
+    "pctKilledBelow5usd": 66.4,
+    "pctReached10usd": 16.1
+   },
+   "16–21.09 (с агентами)": {
+    "n": 38,
+    "avgSpendUntilOff": 3.62,
+    "medianSpendUntilOff": 1.59,
+    "pctKilledBelow5usd": 73.7,
+    "pctReached10usd": 7.9
+   }
+  },
+  "winners": {
+   "n": 121,
+   "profit": 6691.85,
+   "medianProfit": 42.87,
+   "firstDayLossAt2usd": 7,
+   "firstDayLossAt2usd_profit": 420.08,
+   "firstTwoDaysNonPositive": 16,
+   "firstTwoDaysNonPositive_profit": 787.84,
+   "note": "Сколько будущих победителей (лайфтайм ≥ $20 чистыми и ROI ≥ 30%) в первый день при спенде ≥ $2 были в минусе даже по ФИНАЛЬНОЙ выручке — их убило бы правило «$2 и ROI ≤ 0»."
+  },
+  "earlyKilledClonesOfWinningBundles": {
+   "n": 238,
+   "spend": 575.04,
+   "winRateWhenGiven10usd": 32.6,
+   "expectedMissedWinners": 77.6,
+   "expectedMissedProfit": 3327.08,
+   "note": "Клоны связок, где были победители, выключенные до $5. Ожидание = доля победителей среди клонов этих же связок, получивших ≥ $10, × медианная прибыль победителя. Оценка, не факт."
+  }
+ },
+ "accounts": {
+  "note": "IRNFL Account 18 и 19 перестали откручивать 14–15.08 (владелец 23.09: «18 и 19 в бане»). Отклонённых объявлений по трекеру всего 26 (в 21 РК).",
+  "banned_18_19_before_ban_01_14_08": {
+   "spend": 4842.35,
+   "profit": 599.38,
+   "roi": 12.4,
+   "spendPerDay": 345.88,
+   "profitPerDay": 42.81
+  },
+  "portfolio_01_14_08": {
+   "spend": 6918.84,
+   "profit": 1051.06,
+   "roi": 15.2,
+   "spendPerDay": 494.2,
+   "profitPerDay": 75.08
+  },
+  "portfolio_16_29_08": {
+   "spend": 5609.7,
+   "profit": 1236.56,
+   "roi": 22.0,
+   "spendPerDay": 400.69,
+   "profitPerDay": 88.33
+  },
+  "banned_18_19_total": {
+   "spend": 13378.35,
+   "profit": 2568.24,
+   "roi": 19.2,
+   "spendPerDay": 115.33,
+   "profitPerDay": 22.14
+  },
+  "rows": [
+   {
+    "account": "G / Cosmic / IRNFL / Account 18",
+    "spend": 7230.34,
+    "profitNet": 1151.86,
+    "roiNet": 15.9,
+    "nRK": 264,
+    "first": "2026-06-01",
+    "last": "2026-08-15",
+    "ts": "FA",
+    "disapproved": 13
+   },
+   {
+    "account": "G / Cosmic / IRNFL / Account 19",
+    "spend": 6148.01,
+    "profitNet": 1416.4,
+    "roiNet": 23.0,
+    "nRK": 233,
+    "first": "2026-06-01",
+    "last": "2026-08-14",
+    "ts": "FA",
+    "disapproved": 7
+   },
+   {
+    "account": "GB / Search / Account 844",
+    "spend": 5299.37,
+    "profitNet": 1317.46,
+    "roiNet": 24.9,
+    "nRK": 134,
+    "first": "2026-06-23",
+    "last": "2026-09-24",
+    "ts": "TI",
+    "disapproved": 0
+   },
+   {
+    "account": "G / Cosmic / IRNFL / Account 7",
+    "spend": 2258.01,
+    "profitNet": 744.39,
+    "roiNet": 33.0,
+    "nRK": 82,
+    "first": "2026-08-15",
+    "last": "2026-09-24",
+    "ts": "FA",
+    "disapproved": 0
+   },
+   {
+    "account": "GB / Search / Account 608",
+    "spend": 1949.34,
+    "profitNet": 394.93,
+    "roiNet": 20.3,
+    "nRK": 53,
+    "first": "2026-07-18",
+    "last": "2026-09-24",
+    "ts": "TI",
+    "disapproved": 0
+   },
+   {
+    "account": "G / AleksandrZhirov_910_COSMIC / IF / Account 5",
+    "spend": 1772.04,
+    "profitNet": 555.6,
+    "roiNet": 31.4,
+    "nRK": 56,
+    "first": "2026-08-18",
+    "last": "2026-09-24",
+    "ts": "FA",
+    "disapproved": 1
+   },
+   {
+    "account": "G / Cosmic / IRNFL / Account 6",
+    "spend": 1452.6,
+    "profitNet": 599.22,
+    "roiNet": 41.3,
+    "nRK": 59,
+    "first": "2026-08-15",
+    "last": "2026-09-24",
+    "ts": "FA",
+    "disapproved": 1
+   },
+   {
+    "account": "G / AleksandrZhirov_910_COSMIC / IF / Account 1",
+    "spend": 1174.52,
+    "profitNet": 222.22,
+    "roiNet": 18.9,
+    "nRK": 59,
+    "first": "2026-08-18",
+    "last": "2026-09-24",
+    "ts": "FA",
+    "disapproved": 1
+   },
+   {
+    "account": "G / Cosmic / Tarzo / Account 7",
+    "spend": 874.69,
+    "profitNet": 42.6,
+    "roiNet": 4.9,
+    "nRK": 39,
+    "first": "2026-06-01",
+    "last": "2026-08-17",
+    "ts": "FA",
+    "disapproved": 0
+   },
+   {
+    "account": "GB / Search / Account 611",
+    "spend": 715.79,
+    "profitNet": 13.03,
+    "roiNet": 1.8,
+    "nRK": 45,
+    "first": "2026-07-18",
+    "last": "2026-09-24",
+    "ts": "TI",
+    "disapproved": 0
+   },
+   {
+    "account": "G / AleksandrZhirov_910_COSMIC / IF / Account 2",
+    "spend": 578.12,
+    "profitNet": 69.79,
+    "roiNet": 12.1,
+    "nRK": 49,
+    "first": "2026-08-19",
+    "last": "2026-09-24",
+    "ts": "FA",
+    "disapproved": 1
+   },
+   {
+    "account": "SBC_HERMES / AleksandrZhirov_910_COSMIC / Account 84076",
+    "spend": 498.43,
+    "profitNet": 79.0,
+    "roiNet": 15.8,
+    "nRK": 22,
+    "first": "2026-08-13",
+    "last": "2026-09-24",
+    "ts": "TI",
+    "disapproved": 0
+   },
+   {
+    "account": "G / AleksandrZhirov_910_COSMIC / IF / Account 3",
+    "spend": 451.83,
+    "profitNet": -19.17,
+    "roiNet": -4.2,
+    "nRK": 64,
+    "first": "2026-08-19",
+    "last": "2026-09-24",
+    "ts": "FA",
+    "disapproved": 0
+   },
+   {
+    "account": "SBC_HERMES / AleksandrZhirov_910_COSMIC / Account 45689",
+    "spend": 409.91,
+    "profitNet": -24.9,
+    "roiNet": -6.1,
+    "nRK": 26,
+    "first": "2026-08-13",
+    "last": "2026-09-22",
+    "ts": "TI",
+    "disapproved": 0
+   },
+   {
+    "account": "G / AleksandrZhirov_910_COSMIC / IF / Account 4",
+    "spend": 259.07,
+    "profitNet": -50.32,
+    "roiNet": -19.4,
+    "nRK": 34,
+    "first": "2026-08-19",
+    "last": "2026-09-24",
+    "ts": "FA",
+    "disapproved": 2
+   },
+   {
+    "account": "SBC_HERMES / AleksandrZhirov_910_COSMIC / Account 53692",
+    "spend": 255.59,
+    "profitNet": 21.74,
+    "roiNet": 8.5,
+    "nRK": 20,
+    "first": "2026-08-12",
+    "last": "2026-09-23",
+    "ts": "TI",
+    "disapproved": 0
+   },
+   {
+    "account": "GB / Search / Account 845",
+    "spend": 157.93,
+    "profitNet": 27.26,
+    "roiNet": 17.3,
+    "nRK": 10,
+    "first": "2026-06-24",
+    "last": "2026-07-01",
+    "ts": "TI",
+    "disapproved": 0
+   },
+   {
+    "account": "?",
+    "spend": 18.88,
+    "profitNet": -17.89,
+    "roiNet": -94.8,
+    "nRK": 88,
+    "first": "2026-06-10",
+    "last": "2026-09-24",
+    "ts": "FA/TI",
+    "disapproved": 0
+   },
+   {
+    "account": "G / Cosmic / visimo / Account 2",
+    "spend": 13.5,
+    "profitNet": -13.74,
+    "roiNet": -101.8,
+    "nRK": 9,
+    "first": "2026-09-19",
+    "last": "2026-09-19",
+    "ts": "FA",
+    "disapproved": 0
+   }
+  ]
+ },
+ "winners": {
+  "definition": "победитель = РК с чистой прибылью ≥ $20 и ROI ≥ +30% за жизнь",
+  "n": 124,
+  "nAll": 1346,
+  "profit": 7228.03,
+  "portfolioProfit": 6529.48,
+  "spend": 12503.98,
+  "restProfit": -698.55,
+  "restSpend": 19013.99,
+  "pctWinnersPositiveFirst3Days": 95.9,
+  "launchesPerWinnerByMonth": {
+   "2026-06": 12.8,
+   "2026-07": 7.8,
+   "2026-08": 9.7,
+   "2026-09": 15.5
+  },
+  "top20": [
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0522-GE04-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "Account 19",
+    "first": "2026-06-01",
+    "last": "2026-08-12",
+    "spend": 595.09,
+    "profitNet": 476.54,
+    "roiNet": 80.1
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0804-GE02",
+    "vertical": "работа: уборка",
+    "geo": "FR",
+    "ts": "TIKTOK",
+    "account": "Account 608",
+    "first": "2026-08-04",
+    "last": "2026-09-23",
+    "spend": 766.4,
+    "profitNet": 278.75,
+    "roiNet": 36.4
+   },
+   {
+    "name": "vb-AlexZCleaningJobsBR-tg1-fb-br-a-0905-GE01-p",
+    "vertical": "работа: уборка",
+    "geo": "BR",
+    "ts": "FACEBOOK",
+    "account": "Account 7",
+    "first": "2026-09-05",
+    "last": "2026-09-21",
+    "spend": 138.46,
+    "profitNet": 245.17,
+    "roiNet": 177.1
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_set-fb-fr-a-0822-GE01-p",
+    "vertical": "работа: уборка",
+    "geo": "FR",
+    "ts": "FACEBOOK",
+    "account": "Account 5",
+    "first": "2026-08-22",
+    "last": "2026-09-22",
+    "spend": 375.48,
+    "profitNet": 230.78,
+    "roiNet": 61.5
+   },
+   {
+    "name": "vb-AlexZLoansLV-tg1_auto-fb-lv-a-0711-GE01-p",
+    "vertical": "кредиты",
+    "geo": "LV",
+    "ts": "FACEBOOK",
+    "account": "Account 19",
+    "first": "2026-07-11",
+    "last": "2026-08-14",
+    "spend": 167.34,
+    "profitNet": 160.64,
+    "roiNet": 96.0
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0609-GE07-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "Account 19",
+    "first": "2026-06-09",
+    "last": "2026-07-11",
+    "spend": 211.1,
+    "profitNet": 156.84,
+    "roiNet": 74.3
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0612-GE01-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "Account 18",
+    "first": "2026-06-12",
+    "last": "2026-07-11",
+    "spend": 151.34,
+    "profitNet": 148.19,
+    "roiNet": 97.9
+   },
+   {
+    "name": "vb-AlexZCleaningJobsUK-tg1-tk-gb-a-0810-GE01",
+    "vertical": "работа: уборка",
+    "geo": "GB",
+    "ts": "TIKTOK",
+    "account": "Account 844",
+    "first": "2026-08-11",
+    "last": "2026-09-21",
+    "spend": 105.19,
+    "profitNet": 118.8,
+    "roiNet": 112.9
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0709-GE01",
+    "vertical": "работа: уборка",
+    "geo": "FR",
+    "ts": "TIKTOK",
+    "account": "Account 844",
+    "first": "2026-07-09",
+    "last": "2026-09-24",
+    "spend": 215.26,
+    "profitNet": 108.24,
+    "roiNet": 50.3
+   },
+   {
+    "name": "vb-AlexZHeatPumpsLT-tg2_auto-fb-lt-a-0819-GE02-p",
+    "vertical": "тепловые насосы",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "Account 1",
+    "first": "2026-08-19",
+    "last": "2026-09-24",
+    "spend": 220.26,
+    "profitNet": 106.31,
+    "roiNet": 48.3
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0804-GE03",
+    "vertical": "работа: уборка",
+    "geo": "FR",
+    "ts": "TIKTOK",
+    "account": "Account 844",
+    "first": "2026-08-04",
+    "last": "2026-09-12",
+    "spend": 210.82,
+    "profitNet": 100.9,
+    "roiNet": 47.9
+   },
+   {
+    "name": "vb-AlexZConstructionJobsFR-tg1-tk-fr-a-0623-GE01",
+    "vertical": "работа: стройка",
+    "geo": "FR",
+    "ts": "TIKTOK",
+    "account": "Account 844",
+    "first": "2026-06-23",
+    "last": "2026-08-21",
+    "spend": 202.94,
+    "profitNet": 89.87,
+    "roiNet": 44.3
+   },
+   {
+    "name": "vb-AlexZCleaningJobsBR-tg1-fb-br-a-0907-GE01-p",
+    "vertical": "работа: уборка",
+    "geo": "BR",
+    "ts": "FACEBOOK",
+    "account": "Account 6",
+    "first": "2026-09-07",
+    "last": "2026-09-22",
+    "spend": 77.69,
+    "profitNet": 88.63,
+    "roiNet": 114.1
+   },
+   {
+    "name": "vb-AlexZCleaningJobsAT-tg1-tk-at-a-0810-GE01",
+    "vertical": "работа: уборка",
+    "geo": "AT",
+    "ts": "TIKTOK",
+    "account": "Account 844",
+    "first": "2026-08-10",
+    "last": "2026-09-23",
+    "spend": 229.23,
+    "profitNet": 88.09,
+    "roiNet": 38.4
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0711-GE05-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "Account 18",
+    "first": "2026-07-11",
+    "last": "2026-08-15",
+    "spend": 96.2,
+    "profitNet": 88.02,
+    "roiNet": 91.5
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0701-GE01",
+    "vertical": "работа: уборка",
+    "geo": "FR",
+    "ts": "TIKTOK",
+    "account": "Account 844",
+    "first": "2026-07-01",
+    "last": "2026-08-21",
+    "spend": 213.15,
+    "profitNet": 85.39,
+    "roiNet": 40.1
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0711-GE06-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "Account 19",
+    "first": "2026-07-11",
+    "last": "2026-08-13",
+    "spend": 142.16,
+    "profitNet": 85.06,
+    "roiNet": 59.8
+   },
+   {
+    "name": "vb-AlexZLoansHU-tg1_auto-fb-hu-a-0720-GE01-p",
+    "vertical": "кредиты",
+    "geo": "HU",
+    "ts": "FACEBOOK",
+    "account": "Account 18",
+    "first": "2026-07-20",
+    "last": "2026-08-15",
+    "spend": 181.58,
+    "profitNet": 84.9,
+    "roiNet": 46.8
+   },
+   {
+    "name": "vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0816-GE02",
+    "vertical": "работа: уборка",
+    "geo": "FR",
+    "ts": "TIKTOK",
+    "account": "Account 608",
+    "first": "2026-08-16",
+    "last": "2026-09-23",
+    "spend": 190.38,
+    "profitNet": 83.87,
+    "roiNet": 44.1
+   },
+   {
+    "name": "vb-AlexZLoansLT-tg1_auto-fb-lt-a-0711-GE10-p",
+    "vertical": "кредиты",
+    "geo": "LT",
+    "ts": "FACEBOOK",
+    "account": "Account 19",
+    "first": "2026-07-12",
+    "last": "2026-08-14",
+    "spend": 150.09,
+    "profitNet": 82.27,
+    "roiNet": 54.8
+   }
+  ],
+  "breakEvenSpend": {
+   "median": 4.2,
+   "p75": 5.46,
+   "p90": 14.27,
+   "note": "накопленный спенд, при котором будущий победитель впервые вышел в плюс (по финальной выручке)"
+  }
+ },
+ "benchmark_top5": {
+  "note": "«Топ-5 баеров» — среднее по пяти баерам с наибольшей прибылью за день (панель top_buyers). ROI у них — среднее по баерам, не чистый.",
+  "top5": {
+   "2026-09-21": {
+    "spend": 1166.3952,
+    "roi": 74.3651,
+    "rpc": 0.3969,
+    "cpc": 0.2482,
+    "rpl": 1.8425,
+    "CPL": 1.1452,
+    "geoFB": [
+     "United States",
+     "France",
+     "Switzerland",
+     "Germany",
+     "Sweden",
+     "Belgium",
+     "United Kingdom",
+     "Netherlands"
+    ],
+    "providersFB": [
+     [
+      "IRONFLI",
+      391
+     ],
+     [
+      "SYSTEM1",
+      96
+     ],
+     [
+      "VISYMO",
+      63
+     ]
+    ]
+   },
+   "2026-09-22": {
+    "spend": 983.892,
+    "roi": 87.0258,
+    "rpc": 0.4067,
+    "cpc": 0.2351,
+    "rpl": 1.7778,
+    "CPL": 1.0131,
+    "geoFB": [
+     "United States",
+     "Netherlands",
+     "Germany",
+     "France",
+     "Switzerland",
+     "Sweden",
+     "Belgium",
+     "United Kingdom"
+    ],
+    "providersFB": [
+     [
+      "IRONFLI",
+      348
+     ],
+     [
+      "SYSTEM1",
+      103
+     ],
+     [
+      "VISYMO",
+      48
+     ]
+    ]
+   }
+  },
+  "ours": {
+   "2026-09-21": {
+    "spend": 200.3,
+    "roiNet": -4.2,
+    "cpc": 0.066,
+    "rpcNet": 0.064,
+    "cpl": 0.456,
+    "rplNet": 0.444
+   },
+   "2026-09-22": {
+    "spend": 133.21,
+    "roiNet": 9.6,
+    "cpc": 0.07,
+    "rpcNet": 0.077,
+    "cpl": 0.431,
+    "rplNet": 0.478
+   }
+  }
+ },
+ "article_template_death_19_09": {
+  "note": "Шаблон «школы/мэрии/суды (госучреждения)» перестал платить 19.09. RPC чистый, 15–18.09 → 19–21.09.",
+  "rows": [
+   {
+    "article": "BR «Trabalhar na limpeza de escolas, prefeituras e tribunais» (IRONFLI 13733, бандл CleaningJobsBR)",
+    "rpc_15_18": 0.04,
+    "rpc_19_21": 0.0,
+    "profit_15_18": 213.5,
+    "profit_19_21": -15.0
+   },
+   {
+    "article": "FR «Nettoyage dans les établissements publics» (IRONFLI 7668, CleaningJobsFR, в основном TikTok)",
+    "rpc_15_18": 0.126,
+    "rpc_19_21": 0.001,
+    "profit_15_18": 40.4,
+    "profit_19_21": -31.7
+   },
+   {
+    "article": "DE «Arbeiten in der Reinigung von Schulen, Rathäusern und Gerichten» (IRONFLI 13700)",
+    "rpc_15_18": 0.117,
+    "rpc_19_21": 0.038,
+    "profit_15_18": 77.7,
+    "profit_19_21": -5.9
+   },
+   {
+    "article": "MX «Trabajar en la limpieza de escuelas, ayuntamientos y tribunales» (IRONFLI 13737)",
+    "rpc_15_18": 0.0,
+    "rpc_19_21": null,
+    "profit_15_18": -10.6,
+    "profit_19_21": null
+   }
+  ],
+  "portfolio_15_18": {
+   "spend": 1037.09,
+   "profitNet": 280.07
+  },
+  "portfolio_19_21": {
+   "spend": 456.05,
+   "profitNet": -33.1
+  },
+  "stillPaying_19_21": [
+   {
+    "article": "FR «Nettoyage de bureaux» (IRONFLI 14744)",
+    "spend": 152.7,
+    "profitNet": 50.6,
+    "roi": 33.1
+   },
+   {
+    "article": "LT кредиты пенсионерам (30036)",
+    "spend": 42.9,
+    "profitNet": 6.4,
+    "roi": 14.9
+   },
+   {
+    "article": "HU кредиты пенсионерам (23210)",
+    "spend": 25.1,
+    "profitNet": 3.3,
+    "roi": 13.3
+   },
+   {
+    "article": "DE реабилитационные клиники (93256)",
+    "spend": 16.9,
+    "profitNet": 5.9,
+    "roi": 34.7
+   }
+  ]
+ }
+}
