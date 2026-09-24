@@ -1,0 +1,1080 @@
+{
+ "topic": "Офферы 60+ — что запускать (разбор 37 из offer_hypotheses)",
+ "task": "«у меня еще есть офферы 60+ пройдись по ним с маркетологом и решить что оттуда стоит запуститься, лучше в порядке «думаю это стрельнет» так же добавь туда ключей, короткий текст в мета как делали и крео 4 шт, крео только делай нормальные, чтобы пенсы могли свободно читать» (владелец, 24.09 ~23:30 GMT+3)",
+ "author": "маркетолог",
+ "createdAt": "2026-09-24T21:45:00Z",
+ "ranking": [
+  {
+   "place": 1,
+   "offer": "pension-loan-de",
+   "geo": "DE (+AT, CH по-немецки)",
+   "verdict": "запускать",
+   "why": "Шаблон «кредит пенсионеру» платит в 6 странах; немецкая AT-статья $0.37 с клика (+53%), CH-de $2.43 за 22–23.09; Planner «kredit für rentner» 1 900 (+19%); кредит в Европе — Meta даёт свой возраст. Риск — дорогой DE-клик."
+  },
+  {
+   "place": 2,
+   "offer": "home-garden-cleaning-seniors-uk",
+   "geo": "GB (+IE, CA, US)",
+   "verdict": "запускать",
+   "why": "Наша статья про водостоки для пожилых живая: 22–23.09 +23%, $0.29 с клика (за всё время ≈0% на $17); «gutter cleaning» 12 100 (+83%), осенний пик; у конкурента тот же крео 40–50 дней; не спецкатегория — ставим 60+."
+  },
+  {
+   "place": 3,
+   "offer": "reverse-mortgage-uk",
+   "geo": "GB",
+   "verdict": "запускать",
+   "why": "Шаблон «деньги 60+» на британский продукт; «equity release» 14 800, «…calculator» 5 400 — калькулятор наш самый дорогой паттерн (HU $0.46, PT $0.39); класса у других нет; UK-клик дорогой."
+  },
+  {
+   "place": 4,
+   "offer": "mobility-aids-uk",
+   "geo": "GB (+IE)",
+   "verdict": "запускать",
+   "why": "Товарка для 60+: «stairlifts» 9 900, «stairlift prices» 3 600, «cost» 1 900, «rental» 1 300; соседний товар 60+ (кресло с подъёмом) у конкурента 250 дней на 30–33 гео; не спецкатегория. Выплата не подтверждена."
+  },
+  {
+   "place": 5,
+   "offer": "medicare-comparison-us",
+   "geo": "US",
+   "verdict": "запускать (сезон, решение до 10.10)",
+   "why": "Окно 15.10–07.12 (CMS); «medicare advantage plans» 246 000 (+49%); у других медстраховки US — высокий класс, «Medicare Services for Seniors» — средний; у коллег «мутуэль для пенсионеров» FR с 01.05. US у нас почти нет."
+  },
+  {
+   "place": 6,
+   "offer": "hearing-aids-us",
+   "geo": "US",
+   "verdict": "в запас (первый на освободившийся слот)",
+   "why": "«hearing aids» 165 000, «affordable…» 9 900, «best otc…» 6 600; не спецкатегория; класса у других нет, рядом «Mobility Devices for Seniors» — низкий; выдача в брендах и «near me»."
+  },
+  {
+   "place": 7,
+   "offer": "bathroom-grant-seniors-uk",
+   "geo": "GB",
+   "verdict": "в запас (клон №4, если подъёмник заплатит)",
+   "why": "«walk in bath» 8 100 (+23%), «disabled baths» 1 900 — как товарка (цена ванны с дверцей), а не «грант»: госпособия режет TikTok; выплаты и класса нет."
+  },
+  {
+   "place": 8,
+   "offer": "solar-panel-subsidy-seniors-de",
+   "geo": "DE",
+   "verdict": "в запас (ждём FI/BG «крыша пенсионерам», залиты 24.09)",
+   "why": "«photovoltaik förderung» 5 400, «pv anlage förderung» 3 600, «kfw 270» 5 400; конкурент «субсидия на крышу пенсионерам» FI 132 / BG 110 дней; класса у других нет."
+  },
+  {
+   "place": 9,
+   "offer": "home-insulation-subsidy-de",
+   "geo": "DE",
+   "verdict": "в запас (тот же тест FI/BG)",
+   "why": "Та же логика, что №8; по «Dämmung Förderung» строк в выдаче нет — объёма не знаю; длинный цикл покупки."
+  },
+  {
+   "place": 10,
+   "offer": "dental-implants-seniors-us",
+   "geo": "US",
+   "verdict": "в запас (ждём IT/RO стоматологию 25.09)",
+   "why": "«dental implants for seniors» 1 000; у коллег RO/IT импланты для пожилых живут с 04.09/08.09; класс имплантов у других — низкий (PL, RO)."
+  },
+  {
+   "place": 11,
+   "offer": "home-care-seniors-us",
+   "geo": "US",
+   "verdict": "в запас",
+   "why": "Конкурент «стоимость дома престарелых» PT 106 / AR 99 / BG 97 дней; «senior care near me» 27 100 (+83%, но near me); наш BR «кондоминиум для пожилых» −20% ($0.03 с клика)."
+  },
+  {
+   "place": 12,
+   "offer": "part-time-jobs-seniors-de",
+   "geo": "DE",
+   "verdict": "в запас (джобсы — малой долей)",
+   "why": "Конкурент «сиделка для пожилых» 183 дня, 33 гео; наши DE-ключи уборки $0.40–0.44 — другая тема; по «Minijob Rentner» объёма в выдаче нет."
+  },
+  {
+   "place": 13,
+   "offer": "car-insurance-seniors-uk",
+   "geo": "GB",
+   "verdict": "в запас",
+   "why": "«cheapest car insurance for over 70s» 390 — мало; у конкурента IT «автостраховка 65+» с 20.08; наш NO «автостраховка пенсионерам» −67% на $9 ($0.11 с клика)."
+  },
+  {
+   "place": 14,
+   "offer": "funeral-insurance-us",
+   "geo": "US",
+   "verdict": "в запас",
+   "why": "«final expense insurance» 12 100 (+22%); у других «Get a Life Insurance Quote» — средний; страховка в US — спецкатегория."
+  },
+  {
+   "place": 15,
+   "offer": "medical-alert-us",
+   "geo": "US",
+   "verdict": "в запас",
+   "why": "«medical alert» 14 800, «…systems for seniors» 3 600 (−33%); класса нет; выдача в брендах (Life Alert, ADT)."
+  },
+  {
+   "place": 16,
+   "offer": "debt-consolidation-seniors-ca",
+   "geo": "CA",
+   "verdict": "в запас",
+   "why": "CA у нас +59% на $30; «debt consolidation» 8 100; кредиты CA у других — средний/низкий; спецкатегория; 60+ в ключах нет."
+  },
+  {
+   "place": 17,
+   "offer": "credit-card-bad-credit-seniors-uk",
+   "geo": "GB",
+   "verdict": "в запас",
+   "why": "UK-кредитки у других — средний класс; «плохая кредитная история» — в списке нарушений RSOC у практиков; 60+ в ключах нет."
+  },
+  {
+   "place": 18,
+   "offer": "senior-glasses-uk",
+   "geo": "GB",
+   "verdict": "не брать",
+   "why": "По катаракте строк в выдаче нет — объёма не видно; мед. процедура, коммерческий спрос не подтверждён."
+  },
+  {
+   "place": 19,
+   "offer": "home-security-seniors-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Выдача — бренды (Vivint, SimpliSafe) и «near me»; класса нет; 60+ в ключах нет."
+  },
+  {
+   "place": 20,
+   "offer": "pet-insurance-seniors-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Объём огромный (301 000), но спрос не про 60+ — крео для пенсионеров мимо; страховка — спецкатегория."
+  },
+  {
+   "place": 21,
+   "offer": "annuities-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Финансы с брендовой выдачей; ни выплаты, ни класса."
+  },
+  {
+   "place": 22,
+   "offer": "will-estate-planning-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Ни выплаты, ни класса, ни конкурента в данных."
+  },
+  {
+   "place": 23,
+   "offer": "meal-delivery-seniors-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Ни выплаты, ни класса, ни конкурента в данных."
+  },
+  {
+   "place": 24,
+   "offer": "senior-cruise-deals-uk",
+   "geo": "GB",
+   "verdict": "не брать",
+   "why": "У других «tours for seniors» — низкий во всех 10 ключах (UK, CA, US); наш ES «поездки 60+» заморожен из-за выплаты."
+  },
+  {
+   "place": 25,
+   "offer": "senior-discounts-guide-uk",
+   "geo": "GB",
+   "verdict": "не брать",
+   "why": "Инфотема без покупки; класса нет."
+  },
+  {
+   "place": 26,
+   "offer": "senior-phones-uk",
+   "geo": "GB",
+   "verdict": "не брать",
+   "why": "Дешёвый товар; класса нет."
+  },
+  {
+   "place": 27,
+   "offer": "senior-driving-refresher-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Узкая ниша; класса нет."
+  },
+  {
+   "place": 28,
+   "offer": "senior-tax-help-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Сезон — весна, сейчас спроса нет."
+  },
+  {
+   "place": 29,
+   "offer": "va-benefits-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Госпособия: риск «выдачи себя за госорган», TikTok режет преувеличение выгоды госпособий; выдача в «VA home loan»."
+  },
+  {
+   "place": 30,
+   "offer": "attendance-allowance-uk",
+   "geo": "GB",
+   "verdict": "не брать",
+   "why": "Госпособие — инфоспрос, класса нет, TikTok режет обещания госвыплат."
+  },
+  {
+   "place": 31,
+   "offer": "council-tax-reduction-uk",
+   "geo": "GB",
+   "verdict": "не брать",
+   "why": "То же, что №30."
+  },
+  {
+   "place": 32,
+   "offer": "pension-benefit-guide-pl",
+   "geo": "PL",
+   "verdict": "не брать",
+   "why": "Наш PL — $0.05 с клика за год; «dodatek do emerytury po 75/80» 720–880 — госинфо; платящие PL-ключи у других — про кредит."
+  },
+  {
+   "place": 33,
+   "offer": "remote-work-seniors-uk",
+   "geo": "GB",
+   "verdict": "не брать",
+   "why": "Наш «упаковка на дому» IT −91%; джобсы уводим."
+  },
+  {
+   "place": 34,
+   "offer": "joint-pain-relief-seniors-uk",
+   "geo": "GB",
+   "verdict": "не брать",
+   "why": "Медобещания — модерация; класса нет."
+  },
+  {
+   "place": 35,
+   "offer": "cpap-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Рецептурный прибор, воронка через диагноз."
+  },
+  {
+   "place": 36,
+   "offer": "diabetic-supplies-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "В выдаче «we buy test strips» — перепродажа; воронка через страховку."
+  },
+  {
+   "place": 37,
+   "offer": "shingles-vaccine-us",
+   "geo": "US",
+   "verdict": "не брать",
+   "why": "Вакцины — ограничения площадок."
+  }
+ ],
+ "packets": [
+  {
+   "place": 1,
+   "offer": "pension-loan-de",
+   "name": "кредиты · пенсионеры 60+ · Германия (+AT, CH по-немецки)",
+   "verdict": "запускать",
+   "approach": "угол первым (перенос доказанного шаблона «кредит пенсионеру» в DE)",
+   "bucket": "клон шаблона — но это разморозка DE-rentnerkredit, решает главный",
+   "geo": "DE, AT, CH (таргет по языку: немецкий)",
+   "lang": "de",
+   "provider": "IRONFLI (пенсионерские статьи платили там) + VISYMO de_DE сплит $5 — увидеть выплату по DE-ключам",
+   "article": {
+    "status": "готова",
+    "ref": "/home/user/alextest/articles/2026-09-24_DE_kredit-mit-rente-v2.md (карточка article_drafts/DE-rentnerkredit-2026-09-24)",
+    "title": "Kredit mit Rente 2026: Welche Summe ist realistisch und worauf schaut die Bank?",
+    "titleRu": "Кредит с пенсией 2026: какая сумма реальна и на что смотрит банк?",
+    "change": "Один ключ заменить: «Privatkredit für Rentner» (30/мес) → «Kredit für Rentner mit Sofortzusage» (590/мес). В раздел 4 — абзац «Was „Sofortzusage“ bei Rentnern wirklich bedeutet» (предварительное решение, не выплата). Остальное не трогать."
+   },
+   "keys": [
+    {
+     "keyword": "Kredit für Rentner mit Sofortzusage",
+     "translation": "кредит для пенсионеров с мгновенным решением",
+     "volume": "590/мес (+23%)",
+     "rpc": "DE не измерен; донор паттерна «сразу» — наш HU «Gyorskölcsön Azonnal» $0.459 (57 кл.)",
+     "source": "research_keywords DE 24.09; keywords/all",
+     "note": "на креатив «Sofortzusage» не выносить (запрет «быстро/сразу» рядом с «кредит»)"
+    },
+    {
+     "keyword": "Kredit für Rentner",
+     "translation": "кредит для пенсионеров",
+     "volume": "1 900/мес (+19%)",
+     "rpc": "DE не измерен; донор LT «Paskolos Vyresniems Nei 60» $0.297 (211 кл.); немецкая статья AT 23382 — $0.37 с клика за 01.06–23.09",
+     "source": "research_keywords DE 24.09; keywords/all; Roots article"
+    },
+    {
+     "keyword": "Kredit mit Rente",
+     "translation": "кредит с пенсией",
+     "volume": "1 900/мес (+19%)",
+     "rpc": "донор LT $0.297",
+     "source": "research_keywords DE 24.09"
+    },
+    {
+     "keyword": "Kredit für Rentner über 70",
+     "translation": "кредит для пенсионеров старше 70",
+     "volume": "170/мес (+89%)",
+     "rpc": "донор LT $0.297 (паттерн «возраст»)",
+     "source": "research_keywords DE 24.09 (карточка DE-rentnerkredit)"
+    },
+    {
+     "keyword": "Rentnerkredit",
+     "translation": "кредит пенсионеру (одним словом)",
+     "volume": "90/мес",
+     "rpc": "донор LT $0.297",
+     "source": "research_keywords DE 24.09 (карточка DE-rentnerkredit)"
+    },
+    {
+     "keyword": "Ratenkredit für Rentner",
+     "translation": "потребкредит в рассрочку для пенсионеров",
+     "volume": "40/мес",
+     "rpc": "донор RO «Credite Nevoi Personale» $0.224 (27 кл.)",
+     "source": "research_keywords DE 24.09 (карточка DE-rentnerkredit); keywords/all"
+    }
+   ],
+   "keysNote": "RPC — цифры доноров, немецкие ключи не измерены ни у нас, ни у других. У других команд в DE по кредитам — «Kredit für Verschuldete» (высокий), но это не наш угол, в статью не ставим.",
+   "meta": {
+    "primaryText": "Viele Rentner hören bei der Bank „Nein“ – obwohl es keine gesetzliche Altersgrenze gibt. Worauf die Bank wirklich schaut, steht im Artikel.",
+    "primaryTextRu": "Многие пенсионеры слышат в банке «нет» — хотя возрастного предела в законе нет. На что банк смотрит на самом деле — в статье.",
+    "headline": "Kredit mit Rente 2026: Welche Summe ist realistisch und worauf schaut die Bank?",
+    "cta": "Learn More (Mehr dazu)"
+   },
+   "creatives": [
+    {
+     "offer": "pension-loan-de",
+     "n": 1,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120252993448300264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120252993448300264.jpg",
+     "templateWhy": "белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%",
+     "headline_on_image": "KREDIT MIT RENTE 2026",
+     "sub_on_image": "Was Banken Rentnern (60+) verschweigen?",
+     "button_text": "Mehr erfahren",
+     "lang": "de",
+     "geo": "DE, AT, CH (таргет по языку: немецкий)",
+     "ru": "Кредит с пенсией 2026 / Что банки скрывают от пенсионеров (60+)?",
+     "concept": "хук владельца «что скрывают банки» (HU/RO/EE)",
+     "visual": "",
+     "wordsOnImage": 11,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "pension-loan-de",
+     "n": 2,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120253014378450264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120253014378450264.jpg",
+     "templateWhy": "орнаментная рамка поверх размытого фото стола (очки, газета), жирный капс · RO кредиты 60+ (РК 0817-GE02): за всё время $133.4 → +32%",
+     "headline_on_image": "KREDIT FÜR RENTNER 2026",
+     "sub_on_image": "Welche Summe ist realistisch?",
+     "button_text": "Mehr erfahren",
+     "lang": "de",
+     "geo": "DE, AT, CH (таргет по языку: немецкий)",
+     "ru": "Кредит для пенсионеров 2026 / Какая сумма реальна?",
+     "concept": "вопрос о сумме (правило creative.md для кредитов 60+)",
+     "visual": "",
+     "wordsOnImage": 10,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "pension-loan-de",
+     "n": 3,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120246123336080424.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120246123336080424.jpg",
+     "templateWhy": "кремовая карточка с орнаментом на фоне газеты/стола, красная кнопка · EE кредиты 60+ (РК 0906-GE01): $11.2 → +106%",
+     "headline_on_image": "Mit 72 noch einen Kredit?",
+     "sub_on_image": "Das Alter zählt anders",
+     "button_text": "Mehr erfahren",
+     "lang": "de",
+     "geo": "DE, AT, CH (таргет по языку: немецкий)",
+     "ru": "В 72 ещё кредит? / Возраст считают иначе",
+     "concept": "интрига «возраст на последнем платеже» (раздел 3 статьи)",
+     "visual": "",
+     "wordsOnImage": 11,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "pension-loan-de",
+     "n": 4,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120253014380040264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120253014380040264.jpg",
+     "templateWhy": "цветочная рамка, крупный вопрос, кнопка-«таблетка» · RO кредиты 60+ (РК 0817-GE02): 17–23.09 $8.1 → +108%",
+     "headline_on_image": "Wie beantragen Rentner 2026 richtig einen Kredit?",
+     "sub_on_image": "Ab 60 Jahren",
+     "button_text": "Mehr erfahren",
+     "lang": "de",
+     "geo": "DE, AT, CH (таргет по языку: немецкий)",
+     "ru": "Как пенсионеру правильно подать на кредит в 2026? / С 60 лет",
+     "concept": "вопрос «как правильно подать 60+» (ES +37…+71%, HU +37%)",
+     "visual": "",
+     "wordsOnImage": 12,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    }
+   ],
+   "budget": "FB IRONFLI $10/день (DE+AT+CH по-немецки) + FB VISYMO de_DE $5/день. TT — только после FB, если клик ≤ $0.20 (TT минимум $20). Бид ставит владелец.",
+   "platform": "FB",
+   "age": "Кредит — спецкатегория Meta; для кредитной рекламы в Европе Meta допускает свой возрастной диапазон (knowledge/meta_delivery) — попробовать 55+; если кабинет не даёт — 18–65+, аудиторию отбирает крео.",
+   "criteria3d": "После 1-го закрытого дня: < 1 000 показов — бид/кабинет, угол не судим; клик > $0.30 — крео не решили проблему DE-клика. Через 3 дня при ≥ 40 кликах: клик ≤ $0.20 (условие разморозки DE) и выручка с клика ≥ $0.25 и ROI ≥ +30% — масштаб; выручка с клика < $0.12 — стоп.",
+   "basis": "Шаблон «кредит пенсионеру» платит в 6 странах (AT, ES, EE, HU, PT, CH). Немецкая AT-статья 23382: 01.06–23.09 $81 → +53%, $0.37 с клика; 22–23.09 $0.20 с клика (8 кл.). CH-de 113490: 22–23.09 $2.43 с клика (6 кл.). Planner DE «kredit für rentner» 1 900 (+19%).",
+   "risk": "DE-клик исторически $0.23–0.57 (наши DE-кредиты ROI −14%) — если шаблоны владельца не дадут клик ≤ $0.20, выплата его не покроет.",
+   "conflict": "Главный 24.09 заморозил DE-rentnerkredit до «DE-крео с кликом ≤ $0.20». Мой довод: этот тест и есть проверка условия — 2 дня по $10 на доказанных шаблонах владельца, а не на новых ИИ-картинках. Если главный против — вопрос владельцу."
+  },
+  {
+   "place": 2,
+   "offer": "home-garden-cleaning-seniors-uk",
+   "name": "услуги для дома 60+ · угол водостоки (EN) — как назвать вертикаль, уточнить у владельца",
+   "verdict": "запускать",
+   "approach": "проверенная статья (IRONFLI «Gutter Cleaning Services for Seniors», уже крутится)",
+   "bucket": "масштаб своей статьи новыми крео — не новый угол",
+   "geo": "GB, IE, CA, US (таргет по языку: английский)",
+   "lang": "en",
+   "provider": "IRONFLI (статья живая) + VISYMO en_GB сплит $5 — узнать, какие ключи водостоков платят",
+   "article": {
+    "status": "готова и платит",
+    "ref": "IRONFLI, категория AlexZGutterCleaning — «Gutter Cleaning Services for Seniors: What to Know Before Hiring Help» (текст общий английский: весна/осень, downspouts — годится на GB/IE/CA/US)",
+    "title": "Gutter Cleaning Services for Seniors: What to Know Before Hiring Help",
+    "titleRu": "Чистка водостоков для пожилых: что знать, прежде чем нанимать",
+    "change": "Не трогать. Оффер «дом + сад» из списка сужаю до водостоков: платит именно эта статья; сад — другая тема и другие ключи."
+   },
+   "keys": [
+    {
+     "keyword": "gutter cleaning companies",
+     "translation": "компании по чистке водостоков",
+     "volume": "210/мес (+133%)",
+     "rpc": "по ключу не измерен (IRONFLI не показывает); донор DE «Reinigungsfirma Finden» $0.442 (найти клининговую фирму)",
+     "source": "research_keywords GB 24.09; keywords/all"
+    },
+    {
+     "keyword": "gutter cleaning service",
+     "translation": "услуга чистки водостоков",
+     "volume": "3 600/мес (+309%)",
+     "rpc": "донор FR «Services de Nettoyage» $0.256",
+     "source": "research_keywords GB 24.09; keywords/all"
+    },
+    {
+     "keyword": "gutter cleaning cost",
+     "translation": "сколько стоит чистка водостоков",
+     "volume": "1 600/мес (+60%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "gutter cleaning",
+     "translation": "чистка водостоков",
+     "volume": "12 100/мес (+83%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "roof and gutter cleaning",
+     "translation": "чистка крыши и водостоков",
+     "volume": "880/мес (+49%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "professional gutter cleaning",
+     "translation": "профессиональная чистка водостоков",
+     "volume": "170/мес (+89%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    }
+   ],
+   "keysNote": "Статья целиком: $0.21 с клика за всё время (84 кл.), $0.29 за 22–23.09 (15 кл.). По ключам выплату покажет только VISYMO. Соседняя тема у других команд в GB: «Cleaning Company London» — высокий, «Cleaning Services» — средний. «near me» во всех формах исключены.",
+   "meta": {
+    "primaryText": "Still climbing a ladder every autumn after 65? Here's what gutter cleaning usually costs – and what's included.",
+    "primaryTextRu": "Всё ещё лезете на лестницу каждую осень после 65? Сколько обычно стоит чистка водостоков и что в неё входит.",
+    "headline": "Gutter Cleaning Services for Seniors: What to Know Before Hiring Help",
+    "cta": "Learn More"
+   },
+   "creatives": [
+    {
+     "offer": "home-garden-cleaning-seniors-uk",
+     "n": 1,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/1873128756688242.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/1873128756688242.jpg",
+     "templateWhy": "цветочные углы, очень крупные засечки капсом, большая тёмно-синяя кнопка · GB джобсы TT (стиль владельца; цифр по объявлению у меня нет)",
+     "headline_on_image": "OVER 65? PUT THE LADDER AWAY",
+     "sub_on_image": "Gutter cleaning costs 2026",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB, IE, CA, US (таргет по языку: английский)",
+     "ru": "Вам за 65? Уберите лестницу / Сколько стоит чистка водостоков в 2026",
+     "concept": "запрет-выгода: не лезть на лестницу",
+     "visual": "флаг/герб из шаблона убрать",
+     "wordsOnImage": 12,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "home-garden-cleaning-seniors-uk",
+     "n": 2,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120246123336080424.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120246123336080424.jpg",
+     "templateWhy": "кремовая карточка с орнаментом на фоне газеты/стола, красная кнопка · EE кредиты 60+ (РК 0906-GE01): $11.2 → +106%",
+     "headline_on_image": "GUTTER CLEANING 2026",
+     "sub_on_image": "What seniors usually pay",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB, IE, CA, US (таргет по языку: английский)",
+     "ru": "Чистка водостоков 2026 / Сколько обычно платят пожилые",
+     "concept": "цена — как в товарке",
+     "visual": "фон газеты/стола оставить",
+     "wordsOnImage": 9,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "home-garden-cleaning-seniors-uk",
+     "n": 3,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120252993448300264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120252993448300264.jpg",
+     "templateWhy": "белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%",
+     "headline_on_image": "BLOCKED GUTTERS?",
+     "sub_on_image": "What most homeowners over 60 don't know",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB, IE, CA, US (таргет по языку: английский)",
+     "ru": "Забиты водостоки? / Чего не знают большинство домовладельцев старше 60",
+     "concept": "кликбейт «мало кто знает»",
+     "visual": "",
+     "wordsOnImage": 11,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "home-garden-cleaning-seniors-uk",
+     "n": 4,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120252986985640264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120252986985640264.jpg",
+     "templateWhy": "орнаментная рамка поверх размытого фото стола, жирный капс, синяя кнопка · PT кредиты 60+ (РК 0816-GE04): $127 → +43%",
+     "headline_on_image": "Autumn Leaves in Your Gutters?",
+     "sub_on_image": "Ask about senior discounts",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB, IE, CA, US (таргет по языку: английский)",
+     "ru": "Осенние листья в водостоках? / Спросите о скидках для пожилых",
+     "concept": "сезон + скидка (раздел статьи про скидки)",
+     "visual": "фото стола заменить на размытое фото крыши/желоба с осенними листьями; рамку и карточку оставить",
+     "wordsOnImage": 11,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    }
+   ],
+   "budget": "FB IRONFLI $10/день (GB+IE+CA+US, английский) + FB VISYMO en_GB $5/день. Бид — владелец.",
+   "platform": "FB",
+   "age": "Не спецкатегория Meta — можно выставить 55+ (в одной РК 55+, в копии — без возраста, сравнить клик).",
+   "criteria3d": "База — эта статья сейчас ≈ 0% на $17. Через 3 дня при ≥ 40 кликах: выручка с клика ≥ $0.25 и ROI ≥ +30% — масштаб (вариации крео + второй кабинет); < $0.12 — стоп. < 1 000 показов за 1-й закрытый день — бид/кабинет.",
+   "basis": "Статья «Gutter Cleaning Services for Seniors»: 22–23.09 $3.5 → $4.3 (+23%, $0.29 с клика); РК 0918-GE01/GE02 за всё время $17.4 → $17.5, CTR 9.5–10.8%, CPM $19–24. Planner GB: «gutter cleaning» 12 100 (+83%), «…service» 3 600 (+309%) — осенний пик. Конкурент (analogaudiohub, «New Horizons Magazine») — тот же крео на 4 ID, 40–50 дней (new_tests, 23.09).",
+   "risk": "Клик в UK/US дорогой (CPM $19–24): при выплате ~$0.2–0.3 с клика маржа тонкая, решит цена клика с новых крео."
+  },
+  {
+   "place": 3,
+   "offer": "reverse-mortgage-uk",
+   "name": "кредиты · 60+ · угол «деньги из своего дома» (UK)",
+   "verdict": "запускать",
+   "approach": "угол первым (шаблон «деньги 60+» в британском продукте)",
+   "bucket": "гипотеза (входит в лимит 5)",
+   "geo": "GB",
+   "lang": "en",
+   "provider": "VISYMO en_GB (новый тест — видна выплата по ключам); IRONFLI — только если на VISYMO нет en_GB",
+   "article": {
+    "status": "нужна новая",
+    "title": "Equity Release in 2026: How Much Can Over-60s Unlock and What It Really Costs",
+    "titleRu": "Equity release в 2026: сколько могут получить люди 60+ и во что это обходится",
+    "plan": [
+     "What equity release is: lifetime mortgage vs home reversion — ключи equity release, lifetime mortgage",
+     "How much can you release at 60, 70, 80: what an equity release calculator looks at (age, home value, health) — ключ equity release calculator",
+     "Equity release mortgage costs: interest that rolls up, fees, early repayment — ключ equity release mortgage",
+     "Release equity from house vs downsizing vs remortgage — ключ release equity from house",
+     "How to compare providers: what the best equity release companies have in common (regulated adviser, independent advice) — ключ best equity release companies",
+     "Before you sign: inheritance, means-tested benefits, talking to family — чек-лист"
+    ],
+    "note": "Без ставок и сумм «до £…» в тексте рекламы; британские правила и цифры — только из открытых источников (gov.uk, fca.org.uk закрыты прокси — копирайтер помечает, откуда взял)."
+   },
+   "keys": [
+    {
+     "keyword": "equity release calculator",
+     "translation": "калькулятор equity release",
+     "volume": "5 400/мес",
+     "rpc": "не измерен; донор паттерна «калькулятор» — HU «Mbh Bank Személyi Kölcsön Kalkulátor» $0.459, PT «Simulador de Emprestimo» $0.390",
+     "source": "research_keywords GB 24.09 (loans_50_angles); keywords/all"
+    },
+    {
+     "keyword": "equity release",
+     "translation": "получение денег из стоимости дома",
+     "volume": "14 800/мес (0%)",
+     "rpc": "донор 60+ LT «Paskolos Vyresniems Nei 60» $0.297",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "lifetime mortgage",
+     "translation": "пожизненная ипотека",
+     "volume": "4 400/мес",
+     "rpc": "донор LT $0.297",
+     "source": "research_keywords GB 24.09 (loans_50_angles)"
+    },
+    {
+     "keyword": "equity release mortgage",
+     "translation": "ипотека equity release",
+     "volume": "1 900/мес (−21%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "release equity from house",
+     "translation": "получить деньги из стоимости дома",
+     "volume": "1 300/мес (−19%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "best equity release companies",
+     "translation": "лучшие компании equity release",
+     "volume": "880/мес (−12%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    }
+   ],
+   "keysNote": "У других команд по теме строк нет. Бренды (Aviva, Key, Legal & General, Saga) исключены.",
+   "meta": {
+    "primaryText": "Aged 60+ and own your home? Here's how equity release works in 2026 – and what it really costs over time.",
+    "primaryTextRu": "Вам 60+ и дом ваш? Как устроен equity release в 2026 году — и во что он обходится со временем.",
+    "headline": "Equity Release in 2026: How Much Can Over-60s Unlock and What It Really Costs",
+    "cta": "Learn More"
+   },
+   "creatives": [
+    {
+     "offer": "reverse-mortgage-uk",
+     "n": 1,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120252993448300264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120252993448300264.jpg",
+     "templateWhy": "белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%",
+     "headline_on_image": "EQUITY RELEASE 2026",
+     "sub_on_image": "What lenders don't tell over-60s",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB",
+     "ru": "Equity release 2026 / О чём кредиторы молчат с теми, кому за 60",
+     "concept": "хук владельца «что скрывают банки»",
+     "visual": "",
+     "wordsOnImage": 10,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "reverse-mortgage-uk",
+     "n": 2,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120252986985640264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120252986985640264.jpg",
+     "templateWhy": "орнаментная рамка поверх размытого фото стола, жирный капс, синяя кнопка · PT кредиты 60+ (РК 0816-GE04): $127 → +43%",
+     "headline_on_image": "60+ AND OWN YOUR HOME?",
+     "sub_on_image": "How much could you unlock?",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB",
+     "ru": "60+ и свой дом? / Сколько можно получить из его стоимости?",
+     "concept": "вопрос о сумме, без цифр",
+     "visual": "",
+     "wordsOnImage": 12,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "reverse-mortgage-uk",
+     "n": 3,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120246123336080424.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120246123336080424.jpg",
+     "templateWhy": "кремовая карточка с орнаментом на фоне газеты/стола, красная кнопка · EE кредиты 60+ (РК 0906-GE01): $11.2 → +106%",
+     "headline_on_image": "Money From Your Home Without Moving?",
+     "sub_on_image": "Explained for over-60s",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB",
+     "ru": "Деньги из своего дома без переезда? / Объясняем для 60+",
+     "concept": "выгода «не переезжая» вопросом",
+     "visual": "",
+     "wordsOnImage": 11,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "reverse-mortgage-uk",
+     "n": 4,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120253014380040264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120253014380040264.jpg",
+     "templateWhy": "цветочная рамка, крупный вопрос, кнопка-«таблетка» · RO кредиты 60+ (РК 0817-GE02): 17–23.09 $8.1 → +108%",
+     "headline_on_image": "How Do Over-60s Release Equity Correctly in 2026?",
+     "sub_on_image": "",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB",
+     "ru": "Как людям 60+ правильно получить деньги из дома в 2026?",
+     "concept": "вопрос «как правильно 60+» (ES/HU/RO)",
+     "visual": "",
+     "wordsOnImage": 10,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    }
+   ],
+   "budget": "FB VISYMO en_GB $10/день. Бид — владелец.",
+   "platform": "FB",
+   "age": "Кредит (lifetime mortgage) — спецкатегория Meta, UK в списке стран; попробовать 55+, если кабинет не даёт — 18–65+.",
+   "criteria3d": "Через 3 дня при ≥ 40 кликах: выручка с клика ≥ $0.25 и ROI ≥ +30% — масштаб; < $0.12 — стоп. Платящие ключи VISYMO — сразу в keywords/all.",
+   "basis": "Шаблон «деньги 60+» платит в 6 странах; Planner GB: «equity release» 14 800, «…calculator» 5 400, «lifetime mortgage» 4 400; паттерн «калькулятор» — наш самый дорогой (HU $0.46, PT $0.39). В loans_50_angles этот угол — №3 из 10.",
+   "risk": "Наши UK-кредиты (май/июль) давали $0.14–0.17 с клика при клике $0.21–0.32 — UK-клик может съесть выплату."
+  },
+  {
+   "place": 4,
+   "offer": "mobility-aids-uk",
+   "name": "товарка · подъёмник на лестницу (UK)",
+   "verdict": "запускать",
+   "approach": "угол первым (товарка-сетка для 60+)",
+   "bucket": "гипотеза (входит в лимит 5)",
+   "geo": "GB, IE (английский)",
+   "lang": "en",
+   "provider": "VISYMO en_GB (новый тест — видна выплата по ключам)",
+   "article": {
+    "status": "нужна новая",
+    "title": "Stairlift Prices 2026: Straight, Curved, Reconditioned or Rental – What You Really Pay",
+    "titleRu": "Цены на лестничные подъёмники 2026: прямой, для поворотной лестницы, восстановленный или аренда — сколько платят на самом деле",
+    "plan": [
+     "Stairlift prices 2026: what drives the price (stair shape, length, seat, battery) — ключ stairlift prices",
+     "Straight stairlifts: typical cost and fitting time — ключ stairlift cost",
+     "Curved stairs: why a stairlift for curved stairs costs more (made to measure) — ключ stairlift for curved stairs",
+     "Reconditioned stairlift: how much you save and what to check (warranty, age, service) — ключ reconditioned stairlift",
+     "Stairlift rental: when renting beats buying — ключ stairlift rental",
+     "Choosing among stairlifts: questions to ask before a home survey — ключ stairlifts"
+    ],
+    "note": "Каждый вариант сетки на крео = раздел статьи. Цены только диапазонами из открытых источников, без брендов (Stannah, Acorn, Bruno)."
+   },
+   "keys": [
+    {
+     "keyword": "stairlift prices",
+     "translation": "цены на лестничные подъёмники",
+     "volume": "3 600/мес (0%)",
+     "rpc": "не измерен; у других команд строк нет",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "stairlift cost",
+     "translation": "сколько стоит подъёмник",
+     "volume": "1 900/мес (+19%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "stairlifts",
+     "translation": "лестничные подъёмники",
+     "volume": "9 900/мес (0%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "stairlift rental",
+     "translation": "аренда подъёмника",
+     "volume": "1 300/мес (0%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "reconditioned stairlift",
+     "translation": "восстановленный подъёмник",
+     "volume": "590/мес (0%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    },
+    {
+     "keyword": "stairlift for curved stairs",
+     "translation": "подъёмник для поворотной лестницы",
+     "volume": "320/мес (0%)",
+     "rpc": "не измерен",
+     "source": "research_keywords GB 24.09"
+    }
+   ],
+   "keysNote": "Своих и чужих цифр по подъёмникам нет. Единственный наш измеренный товарный паттерн «цена» — LT тепловые насосы $0.10–0.105 (низкий). Рядом у других команд US «Mobility Devices for Seniors» — низкий. Бренды и «near me» исключены.",
+   "meta": {
+    "primaryText": "Stairs getting harder? Here's what a stairlift costs in 2026 – straight, curved, reconditioned or rented.",
+    "primaryTextRu": "Лестница даётся всё тяжелее? Сколько стоит подъёмник в 2026 году — прямой, для поворотной лестницы, восстановленный или в аренду.",
+    "headline": "Stairlift Prices 2026: Straight, Curved, Reconditioned or Rental – What You Really Pay",
+    "cta": "Learn More"
+   },
+   "creatives": [
+    {
+     "offer": "mobility-aids-uk",
+     "n": 1,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/1873128758784241.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/1873128758784241.jpg",
+     "templateWhy": "цветочные углы, крупные засечки, строка-плашка под заголовком, большая кнопка · GB джобсы TT (стиль владельца; цифр у меня нет)",
+     "headline_on_image": "STAIRLIFT PRICES 2026",
+     "sub_on_image": "Straight · Curved · Reconditioned · Rental",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB, IE (английский)",
+     "ru": "Цены на подъёмники 2026 / Прямой · Поворотный · Восстановленный · Аренда",
+     "concept": "товарка-сетка: 4 крупные плитки-варианта (формат H)",
+     "visual": "плашку под заголовком заменить на 4 крупные плитки 2×2 (текст плиток ≥ 44 px); сверху фото подъёмника на лестнице; герб убрать",
+     "wordsOnImage": 12,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "mobility-aids-uk",
+     "n": 2,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120253014378450264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120253014378450264.jpg",
+     "templateWhy": "орнаментная рамка поверх размытого фото стола (очки, газета), жирный капс · RO кредиты 60+ (РК 0817-GE02): за всё время $133.4 → +32%",
+     "headline_on_image": "STAIRS GETTING HARDER?",
+     "sub_on_image": "What a stairlift really costs in 2026",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB, IE (английский)",
+     "ru": "Лестница даётся всё тяжелее? / Сколько на самом деле стоит подъёмник в 2026",
+     "concept": "боль + цена",
+     "visual": "фото стола заменить на размытое фото лестницы с подъёмником; рамку и карточку оставить",
+     "wordsOnImage": 12,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "mobility-aids-uk",
+     "n": 3,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120252993448300264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120252993448300264.jpg",
+     "templateWhy": "белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%",
+     "headline_on_image": "STAIRLIFT OR MOVING HOUSE?",
+     "sub_on_image": "Which is cheaper after 70?",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB, IE (английский)",
+     "ru": "Подъёмник или переезд? / Что дешевле после 70?",
+     "concept": "сравнение двух вариантов (формат F)",
+     "visual": "",
+     "wordsOnImage": 11,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "mobility-aids-uk",
+     "n": 4,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120254842382280210.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120254842382280210.jpg",
+     "templateWhy": "тёмно-синий фон с розами, крупный золотой шрифт, рамка-плашка, красная кнопка — самый контрастный · FR джобсы (стиль владельца; цифр у меня нет)",
+     "headline_on_image": "RENT A STAIRLIFT?",
+     "sub_on_image": "Rental vs buying: prices 2026",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "GB, IE (английский)",
+     "ru": "Взять подъёмник в аренду? / Аренда или покупка: цены 2026",
+     "concept": "аренда — дешёвый вход",
+     "visual": "флаг убрать; самый контрастный фон — для тех, кто плохо видит",
+     "wordsOnImage": 10,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    }
+   ],
+   "budget": "FB VISYMO en_GB $10/день (GB+IE). Бид — владелец.",
+   "platform": "FB",
+   "age": "Не спецкатегория Meta — выставить 60+.",
+   "criteria3d": "Через 3 дня при ≥ 40 кликах: выручка с клика ≥ $0.25 и ROI ≥ +30% — масштаб (тот же формат на «ванну с дверцей» — оффер bathroom-grant-seniors-uk); < $0.12 — стоп.",
+   "basis": "Planner GB: «stairlifts» 9 900, «stairlift prices» 3 600, «cost» 1 900, «rental» 1 300. Соседний товар 60+ (кресло с подъёмом) у конкурента крутится 250 дней на 30–33 гео (карточка DE-relaxsessel). Владелец уходит в товарку.",
+   "risk": "Выплата не подтверждена ни у нас, ни у других; наш товарный паттерн «цена» платил $0.10 (LT насосы), «Mobility Devices for Seniors» у других — низкий."
+  },
+  {
+   "place": 5,
+   "offer": "medicare-comparison-us",
+   "name": "страховки · 60+ · угол Medicare (US) — новая вертикаль, как назвать — уточнить у владельца",
+   "verdict": "запускать (сезонная ставка, решение до 10.10)",
+   "approach": "угол первым",
+   "bucket": "гипотеза (входит в лимит 5)",
+   "geo": "US",
+   "lang": "en",
+   "provider": "VISYMO en_US (новый тест — видна выплата по ключам)",
+   "article": {
+    "status": "нужна новая",
+    "title": "Medicare Plans 2027: How to Compare Advantage and Supplement Plans Before December 7",
+    "titleRu": "Планы Medicare на 2027: как сравнить Advantage и Supplement до 7 декабря",
+    "plan": [
+     "When you can switch: Annual Enrollment runs October 15 – December 7, changes start January 1 (CMS) — ключ medicare advantage plans",
+     "Medicare Advantage vs Original Medicare with a supplement: the difference in plain words — ключ health insurance supplement",
+     "Medicare supplemental insurance plans: what they cover and who they suit — ключ medicare supplemental insurance plans",
+     "How to compare Medicare Advantage plans: doctors, drug list, yearly out-of-pocket limit — ключ compare medicare advantage plans",
+     "Medicare health plans and extra benefits (dental, vision, hearing) — ключ medicare health plans",
+     "Where seniors get free, unbiased help before choosing — ключ Medicare Services for Seniors"
+    ],
+    "note": "Без названий страховщиков (Humana, AARP, UnitedHealthcare, Cigna), без «official / government», без обещаний «бесплатно / $0». Информационная статья, не лидген."
+   },
+   "keys": [
+    {
+     "keyword": "medicare supplemental insurance plans",
+     "translation": "дополнительные планы страхования Medicare",
+     "volume": "12 100/мес (+49%)",
+     "rpc": "не измерен",
+     "source": "research_keywords US 24.09"
+    },
+    {
+     "keyword": "compare medicare advantage plans",
+     "translation": "сравнить планы Medicare Advantage",
+     "volume": "1 300/мес (+30%)",
+     "rpc": "не измерен",
+     "source": "research_keywords US 24.09"
+    },
+    {
+     "keyword": "medicare advantage plans",
+     "translation": "планы Medicare Advantage",
+     "volume": "246 000/мес (+49%)",
+     "rpc": "не измерен",
+     "source": "research_keywords US 24.09"
+    },
+    {
+     "keyword": "health insurance supplement",
+     "translation": "дополнение к медстраховке",
+     "volume": "8 100/мес (0%)",
+     "rpc": "не измерен",
+     "source": "research_keywords US 24.09"
+    },
+    {
+     "keyword": "medicare health plans",
+     "translation": "планы медстрахования Medicare",
+     "volume": "12 100/мес (+22%)",
+     "rpc": "не измерен",
+     "source": "research_keywords US 24.09"
+    },
+    {
+     "keyword": "Medicare Services for Seniors",
+     "translation": "услуги Medicare для пожилых",
+     "volume": "в Planner нет",
+     "rpc": "у других команд — средний класс",
+     "source": "research_keywords US 24.09 (companyKeywords)"
+    }
+   ],
+   "keysNote": "У других команд в US медстраховки — высокий класс («Group Health Plans», «Health Insurance with Ssdi», брендовые Humana) — это соседние ключи, не наши. Бренды исключены.",
+   "meta": {
+    "primaryText": "Turning 65 or already on Medicare? Plans change every year – here's how to compare them before December 7.",
+    "primaryTextRu": "Вам исполняется 65 или вы уже в Medicare? Планы меняются каждый год — как сравнить их до 7 декабря.",
+    "headline": "Medicare Plans 2027: How to Compare Advantage and Supplement Plans Before December 7",
+    "cta": "Learn More"
+   },
+   "creatives": [
+    {
+     "offer": "medicare-comparison-us",
+     "n": 1,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120252993448300264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120252993448300264.jpg",
+     "templateWhy": "белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%",
+     "headline_on_image": "TURNING 65 IN 2026?",
+     "sub_on_image": "What most people miss about Medicare",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "US",
+     "ru": "Вам исполняется 65 в 2026? / Что большинство упускает в Medicare",
+     "concept": "кликбейт «большинство упускает»",
+     "visual": "",
+     "wordsOnImage": 12,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "medicare-comparison-us",
+     "n": 2,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120253014378450264.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120253014378450264.jpg",
+     "templateWhy": "орнаментная рамка поверх размытого фото стола (очки, газета), жирный капс · RO кредиты 60+ (РК 0817-GE02): за всё время $133.4 → +32%",
+     "headline_on_image": "MEDICARE PLANS FOR 2027",
+     "sub_on_image": "Compare before December 7",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "US",
+     "ru": "Планы Medicare на 2027 / Сравните до 7 декабря",
+     "concept": "срок — дата окна AEP",
+     "visual": "",
+     "wordsOnImage": 10,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "medicare-comparison-us",
+     "n": 3,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120246123336080424.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120246123336080424.jpg",
+     "templateWhy": "кремовая карточка с орнаментом на фоне газеты/стола, красная кнопка · EE кредиты 60+ (РК 0906-GE01): $11.2 → +106%",
+     "headline_on_image": "Advantage or Supplement?",
+     "sub_on_image": "The difference, in plain words",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "US",
+     "ru": "Advantage или Supplement? / Разница — простыми словами",
+     "concept": "сравнение двух вариантов (формат F)",
+     "visual": "",
+     "wordsOnImage": 10,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    },
+    {
+     "offer": "medicare-comparison-us",
+     "n": 4,
+     "template": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/dash/cr/owner_clean/120254842382280210.jpg",
+     "templateRepo": "/home/user/alextest/creatives/ready/2026-09-24_owner_clean/120254842382280210.jpg",
+     "templateWhy": "тёмно-синий фон с розами, крупный золотой шрифт, рамка-плашка, красная кнопка — самый контрастный · FR джобсы (стиль владельца; цифр у меня нет)",
+     "headline_on_image": "Medicare Plans Change Every Year",
+     "sub_on_image": "Check yours from October 15",
+     "button_text": "Learn more",
+     "lang": "en",
+     "geo": "US",
+     "ru": "Планы Medicare меняются каждый год / Проверьте свой с 15 октября",
+     "concept": "напоминание о сроке",
+     "visual": "флаг убрать; никаких эмблем Medicare/CMS",
+     "wordsOnImage": 12,
+     "readability": "1080×1080 JPEG ≤ 400 КБ. Заголовок ≥ 64 px (целимся 84–110 px, жирный, как в шаблоне), подпись ≥ 40 px (целимся 48–56 px), кнопка высотой ≥ 110 px с текстом ≥ 44 px. Всего на картинке ≤ 12 слов вместе с кнопкой. Текст чёрный/тёмно-синий на кремовой или белой карточке (непрозрачность карточки ≥ 92% поверх фото) либо светлый на тёмно-синем. Никаких мелких подписей, дисклеймеров, логотипов; флаги и гербы из шаблонов убрать. Фон спокойный, без мелких деталей за текстом. Старый текст шаблона полностью заменить."
+    }
+   ],
+   "budget": "FB VISYMO en_US $10/день. Бид — владелец.",
+   "platform": "FB",
+   "age": "Страховка в US — спецкатегория Meta FINANCIAL_PRODUCTS_SERVICES, возраст 18–65+ принудительно: аудиторию отбирает крео («Turning 65»).",
+   "criteria3d": "Через 3 дня при ≥ 40 кликах: выручка с клика ≥ $0.25 и ROI ≥ +30% — готовим масштаб к 15.10; < $0.12 — стоп. Решение не позже 10.10.",
+   "basis": "Окно AEP 15.10–07.12.2026 (CMS). Planner US: «medicare advantage plans» 246 000 (+49%), «medicare supplemental insurance plans» 12 100 (+49%). У других команд медстраховки US — высокий класс, «Medicare Services for Seniors» — средний. У коллег «мутуэль для пенсионеров» FR (та же идея — медстраховка для пенсионеров) живёт с 01.05, 4 копии.",
+   "risk": "US у нас $4 спенда за год — цену клика не знаем; правила CMS для лидгена (TPMO) и спецкатегория Meta; окно короткое."
+  }
+ ],
+ "findings": [
+  "Своей выплаты ни по одной из 37 тем нет: в 12 выборках research_keywords (US ×5, GB ×4, DE, PL, CA) ourKeywords.topic пуст. Доказанное у нас — только «кредит пенсионеру» (6 стран) и статья «водостоки для пожилых» UK (около нуля, за 22–23.09 +23%).",
+  "30 из 37 офферов — US/UK, где у нас почти нет истории: US $4 спенда за год, GB $842 (+12%). Модель владельца «дешёвый клик + дорогие ключи» доказана в ЕС; в UK клик дорогой (CPM $19–24 на водостоках).",
+  "У других команд «высокий» класс рядом с 60+ — только медстраховки US и кредиты DE/PL; «туры для пожилых» — низкий во всех 10 ключах, «Mobility Devices for Seniors» — низкий, импланты для пожилых PL — низкий.",
+  "Не-финансовые 60+ темы (водостоки, подъёмник, ванна с дверцей, слуховые аппараты) не попадают в спецкатегорию Meta — возраст 55+/60+ можно выставить; страховки и кредиты в US — 18–65+ принудительно.",
+  "Госпособия (Attendance Allowance, Council Tax, VA, польские надбавки) не берём: TikTok запрещает преувеличение выгоды госпособий, у нас нет ни выплаты, ни класса.",
+  "Сезон: водостоки — пик сейчас (+83…+309% за месяц в GB); Medicare — окно 15.10–07.12, тест должен дать ответ до 10.10.",
+  "Стиль крео владельца (карточка в рамке + «что скрывают» + «узнать больше») доказан на кредитах 60+ (HU/RO/PT/EE, от +32% до +176%); на не-кредитных темах 60+ он не проверялся — это часть гипотез №2–5."
+ ],
+ "sources": [
+  {
+   "what": "Выплата статей, 01.06–23.09 и 22–23.09",
+   "source": "Roots get_performance_rows(groupBy=article)",
+   "date": "2026-09-24"
+  },
+  {
+   "what": "РК водостоков UK",
+   "source": "Roots get_adgroup_stats(search=Gutter, 01.01–24.09)",
+   "date": "2026-09-24"
+  },
+  {
+   "what": "Гео за год",
+   "source": "Roots get_performance_rows(groupBy=geo, 01.01–23.09)",
+   "date": "2026-09-24"
+  },
+  {
+   "what": "Объёмы и классы",
+   "source": "research_keywords US ×5, GB ×4, DE, PL, CA (Planner 2026-08)",
+   "date": "2026-09-24"
+  },
+  {
+   "what": "Сроки конкурентов в Ad Library",
+   "source": "панель, new_tests (Ad Library + AdHeart, сбор 23.09)",
+   "date": "2026-09-23"
+  },
+  {
+   "what": "Окно Medicare AEP 15.10–07.12",
+   "source": "https://www.cms.gov/priorities/key-initiatives/medicare-open-enrollment-partner-resources",
+   "date": "проверено 2026-09-24"
+  },
+  {
+   "what": "CMS: лидген по Medicare Advantage = TPMO, дисклеймер в материалах",
+   "source": "https://www.cms.gov/newsroom/fact-sheets/contract-year-2025-medicare-advantage-part-d-final-rule-cms-4205-f",
+   "date": "правило на 2025 контрактный год; проверено 2026-09-24"
+  },
+  {
+   "what": "Meta: FINANCIAL_PRODUCTS_SERVICES (страховки/кредиты) в US, возраст 18–65+",
+   "source": "knowledge/meta_delivery → https://www.facebook.com/business/help/510724041294968",
+   "date": "Oct 2024 / Jan 2025"
+  },
+  {
+   "what": "TikTok: запрет преувеличения выгоды госпособий",
+   "source": "knowledge/tiktok → https://ads.tiktok.com/help/article/tiktok-ads-policy-deceptive-practices",
+   "date": "2025-08"
+  }
+ ],
+ "notFound": [
+  "Meta Ad Library напрямую не открыт (facebook.com — 403 у прокси). Сроки конкурентов — из new_tests (сбор коллег 23.09); по большинству из 37 тем данных о конкурентах нет.",
+  "По катаракте (UK), «Dämmung Förderung» (DE) и «Minijob Rentner» (DE) Planner строк в топ-30 не вернул — объём неизвестен.",
+  "Выплата по отдельным ключам водостоков: IRONFLI её не показывает — нужен VISYMO-сплит."
+ ],
+ "budgetTotal": "Первая волна ≈ $60/день: DE $15, водостоки $15, equity release $10, подъёмник $10, Medicare $10. Гипотезы в лимите 5 — №3, №4, №5 (+ №1, если главный считает DE новым гео) — ≈ $45 из $50.",
+ "packetsFile": "/tmp/claude-0/-home-user-alextest/f5dce882-fce7-5270-9036-ca9a0fe43d5e/scratchpad/offers60/packets.json"
+}

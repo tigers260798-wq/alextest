@@ -1,0 +1,66 @@
+{
+ "docId": "offers60-medicare-comparison-us-2026-09-25",
+ "kind": "static",
+ "geo": "US",
+ "lang": "en",
+ "name": "страховки · 60+ · угол Medicare (US) — новая вертикаль, как назвать — уточнить у владельца · РК статика ×4 (офферы 60+, место 5)",
+ "angle": "угол первым",
+ "article": {
+  "status": "нужна новая",
+  "title": "Medicare Plans 2027: How to Compare Advantage and Supplement Plans Before December 7",
+  "titleRu": "Планы Medicare на 2027: как сравнить Advantage и Supplement до 7 декабря"
+ },
+ "provider": "VISYMO en_US (новый тест — видна выплата по ключам)",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). План маркетолога: FB; FB VISYMO en_US $10/день. Бид — владелец.",
+ "readability": "Для пенсионеров: ≤ 12 слов на картинке вместе с кнопкой; заголовок ≥ 96 px, подпись ≥ 64 px, кнопка 52–54 px, всё жирным гротеском; тёмный текст на светлой карточке или светлый на тёмно-синем, контраст ≥ 7:1; проверено в уменьшении до 400 px.",
+ "creatives": [
+  {
+   "id": "O60-5-1",
+   "file": "cr/offers60-medicare-comparison-us-2026-09-25/O60-5-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · белая карточка, розовая цветочная гирлянда сверху/снизу (шаблон владельца HU 0817-GE01) · заголовок 122 px (Fira Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 12 слов на картинке · контраст ≥ 8.2:1",
+   "concept": "кликбейт «большинство упускает». На картинке: TURNING 65 IN 2026? / What most people miss about Medicare / [Learn more]",
+   "primaryText": "Turning 65 or already on Medicare? Plans change every year – here's how to compare them before December 7.",
+   "headline": "Medicare Plans 2027: How to Compare Advantage and Supplement Plans Before December 7",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120252993448300264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[medicare-comparison-us n1]",
+   "note": "Шаблон владельца: белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%. Нет логотипов CMS/Medicare, госсимволики и слова «official». Американская орфография. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-5-2",
+   "file": "cr/offers60-medicare-comparison-us-2026-09-25/O60-5-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · орнаментная рамка поверх размытого фото стола, кремовая карточка 96% (шаблон владельца RO 0817-GE02) · заголовок 122 px (PT Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 10 слов на картинке · контраст ≥ 10.3:1",
+   "concept": "срок — дата окна AEP. На картинке: MEDICARE PLANS FOR 2027 / Compare before December 7 / [Learn more]",
+   "primaryText": "Turning 65 or already on Medicare? Plans change every year – here's how to compare them before December 7.",
+   "headline": "Medicare Plans 2027: How to Compare Advantage and Supplement Plans Before December 7",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120253014378450264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[medicare-comparison-us n2]",
+   "note": "Шаблон владельца: орнаментная рамка поверх размытого фото стола (очки, газета), жирный капс · RO кредиты 60+ (РК 0817-GE02): за всё время $133.4 → +32%. Нет логотипов CMS/Medicare, госсимволики и слова «official». Американская орфография. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-5-3",
+   "file": "cr/offers60-medicare-comparison-us-2026-09-25/O60-5-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · кремовая карточка с орнаментом на фоне газеты/стола (шаблон владельца EE 0906-GE01) · заголовок 100 px (Lato Bold), подпись 64 px, кнопка «Learn more» 54 px · 10 слов на картинке · контраст ≥ 8.6:1",
+   "concept": "сравнение двух вариантов (формат F). На картинке: Advantage or Supplement? / The difference, in plain words / [Learn more]",
+   "primaryText": "Turning 65 or already on Medicare? Plans change every year – here's how to compare them before December 7.",
+   "headline": "Medicare Plans 2027: How to Compare Advantage and Supplement Plans Before December 7",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120246123336080424.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[medicare-comparison-us n3]",
+   "note": "Шаблон владельца: кремовая карточка с орнаментом на фоне газеты/стола, красная кнопка · EE кредиты 60+ (РК 0906-GE01): $11.2 → +106%. Формат F: «Advantage» и «Supplement?» — две плашки, между ними кружок «or». Нет логотипов CMS/Medicare, госсимволики и слова «official». Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-5-4",
+   "file": "cr/offers60-medicare-comparison-us-2026-09-25/O60-5-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · тёмно-синий фон с розами, плашка в золотой рамке, красная кнопка (шаблон владельца FR) · заголовок 100 px (Fira Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 12 слов на картинке · контраст ≥ 7.8:1",
+   "concept": "напоминание о сроке. На картинке: Medicare Plans Change Every Year / Check yours from October 15 / [Learn more]",
+   "primaryText": "Turning 65 or already on Medicare? Plans change every year – here's how to compare them before December 7.",
+   "headline": "Medicare Plans 2027: How to Compare Advantage and Supplement Plans Before December 7",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120254842382280210.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[medicare-comparison-us n4]",
+   "note": "Шаблон владельца: тёмно-синий фон с розами, крупный золотой шрифт, рамка-плашка, красная кнопка — самый контрастный · FR джобсы (стиль владельца; цифр у меня нет). Флаг/эмблема шаблона и весь старый текст стёрты, фон дорисован. Нет логотипов CMS/Medicare, госсимволики и слова «official». Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Стиль владельца; цифр по этому шаблону у меня нет — гипотеза."
+  }
+ ]
+}

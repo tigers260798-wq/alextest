@@ -1,0 +1,66 @@
+{
+ "docId": "offers60-reverse-mortgage-uk-2026-09-25",
+ "kind": "static",
+ "geo": "GB",
+ "lang": "en",
+ "name": "кредиты · 60+ · угол «деньги из своего дома» (UK) · РК статика ×4 (офферы 60+, место 3)",
+ "angle": "угол первым (шаблон «деньги 60+» в британском продукте)",
+ "article": {
+  "status": "нужна новая",
+  "title": "Equity Release in 2026: How Much Can Over-60s Unlock and What It Really Costs",
+  "titleRu": "Equity release в 2026: сколько могут получить люди 60+ и во что это обходится"
+ },
+ "provider": "VISYMO en_GB (новый тест — видна выплата по ключам); IRONFLI — только если на VISYMO нет en_GB",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). План маркетолога: FB; FB VISYMO en_GB $10/день. Бид — владелец.",
+ "readability": "Для пенсионеров: ≤ 12 слов на картинке вместе с кнопкой; заголовок ≥ 96 px, подпись ≥ 64 px, кнопка 52–54 px, всё жирным гротеском; тёмный текст на светлой карточке или светлый на тёмно-синем, контраст ≥ 7:1; проверено в уменьшении до 400 px.",
+ "creatives": [
+  {
+   "id": "O60-3-1",
+   "file": "cr/offers60-reverse-mortgage-uk-2026-09-25/O60-3-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · белая карточка, розовая цветочная гирлянда сверху/снизу (шаблон владельца HU 0817-GE01) · заголовок 122 px (Fira Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 10 слов на картинке · контраст ≥ 8.2:1",
+   "concept": "хук владельца «что скрывают банки». На картинке: EQUITY RELEASE 2026 / What lenders don't tell over-60s / [Learn more]",
+   "primaryText": "Aged 60+ and own your home? Here's how equity release works in 2026 – and what it really costs over time.",
+   "headline": "Equity Release in 2026: How Much Can Over-60s Unlock and What It Really Costs",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120252993448300264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[reverse-mortgage-uk n1]",
+   "note": "Шаблон владельца: белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-3-2",
+   "file": "cr/offers60-reverse-mortgage-uk-2026-09-25/O60-3-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · орнаментная рамка поверх размытого фото стола (шаблон владельца PT 0816-GE04) · заголовок 106 px (Hind Bold), подпись 64 px, кнопка «Learn more» 54 px · 12 слов на картинке · контраст ≥ 8.0:1",
+   "concept": "вопрос о сумме, без цифр. На картинке: 60+ AND OWN YOUR HOME? / How much could you unlock? / [Learn more]",
+   "primaryText": "Aged 60+ and own your home? Here's how equity release works in 2026 – and what it really costs over time.",
+   "headline": "Equity Release in 2026: How Much Can Over-60s Unlock and What It Really Costs",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120252986985640264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[reverse-mortgage-uk n2]",
+   "note": "Шаблон владельца: орнаментная рамка поверх размытого фото стола, жирный капс, синяя кнопка · PT кредиты 60+ (РК 0816-GE04): $127 → +43%. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-3-3",
+   "file": "cr/offers60-reverse-mortgage-uk-2026-09-25/O60-3-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · кремовая карточка с орнаментом на фоне газеты/стола (шаблон владельца EE 0906-GE01) · заголовок 100 px (Lato Bold), подпись 64 px, кнопка «Learn more» 54 px · 11 слов на картинке · контраст ≥ 8.6:1",
+   "concept": "выгода «не переезжая» вопросом. На картинке: Money From Your Home Without Moving? / Explained for over-60s / [Learn more]",
+   "primaryText": "Aged 60+ and own your home? Here's how equity release works in 2026 – and what it really costs over time.",
+   "headline": "Equity Release in 2026: How Much Can Over-60s Unlock and What It Really Costs",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120246123336080424.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[reverse-mortgage-uk n3]",
+   "note": "Шаблон владельца: кремовая карточка с орнаментом на фоне газеты/стола, красная кнопка · EE кредиты 60+ (РК 0906-GE01): $11.2 → +106%. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-3-4",
+   "file": "cr/offers60-reverse-mortgage-uk-2026-09-25/O60-3-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · белый фон, цветочная рамка сверху/снизу, кнопка-«таблетка» (шаблон владельца RO 0817-GE02, вопрос) · заголовок 104 px (Fira Sans Bold), кнопка «Learn more» 54 px · 10 слов на картинке · контраст ≥ 8.7:1",
+   "concept": "вопрос «как правильно 60+» (ES/HU/RO). На картинке: How Do Over-60s Release Equity Correctly in 2026? / [Learn more]",
+   "primaryText": "Aged 60+ and own your home? Here's how equity release works in 2026 – and what it really costs over time.",
+   "headline": "Equity Release in 2026: How Much Can Over-60s Unlock and What It Really Costs",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120253014380040264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[reverse-mortgage-uk n4]",
+   "note": "Шаблон владельца: цветочная рамка, крупный вопрос, кнопка-«таблетка» · RO кредиты 60+ (РК 0817-GE02): 17–23.09 $8.1 → +108%. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  }
+ ]
+}
