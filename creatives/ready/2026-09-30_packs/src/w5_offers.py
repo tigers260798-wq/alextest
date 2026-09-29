@@ -1008,10 +1008,10 @@ def pt_gauge(P, t):
     azulejo_wall(c, (0, 880, W, W), 100, (44, 96, 178), (30, 80, 162))
     y = c.block(t["title"], "db", 56, 40, 980, WH, max_lines=1)
     y = c.block(t["title2"], "db", 54, y + 2, 980, YEL3, max_lines=1)
-    box = (60, y + 26, 1020, 806)
+    box = (60, y + 22, 1020, 822)
     c.card(box, r=34, sh_alpha=120, blur=22)
     x0, x1 = box[0] + 50, box[2] - 50
-    yy = box[1] + 38
+    yy = box[1] + 34
     c.text((x0, yy), t["tag"], "sb", 25, AZ3)
     c.text((x1, yy), t["step"], "s", 25, (110, 116, 124), anchor="ra")
     c.rect((x0, yy + 44, x1, yy + 56), fill=(226, 232, 238), r=6)
@@ -1041,7 +1041,7 @@ def pt_gauge(P, t):
         bx = x0 + k * (bw + g)
         c.rect((bx, yy, bx + bw, yy + 84), fill=(240, 245, 252), r=18, outline=(190, 206, 230), width=3)
         c.text((bx + bw / 2, yy + 42), o, "db", c.fit(o, "db", bw - 20, 1, 32), INK3, anchor="mm")
-    c.block(t["foot"], "sb", 30, 832, 980, WH, max_lines=1)
+    c.block(t["foot"], "sb", 30, 840, 980, WH, max_lines=1)
     c.button(P["cta"], W / 2, 966, size=42, fill=p["btn"], outline=WH)
     return c
 
