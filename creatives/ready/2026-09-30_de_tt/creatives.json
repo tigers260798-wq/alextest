@@ -1,0 +1,38 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/de_tt/a.png",
+  "concept": "Перенос FB-хука в вертикаль 9:16: белый фон, крупные розовые розы сверху и снизу, флаг Германии, сжатый жирный капс «KREDIT IM RUHESTAND:» на пол-экрана, вопрос «Welche Möglichkeiten gibt es ab 60?» («ab 60?» красным), красная кнопка «Mehr erfahren →».",
+  "text": "KREDIT IM RUHESTAND: · Welche Möglichkeiten gibt es ab 60? · [Mehr erfahren →]",
+  "caption": "Kredit im Ruhestand: Welche Möglichkeiten gibt es ab 60? Worauf die Bank schaut – im Artikel.",
+  "cta": "Learn more / Mehr erfahren (на картинке: «Mehr erfahren →»)",
+  "basis": "FB этой же статьи, РК vb-AlexZLoansDE-tg_7-fb-de-a-0928-GE01-p (27–29.09): 116 показов, 10 кликов, CTR 8.6 %, 4 лида, $4.01 → $3.12; лучшее объявление — именно этот макет (розы, флаг, «Kredit im Ruhestand: Welche Möglichkeiten gibt es ab 60?», красная кнопка): 102 показа, 7 кликов, CTR 6.9 %, 2 лида. Текст и визуал перенесены без изменений; меняется только формат (1:1 → 9:16) и размер шрифта — заголовок занимает ~40 % кадра, как на TT-победителях кредитов кабинета (RO пенсионеры vb-AlexZLoansRO-tg_2-tk-ro-a-0925-GE01: CTR 2.72 %, hook2s 68.8 %; ES vb-alexzloansSP-tg1_auto-tk-es-a-0814-GE01: CTR 2.31 %, hook2s 28.4 %), у которых в РК стояли крео владельца со сжатым жирным капсом на весь кадр. Какое именно объявление в тех РК дало CTR — в кабинете не видно (превью TT нет). Хуки FB и TT между собой не сравниваю. TikTok-трафик этой статьи 27–28.09: 3 адгруппы, 6 444 показа, 24 клика, CTR 0.37 % (медиана TT кабинета 1.42 %), hook2s 13.4 %, hook6s 2.8 %, vcr 1.1 %, $6.67 → $0.56. Все TT-крео были квадратными статиками 1:1 с мелким текстом."
+ },
+ {
+  "letter": "b",
+  "file": "cr/de_tt/b.png",
+  "concept": "«Как считает банк» — калькулятор без цифр: тёмно-синий фон, кикер «3 Zahlen entscheiden», «KREDIT MIT RENTE 2026» (год в жёлтой плашке), «Welche Summe ist realistisch?», белая карточка «So rechnet die Bank» с тремя полями (Netto-Rente ? € · Laufzeit ? Jahre · Alter bei der letzten Rate ?) и итогом «Realistische Summe ? €», жёлтая кнопка «Mehr erfahren →». Ни одной суммы, ставки или обещания — только вопросительные знаки.",
+  "text": "3 Zahlen entscheiden · KREDIT MIT RENTE 2026 · Welche Summe ist realistisch? · So rechnet die Bank · Netto-Rente ? € · Laufzeit ? Jahre · Alter bei der letzten Rate ? · Realistische Summe ? € · [Mehr erfahren →]",
+  "caption": "Kredit mit Rente 2026: Drei Zahlen entscheiden, welche Summe realistisch ist.",
+  "cta": "Learn more / Mehr erfahren (на картинке: «Mehr erfahren →»)",
+  "basis": "Заголовок статьи = вопрос о сумме («Welche Summe ist realistisch…») и правило плейбука владельца для кредитов 60+ «вопрос о сумме, год в заголовке»; поля калькулятора — те три фактора, которые разбирает статья (Rente как доход, Laufzeit, возраст на последнем платеже). Формат «выбор/поля ввода» — приём владельца «множество вариаций выбора, как кнопки». На TT у этой статьи такого крео не было; на FB вопрос «Welche Summe ist realistisch?» стоял в наборе intl (vb-AlexZLoansDE-tg_7-fb-intl-a-0927-GE01-p, CTR 8.5 % на весь набор из 4, по объявлению не разделить). Доказанного крео с этим визуалом нет — гипотеза. TikTok-трафик этой статьи 27–28.09: 3 адгруппы, 6 444 показа, 24 клика, CTR 0.37 % (медиана TT кабинета 1.42 %), hook2s 13.4 %, hook6s 2.8 %, vcr 1.1 %, $6.67 → $0.56. Все TT-крео были квадратными статиками 1:1 с мелким текстом."
+ },
+ {
+  "letter": "c",
+  "file": "cr/de_tt/c.png",
+  "concept": "Квиз в стиле опроса TikTok: жёлтый фон, стикер «QUIZ», «Kredit mit Rente 2026», огромный вопрос «Worauf schaut die Bank zuerst?», три белые кнопки-варианта A «Das Alter» · B «Die Höhe der Rente» · C «Die Laufzeit», «Die Antwort überrascht viele.», чёрная кнопка «Mehr erfahren →». Вопрос о банке, не о зрителе.",
+  "text": "QUIZ · Kredit mit Rente 2026 · Worauf schaut die Bank zuerst? · A Das Alter · B Die Höhe der Rente · C Die Laufzeit · Die Antwort überrascht viele. · [Mehr erfahren →]",
+  "caption": "Worauf schaut die Bank bei einem Kredit mit Rente zuerst? Die Antwort überrascht viele.",
+  "cta": "Learn more / Mehr erfahren (на картинке: «Mehr erfahren →»)",
+  "basis": "Вопрос взят из заголовка FB-объявлений лучшей FB-РК этой статьи (vb-AlexZLoansDE-tg_7-fb-de-a-0928-GE01-p, CTR 8.6 %): «Kredit ab 60: Worauf kommt es im Ruhestand wirklich an?» и из заголовка статьи («…worauf schaut die Bank?»). Интерактивность «вариантов-кнопок» — приём владельца для выбора (сетки H у товарки: LT тепловые насосы, 4 кнопки площади). На TT у этой статьи стояли только плоские карточки — hook2s 9–17 %; квиз даёт повод задержаться на кадре. Доказанного крео с этим визуалом нет — гипотеза. TikTok-трафик этой статьи 27–28.09: 3 адгруппы, 6 444 показа, 24 клика, CTR 0.37 % (медиана TT кабинета 1.42 %), hook2s 13.4 %, hook6s 2.8 %, vcr 1.1 %, $6.67 → $0.56. Все TT-крео были квадратными статиками 1:1 с мелким текстом."
+ },
+ {
+  "letter": "d",
+  "file": "cr/de_tt/d.png",
+  "concept": "Сравнение «Mythos / Fakt»: светлый фон, «KREDIT MIT RENTE 2026», красная карточка MYTHOS «Mit 70 gibt es keinen Kredit mehr.» (зачёркнуто, крест), стрелка вниз, зелёная карточка FAKT «Kein Gesetz verbietet einen Kredit mit 70. Entscheidend ist das Alter bei der letzten Rate.» (галочка), «Was heißt das für die Summe?», тёмно-синяя кнопка «Mehr erfahren →».",
+  "text": "KREDIT MIT RENTE 2026 · MYTHOS: Mit 70 gibt es keinen Kredit mehr. · FAKT: Kein Gesetz verbietet einen Kredit mit 70. Entscheidend ist das Alter bei der letzten Rate. · Was heißt das für die Summe? · [Mehr erfahren →]",
+  "caption": "Kein Gesetz verbietet einen Kredit mit 70. Was wirklich zählt – im Artikel.",
+  "cta": "Learn more / Mehr erfahren (на картинке: «Mehr erfahren →»)",
+  "basis": "Хук «закон не запрещает кредит в 70» — самый кликабельный DE-кредитный хук на FB по тратам: объявление с «Kein Gesetz verbietet einen Kredit mit 70. Warum sagen Banken trotzdem so oft Nein?» в vb-AlexZLoansDE-tg_5-fb-de-a-0927-GE01-p — 106 показов, 9 кликов, CTR 8.5 %, $3.73 → $3.96, 2 лида (стояло на статье «Konto im Minus», не на этой); тот же смысл в тексте FB intl-РК этой статьи («…obwohl es keine gesetzliche Altersgrenze gibt», набор CTR 8.5 %). Вторая строка факта — раздел статьи про возраст на последнем платеже. Сравнение вынесено в два крупных блока, чтобы читалось за 1–2 секунды. TikTok-трафик этой статьи 27–28.09: 3 адгруппы, 6 444 показа, 24 клика, CTR 0.37 % (медиана TT кабинета 1.42 %), hook2s 13.4 %, hook6s 2.8 %, vcr 1.1 %, $6.67 → $0.56. Все TT-крео были квадратными статиками 1:1 с мелким текстом."
+ }
+]
