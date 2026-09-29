@@ -321,7 +321,7 @@ def mug(c, cx, by, s, col, handle="right", inner=(90, 60, 40)):
 
 def scene_mugs(c, table_y=700):
     c.vgrad((0, 0, W, table_y), (248, 232, 222), (240, 214, 200))
-    window(c, (640, 400, 960, 650), sky0=(190, 220, 236), sky1=(236, 244, 248), frame=(255, 250, 244))
+    window(c, (660, 470, 940, 668), sky0=(190, 220, 236), sky1=(236, 244, 248), frame=(255, 250, 244))
     S.plant(c, 180, table_y - 4, 0.9, pot=(90, 140, 160), leaf=(70, 140, 100))
     c.rect((0, table_y, W, W), fill=(214, 170, 130))
     S.wood(c, (0, table_y, W, W), (220, 178, 138), (196, 150, 108), lines=7, seed=9)

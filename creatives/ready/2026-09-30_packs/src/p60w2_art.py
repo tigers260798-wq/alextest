@@ -721,6 +721,7 @@ def hearing_table(c, table_y=690):
         c.poly(pts, col)
         c.circle(x - 2, y, 6, fill=WH)
         c.text((x + 16, y), lab, "db", 34, WH, anchor="lm")
+    c.text((60, 1040), "Price per pair · 2026 US guide", "s", 24, (90, 96, 110))
     # чашка и растение
     S.teacup(c, 990, 990, 0.7, rim=NAVY)
     S.plant(c, 60, 700, 0.6, pot=(90, 140, 190))

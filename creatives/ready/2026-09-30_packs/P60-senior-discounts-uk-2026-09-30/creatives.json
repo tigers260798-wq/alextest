@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-senior-discounts-uk-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — бейдж «60+» с ценниками %, 4 плитки-категории из статьи (транспорт, ж/д, рецепты, досуг)",
+  "text": "Over-60s discounts 2026: pick a category / Bus travel / Rail fares / Prescriptions / Days out (у каждой «Learn more») / 60+",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-senior-discounts-uk-2026-09-30/b.png",
+  "concept": "карточка-опросник — квиз о правилах (ответ в статье: с 60 в Англии; автобус — с пенсионного возраста)",
+  "text": "Free prescriptions in England: / from what age? / QUICK CHECK / Question 1 of 4 / At what age do NHS prescriptions become free in England? / 55 / 60 / At State Pension age / 70",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-senior-discounts-uk-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — таблица полная цена / льгота; сумм нет (в гипотезе их нет), только правила из статьи",
+  "text": "Full price or over-60s price? / Where concessions can apply in 2026 / Full price vs Concession / Bus: pay each fare / free or cheaper from State Pension age · Rail: full fare / Senior Railcard discount · Prescriptions: standard charge / free from 60 in England · Cinemas, museums: full price / senior rate – ask / Savings many people never claim",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-senior-discounts-uk-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — стол сверху: кошелёк, проездные с пиктограммами (без логотипов), пакет из аптеки, чек %, корзина, билет",
+  "text": "SENIOR DISCOUNTS UK 2026 / The over-60s savings many people never claim / Bus passes, the Senior Railcard, free prescriptions and more",
+  "cta": "Learn more"
+ }
+]

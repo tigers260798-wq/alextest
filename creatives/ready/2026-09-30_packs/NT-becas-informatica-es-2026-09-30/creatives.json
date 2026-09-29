@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/NT-becas-informatica-es-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — экран ноутбука с 4 плитками-курсами, у каждой «Más información»; синий как у рабочей связки 0918-GE06",
+  "text": "Cursos de informática para mayores 2026 / ¿Por dónde empezar? Elige un curso: / Móvil y mensajes / Internet seguro / Videollamadas / Trámites online (у каждой «Más información»)",
+  "cta": "Más información"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/NT-becas-informatica-es-2026-09-30/b.png",
+  "concept": "карточка-опросник — жёлтый фон; «gratis» только вопросом (ключ «cursos de informática gratis … mayores de 60»)",
+  "text": "Cursos de informática: / ¿gratis para mayores de 60? / TEST / Pregunta 1 de 3 / ¿Quién puede pedir una beca para un curso de informática? / Solo jóvenes / Mayores de 60 / Jubilados / Depende de la beca",
+  "cta": "Más información"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/NT-becas-informatica-es-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — две колонки: с грантом / платно; «gratis» — вопросом",
+  "text": "¿Curso con beca o de pago? / Cursos de informática para jubilados en 2026 / ¿Cómo encontrar cursos gratis? / CON BECA vs DE PAGO / QUIÉN PAGA: la beca / el alumno · INSCRIPCIÓN: en el plazo de la convocatoria / libre · REQUISITOS: según la convocatoria / normalmente ninguno",
+  "cta": "Más información"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/NT-becas-informatica-es-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — синий фон и крупный белый заголовок (как у рабочей РК 0918-GE06, текст перефразирован), стол с ноутбуком-уроком, наушники, чай",
+  "text": "Becas para cursos de informática en la tercera edad: guía 2026 / Qué cursos hay, quién puede pedirlos y cómo",
+  "cta": "Más información"
+ }
+]

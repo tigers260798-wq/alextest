@@ -9,8 +9,8 @@
  {
   "letter": "b",
   "file": "cr/packs/P60-meal-delivery-us-2026-09-30/b.png",
-  "concept": "карточка-опросник — ценовой квиз; верный ответ $70–150/неделя — из гипотезы (общий рыночный ориентир), остальное — варианты-отвлекалки",
-  "text": "What does senior meal delivery cost? / Take a guess / PRICE QUIZ / Question 1 of 3 / A weekly meal plan for seniors in 2026 usually costs… / Under $40 / $70–$150 / Over $300 / Not sure",
+  "concept": "карточка-опросник — ценовой квиз; верный ответ $7–12 за порцию — ориентир 2026 из гипотезы и статьи, остальное — варианты-отвлекалки",
+  "text": "What does senior meal delivery cost? / Take a guess / 2026 guide / PRICE QUIZ / Question 1 of 3 / One delivered senior meal in 2026 usually costs about… / Under $3 / $7–$12 / Over $25 / Not sure",
   "cta": "Learn more"
  },
  {
@@ -23,8 +23,8 @@
  {
   "letter": "d",
   "file": "cr/packs/P60-meal-delivery-us-2026-09-30/d.png",
-  "concept": "сцена-иллюстрация — крыльцо: дверь, термосумка и контейнеры на скамейке, жёлтый стикер с ценой недели",
-  "text": "MEAL DELIVERY FOR SENIORS 2026 / Ready-made meals at the door: what a week costs / Fresh or frozen, special diets, Meals on Wheels / $70–$150 a week",
+  "concept": "сцена-иллюстрация — крыльцо: дверь, термосумка и контейнеры на скамейке, жёлтый стикер с ценой порции (ориентир 2026)",
+  "text": "MEAL DELIVERY FOR SENIORS 2026 / Ready-made meals at the door: what one really costs / Fresh or frozen, special diets, Meals on Wheels / $7–$12 a meal",
   "cta": "Learn more"
  }
 ]
