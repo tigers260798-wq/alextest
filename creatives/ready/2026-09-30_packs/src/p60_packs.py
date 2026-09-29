@@ -139,9 +139,9 @@ PACKS[5] = dict(
            diag=40, cols=[("ANGESTELLT", "briefcase", (96, 108, 124), ["Kündigung möglich", "Einkommen kann wegfallen", "Zinsen: Standard"]),
                           ("VERBEAMTET", "padlock", PET, ["Kündigung kaum möglich", "Feste Besoldung", "Zinsen: ?"])],
            pal=dict(bg=(248, 246, 242), ink=DARK5, sub=(90, 96, 106), btn=ORG5, vs_bg=ORG5, vs_ink=WH), note="диагональный сплит: angestellt / verbeamtet"),
-    d=dict(style="bars", scene="desk_top", y=190, veil=(70, 160, 1010, 700), veil_alpha=238,
+    d=dict(style="bars", scene="desk_top", y=190, veil=(70, 160, 1010, 630), veil_alpha=238,
            bars=[("BEAMTENKREDIT 2026:", WH, ORG5), ("WAS BANKEN BEAMTEN", WH, DARK5), ("VERSCHWEIGEN?", WH, DARK5)],
-           bar_size=90, cond=0.8, btn_y=612, btn_size=48, max_w=900,
+           bar_size=90, cond=0.8, btn_y=548, btn_size=48, max_w=900,
            pal=dict(btn=(28, 88, 196)),
            note="формула рабочих кредитных крео владельца (плашки + «что банки скрывают»); стол сверху: Bezügemitteilung без герба, калькулятор «2026», ручка, папка, кофе"),
 )
@@ -197,7 +197,7 @@ PACKS[7] = dict(
            note="две карточки друг над другом"),
     d=dict(style="left", scene="uniform_chair", y=60, x=70,
            bars=[("KREDYT DLA", WH, RED7), ("MUNDUROWYCH 2026:", WH, RED7), ("CZEGO BANKI", DARK7, None), ("NIE MÓWIĄ?", DARK7, None)],
-           bar_size=88, cond=0.8, btn_y=540, btn_size=44, max_w=940,
+           bar_size=100, cond=0.8, btn_y=640, btn_size=42, max_w=940,
            pal=dict(btn=(28, 88, 196)),
            note="формула рабочих кредитных крео владельца (плашки + «чего банки не говорят»); стул с курткой-камуфляжем, кепкой и ботинками без знаков"),
 )
@@ -209,7 +209,7 @@ PACKS[8] = dict(
     pal=dict(bg=(238, 246, 251), ink=NAVY8, sub=(80, 96, 116), acc=(0, 120, 200), btn=RED8, tile=WH, tile_ink=NAVY8,
              icon=NAVY8, iconbg=(226, 240, 250), hl=YEL8, sticker=YEL8),
     a=dict(layout="row2", title="Robot lave-vitres ou laveur de vitres ?", sub="Lequel revient moins cher en 2026 ?", size=58,
-           hero=S.hero_robot, hero_h=380, tiles=[("robot", "Robot"), ("squeegee", "Professionnel")],
+           hero=S.hero_robot, hero_h=380, hero_label="Robot / Professionnel", tiles=[("robot", "Robot"), ("squeegee", "Professionnel")],
            foot="Crédit d'impôt 50 % : le vrai calcul", note="сетка из 2 вариантов, как в брифе №1"),
     b=dict(layout="card2x2", title="Laveur de vitres déclaré :", title2="le calcul qui surprend", size=58,
            tag="QUIZ", step="Question 1 sur 3", prog=0.33,
@@ -221,7 +221,7 @@ PACKS[8] = dict(
            cols=[("Robot lave-vitres", "robot", (60, 70, 86)), ("Laveur de vitres", "squeegee", (0, 110, 190))],
            rows=[("Prix", "achat unique", "à chaque passage"), ("Vitres", "oui", "oui"), ("Cadres, rebords", "non", "oui"),
                  ("Temps à y passer", "le poser vitre par vitre", "aucun")],
-           banner="Service déclaré : crédit d'impôt 50 %", pal=dict(acc=(0, 110, 190)),
+           banner="Service déclaré :\ncrédit d'impôt 50 %", pal=dict(acc=(0, 110, 190)),
            note="таблица робот / мойщик; про налоговый кредит — только у услуги (у робота не утверждаем)"),
     d=dict(style="top", scene="bay_window", title="Robot lave-vitres ou laveur de vitres ?", sub="Lequel revient moins cher en 2026 ?",
            size=62, sticker="Crédit d'impôt 50 %", sticker_xy=(900, 470, 104), btn_y=1000,
@@ -233,11 +233,11 @@ PACKS[8] = dict(
 def texts(t, cta):
     """Весь текст на картинке — для creatives.json."""
     out = []
-    for k in ("kicker", "title", "title2", "sub"):
+    for k in ("kicker", "title", "title2", "sub", "hero_label"):
         if t.get(k):
             out.append(t[k])
-    if t.get("bars"):
-        out.append(" ".join(b[0] if not isinstance(b, str) else b for b in t["bars"]))
+    if t.get("bars") and len(t["bars"][0]) == 3:
+        out.append(" ".join(b[0] for b in t["bars"]))
     for k in ("tag", "step", "q"):
         if t.get(k):
             out.append(t[k])
@@ -258,14 +258,12 @@ def texts(t, cta):
         out.append(" · ".join(f"{r[0]}: {r[1]} / {r[2]}" for r in t["rows"]))
     if t.get("bill"):
         out.append(t["bill"] + " " + t.get("bill_r", ""))
-    if t.get("bars") is None and False:
-        pass
     if isinstance(t.get("bars"), list) and t.get("bars") and len(t["bars"][0]) == 4:
         out.append(" · ".join(f"{b[0]} {b[2]}" for b in t["bars"]))
     for k in ("banner", "sticker", "foot"):
         if t.get(k):
             out.append(t[k])
-    return " / ".join(out)
+    return " / ".join(out).replace("\n", " ").replace("\u00ad", "")
 
 
 def build(n, letters="abcd"):

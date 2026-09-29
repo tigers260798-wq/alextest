@@ -342,6 +342,9 @@ def uniform_chair(c, floor_y=880):
     c.vgrad((0, 0, W, floor_y), (236, 230, 214), (222, 214, 194))
     wood(c, (0, floor_y, W, W), (170, 128, 88), (150, 110, 74), lines=4, seed=9)
     c.rect((0, floor_y - 30, W, floor_y), fill=(250, 246, 236))
+    # тени на полу
+    c.ellipse((620, 1030, 1070, 1070), fill=(0, 0, 0), alpha=40)
+    c.ellipse((380, 1010, 640, 1050), fill=(0, 0, 0), alpha=45)
     # стул
     CH = (126, 84, 52)
     c.rect((700, 360, 730, 1050), fill=CH, r=8)
@@ -365,7 +368,7 @@ def uniform_chair(c, floor_y=880):
     c.poly([(772, 544), (700, 556), (704, 570), (790, 562)], mix(CAP, (0, 0, 0), 0.3))
     c.line([(850, 466), (852, 530)], mix(CAP, (0, 0, 0), 0.2), 3)
     # ботинки на полу
-    I.boots(c, 470, 950, 230, (46, 44, 40))
+    I.boots(c, 505, 925, 280, (46, 44, 40))
 
 
 # ---------- 8. Робот-мойщик на большом окне в гостиной (без логотипа)
@@ -469,14 +472,32 @@ def hero_camo(c, box, label="Kredyt dla służb mundurowych"):
     pts = [(x0, y0), (x1, y0), (x1, y1), (x0, y1)]
     camo(c, pts, (104, 112, 72), [(70, 80, 50), (140, 130, 90), (60, 56, 40), (120, 124, 84)], seed=21, n=90, rmin=20, rmax=60, rr=r)
     cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    c.rect((cx - 340, cy - 60, cx + 340, cy + 60), fill=(250, 246, 234), r=30, alpha=240)
-    c.text((cx, cy), label, "db", 42, (60, 66, 40), anchor="mm")
+    sz = c.fit(label, "db", 820, 1, 44)
+    tw_ = c.tw(label, c.font("db", sz))[0]
+    c.rect((cx - tw_ / 2 - 40, cy - 56, cx + tw_ / 2 + 40, cy + 56), fill=(250, 246, 234), r=30, alpha=240)
+    c.text((cx, cy), label, "db", sz, (60, 66, 40), anchor="mm")
+
+
+def clip_draw(c, box, r, fn, bg=(255, 255, 255)):
+    """Рисует fn(canvas) на отдельном холсте и вставляет область box со скруглёнными углами."""
+    from p60_lib import C as _C
+    t = _C(bg, K=c.K)
+    fn(t)
+    x0, y0, x1, y1 = box
+    region = t.im.crop(c.sb(box))
+    mask = Image.new("L", region.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, region.width - 1, region.height - 1), c.s(r), fill=255)
+    c.shadow(box, r=r, alpha=50, blur=12, off=(0, 6))
+    c.im.paste(region, (c.s(x0), c.s(y0)), mask)
 
 
 def hero_robot(c, box):
+    clip_draw(c, box, 28, lambda t: _hero_robot(t, box))
+
+
+def _hero_robot(c, box):
     """Робот против мойщика: два стекла, слева робот, справа склиз с каплями."""
     x0, y0, x1, y1 = box
-    c.shadow(box, r=28, alpha=50, blur=12, off=(0, 6))
     c.rect(box, fill=(255, 255, 255), r=28)
     ix0, iy0, ix1, iy1 = x0 + 18, y0 + 18, x1 - 18, y1 - 18
     c.vgrad((ix0, iy0, ix1, iy1), (150, 204, 238), (222, 240, 250))

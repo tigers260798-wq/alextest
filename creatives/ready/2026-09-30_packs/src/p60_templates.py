@@ -305,11 +305,11 @@ def compare(P, t):
             yy = band + 330
             for r_ in rows:
                 x0 = cx - 220
-                c.circle(x0 + 18, yy + 21, 18, fill=WH, alpha=235)
                 if r_.endswith("?"):
+                    c.circle(x0 + 18, yy + 21, 18, fill=WH, alpha=235)
                     c.text((x0 + 18, yy + 21), "?", "db", 24, col, anchor="mm")
                 else:
-                    c.check(x0 + 8, yy + 12, 20, col, 4)
+                    c.circle(x0 + 18, yy + 21, 10, fill=WH, alpha=235)
                 c.block(r_, "sb", 33, yy, 400, WH, align="left", x=x0 + 50, max_lines=2, gap=1.05)
                 nl = len(c.wrap(r_, c.font("sb", 33), 400))
                 yy += 42 * nl + 44
@@ -332,11 +332,11 @@ def compare(P, t):
             icon(c, ic, cx, box[1] + 62, 82, col)
             c.block(head, "db", 28, box[1] + 112, x1 - x0 - 24, col, cx=cx, max_lines=2, gap=1.0)
         rows = t["rows"]
-        rh = (box[3] - box[1] - hh - (60 if t.get("banner") else 10)) / len(rows)
+        rh = (box[3] - box[1] - hh - (100 if t.get("banner") else 10)) / len(rows)
         ry = box[1] + hh
         for k, (lab, a, b) in enumerate(rows):
             c.line([(box[0] + 24, ry), (box[2] - 24, ry)], (224, 228, 234), 2)
-            c.block(lab, "sb", 28, ry + rh / 2 - 17, colx[1] - colx[0] - 40, (70, 76, 88), align="left", x=colx[0] + 30, max_lines=1)
+            c.text((colx[0] + 30, ry + rh / 2), lab, "sb", c.fit(lab, "sb", colx[1] - colx[0] - 40, 1, 28), (70, 76, 88), anchor="lm")
             for txt, x0, x1, col in ((a, colx[1], colx[2], (46, 50, 60)), (b, colx[2], colx[3], (30, 34, 44))):
                 if txt.strip() == "?":
                     c.circle((x0 + x1) / 2, ry + rh / 2, 30, fill=p["acc"])
@@ -345,11 +345,14 @@ def compare(P, t):
                 nl = len(c.wrap(txt, c.font("sb", 28), x1 - x0 - 36))
                 sz = 28 if nl <= 2 else 24
                 nl = min(2, len(c.wrap(txt, c.font("sb", sz), x1 - x0 - 36)))
-                c.block(txt, "sb", sz, ry + rh / 2 - nl * c.lh("sb", sz, 1.04) / 2 + 2, x1 - x0 - 36, col, cx=(x0 + x1) / 2, max_lines=2, gap=1.04)
+                if nl == 1:
+                    c.text(((x0 + x1) / 2, ry + rh / 2), txt, "sb", sz, col, anchor="mm")
+                else:
+                    c.block(txt, "sb", sz, ry + rh / 2 - nl * c.lh("sb", sz, 1.04) / 2 + 2, x1 - x0 - 36, col, cx=(x0 + x1) / 2, max_lines=2, gap=1.04)
             ry += rh
         if t.get("banner"):
-            c.rect((colx[2] + 14, box[3] - 64, colx[3] - 14, box[3] - 14), fill=p["acc"], r=14)
-            c.block(t["banner"], "sb", 24, box[3] - 54, colx[3] - colx[2] - 50, WH, cx=(colx[2] + colx[3]) / 2, max_lines=1)
+            c.rect((colx[2] + 14, box[3] - 104, colx[3] - 14, box[3] - 14), fill=p["acc"], r=16)
+            c.block(t["banner"], "sb", 28, box[3] - 94, colx[3] - colx[2] - 50, WH, cx=(colx[2] + colx[3]) / 2, max_lines=2, gap=1.08)
         if t.get("foot"):
             c.block(t["foot"], "sb", 36, 884, 980, p["ink"], max_lines=1, highlight=p.get("hl"), hl_pad=8)
         c.button(cta, W / 2, 986, size=42, fill=p["btn"])
