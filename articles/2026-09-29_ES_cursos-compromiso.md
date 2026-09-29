@@ -104,7 +104,7 @@ Un último detalle: estos cursos se financian con fondos públicos y son gratuit
 |---|------|---------|-------|---------------|
 | 1 | Cursos en España | курсы в Испании | **0.275**, наш: трекер 30.08–28.09 — 121 кл. / $33.32 (в базе стоял только как ключ других команд, класс низкий) | раздел 2, последний абзац («cursos en España con compromiso de contratación») |
 | 2 | Cursos para Adultos | курсы для взрослых | **0.260**, наш: трекер 30.08–28.09 — 72 кл. / $18.72 (в базе стоял только как ключ других команд, класс низкий) | раздел 5, первый абзац («cursos para adultos de cualquier edad») |
-| 3 | auxiliar de enfermería | помощник медсестры | нашей нет; Planner 2026-08: 6 600/мес, −19%, bid $11.3 — самый дорогой bid в выборке без выбросов | раздел 3, абзац про санитарию («Mucha gente busca cursos de auxiliar de enfermería») |
+| 3 | auxiliar de enfermería | помощник медсестры | нашей нет; Planner 2026-08: 6 600/мес, −19%, bid $11.3 (соседние формы «auxiliar enfermeria», «técnico auxiliar de enfermería» — bid $15–16) | раздел 3, абзац про санитарию («Mucha gente busca cursos de auxiliar de enfermería») |
 | 4 | certificado de profesionalidad | сертификат профессиональной квалификации | нашей нет; Planner 2026-08: 5 400/мес, −18%, bid $4.6 | раздел 4: заголовок и первая фраза |
 | 5 | Carreras para Trabajar Rápido | профессии, чтобы быстро начать работать | нашей нет; у других команд класс средний | лид (4-я фраза) |
 | 6 | curso de carretillero | курс водителя погрузчика | нашей нет; Planner 2026-08: 8 100/мес, 0%, bid $1.8 (прогон маркетолога 29.09) | раздел 3: заголовок и первый пункт списка |
