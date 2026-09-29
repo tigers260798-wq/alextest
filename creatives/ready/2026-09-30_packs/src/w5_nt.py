@@ -796,27 +796,27 @@ def sc_au_table(c):
     c.rect((hx + 30, wy1 - 140, hx + 80, wy1 - 100), fill=(160, 200, 230))
     c.rect((hx + 120, wy1 - 140, hx + 170, wy1 - 100), fill=(160, 200, 230))
     c.rect((hx + 88, wy1 - 120, hx + 112, wy1 - 60), fill=(120, 90, 70))
-    gum_tree(c, wx0 + 140, wy1 - 70, 0.9)
+    gum_tree(c, wx0 + 140, wy1 - 70, 0.66)
     c.rect((wx0, wy1 - 70, wx1, wy1 - 58), fill=(236, 230, 214))
     for k in range(12):
         x = wx0 + 10 + k * 50
         c.rect((x, wy1 - 96, x + 12, wy1 - 58), fill=(240, 236, 224), r=3)
     c.rect(((wx0 + wx1) / 2 - 8, wy0, (wx0 + wx1) / 2 + 8, wy1), fill=(250, 248, 244))
     c.rect((wx0, (wy0 + wy1) / 2 - 6, wx1, (wy0 + wy1) / 2 + 6), fill=(250, 248, 244))
-    S.plant(c, wx1 + 110, 790, 0.9)
+    S.plant(c, wx1 + 100, 790, 0.62)
     # стол
     c.rect((0, 790, W, W), fill=(196, 160, 118))
     S.wood(c, (0, 804, W, W), (206, 170, 128), (188, 152, 110), lines=6, seed=33)
     c.rect((0, 790, W, 806), fill=(176, 140, 100))
     # предметы на столе
-    W3.calc_obj(c, 800, 830, 130, 150, shown="")
+    W3.calc_obj(c, 860, 824, 120, 140, shown="")
     S.paper(c, (430, 820, 640, 1000), -5, head="5 QUESTIONS", head_size=22, lines=5, head_col=(64, 36, 84))
     c.rect((150, 850, 380, 1010), fill=(90, 70, 110), r=10)
     c.rect((166, 836, 364, 994), fill=WH, r=4)
     for k in range(6):
         c.rect((186, 862 + k * 20, 330 - (k % 2) * 60, 870 + k * 20), fill=(200, 204, 214), r=3)
     S.pen(c, 610, 1010, 700, 960)
-    S.teacup(c, 980, 880, 0.7, rim=(90, 70, 110))
+    S.teacup(c, 1010, 890, 0.6, rim=(90, 70, 110))
     S.glasses(c, 700, 1040, 0.7)
     # пара со спины
     WS.senior_back(c, 300, 1150, 1.45, (110, 140, 170), hair=(214, 214, 220))
@@ -847,7 +847,7 @@ def suitcase(c, x, by, s, col=(0, 132, 150)):
         c.circle(xx, by - 8 * s, 10 * s, fill=(30, 32, 38))
 
 
-def boarding_card(c, box, ang, lines, head="CARTE D'EMBARQUEMENT", band=(18, 48, 100)):
+def boarding_card(c, box, ang, lines, head="CARTE D’EMBARQUEMENT", band=(18, 48, 100)):
     """Бумажный посадочный без названия компании (повёрнут)."""
     from PIL import Image, ImageDraw
     x0, y0, x1, y1 = box
@@ -861,7 +861,7 @@ def boarding_card(c, box, ang, lines, head="CARTE D'EMBARQUEMENT", band=(18, 48,
     for txt, fn, sz in lines:
         dd.text((14 * K, y * K), txt, font=c.font(fn, sz), fill=(30, 34, 44, 255))
         y += sz + 12
-    st = (x1 - x0) * 0.74
+    st = (x1 - x0) * 0.79
     for yy in range(40, int(y1 - y0), 12):
         dd.line((st * K, yy * K, st * K, (yy + 6) * K), fill=(180, 186, 196, 255), width=2 * K)
     rnd = random.Random(8)
@@ -916,7 +916,7 @@ def sc_fr_port_sunset(c):
         c.rect((x - 24, 850, x + 24, 904), fill=(60, 60, 68), r=10)
         c.rect((x - 34, 846, x + 34, 862), fill=(70, 70, 78), r=6)
     suitcase(c, 340, 1040, 0.62)
-    boarding_card(c, (560, 930, 900, 1060), -6, [("MARSEILLE → BARCELONE", "db", 22), ("3 NUITS · CABINE ---", "sb", 18)])
+    boarding_card(c, (530, 926, 970, 1062), -5, [("MARSEILLE → BARCELONE", "db", 22), ("3 NUITS · CABINE ---", "sb", 18)])
 
 
 def scene_card2(P, t):
@@ -1076,7 +1076,7 @@ PACKS[4] = dict(
     doc="NT-pension-loans-au-2026-09-30", cta="Learn more",
     pal=dict(bg=(250, 246, 240), bg2=(240, 232, 222), ink=PLUM4, sub=(96, 86, 100), acc=(150, 84, 160), btn=ORG4, tile=WH, tile_ink=PLUM4,
              icon=PLUM4, iconbg=(238, 228, 242)),
-    a=dict(fn="grid6", title="Pension loans in Australia 2026:", title2="6 options explained", size=54,
+    a=dict(fn="grid6", title="Pension loans in Australia:", title2="6 options for 2026", size=56,
            sub="Pick one to see how it works",
            tiles=[("house", "Home Equity Access Scheme"), ("calendar", "Pension advance payment"), ("bank", "Bank & credit union loans"),
                   ("heart_hands", "No-interest community loans"), ("key_plus", "Reverse mortgage"), ("w5n_house_split", "Home reversion")],
@@ -1122,9 +1122,9 @@ PACKS[5] = dict(
            src="раздел 2 «Mini croisière départ Marseille : les itinéraires habituels» (Barcelone, Gênes ou Savone, Palma aux Baléares, un port de Corse) + раздел 3 «Croisière au départ du Havre 2026» (Southampton, Zeebrugge pour Bruges, Rotterdam ou Amsterdam, Hambourg)",
            note="2 колонки-порта (Марсель — бирюзовая с солнцем, Гавр — синяя с маяком), по 4 стоянки-кнопки из статьи, у каждой «En savoir plus»; без цен, брендов и «3 nuits» над Балеарами (в статье — маршруты подлиннее)"),
     b=dict(fn="pass_quiz", title="Croisière au départ du Havre :", title2="escale en Angleterre, quel document ?", size=52,
-           pass_head="CARTE D'EMBARQUEMENT", step="Quiz · question 1 sur 3", pass_route="LE HAVRE → SOUTHAMPTON",
+           pass_head="CARTE D’EMBARQUEMENT", step="Quiz · question 1 sur 3", pass_route="LE HAVRE → SOUTHAMPTON",
            from_lab="Départ", to_lab="Escale", q="Pour cette escale, que faut-il présenter ?",
-           opts=["Carte d'identité", "Passeport", "Passeport + autorisation électronique", "Aucun document"],
+           opts=["Carte d’identité", "Passeport", "Passeport + autorisation électronique", "Aucun document"],
            stub=[("NUITS", "3"), ("ESCALES", "2 ou 3")],
            pal=dict(bg=(214, 236, 246), bg2=(170, 212, 232), ink=BLEU5, sub=(70, 90, 110), acc=TURQ5, t2=ORANGE5, band=BLEU5, btn=ORANGE5),
            src="раздел 3 (escale au Royaume-Uni : depuis 2021 la carte d'identité ne suffit plus, passeport + autorisation de voyage électronique depuis 2025; верный ответ — третий) + лид («trois ou quatre nuits, deux ou trois escales»)",
@@ -1133,15 +1133,15 @@ PACKS[5] = dict(
            cols=[("MARSEILLE", "w3_sun", TURQ5), ("LE HAVRE", "w5n_lighthouse", BLEU5)],
            rows=[("MER", "Méditerranée", "Manche et mer du Nord"),
                  ("ESCALES", "Barcelone, Gênes, Baléares", "Southampton, Bruges, Rotterdam, Hambourg"),
-                 ("SAISON", "presque toute l'année", "surtout du printemps à l'automne"),
-                 ("PAPIERS", "carte d'identité ou passeport, selon les escales", "passeport + autorisation si escale au Royaume-Uni")],
-           src="разделы 2–3 (моря, стоянки, «départs presque toute l'année» / «la saison va surtout du printemps à l'automne», паспорт и электронное разрешение для Royaume-Uni) + чек-лист («carte d'identité ou passeport suivant les escales»)",
+                 ("SAISON", "presque toute l’année", "surtout du printemps à l’automne"),
+                 ("PAPIERS", "carte d’identité ou passeport, selon les escales", "passeport + autorisation si escale au Royaume-Uni")],
+           src="разделы 2–3 (моря, стоянки, «départs presque toute l’année» / «la saison va surtout du printemps à l’automne», паспорт и электронное разрешение для Royaume-Uni) + чек-лист («carte d’identité ou passeport suivant les escales»)",
            note="две колонки Марсель vs Гавр — порт против порта, не «круиз или курорт»; без цен"),
     d=dict(fn="scene_d", scene="w5n_fr_port_sunset", style="top", y=34, size=52, lines=2, kicker="3 NUITS À BORD, 2 OU 3 ESCALES",
            title="Mini croisière au départ de Marseille ou du Havre",
-           sub="Itinéraires 2026, papiers, saison : ce qu'il faut savoir avant de réserver", sub_size=30,
-           btn_y=470, pal=dict(ink=BLEU5, sub=(90, 60, 60), acc=(190, 70, 30), btn=ORANGE5),
-           scene_text="на посадочном: CARTE D'EMBARQUEMENT / MARSEILLE → BARCELONE / 3 NUITS · CABINE ---",
+           sub="Itinéraires 2026, papiers, saison : ce qu’il faut savoir avant de réserver", sub_size=30,
+           btn_y=352, pal=dict(ink=BLEU5, sub=(90, 60, 60), acc=(190, 70, 30), btn=ORANGE5),
+           scene_text="на посадочном: CARTE D’EMBARQUEMENT / MARSEILLE → BARCELONE / 3 NUITS · CABINE ---",
            src="заголовок статьи и лид («Trois ou quatre nuits à bord, deux ou trois escales»; Marseille / Le Havre) + раздел 2 (Barcelone) + раздел 5 (réserver)",
            note="порт на закате: безымянный лайнер без логотипа и названия выходит из гавани мимо маяка на молу; на причале чемодан и посадочный без названия компании"),
 )
@@ -1177,6 +1177,8 @@ def texts(t, cta):
         s = s + " / " + " / ".join(extra)
         if t["fn"] not in ("stairs6", "timeline5", "cards3", "ports2", "grid6"):
             s += f" / кнопка «{cta} →»"
+    if t["fn"] == "grid6":
+        s = s.replace(f" / кнопка «{cta} →»", "")
     return s
 
 
