@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-will-estate-us-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 документов из статьи на кремовом; у каждой «Learn more»",
+  "text": "Estate planning 2026: where to start? / Pick a document to see what it does / Last will / Financial power of attorney / Healthcare proxy / Attorney or online service? (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-will-estate-us-2026-09-30/b.png",
+  "concept": "карточка-опросник — тёмно-синий фон, вопрос о правилах (ответ в статье: закон штата)",
+  "text": "Without a will, who decides? / WILL QUIZ / Question 1 of 4 / If there's no valid will, what usually decides who inherits? / The eldest child / State law / The bank / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-will-estate-us-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — две карточки друг над другом: завещание / доверенность",
+  "text": "Will or power of attorney? / Two documents, two very different jobs / LAST WILL vs POWER OF ATTORNEY / LAST WILL: takes effect after death · names an executor · can name a guardian for children / POWER OF ATTORNEY: works during a lifetime · names an agent to act · financial or healthcare / The difference many families learn too late",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-will-estate-us-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — стол сверху: лист LAST WILL AND TESTAMENT с подписью, перьевая ручка, очки, ключи, конверт; карточка в рамке",
+  "text": "WILLS & POWER OF ATTORNEY 2026 / The 2 documents many families put off for years / What a will and a POA actually do",
+  "cta": "Learn more"
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-pension-13-14-es-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — сверху 2 листка календаря JUNIO/NOVIEMBRE «+1 paga extra» (14 pagas, доп. в июне и ноябре — seg-social), 4 плитки-вопроса",
+  "text": "Paga extra de noviembre 2026 / ¿Qué quieres saber? Elige: / ¿Qué día llega? / ¿Quién la cobra? / ¿Cuánto es? / ¿Tributa? (у каждой «Más información»)",
+  "cta": "Más información"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-pension-13-14-es-2026-09-30/b.png",
+  "concept": "карточка-опросник — синий фон, вопрос о правилах пенсий, не о зрителе; ответ 14 — seg-social",
+  "text": "Test de la paga extra 2026 / la pregunta que muchos fallan / TEST / Pregunta 1 de 4 / ¿Cuántas pagas al año tiene una pensión contributiva en España? / 12 pagas / 13 pagas / 14 pagas / Depende de la pensión",
+  "cta": "Más información"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-pension-13-14-es-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — 12 столбиков-месяцев, в июне и ноябре надстройка «+ paga» с «?» — сумм нет",
+  "text": "Pensión 2026 mes a mes / 2 meses traen paga extra. ¿Cuánto se cobra en cada uno? / Junio y noviembre: quién la cobra y cuándo llega / ENE FEB MAR ABR MAY JUN JUL AGO SEP OCT NOV DIC · + paga (JUN, NOV) · mensualidad / paga extra (¿cuánto?)",
+  "cta": "Más información"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-pension-13-14-es-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — формула рабочих крео владельца (плашки + «lo que pocos saben»); кухня, настенный календарь «NOVIEMBRE 2026» со стикером «¿paga extra?» — дата не выдумана",
+  "text": "PAGA EXTRA DE NOVIEMBRE 2026: LO QUE POCOS SABEN",
+  "cta": "Más información"
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/NT-psy-couples-fr-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 тем теста (из текста гипотезы); без «ваша пара»",
+  "text": "Test de couple : 15 questions / Ce que regardent les thérapeutes. Choisissez un thème : / Communication / Confiance / Projets / Disputes (у каждой «En savoir plus»)",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/NT-psy-couples-fr-2026-09-30/b.png",
+  "concept": "карточка-опросник — вопрос о мнении терапевтов, не о паре зрителя",
+  "text": "Test de couple en 15 questions / Ce que regardent les thérapeutes / TEST / Question 1 sur 15 / Selon les thérapeutes, qu'est-ce qui compte le plus après une dispute ? / Savoir qui a raison / Qui fait le premier pas / Oublier très vite / En reparler au calme",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/NT-psy-couples-fr-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — таблица кабинет / онлайн: цены и возмещение — «?»",
+  "text": "Thérapie de couple 2026 : combien ça coûte ? / En cabinet ou en ligne – ce qui change / Le test complet + les prix 2026 / En cabinet vs En ligne / Prix d'une séance: ? / ? · Où: chez le thérapeute / à la maison, en visio · Remboursement: ? / ?",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/NT-psy-couples-fr-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — две кружки ручками в разные стороны и карточка «15 questions» (визуал из брифа гипотезы); людей и колец нет",
+  "text": "Test de couple : 15 questions / Ce que regardent les thérapeutes",
+  "cta": "En savoir plus"
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-senior-glasses-uk-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 тем из статьи на лавандовом",
+  "text": "Cataract surgery 2026: NHS or private? / Pick a topic: / What the NHS includes / Private cost per eye / Toric lens supplement / Glasses after surgery (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-senior-glasses-uk-2026-09-30/b.png",
+  "concept": "карточка-опросник — вопрос про линзу и очки, не про зрение зрителя (ответ в статье: да, для чтения)",
+  "text": "After cataract surgery: / the glasses question / QUICK CHECK / Question 1 of 3 / After NHS surgery with a standard lens, do most people still need reading glasses? / Yes, for close-up / No, never again / Only for driving / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-senior-glasses-uk-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — диагональный сплит NHS / частно; цифры — из sourceNote (SpaMedica, Optegra, TreatCompare 2026); без «до/после»",
+  "text": "NHS or private cataract surgery? / The 2026 numbers side by side / NHS vs PRIVATE / NHS: No direct cost if eligible · About 12–18 weeks' wait · Standard monofocal lens / PRIVATE: £2,500–£5,500 per eye · Premium lens options · Toric: +£300–£500 per eye",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-senior-glasses-uk-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — оптика: таблица для проверки зрения, полки с оправами, раскрытая книга с очками",
+  "text": "CATARACT SURGERY 2026 / No cost on the NHS – so why budget for new glasses? / What's included, what isn't, and the private price per eye",
+  "cta": "Learn more"
+ }
+]

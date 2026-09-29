@@ -596,7 +596,7 @@ def home_visit(c):
     c.rect((wx0, (wy0 + wy1) / 2 - 6, wx1, (wy0 + wy1) / 2 + 6), fill=WH)
     c.rect((wx0 - 30, wy1 + 8, wx1 + 30, wy1 + 24), fill=(240, 232, 220), r=4)
     # часы на стене
-    wall_clock(c, 470, 560, 46)
+    wall_clock(c, 965, 600, 46)
     # ковёр
     c.ellipse((250, 960, 1000, 1070), fill=(226, 190, 150))
     c.ellipse((300, 976, 950, 1054), outline=(206, 164, 120), width=5)
@@ -674,26 +674,26 @@ def will_desk(c):
     c.line([(150, 1000), (440, 980)], (60, 60, 70), 3)
     pts = [(170 + k * 14, 972 + math.sin(k * 0.9) * 12 - k * 0.8) for k in range(16)]
     c.line(pts, (30, 50, 140), 4)
-    # перьевая ручка
-    c.line([(560, 1030), (760, 760)], (20, 20, 26), 22)
-    c.line([(700, 840), (760, 760)], (200, 170, 90), 22)
-    c.poly([(560, 1030), (548, 1064), (574, 1044)], (200, 170, 90))
-    c.circle(760, 760, 11, fill=(20, 20, 26))
-    # очки
-    S.glasses(c, 860, 620, 1.1)
-    # ключи на кольце
-    c.circle(840, 900, 34, outline=(190, 190, 196), width=6)
-    for ang, col in ((-30, (210, 180, 90)), (20, (190, 190, 196))):
-        pts = rotpts([(866, 890), (970, 890), (970, 912), (866, 912)], 866, 900, ang)
-        c.poly(pts, col)
-        hx, hy = rotpts([(880, 900)], 866, 900, ang)[0]
-        c.circle(hx, hy, 24, fill=col)
-        c.circle(hx, hy, 8, fill=(46, 58, 50))
     # конверт
-    pts = rotpts([(620, 560), (840, 560), (840, 700), (620, 700)], 730, 630, 8)
+    pts = rotpts([(600, 540), (830, 540), (830, 690), (600, 690)], 715, 615, 8)
     c.poly(pts, (244, 236, 220))
     a, b, cc, d = pts
     c.line([a, ((a[0] + b[0] + cc[0] + d[0]) / 4, (a[1] + b[1] + cc[1] + d[1]) / 4 + 10), b], (200, 190, 170), 3)
+    # перьевая ручка
+    c.line([(570, 1040), (720, 800)], (20, 20, 26), 22)
+    c.line([(680, 864), (720, 800)], (200, 170, 90), 22)
+    c.poly([(570, 1040), (556, 1072), (582, 1054)], (200, 170, 90))
+    c.circle(720, 800, 11, fill=(20, 20, 26))
+    # очки
+    S.glasses(c, 890, 770, 1.1)
+    # ключи на кольце
+    c.circle(820, 960, 34, outline=(190, 190, 196), width=6)
+    for ang, col in ((-30, (210, 180, 90)), (20, (190, 190, 196))):
+        pts = rotpts([(846, 950), (950, 950), (950, 972), (846, 972)], 846, 960, ang)
+        c.poly(pts, col)
+        hx, hy = rotpts([(860, 960)], 846, 960, ang)[0]
+        c.circle(hx, hy, 24, fill=col)
+        c.circle(hx, hy, 8, fill=(46, 58, 50))
 
 
 def hearing_table(c, table_y=690):
@@ -715,8 +715,7 @@ def hearing_table(c, table_y=690):
     I.ICONS["bte_aid"](c, 650, 862, 160, (200, 206, 214), bg=(70, 86, 120))
     I.ICONS["bte_aid"](c, 780, 862, 160, (200, 206, 214), bg=(70, 86, 120))
     # ценники
-    for (x, y, lab, col) in ((330, 720, "$200", (40, 160, 90)), (880, 640, "$7,000+", (220, 70, 50))):
-        c.line([(x - 30, y + 24), (x - 70, y + 70)], (120, 120, 120), 3)
+    for (x, y, lab, col) in ((330, 720, "$200", (40, 160, 90)), (820, 632, "$7,000+", (220, 70, 50))):
         tw_ = c.tw(lab, c.font("db", 34))[0] + 50
         pts = [(x - 20, y), (x, y - 26), (x + tw_, y - 26), (x + tw_, y + 26), (x, y + 26)]
         c.poly(pts, col)
@@ -771,9 +770,9 @@ def optician_wall(c):
     rows = ["E", "F P", "T O Z", "L P E D", "P E C F D", "E D F C Z P"]
     y = by0 + 40
     for k, rw in enumerate(rows):
-        sz = [110, 70, 52, 40, 32, 26][k]
+        sz = [96, 64, 48, 38, 30, 24][k]
         c.text(((bx0 + bx1) / 2, y), rw, "db", sz, (20, 20, 26), anchor="ma")
-        y += sz * 1.25 + 6
+        y += sz * 1.22 + 6
     # полка с оправами
     c.rect((50, 640, 580, 660), fill=(150, 110, 80), r=4)
     for k, col in enumerate(((40, 36, 34), (150, 60, 50), (40, 80, 150))):
@@ -781,13 +780,13 @@ def optician_wall(c):
     c.rect((50, 440, 580, 460), fill=(150, 110, 80), r=4)
     for k, col in enumerate(((120, 90, 60), (30, 120, 110))):
         S.glasses(c, 190 + k * 230, 400, 0.75, col=col)
-    # раскрытая книга с очками
-    c.poly([(200, 950), (520, 930), (530, 1050), (210, 1070)], (250, 248, 240))
-    c.poly([(520, 930), (840, 950), (830, 1070), (530, 1050)], (244, 240, 230))
+    # раскрытая книга с очками (слева, чтобы кнопка по центру её не закрывала)
+    c.poly([(40, 950), (180, 936), (186, 1052), (46, 1066)], (250, 248, 240))
+    c.poly([(180, 936), (320, 950), (314, 1066), (186, 1052)], (244, 240, 230))
     for k in range(5):
-        c.line([(240, 970 + k * 18), (490, 954 + k * 18)], (200, 200, 206), 4)
-        c.line([(560, 956 + k * 18), (800, 972 + k * 18)], (200, 200, 206), 4)
-    S.glasses(c, 520, 980, 1.05)
+        c.line([(60, 966 + k * 18), (166, 954 + k * 18)], (200, 200, 206), 4)
+        c.line([(196, 956 + k * 18), (300, 968 + k * 18)], (200, 200, 206), 4)
+    S.glasses(c, 184, 990, 0.8)
     S.plant(c, 990, 1000, 0.6, pot=(120, 100, 180))
 
 
@@ -820,17 +819,17 @@ def driveway(c):
     c.vgrad((0, 0, W, 900), (206, 230, 246), (240, 247, 251))
     for (x, y, r) in ((140, 180, 44), (200, 170, 60), (260, 186, 40), (880, 120, 40), (940, 110, 54)):
         c.circle(x, y, r, fill=WH, alpha=180)
-    # дом
-    c.poly([(470, 560), (770, 400), (1080, 560)], (70, 76, 92))
-    c.rect((500, 560, 1080, 880), fill=(206, 170, 130))
-    for r_ in range(570, 880, 28):
+    # дом (ниже, чтобы кнопка не задевала крышу)
+    c.poly([(470, 620), (770, 470), (1080, 620)], (70, 76, 92))
+    c.rect((500, 620, 1080, 880), fill=(206, 170, 130))
+    for r_ in range(630, 880, 28):
         c.line([(500, r_), (1080, r_)], (190, 154, 116), 2)
-    c.rect((760, 660, 1040, 880), fill=(236, 236, 232))
-    for y in range(680, 880, 36):
+    c.rect((760, 700, 1040, 880), fill=(236, 236, 232))
+    for y in range(720, 880, 36):
         c.line([(760, y), (1040, y)], (206, 206, 202), 4)
-    c.rect((540, 620, 660, 720), fill=WH)
-    c.rect((550, 630, 650, 710), fill=(160, 204, 228))
-    c.rect((597, 630, 603, 710), fill=WH)
+    c.rect((540, 670, 660, 770), fill=WH)
+    c.rect((550, 680, 650, 760), fill=(160, 204, 228))
+    c.rect((597, 680, 603, 760), fill=WH)
     # газон и дорожка
     c.rect((0, 870, W, W), fill=(130, 186, 110))
     c.poly([(700, 870), (1080, 870), (1080, W), (560, W)], (200, 200, 204))
@@ -897,7 +896,6 @@ def bills_table(c, table_y=660):
     c.poly([(640, 880), (600, 850), (600, 910)], TEAL)
     # один конверт
     c.shadow((670, 770, 1010, 990), r=10, alpha=70, blur=10, off=(6, 10))
-    I.ICONS["envelope"] if False else None
     c.rect((670, 770, 1010, 990), fill=WH, r=8, outline=(200, 206, 210), width=3)
     c.line([(674, 774), (840, 890), (1006, 774)], (200, 206, 210), 4)
     c.circle(840, 930, 34, fill=TEAL)
@@ -908,3 +906,184 @@ def bills_table(c, table_y=660):
 for _fn in (home_visit, doorstep_meals, will_desk, hearing_table, nightstand_alert, optician_wall, park_walk, driveway,
             wallet_table, bills_table):
     setattr(S, "w2_" + _fn.__name__, _fn)
+
+
+# =====================================================================  «герои» для сеток (box в единицах 1080)
+def _panel(c, box, c0, c1, r=28):
+    x0, y0, x1, y1 = box
+    c.rect(box, fill=c0, r=r)
+    c.vgrad((x0, y0 + r, x1, y1 - r), c0, c1)
+    c.rect((x0, y1 - 2 * r, x1, y1), fill=c1, r=r)
+
+
+def hero_homecare(c, box):
+    def fn(t):
+        x0, y0, x1, y1 = box
+        _panel(t, box, (253, 234, 218), (246, 214, 190))
+        t.dots((x0 + 20, y0 + 20, x1 - 20, y1 - 20), 36, 3, (214, 98, 64), alpha=35)
+        cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+        t.ellipse((cx - 230, y1 - 56, cx + 230, y1 - 20), fill=(214, 98, 64), alpha=40)
+        home_heart(t, cx, cy + 6, 240, (40, 60, 90), bg=(253, 234, 218))
+        for (x, ic) in ((cx - 300, "clock"), (cx + 300, "calendar")):
+            t.circle(x, cy, 78, fill=WH)
+            I.ICONS[ic](t, x, cy, 104, (214, 98, 64), bg=WH)
+        t.circle(cx - 150, cy - 90, 40, fill=WH)
+        person_heart(t, cx - 150, cy - 90, 60, (40, 60, 90), bg=WH)
+        t.circle(cx + 160, cy - 96, 40, fill=WH)
+        med_bag(t, cx + 160, cy - 96, 56, (40, 120, 128), bg=WH)
+    S.clip_draw(c, box, 28, fn)
+
+
+def hero_meal(c, box):
+    def fn(t):
+        x0, y0, x1, y1 = box
+        S.wood(t, box, (226, 196, 158), (214, 182, 142), lines=5, seed=61)
+        cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+        tb = (cx - 330, y0 + 34, cx + 330, y1 - 34)
+        t.shadow(tb, r=30, alpha=70, blur=10, off=(0, 8))
+        t.rect(tb, fill=(248, 244, 236), r=30)
+        meal_plate(t, cx - 20, cy, 280, (60, 90, 70), bg=(248, 244, 236))
+        t.circle(cx - 250, cy - 50, 62, fill=WH, outline=(200, 196, 186), width=3)
+        t.circle(cx - 250, cy - 50, 48, fill=(236, 170, 80))
+        for k in range(5):
+            t.circle(cx - 270 + (k % 3) * 18, cy - 64 + (k // 3) * 22, 7, fill=(250, 214, 140))
+        t.circle(cx + 250, cy - 60, 46, fill=(214, 236, 246), outline=(180, 200, 214), width=4)
+        t.rect((cx + 190, cy + 20, cx + 310, cy + 110), fill=(250, 250, 246), r=10, outline=(210, 206, 196), width=2)
+        t.rect((cx + 184, cy + 12, cx + 316, cy + 30), fill=(96, 164, 84), r=6)
+    S.clip_draw(c, box, 28, fn)
+
+
+def hero_hearing(c, box):
+    def fn(t):
+        x0, y0, x1, y1 = box
+        _panel(t, box, (226, 238, 248), (204, 222, 240))
+        t.dots((x0 + 20, y0 + 20, x1 - 20, y1 - 20), 36, 3, (30, 110, 180), alpha=30)
+        mx = (x0 + x1) / 2
+        t.rect((mx - 3, y0 + 30, mx + 3, y1 - 30), fill=WH, alpha=180)
+        cy = (y0 + y1) / 2 - 20
+        otc_box(t, (x0 + mx) / 2, cy, 230, (60, 110, 170), bg=WH)
+        rx = (mx + x1) / 2
+        t.rect((rx - 150, cy - 90, rx + 150, cy + 100), fill=(36, 44, 56), r=34)
+        t.rect((rx - 128, cy - 68, rx + 128, cy + 78), fill=(70, 86, 120), r=24)
+        bte_aid(t, rx - 55, cy + 6, 130, (200, 206, 214), bg=(70, 86, 120))
+        bte_aid(t, rx + 55, cy + 6, 130, (200, 206, 214), bg=(70, 86, 120))
+        for (x, lab, col) in (((x0 + mx) / 2, "$200–$3,000", (40, 150, 90)), (rx, "$2,000–$7,000+", (220, 90, 40))):
+            tw_ = t.tw(lab, t.font("db", 32))[0] + 44
+            t.rect((x - tw_ / 2, y1 - 86, x + tw_ / 2, y1 - 36), fill=col, r=25)
+            t.text((x, y1 - 61), lab, "db", 32, WH, anchor="mm")
+    S.clip_draw(c, box, 28, fn)
+
+
+def hero_alert(c, box):
+    def fn(t):
+        x0, y0, x1, y1 = box
+        _panel(t, box, (24, 44, 74), (14, 28, 52))
+        cx, cy = (x0 + x1) / 2, (y0 + y1) / 2 + 6
+        for k, a in ((3, 30), (2, 50), (1, 80)):
+            t.circle(cx, cy, 70 + k * 42, outline=(240, 90, 80), width=6, alpha=a + 40)
+        t.circle(cx, cy, 92, fill=(250, 250, 250))
+        t.circle(cx, cy, 70, fill=RED_BTN)
+        t.circle(cx - 20, cy - 22, 16, fill=WH, alpha=120)
+        for (x, lab) in ((x0 + 150, "24/7"), (x1 - 150, "1 button")):
+            tw_ = t.tw(lab, t.font("db", 40))[0] + 56
+            t.rect((x - tw_ / 2, cy - 36, x + tw_ / 2, cy + 36), fill=(255, 255, 255), r=36, alpha=235)
+            t.text((x, cy), lab, "db", 40, (24, 44, 74), anchor="mm")
+    S.clip_draw(c, box, 28, fn)
+
+
+def hero_park(c, box):
+    def fn(t):
+        x0, y0, x1, y1 = box
+        t.vgrad((x0, y0, x1, y1), (200, 230, 246), (236, 246, 250))
+        t.poly([(x0, y0 + 190), (x0 + 300, y0 + 130), (x0 + 600, y0 + 180), (x1, y0 + 120), (x1, y1), (x0, y1)], (150, 200, 130))
+        t.poly([(x0, y0 + 240), (x1, y0 + 220), (x1, y1), (x0, y1)], (128, 186, 110))
+        t.poly([(x0 + 330, y1), (x0 + 560, y1), (x0 + 500, y0 + 222), (x0 + 470, y0 + 222)], (228, 212, 180))
+        for (x, y, r) in ((x0 + 110, y0 + 140, 80), (x0 + 220, y0 + 170, 56), (x1 - 120, y0 + 120, 90)):
+            t.rect((x - 9, y, x + 9, y + 130), fill=(120, 84, 56))
+            t.circle(x, y, r, fill=(84, 150, 90))
+            t.circle(x - r * 0.4, y + r * 0.3, r * 0.7, fill=(96, 164, 100))
+        t.rect((x1 - 380, y0 + 196, x1 - 170, y0 + 210), fill=(150, 100, 60), r=4)
+        t.rect((x1 - 380, y0 + 166, x1 - 170, y0 + 178), fill=(150, 100, 60), r=4)
+        for x in (x1 - 364, x1 - 186):
+            t.rect((x - 5, y0 + 178, x + 5, y0 + 262), fill=(70, 70, 76))
+        # кроссовки у скамейки
+        for k in range(2):
+            sx = x1 - 330 + k * 70
+            t.poly([(sx, y0 + 250), (sx + 30, y0 + 250), (sx + 36, y0 + 262), (sx + 70, y0 + 268), (sx + 70, y0 + 280), (sx, y0 + 280)], (220, 90, 60))
+            t.rect((sx - 2, y0 + 278, sx + 72, y0 + 286), fill=WH, r=3)
+        t.rect((x1 - 250, y0 + 142, x1 - 226, y0 + 196), fill=(90, 150, 210), r=6)
+    S.clip_draw(c, box, 28, fn)
+
+
+def hero_badge60(c, box):
+    def fn(t):
+        x0, y0, x1, y1 = box
+        _panel(t, box, (255, 236, 214), (250, 220, 190))
+        t.dots((x0 + 20, y0 + 20, x1 - 20, y1 - 20), 36, 3, (120, 60, 160), alpha=35)
+        cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+        I.percent_tag(t, cx - 260, cy - 30, 150, (240, 110, 30))
+        I.percent_tag(t, cx + 270, cy + 30, 130, (40, 150, 110))
+        t.circle(cx - 380, cy + 80, 40, fill=GOLD)
+        t.circle(cx + 380, cy - 90, 32, fill=GOLD)
+        t.shadow((cx - 120, cy - 120, cx + 120, cy + 120), r=120, alpha=70, blur=10, off=(0, 8))
+        t.circle(cx, cy, 120, fill=(120, 60, 160))
+        t.circle(cx, cy, 104, outline=WH, width=4)
+        t.text((cx, cy - 4), "60+", "db", 96, WH, anchor="mm")
+    S.clip_draw(c, box, 28, fn)
+
+
+# =====================================================================  C: «несколько платежей → один» (кредиты, без цифр)
+def merge(P, t):
+    import p60_templates as T
+    p = P["pal"]
+    c = C(p["bg"])
+    if p.get("bg2"):
+        c.vgrad((0, 0, W, W), p["bg"], p["bg2"])
+    y = T.header(c, t, col=p["ink"], sub_col=p["sub"], size=t.get("size", 60))
+    top = y + 34
+    bot = 846 if t.get("foot") else 900
+    items = t["items"]
+    n = len(items)
+    g = 18
+    ih = (bot - top - g * (n - 1)) / n
+    L1 = 440
+    for k, (ic, lab) in enumerate(items):
+        y0 = top + k * (ih + g)
+        box = (60, y0, L1, y0 + ih)
+        c.card(box, fill=WH, r=22, sh_alpha=50, blur=10, off=(0, 5))
+        c.circle(60 + ih / 2 + 4, y0 + ih / 2, ih * 0.36, fill=p["iconbg"])
+        T.icon(c, ic, 60 + ih / 2 + 4, y0 + ih / 2, ih * 0.5, p["icon"], bg=p["iconbg"])
+        c.block(lab, "sb", 30, y0 + ih / 2 - 19, L1 - 60 - ih - 30, p["ink"], align="left", x=60 + ih + 16, max_lines=1)
+        c.circle(L1 - 30, y0 + ih / 2, 10, fill=p["dot"])
+    R = (620, top + 10, 1020, bot - 10)
+    ry = (R[1] + R[3]) / 2
+    for k in range(n):
+        y0 = top + k * (ih + g) + ih / 2
+        pts = [(L1 + 4 + j * 22, y0 + (ry - y0) * (j / 7) ** 1.6) for j in range(8)]
+        c.line(pts, p["acc"], 8, alpha=230)
+    c.poly([(R[0] - 4, ry), (R[0] - 36, ry - 24), (R[0] - 36, ry + 24)], p["acc"])
+    c.card(R, fill=WH, r=30, sh_alpha=90, blur=16, off=(0, 10), outline=p["acc"], width=4)
+    c.rect((R[0], R[1], R[2], R[1] + 96), fill=p["acc"], r=30)
+    c.rect((R[0], R[1] + 60, R[2], R[1] + 96), fill=p["acc"])
+    c.block(t["right_head"], "db", 34, R[1] + 26, R[2] - R[0] - 40, WH, cx=(R[0] + R[2]) / 2, max_lines=1)
+    cy = R[1] + 190
+    c.circle((R[0] + R[2]) / 2, cy, 70, fill=p["iconbg"])
+    I.envelope(c, (R[0] + R[2]) / 2, cy, 90, p["icon"])
+    c.circle((R[0] + R[2]) / 2 + 48, cy + 40, 30, fill=p["acc"])
+    c.text(((R[0] + R[2]) / 2 + 48, cy + 40), "1", "db", 34, WH, anchor="mm")
+    yy = cy + 110
+    rows = t["right_rows"]
+    rh = (R[3] - 30 - yy) / len(rows)
+    for r_ in rows:
+        q = r_.strip().endswith("?")
+        c.circle(R[0] + 44, yy + 20, 14, fill=p["btn"] if q else p["acc"])
+        if not q:
+            c.check(R[0] + 36, yy + 13, 16, WH, 4)
+        else:
+            c.text((R[0] + 44, yy + 20), "?", "db", 18, WH, anchor="mm")
+        c.block(r_, "sb", 29, yy + 2, R[2] - R[0] - 90, p["ink"], align="left", x=R[0] + 72, max_lines=2, gap=1.05)
+        yy += rh
+    if t.get("foot"):
+        c.block(t["foot"], "sb", 34, 868, 980, p["ink"], max_lines=1, highlight=p.get("hl"), hl_pad=8)
+    c.button(P["cta"], W / 2, 978, size=42, fill=p["btn"])
+    return c

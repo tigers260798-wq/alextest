@@ -172,7 +172,7 @@ def scene_power(c, top=300):
     for (x, y) in ((120, top + 90), (170, top + 220), (330, top + 250), (230, top + 70)):
         c.circle(x, y, 3, fill=WH, alpha=200)
     # подвесная лампа со светом
-    c.line([(760, 0), (760, top + 60)], (180, 180, 190), 5)
+    c.line([(760, top - 10), (760, top + 60)], (180, 180, 190), 5)
     c.glow((520, top + 60, 1000, top + 640), (255, 214, 120), alpha=90, blur=70)
     c.poly([(690, top + 130), (830, top + 130), (800, top + 60), (720, top + 60)], (240, 190, 70))
     c.ellipse((730, top + 118, 790, top + 158), fill=(255, 246, 210))
@@ -215,7 +215,7 @@ def scene_optica(c, top=330):
     y = top + 70
     for t, sz in rows:
         c.text((215, y), t, "db", sz, (30, 30, 36), anchor="mm")
-        y += sz + 26
+        y += sz + 20
     # стойка-прилавок
     c.rect((0, top + 520, W, top + 560), fill=(60, 110, 150))
     c.rect((0, top + 560, W, W), fill=(44, 84, 120))
@@ -288,11 +288,13 @@ def scene_park(c):
         c.ellipse((x - 10, y - 5, x + 10, y + 5), fill=((214, 110, 40), (236, 170, 60), (190, 80, 40))[k % 3])
     # скамейка
     bx0, bx1, seat = 440, 1000, 900
-    for k in range(3):
-        c.rect((bx0, seat - 170 + k * 40, bx1, seat - 142 + k * 40), fill=(126, 84, 52), r=6)
-    senior_back(c, 620, seat - 10, 1.0, (60, 90, 130), hair=(170, 172, 180))
-    senior_back(c, 810, seat - 10, 0.94, (170, 60, 70), hair=(236, 236, 240), bun=True)
+    senior_back(c, 620, seat - 30, 1.0, (60, 90, 130), hair=(170, 172, 180))
+    senior_back(c, 810, seat - 30, 0.94, (170, 60, 70), hair=(236, 236, 240), bun=True)
     c.rect((bx0 - 10, seat - 12, bx1 + 10, seat + 16), fill=(110, 72, 44), r=6)
+    for k in range(3):
+        c.rect((bx0, seat - 150 + k * 40, bx1, seat - 122 + k * 40), fill=(126, 84, 52), r=6)
+    for x in (bx0 + 20, bx1 - 40):
+        c.rect((x, seat - 160, x + 20, seat), fill=(100, 66, 40), r=4)
     for x in (bx0 + 30, bx1 - 50):
         c.rect((x, seat + 16, x + 20, seat + 110), fill=(60, 60, 64))
     # падающие листья
@@ -319,7 +321,7 @@ def mug(c, cx, by, s, col, handle="right", inner=(90, 60, 40)):
 
 def scene_mugs(c, table_y=700):
     c.vgrad((0, 0, W, table_y), (248, 232, 222), (240, 214, 200))
-    window(c, (620, 170, 980, 520), sky0=(190, 220, 236), sky1=(236, 244, 248), frame=(255, 250, 244))
+    window(c, (640, 400, 960, 650), sky0=(190, 220, 236), sky1=(236, 244, 248), frame=(255, 250, 244))
     S.plant(c, 180, table_y - 4, 0.9, pot=(90, 140, 160), leaf=(70, 140, 100))
     c.rect((0, table_y, W, W), fill=(214, 170, 130))
     S.wood(c, (0, table_y, W, W), (220, 178, 138), (196, 150, 108), lines=7, seed=9)
@@ -528,7 +530,7 @@ def hero_power(c, box):
     c.shadow(box, r=28, alpha=60, blur=12, off=(0, 6))
     c.rect(box, fill=(26, 40, 84), r=28)
     cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    c.glow((cx - 220, cy - 180, cx + 220, cy + 180), (255, 214, 110), alpha=110, blur=50)
+    c.glow((cx - 200, cy - 110, cx + 200, cy + 110), (255, 214, 110), alpha=110, blur=36)
     I.ICONS["bulb"](c, cx, cy + 6, (y1 - y0) * 0.9, (70, 80, 110))
     I.ICONS["meter"](c, x0 + 150, cy + 10, 150, (236, 240, 248), bg=(26, 40, 84))
     I.ICONS["plug"](c, x1 - 150, cy + 10, 150, (236, 240, 248))
