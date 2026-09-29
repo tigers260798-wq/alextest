@@ -55,7 +55,7 @@ def bed(c, cx, cy, s=1.0, col=NAVY):
 def a():
     """Сетка выбора: мутюэль по возрасту 60+ / 70+ / 75+ / 80+."""
     c = C((245, 247, 251))
-    y = c.block("Mutuelle senior : tarifs 2026", "db", 66, 40, 1000, NAVY, max_lines=1)
+    y = c.block("Mutuelle senior : selon l'âge", "db", 66, 40, 1000, NAVY, max_lines=1)
     # баннер с иконками гарантий
     bx = (40, y + 24, 1040, y + 324)
     c.card(bx, fill=(226, 238, 252), r=30, sh_alpha=40, blur=10, off=(0, 5))
@@ -77,8 +77,8 @@ def a():
         c.text((cx, box[1] + 96), t, "db", 100, BLUE, anchor="mm")
         c.text((cx, box[1] + 178), "ans et +", "sb", 32, NAVY, anchor="mm")
         c.line([(tx + 40, box[1] + 222), (tx + tw - 40, box[1] + 222)], (226, 230, 238), 2)
-        c.rect((cx - 88, box[1] + 250, cx + 88, box[1] + 304), fill=(255, 240, 190), r=27)
-        c.text((cx, box[1] + 277), "? € / mois", "db", 26, (120, 70, 0), anchor="mm")
+        c.rect((cx - 104, box[1] + 250, cx + 104, box[1] + 304), fill=(255, 240, 190), r=27)
+        c.text((cx, box[1] + 277), "ce qui change", "db", 22, (120, 70, 0), anchor="mm")
         c.button(CTA, cx, box[3] - 62, size=24, fill=CORAL, padx=18, pady=14, arrow=False, shadow=False)
     c.save(f"{DOC}/a.png")
 
@@ -111,7 +111,7 @@ def b():
         c.ellipse((ox + 22, yy + 20, ox + 74, yy + 72), fill=(226, 236, 250))
         c.text((ox + 48, yy + 46), L, "db", 28, BLUE, anchor="mm")
         c.text((ox + 98, yy + 46), o, "sb", 34, (40, 44, 56), anchor="lm")
-    c.text((W / 2, 866), "La réponse et les tarifs 2026", "sb", 34, NAVY, anchor="mm")
+    c.text((W / 2, 866), "La réponse et ce qui change en 2026", "sb", 34, NAVY, anchor="mm")
     c.button(CTA, W / 2, 962, size=44, fill=CORAL, padx=60)
     c.save(f"{DOC}/b.png")
 
@@ -119,12 +119,12 @@ def b():
 def c_():
     """Сколько стоит: столбики тарифа по возрасту с «? €»."""
     c = C((250, 245, 236))
-    y = c.block("Mutuelle senior :\ncombien coûte-t-elle en 2026 ?", "db", 58, 40, 1000, NAVY, max_lines=2)
+    y = c.block("Mutuelle senior :\nce qui change à 60, 70, 75, 80 ans", "db", 58, 40, 1000, NAVY, max_lines=2)
     y = c.block("Le tarif change avec l'âge et le niveau de garanties", "s", 34, y + 6, 980, GRAY, max_lines=1)
     panel = (60, y + 30, 1020, 880)
     c.card(panel, fill=(255, 255, 255), r=30, sh_alpha=50, blur=14, off=(0, 6))
     base = panel[3] - 90
-    c.text((panel[0] + 40, panel[1] + 44), "€ / mois", "sb", 28, GRAY, anchor="lm")
+    c.text((panel[0] + 40, panel[1] + 44), "Tarif selon l'âge", "sb", 28, GRAY, anchor="lm")
     for k in range(4):
         gy = base - k * 110
         c.line([(panel[0] + 40, gy), (panel[2] - 40, gy)], (232, 234, 240), 2)
@@ -140,7 +140,7 @@ def c_():
         tag = (cx - 66, base - h - 74, cx + 66, base - h - 16)
         c.rect(tag, fill=(255, 238, 180), r=18)
         c.poly([(cx - 12, tag[3] - 1), (cx + 12, tag[3] - 1), (cx, tag[3] + 14)], (255, 238, 180))
-        c.text((cx, (tag[1] + tag[3]) / 2), "? €", "db", 34, (120, 70, 0), anchor="mm")
+        c.text((cx, (tag[1] + tag[3]) / 2), "?", "db", 34, (120, 70, 0), anchor="mm")
         c.text((cx, base + 44), lab, "sb", 32, NAVY, anchor="mm")
     c.line([(panel[0] + 40, base), (panel[2] - 40, base)], (120, 128, 146), 4)
     c.button(CTA, W / 2, 970, size=44, fill=CORAL, padx=60)

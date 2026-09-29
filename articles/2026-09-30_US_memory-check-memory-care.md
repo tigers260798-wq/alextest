@@ -1,6 +1,6 @@
 # The 5-Minute Memory Check Doctors Use After 60 – and What Memory Care Costs in 2026
 
-Forgetting a name or where the car keys ended up is part of getting older. Doctors separate that everyday forgetfulness from early warning signs with a check that takes about five minutes: drawing a clock and remembering three words. Below is how the check works and how it is scored, what the four main forms of dementia memory care look like – from assisted living with memory care to in-home care – what they cost in 2026, and what Medicare pays.
+Forgetting a name or where the car keys ended up is part of getting older. Doctors separate that everyday forgetfulness from early warning signs with a check that takes about five minutes: drawing a clock and remembering three words. Below: how the check works and is scored, the four main forms of dementia memory care – from assisted living with memory care to in-home care – their 2026 costs, and what Medicare pays.
 
 ## Clock drawing and 3 words: how the 5-minute memory check works
 
@@ -10,7 +10,7 @@ In clinics the check is known as the Mini-Cog. It has three steps:
 - The clock: on a blank circle, the person writes in all the numbers of a clock face and sets the hands to a given time, usually 10 past 11.
 - Recall: after the clock is finished, the doctor asks for the three words again, without hints.
 
-The clock step is the clever part. It tests planning, attention and spatial sense at once, and it keeps the three words from being silently rehearsed.
+The clock step tests planning, attention and spatial sense at once, and keeps the three words from being silently rehearsed.
 
 ## How the check is scored – and what it can and cannot show
 
@@ -21,11 +21,11 @@ The score runs from 0 to 5:
 
 A clock doctors score as normal has all twelve numbers in the right order and evenly spaced, with the hands pointing to the 11 and the 2. Two errors come up often: numbers bunched together on one side of the circle, and hands pointing to the 11 and the 10 – the "10" read literally instead of as ten minutes past.
 
-In the common scoring, a total of 3 to 5 makes significant memory problems less likely, while 0 to 2 usually leads to a longer evaluation. A low score is not a diagnosis. Poor sleep, low mood, hearing problems, low vitamin B12, thyroid problems and side effects of medicines can all pull results down, and several of these are treatable. A longer evaluation typically adds detailed memory tests, blood work and sometimes a brain scan.
+In the common scoring, a total of 3 to 5 makes significant memory problems less likely, while 0 to 2 usually leads to a longer evaluation. A low score is not a diagnosis. Poor sleep, low mood, hearing problems, low vitamin B12, thyroid problems and side effects of medicines can all pull results down, and several of these are treatable.
 
 ## Normal forgetfulness or something more: what doctors look for
 
-Doctors compare what happens occasionally with what is new and keeps repeating:
+Doctors compare occasional lapses with new, repeated ones:
 
 - Normal: forgetting a name and remembering it later. Worth a check: asking the same question again within minutes.
 - Normal: misplacing glasses now and then. Worth a check: putting things in unusual places, such as keys in the fridge.
@@ -58,7 +58,6 @@ When comparing the memory care facility cost per month, it pays to check what th
 - a flat rate versus care levels that rise as needs increase
 - one-time entrance or community fees
 - medication management, incontinence supplies and escorts to appointments
-- the rules for rate increases, which usually come once a year
 
 ## Medicare services for seniors: what is paid and what is not
 
@@ -68,7 +67,7 @@ Medicare services for seniors cover much of the medical side of memory loss, but
 - Partly covered: up to 100 days in a skilled nursing facility after a hospital stay of at least three days, with the first 20 days fully covered and a daily copay after that; part-time skilled care at home for people who are homebound.
 - Not covered: long-term custodial care – room, meals and daily help in assisted living, memory care or a nursing home, as well as adult day programs and in-home help with everyday tasks.
 
-Families also pay with long-term care insurance, veterans' benefits and, for people with limited income and savings, Medicaid, which in many states helps cover memory care, adult day programs and in-home care through waiver programs with their own rules and waiting lists. In Canada and the UK, care is organized and funded differently, and what a family pays depends on the province or local council and on income and savings.
+Families also pay with long-term care insurance, veterans' benefits and, for people with limited income and savings, Medicaid, which in many states helps cover memory care, adult day programs and in-home care through waiver programs with their own rules and waiting lists. In Canada and the UK, care is funded differently, and costs depend on the province or local council and on income and savings.
 
 The 5-minute check does not replace a full evaluation, but it gives families and doctors a starting point and more time to compare care options calmly.
 
@@ -82,7 +81,7 @@ The 5-minute check does not replace a full evaluation, but it gives families and
 - Тема для провайдера: The 5-minute memory check after 60 (clock drawing + 3 words, Mini-Cog): how it works and is scored, normal vs abnormal clock, normal forgetfulness vs warning signs, four forms of dementia memory care (assisted living, nursing home, in-home, adult day), memory care cost per month in 2026 by state, what Medicare pays
 - Вертикаль: психотесты · 60+: тест памяти → memory care / уход при деменции · угол: Проверка памяти за 5 минут, как у врача после 60 (часы + 3 слова): что показывает результат — и сколько стоит memory care в 2026 по штатам
 - Подход: угол первым · провайдер: IRONFLI · статус: предложение, волна следующая (30.09)
-- Объём: 1035 слов
+- Объём: 986 слов
 
 ### Структура
 

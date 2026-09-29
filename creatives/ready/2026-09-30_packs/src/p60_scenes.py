@@ -439,7 +439,7 @@ def hero_bath_crop(c, box):
     t = _C((255, 255, 255))
     bathroom(t)
     x0, y0, x1, y1 = box
-    crop = t.im.crop((t.s(430), t.s(140), t.s(1080), t.s(140 + (650 * (y1 - y0) / (x1 - x0)))))
+    crop = t.im.crop((t.s(420), t.s(330), t.s(1080), t.s(330 + (660 * (y1 - y0) / (x1 - x0)))))
     crop = crop.transpose(Image.FLIP_LEFT_RIGHT).resize((c.s(x1 - x0), c.s(y1 - y0)), Image.LANCZOS)
     mask = Image.new("L", crop.size, 0)
     ImageDraw.Draw(mask).rounded_rectangle((0, 0, crop.width - 1, crop.height - 1), c.s(28), fill=255)
@@ -456,12 +456,12 @@ def hero_cards(c, box):
     cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
     I.card(c, cx - 70, cy + 6, 330, (236, 196, 90), chip=(250, 236, 180), ang=-10)
     I.card(c, cx + 80, cy - 4, 330, (240, 244, 250), chip=(236, 196, 90), ang=8)
-    for k in range(4):
-        pass
-    c.text((x0 + 40, y1 - 40), "60+  ·  70+  ·  80+", "sb", 30, (236, 196, 90), anchor="ls")
+    for k in range(5):
+        c.circle(x0 + 60 + k * 26, y0 + 50, 5, fill=(236, 196, 90), alpha=160)
+        c.circle(x1 - 60 - k * 26, y1 - 50, 5, fill=(236, 196, 90), alpha=160)
 
 
-def hero_camo(c, box):
+def hero_camo(c, box, label="Kredyt dla służb mundurowych"):
     """Силовики: камуфляжная полоса, фуражка и ботинки без знаков."""
     x0, y0, x1, y1 = box
     c.shadow(box, r=28, alpha=60, blur=12, off=(0, 6))
@@ -469,8 +469,8 @@ def hero_camo(c, box):
     pts = [(x0, y0), (x1, y0), (x1, y1), (x0, y1)]
     camo(c, pts, (104, 112, 72), [(70, 80, 50), (140, 130, 90), (60, 56, 40), (120, 124, 84)], seed=21, n=90, rmin=20, rmax=60, rr=r)
     cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    c.rect((cx - 300, cy - 70, cx + 300, cy + 70), fill=(250, 246, 234), r=35, alpha=240)
-    c.text((cx, cy), "Oferty banków 2026", "db", 46, (60, 66, 40), anchor="mm")
+    c.rect((cx - 340, cy - 60, cx + 340, cy + 60), fill=(250, 246, 234), r=30, alpha=240)
+    c.text((cx, cy), label, "db", 42, (60, 66, 40), anchor="mm")
 
 
 def hero_robot(c, box):

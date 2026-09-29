@@ -1,33 +1,34 @@
 [
-  {
-    "letter": "a",
-    "file": "cr/packs/NT-mutuelle-retraites-fr-2026-09-30/a.png",
-    "concept": "сетка выбора по возрасту (60+/70+/75+/80+) под ключи «Plus de 60/70/75 ans prix»; баннер гарантий",
-    "text": "Mutuelle senior : tarifs 2026 · Optique · Dentaire · Audition · Hospitalisation · Choisissez une tranche d'âge : 60 / 70 / 75 / 80 ans et + · ? € / mois · En savoir plus",
-    "cta": "En savoir plus",
-    "note": "цен не показываем — только «? € / mois»"
-  },
-  {
-    "letter": "b",
-    "file": "cr/packs/NT-mutuelle-retraites-fr-2026-09-30/b.png",
-    "concept": "карточка-опросник (квиз 1/3, 4 ответа) — угол «2 условия» как вопрос",
-    "text": "Mutuelle à la retraite · Le quiz que peu de gens réussissent · QUIZ 2026 · Question 1 / 3 · Pour demander une mutuelle à la retraite, combien de conditions faut-il remplir ? · A Une seule · B Deux · C Trois · D Aucune · La réponse et les tarifs 2026",
-    "cta": "En savoir plus",
-    "note": "сами условия на крео не названы — ответ в статье"
-  },
-  {
-    "letter": "c",
-    "file": "cr/packs/NT-mutuelle-retraites-fr-2026-09-30/c.png",
-    "concept": "«сколько стоит»: столбики тарифа по возрасту 60/70/75/80 ans с «? €»",
-    "text": "Mutuelle senior : combien coûte-t-elle en 2026 ? · Le tarif change avec l'âge et le niveau de garanties · € / mois · ? € · 60 ans · 70 ans · 75 ans · 80 ans",
-    "cta": "En savoir plus"
-  },
-  {
-    "letter": "d",
-    "file": "cr/packs/NT-mutuelle-retraites-fr-2026-09-30/d.png",
-    "concept": "сцена-иллюстрация: на столе бланк «Demande de mutuelle» с двумя пустыми условиями, очки, чай, ручка",
-    "text": "Mutuelle à la retraite : 2 conditions à remplir avant de faire la demande · Ce que peu de gens savent en 2026 · DEMANDE DE MUTUELLE · RETRAITE · 2026 · Condition n° 1 ? · Condition n° 2 ?",
-    "cta": "En savoir plus",
-    "note": "угол дословно в заголовке"
-  }
+ {
+  "letter": "a",
+  "file": "cr/packs/NT-mutuelle-retraites-fr-2026-09-30/a.png",
+  "concept": "сетка выбора по возрасту (60+/70+/75+/80+) под ключи «Plus de 60/70/75 ans prix»; баннер гарантий",
+  "text": "Mutuelle senior : selon l'âge · Optique · Dentaire · Audition · Hospitalisation · Choisissez une tranche d'âge : 60 / 70 / 75 / 80 ans et + · ce qui change · En savoir plus",
+  "cta": "En savoir plus",
+  "note": "цен не показываем — только «? € / mois» · 29.09 главный: убраны «? € / mois» и «tarifs 2026» — в статье нет цен в евро."
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/NT-mutuelle-retraites-fr-2026-09-30/b.png",
+  "concept": "карточка-опросник (квиз 1/3, 4 ответа) — угол «2 условия» как вопрос",
+  "text": "Mutuelle à la retraite · Le quiz que peu de gens réussissent · QUIZ 2026 · Question 1 / 3 · Pour demander une mutuelle à la retraite, combien de conditions faut-il remplir ? · A Une seule · B Deux · C Trois · D Aucune · La réponse et ce qui change en 2026",
+  "cta": "En savoir plus",
+  "note": "сами условия на крео не названы — ответ в статье"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/NT-mutuelle-retraites-fr-2026-09-30/c.png",
+  "concept": "«сколько стоит»: столбики тарифа по возрасту 60/70/75/80 ans с «? €»",
+  "text": "Mutuelle senior : ce qui change à 60, 70, 75, 80 ans · Le tarif change avec l'âge et le niveau de garanties · Tarif selon l'âge (?) · En savoir plus",
+  "cta": "En savoir plus",
+  "note": "29.09 главный: убраны «? € / mois» и «tarifs 2026» — в статье нет цен в евро."
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/NT-mutuelle-retraites-fr-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация: на столе бланк «Demande de mutuelle» с двумя пустыми условиями, очки, чай, ручка",
+  "text": "Mutuelle à la retraite : 2 conditions à remplir avant de faire la demande · Ce que peu de gens savent en 2026 · DEMANDE DE MUTUELLE · RETRAITE · 2026 · Condition n° 1 ? · Condition n° 2 ?",
+  "cta": "En savoir plus",
+  "note": "угол дословно в заголовке"
+ }
 ]

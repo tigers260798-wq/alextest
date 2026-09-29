@@ -214,7 +214,7 @@ def d():
     card = (60, 36, 1020, 330)
     c.card(card, fill=(255, 255, 255), r=30, sh_alpha=70, blur=16, off=(0, 8))
     y = c.block("Welche Rehaklinik ist empfehlenswert?", "db", 50, 64, 900, FOREST, max_lines=2)
-    c.block("Orthopädie · Psychosomatik · Kardiologie\nKliniken im Vergleich 2026", "s", 34, y + 8, 900, INK, max_lines=2)
+    c.block("Orthopädie · Psychosomatik · Kardiologie\nSo vergleicht man Rehakliniken 2026", "s", 34, y + 8, 900, INK, max_lines=2)
     c.button(CTA, W / 2, 990, size=44, fill=BTN, padx=60)
     c.save(f"{DOC}/d.png")
 

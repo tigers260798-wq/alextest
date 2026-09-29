@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-loans-teachers-fr-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — «стикеры» со скотчем на школьной доске",
+  "text": "Prêt enseignant 2026 : quel projet ? / Ce que proposent les banques, projet par projet / Voiture / Travaux / Mutation / Projet perso (у каждой «En savoir plus»)",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-loans-teachers-fr-2026-09-30/b.png",
+  "concept": "карточка-опросник — симуляция на доске (ключи «casden simulation», без бренда на картинке); только срок, без сумм и ставок",
+  "text": "Simulation de prêt enseignant / Prêts pour les enseignants : ce que proposent les banques en 2026 / SIMULATION / Étape 1 sur 3 / Sur quelle durée ? / 12 mois / 36 mois / 60 mois / Jusqu'à 120 mois",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-loans-teachers-fr-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — таблица: обычный банк / предложение для учителей",
+  "text": "Banque classique ou offre enseignants ? / Ce qui change vraiment en 2026 / Banque classique vs Offre enseignants / Pour qui: tous les clients / enseignants et personnels de l'éducation · Adhésion: non / souvent une part sociale · Durée: selon la banque / jusqu'à 120 mois · Conditions: standard / ? / La différence que peu de profs connaissent",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-loans-teachers-fr-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — формула рабочих кредитных крео владельца на школьной доске; на столе тетради, яблоко, очки, красная ручка",
+  "text": "PRÊTS POUR LES ENSEIGNANTS 2026 : CE QUE LES BANQUES NE DISENT PAS",
+  "cta": "En savoir plus"
+ }
+]

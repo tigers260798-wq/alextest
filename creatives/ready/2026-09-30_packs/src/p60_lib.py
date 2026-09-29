@@ -317,7 +317,7 @@ class C:
         if grad:
             # глянцевая кнопка: верх светлее
             self.rect(box, fill=grad[1], r=rr, outline=outline, width=4 if outline else 0)
-            self.rect((box[0] + 5, box[1] + 5, box[2] - 5, cy), fill=grad[0], r=max(1, rr - 5), alpha=150)
+            self.rect((box[0] + 14, box[1] + 6, box[2] - 14, cy - 2), fill=grad[0], r=max(1, (cy - 2 - box[1] - 6) / 2), alpha=80)
         else:
             self.rect(box, fill=fill, r=rr, outline=outline, width=3 if outline else 0)
         self.text((cx, cy), t, name, size, color, anchor="mm")

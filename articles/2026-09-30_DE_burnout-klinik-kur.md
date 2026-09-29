@@ -29,8 +29,8 @@ Teil 2: Das Leben insgesamt
 Gezählt wird so: nie 0 Punkte, manchmal 1, oft 2, fast immer 3. Die Fragen 1 bis 6 und 7 bis 12 werden getrennt addiert, jede Hälfte ergibt 0 bis 18 Punkte.
 
 - Hoch in der ersten Hälfte, niedrig in der zweiten: Das Muster passt eher zu einer Erschöpfung, die an die Arbeit gebunden ist.
-- Hoch in beiden Hälften: Die Beschwerden reichen über den Job hinaus. Ärzte prüfen dann, ob eine Depression dahintersteckt.
-- Mehrere Antworten „oft“ oder „fast immer“ in der zweiten Hälfte, und das länger als zwei Wochen: ein klarer Anlass für ein Gespräch in der Hausarztpraxis.
+- Hoch in beiden Hälften: Die Beschwerden reichen über den Job hinaus, Ärzte prüfen dann, ob eine Depression dahintersteckt.
+- Mehrere Antworten „oft“ oder „fast immer“ in der zweiten Hälfte, länger als zwei Wochen: Anlass für ein Gespräch in der Hausarztpraxis.
 
 Die Punktzahl ist keine Diagnose. Auch Schilddrüsenprobleme, Eisenmangel oder Schlafstörungen machen ähnlich müde, deshalb gehören zum ersten Termin meist Blutwerte.
 
@@ -45,19 +45,19 @@ Die Grenze ist fließend: Ein langes Burnout kann in eine Depression übergehen.
 
 ## Klinik, Tagesklinik oder Kur: der Unterschied
 
-Für die Behandlung von Erschöpfung und Depression gibt es vier Wege, die oft verwechselt werden:
+Vier Wege, die oft verwechselt werden:
 
-- Akutklinik: Eine Klinik für Psychosomatik im Krankenhaus nimmt Patienten auf, wenn ambulante Hilfe nicht reicht. Nötig ist eine Einweisung vom Arzt. Die Kosten trägt die Krankenkasse, der Eigenanteil liegt bei 10 Euro pro Tag für höchstens 28 Tage im Jahr.
+- Akutklinik: eine Klinik für Psychosomatik im Krankenhaus, wenn ambulante Hilfe nicht reicht, mit ärztlicher Einweisung. Die Krankenkasse zahlt, der Eigenanteil liegt bei 10 Euro pro Tag für höchstens 28 Tage im Jahr.
 - Tagesklinik: Behandlung von morgens bis nachmittags, die Nacht zu Hause – passend, wenn der Alltag abends noch zu bewältigen ist, oft auch nach einem Klinikaufenthalt.
-- Reha: Wer nach „Reha Klinik Depression“ sucht, landet meist bei Einrichtungen der psychosomatischen Rehabilitation. Dort gibt es Einzel- und Gruppentherapie, Bewegung und Entspannungsverfahren. Eine psychosomatische Reha dauert oft rund fünf Wochen, bei anderen Krankheitsbildern sind drei Wochen üblich.
+- Reha: Wer nach „Reha Klinik Depression“ sucht, landet meist bei Einrichtungen der psychosomatischen Rehabilitation. Dort gibt es Einzel- und Gruppentherapie, Bewegung und Entspannungsverfahren. Eine psychosomatische Reha dauert oft rund fünf Wochen.
 - Kur: Die Vorsorgekur soll verhindern, dass aus Erschöpfung eine Krankheit wird. Angebote unter dem Stichwort „Kurklinik Psychosomatik“ haben ein ähnliches, meist kürzeres Programm, auch als Mutter- oder Vater-Kind-Kur.
 
 ## Kur beantragen wegen Erschöpfung: Wer zahlt und wie der Antrag läuft
 
 In Deutschland zahlen zwei Stellen, je nach Lebenslage:
 
-- Die Rentenversicherung ist in der Regel für Berufstätige zuständig, wenn die Arbeitsfähigkeit gefährdet ist. Der Grundsatz lautet: Reha vor Rente.
-- Die Krankenkasse übernimmt Vorsorgekuren und die Reha für Menschen, die nicht mehr arbeiten, etwa Rentner, sowie für Kinder und Jugendliche.
+- Die Rentenversicherung ist in der Regel für Berufstätige zuständig, wenn die Arbeitsfähigkeit gefährdet ist – nach dem Grundsatz Reha vor Rente.
+- Die Krankenkasse übernimmt Vorsorgekuren und die Reha für Menschen, die nicht mehr arbeiten, etwa Rentner.
 
 Der Antrag beginnt in der Arztpraxis: Hausarzt oder Facharzt schreibt einen Befundbericht, dazu kommt das Antragsformular. Landet der Antrag bei der falschen Stelle, wird er innerhalb von 14 Tagen weitergeleitet.
 
@@ -65,17 +65,17 @@ Wichtig zu wissen:
 
 - Bei stationärer Reha fallen meist 10 Euro Zuzahlung pro Tag an. Bei geringem Einkommen ist eine Befreiung möglich.
 - Eine neue Reha gibt es in der Regel erst vier Jahre nach der letzten, außer sie ist medizinisch dringend.
-- Wird der Antrag abgelehnt, bleibt ein Monat Zeit für einen Widerspruch. Dafür lohnt eine ausführlichere Begründung vom Arzt.
+- Nach einer Ablehnung bleibt ein Monat für einen Widerspruch, am besten mit ausführlicher ärztlicher Begründung.
 
 In Österreich ersetzt ein Vorsorgeprogramm mit Modulen, auch zur mentalen Gesundheit, die klassische Kur; der Eigenanteil hängt vom Einkommen ab und liegt 2026 bei rund 11 bis 27 Euro pro Tag. In der Schweiz braucht eine Reha vorab eine Kostengutsprache der Krankenversicherung.
 
 ## Welche psychosomatische Klinik ist empfehlenswert?
 
-Ranglisten über die besten Rehakliniken in Deutschland gibt es viele, für die Wahl zählen aber andere Punkte. Im Antrag darf eine Wunschklinik genannt werden, und dieser Wunsch darf nur mit gutem Grund abgelehnt werden. Darauf achten Ärzte und Patientenberater:
+Ranglisten über die besten Rehakliniken in Deutschland gibt es viele, für die Wahl zählen aber andere Punkte. Im Antrag darf eine Wunschklinik genannt werden, und dieser Wunsch darf nur mit gutem Grund abgelehnt werden. Worauf es ankommt:
 
 - Schwerpunkt: Behandelt die Klinik Erschöpfung, Depression und Angst – oder vor allem andere Krankheitsbilder?
 - Therapieplan: Wie viele Einzelgespräche gibt es pro Woche, wie groß sind die Gruppen?
-- Anerkennung: Arbeitet die Klinik mit Krankenkasse und Rentenversicherung zusammen, und hat sie ein geprüftes Qualitätsmanagement?
+- Anerkennung: Ist die Klinik bei Krankenkasse und Rentenversicherung zugelassen und qualitätsgeprüft?
 - Nachsorge: Gibt es Nachsorgegruppen oder Online-Nachsorge für die Zeit danach?
 
 Privatkliniken nehmen oft schneller auf, verlangen von gesetzlich Versicherten aber meist Selbstzahlung, wenn die Kasse nicht vorher zugestimmt hat.
@@ -94,7 +94,7 @@ In akuten Krisen gibt es rund um die Uhr kostenlose Telefonberatung: in Deutschl
 - Тема для провайдера: Burnout oder Depression: 12 Fragen aus dem Arztgespräch, der Unterschied, psychosomatische Klinik / Tagesklinik / Reha / Kur – wer zahlt und wie der Antrag läuft
 - Вертикаль: психотесты · выгорание → психосоматическая клиника / Reha / Kur · угол: Выгорание или депрессия? Тест из 12 вопросов, по которому врачи различают одно и другое, — и когда больничная касса / пенсионный фонд оплачивают психосоматическую клинику или Kur
 - Подход: ключ первым · провайдер: IRONFLI · статус: предложение, волна следующая (30.09)
-- Объём: 1030 слов
+- Объём: 988 слов
 
 ### Структура
 
@@ -140,6 +140,7 @@ new_tests/psy-burnout-de-0929; трекер get_performance_rows groupBy=keyword
 - сверить до залива: телефоны кризисной помощи в конце статьи (DE 0800 111 0 111 / 0800 111 0 222, AT 142, CH 143) — по Википедии, официальные сайты закрыты прокси
 - Meta: здоровье — в тексте нет «Sie/Ihr» (проверено скриптом); домен может получить категорию Health & wellness — урезание событий; крео b (опросник) — первый подозреваемый при отклонении
 - AT/CH: клиника-ключи там не измерены — идут в общем гео-наборе
+- пересечение: те же 2 платящих ключа («Welche Psychosomatische Klinik ist Empfehlenswert», «Die Besten Rehakliniken in Deutschland») стоят в пакете article_drafts/NT-rehab-clinic-de-2026-09-30 (статья «Die besten Rehakliniken in Deutschland…») — выплату сравнивать по статьям, не по ключам; решение главного, лить ли обе 30.09
 
 ### Пост для РК 1
 

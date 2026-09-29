@@ -79,11 +79,11 @@ def grid(P, t):
                 c.block(lab, "sb", 28, top + th * 0.5, tw - 26, p["tile_ink"], cx=cx, max_lines=2, gap=1.05)
             else:
                 big = t.get("big_size", 78)
-                c.text((cx, top + th * 0.36), lab, "db", big, p["acc"], anchor="mm")
+                c.text((cx, top + th * (0.36 if t.get("tile_sub") else 0.42)), lab, "db", big, p["acc"], anchor="mm")
                 if t.get("tile_sub"):
                     c.block(t["tile_sub"], "s", 24, top + th * 0.56, tw - 30, p["tile_ink"], cx=cx, max_lines=2)
             c.pill(cta, cx, top + th - 38, size=20, fill=p["btn"], padx=16, pady=10)
-    elif lay == "list4":
+    elif lay == "list4":  # noqa
         hero_h = t.get("hero_h", 300)
         hb = (60, y + 20, 1020, y + 20 + hero_h)
         t["hero"](c, hb)
@@ -147,8 +147,19 @@ def quiz(P, t):
     if lay in ("card", "card2x2", "calc"):
         if p.get("chalk"):
             S.classroom_board_bg(c)
-        y = header(c, t, col=p["ink"], sub_col=p["sub"], size=t.get("size", 60), t2_col=p.get("acc"), hl=p.get("hl"))
-        box = (70, y + 26, 1010, 900)
+        y = header(c, t, col=p["ink"], sub_col=p["sub"], size=t.get("size", 60), t2_col=p.get("t2", p.get("acc")), hl=p.get("hl"))
+        # высота карточки по содержимому, карточка по центру свободного места
+        qf = c.font("db", c.fit(t["q"], "db", 820, 3, t.get("q_size", 44)))
+        q_h = len(c.wrap(t["q"], qf, 840)) * c.lh("db", qf.size / c.K, 1.12)
+        n = len(t["opts"])
+        if lay == "card":
+            opts_h = n * 80 + (n - 1) * 14
+        else:
+            opts_h = 2 * 120 + 20
+        need = 40 + (180 if lay == "calc" else 96) + q_h + 16 + opts_h + 44
+        free_top, free_bot = y + 26, 900
+        top = free_top + max(0, (free_bot - free_top - need) / 2)
+        box = (70, top, 1010, min(free_bot, top + need))
         c.card(box, r=36, sh_alpha=120, blur=22)
         x0, x1 = box[0] + 50, box[2] - 50
         yy = box[1] + 40
@@ -167,7 +178,7 @@ def quiz(P, t):
                     c.text((sx[k], yy + 34), str(k + 1), "db", 28, WH, anchor="mm")
                 c.text((sx[k], yy + 92), lab, "sb", 26, (60, 66, 76), anchor="mm")
             yy += 130
-            icon(c, "calc", x1 - 30, box[1] - 60, 120, p["acc"], bg=p["bg"])
+            pass
         c.text((x0, yy), t["tag"], "sb", 26, p["acc"])
         c.text((x1, yy), t["step"], "s", 28, (110, 116, 124), anchor="ra")
         if lay != "calc":
@@ -258,13 +269,22 @@ def compare(P, t):
             c.block(head, "db", hs, box[1] + 46 - hs * 0.6, box[2] - box[0] - 40, WH, cx=(box[0] + box[2]) / 2, max_lines=1)
             c.circle((box[0] + box[2]) / 2, box[1] + 175, 62, fill=WH)
             icon(c, ic, (box[0] + box[2]) / 2, box[1] + 175, 96, col)
-        ry = top + 270
-        rh = (bot - ry - 20) / len(t["rows"])
-        for lab, lt, rt in t["rows"]:
+        ry = top + 268
+        cw = L[2] - L[0] - 72
+        for sz in range(34, 24, -1):
+            hs = []
+            for lab, lt, rt in t["rows"]:
+                nl = max(len(c.wrap(lt, c.font("sb", sz), cw)), len(c.wrap(rt, c.font("sb", sz), cw)))
+                hs.append(30 + nl * c.lh("sb", sz, 1.05))
+            if ry + sum(hs) + 16 * (len(hs) - 1) <= bot - 16:
+                break
+        spare = (bot - 16 - ry - sum(hs)) / max(1, len(hs) - 1)
+        spare = min(spare, 40)
+        for (lab, lt, rt), h in zip(t["rows"], hs):
             for box, txt, (_, _, col) in ((L, lt, t["cols"][0]), (R, rt, t["cols"][1])):
                 c.text((box[0] + 36, ry), lab, "sb", 22, col)
-                c.block(txt, "sb", 34, ry + 32, box[2] - box[0] - 72, (36, 38, 44), align="left", x=box[0] + 36, max_lines=2, gap=1.05)
-            ry += rh
+                c.block(txt, "sb", sz, ry + 30, cw, (36, 38, 44), align="left", x=box[0] + 36, max_lines=2, gap=1.05)
+            ry += h + spare
         c.circle(W / 2, top + 175, 44, fill=WH, outline=(200, 205, 212), width=3)
         c.text((W / 2, top + 175), t.get("vs", "vs"), "db", 28, (90, 96, 106), anchor="mm")
         if t.get("foot"):
@@ -282,17 +302,17 @@ def compare(P, t):
             c.circle(cx, band + 130, 88, fill=WH)
             icon(c, ic, cx, band + 130, 124, col)
             c.block(head, "db", 38, band + 240, 470, WH, cx=cx, max_lines=1)
-            yy = band + 320
+            yy = band + 330
             for r_ in rows:
-                x0 = cx - 215
-                c.circle(x0 + 16, yy + 20, 16, fill=WH, alpha=235)
+                x0 = cx - 220
+                c.circle(x0 + 18, yy + 21, 18, fill=WH, alpha=235)
                 if r_.endswith("?"):
-                    c.text((x0 + 16, yy + 20), "?", "db", 22, col, anchor="mm")
+                    c.text((x0 + 18, yy + 21), "?", "db", 24, col, anchor="mm")
                 else:
-                    c.check(x0 + 7, yy + 11, 18, col, 4)
-                c.block(r_, "sb", 31, yy, 400, WH, align="left", x=x0 + 46, max_lines=2, gap=1.05)
-                nl = len(c.wrap(r_, c.font("sb", 31), 400))
-                yy += 40 * nl + 30
+                    c.check(x0 + 8, yy + 12, 20, col, 4)
+                c.block(r_, "sb", 33, yy, 400, WH, align="left", x=x0 + 50, max_lines=2, gap=1.05)
+                nl = len(c.wrap(r_, c.font("sb", 33), 400))
+                yy += 42 * nl + 44
         c.circle(W / 2, band + 130, 50, fill=p.get("vs_bg", WH), outline=(210, 214, 220), width=3)
         c.text((W / 2, band + 130), t.get("vs", "vs"), "db", 32, p.get("vs_ink", (60, 64, 72)), anchor="mm")
         c.button(cta, W / 2, 985, size=42, fill=p["btn"], color=p.get("btn_ink", WH))
