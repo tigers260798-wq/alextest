@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/2ae27d96eef683e2c35a2ae8fc633b71",
+  "concept": "сетка выбора (fake interactivity) — 6 плиток 3×2 = специальности из статьи, у каждой «Más información»; без зарплаты, без «te contratamos»; опора: раздел «Del curso de carretillero al sector sociosanitario: especialidades habituales» + лид (gratuitos)",
+  "text": "Cursos gratuitos con compromiso de contratación / Especialidades habituales en 2026 – elige un área: / Carretillero y almacén / Atención sociosanitaria / Hostelería y cocina / Limpieza profesional / Soldadura y electricidad / Atención al cliente (у каждой «Más información») / кнопка «Más información →»",
+  "cta": "Más información"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/8361bc9f1051f64c476c4b2c3a69b9ce",
+  "concept": "карточка-опросник — тёмно-синий фон, тест 2×2; вопрос о правиле программы, не о зрителе; регионы названы как факт статьи, не локация зрителя; опора: раздел «Cuánto se contrata: del 40 % al 50 % de los alumnos» (Madrid ≥ 40 %, Castilla y León ≥ 50 %)",
+  "text": "Cursos con compromiso de contratación: / ¿cuánto se contrata? / TEST / Pregunta 1 de 3 / En Madrid y Castilla y León, ¿a qué parte de los alumnos se comprometen a contratar las empresas? / Al 10 % / Del 40 % al 50 % / Al 100 % / No lo sé / кнопка «Más información →»",
+  "cta": "Más información"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/cd33448f5db3c1dbc7a08d62f1df8f19",
+  "concept": "сколько стоит / сравнение — таблица обычный курс vs с compromiso; прямо сказано «no asegurada» — без обещания работы; опора: раздел «Qué es un curso con compromiso de contratación» (порядок меняется; не plaza asegurada, «probabilidad mucho más alta que en un curso normal») + последний абзац (gratuitos, fondos públicos)",
+  "text": "¿Curso normal o con compromiso de contratación? / Qué cambia para el alumno / CURSO NORMAL vs CON COMPROMISO / Al terminar: un certificado / certificado y contratos para parte del grupo · Empleo: se busca después / empresa comprometida antes de empezar · Contrato: probabilidad habitual / probabilidad mucho más alta, no asegurada / Gratis para el alumno: con fondos públicos / кнопка «Más información →»",
+  "cta": "Más información"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/5e652e0929e9867c24535b35e9352d27",
+  "concept": "сцена-иллюстрация — учебный склад: стеллажи, погрузчик с учеником (каска, жилет), наставник с планшетом; лиц нет; карточка в рамке; опора: заголовок и лид статьи + раздел «Del curso de carretillero…» (logística y almacén) + «El certificado de profesionalidad» (prácticas en empresa)",
+  "text": "FORMACIÓN PARA EL EMPLEO 2026 / Cursos gratuitos con compromiso de contratación: cómo funcionan / Porcentajes, especialidades y quién puede apuntarse / кнопка «Más información →»",
+  "cta": "Más información"
+ }
+]

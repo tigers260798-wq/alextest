@@ -135,6 +135,24 @@ Die 603-Euro-Grenze, was mit der Rente passiert und welche Tätigkeiten passen �
 Лимит 603 евро, что будет с пенсией и какие занятия подходят — коротко.
 Зацепка: Minijob in Rente: wie viel?
 
+### Пост для РК 2
+
+```
+Kürzt ein Minijob die Rente? Für die meisten Ruheständler nicht – seit 2023 auch bei vorgezogener Altersrente ↓
+Was bei der Erwerbsminderungsrente anders ist.
+```
+Перевод: Урезает ли мини-джоб пенсию? Для большинства пенсионеров нет — с 2023 года и при досрочной пенсии по старости ↓
+Что иначе при пенсии по нетрудоспособности.
+Зацепка: Kürzt der Minijob die Rente?
+
+### Пост для РК 3
+
+```
+Büro, Arztpraxis, Privathaushalt, Einzelhandel: 8 typische Minijobs im Ruhestand – und 4 Fragen vor dem Start ↓
+```
+Перевод: Офис, врачебный кабинет, частный дом, розница: 8 типичных мини-джобов на пенсии — и 4 вопроса перед стартом ↓
+Зацепка: 8 typische Minijobs im Ruhestand
+
 ### Заметки
 
 Гипотеза владельца 29.09, исключение из заморозки новых джобсов. Статья — справочник по правилам, без вакансий и обещаний зарплаты; «примеры вакансий» даны как типы занятости (раздел 3). Платящие ключи — наши DE по клинингу, после обрыва 19.09 платят. «Reinigung Kindergarten» ($0.41) не взят — это шаблон «школы/сады», который у IRONFLI не платит с 19.09. Ключи с «in der Nähe» (самый большой по выручке — «Reinigungsfirmen in der Nähe», $0.53) не взяты: в тексте это обращение к месту. VISYMO — можно второй волной (locale de_DE), статью провайдер пишет сам. Старых крео потока нет — нужны новые под статью.

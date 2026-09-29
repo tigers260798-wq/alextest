@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/e66c30da55d45a487ef98b83bff35cc5",
+  "concept": "сетка выбора (fake interactivity) — 2×2 мест со скидкой из статьи, у каждой «Dowiedz się więcej»; без орла, герба и логотипов; опора: раздел «Gdzie działa zniżka dla emerytów i rencistów» (kolej 37% na 2 przejazdy, muzea/teatry/kina/baseny, gminne karty seniora)",
+  "text": "Legitymacja emeryta w telefonie: / gdzie działa zniżka? / Kolej: 37% na 2 przejazdy w roku / Muzea, teatry i kina / Baseny / Gminne karty seniora (у каждой «Dowiedz się więcej») / кнопка «Dowiedz się więcej →»",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/560695c473f1192cd11d54a94718dae8",
+  "concept": "карточка-опросник — кремовый фон, тест 2×2 о правиле скидки; «dla emerytów» — тема, не вопрос о зрителе; опора: раздел «Gdzie działa zniżka…» (Kolej: ustawowa zniżka 37% na dwa przejazdy w roku kalendarzowym)",
+  "text": "Ulga 37% na kolej dla emerytów: / ile przejazdów w roku? / QUIZ / Pytanie 1 z 3 / Na ile przejazdów pociągiem w roku kalendarzowym przysługuje ustawowa ulga 37%? / 1 przejazd / 2 przejazdy / 6 przejazdów / Bez limitu / кнопка «Dowiedz się więcej →»",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/3f1d44b11be566987489a1432c2d32d7",
+  "concept": "сколько стоит / сравнение — две колонки бумажная vs в телефоне; mObywatel — только словом в подзаголовке как название приложения, без логотипа; опора: раздел «Czym jest cyfrowa legitymacja emeryta-rencisty» (те же данные, zawsze pod ręką, papierową zachować jako zapas) + «Gdzie działa zniżka…» (upewnić się, że kasa akceptuje) + итог (kilka minut)",
+  "text": "Legitymacja papierowa czy w telefonie? / Co daje wersja cyfrowa w aplikacji mObywatel / PAPIEROWA vs W TELEFONIE / GDZIE: w portfelu / w aplikacji w telefonie · NA CO DZIEŃ: łatwo zgubić lub zniszczyć / zawsze pod ręką · WARTO: zachować jako zapas / sprawdzić, czy kasa ją akceptuje / Dodanie legitymacji: kilka minut pracy / кнопка «Dowiedz się więcej →»",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/a1c76f429eb06332396f45bac3bcd911",
+  "concept": "сцена-иллюстрация — рука с телефоном: нейтральный макет карточки без орла, флага и логотипов, серые строки вместо данных; слева 3 шага из статьи; опора: разделы «mObywatel – jak założyć aplikację krok po kroku» и «Jak dodać legitymację emeryta-rencisty» (3 шага)",
+  "text": "Legitymacja emeryta w telefonie – jak ją dodać? / Krok po kroku i gdzie pokazać ją przy zniżkach / шаги: 1 Pobierz aplikację / 2 Potwierdź tożsamość / 3 Dodaj legitymację; на экране: Dokumenty / LEGITYMACJA EMERYTA-RENCISTY / кнопка «Dowiedz się więcej →»",
+  "cta": "Dowiedz się więcej"
+ }
+]

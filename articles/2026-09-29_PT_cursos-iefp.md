@@ -123,11 +123,21 @@ Antes de começar, confirme o horário e a duração total, o certificado que se
     "text": "Curso gratuito com certificado e, em muitos casos, bolsa, alimentação e transporte.\nComo funcionam os cursos IEFP em 2026 →",
     "ru": "Бесплатный курс с сертификатом, а во многих случаях — стипендия, питание и проезд.\nКак устроены курсы IEFP в 2026 →",
     "hook": "curso gratuito com bolsa"
+  },
+  "РК 2": {
+    "text": "Formação certificada ou certificado de participação? O que distingue um curso IEFP de muitos cursos online gratuitos ↓",
+    "ru": "Сертифицированное обучение или сертификат об участии? Чем курс IEFP отличается от многих бесплатных онлайн-курсов ↓",
+    "hook": "Nem todo o certificado conta"
+  },
+  "РК 3": {
+    "text": "Auxiliar de saúde, apoio a idosos, cozinha, empilhador, informática: as áreas mais procuradas nos cursos IEFP 2026 ↓",
+    "ru": "Помощник в здравоохранении, уход за пожилыми, кухня, погрузчик, информатика: самые востребованные направления курсов IEFP 2026 ↓",
+    "hook": "As áreas mais procuradas"
   }
 }
 ```
 
-Длина текста поста: 123 знаков.
+Длина текста поста: РК 1 — 123; РК 2 — 118; РК 3 — 116 знаков.
 
 ## Что нужно до залива (gaps)
 

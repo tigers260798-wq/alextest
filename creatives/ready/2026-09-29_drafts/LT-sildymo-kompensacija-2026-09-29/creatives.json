@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/f27adedefc65c271a8189fa3a0f27b38",
+  "concept": "сетка выбора (fake interactivity) — перенос доказанного LT-формата теплонасосов (градиентная рамка, «фото», 4 плитки, красные кнопки «SUŽINOKITE DAUGIAU»): батарея под окном, зима, счёт и лист календаря «1»; без суммы компенсации, без герба и логотипа SPIS; опора: раздел «Kas yra kompensacija už šildymą» (центральное, дрова/газ по нормам топлива, горячая вода) + «Registracija…» (с 1 сентября)",
+  "text": "Kompensacija už šildymą 2026 / Centralizuotas šildymas / Malkos, kietasis kuras / Dujos / Karštas vanduo (у каждой «Sužinokite daugiau») / Kas gali būti kompensuojama? Pasirinkite / на «фото»: SĄSKAITA / RUGSĖJIS 1 / кнопки под плитками «SUŽINOKITE DAUGIAU»",
+  "cta": "Sužinokite daugiau"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/1155af372a67ce7e169032d9e2a0afb9",
+  "concept": "карточка-опросник — опросник-степпер (счёт → заявление → компенсация) и вопрос о правиле; не о зрителе, без сумм; опора: раздел «Registracija dėl šildymo kompensacijos» («skiriama nuo to mėnesio, kurį pateiktas prašymas, todėl… delsti neverta»)",
+  "text": "Kompensacija už šildymą: / kodėl delsti neverta / Sąskaita · Prašymas · Kompensacija / KLAUSIMAS 1 / 3 / Nuo kada paprastai skiriama kompensacija už šildymą? / Nuo sezono pradžios / Nuo prašymo mėnesio / Nuo sausio 1 d. / Nežinau / кнопка «Sužinokite daugiau →»",
+  "cta": "Sužinokite daugiau"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/cd91bd80c65775bebc330e57416601d9",
+  "concept": "сколько стоит / сравнение — таблица на 3 колонки: компенсация / воздух-воздух / воздух-вода (ключи Oras Oras … Kaina, Oras Vanduo Kaina su Montavimu); цены — ориентиры статьи, суммы компенсации нет; опора: раздел «Kaip sumažinti sąskaitą: apšiltinimas ar šilumos siurblys, kaina su montavimu» (ориентиры цен) + «Jei reikia lėšų…» (pirmiausia – prašymas)",
+  "text": "Mažesnė sąskaita už šildymą: 3 keliai / Kas padeda šį sezoną, o kas – ilgainiui / KOMPENSACIJA vs ORAS–ORAS vs ORAS–VANDUO / Kada padeda: šį šildymo sezoną / ilgainiui / ilgainiui · Kaip veikia: tiekėjas išrašo mažesnę sąskaitą / šildo orą, kaip kondicionierius / šildo radiatorius, ruošia karštą vandenį · Kaina su montavimu: – / apie 1 000–2 000 € (1 vidinis blokas) / apie 6 000–12 000 € / Pirmiausia – prašymas dėl kompensacijos / кнопка «Sužinokite daugiau →»",
+  "cta": "Sužinokite daugiau"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/d6e459a5fff6cf542cbbfd817a8c7080",
+  "concept": "сцена-иллюстрация — комната: батарея под окном, зима, настенный календарь сентября с обведённым 1, счёт и чашка на тумбе; без герба и логотипа SPIS/министерства; опора: заголовок статьи + раздел «Registracija dėl šildymo kompensacijos: per SPIS arba savivaldybėje» (с 1 сентября)",
+  "text": "Kompensacija už šildymą 2026: prašymai – nuo rugsėjo 1 d. / Kam ji priklauso ir kaip užsiregistruoti per SPIS / на календаре: RUGSĖJIS 2026 (1 обведено), на листе: SĄSKAITA / кнопка «Sužinokite daugiau →»",
+  "cta": "Sužinokite daugiau"
+ }
+]

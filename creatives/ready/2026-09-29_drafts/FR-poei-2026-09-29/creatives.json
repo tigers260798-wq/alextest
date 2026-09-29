@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/a37883ec9c37eb21a070ac6b27f1d3e4",
+  "concept": "сетка выбора (fake interactivity) — панель из 3 шагов механизма POEI + 5 строк-кнопок по секторам из статьи, у каждой «En savoir plus»; без зарплаты, без «nous recrutons»; опора: раздел «La POEI en bref» (3 шага, CDI или ≥ 6 мес.) + «Jusqu'à 450 heures» + «Métiers qui recrutent : où la POEI est la plus fréquente» (5 секторов)",
+  "text": "POEI : formation financée avant l'embauche / Dans quels métiers ? Choisissez un secteur : / Transport et logistique / Bâtiment et industrie / Aide à la personne et santé / Propreté, sécurité, commerce / Hôtellerie et restauration (у каждой «En savoir plus») / панель: Offre d'emploi réelle → Formation jusqu'à 450 h → Contrat visé CDI ou 6 mois + / кнопка «En savoir plus →»",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/1c5be175aa31750a52171ea6bf4151f2",
+  "concept": "карточка-опросник — персиковый фон, карточка-тест; вопрос о статусе в программе, не о зрителе; без сумм; опора: раздел «Formation rémunérée ? Ce que perçoit le candidat pendant la POEI» (статус stagiaire, не salarié)",
+  "text": "Formation rémunérée ? / Le statut pendant la POEI / QUIZ POEI / Question 1 sur 3 / Pendant la formation POEI, le candidat a le statut de… / Salarié en CDI / Stagiaire de la formation professionnelle / Intérimaire / Je ne sais pas / кнопка «En savoir plus →»",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/e45fdd815551070d4526a88fd1efa4d0",
+  "concept": "сколько стоит / сравнение — сплит POEI vs POEC (синий / красный), пункты — из статьи; опора: раздел «Avant de signer» (последний абзац про POEC) + «La POEI en bref» + «Jusqu'à 450 heures»",
+  "text": "POEI ou POEC : quelle différence ? / Formation avant l'embauche, individuelle ou collective / POEI vs POEC / POEI: Une offre d'emploi réelle · Sur mesure, jusqu'à 450 h · Engagement de l'entreprise / POEC: Un groupe de candidats · Un secteur qui recrute · Pas d'engagement individuel / кнопка «En savoir plus →»",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/e080efee1cd9027c186c47e5a0b00e33",
+  "concept": "сцена-иллюстрация — плашки (формула рабочих крео владельца) + ресепшн отеля: стажёр с бейджем и наставник за стойкой, звонок, доска с ключами; лиц нет; опора: заголовок и лид статьи + раздел «Métiers qui recrutent…» (formation hôtellerie: réceptionniste, part des heures dans l'établissement)",
+  "text": "FORMATION FINANCÉE AVANT L'EMBAUCHE : JUSQU'À 450 HEURES / бейдж «EN FORMATION» на стажёре / кнопка «En savoir plus →»",
+  "cta": "En savoir plus"
+ }
+]

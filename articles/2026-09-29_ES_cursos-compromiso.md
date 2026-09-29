@@ -122,11 +122,21 @@ Un último detalle: estos cursos se financian con fondos públicos y son gratuit
     "text": "Cursos gratuitos en los que la empresa se compromete a contratar a parte del grupo.\nCómo funcionan en 2026 y quién puede apuntarse →",
     "ru": "Бесплатные курсы, после которых компания обязуется нанять часть группы.\nКак они работают в 2026 и кто может записаться →",
     "hook": "la empresa se compromete a contratar"
+  },
+  "РК 2": {
+    "text": "¿Plaza asegurada? No exactamente: la empresa se compromete con un porcentaje del grupo, del 40 % al 50 % ↓\nQué cambia de una comunidad a otra.",
+    "ru": "Гарантированное место? Не совсем: компания берёт обязательство перед долей группы — от 40 до 50% ↓\nЧто меняется от региона к региону.",
+    "hook": "¿Plaza asegurada? No exactamente"
+  },
+  "РК 3": {
+    "text": "Carretillero, atención sociosanitaria, cocina, soldadura: las especialidades habituales y el certificado que se obtiene ↓",
+    "ru": "Водитель погрузчика, социально-санитарный уход, кухня, сварка: обычные специальности и сертификат, который получают в конце ↓",
+    "hook": "Del carretillero al sociosanitario"
   }
 }
 ```
 
-Длина текста поста: 132 знаков.
+Длина текста поста: РК 1 — 132; РК 2 — 142; РК 3 — 121 знаков.
 
 ## Что нужно до залива (gaps)
 

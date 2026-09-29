@@ -142,11 +142,21 @@ Svarbiausia neskolinti einamajai sąskaitai apmokėti. Jei šildymo sąskaita pe
     "text": "Kompensacija už šildymą 2026: prašymai priimami nuo rugsėjo 1 d.\nKam ji priklauso ir kaip užsiregistruoti per SPIS – trumpai →",
     "ru": "Компенсация за отопление 2026: заявления принимают с 1 сентября.\nКому она положена и как зарегистрироваться через SPIS — коротко →",
     "hook": "prašymai priimami nuo rugsėjo 1"
+  },
+  "РК 2": {
+    "text": "Atskiros „pensininkų kompensacijos“ nėra: kompensacija už šildymą skiriama visiems tomis pačiomis sąlygomis ↓\nVertinamos pajamos, turtas ir šildymo išlaidos.",
+    "ru": "Отдельной «компенсации для пенсионеров» нет: компенсацию за отопление назначают всем на одинаковых условиях ↓\nОценивают доходы, имущество и расходы на отопление.",
+    "hook": "Kas vertinama skiriant kompensaciją?"
+  },
+  "РК 3": {
+    "text": "Kaip sumažinti šildymo sąskaitą ir kitą žiemą: sandarinimas, apšiltinimas ar šilumos siurblys ↓\nKą daryti pirmiausia ir ką turi apimti montavimo kaina.",
+    "ru": "Как снизить счёт за отопление и следующей зимой: уплотнение, утепление или тепловой насос ↓\nЧто делать в первую очередь и что должна включать цена монтажа.",
+    "hook": "Pigiausi darbai – pirmiausia"
   }
 }
 ```
 
-Длина текста поста: 126 знаков.
+Длина текста поста: РК 1 — 126; РК 2 — 157; РК 3 — 151 знаков.
 
 ## Что нужно до залива (gaps)
 

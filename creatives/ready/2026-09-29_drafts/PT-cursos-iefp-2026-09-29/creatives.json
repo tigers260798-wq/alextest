@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/b6df404d0d53c32e4db989ee3da6d345",
+  "concept": "сетка выбора (fake interactivity) — 2×2 модальностей курсов из статьи, у каждой «Saiba mais»; без сумм, без «estamos a contratar»; опора: раздел «Que cursos IEFP existem em 2026» (EFA, aprendizagem, modular 25/50 h) + «Cursos online: o que existe à distância» + лид (gratuitos)",
+  "text": "Cursos IEFP 2026: que modalidade escolher? / Formação gratuita e certificada – escolha uma: / EFA: 9.º ou 12.º ano + qualificação / Aprendizagem com formação em empresa / Formação modular de 25 ou 50 horas / Módulos online à distância (у каждой «Saiba mais») / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/f2078bc1c50e9bad9fe48b1f919e9728",
+  "concept": "карточка-опросник — школьная доска, карточка-тест; вопрос о правиле про третье лицо, не о зрителе; без сумм; опора: раздел «Bolsa de formação, subsídio de alimentação e transporte» (bolsa não se acumula com o subsídio de desemprego)",
+  "text": "Bolsa de formação IEFP: / a regra que muitos não conhecem / QUIZ / Pergunta 1 de 3 / Quem já recebe subsídio de desemprego recebe também a bolsa de formação? / Sim, sempre / Em regra, não / Só nos cursos online / Não sei / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/a1f9404fccebab068bcb8f13dfb9a581",
+  "concept": "сколько стоит / сравнение — две карточки друг над другом: очно vs онлайн, что меняется в поддержке; без сумм; опора: раздел «Cursos online: o que existe à distância» (apoios nem sempre se aplicam) + «Que cursos IEFP existem» (horário laboral e pós-laboral) + «Bolsa…» (pedir por escrito)",
+  "text": "Curso IEFP presencial ou online? / O que muda nos apoios em 2026 / PRESENCIAL vs ONLINE / PRESENCIAL: Gratuito e com certificado · Horário laboral ou pós-laboral · Pode ter bolsa, alimentação, transporte / ONLINE: Gratuito, certificado por unidade · À distância, com sessões online · Bolsa e apoios: nem sempre se aplicam / Peça por escrito a lista de apoios da turma / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/d361f1faeff4999bd8978c8e39d49436",
+  "concept": "сцена-иллюстрация — стол сверху: лист «CERTIFICADO» с печатью (без логотипа), проездной «PASSE» с автобусом, ланч-бокс, тетрадь, кофе; «em muitos casos» — как в статье; опора: лид статьи + раздел «Bolsa de formação, subsídio de alimentação e transporte» + «Formação certificada: o que vale o certificado»",
+  "text": "Curso gratuito com certificado – e, em muitos casos, bolsa, alimentação e transporte / Como funcionam os cursos IEFP em 2026 / на предметах: CERTIFICADO / PASSE / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ }
+]
