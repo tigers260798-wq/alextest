@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-remote-work-uk-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 6 плиток 3×2 = 6 видов удалёнки из статьи, у каждой «Learn more»; без сумм, ставок, «Hiring now / Apply now»; опора: раздел «Six types of remote work that often suit people over 60»",
+  "text": "6 types of remote work that often suit people over 60 / What each role involves – pick one: / Data entry / Call handling / Content moderation / Transcription / Proofreading / Admin support (у каждой «Learn more») / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-remote-work-uk-2026-09-30/b.png",
+  "concept": "карточка-опросник — тёмно-бирюзовый фон, телефон с тестом; вопрос о признаке мошенничества, не о зрителе; опора: раздел «How to check an employer is genuine» (never pay upfront: training, starter kits, software)",
+  "text": "Genuine employer or a scam? / 6 quick checks / Before replying to any work-from-home advert / SCAM CHECK / Question 1 of 6 / An advert asks for a fee for training or a starter kit. What does that usually mean? / It's normal / A warning sign / Only if it's small / Not sure / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-remote-work-uk-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — таблица на 3 колонки; без сумм заработка; опора: раздел «Employee, freelance or platform work» + «What a genuine role usually asks for» (foot)",
+  "text": "Employee, freelance or platform work? / How the three differ on pay, tax and holiday / EMPLOYEE vs FREELANCE vs PLATFORM / Works for: one company / several clients / short tasks on an online marketplace · Pay & tax: payroll, tax already deducted / invoice per job, self-assessment / the platform usually takes a fee · Good to know: paid holiday, equipment often provided / more freedom, no holiday or sick pay / easy to join, strong competition / Genuine roles: an interview and written terms first / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-remote-work-uk-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — домашний угол: человек со спины в гарнитуре, монитор с таблицей, роутер, окно; лиц нет; опора: раздел «What a genuine role usually asks for» + «How to check…» (стикер «Never pay upfront»)",
+  "text": "Working from home after 60: what a genuine role asks for / Computer, broadband, a quiet space – and a real interview / Never pay upfront / кнопка «Learn more →»",
+  "cta": "Learn more"
+ }
+]

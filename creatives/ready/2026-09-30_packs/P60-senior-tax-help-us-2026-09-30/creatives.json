@@ -1,0 +1,34 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-senior-tax-help-us-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 с пояснением из статьи под каждым типом; без сумм и без «save / refund»",
+  "text": "Senior property tax relief: / 4 common types / Most need an application before a deadline – pick one: / Homestead exemption – Reduces the taxable value of a primary home / Assessment freeze – Locks the home's taxable value once the owner reaches a certain age / Circuit breaker credit – Limits property tax to a share of household income / Deferral – Postpones the tax until the home is sold or the estate is settled (у каждой «Learn more»)",
+  "cta": "Learn more",
+  "source": "раздел 2 «Senior property tax relief: four common types» (4 пункта) + раздел 3 (заявление и сроки)"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-senior-tax-help-us-2026-09-30/b.png",
+  "concept": "карточка-опросник — тёмно-зелёный фон, телефон с тестом; вопрос о правиле, не о доходе зрителя",
+  "text": "Retirement tax quiz: / when Social Security gets taxed / What counts as combined income, and where the line sits / TAX QUIZ / Question 1 of 3 / Below what combined income are Social Security benefits generally not taxed for a single filer? / $15,000 / $25,000 / $50,000 / Not sure / кнопка «Learn more»",
+  "cta": "Learn more",
+  "source": "раздел 1 «Federal tax breaks after 65», пункт Social Security income (ответ: $25,000 для одиночки, $32,000 для пары)"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-senior-tax-help-us-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — две колонки до/после 65 без сумм ($6,000 на крео не выносится — gaps); без «refund / get»",
+  "text": "Turning 65 changes the tax return / Federal basics before and after 65 / UNDER 65 vs 65 AND OLDER / STANDARD DEDUCTION: the regular amount / regular + an extra amount · SENIOR DEDUCTION: not available / temporary, tax years 2025–2028 · ITEMIZING NEEDED?: – / no, claimed either way / Deductions lower taxable income – they are not payments / кнопка «Learn more»",
+  "cta": "Learn more",
+  "source": "вступление («Turning 65 changes a household's taxes…») + раздел 1 (увеличенный стандартный вычет, временный вычет 2025–2028 «whether or not the filer itemizes», «they are not payments»)"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-senior-tax-help-us-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — библиотека: полки, волонтёр с ноутбуком и пожилая пара, лист «что взять», счёт налога на дом, лист со сроком заявления; без названия ведомства, орла, печатей",
+  "text": "Volunteer tax prep after 60 / Trained volunteers prepare returns at no charge in tax season – what to bring / PROPERTY TAX RELIEF: APPLY BY the deadline, renew on time / WHAT TO BRING: Photo ID · Income statements · Last year's return / PROPERTY TAX BILL / кнопка «Learn more»",
+  "cta": "Learn more",
+  "source": "раздел 4 «Tax counseling for the elderly and other free help» (волонтёры, 60+, сезон, что взять) + раздел 3 (заявление и сроки); хук РК 3"
+ }
+]

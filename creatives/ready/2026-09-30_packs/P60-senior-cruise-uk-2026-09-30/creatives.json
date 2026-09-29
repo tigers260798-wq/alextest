@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-senior-cruise-uk-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — панель: лайнер без логотипа у острова с вулканом + 6 плиток-кнопок по способам; без процентов и цен; опора: раздел «Six common cruise ship discounts» (пункты 1–6)",
+  "text": "Cruise ship discounts for over 60s: / 6 ways to pay less / Senior rates / Off-peak sailings / Last-minute cabins / Loyalty schemes / Solo offers / Group bookings (у каждой «Learn more») / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-senior-cruise-uk-2026-09-30/b.png",
+  "concept": "карточка-опросник — светло-морской фон, вопрос о составе цены круиза (правильный ответ по статье — все три); опора: раздел «What the price includes, and what it often leaves out» (+ «Questions to ask before booking» — 5 вопросов)",
+  "text": "Cruise price quiz: / what's often not included? / QUIZ / Question 1 of 5 / Which of these can the headline cruise fare leave out? / Drinks / Gratuities / Shore excursions / All three / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-senior-cruise-uk-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — сплит круиз по Канарам vs отель всё включено на Тенерифе; цен нет; опора: раздел «Cruise or resort? A quick comparison»",
+  "text": "Canary Islands cruise or all inclusive in Tenerife? / Variety or a slower pace – a simple side-by-side / CRUISE vs TENERIFE RESORT / CRUISE: Several islands · Only one unpack · New port most mornings / TENERIFE RESORT: One hotel, one base · No tender boats · Pool, promenade, walks / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-senior-cruise-uk-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — плашки + палуба: пара 60+ со спины у борта, море, остров с вулканом, спасательный круг; без логотипов и названий лайнеров; опора: раздел «What the price includes, and what it often leaves out»",
+  "text": "WHAT THE CRUISE FARE OFTEN LEAVES OUT: DRINKS, GRATUITIES, EXCURSIONS / кнопка «Learn more →»",
+  "cta": "Learn more"
+ }
+]
