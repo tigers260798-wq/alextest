@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-energy-subsidy-it-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — панель: бумажная bolletta с 4 пронумерованными строками, лупа, лампочка; ниже 4 плитки-признака с иконками; опора — разделы «Quattro segnali che si paga più del necessario» и «Cosa si paga in una bolletta luce» (F1 8–19); безлично",
+  "text": "Bolletta della luce 2026: / 4 cose da controllare / Come capire se si paga più del necessario / на счёте: BOLLETTA LUCE, строки 1–4 / 1 Offerta scaduta – alla scadenza il prezzo può salire / 2 Potenza impegnata – troppo alta = quota fissa più alta / 3 Fasce orarie – F1: giorni feriali dalle 8 alle 19 / 4 Servizi aggiuntivi – polizze e assistenza come voci a parte (у каждой плитки «Scopri di più →»)",
+  "cta": "Scopri di più"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-energy-subsidy-it-2026-09-30/b.png",
+  "concept": "карточка-опросник — слева 3 шага DSU → ISEE → скидка в счёте, справа телефон с вопросом о механике бонуса (не о зрителе); опора — разделы «Bonus sociale: chi ha diritto» и «quanto dura e come si rinnova»; без порогов ISEE и суммы бонуса",
+  "text": "Bonus sociale bollette 2026: / come funziona in 3 passi / 1. DSU – la dichiarazione per ottenere l'ISEE / 2. ISEE – sotto la soglia fissata per l'anno / 3. Sconto in bolletta – voce separata, dura 12 mesi / кнопка «Scopri di più →» / на телефоне: BONUS SOCIALE · Domanda 1 di 3 / Il bonus sociale va chiesto con una domanda a parte? / Sì, sempre / No, parte dalla DSU / Solo cambiando fornitore / Non so / Si rinnova ogni anno con una nuova DSU",
+  "cta": "Scopri di più"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-energy-subsidy-it-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — две оферты столбиками годовой суммы из 4 статей счёта, везде «? €» (статья объясняет состав счёта); высоты — иллюстрация тезиса статьи «дешевле не та, у которой ниже цена кВт·ч, а та, у которой ниже годовая сумма»; опора — разделы «Cosa si paga in una bolletta luce» и «Confronto tariffe luce»",
+  "text": "Prezzo al kWh o spesa annua? / Nelle offerte luce conta il totale dell'anno / OFFERTA A – prezzo al kWh più basso / OFFERTA B – spesa annua più bassa (✓) / над столбиками: Totale anno ? € / в сегментах: ? € / Voci della bolletta: Materia energia · Trasporto e contatore · Oneri di sistema · Imposte / Per il confronto: consumo annuo, potenza impegnata, codice POD / кнопка «Scopri di più →»",
+  "cta": "Scopri di più"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-energy-subsidy-it-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — кухня вечером: окно с черепичными крышами в сумерках, часы на 19:00 (конец F1), электронный счётчик, лампа, на столе bolletta с «? €», очки, гейзерная кофеварка; плашки = хук РК 1, безлично; опора — разделы «Quattro segnali…» и «Cosa si paga…»",
+  "text": "BOLLETTA DELLA LUCE: / 4 SEGNALI CHE SI PAGA / PIÙ DEL NECESSARIO / кнопка «Scopri di più →» / на счётчике: kWh / на счёте: BOLLETTA LUCE · Materia energia ? € · Trasporto e contatore ? € · Oneri di sistema ? € · Imposte ? € · Totale ? €",
+  "cta": "Scopri di più"
+ }
+]

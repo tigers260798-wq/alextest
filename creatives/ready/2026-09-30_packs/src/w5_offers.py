@@ -1225,6 +1225,528 @@ PACKS[3] = dict(
 )
 
 
+# =====================================================================  4. IT · субсидии 60+ · bolletta luce (bonus sociale)
+INK4, TERRA4, OLIVE4, BLUE4, CREAM4 = (40, 36, 52), (198, 84, 44), (96, 128, 64), (0, 106, 176), (252, 246, 236)
+VOCI4 = ((198, 84, 44), (236, 164, 60), (96, 128, 64), (110, 120, 150))
+
+
+def bill_markers(c, box):
+    """«Герой»: бумажная bolletta с 4 пронумерованными строками и лупой."""
+    c.rect(box, fill=(246, 226, 206), r=26)
+    x0, y0, x1, y1 = box
+    c.dots((x0 + 10, y0 + 10, x1 - 10, y1 - 10), 34, 3, TERRA4, alpha=40)
+
+    def paper(t_, w, h):
+        t_.rect((0, 0, w, 46), fill=TERRA4)
+        t_.text((22, 23), "BOLLETTA LUCE", "db", 22, WH, anchor="lm")
+        for k in range(4):
+            yy = 68 + k * 44
+            num_badge(t_, 30, yy + 8, 15, k + 1, INK4)
+            t_.rect((56, yy, 56 + (w - 120) * (0.9 - 0.12 * (k % 2)), yy + 16), fill=(206, 210, 220), r=6)
+            t_.rect((w - 70, yy, w - 24, yy + 16), fill=(236, 190, 120), r=6)
+    subcanvas(c, (x0 + 250, y0 + 22, x0 + 650, y1 - 22), -3, paper, paper=WH, shadow=70)
+    lx, ly = x0 + 740, y0 + (y1 - y0) * 0.5
+    c.circle(lx, ly, 70, fill=WH, alpha=120)
+    c.circle(lx, ly, 70, outline=INK4, width=14)
+    c.line([(lx + 50, ly + 50), (lx + 110, ly + 110)], INK4, 22)
+    icon(c, "bulb", x0 + 120, ly, 150, INK4, bg=(246, 226, 206))
+
+
+def it_grid(P, t):
+    p = P["pal"]
+    c = C(p["bg"])
+    c.vgrad((0, 0, W, W), p["bg"], p["bg2"])
+    y = hdr(c, t["title"], t["sub"], y=40, col=INK4, sub_col=(96, 90, 86), size=58, title2=t["title2"], t2_col=TERRA4, sub_size=30)
+    hb = (60, y + 22, 1020, y + 22 + 300)
+    bill_markers(c, hb)
+    top = hb[3] + 24
+    g = 18
+    tw = (960 - 3 * g) / 4
+    th = 1046 - top
+    for i, (ic, lab, desc) in enumerate(t["tiles"]):
+        x0 = 60 + i * (tw + g)
+        cx = x0 + tw / 2
+        c.card((x0, top, x0 + tw, top + th), fill=WH, r=24, sh_alpha=55, blur=12, off=(0, 6))
+        num_badge(c, x0 + 30, top + 30, 17, i + 1, TERRA4)
+        icy = top + 96
+        c.circle(cx, icy, 64, fill=(250, 234, 218))
+        icon(c, ic, cx, icy, 96, INK4, bg=(250, 234, 218))
+        fs = min(c.fit(x[1], "db", tw - 24, 2, 27) for x in t["tiles"])
+        ly = c.block(lab, "db", fs, icy + 82, tw - 24, INK4, cx=cx, max_lines=2, gap=1.04)
+        c.block(desc, "s", 23, ly + 8, tw - 26, (100, 96, 96), cx=cx, max_lines=3, gap=1.1)
+        c.pill(P["cta"], cx, top + th - 34, size=19, fill=p["btn"], padx=15, pady=9)
+    return c
+
+
+def it_phone_steps(P, t):
+    """Слева 3 шага бонуса (DSU → ISEE → скидка в счёте), справа телефон с вопросом."""
+    p = P["pal"]
+    c = C(p["bg"])
+    c.vgrad((0, 0, W, W), p["bg"], p["bg2"])
+    c.ellipse((-220, -200, 360, 300), fill=WH, alpha=40)
+    lx = 56
+    y = c.block(t["title"], "db", 50, 52, 470, INK4, align="left", x=lx, max_lines=2, gap=1.06)
+    y = c.block(t["title2"], "db", 46, y + 4, 470, OLIVE4, align="left", x=lx, max_lines=2, gap=1.06)
+    y += 30
+    steps = t["steps"]
+    sh = 150
+    for k, (ic, lab, desc) in enumerate(steps):
+        yy = y + k * sh
+        if k < len(steps) - 1:
+            c.line([(lx + 42, yy + 84), (lx + 42, yy + sh)], mix(OLIVE4, WH, 0.4), 6)
+        c.circle(lx + 42, yy + 42, 42, fill=OLIVE4)
+        icon(c, ic, lx + 42, yy + 42, 52, WH, bg=OLIVE4)
+        c.text((lx + 104, yy + 4), f"{k + 1}. {lab}", "db", 32, INK4)
+        c.block(desc, "s", 25, yy + 48, 370, (90, 86, 80), align="left", x=lx + 104, max_lines=2, gap=1.08)
+    bb = c.button(P["cta"], 0, -700, size=38, fill=p["btn"])
+    c.button(P["cta"], lx + (bb[2] - bb[0]) / 2, y + len(steps) * sh + 50, size=38, fill=p["btn"])
+    ph = (548, 60, 1030, 1030)
+    c.shadow(ph, r=64, alpha=110, blur=24, off=(0, 16))
+    c.rect(ph, fill=(30, 30, 36), r=64)
+    sc = (ph[0] + 16, ph[1] + 16, ph[2] - 16, ph[3] - 16)
+    c.rect(sc, fill=WH, r=50)
+    c.rect(((ph[0] + ph[2]) / 2 - 70, ph[1] + 28, (ph[0] + ph[2]) / 2 + 70, ph[1] + 60), fill=(30, 30, 36), r=16)
+    c.text((sc[0] + 38, ph[1] + 44), "19:00", "sb", 22, (40, 40, 40), anchor="lm")
+    x0, x1 = sc[0] + 32, sc[2] - 32
+    yy = sc[1] + 92
+    tag = t["tag"]
+    tw_ = c.tw(tag, c.font("sb", 22))[0]
+    c.rect((x0, yy, x0 + tw_ + 30, yy + 40), fill=mix(OLIVE4, WH, 0.82), r=20)
+    c.text((x0 + 15, yy + 20), tag, "sb", 22, OLIVE4, anchor="lm")
+    yy += 64
+    c.text((x0, yy), t["step"], "s", 24, (110, 116, 124))
+    c.rect((x0, yy + 40, x1, yy + 50), fill=(226, 232, 236), r=5)
+    c.rect((x0, yy + 40, x0 + (x1 - x0) / 3, yy + 50), fill=OLIVE4, r=5)
+    yy += 80
+    yy = c.block(t["q"], "db", 32, yy, x1 - x0, (34, 34, 44), align="left", x=x0, max_lines=4, gap=1.1)
+    yy += 20
+    n = len(t["opts"])
+    h = 76
+    for k, o in enumerate(t["opts"]):
+        c.rect((x0, yy, x1, yy + h), fill=(246, 246, 242), r=h / 2, outline=(214, 212, 204), width=3)
+        c.circle(x0 + h / 2 + 2, yy + h / 2, 15, fill=WH, outline=(150, 156, 164), width=3)
+        c.block(o, "sb", c.fit(o, "sb", x1 - x0 - h - 30, 1, 27), yy + h / 2 - 17, x1 - x0 - h - 30, (48, 50, 58), align="left", x=x0 + h + 4, max_lines=1)
+        yy += h + 14
+    c.rect((x0, yy + 16, x1, yy + 110), fill=mix(OLIVE4, WH, 0.86), r=18)
+    c.block(t["foot"], "sb", 26, yy + 30, x1 - x0 - 40, OLIVE4, cx=(x0 + x1) / 2, max_lines=2, gap=1.08)
+    return c
+
+
+def it_bars(P, t):
+    """«Сколько стоит»: две оферты — столбики годовой суммы из 4 статей счёта, у каждой «? €»; легенда справа."""
+    p = P["pal"]
+    c = C(p["bg"])
+    c.vgrad((0, 0, W, W), p["bg"], p["bg2"])
+    y = hdr(c, t["title"], t["sub"], y=44, col=INK4, sub_col=(96, 90, 86), size=60, sub_size=31, lines=1)
+    box = (50, y + 28, 1030, 900)
+    c.card(box, r=28, sh_alpha=60, blur=14, off=(0, 8))
+    base = box[3] - 150
+    topmax = box[1] + 110
+    Hmax = base - topmax
+    bw = 170
+    for k, (name, tag, segs, best) in enumerate(t["offers"]):
+        bx = box[0] + 70 + k * 270
+        cx = bx + bw / 2
+        total = sum(segs)
+        yy = base
+        for j, f in enumerate(segs):
+            h = Hmax * f
+            c.rect((bx, yy - h, bx + bw, yy), fill=VOCI4[j])
+            c.line([(bx, yy - h), (bx + bw, yy - h)], WH, 3)
+            if h > 32:
+                c.text((cx, yy - h / 2), "? €", "db", 26 if h > 44 else 22, WH, anchor="mm")
+            yy -= h
+        top_y = base - Hmax * total
+        c.text((cx, top_y - 58), "Totale anno", "sb", 22, (90, 86, 84), anchor="mm")
+        c.text((cx, top_y - 26), "? €", "db", 34, INK4, anchor="mm")
+        c.text((cx, base + 30), name, "db", 26, INK4, anchor="mm")
+        c.block(tag, "sb", 21, base + 52, bw + 60, OLIVE4 if best else (120, 110, 104), cx=cx, max_lines=2, gap=1.04)
+        if best:
+            checkmark_circle(c, bx + bw + 34, top_y - 30, 26, (40, 150, 80))
+    c.line([(box[0] + 40, base), (box[0] + 600, base)], (170, 164, 156), 4)
+    lx = box[0] + 640
+    ly = box[1] + 70
+    c.text((lx, ly), t["legend_head"], "db", 25, INK4)
+    ly += 56
+    for j, lab in enumerate(t["legend"]):
+        c.rect((lx, ly, lx + 36, ly + 36), fill=VOCI4[j], r=8)
+        c.block(lab, "sb", 25, ly + 2, 270, INK4, align="left", x=lx + 50, max_lines=2, gap=1.04)
+        nl = len(c.wrap(lab, c.font("sb", 25), 270))
+        ly += 40 + nl * 30
+    c.line([(lx, ly + 4), (box[2] - 40, ly + 4)], (224, 218, 208), 2)
+    c.block(t["legend_foot"], "s", 23, ly + 20, 300, (96, 90, 86), align="left", x=lx, max_lines=4, gap=1.12)
+    c.button(P["cta"], W / 2, 978, size=42, fill=p["btn"])
+    return c
+
+
+def moka(c, cx, by, s=1.0):
+    """Гейзерная кофеварка (силуэт, без бренда)."""
+    m = (176, 180, 188)
+    d = (120, 124, 132)
+    c.poly([(cx - 46 * s, by), (cx + 46 * s, by), (cx + 36 * s, by - 70 * s), (cx - 36 * s, by - 70 * s)], m)
+    c.rect((cx - 40 * s, by - 80 * s, cx + 40 * s, by - 68 * s), fill=d, r=3)
+    c.poly([(cx - 36 * s, by - 80 * s), (cx + 36 * s, by - 80 * s), (cx + 46 * s, by - 150 * s), (cx - 46 * s, by - 150 * s)], m)
+    c.poly([(cx - 46 * s, by - 150 * s), (cx + 46 * s, by - 150 * s), (cx + 20 * s, by - 172 * s), (cx - 20 * s, by - 172 * s)], d)
+    c.circle(cx, by - 176 * s, 8 * s, fill=(40, 40, 44))
+    c.poly([(cx + 42 * s, by - 140 * s), (cx + 70 * s, by - 160 * s), (cx + 48 * s, by - 124 * s)], m)
+    c.arc((cx - 86 * s, by - 150 * s, cx - 30 * s, by - 90 * s), 90, 270, (40, 40, 44), 10 * s)
+    for k in range(3):
+        c.line([(cx - 20 * s + k * 20 * s, by - 60 * s), (cx - 20 * s + k * 20 * s, by - 12 * s)], mix(m, WH, 0.35), 4 * s)
+
+
+def sc_it_kitchen(c):
+    """Кухня вечером: окно с черепичными крышами в сумерках, часы на 19:00, электронный счётчик, лампа, на столе bolletta."""
+    c.vgrad((0, 0, W, 860), (232, 206, 176), (206, 170, 136))
+    # окно
+    wb = (70, 424, 470, 764)
+    c.rect((wb[0] - 16, wb[1] - 16, wb[2] + 16, wb[3] + 16), fill=(250, 246, 238), r=6)
+    c.vgrad(wb, (70, 70, 130), (250, 160, 100))
+    c.glow((180, 690, 400, 790), (255, 200, 120), alpha=200, blur=30)
+    rnd = random.Random(4)
+    for k in range(6):
+        x0 = wb[0] + k * 70 - 10
+        hgt = rnd.uniform(60, 120)
+        col = rnd.choice(((178, 82, 50), (160, 72, 44), (196, 104, 62)))
+        c.rect((x0, wb[3] - hgt, x0 + 80, wb[3]), fill=mix(col, (60, 50, 70), 0.35))
+        c.poly([(x0 - 6, wb[3] - hgt), (x0 + 40, wb[3] - hgt - 30), (x0 + 86, wb[3] - hgt)], col)
+        c.rect((x0 + 16, wb[3] - hgt + 20, x0 + 30, wb[3] - hgt + 38), fill=(255, 214, 120))
+    c.rect((wb[0] + 250, wb[1] + 150, wb[0] + 290, wb[3] - 60), fill=(122, 84, 76))
+    c.poly([(wb[0] + 244, wb[1] + 150), (wb[0] + 270, wb[1] + 116), (wb[0] + 296, wb[1] + 150)], (160, 76, 50))
+    c.line([((wb[0] + wb[2]) / 2, wb[1]), ((wb[0] + wb[2]) / 2, wb[3])], (250, 246, 238), 12)
+    c.line([(wb[0], (wb[1] + wb[3]) / 2), (wb[2], (wb[1] + wb[3]) / 2)], (250, 246, 238), 12)
+    # часы 19:00
+    ccx, ccy = 640, 560
+    c.circle(ccx, ccy, 64, fill=(60, 56, 60))
+    c.circle(ccx, ccy, 54, fill=WH)
+    for h in range(12):
+        a = math.radians(h * 30 - 90)
+        c.line([(ccx + math.cos(a) * 44, ccy + math.sin(a) * 44), (ccx + math.cos(a) * 50, ccy + math.sin(a) * 50)], (60, 56, 60), 4)
+    a = math.radians(7 * 30 - 90)
+    c.line([(ccx, ccy), (ccx + math.cos(a) * 28, ccy + math.sin(a) * 28)], (40, 36, 40), 7)
+    c.line([(ccx, ccy), (ccx, ccy - 42)], (40, 36, 40), 5)
+    c.circle(ccx, ccy, 6, fill=TERRA4)
+    # электронный счётчик
+    mb = (850, 470, 1010, 690)
+    c.shadow(mb, r=12, alpha=80, blur=8, off=(0, 6))
+    c.rect(mb, fill=(210, 212, 214), r=12)
+    c.rect((870, 494, 990, 548), fill=(40, 46, 44), r=6)
+    c.text((930, 521), "kWh", "db", 24, (120, 230, 150), anchor="mm")
+    c.circle(890, 580, 8, fill=(230, 50, 40))
+    c.rect((910, 572, 990, 588), fill=(180, 184, 188), r=4)
+    c.rect((900, 612, 960, 660), fill=(190, 194, 198), r=8)
+    # лампа
+    c.line([(760, 400), (760, 470)], (60, 56, 60), 4)
+    c.pie((700, 460, 820, 580), 180, 360, OLIVE4)
+    c.ellipse((740, 512, 780, 530), fill=(255, 246, 210))
+    c.glow((560, 520, 1000, 960), (255, 220, 150), alpha=90, blur=60)
+    # стол
+    S.wood(c, (0, 818, W, W), (132, 88, 58), (106, 68, 44), lines=7, seed=9)
+    c.rect((0, 810, W, 826), fill=(96, 62, 40))
+    moka(c, 170, 990, 0.95)
+
+    def bolletta(t_, w, h):
+        t_.rect((0, 0, w, 50), fill=TERRA4)
+        t_.text((22, 25), "BOLLETTA LUCE", "db", 24, WH, anchor="lm")
+        yy = 76
+        for lab in ("Materia energia", "Trasporto e contatore", "Oneri di sistema", "Imposte"):
+            t_.text((22, yy), lab, "sb", 22, (44, 44, 54), anchor="lm")
+            t_.text((w - 22, yy), "? €", "db", 22, (44, 44, 54), anchor="rm")
+            yy += 36
+        t_.line([(22, yy - 14), (w - 22, yy - 14)], (206, 206, 214), 2)
+        t_.text((22, yy + 10), "Totale", "db", 24, INK4, anchor="lm")
+        t_.text((w - 22, yy + 10), "? €", "db", 26, TERRA4, anchor="rm")
+    subcanvas(c, (420, 826, 790, 1072), 4, bolletta, paper=WH, shadow=80)
+    S.glasses(c, 900, 930, 0.9)
+
+
+def it_scene(P, t):
+    p = P["pal"]
+    c = C(WH)
+    sc_it_kitchen(c)
+    y = c.bars(t["bars"], 34, size=70, cond=0.8, max_w=1000, gap=8)
+    c.button(P["cta"], W / 2, y + 52, size=40, fill=p["btn"], padx=56, pady=20, grad=(mix(p["btn"], WH, 0.35), p["btn"]), outline=WH)
+    return c
+
+
+PACKS[4] = dict(
+    doc="P60-energy-subsidy-it-2026-09-30", cta="Scopri di più",
+    pal=dict(bg=CREAM4, bg2=(244, 232, 214), btn=BLUE4),
+    a=dict(fn=it_grid, title="Bolletta della luce 2026:", title2="4 cose da controllare",
+           sub="Come capire se si paga più del necessario",
+           tiles=[("w5_cal_x", "Offerta scaduta", "alla scadenza il prezzo può salire"),
+                  ("w5_gauge", "Potenza impegnata", "troppo alta = quota fissa più alta"),
+                  ("w5_fasce", "Fasce orarie", "F1: giorni feriali dalle 8 alle 19"),
+                  ("w5_doc_plus", "Servizi aggiuntivi", "polizze e assistenza come voci a parte")],
+           text="Bolletta della luce 2026: / 4 cose da controllare / Come capire se si paga più del necessario / на счёте: BOLLETTA LUCE, "
+                "строки 1–4 / 1 Offerta scaduta – alla scadenza il prezzo può salire / 2 Potenza impegnata – troppo alta = quota fissa più "
+                "alta / 3 Fasce orarie – F1: giorni feriali dalle 8 alle 19 / 4 Servizi aggiuntivi – polizze e assistenza come voci a parte "
+                "(у каждой плитки «Scopri di più →»)",
+           note="панель: бумажная bolletta с 4 пронумерованными строками, лупа, лампочка; ниже 4 плитки-признака с иконками; опора — "
+                "разделы «Quattro segnali che si paga più del necessario» и «Cosa si paga in una bolletta luce» (F1 8–19); безлично"),
+    b=dict(fn=it_phone_steps, title="Bonus sociale bollette 2026:", title2="come funziona in 3 passi",
+           steps=[("doc", "DSU", "la dichiarazione per ottenere l'ISEE"), ("calc", "ISEE", "sotto la soglia fissata per l'anno"),
+                  ("bulb", "Sconto in bolletta", "voce separata, dura 12 mesi")],
+           tag="BONUS SOCIALE", step="Domanda 1 di 3", q="Il bonus sociale va chiesto con una domanda a parte?",
+           opts=["Sì, sempre", "No, parte dalla DSU", "Solo cambiando fornitore", "Non so"],
+           foot="Si rinnova ogni anno con una nuova DSU",
+           pal=dict(bg=(246, 244, 234), bg2=(226, 232, 208)),
+           text="Bonus sociale bollette 2026: / come funziona in 3 passi / 1. DSU – la dichiarazione per ottenere l'ISEE / 2. ISEE – sotto "
+                "la soglia fissata per l'anno / 3. Sconto in bolletta – voce separata, dura 12 mesi / кнопка «Scopri di più →» / на "
+                "телефоне: BONUS SOCIALE · Domanda 1 di 3 / Il bonus sociale va chiesto con una domanda a parte? / Sì, sempre / No, parte "
+                "dalla DSU / Solo cambiando fornitore / Non so / Si rinnova ogni anno con una nuova DSU",
+           note="слева 3 шага DSU → ISEE → скидка в счёте, справа телефон с вопросом о механике бонуса (не о зрителе); опора — разделы "
+                "«Bonus sociale: chi ha diritto» и «quanto dura e come si rinnova»; без порогов ISEE и суммы бонуса"),
+    c=dict(fn=it_bars, title="Prezzo al kWh o spesa annua?", sub="Nelle offerte luce conta il totale dell'anno",
+           offers=[("OFFERTA A", "prezzo al kWh più basso", (0.36, 0.2, 0.18, 0.14), False),
+                   ("OFFERTA B", "spesa annua più bassa", (0.26, 0.2, 0.18, 0.12), True)],
+           legend_head="Voci della bolletta:", legend=["Materia energia", "Trasporto e contatore", "Oneri di sistema", "Imposte"],
+           legend_foot="Per il confronto: consumo annuo, potenza impegnata, codice POD",
+           pal=dict(bg=(252, 248, 240), bg2=(240, 230, 214)),
+           text="Prezzo al kWh o spesa annua? / Nelle offerte luce conta il totale dell'anno / OFFERTA A – prezzo al kWh più basso / "
+                "OFFERTA B – spesa annua più bassa (✓) / над столбиками: Totale anno ? € / в сегментах: ? € / Voci della bolletta: "
+                "Materia energia · Trasporto e contatore · Oneri di sistema · Imposte / Per il confronto: consumo annuo, potenza "
+                "impegnata, codice POD / кнопка «Scopri di più →»",
+           note="две оферты столбиками годовой суммы из 4 статей счёта, везде «? €» (статья объясняет состав счёта); высоты — "
+                "иллюстрация тезиса статьи «дешевле не та, у которой ниже цена кВт·ч, а та, у которой ниже годовая сумма»; опора — "
+                "разделы «Cosa si paga in una bolletta luce» и «Confronto tariffe luce»"),
+    d=dict(fn=it_scene, bars=[("BOLLETTA DELLA LUCE:", WH, TERRA4), ("4 SEGNALI CHE SI PAGA", INK4, (255, 236, 200)),
+                              ("PIÙ DEL NECESSARIO", INK4, (255, 236, 200))],
+           text="BOLLETTA DELLA LUCE: / 4 SEGNALI CHE SI PAGA / PIÙ DEL NECESSARIO / кнопка «Scopri di più →» / на счётчике: kWh / на "
+                "счёте: BOLLETTA LUCE · Materia energia ? € · Trasporto e contatore ? € · Oneri di sistema ? € · Imposte ? € · Totale ? €",
+           note="кухня вечером: окно с черепичными крышами в сумерках, часы на 19:00 (конец F1), электронный счётчик, лампа, на столе "
+                "bolletta с «? €», очки, гейзерная кофеварка; плашки = хук РК 1, безлично; опора — разделы «Quattro segnali…» и «Cosa si paga…»"),
+)
+
+
+# =====================================================================  5. PL · кредиты · telefon na raty 12–24 мес.
+INK5, VIO5, YEL5, RED5, GRN5 = (24, 30, 56), (92, 64, 196), (255, 210, 64), (220, 48, 60), (40, 160, 90)
+
+
+def pl_ways(P, t):
+    """3 высокие карточки-пути покупки: иконка, название, пояснение из статьи, «Dowiedz się więcej»."""
+    p = P["pal"]
+    c = C(p["bg"])
+    c.vgrad((0, 0, W, W), p["bg"], p["bg2"])
+    y = hdr(c, t["title"], t["sub"], y=42, col=INK5, sub_col=(80, 84, 104), size=60, title2=t["title2"], t2_col=VIO5, sub_size=30)
+    top, bot = y + 30, 1046
+    g = 22
+    cw = (960 - 2 * g) / 3
+    for i, (ic, lab, desc, tint) in enumerate(t["cards"]):
+        x0 = 60 + i * (cw + g)
+        cx = x0 + cw / 2
+        c.card((x0, top, x0 + cw, bot), fill=WH, r=28, sh_alpha=60, blur=14, off=(0, 8))
+        ih = (bot - top) * 0.5
+        c.rect((x0 + 12, top + 12, x0 + cw - 12, top + ih), fill=tint, r=22)
+        num_badge(c, x0 + 42, top + 42, 20, i + 1, VIO5)
+        icon(c, ic, cx, top + 12 + (ih - 12) / 2 + 6, ih * 0.66, INK5, bg=tint)
+        fs = min(c.fit(x[1], "db", cw - 34, 2, 32) for x in t["cards"])
+        ly = c.block(lab, "db", fs, top + ih + 28, cw - 34, INK5, cx=cx, max_lines=2, gap=1.05)
+        c.block(desc, "s", 27, ly + 12, cw - 40, (84, 88, 108), cx=cx, max_lines=3, gap=1.12)
+        c.pill(P["cta"], cx, bot - 44, size=21, fill=p["btn"], padx=18, pady=11)
+    return c
+
+
+def pl_contract(P, t):
+    """Опросник-чек-лист договора: прогресс 3 из 8, пункты 1–2 отмечены, пункт 3 раскрыт с вариантами."""
+    p = P["pal"]
+    c = C(p["bg"])
+    c.vgrad((0, 0, W, W), p["bg"], p["bg2"])
+    c.ellipse((760, -180, 1240, 300), fill=WH, alpha=18)
+    y = c.block(t["title"], "db", 58, 40, 980, WH, max_lines=1)
+    y = c.block(t["title2"], "db", 50, y + 2, 980, YEL5, max_lines=1)
+    box = (60, y + 26, 1020, 900)
+    c.card(box, r=34, sh_alpha=120, blur=22)
+    x0, x1 = box[0] + 44, box[2] - 44
+    yy = box[1] + 36
+    c.text((x0, yy), t["tag"], "sb", 25, VIO5)
+    c.text((x1, yy), t["step"], "db", 25, INK5, anchor="ra")
+    yy += 44
+    seg = (x1 - x0 - 7 * 8) / 8
+    for k in range(8):
+        sx = x0 + k * (seg + 8)
+        c.rect((sx, yy, sx + seg, yy + 12), fill=(VIO5 if k < 3 else (226, 226, 236)), r=6)
+    yy += 36
+    for k, (lab, st) in enumerate(t["items"]):
+        if st == "now":
+            h = 206
+            c.rect((x0, yy, x1, yy + h), fill=(246, 243, 255), r=20, outline=VIO5, width=3)
+            num_badge(c, x0 + 36, yy + 40, 20, k + 1, VIO5)
+            c.block(lab, "db", c.fit(lab, "db", x1 - x0 - 90, 1, 30), yy + 22, x1 - x0 - 90, INK5, align="left", x=x0 + 72, max_lines=1)
+            ow = (x1 - x0 - 40 - 2 * 14) / 3
+            for j, o in enumerate(t["opts"]):
+                ox = x0 + 20 + j * (ow + 14)
+                c.rect((ox, yy + 86, ox + ow, yy + 176), fill=WH, r=18, outline=(200, 194, 230), width=3)
+                c.circle(ox + 34, yy + 131, 13, fill=WH, outline=(150, 146, 170), width=3)
+                c.text((ox + 58, yy + 131), o, "sb", c.fit(o, "sb", ow - 76, 1, 27), INK5, anchor="lm")
+            yy += h + 12
+        else:
+            h = 62
+            done = st == "done"
+            c.rect((x0, yy, x1, yy + h), fill=(236, 248, 240) if done else (246, 247, 250), r=18)
+            if done:
+                checkmark_circle(c, x0 + 36, yy + h / 2, 18, GRN5)
+            else:
+                c.circle(x0 + 36, yy + h / 2, 17, outline=(170, 172, 186), width=3)
+                c.text((x0 + 36, yy + h / 2 + 1), str(k + 1), "db", 18, (140, 142, 156), anchor="mm")
+            c.text((x0 + 72, yy + h / 2), lab, "sb", c.fit(lab, "sb", x1 - x0 - 90, 1, 28), INK5 if done else (90, 92, 108), anchor="lm")
+            yy += h + 10
+    c.text((W / 2, yy + 4), t["more"], "si", 25, (110, 112, 128), anchor="ma")
+    c.button(P["cta"], W / 2, 974, size=40, fill=p["btn"], outline=WH)
+    return c
+
+
+def pl_calendars(P, t):
+    """Сравнение: сетка из 12 и из 24 платежей, «rata wyższa / niższa», «Całkowita kwota: ? zł» в обеих колонках."""
+    p = P["pal"]
+    c = C(p["bg"])
+    c.vgrad((0, 0, W, W), p["bg"], p["bg2"])
+    y = hdr(c, t["title"], t["sub"], y=40, col=INK5, sub_col=(80, 84, 104), size=72, sub_size=31, lines=1)
+    top, bot = y + 26, 846
+    g = 26
+    cw = (960 - g) / 2
+    for k, (lab, n, cols, rata, col) in enumerate(t["cols"]):
+        x0 = 60 + k * (cw + g)
+        cx = x0 + cw / 2
+        c.card((x0, top, x0 + cw, bot), fill=WH, r=28, sh_alpha=60, blur=14, off=(0, 8))
+        c.rect((x0, top, x0 + cw, top + 76), fill=col, r=28)
+        c.rect((x0, top + 46, x0 + cw, top + 76), fill=col)
+        c.text((cx, top + 39), lab, "db", 36, WH, anchor="mm")
+        rows = n // cols
+        gx0, gx1 = x0 + 40, x0 + cw - 40
+        gy0 = top + 104
+        gh = 290
+        cell_w = (gx1 - gx0 - (cols - 1) * 10) / cols
+        cell_h = min(cell_w, (gh - (rows - 1) * 10) / rows)
+        gy0 += (gh - (rows * cell_h + (rows - 1) * 10)) / 2
+        for r_ in range(rows):
+            for q in range(cols):
+                bx = gx0 + q * (cell_w + 10)
+                by = gy0 + r_ * (cell_h + 10)
+                c.rect((bx, by, bx + cell_w, by + cell_h), fill=mix(col, WH, 0.78), r=8, outline=mix(col, WH, 0.4), width=2)
+                idx = r_ * cols + q + 1
+                c.text((bx + cell_w / 2, by + cell_h / 2 + 1), str(idx), "sb", min(24, cell_h * 0.45), mix(col, BLACK, 0.2), anchor="mm")
+        yy = top + 104 + gh + 26
+        c.text((x0 + 36, yy), t["rata_lab"], "sb", 27, (90, 94, 110))
+        c.text((x0 + cw - 36, yy), rata, "db", 28, INK5, anchor="ra")
+        yy += 50
+        c.line([(x0 + 36, yy), (x0 + cw - 36, yy)], (226, 228, 236), 2)
+        yy += 18
+        c.rect((x0 + 24, yy, x0 + cw - 24, yy + 96), fill=(255, 244, 196), r=18)
+        c.text((cx, yy + 28), t["total_lab"], "sb", 26, (90, 80, 40), anchor="mm")
+        c.text((cx, yy + 66), "? zł", "db", 38, INK5, anchor="mm")
+    c.circle(W / 2, top + 104 + 145, 40, fill=WH, outline=(200, 206, 214), width=3)
+    c.text((W / 2, top + 104 + 145), "czy", "db", 24, (90, 96, 106), anchor="mm")
+    c.block(t["foot"], "sb", 31, 866, 980, INK5, max_lines=1)
+    c.button(P["cta"], W / 2, 978, size=40, fill=p["btn"])
+    return c
+
+
+def sc_pl_flatlay(c):
+    """Вид сверху на стол: смартфон без логотипа, лист «harmonogram spłat» с сетками 12 и 24, калькулятор, ручка, кофе."""
+    S.wood(c, (0, 0, W, W), (214, 172, 126), (196, 150, 104), lines=14, seed=21)
+
+    def phone(t_, w, h):
+        t_.rect((0, 0, w, h), fill=(28, 30, 36), r=44)
+        t_.rect((12, 12, w - 12, h - 12), fill=(246, 246, 250), r=34)
+        t_.rect((w / 2 - 40, 22, w / 2 + 40, 40), fill=(28, 30, 36), r=9)
+        t_.text((30, 76), "Raty", "db", 30, INK5)
+        t_.rect((30, 120, w - 30, 172), fill=(232, 228, 250), r=26)
+        t_.rect((34, 124, w / 2 - 2, 168), fill=VIO5, r=22)
+        t_.text(((34 + w / 2) / 2, 146), "12", "db", 24, WH, anchor="mm")
+        t_.text((w * 0.75 - 6, 146), "24", "db", 24, VIO5, anchor="mm")
+        for k in range(5):
+            yy = 200 + k * 58
+            t_.rect((30, yy, w - 30, yy + 44), fill=WH, r=12)
+            t_.rect((44, yy + 14, 44 + (w - 120) * (0.8 - 0.1 * (k % 3)), yy + 28), fill=(214, 216, 226), r=6)
+        t_.rect((30, h - 90, w - 30, h - 40), fill=YEL5, r=14)
+        t_.text((w / 2, h - 65), "? zł", "db", 26, INK5, anchor="mm")
+    subcanvas(c, (70, 430, 350, 1000), 7, phone, paper=(28, 30, 36), shadow=110, r=44)
+
+    def sheet(t_, w, h):
+        t_.text((30, 26), "HARMONOGRAM SPŁAT", "db", 26, INK5)
+        t_.line([(30, 66), (w - 30, 66)], (200, 204, 214), 2)
+        yy = 86
+        for lab, n, cols, col in (("12 rat", 12, 6, (70, 150, 230)), ("24 raty", 24, 8, VIO5)):
+            t_.text((30, yy), lab, "db", 24, col)
+            t_.text((w - 30, yy), "razem: ? zł", "sb", 22, (90, 92, 104), anchor="ra")
+            yy += 40
+            cwid = (w - 60 - (cols - 1) * 6) / cols
+            for k in range(n):
+                q, r_ = k % cols, k // cols
+                bx = 30 + q * (cwid + 6)
+                by = yy + r_ * 34
+                t_.rect((bx, by, bx + cwid, by + 28), fill=mix(col, WH, 0.82), r=5, outline=mix(col, WH, 0.45), width=2)
+            yy += (n // cols) * 34 + 28
+        t_.line([(30, h - 70), (w - 30, h - 70)], (200, 204, 214), 2)
+        t_.text((30, h - 44), "RRSO · prowizja · ubezpieczenie", "sb", 21, (110, 112, 124), anchor="lm")
+    subcanvas(c, (400, 440, 900, 900), -4, sheet, paper=(254, 253, 248), shadow=90)
+    W3.calc_obj(c, 800, 790, 200, 270, shown="?")
+    S.pen(c, 470, 1040, 700, 960, col=(40, 50, 90), w=14)
+    c.circle(990, 480, 74, fill=(240, 240, 240))
+    c.circle(990, 480, 58, fill=(120, 76, 44))
+    c.circle(990, 480, 58, outline=(250, 250, 250), width=4)
+    c.ellipse((960, 452, 1000, 472), fill=(170, 120, 80))
+
+
+def pl_scene(P, t):
+    p = P["pal"]
+    c = C(WH)
+    sc_pl_flatlay(c)
+    box = (50, 36, 1030, 350)
+    c.shadow(box, r=26, alpha=110, blur=18, off=(0, 10))
+    c.rect(box, fill=WH, r=26)
+    c.rect((box[0], box[1], box[0] + 16, box[3]), fill=VIO5, r=8)
+    y = c.block(t["title"], "db", 56, box[1] + 34, 900, INK5, max_lines=2, gap=1.06)
+    c.block(t["sub"], "s", 30, y + 8, 900, (80, 84, 104), max_lines=1)
+    c.button(P["cta"], W / 2, box[3] + 4, size=40, fill=p["btn"], outline=WH)
+    return c
+
+
+PACKS[5] = dict(
+    doc="P60-phone-installments-pl-2026-09-30", cta="Dowiedz się więcej",
+    pal=dict(bg=(247, 246, 253), bg2=(232, 230, 248), btn=RED5),
+    a=dict(fn=pl_ways, title="Telefon na raty 2026:", title2="która droga?",
+           sub="Porównanie po RRSO i całkowitej kwocie do zapłaty",
+           cards=[("w5_shop", "Raty w sklepie", "spłata zwykle od 12 do 24 miesięcy", (252, 234, 230)),
+                  ("w5_tower_phone", "Telefon u operatora", "raty razem z abonamentem, najczęściej 24 miesiące", (228, 238, 252)),
+                  ("w5_online_loan", "Kredyt gotówkowy online", "pieniądze na konto, zakup w dowolnym miejscu", (232, 246, 236))],
+           text="Telefon na raty 2026: / która droga? / Porównanie po RRSO i całkowitej kwocie do zapłaty / 1 Raty w sklepie – spłata "
+                "zwykle od 12 do 24 miesięcy / 2 Telefon u operatora – raty razem z abonamentem, najczęściej 24 miesiące / 3 Kredyt "
+                "gotówkowy online – pieniądze na konto, zakup w dowolnym miejscu (у каждой карточки «Dowiedz się więcej →»)",
+           note="3 карточки-пути (магазин без вывески, мачта связи + телефон, ноутбук с переводом на счёт); опора — раздел «Trzy drogi: "
+                "sklep, operator, kredyt gotówkowy»; без брендов операторов, магазинов и телефонов, без сумм, «0%», «bez BIK», "
+                "отложенного платежа"),
+    b=dict(fn=pl_contract, title="Telefon na raty:", title2="8 rzeczy do sprawdzenia w umowie",
+           tag="CHECKLISTA UMOWY", step="Punkt 3 z 8",
+           items=[("RRSO", "done"), ("Całkowita kwota do zapłaty", "done"), ("Ubezpieczenie: obowiązkowe czy dobrowolne?", "now"),
+                  ("Prawo do odstąpienia w ciągu 14 dni", "todo"), ("Zasady wcześniejszej spłaty", "todo")],
+           opts=["Obowiązkowe", "Dobrowolne", "Nie wiem"], more="…i 3 kolejne punkty",
+           pal=dict(bg=(64, 44, 150), bg2=(34, 24, 90)),
+           text="Telefon na raty: / 8 rzeczy do sprawdzenia w umowie / CHECKLISTA UMOWY · Punkt 3 z 8 (прогресс 3/8) / ✓ RRSO / "
+                "✓ Całkowita kwota do zapłaty / 3 Ubezpieczenie: obowiązkowe czy dobrowolne? – Obowiązkowe / Dobrowolne / Nie wiem / "
+                "4 Prawo do odstąpienia w ciągu 14 dni / 5 Zasady wcześniejszej spłaty / …i 3 kolejne punkty / кнопка «Dowiedz się więcej →»",
+           note="фиолетовый фон, карточка-чек-лист договора: 2 пункта отмечены, пункт 3 раскрыт с 3 вариантами ответа; опора — раздел "
+                "«Co sprawdzić w umowie przed podpisaniem» (8 пунктов); без цифр стоимости и платежей"),
+    c=dict(fn=pl_calendars, title="12 czy 24 raty?", sub="Co zmienia się w całkowitej kwocie do zapłaty",
+           cols=[("12 RAT", 12, 4, "wyższa", (60, 140, 220)), ("24 RATY", 24, 6, "niższa", VIO5)],
+           rata_lab="Rata:", total_lab="Całkowita kwota do zapłaty:",
+           foot="O koszcie decyduje całkowita kwota, nie sama rata",
+           pal=dict(bg=(248, 247, 253), bg2=(234, 232, 248)),
+           text="12 czy 24 raty? / Co zmienia się w całkowitej kwocie do zapłaty / 12 RAT: сетка из 12 клеток 1–12 · Rata: wyższa · "
+                "Całkowita kwota do zapłaty: ? zł / czy / 24 RATY: сетка из 24 клеток 1–24 · Rata: niższa · Całkowita kwota do zapłaty: "
+                "? zł / O koszcie decyduje całkowita kwota, nie sama rata / кнопка «Dowiedz się więcej →»",
+           note="две колонки-сетки платежей 12 и 24, «rata wyższa / niższa» и «Całkowita kwota: ? zł» в обеих; цифры примера статьи "
+                "(250/150 zł, 3060/3600 zł) не вынесены; опора — раздел «12 czy 24 raty: ile kosztuje w sumie» и лид"),
+    d=dict(fn=pl_scene, title="Telefon na raty: ile naprawdę kosztuje w sumie?", sub="Co sprawdzić przed podpisaniem umowy",
+           text="Telefon na raty: ile naprawdę kosztuje w sumie? / Co sprawdzić przed podpisaniem umowy / кнопка «Dowiedz się więcej →» / "
+                "на телефоне: Raty · 12 | 24 · ? zł / на листе: HARMONOGRAM SPŁAT · 12 rat – razem: ? zł · 24 raty – razem: ? zł · "
+                "RRSO · prowizja · ubezpieczenie / на калькуляторе: ?",
+           note="вид сверху на стол: смартфон без логотипа с переключателем 12/24, лист «harmonogram spłat» с сетками 12 и 24 клеток, "
+                "калькулятор «?», ручка, кофе; карточка сверху = заголовок статьи + вопрос «ile naprawdę kosztuje»; опора — лид, разделы "
+                "«12 czy 24 raty» и «Co sprawdzić w umowie»"),
+)
+
+
 # =====================================================================  сборка
 def build(n, letters="abcd"):
     P = PACKS[n]
