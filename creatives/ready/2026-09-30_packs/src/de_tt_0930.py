@@ -1,7 +1,8 @@
 """DE кредиты · TikTok · статья IRONFLI «Kredit mit Rente 2026: Welche Summe ist realistisch und worauf schaut die Bank?»
 (кампании AlexZLoansDE). 4 вертикальные статики 1080×1920 целиком в Pillow — замена TT-крео, которые 27–28.09 дали
 CTR 0.37 % (24 клика на 6 444 показа, hook2s 13 %). Запуск:
-    python3 de_tt_0930.py          — все четыре
+    python3 de_tt_0930.py          — все восемь (4 вертикали 9:16 PNG + 4 квадрата 1:1 JPEG в sq/)
+    python3 de_tt_0930.py sq       — только квадраты
     python3 de_tt_0930.py a c      — только a и c
     python3 de_tt_0930.py sheet    — плюс контактный лист (scratch) для проверки глазами
 Пишет /home/user/alextest/creatives/ready/2026-09-30_de_tt/{a,b,c,d}.png и creatives.json.
@@ -55,8 +56,9 @@ def rgba(c, a=255):
 class V:
     """Холст 1080×1920, рисуется в K раз крупнее. Все координаты — в единицах 1080×1920."""
 
-    def __init__(self, bg=WHITE):
-        self.im = Image.new("RGBA", (W * K, H * K), rgba(bg))
+    def __init__(self, bg=WHITE, size=(W, H)):
+        self.w, self.h = size
+        self.im = Image.new("RGBA", (self.w * K, self.h * K), rgba(bg))
         self._f = {}
         self.text_boxes = []  # (x0, y0, x1, y1, text) — для проверки безопасной зоны
         self.buttons = []
@@ -230,7 +232,7 @@ class V:
     def save(self, name):
         os.makedirs(OUT, exist_ok=True)
         path = os.path.join(OUT, name)
-        img = self.im.convert("RGB").resize((W, H), Image.LANCZOS)
+        img = self.im.convert("RGB").resize((self.w, self.h), Image.LANCZOS)
         img.save(path, optimize=True)
         info = "truecolor"
         if os.path.getsize(path) > 400 * 1024:
@@ -242,6 +244,45 @@ class V:
                     break
         print(name, img.size, os.path.getsize(path) // 1024, "KB", info)
         return path
+
+
+    def save_jpg(self, name):
+        """JPEG ≤ 400 КБ (квадраты FB+TT)."""
+        path = os.path.join(OUT, name)
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        img = self.im.convert("RGB").resize((self.w, self.h), Image.LANCZOS)
+        for q in (92, 90, 88, 85, 82, 78):
+            img.save(path, "JPEG", quality=q, optimize=True, progressive=True, subsampling=0 if q >= 88 else 2)
+            if os.path.getsize(path) <= 400 * 1024:
+                break
+        print(name, img.size, os.path.getsize(path) // 1024, "KB", f"q{q}")
+        return path
+
+    def wrap(self, text, name, size, max_w):
+        words, lines, cur = text.split(), [], ""
+        for wd in words:
+            t = (cur + " " + wd).strip()
+            if self.tw(t, name, size) <= max_w or not cur:
+                cur = t
+            else:
+                lines.append(cur)
+                cur = wd
+        if cur:
+            lines.append(cur)
+        return lines
+
+
+SQ_MARGIN = 48  # квадрат: текст и кнопка не ближе 48 px к краю
+
+
+def assert_safe_sq(c, tag):
+    bad = [(round(x0), round(y0), round(x1), round(y1), t) for x0, y0, x1, y1, t in c.text_boxes
+           if x0 < SQ_MARGIN or y0 < SQ_MARGIN or x1 > c.w - SQ_MARGIN or y1 > c.h - SQ_MARGIN]
+    bad += [tuple(round(v) for v in bx) for bx in c.buttons
+            if bx[0] < SQ_MARGIN or bx[1] < SQ_MARGIN or bx[2] > c.w - SQ_MARGIN or bx[3] > c.h - SQ_MARGIN]
+    if bad:
+        raise SystemExit(f"{tag}: вне поля квадрата: {bad}")
+    print(f"  {tag}: {len(c.text_boxes)} текстовых блоков в поле; низ текста y={max(b[3] for b in c.text_boxes):.0f}")
 
 
 def assert_safe(c, tag):
@@ -533,6 +574,159 @@ def cr_d():
     c.save("d.png")
 
 
+# =====================================================================  квадраты 1:1 (FB+TT), те же концепции
+SQ = (1080, 1080)
+
+
+def sq_a():
+    """A 1:1 · FB-хук 0928-GE01: розы сверху/снизу, флаг справа вверху, «KREDIT IM RUHESTAND:», вопрос, красная кнопка."""
+    c = V((255, 253, 250), SQ)
+    rose_garland(c, 34, seed=3)
+    rose_garland(c, 1046, flip=True, seed=7)
+    de_flag(c, 880, 176, w=128, h=82)
+    cx = 540
+    lines = ["KREDIT IM", "RUHESTAND:"]
+    size = c.fit(lines, "anton", 170, 800)
+    y = c.lines_center(lines, "anton", size, cx, 196, INK, gap=1.06)
+    red = (214, 38, 52)
+    sub = [[("Welche Möglichkeiten", INK)], [("gibt es ", INK), ("ab 60?", red)]]
+    ss = c.fit(["Welche Möglichkeiten"], "mxb", 70, 860)
+    y = c.lines_center(sub, "mxb", ss, cx, y + 60, INK, gap=1.18)
+    c.button(CTA, cx, y + 104, size=54, fill=red, h=110)
+    assert_safe_sq(c, "sq/a")
+    c.save_jpg("sq/a.jpg")
+
+
+def sq_b():
+    """B 1:1 · «So rechnet die Bank»: калькулятор без цифр."""
+    navy0, navy1 = (13, 27, 66), (28, 52, 118)
+    yellow = (255, 200, 61)
+    c = V(navy0, SQ)
+    c.vgrad((0, 0, 1080, 1080), navy0, navy1)
+    c.glow(930, 150, 240, (70, 110, 210), alpha=90)
+    cx = 540
+    kick = "3 Zahlen entscheiden"
+    kw = c.tw(kick, "mxb", 34)
+    c.rect((cx - kw / 2 - 26, 62, cx + kw / 2 + 26, 120), fill=yellow, r=29)
+    c.text((cx, 91 + c.cap("mxb", 34)[1] / 2), kick, "mxb", 34, navy0, anchor="ms")
+    # «KREDIT MIT RENTE 2026» одной строкой, год в жёлтой плашке
+    size = c.fit(["KREDIT MIT RENTE 2026"], "anton", 124, 900)
+    capH = c.cap("anton", size)[1]
+    f = c.font("anton", size)
+    wl, w2 = f.getlength("KREDIT MIT RENTE ") / K, f.getlength("2026") / K
+    x = cx - (wl + w2) / 2
+    base = 156 + capH
+    c.rect((x + wl - 14, base - capH - 16, x + wl + w2 + 14, base + 18), fill=yellow, r=14)
+    c.text((x, base), "KREDIT MIT RENTE ", "anton", size, WHITE, anchor="ls")
+    c.text((x + wl, base), "2026", "anton", size, navy0, anchor="ls")
+    ss = c.fit(["Welche Summe ist realistisch?"], "mxb", 58, 900)
+    y = c.lines_center(["Welche Summe ist realistisch?"], "mxb", ss, cx, base + 50, WHITE)
+    top = y + 40
+    box = (120, top, 960, top + 478)
+    c.shadow(box, r=34, alpha=120, blur=22, off=(0, 14))
+    c.rect(box, fill=WHITE, r=34)
+    x0, x1 = box[0] + 38, box[2] - 38
+    ix, iy = x0, top + 28
+    c.rect((ix, iy, ix + 46, iy + 58), fill=navy1, r=9)
+    c.rect((ix + 7, iy + 7, ix + 39, iy + 20), fill=(190, 214, 255), r=3)
+    for r_ in range(3):
+        for k_ in range(3):
+            c.rect((ix + 7 + k_ * 11.5, iy + 26 + r_ * 10, ix + 15 + k_ * 11.5, iy + 32 + r_ * 10), fill=WHITE, r=2)
+    c.text((ix + 66, iy + 29 + c.cap("mxb", 40)[1] / 2), "So rechnet die Bank", "mxb", 40, navy0, anchor="ls")
+    rows = [("Netto-Rente", "? €"), ("Laufzeit", "? Jahre"), ("Alter bei der letzten Rate", "?")]
+    ry = top + 108
+    for lab, val in rows:
+        c.text((x0, ry + 28 + c.cap("mb", 32)[1] / 2), lab, "mb", 32, (70, 78, 98), anchor="ls")
+        vw = max(130, c.tw(val, "mxb", 34) + 44)
+        c.rect((x1 - vw, ry, x1, ry + 56), fill=(240, 244, 252), r=14, outline=(200, 210, 230), width=2)
+        c.text((x1 - vw / 2, ry + 28 + c.cap("mxb", 34)[1] / 2), val, "mxb", 34, navy1, anchor="ms")
+        c.line([(x0, ry + 72), (x1, ry + 72)], (230, 234, 242), width=2)
+        ry += 82
+    rb = (x0 - 10, ry + 4, x1 + 10, ry + 96)
+    c.rect(rb, fill=(255, 241, 204), r=20, outline=(245, 184, 60), width=3)
+    c.text((rb[0] + 26, (rb[1] + rb[3]) / 2 + c.cap("mxb", 36)[1] / 2), "Realistische Summe", "mxb", 36, (110, 64, 0), anchor="ls")
+    c.text((rb[2] - 26, (rb[1] + rb[3]) / 2 + c.cap("anton", 60)[1] / 2), "? €", "anton", 60, (214, 38, 52), anchor="rs")
+    c.button(CTA, cx, box[3] + 84, size=50, fill=yellow, color=navy0, h=100)
+    assert_safe_sq(c, "sq/b")
+    c.save_jpg("sq/b.jpg")
+
+
+def sq_c():
+    """C 1:1 · квиз: лента «QUIZ | KREDIT MIT RENTE 2026», вопрос, три варианта-кнопки."""
+    bg0, bg1 = (255, 222, 89), (255, 196, 60)
+    c = V(bg0, SQ)
+    c.vgrad((0, 0, 1080, 1080), bg0, bg1)
+    for i in range(8):
+        rnd = random.Random(60 + i)
+        c.circle(rnd.choice((rnd.uniform(10, 50), rnd.uniform(1030, 1070))), rnd.uniform(120, 1000), rnd.uniform(8, 18), fill=WHITE, alpha=110)
+    cx = 540
+    band = (90, 52, 990, 148)
+    c.rect(band, fill=INK, r=24)
+    chip = (band[0] + 16, band[1] + 16, band[0] + 176, band[3] - 16)
+    c.rect(chip, fill=bg0, r=16)
+    c.text(((chip[0] + chip[2]) / 2, (chip[1] + chip[3]) / 2 + c.cap("mblack", 38)[1] / 2), "QUIZ", "mblack", 38, INK, anchor="ms")
+    ts = c.fit(["KREDIT MIT RENTE 2026"], "anton", 68, band[2] - chip[2] - 40)
+    c.text((chip[2] + 22, (band[1] + band[3]) / 2 + c.cap("anton", ts)[1] / 2), "KREDIT MIT RENTE 2026", "anton", ts, WHITE, anchor="ls")
+    q = ["Worauf schaut die", "Bank zuerst?"]
+    size = c.fit(q, "anton", 132, 900)
+    y = c.lines_center(q, "anton", size, cx, 186, INK, gap=1.04)
+    opts = [("A", "Das Alter"), ("B", "Die Höhe der Rente"), ("C", "Die Laufzeit")]
+    oy = y + 46
+    for letter, t in opts:
+        box = (130, oy, 950, oy + 94)
+        c.rect((box[0] + 7, box[1] + 8, box[2] + 7, box[3] + 8), fill=INK, r=28)
+        c.rect(box, fill=WHITE, r=28, outline=INK, width=4)
+        c.circle(box[0] + 58, (box[1] + box[3]) / 2, 32, fill=INK)
+        c.text((box[0] + 58, (box[1] + box[3]) / 2 + c.cap("mblack", 36)[1] / 2), letter, "mblack", 36, bg0, anchor="ms")
+        c.text((box[0] + 112, (box[1] + box[3]) / 2 + c.cap("mxb", 42)[1] / 2), t, "mxb", 42, INK, anchor="ls")
+        oy += 112
+    c.lines_center(["Die Antwort überrascht viele."], "mb", 38, cx, oy + 4, INK)
+    c.button(CTA, cx, oy + 104, size=50, fill=INK, color=WHITE, h=100)
+    assert_safe_sq(c, "sq/c")
+    c.save_jpg("sq/c.jpg")
+
+
+def sq_d():
+    """D 1:1 · «Mythos / Fakt» — две карточки рядом (в квадрате сравнение читается слева направо)."""
+    bg = (247, 244, 238)
+    c = V(bg, SQ)
+    navy = (18, 36, 84)
+    red, redbg = (206, 40, 48), (253, 226, 224)
+    green, greenbg = (22, 132, 76), (220, 243, 228)
+    cx = 540
+    size = c.fit(["KREDIT MIT RENTE 2026"], "anton", 116, 900)
+    c.lines_center(["KREDIT MIT RENTE 2026"], "anton", size, cx, 60, navy)
+    top, bot = 60 + c.cap("anton", size)[1] + 50, 735
+    m, f = (60, top, 505, bot), (575, top, 1020, bot)
+    # МИФ
+    c.shadow(m, r=30, alpha=45, blur=14, off=(0, 8))
+    c.rect(m, fill=redbg, r=30)
+    c.rect((m[0] + 30, m[1] + 30, m[0] + 230, m[1] + 90), fill=red, r=30)
+    c.text((m[0] + 130, m[1] + 60 + c.cap("mblack", 34)[1] / 2), "MYTHOS", "mblack", 34, WHITE, anchor="ms")
+    cross(c, m[2] - 62, m[1] + 60, 24, red, width=13)
+    ml = c.wrap("Mit 70 gibt es keinen Kredit mehr.", "mxb", 62, m[2] - m[0] - 60)
+    c.lines_left(ml, "mxb", 62, m[0] + 30, m[1] + 140, (90, 30, 34), gap=1.24)
+    # стрелка
+    ay = (top + bot) / 2
+    c.poly([(514, ay - 34), (566, ay), (514, ay + 34)], navy)
+    # ФАКТ
+    c.shadow(f, r=30, alpha=55, blur=16, off=(0, 10))
+    c.rect(f, fill=greenbg, r=30, outline=green, width=4)
+    c.rect((f[0] + 30, f[1] + 30, f[0] + 190, f[1] + 90), fill=green, r=30)
+    c.text((f[0] + 110, f[1] + 60 + c.cap("mblack", 34)[1] / 2), "FAKT", "mblack", 34, WHITE, anchor="ms")
+    check(c, f[2] - 62, f[1] + 60, 24, green, width=13)
+    fl = c.wrap("Kein Gesetz verbietet einen Kredit mit 70.", "mblack", 48, f[2] - f[0] - 60)
+    yb = c.lines_left(fl, "mblack", 48, f[0] + 30, f[1] + 130, (14, 70, 40), gap=1.2)
+    el = c.wrap("Entscheidend ist das Alter bei der letzten Rate.", "mb", 34, f[2] - f[0] - 60)
+    c.lines_left(el, "mb", 34, f[0] + 30, yb + 44, (40, 60, 50), gap=1.25)
+    qs = c.fit(["Was heißt das für die Summe?"], "mxb", 50, 900)
+    c.lines_center([[("Was heißt das ", navy), ("für die Summe?", red)]], "mxb", qs, cx, bot + 48, navy)
+    c.button(CTA, cx, bot + 176, size=50, fill=navy, color=WHITE, h=100)
+    assert_safe_sq(c, "sq/d")
+    c.save_jpg("sq/d.jpg")
+
+
+
 BASIS_NOTE = ("Что стояло в TikTok на этой статье 27–28.09: 3 адгруппы (vb-AlexZLoansDE-tg_7-tk-intl-a-0927-GE01, "
               "…-tk-de-a-0927-GE03, …-tk-de-a-0927-GE01), 6 444 показа, 24 клика, CTR 0.37 % при медиане TT кабинета 1.42 %, "
               "hook2s 13.4 %, hook6s 2.8 %, vcr 1.1 %, $6.67 → $0.56, 1 лид. Превью TT-объявлений в кабинете нет; по карточкам панели "
@@ -579,8 +773,37 @@ CREATIVES = [
 ]
 
 
+SQ_CONCEPT = {
+    "a": "Перенос FB-хука 0928-GE01, квадрат: белый фон, розовые розы сверху и снизу, флаг Германии справа вверху (как на исходнике), сжатый жирный капс «KREDIT IM RUHESTAND:» на треть кадра, «Welche Möglichkeiten gibt es ab 60?» («ab 60?» красным), красная кнопка «Mehr erfahren →».",
+    "b": "«Как считает банк», квадрат: тёмно-синий фон, кикер «3 Zahlen entscheiden», «KREDIT MIT RENTE 2026» одной строкой (год в жёлтой плашке), «Welche Summe ist realistisch?», белая карточка «So rechnet die Bank» (Netto-Rente ? € · Laufzeit ? Jahre · Alter bei der letzten Rate ?) и итог «Realistische Summe ? €», жёлтая кнопка «Mehr erfahren →». Ни одной суммы, ставки или обещания.",
+    "c": "Квиз, квадрат: жёлтый фон, чёрная лента «QUIZ | KREDIT MIT RENTE 2026», крупный вопрос «Worauf schaut die Bank zuerst?», три белые кнопки-варианта A «Das Alter» · B «Die Höhe der Rente» · C «Die Laufzeit», «Die Antwort überrascht viele.», чёрная кнопка «Mehr erfahren →». Вопрос о банке, не о зрителе.",
+    "d": "«Mythos / Fakt», квадрат: «KREDIT MIT RENTE 2026» сверху, две карточки рядом — красная MYTHOS «Mit 70 gibt es keinen Kredit mehr.» (крест) → зелёная FAKT «Kein Gesetz verbietet einen Kredit mit 70. Entscheidend ist das Alter bei der letzten Rate.» (галочка), «Was heißt das für die Summe?», тёмно-синяя кнопка «Mehr erfahren →».",
+}
+
+
+def build_json():
+    out = []
+    for cr in CREATIVES:  # квадраты 1:1 — основной набор FB+TT
+        q = dict(cr)
+        q["file"] = f"cr/de_tt/sq/{cr['letter']}.jpg"
+        q["platform"] = "FB+TT"
+        q["format"] = "1:1"
+        q["concept"] = SQ_CONCEPT[cr["letter"]]
+        q["basis"] = cr["basis"].replace(
+            "Текст и визуал перенесены без изменений; меняется только формат (1:1 → 9:16) и размер шрифта — заголовок занимает ~40 % кадра,",
+            "Текст и визуал перенесены без изменений, формат тот же 1:1; меняется только размер шрифта — заголовок занимает ~треть кадра,")
+        out.append(q)
+    for cr in CREATIVES:  # вертикали 9:16 — запас под TT
+        v = dict(cr)
+        v["platform"] = "TT"
+        v["format"] = "9:16"
+        v["note"] = "Запас под TT (вертикаль 1080×1920 PNG), основной набор РК — квадраты 1:1."
+        out.append(v)
+    return out
+
+
 def sheet():
-    """Контактный лист 4×(270×480) для проверки глазами (в scratch, не в OUT)."""
+    """Контактные листы для проверки глазами (в scratch, не в OUT)."""
     ims = [Image.open(os.path.join(OUT, f"{l}.png")).convert("RGB").resize((540, 960)) for l in "abcd"]
     S = Image.new("RGB", (2160, 960), WHITE)
     for i, im in enumerate(ims):
@@ -591,12 +814,14 @@ def sheet():
 
 
 if __name__ == "__main__":
-    args = sys.argv[1:] or ["a", "b", "c", "d"]
-    fn = {"a": cr_a, "b": cr_b, "c": cr_c, "d": cr_d}
+    args = sys.argv[1:] or ["a", "b", "c", "d", "sq_a", "sq_b", "sq_c", "sq_d"]
+    if "sq" in args:
+        args += ["sq_a", "sq_b", "sq_c", "sq_d"]
+    fn = {"a": cr_a, "b": cr_b, "c": cr_c, "d": cr_d, "sq_a": sq_a, "sq_b": sq_b, "sq_c": sq_c, "sq_d": sq_d}
     for a in args:
         if a in fn:
             fn[a]()
     with open(os.path.join(OUT, "creatives.json"), "w", encoding="utf-8") as fh:
-        json.dump(CREATIVES, fh, ensure_ascii=False, indent=1)
+        json.dump(build_json(), fh, ensure_ascii=False, indent=1)
     if "sheet" in args:
         sheet()
