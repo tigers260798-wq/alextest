@@ -1299,7 +1299,7 @@ PACKS[8] = dict(
     doc="NT-electrician-course-gb-2026-09-30", cta="Learn more",
     pal=dict(bg=(246, 247, 250), ink=SLATE8, sub=(84, 90, 100), acc=ORG8, btn=ORG8, tile=WH, tile_ink=SLATE8, icon=SLATE8,
              iconbg=(255, 240, 190)),
-    a=dict(fn="grid", layout="2x2", title="3 month electrician course 2026", sub="Pick a study format:", size=60,
+    a=dict(fn="grid", layout="2x2", title="Electrician course 2026", sub="Pick a study format:", size=60,
            tiles=[("w3_sun", "Daytime"), ("w3_moon", "Evenings"), ("calendar", "Weekends"), ("laptop", "Online theory")],
            note="2×2 форматов обучения (днём / вечером / выходные / онлайн) — плейбук «обучение»; без обещаний работы и зарплаты"),
     b=dict(fn="quiz", layout="card", title="Electrician course quiz:", title2="which level comes first?", size=58,
