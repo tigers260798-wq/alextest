@@ -1,28 +1,28 @@
 [
  {
   "letter": "a",
-  "file": "cr/packs/P60-phone-installments-pl-2026-09-30/a.png",
+  "file": "/_blob/32fca644789fda3b2298fba1238250fb",
   "concept": "сетка выбора (fake interactivity) — 3 карточки-пути (магазин без вывески, мачта связи + телефон, ноутбук с переводом на счёт); опора — раздел «Trzy drogi: sklep, operator, kredyt gotówkowy»; без брендов операторов, магазинов и телефонов, без сумм, «0%», «bez BIK», отложенного платежа",
   "text": "Telefon na raty 2026: / która droga? / Porównanie po RRSO i całkowitej kwocie do zapłaty / 1 Raty w sklepie – spłata zwykle od 12 do 24 miesięcy / 2 Telefon u operatora – raty razem z abonamentem, najczęściej 24 miesiące / 3 Kredyt gotówkowy online – pieniądze na konto, zakup w dowolnym miejscu (у каждой карточки «Dowiedz się więcej →»)",
   "cta": "Dowiedz się więcej"
  },
  {
   "letter": "b",
-  "file": "cr/packs/P60-phone-installments-pl-2026-09-30/b.png",
+  "file": "/_blob/40604ce633229bbdc8a1f10e920dba5c",
   "concept": "карточка-опросник — фиолетовый фон, карточка-чек-лист договора: 2 пункта отмечены, пункт 3 раскрыт с 3 вариантами ответа; опора — раздел «Co sprawdzić w umowie przed podpisaniem» (8 пунктов); без цифр стоимости и платежей",
   "text": "Telefon na raty: / 8 rzeczy do sprawdzenia w umowie / CHECKLISTA UMOWY · Punkt 3 z 8 (прогресс 3/8) / ✓ RRSO / ✓ Całkowita kwota do zapłaty / 3 Ubezpieczenie: obowiązkowe czy dobrowolne? – Obowiązkowe / Dobrowolne / Nie wiem / 4 Prawo do odstąpienia w ciągu 14 dni / 5 Zasady wcześniejszej spłaty / …i 3 kolejne punkty / кнопка «Dowiedz się więcej →»",
   "cta": "Dowiedz się więcej"
  },
  {
   "letter": "c",
-  "file": "cr/packs/P60-phone-installments-pl-2026-09-30/c.png",
+  "file": "/_blob/b894acbe87cea2858a92be1d8a0db74b",
   "concept": "сколько стоит / сравнение — две колонки-сетки платежей 12 и 24, «rata wyższa / niższa» и «Całkowita kwota: ? zł» в обеих; цифры примера статьи (250/150 zł, 3060/3600 zł) не вынесены; опора — раздел «12 czy 24 raty: ile kosztuje w sumie» и лид",
   "text": "12 czy 24 raty? / Co zmienia się w całkowitej kwocie do zapłaty / 12 RAT: сетка из 12 клеток 1–12 · Rata: wyższa · Całkowita kwota do zapłaty: ? zł / czy / 24 RATY: сетка из 24 клеток 1–24 · Rata: niższa · Całkowita kwota do zapłaty: ? zł / O koszcie decyduje całkowita kwota, nie sama rata / кнопка «Dowiedz się więcej →»",
   "cta": "Dowiedz się więcej"
  },
  {
   "letter": "d",
-  "file": "cr/packs/P60-phone-installments-pl-2026-09-30/d.png",
+  "file": "/_blob/ccc5a493807cffb0ee7f9f034174a14e",
   "concept": "сцена-иллюстрация — вид сверху на стол: смартфон без логотипа с переключателем 12/24, лист «harmonogram spłat» с сетками 12 и 24 клеток, калькулятор «?», ручка, кофе; карточка сверху = заголовок статьи + вопрос «ile naprawdę kosztuje»; опора — лид, разделы «12 czy 24 raty» и «Co sprawdzić w umowie»",
   "text": "Telefon na raty: ile naprawdę kosztuje w sumie? / Co sprawdzić przed podpisaniem umowy / кнопка «Dowiedz się więcej →» / на телефоне: Raty · 12 | 24 · ? zł / на листе: HARMONOGRAM SPŁAT · 12 rat – razem: ? zł · 24 raty – razem: ? zł · RRSO · prowizja · ubezpieczenie / на калькуляторе: ?",
   "cta": "Dowiedz się więcej"
