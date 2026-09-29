@@ -198,37 +198,38 @@ def zone_house(c, cx, cy, s, col, bg, zone, ins=INS):
     roof = [(cx - s * 0.42, ey + s * 0.01), (cx, ay), (cx + s * 0.42, ey + s * 0.01)]
     c.poly(roof, mix(col, bg, 0.55))
     c.poly([(cx - s * 0.3, ey), (cx, ay + s * 0.08), (cx + s * 0.3, ey)], mix(col, bg, 0.9))
-    hi = mix(ins, (0, 0, 0), 0.0)
+    hi = ins
+    od = mix(ins, (0, 0, 0), 0.3)
     if zone == "attic":
-        c.rect((x0 + s * 0.02, ey - s * 0.035, x1 - s * 0.02, ey + s * 0.035), fill=hi, r=s * 0.01)
+        c.rect((x0 + s * 0.015, ey - s * 0.05, x1 - s * 0.015, ey + s * 0.04), fill=hi, outline=od, width=s * 0.012, r=s * 0.01)
     elif zone == "roof":
         for sgn in (-1, 1):
-            p0 = (cx + sgn * s * 0.3, ey)
-            p1 = (cx, ay + s * 0.08)
-            c.line([p0, p1], hi, s * 0.075)
-        c.circle(cx, ay + s * 0.08, s * 0.035, fill=hi)
+            p0 = (cx + sgn * s * 0.3, ey - s * 0.02)
+            p1 = (cx, ay + s * 0.1)
+            c.line([p0, p1], hi, s * 0.1)
+        c.circle(cx, ay + s * 0.1, s * 0.05, fill=hi)
     elif zone == "facade":
-        c.rect((x0 - s * 0.06, ey, x0, gy), fill=hi, r=s * 0.01)
-        c.rect((x1, ey, x1 + s * 0.06, gy), fill=hi, r=s * 0.01)
+        c.rect((x0 - s * 0.085, ey, x0, gy), fill=hi, outline=od, width=s * 0.012, r=s * 0.01)
+        c.rect((x1, ey, x1 + s * 0.085, gy), fill=hi, outline=od, width=s * 0.012, r=s * 0.01)
     elif zone == "cellar":
-        c.rect((x0 + s * 0.04, gy + s * 0.015, x1 - s * 0.04, gy + s * 0.075), fill=hi, r=s * 0.01)
+        c.rect((x0 + s * 0.03, gy + s * 0.015, x1 - s * 0.03, gy + s * 0.1), fill=hi, outline=od, width=s * 0.012, r=s * 0.01)
     c.line(roof, col, s * 0.03)
 
 
 def w4_z_attic(c, cx, cy, s, col, bg=WH):
-    zone_house(c, cx, cy, s, col, bg, "attic")
+    zone_house(c, cx, cy + s * 0.03, s * 1.3, col, bg, "attic")
 
 
 def w4_z_roof(c, cx, cy, s, col, bg=WH):
-    zone_house(c, cx, cy, s, col, bg, "roof")
+    zone_house(c, cx, cy + s * 0.03, s * 1.3, col, bg, "roof")
 
 
 def w4_z_facade(c, cx, cy, s, col, bg=WH):
-    zone_house(c, cx, cy, s, col, bg, "facade")
+    zone_house(c, cx, cy + s * 0.03, s * 1.3, col, bg, "facade")
 
 
 def w4_z_cellar(c, cx, cy, s, col, bg=WH):
-    zone_house(c, cx, cy, s, col, bg, "cellar")
+    zone_house(c, cx, cy + s * 0.03, s * 1.3, col, bg, "cellar")
 
 
 W4_ICONS = {k: v for k, v in dict(globals()).items() if k.startswith("w4_") and callable(v)}
@@ -532,9 +533,10 @@ def hero_solar(c, box):
         ay = y0 + H * 0.1
         t.poly([(hx0 - 40, wy + 4), ((hx0 + hx1) / 2 - 60, ay), ((hx0 + hx1) / 2 + 60, ay), (hx1 + 40, wy + 4)], (80, 80, 88))
         solar_roof(t, [(hx0 + 10, wy - 10), (hx1 - 10, wy - 10), ((hx0 + hx1) / 2 + 50, ay + 14), ((hx0 + hx1) / 2 - 50, ay + 14)], rows=2, cols=7)
-        for wx in (hx0 + 40, hx0 + 150, hx1 - 130):
+        for wx in (hx0 + 40, hx1 - 130):
             t.rect((wx, wy + 24, wx + 90, wy + 90), fill=(170, 206, 232), outline=WH, width=6)
-        t.rect((hx1 - 240, wy + 40, hx1 - 170, gy), fill=(150, 90, 60))
+        t.rect(((hx0 + hx1) / 2 - 36, wy + 36, (hx0 + hx1) / 2 + 36, gy), fill=(150, 90, 60))
+        t.circle((hx0 + hx1) / 2 + 22, (wy + 36 + gy) / 2 + 6, 4, fill=(236, 196, 90))
         W3.bush(t, x0 + 150, gy + 6, 120, col=(70, 140, 80))
         W3.bush(t, x1 - 200, gy + 6, 140, col=(60, 130, 76))
     S.clip_draw(c, box, 28, fn)
@@ -681,10 +683,10 @@ def sc_house_section(c):
     c.poly([(612, 728), (660, 690), (690, 710), (728, 680), (728, 728)], (110, 150, 100))
     c.line([(800, gy - 26), (800, 700)], (80, 70, 60), 6)
     c.poly([(770, 700), (830, 700), (815, 660), (785, 660)], (250, 220, 150))
-    A.armchair(c, 430, 780, gy - 26, 230, (170, 70, 60))
-    A.seated(c, 430, 772, gy - 26, 330, SKIN[3], (230, 230, 234), "bun", (70, 110, 150), (60, 64, 80),
-             arm_l=(372, 790), arm_r=(488, 790))
-    c.rect((370, 770, 490, 800), fill=(236, 200, 120), r=8)  # плед
+    A.armchair(c, 430, 766, gy - 26, 180, (170, 70, 60))
+    A.seated(c, 430, 758, gy - 26, 250, SKIN[3], (230, 230, 234), "bun", (70, 110, 150), (60, 64, 80),
+             arm_l=(388, 768), arm_r=(472, 768))
+    c.rect((384, 758, 476, 788), fill=(236, 200, 120), r=8)  # плед
     # перекрытие чердака с изоляцией
     c.rect((wall[0] - 26, 560, wall[2] + 26, 582), fill=(160, 150, 140))
     c.rect((wall[0] + 10, 540, wall[2] - 10, 562), fill=INS)
@@ -707,9 +709,15 @@ def sc_house_section(c):
     c.rect((560, 510, 610, 540), fill=(170, 130, 90), r=4)
     c.line([Lr, apex, Rr], (140, 56, 40), 8)
     c.poly([(120, 594), (apex[0], 342), (960, 594), (950, 590), (apex[0], 350), (130, 590)], (248, 250, 255))
-    # снег
-    for _ in range(60):
-        c.circle(rnd.uniform(0, W), rnd.uniform(340, 850), rnd.uniform(2, 4.5), fill=WH, alpha=200)
+    # снег (только снаружи дома)
+    k = 0
+    while k < 55:
+        x, y = rnd.uniform(0, W), rnd.uniform(330, 850)
+        inside = 150 <= x <= 930 and y >= 590 or (y >= 350 and abs(x - 540) <= (y - 340) * 1.6 + 20 and y < 600)
+        if inside:
+            continue
+        c.circle(x, y, rnd.uniform(2, 4.5), fill=WH, alpha=200)
+        k += 1
 
 
 def sc_solar_offers(c):
@@ -923,7 +931,8 @@ def ladder(P, t):
     ic_y = y + 30
     ic_h = 190
     base = 740
-    hs = t.get("heights", (120, 200, 280))
+    maxh = base - (ic_y + ic_h + 36)
+    hs = [maxh * f for f in t.get("heights", (0.42, 0.7, 1.0))]
     cols = t.get("step_cols", ((60, 150, 100), (236, 160, 40), (214, 72, 40)))
     for k, (method, lab, desc, eur) in enumerate(steps):
         x0 = 50 + k * (cw + g)
@@ -937,7 +946,6 @@ def ladder(P, t):
         c.rect(bb, fill=cols[k], r=16)
         c.rect((bb[0], bb[3] - 16, bb[2], bb[3]), fill=cols[k])
         c.text((cx, bb[1] + 46), eur, "db", 46, WH, anchor="mm")
-        c.poly([(cx - 16, ic_y + ic_h + 4), (cx + 16, ic_y + ic_h + 4), (cx, ic_y + ic_h + 22)], (200, 204, 212))
     c.line([(40, base), (1040, base)], (170, 176, 186), 4)
     for k, (method, lab, desc, eur) in enumerate(steps):
         x0 = 50 + k * (cw + g)
@@ -1138,7 +1146,7 @@ PACKS[4] = dict(
            pal=dict(bg=(240, 246, 242), bg2=(212, 230, 220), ink=GREEN4, sub=(70, 84, 80), acc=GREEN4, t2=ORG4, btn=ORG4),
            src="раздел «Dämmung Förderung 2026: so funktioniert der Zuschuss» («Wichtig: vor Beginn der Arbeiten») + «In fünf Schritten»",
            note="опросник-калькулятор: шаги 1–3 из 5 шагов статьи, вопрос о сроке заявки; без процентов"),
-    c=dict(fn="ladder", title="Dachdämmung Kosten pro m²:", title2="Wovon der Preis abhängt", size=58,
+    c=dict(fn="ladder", title="Dachdämmung Kosten pro m²:", title2="Wovon der Preis abhängt", size=54,
            steps=[("ceiling", "Oberste\nGeschossdecke", "meist am günstigsten", "€"),
                   ("between", "Zwischensparren-\ndämmung", "mittlerer Aufwand", "€ €"),
                   ("above", "Aufsparren-\ndämmung", "am teuersten", "€ € €")],
@@ -1166,7 +1174,7 @@ PACKS[5] = dict(
     b=dict(fn="quiz", layout="card", title="Solar aufs Dach 2026:", title2="die Frage zum Zuschuss", size=58,
            tag="QUIZ", step="Frage 1 von 3", prog=0.33,
            q="Gibt es 2026 einen bundesweiten Zuschuss für eine Solaranlage auf dem Dach?",
-           opts=["Ja, für alle", "Nein", "Nur mit Speicher", "Weiß nicht"],
+           opts=["Ja", "Nein", "Nur mit Speicher", "Weiß nicht"],
            pal=dict(bg=(16, 48, 96), bg2=(8, 26, 58), ink=WH, sub=(206, 218, 236), acc=GREEN5, t2=SUN5, btn=GREEN5, deco=True),
            src="раздел «Photovoltaik Förderung 2026: was es gibt und was nicht» (ответ по статье — «Nein»)",
            note="тёмно-синий фон, вопрос о правилах поддержки; без «staatlicher Zuschuss» как обещания"),
@@ -1177,9 +1185,9 @@ PACKS[5] = dict(
            foot="Angebote: Preis pro kWp mit und ohne Speicher",
            src="раздел «Photovoltaik mit Speicher Kosten» + «Angebote Komplettanlagen vergleichen» (foot)",
            note="таблица без € и центов; «rund ein Drittel» — формулировка статьи (в списке сверки)"),
-    d=dict(fn="scene_d", scene="w4_solar_offers", style="card", card_box=(60, 36, 1020, 446), frame=True, font="lserb",
-           kicker="PHOTOVOLTAIK 2026", title="Komplettangebote vergleichen: 5 Punkte, die zählen",
-           sub="Preis pro kWp, Garantien, Gerüst und Zählerschrank, Ertragsprognose, Wartung", size=54, lines=3, btn_size=40, btn_off=64,
+    d=dict(fn="scene_d", scene="w4_solar_offers", style="card", card_box=(60, 36, 1020, 456), frame=True, font="lserb",
+           kicker="PHOTOVOLTAIK 2026", title="Komplettangebote vergleichen: 5\u00a0Punkte, die zählen",
+           sub="Preis pro kWp, Garantien, Gerüst, Ertragsprognose, Wartung", sub_size=29, size=52, lines=2, btn_size=40, btn_off=62,
            pal=dict(frame=NAVY5, ink=NAVY5, sub=(80, 92, 108), acc=ORG5, btn=GREEN5),
            scene_text="ANGEBOT 1 / ANGEBOT 2 / ANGEBOT 3 · kWp",
            src="раздел «Photovoltaik Angebote Komplettanlagen vergleichen» (5 пунктов)",

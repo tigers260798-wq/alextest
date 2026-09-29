@@ -1,7 +1,7 @@
 [
  {
   "letter": "a",
-  "file": "cr/packs/P60-cpap-us-2026-09-30/a.png",
+  "file": "/_blob/653b0c436e378f02d2b59719eb530256",
   "concept": "сетка выбора (fake interactivity) — 2×2 вариантов без CPAP ровно по списку статьи; подпись «a doctor may discuss» из текста; обещаний результата нет",
   "text": "Sleep apnea treatment without CPAP / 4 options a doctor may discuss – pick one: / Oral appliance / Positional therapy / Weight management / Surgery or implant (у каждой «Learn more»)",
   "cta": "Learn more",
@@ -9,7 +9,7 @@
  },
  {
   "letter": "b",
-  "file": "cr/packs/P60-cpap-us-2026-09-30/b.png",
+  "file": "/_blob/ac8cfdab519ff6ea02ac94238f208437",
   "concept": "карточка-опросник — тёмно-бирюзовый фон, телефон с тестом; вопрос о правиле Medicare, не о зрителе",
   "text": "CPAP & Medicare quiz: / rent or own? / What the 12-week trial checks, and what comes next / CPAP QUIZ / Question 1 of 3 / How long does Medicare usually rent a CPAP machine before the patient owns it? / 3 months / 6 months / 13 months / Not sure / кнопка «Learn more»",
   "cta": "Learn more",
@@ -17,7 +17,7 @@
  },
  {
   "letter": "c",
-  "file": "cr/packs/P60-cpap-us-2026-09-30/c.png",
+  "file": "/_blob/7768942c4b29e7067492e94f995f2469",
   "concept": "сколько стоит / сравнение — таблица нижний/верхний край цены; цифры — только из статьи (в gaps: сверить $500–1,650 до залива)",
   "text": "CPAP machine price 2026: / $500 or $1,650? / Bought without insurance – what the difference buys / BASIC vs AUTO-ADJUSTING / Pressure: one fixed setting / adjusts through the night · Extras: fewer / humidifier + wireless data · No insurance: about $500 / up to about $1,650 / Plus masks, cushions, tubing and filters on a schedule / кнопка «Learn more»",
   "cta": "Learn more",
@@ -25,7 +25,7 @@
  },
  {
   "letter": "d",
-  "file": "cr/packs/P60-cpap-us-2026-09-30/d.png",
+  "file": "/_blob/8e3cebce0eb773ef7b9f93e128219407",
   "concept": "сцена-иллюстрация — ночная спальня: на стене цепочка из 5 шагов, кровать, тумбочка с CPAP, шланг, маска на подставке, лампа; людей нет",
   "text": "CPAP MACHINES 2026 / Rented for up to 13 months, then owned / How Medicare's CPAP rental usually works, step by step / 1 Sleep test → 2 Prescription + supplier → 3 12-week trial → 4 Up to 13 months → 5 Then owned / кнопка «Learn more»",
   "cta": "Learn more",

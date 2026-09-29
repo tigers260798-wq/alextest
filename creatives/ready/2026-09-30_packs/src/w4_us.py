@@ -251,13 +251,13 @@ def w4_house_clock(c, cx, cy, s, col, bg=WH, acc=(236, 164, 48)):
 def w4_age65(c, cx, cy, s, col, bg=WH):
     c.circle(cx, cy, s * 0.42, fill=col)
     c.circle(cx, cy, s * 0.34, outline=bg, width=s * 0.025)
-    c.text((cx, cy + s * 0.01), "65+", "db", s * 0.3, bg, anchor="mm")
+    c.text((cx, cy + s * 0.01), "65+", "db", s * 0.23, bg, anchor="mm")
 
 
 def w4_under65(c, cx, cy, s, col, bg=WH):
     c.circle(cx, cy, s * 0.42, fill=col)
     c.circle(cx, cy, s * 0.34, outline=bg, width=s * 0.025)
-    c.text((cx, cy + s * 0.01), "<65", "db", s * 0.28, bg, anchor="mm")
+    c.text((cx, cy + s * 0.01), "<65", "db", s * 0.22, bg, anchor="mm")
 
 
 def w4_pharmacy(c, cx, cy, s, col, bg=WH, awn=(40, 150, 110)):
@@ -275,6 +275,8 @@ def w4_pharmacy(c, cx, cy, s, col, bg=WH, awn=(40, 150, 110)):
 
 def w4_doctor(c, cx, cy, s, col, bg=WH, acc=(232, 88, 70)):
     """Кабинет врача: стетоскоп."""
+    s = s * 0.86
+    cy = cy + s * 0.04
     c.arc((cx - s * 0.36, cy - s * 0.46, cx + s * 0.08, cy + s * 0.04), 0, 180, col, s * 0.06)
     for x in (cx - s * 0.36, cx + s * 0.08):
         c.line([(x, cy - s * 0.44), (x, cy - s * 0.2)], col, s * 0.06)
@@ -742,12 +744,12 @@ def sc_diabetic_kitchen(c):
 def sc_tax_library(c):
     """Библиотека: полки, настенный лист «APPLY BY», за столом волонтёр с ноутбуком и пожилая пара с папкой;
     на столе список «что взять» и счёт налога на дом. Верх (до y≈300) — полоса заголовка. Без эмблем и бланков ведомств."""
-    c.vgrad((0, 300, W, 800), (240, 234, 222), (226, 216, 198))
-    for y in (340, 450, 560):
+    c.vgrad((0, 240, W, 840), (240, 234, 222), (226, 216, 198))
+    for y in (300, 415, 530):
         WS.shelf_books(c, 40, y + 96, 700, seed=int(y))
         c.rect((30, y + 96, 710, y + 108), fill=(150, 108, 72), r=3)
     # лист со сроком на стене
-    cal_card(c, (770, 350, 1030, 600), "PROPERTY TAX RELIEF", (26, 92, 74),
+    cal_card(c, (770, 320, 1030, 570), "PROPERTY TAX RELIEF", (26, 92, 74),
              [("APPLY BY", "db", 40, (190, 60, 50)), ("the deadline", "sb", 30, (60, 60, 70)), ("renew on time", "sb", 30, (60, 60, 70))])
     # люди
     A.seated(c, 250, 930, 1100, 560, SKIN[0], (232, 232, 236), "bun", (200, 110, 96), (70, 80, 110), arm_l=(180, 846), arm_r=(330, 842))
@@ -758,12 +760,12 @@ def sc_tax_library(c):
     S.wood(c, (0, 834, W, W), (162, 118, 80), (142, 100, 66), lines=6, seed=61)
     c.rect((0, 820, W, 836), fill=(130, 90, 60))
     # ноутбук волонтёра (крышкой к зрителю)
-    c.rect((700, 730, 940, 850), fill=(60, 66, 80), r=10)
-    c.circle(820, 790, 12, fill=(120, 126, 140))
-    c.rect((680, 846, 960, 860), fill=(80, 86, 100), r=4)
-    sheet_list(c, (40, 850, 400, 1070), -4, "WHAT TO BRING",
-               [("Photo ID", None), ("Income statements", None), ("Last year's return", None)], head_col=(26, 92, 74), size=26)
-    S.paper(c, (720, 880, 1040, 1080), 5, head="PROPERTY TAX BILL", head_size=24, lines=5)
+    c.rect((730, 766, 910, 850), fill=(60, 66, 80), r=10)
+    c.circle(820, 808, 10, fill=(120, 126, 140))
+    c.rect((714, 846, 926, 858), fill=(80, 86, 100), r=4)
+    sheet_list(c, (30, 824, 380, 1052), -3, "WHAT TO BRING",
+               [("Photo ID", None), ("Income statements", None), ("Last year's return", None)], head_col=(26, 92, 74), size=25)
+    S.paper(c, (724, 866, 1044, 1066), 5, head="PROPERTY TAX BILL", head_size=24, lines=5)
 
 
 def sc_shingles_pharmacy(c):
@@ -772,7 +774,7 @@ def sc_shingles_pharmacy(c):
     c.vgrad((0, 0, W, 760), (244, 240, 250), (226, 220, 240))
     # полки
     rnd = random.Random(11)
-    for y in (360, 470, 580):
+    for y in (330, 440, 550):
         c.rect((440, y + 88, 1060, y + 100), fill=(200, 200, 212), r=3)
         x = 450
         while x < 1040:
@@ -786,7 +788,7 @@ def sc_shingles_pharmacy(c):
     A.standing(c, 760, 1040, 640, SKIN[2], (60, 44, 36), "short", (250, 250, 252), (70, 80, 110), arm_l=(700, 770), arm_r=(820, 770))
     c.rect((736, 560, 784, 610), fill=(0, 140, 140), r=4)
     # лист-напоминание на стене слева
-    cal_card(c, (60, 350, 400, 640), "SHINGLES VACCINE", (104, 60, 140),
+    cal_card(c, (60, 316, 400, 606), "SHINGLES VACCINE", (104, 60, 140),
              [("Dose 1", "db", 40, (40, 40, 50)), ("↓", "db", 34, (104, 60, 140)), ("Dose 2", "db", 40, (40, 40, 50)),
               ("in 2–6 months", "sb", 30, (190, 70, 60))])
     # стойка
@@ -937,14 +939,14 @@ PACKS[4] = dict(
            src="раздел 2 «Senior property tax relief: four common types» (4 пункта) + раздел 3 (заявление и сроки)",
            note="2×2 с пояснением из статьи под каждым типом; без сумм и без «save / refund»"),
     b=dict(fn="quiz", layout="phone", title="Retirement tax quiz:", title2="when Social Security gets taxed",
-           sub="What counts as combined income, and where the line sits", size=54, left_y=250,
+           sub="What counts as combined income, and the cutoff", size=54, left_y=250,
            tag="TAX QUIZ", step="Question 1 of 3", prog=0.33,
            q="Below what combined income are Social Security benefits generally not taxed for a single filer?",
            opts=["$15,000", "$25,000", "$50,000", "Not sure"],
            pal=dict(bg=(26, 92, 74), bg2=(10, 50, 40), ink=WH, sub=(206, 230, 220), acc=GOLD4, btn=BTN4),
            src="раздел 1 «Federal tax breaks after 65», пункт Social Security income (ответ: $25,000 для одиночки, $32,000 для пары)",
            note="тёмно-зелёный фон, телефон с тестом; вопрос о правиле, не о доходе зрителя"),
-    c=dict(fn="compare", layout="twocol", title="Turning 65 changes the tax return", sub="Federal basics before and after 65", size=58,
+    c=dict(fn="compare", layout="twocol", title="Turning 65 changes", title2="the tax return", sub="Federal basics before and after 65", size=60,
            cols=[("UNDER 65", "w4_under65", INK4), ("65 AND OLDER", "w4_age65", GREEN4)],
            rows=[("STANDARD DEDUCTION", "the regular amount", "regular + an extra amount"),
                  ("SENIOR DEDUCTION", "not available", "temporary, tax years 2025–2028"),
@@ -952,8 +954,8 @@ PACKS[4] = dict(
            foot="Deductions lower taxable income – they are not payments",
            src="вступление («Turning 65 changes a household's taxes…») + раздел 1 (увеличенный стандартный вычет, временный вычет 2025–2028 «whether or not the filer itemizes», «they are not payments»)",
            note="две колонки до/после 65 без сумм ($6,000 на крео не выносится — gaps); без «refund / get»"),
-    d=dict(fn="scene_d", scene="w4_tax_library", style="band", band_h=300, title="Volunteer tax prep after 60",
-           sub="Trained volunteers prepare returns at no charge in tax season – what to bring", size=62, lines=2, btn_y=1012, btn_size=42,
+    d=dict(fn="scene_d", scene="w4_tax_library", style="band", band_h=244, title="Volunteer tax prep after 60",
+           sub="Trained volunteers prepare returns at no charge in tax season – what to bring", size=60, lines=1, btn_y=1026, btn_size=40,
            pal=dict(band=INK4, band_ink=WH, band_sub=(214, 222, 236), btn=BTN4),
            scene_text="PROPERTY TAX RELIEF: APPLY BY the deadline, renew on time / WHAT TO BRING: Photo ID · Income statements · Last year's return / PROPERTY TAX BILL",
            src="раздел 4 «Tax counseling for the elderly and other free help» (волонтёры, 60+, сезон, что взять) + раздел 3 (заявление и сроки); хук РК 3",

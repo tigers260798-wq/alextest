@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/44eef57e1f37676d2dff46a00f295b8c",
+  "concept": "сетка выбора (fake interactivity) — 2×2: мини-дом с подсвеченной зоной утепления на каждой плитке, у каждой «Mehr erfahren»; опора: раздел «Welche Dämmung bringt am meisten?» (4 Bauteile)",
+  "text": "Dämmung Förderung 2026: / Welche Dämmung bringt am meisten? / Bauteil wählen: / Oberste Geschossdecke / Dach / Fassade / Kellerdecke (у каждой «Mehr erfahren») / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/a7d4fd7c18219c144abf3697abaf308f",
+  "concept": "карточка-опросник — опросник-калькулятор: шаги 1–3 из 5 шагов статьи, вопрос о сроке заявки; без процентов; опора: раздел «Dämmung Förderung 2026: so funktioniert der Zuschuss» («Wichtig: vor Beginn der Arbeiten») + «In fünf Schritten»",
+  "text": "Dämmung Förderung 2026: / die Reihenfolge zählt / Beratung · Angebote · Antrag / SCHRITT 3 VON 5 / Wann wird der Förderantrag gestellt? / Vor dem Auftrag / Nach Baubeginn / Nach der Rechnung / Weiß nicht / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/0a48b16bc2dd187a0a5f77514d5a6c33",
+  "concept": "сколько стоит / сравнение — 3 разреза крыши (где лежит утеплитель) + столбики €/€€/€€€ по возрастанию — порядок из статьи, без €/m²; опора: раздел «Dachdämmung Kosten pro m2: wovon der Preis abhängt»",
+  "text": "Dachdämmung Kosten pro m²: / Wovon der Preis abhängt / Oberste Geschossdecke – meist am günstigsten (€) · Zwischensparrendämmung – mittlerer Aufwand (€€) · Aufsparrendämmung – am teuersten (€€€) / Dazu: Dämmstoff, Gerüst, Zustand der Holzkonstruktion / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/33509658b00596c28ffa81e4af214da8",
+  "concept": "сцена-иллюстрация — плашки + разрез дома зимним вечером: утеплитель на перекрытии, в крыше, на фасаде, под потолком подвала; человек в кресле без лица; без до/после и тепловизора; опора: раздел «Steuerbonus als Alternative» (+ разрез дома — 4 Bauteile из раздела 1)",
+  "text": "DÄMMUNG IM EIGENEN HAUS: ZUSCHUSS ODER STEUERBONUS? / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ }
+]

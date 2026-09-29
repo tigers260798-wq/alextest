@@ -1,7 +1,7 @@
 [
  {
   "letter": "a",
-  "file": "cr/packs/P60-dental-implants-us-2026-09-30/a.png",
+  "file": "/_blob/1a00f5a2e5b2579fa501fec3f59b8a22",
   "concept": "сетка выбора (fake interactivity) — 3 карточки-варианта с диапазонами цен из статьи; у импланта подпись «сам имплант, коронка часто отдельно» — как в тексте",
   "text": "Replacing teeth after 60: / 2026 price ranges / Pick an option: / Denture – No surgery, but it can move: $1,500–3,000 (per plate) / Implant – Surgery and months of healing: $1,600–2,200 (the implant itself; crown often extra) / Denture on implants – More stable than a regular denture: $10,000–30,000 (per arch) (у каждой «Learn more»)",
   "cta": "Learn more",
@@ -9,7 +9,7 @@
  },
  {
   "letter": "b",
-  "file": "cr/packs/P60-dental-implants-us-2026-09-30/b.png",
+  "file": "/_blob/732fd8301d97140aa74e4ffedf7e0f94",
   "concept": "карточка-опросник — персиковый фон, 4 варианта-плитки; вопрос о программе, не о зрителе",
   "text": "Medicare dental quiz: / dentures & implants / Original Medicare vs. Medicare Advantage in 2026 / QUIZ / Question 1 of 3 / Does Original Medicare pay for dentures or implants? / Yes / Partly / Generally no / Not sure / кнопка «Learn more»",
   "cta": "Learn more",
@@ -17,7 +17,7 @@
  },
  {
   "letter": "c",
-  "file": "cr/packs/P60-dental-implants-us-2026-09-30/c.png",
+  "file": "/_blob/61c3a176e5c1b8a26e5583130333acb2",
   "concept": "сколько стоит / сравнение — две полосы на общей шкале $0–30,000; без «covers implants», без рассрочки",
   "text": "Medicare Advantage dental / vs. a full arch of implants / Typical 2026 numbers on one scale / Why a plan more often pays part of a denture than a full arch / Yearly dental maximum in many Medicare Advantage plans: often $1,000–3,000 a year / Full arch of implant-supported teeth: commonly $10,000–30,000 per arch / шкала $0 · $10,000 · $20,000 · $30,000 / кнопка «Learn more»",
   "cta": "Learn more",
@@ -25,7 +25,7 @@
  },
  {
   "letter": "d",
-  "file": "cr/packs/P60-dental-implants-us-2026-09-30/d.png",
+  "file": "/_blob/108ee50cda2bfff3c61ddf15ba121485",
   "concept": "сцена-иллюстрация — стол консультации: два письменных плана рядом, в плане B пропущены пункты («?»), модель импланта на полке; рта и кресла нет",
   "text": "DENTURES OR IMPLANTS · 2026 / Why two implant quotes can differ by thousands / What a full-arch price should include / TREATMENT PLAN A: 3D scans ✓ · Extractions, grafting ✓ · Implants, abutments ✓ · Temporary teeth ✓ · Final bridge ✓ / TREATMENT PLAN B: 3D scans ✓ · Extractions, grafting ? · Implants, abutments ✓ · Temporary teeth ? · Final bridge ✓ / кнопка «Learn more»",
   "cta": "Learn more",
