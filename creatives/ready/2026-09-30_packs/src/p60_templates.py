@@ -53,11 +53,13 @@ def grid(P, t):
                 c.rect((x0 + tw / 2 - 60, y0 - 14, x0 + tw / 2 + 60, y0 + 18), fill=(250, 246, 230), alpha=200)
             else:
                 c.card(box, fill=p["tile"], r=28, sh_alpha=p.get("sh", 60), blur=14, off=(0, 8))
-            isz = min(120, th * 0.36)
+            isz = min(110, th * 0.32)
             if ic:
-                c.circle(x0 + tw / 2, y0 + th * 0.3, isz * 0.72, fill=p["iconbg"])
-                icon(c, ic, x0 + tw / 2, y0 + th * 0.3, isz, p["icon"], bg=p["iconbg"])
-            c.block(lab, "sb", 36, y0 + th * 0.56, tw - 50, p["tile_ink"], cx=x0 + tw / 2, max_lines=2, gap=1.08)
+                c.circle(x0 + tw / 2, y0 + th * 0.27, isz * 0.72, fill=p["iconbg"])
+                icon(c, ic, x0 + tw / 2, y0 + th * 0.27, isz, p["icon"], bg=p["iconbg"])
+            nl = len(c.wrap(lab, c.font("sb", 34), tw - 50))
+            ly = y0 + th * 0.62 - (nl * c.lh("sb", 34, 1.06)) / 2 - 10
+            c.block(lab, "sb", 34, ly, tw - 50, p["tile_ink"], cx=x0 + tw / 2, max_lines=2, gap=1.06)
             c.pill(cta, x0 + tw / 2, y0 + th - 44, size=24, fill=p["btn"], padx=24, pady=11)
     elif lay == "row4":
         hero_h = t.get("hero_h", 330)
@@ -200,7 +202,7 @@ def quiz(P, t):
     elif lay == "phone":
         # слева текст и кнопка, справа телефон
         lx = 60
-        y = 170
+        y = t.get("left_y", 270)
         y = c.block(t["title"], "db", t.get("size", 58), y, 440, p["ink"], align="left", x=lx, max_lines=4, gap=1.1)
         if t.get("title2"):
             y = c.block(t["title2"], "db", int(t.get("size", 58) * 0.9), y + 4, 440, p["acc"], align="left", x=lx, max_lines=4, gap=1.1)
@@ -252,7 +254,8 @@ def compare(P, t):
             c.card(box, fill=mix(col, WH, 0.9), r=30, sh_alpha=50, blur=12, off=(0, 6))
             c.rect((box[0], box[1], box[2], box[1] + 92), fill=col, r=30)
             c.rect((box[0], box[1] + 60, box[2], box[1] + 92), fill=col)
-            c.block(head, "db", 34, box[1] + 26, box[2] - box[0] - 40, WH, cx=(box[0] + box[2]) / 2, max_lines=1)
+            hs = min(c.fit(h_, "db", box[2] - box[0] - 40, 1, 34) for h_, _, _ in t["cols"])
+            c.block(head, "db", hs, box[1] + 46 - hs * 0.6, box[2] - box[0] - 40, WH, cx=(box[0] + box[2]) / 2, max_lines=1)
             c.circle((box[0] + box[2]) / 2, box[1] + 175, 62, fill=WH)
             icon(c, ic, (box[0] + box[2]) / 2, box[1] + 175, 96, col)
         ry = top + 270
@@ -352,7 +355,7 @@ def compare(P, t):
             c.rect((bx0, ry + 52, bx1, ry + 104), fill=(234, 237, 241), r=14)
             if frac is None:
                 # неизвестная доля: штриховка + «?»
-                for k in range(0, int(bx1 - bx0), 34):
+                for k in range(0, int(bx1 - bx0) - 90, 34):
                     c.line([(bx0 + k, ry + 104), (bx0 + k + 30, ry + 52)], mix(col, WH, 0.5), 10)
                 c.rect((bx0, ry + 52, bx1, ry + 104), outline=col, width=3, r=14)
                 c.circle(bx1 - 40, ry + 78, 24, fill=col)

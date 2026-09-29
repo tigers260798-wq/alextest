@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-council-tax-reduction-uk-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — дом с ярлыками % сверху, 4 строки-кнопки",
+  "text": "Council Tax 2026: 4 ways to pay less / Pick one to see who qualifies / Single person discount / Pension-age reduction / Disability band reduction / Second adult rebate (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-council-tax-reduction-uk-2026-09-30/b.png",
+  "concept": "карточка-опросник — телефон с тестом справа",
+  "text": "Council Tax quiz 2026 / 4 questions that can change the bill / QUIZ / Question 2 of 4 / Is Council Tax Reduction the same in every council? / Yes, one national rule / No, it varies / Only for pensioners / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-council-tax-reduction-uk-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — ",
+  "text": "How much lower can a Council Tax bill be? / Same home, same band – three different bills / Full bill Single person discount (−25%) Council Tax Reduction / COUNCIL TAX BILL 2026/27 / Full bill 100% · Single person discount (−25%) 75% · Council Tax Reduction depends on income / Pension-age rules explained step by step",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-council-tax-reduction-uk-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — улица таунхаусов, ярлык % у двери, письмо в щели",
+  "text": "Council Tax 2026: the reductions pensioners often miss / Single person discount, pension-age reduction and more",
+  "cta": "Learn more"
+ }
+]

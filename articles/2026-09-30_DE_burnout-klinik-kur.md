@@ -1,10 +1,10 @@
 # Burnout oder Depression? 12 Fragen, die Ärzte stellen – und wann die Krankenkasse Klinik oder Kur bezahlt
 
-Ständig müde, gereizt, und selbst das Wochenende reicht nicht mehr zur Erholung: Solche Beschwerden werden schnell „Burnout“ genannt. Ärzte schauen genauer hin, denn hinter derselben Erschöpfung kann auch eine Depression stecken. Davon hängt ab, welche Behandlung passt und wer sie bezahlt. Hier stehen die 12 Fragen, mit denen Ärzte im Gespräch beides auseinanderhalten, was die Punktzahl aussagt und wie der Weg in eine Klinik für Psychosomatik, eine Tagesklinik oder eine Kur aussieht.
+Ständig müde, gereizt, und selbst das Wochenende reicht nicht mehr zur Erholung: Solche Beschwerden heißen schnell „Burnout“. Ärzte schauen genauer hin, denn hinter derselben Erschöpfung kann auch eine Depression stecken – und davon hängt ab, welche Behandlung passt und wer sie bezahlt. Hier stehen die 12 Fragen, mit denen Ärzte beides auseinanderhalten, und der Weg in eine Klinik für Psychosomatik, eine Tagesklinik oder eine Kur.
 
 ## 12 Fragen, die Ärzte stellen
 
-Die Fragen beziehen sich auf die letzten vier Wochen. Jede wird mit nie, manchmal, oft oder fast immer beantwortet. Die ersten sechs Fragen drehen sich um die Arbeit, die übrigen sechs um das Leben insgesamt – genau diese Trennung ist für Ärzte entscheidend.
+Die Fragen beziehen sich auf die letzten vier Wochen, die Antworten lauten nie, manchmal, oft oder fast immer. Die ersten sechs drehen sich um die Arbeit, die übrigen sechs um das Leben insgesamt – genau diese Trennung ist für Ärzte entscheidend.
 
 Teil 1: Arbeit und Erschöpfung
 
@@ -32,26 +32,24 @@ Gezählt wird so: nie 0 Punkte, manchmal 1, oft 2, fast immer 3. Die Fragen 1 bi
 - Hoch in beiden Hälften: Die Beschwerden reichen über den Job hinaus. Ärzte prüfen dann, ob eine Depression dahintersteckt.
 - Mehrere Antworten „oft“ oder „fast immer“ in der zweiten Hälfte, und das länger als zwei Wochen: ein klarer Anlass für ein Gespräch in der Hausarztpraxis.
 
-Die Punktzahl ist keine Diagnose. Auch Schilddrüsenprobleme, Eisenmangel oder Schlafstörungen können ähnlich müde machen. Deshalb gehören zum ersten Termin meist eine körperliche Untersuchung und Blutwerte.
+Die Punktzahl ist keine Diagnose. Auch Schilddrüsenprobleme, Eisenmangel oder Schlafstörungen machen ähnlich müde, deshalb gehören zum ersten Termin meist Blutwerte.
 
 ## Burnout oder Depression: Worin sich beides unterscheidet
 
-Medizinisch gilt Burnout nicht als eigene Krankheit, sondern als Zustand, der aus Dauerstress im Beruf entsteht. Eine Depression ist dagegen eine anerkannte Erkrankung mit festen Kriterien – und genau das entscheidet später über Behandlung und Kostenübernahme.
-
-Zwei Unterschiede fallen im Alltag besonders auf:
+Medizinisch gilt Burnout nicht als eigene Krankheit, sondern als Folge von Dauerstress im Beruf. Eine Depression ist dagegen eine anerkannte Erkrankung mit festen Kriterien – das entscheidet später über Behandlung und Kostenübernahme. Zwei Unterschiede fallen besonders auf:
 
 - Betroffen ist beim Burnout vor allem der Job, bei einer Depression alle Lebensbereiche – Hobbys, Freundschaften, Familie.
 - Urlaub bringt beim Burnout oft Erholung. Bei einer Depression hilft er häufig nicht, die Stimmung bleibt auch am Strand gedrückt.
 
-Die Grenze ist fließend: Ein langes Burnout kann in eine Depression übergehen. Für einen Antrag auf Reha oder Kur zählt deshalb die ärztliche Diagnose, nicht das Stichwort Burnout.
+Die Grenze ist fließend: Ein langes Burnout kann in eine Depression übergehen. Für einen Antrag auf Reha oder Kur zählt deshalb die ärztliche Diagnose.
 
 ## Klinik, Tagesklinik oder Kur: der Unterschied
 
 Für die Behandlung von Erschöpfung und Depression gibt es vier Wege, die oft verwechselt werden:
 
 - Akutklinik: Eine Klinik für Psychosomatik im Krankenhaus nimmt Patienten auf, wenn ambulante Hilfe nicht reicht. Nötig ist eine Einweisung vom Arzt. Die Kosten trägt die Krankenkasse, der Eigenanteil liegt bei 10 Euro pro Tag für höchstens 28 Tage im Jahr.
-- Tagesklinik: Behandlung von morgens bis nachmittags, die Nacht zu Hause. Sie passt, wenn der Alltag abends noch zu bewältigen ist, und wird oft nach einem Klinikaufenthalt genutzt.
-- Reha: Wer nach „Reha Klinik Depression“ sucht, landet meist bei Einrichtungen der psychosomatischen Rehabilitation. Sie arbeiten mit Einzel- und Gruppentherapie, Bewegung und Entspannungsverfahren. Eine psychosomatische Reha dauert oft rund fünf Wochen, bei anderen Krankheitsbildern sind drei Wochen üblich.
+- Tagesklinik: Behandlung von morgens bis nachmittags, die Nacht zu Hause – passend, wenn der Alltag abends noch zu bewältigen ist, oft auch nach einem Klinikaufenthalt.
+- Reha: Wer nach „Reha Klinik Depression“ sucht, landet meist bei Einrichtungen der psychosomatischen Rehabilitation. Dort gibt es Einzel- und Gruppentherapie, Bewegung und Entspannungsverfahren. Eine psychosomatische Reha dauert oft rund fünf Wochen, bei anderen Krankheitsbildern sind drei Wochen üblich.
 - Kur: Die Vorsorgekur soll verhindern, dass aus Erschöpfung eine Krankheit wird. Angebote unter dem Stichwort „Kurklinik Psychosomatik“ haben ein ähnliches, meist kürzeres Programm, auch als Mutter- oder Vater-Kind-Kur.
 
 ## Kur beantragen wegen Erschöpfung: Wer zahlt und wie der Antrag läuft
@@ -61,7 +59,7 @@ In Deutschland zahlen zwei Stellen, je nach Lebenslage:
 - Die Rentenversicherung ist in der Regel für Berufstätige zuständig, wenn die Arbeitsfähigkeit gefährdet ist. Der Grundsatz lautet: Reha vor Rente.
 - Die Krankenkasse übernimmt Vorsorgekuren und die Reha für Menschen, die nicht mehr arbeiten, etwa Rentner, sowie für Kinder und Jugendliche.
 
-Der Antrag beginnt in der Arztpraxis: Hausarzt oder Facharzt schreibt einen Befundbericht, dazu kommt ein Antragsformular, das Krankenkasse und Rentenversicherung bereithalten. Landet der Antrag bei der falschen Stelle, wird er innerhalb von 14 Tagen an die richtige weitergeleitet.
+Der Antrag beginnt in der Arztpraxis: Hausarzt oder Facharzt schreibt einen Befundbericht, dazu kommt das Antragsformular. Landet der Antrag bei der falschen Stelle, wird er innerhalb von 14 Tagen weitergeleitet.
 
 Wichtig zu wissen:
 
@@ -69,21 +67,20 @@ Wichtig zu wissen:
 - Eine neue Reha gibt es in der Regel erst vier Jahre nach der letzten, außer sie ist medizinisch dringend.
 - Wird der Antrag abgelehnt, bleibt ein Monat Zeit für einen Widerspruch. Dafür lohnt eine ausführlichere Begründung vom Arzt.
 
-In Österreich ist an die Stelle der klassischen Kur ein Vorsorgeprogramm mit Modulen getreten, das auch die mentale Gesundheit einschließt. Der Eigenanteil richtet sich nach dem Einkommen und liegt 2026 bei rund 11 bis 27 Euro pro Tag. In der Schweiz braucht eine Reha vorab eine Kostengutsprache der Krankenversicherung.
+In Österreich ersetzt ein Vorsorgeprogramm mit Modulen, auch zur mentalen Gesundheit, die klassische Kur; der Eigenanteil hängt vom Einkommen ab und liegt 2026 bei rund 11 bis 27 Euro pro Tag. In der Schweiz braucht eine Reha vorab eine Kostengutsprache der Krankenversicherung.
 
 ## Welche psychosomatische Klinik ist empfehlenswert?
 
-Ranglisten über die besten Rehakliniken in Deutschland gibt es viele, für die Wahl zählen aber andere Punkte. Versicherte dürfen im Antrag eine Wunschklinik nennen, und dieser Wunsch darf nur mit gutem Grund abgelehnt werden. Darauf achten Ärzte und Patientenberater:
+Ranglisten über die besten Rehakliniken in Deutschland gibt es viele, für die Wahl zählen aber andere Punkte. Im Antrag darf eine Wunschklinik genannt werden, und dieser Wunsch darf nur mit gutem Grund abgelehnt werden. Darauf achten Ärzte und Patientenberater:
 
 - Schwerpunkt: Behandelt die Klinik Erschöpfung, Depression und Angst – oder vor allem andere Krankheitsbilder?
 - Therapieplan: Wie viele Einzelgespräche gibt es pro Woche, wie groß sind die Gruppen?
 - Anerkennung: Arbeitet die Klinik mit Krankenkasse und Rentenversicherung zusammen, und hat sie ein geprüftes Qualitätsmanagement?
-- Wartezeit: Wie lange dauert es bis zur Aufnahme?
-- Nachsorge: Gibt es ein Programm für die Zeit danach, etwa Nachsorgegruppen oder Online-Nachsorge?
+- Nachsorge: Gibt es Nachsorgegruppen oder Online-Nachsorge für die Zeit danach?
 
 Privatkliniken nehmen oft schneller auf, verlangen von gesetzlich Versicherten aber meist Selbstzahlung, wenn die Kasse nicht vorher zugestimmt hat.
 
-Fazit: Die 12 Fragen ersetzen keinen Arzttermin, aber sie helfen, das Gespräch vorzubereiten. Wer die Antworten notiert, kann genauer beschreiben, was sich verändert hat – und schneller klären, ob Tagesklinik, Reha oder Kur der passende Weg ist.
+Fazit: Die 12 Fragen ersetzen keinen Arzttermin, helfen aber, das Gespräch vorzubereiten – und schneller zu klären, ob Tagesklinik, Reha oder Kur der passende Weg ist.
 
 In akuten Krisen gibt es rund um die Uhr kostenlose Telefonberatung: in Deutschland unter 0800 111 0 111 oder 0800 111 0 222, in Österreich unter 142, in der Schweiz unter 143.
 
@@ -97,7 +94,7 @@ In akuten Krisen gibt es rund um die Uhr kostenlose Telefonberatung: in Deutschl
 - Тема для провайдера: Burnout oder Depression: 12 Fragen aus dem Arztgespräch, der Unterschied, psychosomatische Klinik / Tagesklinik / Reha / Kur – wer zahlt und wie der Antrag läuft
 - Вертикаль: психотесты · выгорание → психосоматическая клиника / Reha / Kur · угол: Выгорание или депрессия? Тест из 12 вопросов, по которому врачи различают одно и другое, — и когда больничная касса / пенсионный фонд оплачивают психосоматическую клинику или Kur
 - Подход: ключ первым · провайдер: IRONFLI · статус: предложение, волна следующая (30.09)
-- Объём: 1095 слов
+- Объём: 1030 слов
 
 ### Структура
 
@@ -141,7 +138,7 @@ new_tests/psy-burnout-de-0929; трекер get_performance_rows groupBy=keyword
 - сверить до залива: психосоматическая Reha «oft rund fünf Wochen» и Akutklinik «10 € / Tag, höchstens 28 Tage» — общее знание (Википедия даёт только «обычно 3 недели» для Reha); проверить на сайте пенсионного страхования
 - сверить до залива: AT — Eigenanteil 11–27 €/день (2026) и замена Kur программой с модулем «mentale Gesundheit» — только по Википедии; CH — Kostengutsprache — общее знание
 - сверить до залива: телефоны кризисной помощи в конце статьи (DE 0800 111 0 111 / 0800 111 0 222, AT 142, CH 143) — по Википедии, официальные сайты закрыты прокси
-- Meta: здоровье — без «Sie/Ihr» о состоянии (в тексте «Sie» только как «она/они» о клинике); домен может получить категорию Health & wellness — урезание событий; крео b (опросник) — первый подозреваемый при отклонении
+- Meta: здоровье — в тексте нет «Sie/Ihr» (проверено скриптом); домен может получить категорию Health & wellness — урезание событий; крео b (опросник) — первый подозреваемый при отклонении
 - AT/CH: клиника-ключи там не измерены — идут в общем гео-наборе
 
 ### Пост для РК 1
@@ -174,7 +171,7 @@ Burnout betrifft vor allem den Job, eine Depression alle Lebensbereiche – so u
 12 вопросов и путь в клинику или на Kur ↓
 Зацепка: Nur der Job – oder alles?
 
-### Крео (перенесены из new_tests как есть)
+### Крео (перенесены как есть; прикрепляет главный)
 
 - a: `cr/psy/psy-burnout-de-0929_a.png` — Иллюстрация: 12 спичек в ряд, последние 4 сгорели, под каждой номер 1–12
 - b: `cr/psy/psy-burnout-de-0929_b.png` — Карточка-опросник (фейковая интерактивность) на бирюзовом фоне: вопрос 3 из 12, 4 варианта

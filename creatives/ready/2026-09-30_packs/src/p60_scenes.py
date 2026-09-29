@@ -10,20 +10,25 @@ WH = (255, 255, 255)
 
 
 # ---------- помощники
-def masked(c, pts, draw_fn):
-    """Рисует draw_fn(dd) на отдельном слое и обрезает по многоугольнику pts."""
+def masked(c, pts, draw_fn, rr=0):
+    """Рисует draw_fn(dd) на отдельном слое и обрезает по многоугольнику pts (rr > 0 — по скруглённому прямоугольнику)."""
     lay = Image.new("RGBA", c.im.size, (0, 0, 0, 0))
     dd = ImageDraw.Draw(lay)
     draw_fn(dd)
     mask = Image.new("L", c.im.size, 0)
-    ImageDraw.Draw(mask).polygon(c.sp(pts), fill=255)
+    if rr:
+        xs = [q[0] for q in pts]
+        ys = [q[1] for q in pts]
+        ImageDraw.Draw(mask).rounded_rectangle(c.sb((min(xs), min(ys), max(xs), max(ys))), c.s(rr), fill=255)
+    else:
+        ImageDraw.Draw(mask).polygon(c.sp(pts), fill=255)
     a = lay.getchannel("A")
     from PIL import ImageChops
     lay.putalpha(ImageChops.multiply(a, mask))
     c.im.alpha_composite(lay)
 
 
-def camo(c, pts, base, blobs, seed=3, n=70, rmin=14, rmax=40):
+def camo(c, pts, base, blobs, seed=3, n=70, rmin=14, rmax=40, rr=0):
     xs = [p[0] for p in pts]
     ys = [p[1] for p in pts]
     rnd = random.Random(seed)
@@ -36,7 +41,7 @@ def camo(c, pts, base, blobs, seed=3, n=70, rmin=14, rmax=40):
             y = rnd.uniform(min(ys), max(ys))
             rx, ry = rnd.uniform(rmin, rmax), rnd.uniform(rmin * 0.6, rmax * 0.7)
             dd.ellipse(c.sb((x - rx, y - ry, x + rx, y + ry)), fill=col + (255,))
-    masked(c, pts, fn)
+    masked(c, pts, fn, rr=rr)
 
 
 def wood(c, box, c0, c1, lines=10, seed=1, grain=None):
@@ -389,3 +394,102 @@ def bay_window(c, top=360):
     wood(c, (0, 934, W, W), (214, 176, 132), (196, 156, 112), lines=4, seed=3)
     c.rect((0, 924, W, 940), fill=(250, 246, 240))
     plant(c, 990, 1070, 0.8)
+
+
+# ---------- фоны и «герои» для сеток
+def classroom_board_bg(c):
+    c.rect((0, 0, W, W), fill=(146, 104, 64))
+    c.rect((22, 22, W - 22, W - 22), fill=(40, 78, 62))
+    rnd = random.Random(12)
+    for i in range(30):
+        x, y = rnd.uniform(40, W - 160), rnd.uniform(40, W - 60)
+        c.line([(x, y), (x + rnd.uniform(40, 160), y + rnd.uniform(-12, 12))], (70, 110, 92), 7, alpha=70)
+
+
+def panel(c, box, fill, r=28, fill2=None):
+    c.shadow(box, r=r, alpha=50, blur=12, off=(0, 6))
+    if fill2:
+        lay_c = fill
+        c.rect(box, fill=fill, r=r)
+        x0, y0, x1, y1 = box
+        c.vgrad((x0, y0 + r, x1, y1 - r), fill, fill2)
+        c.rect((x0, y1 - r * 2, x1, y1), fill=fill2, r=r)
+        c.rect((x0, y0 + r, x1, y1 - r), fill=None)
+    else:
+        c.rect(box, fill=fill, r=r)
+
+
+def hero_cc_house(c, box):
+    """CTR: дом с ярлыками % и письмо-счёт (без символики советов)."""
+    x0, y0, x1, y1 = box
+    c.shadow(box, r=28, alpha=50, blur=12, off=(0, 6))
+    c.rect(box, fill=(214, 236, 222), r=28)
+    c.dots((x0 + 20, y0 + 20, x1 - 20, y1 - 20), 36, 3, (22, 110, 72), alpha=40)
+    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+    c.ellipse((cx - 250, y1 - 60, cx + 250, y1 - 20), fill=(22, 110, 72), alpha=40)
+    I.house(c, cx, cy + 10, 250, (190, 96, 66), roof=(60, 66, 80), door=(28, 50, 96))
+    I.percent_tag(c, cx + 230, cy - 50, 130, (240, 190, 40))
+    I.percent_tag(c, cx - 250, cy + 40, 100, (22, 110, 72))
+    I.envelope(c, cx - 250, cy - 80, 110, (22, 40, 70))
+
+
+def hero_bath_crop(c, box):
+    """Ванная: кадрированный душ (зеркально сцене d)."""
+    from p60_lib import C as _C
+    t = _C((255, 255, 255))
+    bathroom(t)
+    x0, y0, x1, y1 = box
+    crop = t.im.crop((t.s(430), t.s(140), t.s(1080), t.s(140 + (650 * (y1 - y0) / (x1 - x0)))))
+    crop = crop.transpose(Image.FLIP_LEFT_RIGHT).resize((c.s(x1 - x0), c.s(y1 - y0)), Image.LANCZOS)
+    mask = Image.new("L", crop.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, crop.width - 1, crop.height - 1), c.s(28), fill=255)
+    c.shadow(box, r=28, alpha=50, blur=12, off=(0, 6))
+    c.im.paste(crop, (c.s(x0), c.s(y0)), mask)
+
+
+def hero_cards(c, box):
+    """Кредитки 60+: две карты без логотипов на тёмно-синей панели."""
+    x0, y0, x1, y1 = box
+    c.shadow(box, r=28, alpha=60, blur=14, off=(0, 8))
+    c.rect(box, fill=(20, 34, 78), r=28)
+    c.glow((x0 + 260, y0 + 20, x1 - 260, y1 - 20), (236, 190, 80), alpha=110, blur=50)
+    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+    I.card(c, cx - 70, cy + 6, 330, (236, 196, 90), chip=(250, 236, 180), ang=-10)
+    I.card(c, cx + 80, cy - 4, 330, (240, 244, 250), chip=(236, 196, 90), ang=8)
+    for k in range(4):
+        pass
+    c.text((x0 + 40, y1 - 40), "60+  ·  70+  ·  80+", "sb", 30, (236, 196, 90), anchor="ls")
+
+
+def hero_camo(c, box):
+    """Силовики: камуфляжная полоса, фуражка и ботинки без знаков."""
+    x0, y0, x1, y1 = box
+    c.shadow(box, r=28, alpha=60, blur=12, off=(0, 6))
+    r = 28
+    pts = [(x0, y0), (x1, y0), (x1, y1), (x0, y1)]
+    camo(c, pts, (104, 112, 72), [(70, 80, 50), (140, 130, 90), (60, 56, 40), (120, 124, 84)], seed=21, n=90, rmin=20, rmax=60, rr=r)
+    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+    c.rect((cx - 300, cy - 70, cx + 300, cy + 70), fill=(250, 246, 234), r=35, alpha=240)
+    c.text((cx, cy), "Oferty banków 2026", "db", 46, (60, 66, 40), anchor="mm")
+
+
+def hero_robot(c, box):
+    """Робот против мойщика: два стекла, слева робот, справа склиз с каплями."""
+    x0, y0, x1, y1 = box
+    c.shadow(box, r=28, alpha=50, blur=12, off=(0, 6))
+    c.rect(box, fill=(255, 255, 255), r=28)
+    ix0, iy0, ix1, iy1 = x0 + 18, y0 + 18, x1 - 18, y1 - 18
+    c.vgrad((ix0, iy0, ix1, iy1), (150, 204, 238), (222, 240, 250))
+    for (x, r) in ((ix0 + 80, 90), (ix0 + 250, 110), (ix0 + 470, 100), (ix0 + 700, 120), (ix1 - 40, 90)):
+        c.circle(x, iy1 - 10, r, fill=(118, 172, 112))
+    c.rect(((ix0 + ix1) / 2 - 10, iy0, (ix0 + ix1) / 2 + 10, iy1), fill=WH)
+    c.glow((ix1 - 200, iy0 - 20, ix1 - 40, iy0 + 140), (255, 246, 200), alpha=200, blur=30)
+    lx = (ix0 + (ix0 + ix1) / 2) / 2
+    rx = ((ix0 + ix1) / 2 + ix1) / 2
+    c.line([(lx, iy0), (lx + 6, (iy0 + iy1) / 2 - 90)], (230, 90, 60), 4)
+    I.robot(c, lx + 10, (iy0 + iy1) / 2 - 10, 170, (52, 60, 72), acc=(90, 190, 240))
+    I.squeegee(c, rx, (iy0 + iy1) / 2, 200, (40, 80, 150))
+    c.rect((ix0 + 20, iy0 + 20, ix0 + 170, iy0 + 64), fill=WH, r=22, alpha=230)
+    c.text((ix0 + 95, iy0 + 42), "Robot", "sb", 26, (20, 50, 90), anchor="mm")
+    c.rect(((ix0 + ix1) / 2 + 30, iy0 + 20, (ix0 + ix1) / 2 + 250, iy0 + 64), fill=WH, r=22, alpha=230)
+    c.text(((ix0 + ix1) / 2 + 140, iy0 + 42), "Professionnel", "sb", 26, (20, 50, 90), anchor="mm")
