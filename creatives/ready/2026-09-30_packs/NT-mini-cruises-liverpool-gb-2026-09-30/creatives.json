@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/NT-mini-cruises-liverpool-gb-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — схема маршрутов: Ливерпуль-хаб у условного берега, пунктиры к 4 карточкам портов, у каждой «Learn more»; без названий и ливрей круизных и паромных компаний, без цен; опора: раздел «Where a mini cruise from Liverpool usually goes» (Dublin, Belfast, Douglas, Greenock — порты, которые часто встречаются в маршрутах)",
+  "text": "Mini cruises from Liverpool 2026: / pick a port / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/NT-mini-cruises-liverpool-gb-2026-09-30/b.png",
+  "concept": "карточка-опросник — тёмно-синий фон, табло отправлений (Dublin, Belfast, Douglas и «AMSTERDAM ?») и квиз с неожиданным ответом из статьи; опора: раздел «Where a mini cruise from Liverpool usually goes» (Амстердам из Ливерпуля — только в длинных круизах вокруг Британии, паромы в Амстердам — с восточного побережья)",
+  "text": "Liverpool to Amsterdam / on a mini cruise? / QUIZ / Question 1 of 3 / How often does a cruise from Liverpool call at Amsterdam? / Every weekend / Only on longer round-Britain cruises / Every night, by ferry / Not sure / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/NT-mini-cruises-liverpool-gb-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — сравнение: паром и лайнер без ливреи, логотипов и узнаваемых силуэтов; без цен и «all inclusive»; опора: раздел «Two kinds of mini cruise: ferry break or cruise ship» (ночь на борту, рестораны/бар/каюты, несколько часов или день на берегу; 2–4 ночи, питание и шоу в стоимости, один или несколько портов; паром проще и обычно дешевле)",
+  "text": "Ferry break or cruise ship? / Two kinds of mini cruise from Liverpool / FERRY BREAK: nights — often a night on board; on board — restaurants, a bar and cabins; ashore — a few hours or a full day / CRUISE SHIP: nights — two to four nights; on board — meals, entertainment and cabin in the fare; ashore — one or more ports / Ferry break: simpler, and usually costs less / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/NT-mini-cruises-liverpool-gb-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — закат с кормы: обобщённый силуэт набережной, кильватер, у поручней люди разного возраста со спины; полоса-план из 4 дней; без названия судна, возраста 60+ и цен; опора: разделы «A simple three-night plan» (Day 1 board, Day 2 Dublin, Day 3 Belfast/Douglas or a day at sea, Day 4 home) и «sailing out past the waterfront is one of the highlights»",
+  "text": "Mini cruise from Liverpool: / a simple three-night plan / кнопка «Learn more →»",
+  "cta": "Learn more"
+ }
+]
