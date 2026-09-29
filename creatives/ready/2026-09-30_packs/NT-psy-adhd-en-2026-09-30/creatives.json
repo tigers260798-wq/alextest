@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/80f010873fa74cf6f08b196c3c9b0d20",
+  "concept": "сетка из 6 стикеров на пробковой доске: темы 6 вопросов скрининга — визуал гипотезы — стикеры 1–6; заголовок = заголовок статьи; подпись «A screener, not a diagnosis»; без людей в «хаосе»; опора: раздел 1 «The 6 screening questions and the answer scale» (6 пунктов пересказом: final details, getting things in order, appointments, getting started, fidgeting, «driven by a motor») + лид (about two minutes, ASRS)",
+  "text": "The 6-question ADHD screener doctors use for adults · ASRS · about 2 minutes · 1 Wrapping up the final details · 2 Getting things in order · 3 Remembering appointments · 4 Getting started · 5 Fidgeting when sitting for long · 6 As if “driven by a motor” · A screener, not a diagnosis · Learn more",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/e402877a0b5273479848425bdcd7e6cd",
+  "concept": "карточка-опросник в телефоне: вопрос 4 из 6 со шкалой never … very often — бирюзовый фон; вопрос теста безлично, без «you/your»; если Meta прочтёт как вопрос о здоровье — первый подозреваемый; опора: раздел 1 (вопрос 4: getting started delayed when a task requires a lot of thought; 5 ответов never / rarely / sometimes / often / very often; past six months) + раздел 2 (A screener is not a diagnosis)",
+  "text": "Adult ADHD screener: 6 questions, about 2 minutes · Past 6 months · 5 possible answers · A screener, not a diagnosis · Learn more · на экране: ASRS SCREENER · Question 4 of 6 · How often is getting started delayed when a task needs a lot of thought? · Never / Rarely / Sometimes / Often / Very often",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/bbc8a378040a5e375f42435b847d0d70",
+  "concept": "сравнение «public or private»: таблица сроков и цен по 4 странам — цифры только из статьи; NHS / Medicare на картинке не названы (UK — «GP referral», AU — «rebate»); без «free»; опора: раздел «Waiting times and costs in 2026» (US insurance often covers part, testing about $1,000–$3,000; UK GP referral, months or years vs private £500–£1,500 in weeks; Canada provincial plan vs CA$1,500–$3,000; Australia rebate with GP referral vs psychologist paid privately; «Numbers vary widely»)",
+  "text": "Adult ADHD assessment in 2026: public or private? · Waits and typical costs in 4 countries · PUBLIC OR INSURED (cheaper, slower) / PRIVATE (faster, more expensive) · US: Insurance often covers part · waits: weeks to months | Testing about $1,000–$3,000 · UK: GP referral · waits of months or years | About £500–£1,500, in weeks · Canada: Provincial plan with referral · often a long wait | About CA$1,500–CA$3,000 · Australia: Rebate with GP referral · waits can run for months | Psychologist: usually paid privately · Numbers vary widely · Learn more",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/67b88a51b33b08de4b4a6990e6c48736",
+  "concept": "сцена-иллюстрация: стол — планшет с чек-листом полной оценки, школьный табель, кружка, ручка — заголовок-крючок РК 3 «A 2-minute screener is only the start»; без людей, лекарств и «diagnosed online»; опора: раздел «ADHD evaluation for adults: what a full assessment includes» (interview, childhood before 12 + old school reports, rating scales, other explanations, written report; 1–3 appointments, 2–4 hours) + adPosts РК 3",
+  "text": "A 2-minute screener is only the start · What a full adult ADHD assessment adds · на планшете: FULL ADULT ADHD ASSESSMENT ✓ Detailed interview ✓ Childhood: signs before age 12 ✓ Longer rating scales ✓ Checks for other explanations ✓ Written report · 1–3 appointments · 2–4 hours in total · лист «SCHOOL REPORT» · Learn more",
+  "cta": "Learn more"
+ }
+]

@@ -1,0 +1,33 @@
+trafficSourceAdSetId,campaignName,trafficSource,spend_7d,revenue_7d,roi_7d_pct,spend_5d,roi_5d_pct,lifetime_spend,lifetime_roi_pct,age_hours,reason,lifetime_roi_gt30
+39049902,vb-AlexZCleaningJobsBR-tg1-fb-br-a-0911-GE04-p,FACEBOOK,59.40,89.03,49.9,19.54,3.7,103.15,83.6,275,5д $19.54 / ROI 3.7%,YES
+39049903,vb-AlexZCleaningJobsBR-tg1-fb-br-a-0911-GE01-p,FACEBOOK,57.71,79.01,36.9,17.47,24.0,98.70,69.7,275,5д $17.47 / ROI 24.0%,YES
+38924369,vb-AlexZCleaningJobsFR-tg_set-fb-fr-a-0823-GE04-p,FACEBOOK,32.37,42.65,31.8,18.37,-19.9,204.06,46.6,770,5д $18.37 / ROI -19.9%,YES
+38874287,vb-AlexZLoansLT-tg1_auto-fb-lt-a-0815-GE01-p,FACEBOOK,30.08,33.65,11.9,30.08,11.9,198.53,12.3,927,5д $30.08 / ROI 11.9%,
+38905718,vb-AlexZHeatPumpsLT-tg2_auto-fb-lt-a-0819-GE02-p,FACEBOOK,29.76,34.61,16.3,17.58,13.4,212.41,53.1,827,5д $17.58 / ROI 13.4%,YES
+38924367,vb-AlexZCleaningJobsFR-tg_set-fb-fr-a-0823-GE05-p,FACEBOOK,19.53,17.11,-12.4,11.78,-27.0,149.44,47.4,770,5д $11.78 / ROI -27.0% ; 7д $19.53 / ROI -12.4%,YES
+39082118,vb-AlexZCleaningJobsBR-tg1-fb-br-a-0916-GE08-p,FACEBOOK,18.56,24.73,33.2,7.90,25.1,18.56,33.2,155,5д $7.90 / ROI 25.1%,YES
+39048193,vb-AlexZCleaningJobsDE-tg1-fb-de-a-0912-GE01-p,FACEBOOK,18.39,30.20,64.2,7.89,-54.6,39.27,86.6,282,5д $7.89 / ROI -54.6%,YES
+38926356,vb-AlexZCleaningJobsFR-tg_set-fb-fr-a-0823-GE08-p,FACEBOOK,7.90,6.07,-23.2,3.76,-22.6,159.72,51.0,755,7д $7.90 / ROI -23.2%,YES
+38873454,vb-AlexZloansPT-tg1_auto-fb-pt-a-0816-GE01-p,FACEBOOK,6.31,6.29,-0.3,2.89,-59.2,144.01,36.5,932,7д $6.31 / ROI -0.3%,YES
+39053905,vb-AlexZtest-tg_brazil-fb-br-a-0912-GE01-p,FACEBOOK,5.02,4.41,-12.2,1.43,-8.4,21.01,3.0,254,7д $5.02 / ROI -12.2%,
+38837165,vb-AlexZCleaningJobsAT-tg1-tk-at-a-0810-GE01,TIKTOK,3.69,0.00,-100.0,1.91,-100.0,229.06,42.8,1067,выручка $0 при спенде $3.69 за 7д,YES
+38833087,vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0809-GE04,TIKTOK,2.54,0.00,-100.0,1.50,-100.0,37.93,36.6,1092,выручка $0 при спенде $2.54 за 7д,YES
+38857106,vb-AlexZCleaningJobsUK-tg1-tk-gb-a-0812-GE03,TIKTOK,2.30,0.00,-100.0,0.22,-100.0,47.51,90.1,996,выручка $0 при спенде $2.30 за 7д,YES
+38226208,vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0804-GE02,TIKTOK,1.37,0.00,-100.0,1.18,-100.0,766.37,40.7,1223,выручка $0 при спенде $1.37 за 7д,YES
+39006638,vb-AlexZCleaningJobsBR-tg1-fb-br-a-0906-GE01-p,FACEBOOK,0.97,0.00,-100.0,0.08,-100.0,21.72,69.8,407,выручка $0 при спенде $0.97 за 7д,YES
+38914770,vb-AlexZCleaningJobsDE-tg1-tk-de-a-0821-GE01,TIKTOK,0.96,0.00,-100.0,0.50,-100.0,36.39,25.9,804,выручка $0 при спенде $0.96 за 7д,
+36544466,vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0709-GE02,TIKTOK,0.73,0.00,-100.0,0.55,-100.0,46.02,62.1,1818,выручка $0 при спенде $0.73 за 7д,YES
+38891098,vb-AlexZLoansEE-tg1_auto-fb-ee-a-0819-GE01-p,FACEBOOK,0.65,0.00,-100.0,0.13,-100.0,30.43,87.3,863,выручка $0 при спенде $0.65 за 7д,YES
+38948287,vb-AlexZCleaningJobsPT-tg1-fb-pt-a-0828-GE02-p,FACEBOOK,0.57,0.00,-100.0,0.57,-100.0,43.11,75.3,649,выручка $0 при спенде $0.57 за 7д,YES
+38021632,vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0802-GE01,TIKTOK,0.56,0.00,-100.0,0.56,-100.0,43.94,32.6,1260,выручка $0 при спенде $0.56 за 7д,YES
+38877133,vb-AlexZConstructionJobsPT-tg1-fb-pt-a-0817-GE01-p,FACEBOOK,0.49,0.00,-100.0,0.23,-100.0,44.65,65.4,911,выручка $0 при спенде $0.49 за 7д,YES
+38839713,vb-AlexZCleaningJobsUK-tg1-tk-gb-a-0810-GE01,TIKTOK,0.44,0.00,-100.0,0.43,-100.0,105.24,119.4,1054,выручка $0 при спенде $0.44 за 7д,YES
+36643841,vb-AlexZConstructionJobsBE-tg_1-tk-be-a-0714-GE02,TIKTOK,0.40,0.00,-100.0,0.40,-100.0,91.91,64.7,1723,выручка $0 при спенде $0.40 за 7д,YES
+38913769,vb-AlexZCleaningJobsUK-tg1-tk-gb-a-0820-GE03,TIKTOK,0.39,0.00,-100.0,0.06,-100.0,10.22,-2.4,804,выручка $0 при спенде $0.39 за 7д,
+38992973,vb-AlexZCleaningJobsSK-tg1-fb-sk-a-0904-GE01-p,FACEBOOK,0.29,0.00,-100.0,0.00,0.0,28.79,93.4,468,выручка $0 при спенде $0.29 за 7д,YES
+38966198,vb-AlexZCleaningJobsFI-tg1-fb-fi-a-0831-GE02-p,FACEBOOK,0.24,0.00,-100.0,0.08,-100.0,23.98,27.1,548,выручка $0 при спенде $0.24 за 7д,
+38955659,vb-AlexZCleaningJobsPL-tg1-fb-pl-a-0829-GE02-p,FACEBOOK,0.06,0.00,-100.0,0.00,0.0,43.19,115.8,618,выручка $0 при спенде $0.06 за 7д,YES
+38926413,vb-AlexZCleaningJobsFR-tg_set-tk-fr-a-0823-GE05,TIKTOK,0.02,0.00,-100.0,0.01,-100.0,54.73,93.3,755,выручка $0 при спенде $0.02 за 7д,YES
+38905748,vb-AlexZLoansEE-tg1_auto-fb-ee-a-0820-GE05-p,FACEBOOK,0.01,0.00,-100.0,0.00,0.0,21.72,105.9,827,выручка $0 при спенде $0.01 за 7д,YES
+38966613,vb-AlexZCleaningJobsBR-tg1-fb-br-a-0831-GE04-p,FACEBOOK,0.01,0.00,-100.0,0.00,0.0,35.20,71.5,547,выручка $0 при спенде $0.01 за 7д,YES
+38965083,vb-AlexZCleaningJobsMX-tg1-fb-mx-a-0831-GE02-p,FACEBOOK,0.01,0.00,-100.0,0.00,0.0,25.09,94.7,551,выручка $0 при спенде $0.01 за 7д,YES

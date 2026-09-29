@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/ea00605f7636677c7b8dbe865254987d",
+  "concept": "сетка выбора (fake interactivity) — сетка 2×2 способов без банка с рисунками (машина + болето, магазин, группа + шары жеребьёвки, рукопожатие + договор), у каждого «Saiba mais»; без сумм, процентов, логотипов банков и консорсиумов; опора: раздел «Carro usado sem financiamento: as formas mais comuns» (4 из 5 способов: boleto da loja, crediário por financeira parceira, consórcio, compra entre particulares)",
+  "text": "Carro usado parcelado sem banco: / qual caminho? / Boleto da loja – parcelas mensais direto com a revenda / Crediário da loja – financeira parceira, com análise e juros / Consórcio – carta de crédito por sorteio ou lance / Entre particulares – parcelas combinadas em contrato (у каждой «Saiba mais»)",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/6c906b6b360aa07ae065c65d2c4e3b09",
+  "concept": "карточка-опросник — тёмно-бирюзовый фон, квиз-крючок «parcela baixa, custo alto?»: предложение по рассрочке с тремя полями «?» без цифр и лупа; верный ответ CET — в статье; без сумм и процентов; опора: раздел «Na simulação, compare o custo total» (сравнивать по custo total, просить CET — juros, tarifas e seguros) + «Os riscos…» (parcelas baixas por muitos meses)",
+  "text": "Parcela baixa, custo alto? / Faça o teste / QUIZ / Pergunta 1 de 3 / Qual número mostra o custo real do carro parcelado? / Valor da parcela / Número de parcelas / CET – custo efetivo total / Não sei / на рисунке: PROPOSTA · CARRO USADO / Valor da parcela ? / Número de parcelas ? / CET ? / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/4dd3f6c5befa42d014994d8d73d6a055",
+  "concept": "сколько стоит / сравнение — сравнение болето магазина и консорсиума: когда пользуешься машиной, из чего стоимость, главный риск; без сумм, процентов и обещаний одобрения; опора: разделы «Comprar carro no boleto sem financiamento: como funciona» (juros embutidos, reserva de domínio до последней parcela), «Consórcio vale a pena…» (taxa de administração, fundo de reserva, sem data certa), «Os riscos…» (atraso → retomada) и «Na simulação…» (CET por escrito)",
+  "text": "Boleto da loja ou consórcio? / Compare pelo custo total, não pelo valor da parcela / BOLETO DA LOJA: O CARRO — usa desde a compra, vinculado à loja até quitar; CUSTO — juros embutidos nas parcelas; ATENÇÃO — atraso pode levar à retomada / CONSÓRCIO: O CARRO — só quando for contemplado; CUSTO — sem juros: taxa de administração e fundo de reserva; ATENÇÃO — não há data certa de contemplação / Peça por escrito o CET / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/fcb6666584102f210e25b870ee5c435a",
+  "concept": "сцена-иллюстрация — двор автосалона: б/у хэтчбек без марки и номеров, на переднем плане планшет с чек-листом из 5 пунктов статьи и галочками; без людей, логотипов и «ключей с неба»; опора: раздел «O que conferir no carro e no vendedor» (документ, IPVA/licenciamento/multas, gravame/alienação, vistoria cautelar, всё в договоре)",
+  "text": "Carro usado parcelado: / o que conferir antes de assinar / планшет: Antes de assinar, confira: Documento do veículo / IPVA, licenciamento e multas / Gravame ou alienação / Vistoria cautelar / Contrato por escrito / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ }
+]

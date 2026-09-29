@@ -1,0 +1,66 @@
+{
+ "docId": "offers60-mobility-aids-uk-2026-09-25",
+ "kind": "static",
+ "geo": "GB, IE (английский)",
+ "lang": "en",
+ "name": "товарка · подъёмник на лестницу (UK) · РК статика ×4 (офферы 60+, место 4)",
+ "angle": "угол первым (товарка-сетка для 60+)",
+ "article": {
+  "status": "нужна новая",
+  "title": "Stairlift Prices 2026: Straight, Curved, Reconditioned or Rental – What You Really Pay",
+  "titleRu": "Цены на лестничные подъёмники 2026: прямой, для поворотной лестницы, восстановленный или аренда — сколько платят на самом деле"
+ },
+ "provider": "VISYMO en_GB (новый тест — видна выплата по ключам)",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). План маркетолога: FB; FB VISYMO en_GB $10/день (GB+IE). Бид — владелец.",
+ "readability": "Для пенсионеров: ≤ 12 слов на картинке вместе с кнопкой; заголовок ≥ 96 px, подпись ≥ 64 px, кнопка 52–54 px, всё жирным гротеском; тёмный текст на светлой карточке или светлый на тёмно-синем, контраст ≥ 7:1; проверено в уменьшении до 400 px.",
+ "creatives": [
+  {
+   "id": "O60-4-1",
+   "file": "cr/offers60-mobility-aids-uk-2026-09-25/O60-4-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · цветочные углы на шалфейном фоне (шаблон владельца GB TT), сетка выбора 2×2 · заголовок 96 px (Fira Sans Bold), плитки 50 px, кнопка «Learn more» 52 px · 9 слов на картинке · контраст ≥ 7.8:1",
+   "concept": "товарка-сетка: 4 крупные плитки-варианта (формат H). На картинке: STAIRLIFT PRICES 2026 / Straight · Curved · Reconditioned · Rental / [Learn more]",
+   "primaryText": "Stairs getting harder? Here's what a stairlift costs in 2026 – straight, curved, reconditioned or rented.",
+   "headline": "Stairlift Prices 2026: Straight, Curved, Reconditioned or Rental – What You Really Pay",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/1873128758784241.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[mobility-aids-uk n1]",
+   "note": "Шаблон владельца: цветочные углы, крупные засечки, строка-плашка под заголовком, большая кнопка · GB джобсы TT (стиль владельца; цифр у меня нет). Отступ от ТЗ: вместо фото подъёмника сверху — плоская пиктограмма подъёмника на лестнице (нарисована кодом, без OpenAI). Плашка шаблона заменена сеткой 2×2 из плиток по 50 px. Герб шаблона убран (угол закрыт зеркальным цветочным углом). Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Стиль владельца; цифр по этому шаблону у меня нет — гипотеза."
+  },
+  {
+   "id": "O60-4-2",
+   "file": "cr/offers60-mobility-aids-uk-2026-09-25/O60-4-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · орнаментная рамка поверх размытого фото стола, кремовая карточка 96% (шаблон владельца RO 0817-GE02) · заголовок 122 px (PT Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 12 слов на картинке · контраст ≥ 10.3:1",
+   "concept": "боль + цена. На картинке: STAIRS GETTING HARDER? / What a stairlift really costs in 2026 / [Learn more]",
+   "primaryText": "Stairs getting harder? Here's what a stairlift costs in 2026 – straight, curved, reconditioned or rented.",
+   "headline": "Stairlift Prices 2026: Straight, Curved, Reconditioned or Rental – What You Really Pay",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120253014378450264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[mobility-aids-uk n2]",
+   "note": "Шаблон владельца: орнаментная рамка поверх размытого фото стола (очки, газета), жирный капс · RO кредиты 60+ (РК 0817-GE02): за всё время $133.4 → +32%. Отступ от ТЗ: маркетолог просил вместо фото стола размытое фото лестницы с подъёмником — фото стола оставлено (без OpenAI такого фото нет; из-под карточки видно ~130 px по краям). Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-4-3",
+   "file": "cr/offers60-mobility-aids-uk-2026-09-25/O60-4-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · белая карточка, розовая цветочная гирлянда сверху/снизу (шаблон владельца HU 0817-GE01) · заголовок 100 px (Fira Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 11 слов на картинке · контраст ≥ 8.2:1",
+   "concept": "сравнение двух вариантов (формат F). На картинке: STAIRLIFT OR MOVING HOUSE? / Which is cheaper after 70? / [Learn more]",
+   "primaryText": "Stairs getting harder? Here's what a stairlift costs in 2026 – straight, curved, reconditioned or rented.",
+   "headline": "Stairlift Prices 2026: Straight, Curved, Reconditioned or Rental – What You Really Pay",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120252993448300264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[mobility-aids-uk n3]",
+   "note": "Шаблон владельца: белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%. Формат F: два варианта — тёмная и светлая плашки одна под другой, между ними красный кружок «OR». Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-4-4",
+   "file": "cr/offers60-mobility-aids-uk-2026-09-25/O60-4-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · тёмно-синий фон с розами, плашка в золотой рамке, красная кнопка (шаблон владельца FR) · заголовок 122 px (Fira Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 10 слов на картинке · контраст ≥ 7.8:1",
+   "concept": "аренда — дешёвый вход. На картинке: RENT A STAIRLIFT? / Rental vs buying: prices 2026 / [Learn more]",
+   "primaryText": "Stairs getting harder? Here's what a stairlift costs in 2026 – straight, curved, reconditioned or rented.",
+   "headline": "Stairlift Prices 2026: Straight, Curved, Reconditioned or Rental – What You Really Pay",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120254842382280210.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[mobility-aids-uk n4]",
+   "note": "Шаблон владельца: тёмно-синий фон с розами, крупный золотой шрифт, рамка-плашка, красная кнопка — самый контрастный · FR джобсы (стиль владельца; цифр у меня нет). Флаг/эмблема шаблона (правый нижний угол) и весь старый текст стёрты, фон дорисован. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Стиль владельца; цифр по этому шаблону у меня нет — гипотеза."
+  }
+ ]
+}

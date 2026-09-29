@@ -1,0 +1,66 @@
+{
+ "docId": "DE-kredit-angle5-2026-09-25",
+ "kind": "static",
+ "geo": "DE",
+ "lang": "de",
+ "name": "DE кредиты · угол «три рассрочки в одну» · РК статика ×4",
+ "angle": "Узнать, можно ли свести несколько рассрочек и Dispo в одну плату и когда это реально дешевле, а когда нет.",
+ "article": {
+  "id": "C",
+  "title": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+  "titleRu": "Счёт в минусе: овердрафт, срочный кредит или перекредитование — что реально помогает в 2026",
+  "provider": "VISYMO — основной (locale de_DE: чистый «угол первым», выплату по ключам узнаём там); IRONFLI — 1 РК на статью C сплитом."
+ },
+ "payoutCheck": "Статья C новая (пишет копирайтер), в кабинете её ещё нет — выплату за 2 последних закрытых дня проверить нельзя. Проверить после первого закрытого дня.",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). У маркетолога план: FB. Формат — статика. FB VISYMO $5/день + FB IRONFLI $5/день. Эти 4 — статика; видео к углу — отдельной РК/карточкой, не смешивать.",
+ "creatives": [
+  {
+   "id": "DEK5-1",
+   "file": "cr/DE-kredit-angle5-2026-09-25/DEK5-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото сверху: пять конвертов с цветными полосами без логотипов, рука ~40 держит голубую папку, очки, кофе; подписи от руки «Dispo / Ratenkredit / Kreditkarte / ?», тёмно-зелёная полоса с хуком снизу",
+   "concept": "Визуал 5a (конверты) с хуком 5d: «Dispo, Ratenkredit, Kreditkarte: Welcher Kredit kostet eigentlich am meisten?»",
+   "primaryText": "Dispo, Ratenkredit, Kreditkarte: Welcher Kredit kostet eigentlich am meisten? Die Antwort überrascht viele – und entscheidet, ob sich eine Umschuldung lohnt.",
+   "headline": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a5-1.png; тексты — de5/hooks.json angle5 n4 (копирайтер)",
+   "note": "Хуки 5a и 5d копирайтера поменяны местами: на выписке (DEK5-4) видно ровно «3 Raten + Dispo» — туда хук 5a; три вида кредита легли на конверты — сюда хук 5d. Подписи на конвертах повторяют слова хука. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK5-2",
+   "file": "cr/DE-kredit-angle5-2026-09-25/DEK5-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · плоская векторная иллюстрация: три тонкие ленты (коралл, оранжевый, серый) сливаются в одну широкую изумрудную; плашки «Rate» ×3 и «1 Rate?», хук сверху, коралловая кнопка",
+   "concept": "Визуал 5b: инфографика «3 Raten → 1 Rate?» — «Aus drei Raten eine machen: Wann rechnet sich das wirklich?»",
+   "primaryText": "Aus drei Raten eine machen: Wann rechnet sich das wirklich? Zinsen, Restlaufzeit, Gebühren – die Rechnung, die viele überspringen.",
+   "headline": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a5-2.png; тексты — de5/hooks.json angle5 n2 (копирайтер)",
+   "note": "Добавлены подписи на ленты «Rate» ×3 и «1 Rate?» (повторяют смысл хука, без цифр и ставок). Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK5-3",
+   "file": "cr/DE-kredit-angle5-2026-09-25/DEK5-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото: пара ~42 вечером за обеденным столом, оба с открытыми глазами смотрят в ноутбук и спокойно улыбаются, у мужчины рука на тачпаде; журнальный заголовок serif снизу с красной плашкой «Konto im Minus:», красная кнопка",
+   "concept": "Визуал 5c: пара вместе разбирается в расходах за ноутбуком, облегчение. Хук = заголовок статьи C.",
+   "primaryText": "Mehrere Raten und ein Dispo: So vergleicht man die Kosten richtig.",
+   "headline": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 (перегенерация 24.09: в первой версии у мужчины были полузакрыты глаза) → Pillow; основа de5/base/a5-3.png; тексты — de5/hooks.json angle5 n3 (копирайтер)",
+   "note": "«Sofortkredit» на картинке (из заголовка статьи C): инструкция запрещает «сразу/быстрый» рядом с «кредит» (Google «Promising loans»), но это заголовок статьи и сравнение, не обещание; если Google/FB отклонит — заменить на «Minikredit». Решает главный. «Konto im Minus» — зона Personal hardship у Meta (маркетолог: риск средний–высокий). Экран ноутбука не виден. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK5-4",
+   "file": "cr/DE-kredit-angle5-2026-09-25/DEK5-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · Pillow: бумажный «Kontoauszug» без названия банка, три строки рассрочек выделены жёлтым маркером, «Sollzinsen Dispositionskredit» — розовым, суммы размыты, жёлтый маркер-ручка; хук сверху на тёмном",
+   "concept": "Визуал 5d (улучшен: вместо блокнота — выписка со счёта, где видны 3 списания + Dispo). Хук 5a: «Drei Raten, dazu der Dispo: So zahlen viele jeden Monat drauf – ohne es zu merken.»",
+   "primaryText": "Drei Raten, dazu der Dispo: So zahlen viele jeden Monat drauf – ohne es zu merken. Wann es sich lohnt, alles in eine Rate zusammenzufassen – und wann nicht.",
+   "headline": "Konto im Minus: Dispo, Sofortkredit oder Umschuldung – was 2026 wirklich hilft",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "Pillow; основа de5/base/a5-4.png; тексты — de5/hooks.json angle5 n1 (копирайтер)",
+   "note": "Суммы в выписке размыты: цифр платежа на креативе нет. «Drei Raten» жёлтым и «Dispo» розовым — в цвет маркера. Хук 5a перенесён сюда (см. DEK5-1). Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-loans-military-pl-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — камуфляжная полоса + 4 службы строками; предметы без знаков различия",
+  "text": "Kredyt dla mundurowych 2026 / Oferty banków – wybierz służbę: / Kredyt dla służb mundurowych / Wojsko / Policja / Straż pożarna / Straż Graniczna (у каждой «Dowiedz się więcej»)",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-loans-military-pl-2026-09-30/b.png",
+  "concept": "карточка-опросник — оливковый фон, вопрос о банке, не о зрителе",
+  "text": "Kredyt dla służb mundurowych: / quiz w 4 pytaniach / QUIZ / Pytanie 1 z 4 / Co bank sprawdza najpierw przy ofercie dla służb? / Staż służby / Stałe uposażenie / Wiek / Historię kredytową",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-loans-military-pl-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — две карточки друг над другом",
+  "text": "Zwykły kredyt czy oferta dla mundurowych? / Czym różnią się oferty banków w 2026 / ZWYKŁY KREDYT vs OFERTA DLA MUNDUROWYCH / ZWYKŁY KREDYT: dla wszystkich klientów · dochód z umowy o pracę · warunki standardowe / OFERTA DLA MUNDUROWYCH: wojsko, policja, straże · dochód: uposażenie · warunki: ? / Różnica, o której mało kto mówi",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-loans-military-pl-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — формула рабочих кредитных крео владельца (плашки + «чего банки не говорят»); стул с курткой-камуфляжем, кепкой и ботинками без знаков",
+  "text": "KREDYT DLA MUNDUROWYCH 2026: CZEGO BANKI NIE MÓWIĄ?",
+  "cta": "Dowiedz się więcej"
+ }
+]

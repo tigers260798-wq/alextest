@@ -1,0 +1,34 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/0caf4d619e347ed42afdf1061c1dcc25",
+  "concept": "сетка выбора (fake interactivity) — улица с тремя зданиями (аптека Rx, кабинет врача, клиника — без брендов) + 3 строки-варианта",
+  "text": "Shingles vaccine 2026: / where the shot is given / The place can change the bill – pick one: / Pharmacy – Often bills the drug plan directly / Doctor's office – Reviews health history and timing / Public health clinic – May serve people without insurance (у каждой «Learn more»)",
+  "cta": "Learn more",
+  "source": "раздел 6 «Where people get the shingles vaccine» (3 вида мест) + раздел 5 (почему место меняет счёт); угол РК 2"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/19f993cabfa031214c204d28f5eafd05",
+  "concept": "карточка-опросник — мятный фон; вопрос о программе, без «$0 / free shot»",
+  "text": "Medicare & the shingles shot: / which part handles it? / QUIZ / Question 1 of 3 / Under Medicare, which part handles the shingles vaccine? / Part A / Part B / Part D / Not sure / кнопка «Learn more»",
+  "cta": "Learn more",
+  "source": "раздел 5 «Shingrix vaccine insurance coverage» (ответ: Part D, не Part B)"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/711897c4a53bbfbcaf89519f483c203f",
+  "concept": "сколько стоит / сравнение — 4 ценника «$?» — цена зависит от плана и места (так в статье); без «$0», без бренда вакцины",
+  "text": "Shingles shot price 2026 / Same two doses – the plan and the place set the bill / 2 doses, usually 2–6 months apart / Medicare Part D: $? · Private health insurance: $? · Medicaid: depends on the state: $? · No coverage: $? / кнопка «Learn more»",
+  "cta": "Learn more",
+  "source": "раздел 4 «Shingrix vaccine cost and shingles shot price» + раздел 5 (Part D / частная страховка / Medicaid по штатам)"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/c9bf33bca74bf6734db54aa0bf8800eb",
+  "concept": "сцена-иллюстрация — аптечная стойка: полки с безымянными коробками, фармацевт, покупатель 60+ со спины, лист «Dose 1 → Dose 2 in 2–6 months», телефон-напоминание; шприца нет",
+  "text": "SHINGLES VACCINE 2026 / Two doses, months apart / Who it's recommended for after 50, what it costs, how it's billed / SHINGLES VACCINE: Dose 1 ↓ Dose 2 in 2–6 months / телефон: Reminder · Dose 2 / кнопка «Learn more»",
+  "cta": "Learn more",
+  "source": "раздел 2 (две дозы через 2–6 месяцев, взрослым 50+) + раздел 6 (аптека напоминает о второй дозе); хук РК 1"
+ }
+]

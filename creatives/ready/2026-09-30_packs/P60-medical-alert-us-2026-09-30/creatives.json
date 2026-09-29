@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-medical-alert-us-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — тёмная панель с большой красной кнопкой и чипами «24/7» / «1 button», 4 плитки-типа устройства из статьи",
+  "text": "Medical alert systems 2026: pick a type / Pendant / Wristband / Home base / Mobile GPS (у каждой «Learn more») / 24/7 · 1 button",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-medical-alert-us-2026-09-30/b.png",
+  "concept": "карточка-опросник — форма-калькулятор со степпером; цены на карточке нет (главный 29.09: только $20–60/мес с пометкой «2026 guide»)",
+  "text": "Medical alert cost check 2026 / 3 choices that change the monthly price / STEP 2 OF 3 / Add automatic fall detection? / Device · Fall detection · Contract / Yes / No / What does it do? / What does it cost?",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-medical-alert-us-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — «счёт за месяц»: $20–60 абонплата и +$8–12 fall detection — ориентир 2026 из гипотезы и статьи (пометка «2026 US guide»); сбор за устройство — «$0 или разовый»",
+  "text": "What does a medical alert system cost? / Typical monthly prices – 2026 US guide / MONTHLY BILL 2026 / Monitoring plan $20–$60 · Fall detection add-on +$8–$12 · Equipment or activation fee $0 or a one-time fee / Paying yearly can lower the monthly rate",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-medical-alert-us-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — плашки слева + спальня: тумбочка с базовой станцией и кулоном, лампа, край кровати; без людей",
+  "text": "MEDICAL ALERT SYSTEMS 2026: WHAT DOES 24/7 MONITORING COST?",
+  "cta": "Learn more"
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-car-insurance-uk-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 способов из статьи (пробег, телематика, сравнение вместо автопродления, курс вождения)",
+  "text": "Car insurance over 60: 4 things that can change a quote / Pick one to see how it works (2026) / Lower annual mileage / Black box policy / Compare, don't auto-renew / Advanced driving course (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-car-insurance-uk-2026-09-30/b.png",
+  "concept": "карточка-опросник — вопрос о рынке, не о зрителе (ответ в статье: зависит от страховщика)",
+  "text": "After 70, does car insurance / get cheaper or dearer? / DRIVER QUIZ / Question 1 of 4 / What happens to car insurance prices after 70? / Always cheaper / Always dearer / Depends on the insurer / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-car-insurance-uk-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — специализированный против обычного страховщика; цен в гипотезе нет — «?»; «гибче после 75» — из статьи",
+  "text": "Specialist or mainstream insurer? / Car insurance for drivers over 60 and over 70 / SPECIALIST vs MAINSTREAM / MADE FOR: older drivers / all drivers · EXTRAS: low-mileage, agreed value / standard cover · PRICE: ? / ? / Why specialists can be more flexible after 75",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-car-insurance-uk-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — плашки + дом с гаражом, машина на дорожке, письмо RENEWAL; хук совпадает с заголовком статьи (ошибка при продлении — автопродление без сравнения)",
+  "text": "CAR INSURANCE OVER 60: THE RENEWAL MISTAKE THAT COSTS MONEY",
+  "cta": "Learn more"
+ }
+]

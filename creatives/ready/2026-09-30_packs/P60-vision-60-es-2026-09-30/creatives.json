@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-vision-60-es-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 вариантов (очки, линзы, операция) — «после 60» только как описание темы, не о зрителе",
+  "text": "Vista cansada después de los 60 / 4 opciones en 2026. Elige una: / Gafas progresivas / Lentes de contacto / Gafas de cerca / Cirugía con lente intraocular (у каждой «Más información»)",
+  "cta": "Más información"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-vision-60-es-2026-09-30/b.png",
+  "concept": "карточка-опросник — бирюзовый фон, вопрос о самих очках, не о зрении зрителя",
+  "text": "Gafas progresivas: / la pregunta que muchos fallan / TEST / Pregunta 1 de 3 / ¿Para qué distancias sirve una gafa progresiva? / Solo de cerca / Solo de lejos / Cerca, media y lejos / No lo sé",
+  "cta": "Más información"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-vision-60-es-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — 3 ценника на штанге «? €» — цен в гипотезе нет",
+  "text": "Vista cansada: ¿cuánto cuesta cada opción en 2026? / Precios, ventajas y para quién es cada opción / Gafas progresivas: ? € · Lentes de contacto: ? € · Cirugía con lente intraocular: ? €",
+  "cta": "Más información"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-vision-60-es-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — оптика: таблица букв, стеллаж оправ, прогрессивные очки на подставке; людей нет, «до/после» нет",
+  "text": "Gafas progresivas 2026: lo que pocos preguntan en la óptica / Precios, lentes y cirugía: opciones después de los 60",
+  "cta": "Más información"
+ }
+]

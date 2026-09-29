@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-energy-subsidy-es-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — ночная панель с лампочкой, счётчиком и вилкой + 4 строки-кнопки",
+  "text": "Factura de la luz 2026 / 4 cosas que revisar para no pagar de más: / Bono social eléctrico / Comparador de tarifas de luz / Potencia contratada / Tarifa regulada o libre (у каждой «Más información»)",
+  "cta": "Más información"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-energy-subsidy-es-2026-09-30/b.png",
+  "concept": "карточка-опросник — форма-проверка со степпером (тариф → мощность → bono social), без цифр",
+  "text": "¿Se paga de más por la luz? / Comprobación en 3 pasos / PASO 2 DE 3 / ¿Dónde aparece la potencia contratada? / Tarifa · Potencia · Bono social / En la factura / En el contador / En el contrato / En los tres",
+  "cta": "Más información"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-energy-subsidy-es-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — счёт с «? €» в каждой строке и строкой «Descuento bono social − ? %» маркером; сумм и процентов нет",
+  "text": "¿Cuánto baja la factura con el bono social? / Lo que dice cada línea de la factura / FACTURA DE LUZ · 2026  / ¿Se paga de más? / Bono social y comparador de tarifas: quién tiene derecho / Potencia contratada: ? € · Energía consumida: ? € · Impuestos: ? € · Descuento bono social: − ? % / TOTAL ? €",
+  "cta": "Más información"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-energy-subsidy-es-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — кухня ночью: окно с луной, лампа, розетка, на столе счёт «TOTAL: ? €», калькулятор, очки",
+  "text": "Lo que la factura de la luz no cuenta / Bono social 2026: quién tiene derecho y cómo comparar tarifas",
+  "cta": "Más información"
+ }
+]

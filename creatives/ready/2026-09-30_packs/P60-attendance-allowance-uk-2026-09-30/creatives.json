@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-attendance-allowance-uk-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 плитки с иконками на кремовом, у каждой «Learn more»",
+  "text": "Attendance Allowance 2026 / Not means-tested. Paid weekly. Pick a topic: / Who can get it / The 2 weekly rates / Other benefits it can unlock / How to apply (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-attendance-allowance-uk-2026-09-30/b.png",
+  "concept": "карточка-опросник — вопрос о правилах пособия, не о зрителе; бирюзовый фон",
+  "text": "The Attendance Allowance question / many get wrong / QUICK CHECK / Question 1 of 4 / Do savings or income affect Attendance Allowance? / Yes, both count / Only savings count / No, neither counts / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-attendance-allowance-uk-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — ",
+  "text": "Attendance Allowance vs Pension Credit / Two different benefits – and a link many miss / ATTENDANCE ALLOWANCE vs PENSION CREDIT / BASED ON: care needs / income · MEANS-TESTED: no / yes · PAID: weekly, 2 rates / weekly top-up / Can one raise the other?",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-attendance-allowance-uk-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — гостиная: кресло, плед, чай и письмо на столике, окно; людей нет",
+  "text": "ATTENDANCE ALLOWANCE 2026 / The weekly benefit that ignores savings / Who can get it – and what else it can unlock",
+  "cta": "Learn more"
+ }
+]

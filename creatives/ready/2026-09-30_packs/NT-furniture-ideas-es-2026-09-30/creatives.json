@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/NT-furniture-ideas-es-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — товарка-сетка: 4 мини-гостиные в разных стилях, у каждой «Más información»",
+  "text": "Muebles de salón 2026 / ¿Qué estilo? Elige uno: / Nórdico (madera clara, gris) / Minimalista (blanco, líneas rectas) / Industrial (metal, cuero, ladrillo) / Japandi (bajo, natural, calma) (у каждой «Más información»)",
+  "cta": "Más información"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/NT-furniture-ideas-es-2026-09-30/b.png",
+  "concept": "карточка-опросник — опрос A/B с «?%» — fake interactivity",
+  "text": "¿Qué salón parece más amplio? / Mismos metros, otros muebles / ENCUESTA / 1 de 3 / Muebles altos y oscuros / Muebles bajos y claros",
+  "cta": "Más información"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/NT-furniture-ideas-es-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — два плана одной комнаты сверху (A/B, не «до/после»)",
+  "text": "Mismo salón, 2 distribuciones / ¿Cuál deja más espacio libre? / Ideas de muebles modernos para 2026 / A: Sofá contra la pared · B: Sofá en L y mesa redonda",
+  "cta": "Más información"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/NT-furniture-ideas-es-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — современная гостиная: шалфейный диван, полки, картины, торшер-дуга, ковёр",
+  "text": "Ideas de muebles modernos para 2026 / Cómo reorganizar el salón y ganar espacio",
+  "cta": "Más información"
+ }
+]

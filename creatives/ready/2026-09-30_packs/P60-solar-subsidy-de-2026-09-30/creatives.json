@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/eb63775461fd93e7cbfdebc5032e3896",
+  "concept": "сетка выбора (fake interactivity) — панель: дом с модулями на крыше, солнце + 5 строк-кнопок по 5 вопросам статьи; «Kredit» не выносил; опора: раздел «Lohnt sich Photovoltaik für Rentner? Fünf Fragen»",
+  "text": "Lohnt sich Photovoltaik im Ruhestand? / 5 Fragen entscheiden / Verbrauch tagsüber / Zustand des Dachs / Wohndauer und Erben / Ersparnisse oder Miete / Stromrechnung heute (у каждой «Mehr erfahren») / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/a3589b9656fb99a767644a22c963f828",
+  "concept": "карточка-опросник — тёмно-синий фон, вопрос о правилах поддержки; без «staatlicher Zuschuss» как обещания; опора: раздел «Photovoltaik Förderung 2026: was es gibt und was nicht» (ответ по статье — «Nein»)",
+  "text": "Solar aufs Dach 2026: / die Frage zum Zuschuss / QUIZ / Frage 1 von 3 / Gibt es 2026 einen bundesweiten Zuschuss für eine Solaranlage auf dem Dach? / Ja / Nein / Nur mit Speicher / Weiß nicht / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/48330d0959f87a060bd64773b3754373",
+  "concept": "сколько стоит / сравнение — таблица без € и центов; «rund ein Drittel» — формулировка статьи (в списке сверки); опора: раздел «Photovoltaik mit Speicher Kosten» + «Angebote Komplettanlagen vergleichen» (foot)",
+  "text": "Photovoltaik mit oder ohne Speicher? / Wovon die Kosten wirklich abhängen / OHNE SPEICHER vs MIT SPEICHER / Eigenverbrauch: oft rund ein Drittel / deutlich mehr · Mittagsstrom: Rest geht ins Netz / am Abend nutzen · Anlagenpreis: niedriger / spürbar höher / Angebote: Preis pro kWp mit und ohne Speicher / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/981dcfbb5b89e387f5f67be268927dba",
+  "concept": "сцена-иллюстрация — карточка в рамке + кухонный стол: три предложения, калькулятор, очки; в окне — крыша пристройки с модулями; человек без лица; опора: раздел «Photovoltaik Angebote Komplettanlagen vergleichen» (5 пунктов)",
+  "text": "PHOTOVOLTAIK 2026 / Komplettangebote vergleichen: 5 Punkte, die zählen / Preis pro kWp, Garantien, Gerüst, Ertragsprognose, Wartung / ANGEBOT 1 / ANGEBOT 2 / ANGEBOT 3 · kWp / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ }
+]

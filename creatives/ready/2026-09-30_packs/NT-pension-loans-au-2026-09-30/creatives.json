@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/2bf670916190923f463cfbca5bd59827",
+  "concept": "сетка выбора (fake interactivity) — 6 плиток 3×2 = варианты из статьи, у каждой «Learn more»; без ставок, сумм и сроков; сливово-оранжевая палитра, не цвета ведомств; опора: разделы 1–4: Home Equity Access Scheme (бывш. Pension Loans Scheme), аванс пенсии, банки и кредитные союзы, беспроцентные займы некоммерческих организаций, частный reverse mortgage, home reversion",
+  "text": "Pension loans in Australia: / 6 options for 2026 / Pick one to see how it works / Home Equity Access Scheme / Pension advance payment / Bank & credit union loans / No-interest community loans / Reverse mortgage / Home reversion (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/365f96c18870d23598824ac291ccf7a4",
+  "concept": "карточка-опросник — тёмно-сливовый фон, тест 2×2 о продуктах, не о зрителе; продуктов вне статьи нет; опора: раздел 2 («A Centrelink advance payment is not a loan with interest») + раздел 3 (community no-interest loan programs; credit cards can become expensive) + раздел 4 (reverse mortgages — rates usually higher); верно — первые два",
+  "text": "Pension loans quiz: / the interest question / QUIZ / Question 1 of 3 / Which of these options charge no interest? / Pension advance payment / Community no-interest loan / Private reverse mortgage / Credit card balance / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/247f8ffa6b0dd2b5d06c26d992de5152",
+  "concept": "сколько стоит / сравнение — таблица на 2 колонки: госпрограмма vs частный reverse mortgage; ставки словами, без процентов, сумм и сроков; «government scheme» — описание, не от имени ведомства; опора: раздел 1 (HEAS: offered by the federal government, rate set by the government, fortnightly payments + lump-sum advances, negative equity protection при условиях) + раздел 4 (private reverse mortgages: rates usually noticeably higher, lump sum or line of credit, negative equity protection by law) + раздел 5 (every home-secured option reduces the equity left for the family)",
+  "text": "Home Equity Access Scheme or private reverse mortgage? / Two home-secured options, side by side / GOVERNMENT SCHEME vs PRIVATE REVERSE MORTGAGE / Offered by: the federal government / private lenders · Interest rate: set by the government / usually noticeably higher · Paid as: fortnightly payments, lump sums possible / lump sum or line of credit · Negative equity protection: yes, if the conditions are met / yes, by law / Both reduce the equity left for the family / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/6bdbd6ca14d995fae4a3bd39e1f272df",
+  "concept": "сцена-иллюстрация — кухонный стол у окна: пара со спины, папка с листами, блокнот «5 QUESTIONS», калькулятор с пустым экраном, чашка, очки; за окном сад, эвкалипт, соседний дом; без эмоций тревоги, без сумм и логотипов; опора: раздел 6 «Questions to ask before signing» (полная стоимость, досрочное погашение, aged care) + РК 3 (хук «5 questions before signing»)",
+  "text": "PENSION LOANS 2026 / 5 questions worth asking before signing anything / Total cost, early repayment, what happens with aged care / на блокноте: 5 QUESTIONS; экран калькулятора пустой / кнопка «Learn more →»",
+  "cta": "Learn more"
+ }
+]

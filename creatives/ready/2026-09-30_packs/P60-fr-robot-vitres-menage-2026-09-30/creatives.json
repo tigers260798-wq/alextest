@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-fr-robot-vitres-menage-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — сетка из 2 вариантов, как в брифе №1",
+  "text": "Robot lave-vitres ou laveur de vitres ? / Lequel revient moins cher en 2026 ? / Robot / Professionnel / Robot / Professionnel (у каждой «En savoir plus») / Crédit d'impôt 50 % : le vrai calcul",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-fr-robot-vitres-menage-2026-09-30/b.png",
+  "concept": "карточка-опросник — квиз про 50 % налогового кредита",
+  "text": "Laveur de vitres déclaré : / le calcul qui surprend / QUIZ / Question 1 sur 3 / Avec le crédit d'impôt de 50 %, on paie au final… / 100 % de la facture / 75 % de la facture / 50 % de la facture / Rien du tout",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-fr-robot-vitres-menage-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — таблица робот / мойщик; про налоговый кредит — только у услуги (у робота не утверждаем)",
+  "text": "Robot ou laveur de vitres : combien ça coûte ? / Le vrai calcul pour 2026, poste par poste / Robot lave-vitres vs Laveur de vitres / Prix: achat unique / à chaque passage · Vitres: oui / oui · Cadres, rebords: non / oui · Temps à y passer: le poser vitre par vitre / aucun / Service déclaré : crédit d'impôt 50 %",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-fr-robot-vitres-menage-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — гостиная с большим окном, робот без логотипа на стекле, жёлтый стикер",
+  "text": "Robot lave-vitres ou laveur de vitres ? / Lequel revient moins cher en 2026 ? / Crédit d'impôt 50 %",
+  "cta": "En savoir plus"
+ }
+]

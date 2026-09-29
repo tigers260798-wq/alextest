@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/7aa248cbe85d513e196a65fb630ac49c",
+  "concept": "сетка выбора (fake interactivity) — 3 карточки с нарисованными устройствами без бренда и фирменного дизайна, у каждой «Learn more»; опора: раздел «Three types of senior-friendly devices»",
+  "text": "Senior-friendly phones: / 3 types to choose from / Big-button phone – Large keys for calls and texts / Simplified smartphone – Only the most-used functions / Senior tablet – A larger screen for video calls (у каждой «Learn more») / на экранах: 10:30 / Call · Messages · Photos · Video call / Video calls · Photos · News · Radio / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/daa928b557602e64cc3badc4172a0d63",
+  "concept": "карточка-опросник — тёплый фон, вопрос о привычках использования, не о здоровье зрителя; опора: раздел «Five questions before buying» (вопрос 1)",
+  "text": "Choosing a simple phone: / 5 questions first / QUIZ / Question 1 of 5 / Mostly calls, or video calls and photos too? / Mostly calls / Video calls too / Photos and messages / Not sure yet / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/565ce18dd8cd4e47cd6401ac81b8822d",
+  "concept": "сколько стоит / сравнение — две колонки; без операторов и цен в £; опора: раздел «Choosing a SIM: pay as you go sims or sim only deals»",
+  "text": "Pay as you go or SIM only? / Which suits whom – before choosing a network / PAY AS YOU GO vs SIM ONLY / CONTRACT: none / rolling 30 days or 12–24 months · HOW IT WORKS: top up credit when needed / monthly minutes, texts and data · SUITS: light users / regular users, video calls / Keep enough credit for the SOS button to work / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/27fc357d383bde1dd47128b888a7fa9b",
+  "concept": "сцена-иллюстрация — стол: кнопочный телефон без бренда в зарядной подставке, фото-кнопки, кнопка SOS; 7 сносок; без «Call 999» и обещаний безопасности; опора: раздел «Seven features that matter most» (пункты 1–7, нумерация как в статье)",
+  "text": "Senior phones: 7 features that matter most / 1. Large, well-spaced keys · 2. High-contrast screen · 3. Loud, clear speaker · 4. Hearing aid compatible · 5. SOS button · 6. Photo contacts · 7. Charging dock / 10:30 / SOS / кнопка «Learn more →»",
+  "cta": "Learn more"
+ }
+]

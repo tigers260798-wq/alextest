@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/242e2fe2cc9ad0806f31ef0d0a661733",
+  "concept": "сетка-выбор из 3 плиток-принципов, у каждой «En savoir plus», и плашка «10 naissances maximum» — без денег: ни «rémunéré», ни «€», ни «indemnité»; иконки — сердце в ладонях, подпись документа, силуэт с «?»; без эмблем центров; опора: раздел «Gratuit, volontaire, anonyme : les trois principes du don» (le don ne coûte rien au donneur — из раздела о расходах; consentement écrit, retour possible tant que non utilisé; le donneur ne connaît pas les familles; pas plus de dix naissances)",
+  "text": "Don de sperme en France : les 3 principes du don · GRATUIT – Le don ne coûte rien au donneur · VOLONTAIRE – Consentement écrit, révocable tant que le don n'est pas utilisé · ANONYME – Le donneur ne connaît pas les familles · ×3 «En savoir plus» · 10 naissances maximum par donneur – pour limiter le nombre de demi-frères et demi-sœurs",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/f58584e35df8bdb338ec89168b93efbb",
+  "concept": "карточка-опросник «Vrai ou faux ?»: 4 утверждения с кнопками VRAI / FAUX (fake interactivity) — ответы в статье (faux / vrai / faux / vrai); пункт «rémunéré» из брифа заменён на «connaît les familles» — запрет денег; утверждения о правилах, не о зрителе; опора: разделы «Conditions pour devenir donneur» (18–45 ans; plus nécessaire d'avoir eu un enfant), «Gratuit, volontaire, anonyme» (le donneur ne connaît pas les familles), «Anonymat et accès aux origines» (à 18 ans — identité sur demande)",
+  "text": "Don de sperme : vrai ou faux ? · 1 Il faut déjà avoir un enfant pour donner [VRAI] [FAUX] · 2 Le don est possible de 18 à 45 ans [VRAI] [FAUX] · 3 Le donneur connaît les familles [VRAI] [FAUX] · 4 À 18 ans, l'enfant peut demander l'identité du donneur [VRAI] [FAUX] · En savoir plus",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/b5bad6041a7b7c4fc4c8048fac213e27",
+  "concept": "сравнение «Avant 2022 / Depuis 2022» двумя колонками (замок → ключ) — заголовок-крючок РК 3; «anonymat total» до 2022 — формулировка брифа gaps; опора: раздел «Anonymat et accès aux origines : ce qui a changé en 2022» (anonymat au moment du don; à 18 ans accès aux données non identifiantes et à l'identité sur demande; aucun lien de filiation) + adPosts РК 3 «Anonyme, mais pas tout à fait»",
+  "text": "Don de sperme : anonyme, mais pas tout à fait · Ce qui a changé en septembre 2022 · AVANT 2022: AU MOMENT DU DON – anonyme · À 18 ANS, POUR L'ENFANT NÉ DU DON – anonymat total · LIEN DE FILIATION – aucun · DEPUIS 2022: AU MOMENT DU DON – anonyme · À 18 ANS, POUR L'ENFANT NÉ DU DON – accès aux origines et à l'identité, sur demande · LIEN DE FILIATION – aucun · En savoir plus",
+  "cta": "En savoir plus"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/2b997070d666029f784c0c469fc4f418",
+  "concept": "сцена-иллюстрация: кабинет центра (стол, лист «CONSENTEMENT», календарь с 4 датами, стулья, окно) + 4 шага пути — без людей, пробирок и откровенных образов; без названия CECOS и эмблем; опора: заголовок статьи («pourquoi de plus en plus d'hommes s'y intéressent») + раздел «Frais pris en charge et pourquoi l'intérêt augmente» (possible sans avoir eu d'enfant, en quelques rendez-vous) + раздел «Le parcours du don … étape par étape» (4 шага)",
+  "text": "DON DE SPERME EN FRANCE · Pourquoi de plus en plus d'hommes s'y intéressent · Possible sans avoir eu d'enfant, en quelques rendez-vous · 1 Premier rendez-vous · 2 Examens · 3 Recueils · 4 Contrôle final · календарь «RENDEZ-VOUS» с 4 отмеченными днями 1–4 · лист «CONSENTEMENT» · En savoir plus",
+  "cta": "En savoir plus"
+ }
+]

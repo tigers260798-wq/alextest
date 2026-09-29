@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-health-retirement-it-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — зуб с облачком «ASL?» сверху, 4 плитки-вопроса по видам лечения",
+  "text": "Dentista ASL 2026: cosa è coperto? / Scegli la cura: / Visita e pulizia? / Otturazioni? / Protesi? / Impianti? (у каждой «Scopri di più»)",
+  "cta": "Scopri di più"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-health-retirement-it-2026-09-30/b.png",
+  "concept": "карточка-опросник — вопрос о правилах ASL, не о зубах зрителя",
+  "text": "Dentista convenzionato ASL: / chi ne ha diritto nel 2026? / QUIZ / Domanda 1 di 4 / Da cosa dipendono le cure dentali gratuite con l'ASL? / Dall'età / Dall'ISEE / Dalla regione / Da tutti e tre",
+  "cta": "Scopri di più"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-health-retirement-it-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — сплит: частный / по ASL («Ticket o gratis» — из хука гипотезы)",
+  "text": "Dentista privato o convenzionato ASL? / Cosa cambia nel 2026 – e quanto si paga / PRIVATO vs CONVENZIONATO ASL / PRIVATO: Prezzo libero · Si sceglie lo studio · Pagamento a rate? / CONVENZIONATO ASL: Ticket o gratis · Tramite l'ASL · Chi ne ha diritto?",
+  "cta": "Scopri di più"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-health-retirement-it-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — кабинет стоматолога (кресло, лампа, шкафчик, окно) + белая карточка снизу и бордовая кнопка — приёмы рабочего крео владельца (IT 0927-GE01)",
+  "text": "Dentista convenzionato ASL / Cure gratuite o a tariffa ridotta: pochi sanno come funziona nel 2026",
+  "cta": "Scopri di più"
+ }
+]

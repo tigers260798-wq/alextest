@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-home-care-us-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — панель «дом с сердцем + часы + календарь», 4 строки-кнопки по видам ухода из статьи",
+  "text": "In-home care 2026: which kind of help? / Pick a type to see what it covers / Companion care / Personal care / Home health care / Who pays for it? (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-home-care-us-2026-09-30/b.png",
+  "concept": "карточка-опросник — тёмно-синий фон, телефон с тестом; вопрос о правилах Medicare, не о зрителе (ответ в статье: только ограниченный home health)",
+  "text": "Home care quiz: / the Medicare question / 4 questions families ask before hiring help / HOME CARE QUIZ / Question 1 of 4 / Does Medicare pay for ongoing companion care at home? / Yes, in full / Limited home health / Only after age 80 / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-home-care-us-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — агентство против частной сиделки; цена $28–42/час — из sourceNote гипотезы (aplaceformom, seniorliving.org)",
+  "text": "Agency caregiver or independent caregiver? / Companion care: about $28–$42 an hour (US guide, 2026) / AGENCY vs INDEPENDENT / PRICE: often higher / can cost less · SCREENING & SCHEDULING: handled by the agency / falls on the family · BACKUP IF SICK: agency arranges cover / family arranges cover / What families wish they'd checked first",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-home-care-us-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — гостиная: сиделка подаёт чай пожилой женщине в кресле (люди без лиц), часы на стене; карточка в рамке",
+  "text": "IN-HOME CARE 2026 / What an hour of home care really costs / Companion care vs personal care – and who pays",
+  "cta": "Learn more"
+ }
+]

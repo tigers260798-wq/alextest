@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-pension-benefit-pl-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — осенняя панель «75+ / 80+» (запросы гипотезы) + 4 строки-кнопки по ключам",
+  "text": "Dodatki do emerytury 2026 / Wybierz temat: / Dodatek po 75. roku życia / Dodatek za wychowanie dzieci / Renta wdowia / 13. i 14. emerytura (у каждой «Dowiedz się więcej»)",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-pension-benefit-pl-2026-09-30/b.png",
+  "concept": "карточка-опросник — вопрос о правиле (75 лет — из статьи гипотезы), не о зрителе",
+  "text": "Dodatki do emerytury: / pytanie, na którym wielu się myli / QUIZ / Pytanie 1 z 4 / Od jakiego wieku dodatek pielęgnacyjny przysługuje z urzędu? / Od 65 lat / Od 75 lat / Od 80 lat / Nie wiem",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-pension-benefit-pl-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — «башня» из блоков: пенсия + dodatek pielęgnacyjny + 13-я + 14-я, суммы «? zł»",
+  "text": "Ile naprawdę wynosi świadczenie seniora w 2026? / Z czego może się składać – krok po kroku / Dodatki, o których mało kto wie / Emerytura ? zł + Dodatek pielęgnacyjny ? zł + 13. emerytura ? zł + 14. emerytura ? zł",
+  "cta": "Dowiedz się więcej"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-pension-benefit-pl-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — осенний парк, двое пожилых на скамейке со спины (без лиц) + плашки слева; без гербов и флагов",
+  "text": "DODATKI DO EMERYTURY 2026: O CZYM MAŁO KTO WIE?",
+  "cta": "Dowiedz się więcej"
+ }
+]

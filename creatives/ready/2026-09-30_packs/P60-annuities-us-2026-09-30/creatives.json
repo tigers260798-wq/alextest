@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/a2b4abf322ebbbde52c85735a0b9ae09",
+  "concept": "сетка выбора (fake interactivity) — панель «копилка → календарь с монетой каждый месяц, $?» + 4 строки-кнопки по типам аннуитетов из article",
+  "text": "Annuities 2026: how each type pays / Pick a type to see how it works / Immediate annuity / Fixed annuity / Variable annuity / Indexed annuity (у каждой «Learn more») / EVERY MONTH: $?",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/698f0f8ffce9bd80e2801bf44d342cc1",
+  "concept": "карточка-опросник — тёмно-синий фон, вопрос о механике аннуитета (факторы выплаты — article), обещаний дохода нет",
+  "text": "Annuity quiz: / what sets the monthly payout? / QUIZ / Question 1 of 3 / What does annuity income mostly depend on? / Amount invested / Age when payments start / Payout option chosen / All three",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/525305c14ce17c44b12e844dea11023e",
+  "concept": "сколько стоит / сравнение — таблица немедленный / отложенный (из article), выплата в месяц — «?»",
+  "text": "Immediate or deferred annuity? / When income starts – and what to check first / IMMEDIATE vs DEFERRED / Payments start: soon after purchase / at a future date · Paid for: set years or life / set years or life · Surrender period: check the contract / often several years · A month: ? / ? / Fees and payout options vary by insurer",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/f9146d666be4dcbeb2ef71a8acef3985",
+  "concept": "сцена-иллюстрация — плашки (формула рабочих крео владельца) + веранда: пожилой мужчина в кресле-качалке с кружкой, столик с калькулятором и календарём, стикер «$? / month»",
+  "text": "IMMEDIATE ANNUITY EXPLAINED: HOW THE MONTHLY PAYOUT IS WORKED OUT / $? / month",
+  "cta": "Learn more"
+ }
+]

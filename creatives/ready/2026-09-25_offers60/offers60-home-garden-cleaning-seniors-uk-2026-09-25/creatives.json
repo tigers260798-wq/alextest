@@ -1,0 +1,67 @@
+{
+ "docId": "offers60-home-garden-cleaning-seniors-uk-2026-09-25",
+ "kind": "static",
+ "geo": "GB, IE, CA, US (таргет по языку: английский)",
+ "lang": "en",
+ "name": "услуги для дома 60+ · угол водостоки (EN) — как назвать вертикаль, уточнить у владельца · РК статика ×4 (офферы 60+, место 2)",
+ "angle": "проверенная статья (IRONFLI «Gutter Cleaning Services for Seniors», уже крутится)",
+ "article": {
+  "status": "готова и платит",
+  "title": "Gutter Cleaning Services for Seniors: What to Know Before Hiring Help",
+  "titleRu": "Чистка водостоков для пожилых: что знать, прежде чем нанимать",
+  "ref": "IRONFLI, категория AlexZGutterCleaning — «Gutter Cleaning Services for Seniors: What to Know Before Hiring Help» (текст общий английский: весна/осень, downspouts — годится на GB/IE/CA/US)"
+ },
+ "provider": "IRONFLI (статья живая) + VISYMO en_GB сплит $5 — узнать, какие ключи водостоков платят",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). План маркетолога: FB; FB IRONFLI $10/день (GB+IE+CA+US, английский) + FB VISYMO en_GB $5/день. Бид — владелец.",
+ "readability": "Для пенсионеров: ≤ 12 слов на картинке вместе с кнопкой; заголовок ≥ 96 px, подпись ≥ 64 px, кнопка 52–54 px, всё жирным гротеском; тёмный текст на светлой карточке или светлый на тёмно-синем, контраст ≥ 7:1; проверено в уменьшении до 400 px.",
+ "creatives": [
+  {
+   "id": "O60-2-1",
+   "file": "cr/offers60-home-garden-cleaning-seniors-uk-2026-09-25/O60-2-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · цветочные углы, карточка, плашка, тёмно-синяя кнопка со стрелкой (шаблон владельца GB TT) · заголовок 106 px (Fira Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 12 слов на картинке · контраст ≥ 7.8:1",
+   "concept": "запрет-выгода: не лезть на лестницу. На картинке: OVER 65? PUT THE LADDER AWAY / Gutter cleaning costs 2026 / [Learn more]",
+   "primaryText": "Still climbing a ladder every autumn after 65? Here's what gutter cleaning usually costs – and what's included.",
+   "headline": "Gutter Cleaning Services for Seniors: What to Know Before Hiring Help",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/1873128756688242.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[home-garden-cleaning-seniors-uk n1]",
+   "note": "Шаблон владельца: цветочные углы, очень крупные засечки капсом, большая тёмно-синяя кнопка · GB джобсы TT (стиль владельца; цифр по объявлению у меня нет). Герб в правом нижнем углу шаблона убран (угол закрыт зеркальным цветочным углом слева), весь старый текст карточки стёрт. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Стиль владельца; цифр по этому шаблону у меня нет — гипотеза."
+  },
+  {
+   "id": "O60-2-2",
+   "file": "cr/offers60-home-garden-cleaning-seniors-uk-2026-09-25/O60-2-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · кремовая карточка с орнаментом на фоне газеты/стола (шаблон владельца EE 0906-GE01) · заголовок 112 px (Lato Bold), подпись 64 px, кнопка «Learn more» 54 px · 9 слов на картинке · контраст ≥ 8.6:1",
+   "concept": "цена — как в товарке. На картинке: GUTTER CLEANING 2026 / What seniors usually pay / [Learn more]",
+   "primaryText": "Still climbing a ladder every autumn after 65? Here's what gutter cleaning usually costs – and what's included.",
+   "headline": "Gutter Cleaning Services for Seniors: What to Know Before Hiring Help",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120246123336080424.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[home-garden-cleaning-seniors-uk n2]",
+   "note": "Шаблон владельца: кремовая карточка с орнаментом на фоне газеты/стола, красная кнопка · EE кредиты 60+ (РК 0906-GE01): $11.2 → +106%. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-2-3",
+   "file": "cr/offers60-home-garden-cleaning-seniors-uk-2026-09-25/O60-2-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · белая карточка, розовая цветочная гирлянда сверху/снизу (шаблон владельца HU 0817-GE01) · заголовок 122 px (Fira Sans Bold), подпись 64 px, кнопка «Learn more» 54 px · 11 слов на картинке · контраст ≥ 8.2:1",
+   "concept": "кликбейт «мало кто знает». На картинке: BLOCKED GUTTERS? / What most homeowners over 60 don't know / [Learn more]",
+   "primaryText": "Still climbing a ladder every autumn after 65? Here's what gutter cleaning usually costs – and what's included.",
+   "headline": "Gutter Cleaning Services for Seniors: What to Know Before Hiring Help",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120252993448300264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[home-garden-cleaning-seniors-uk n3]",
+   "note": "Шаблон владельца: белая карточка в цветочной рамке, жирный капс, синяя кнопка · HU кредиты 60+ (РК 0817-GE01): $40.9 → +48%. Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  },
+  {
+   "id": "O60-2-4",
+   "file": "cr/offers60-home-garden-cleaning-seniors-uk-2026-09-25/O60-2-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · орнаментная рамка поверх размытого фото стола (шаблон владельца PT 0816-GE04) · заголовок 104 px (Hind Bold), подпись 64 px, кнопка «Learn more» 54 px · 11 слов на картинке · контраст ≥ 8.2:1",
+   "concept": "сезон + скидка (раздел статьи про скидки). На картинке: Autumn Leaves in Your Gutters? / Ask about senior discounts / [Learn more]",
+   "primaryText": "Still climbing a ladder every autumn after 65? Here's what gutter cleaning usually costs – and what's included.",
+   "headline": "Gutter Cleaning Services for Seniors: What to Know Before Hiring Help",
+   "cta": "Learn More (на картинке: «Learn more»)",
+   "source": "шаблон владельца dash/cr/owner_clean/120252986985640264.jpg → очистка (offers60/cr_work/clean.py) → Pillow (make.py/run.py), без OpenAI; тексты — offers60/packets.json (маркетолог), creatives[home-garden-cleaning-seniors-uk n4]",
+   "note": "Шаблон владельца: орнаментная рамка поверх размытого фото стола, жирный капс, синяя кнопка · PT кредиты 60+ (РК 0816-GE04): $127 → +43%. Отступ от ТЗ: маркетолог просил вместо фото стола размытое фото крыши/желоба с осенними листьями — фото оставлено (без OpenAI такого фото нет; из-под карточки видно ~130 px по краям). Старый текст шаблона полностью закрыт/стёрт, набрано заново; флагов и гербов нет. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Шаблон доказанный (у владельца давал плюс в других гео/вертикалях), текст новый — это гипотеза, а не доказанное крео."
+  }
+ ]
+}

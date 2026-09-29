@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/5c790c71165316c2a70cf9772c0f9ca2",
+  "concept": "сетка выбора (fake interactivity) — 2×2 форматов обучения (днём / вечером / выходные / онлайн) — плейбук «обучение»; без обещаний работы и зарплаты",
+  "text": "Electrician course 2026 / Pick a study format: / Daytime / Evenings / Weekends / Online theory (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/365ecb12c5576f2b31a1fb8a630d84fd",
+  "concept": "карточка-опросник — графитовый фон, вопрос об уровнях курса, не о зрителе; без диплома/работы/зарплаты",
+  "text": "Electrician course quiz: / which level comes first? / QUIZ / Question 1 of 3 / Which course level do beginners usually start with? / Level 1 / Level 2 / Level 3 / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/e43938da200507be26ce2c83b39472b4",
+  "concept": "сколько стоит / сравнение — две колонки «ускоренный vs колледж», стоимость «£?» (ключ «electrician course cost», цен в гипотезе нет)",
+  "text": "Fast-track or college electrician course? / Length, format and cost in 2026 / FAST-TRACK vs COLLEGE / LENGTH: about 3 months / longer, often part time · FORMAT: intensive days / weekly classes · COST: £? / £? / Levels, practical hours and what's included",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/663fa22ea50f14c298c8382fcfdcea6b",
+  "concept": "сцена-иллюстрация — учебная мастерская: стенд со щитком, розетками и кабель-каналами, верстак с инструментом, ученик в каске; карточка в рамке",
+  "text": "3 MONTH ELECTRICIAN COURSE / What's inside a fast-track course / Levels, practical work and course cost in 2026",
+  "cta": "Learn more"
+ }
+]

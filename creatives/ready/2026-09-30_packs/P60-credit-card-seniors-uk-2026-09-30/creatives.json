@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-credit-card-seniors-uk-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — сетка возрастов 60+/70+/80+/85+ («до какого возраста» — вопросом)",
+  "text": "Credit cards for pensioners 2026 / Is there an age limit? Pick an age: / 60+ / 70+ / 80+ / 85+ (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-credit-card-seniors-uk-2026-09-30/b.png",
+  "concept": "карточка-опросник — тёмно-синий, телефон с тестом; вопрос о кредиторах, не о зрителе",
+  "text": "Credit cards after 60: / what do lenders check first? / CREDIT QUIZ / Question 1 of 5 / What do card lenders look at first? / Age / Pension income / Credit history / Home ownership",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-credit-card-seniors-uk-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — ",
+  "text": "Standard card or credit builder card? / What changes after 60 – explained simply / STANDARD CARD vs CREDIT BUILDER CARD / MADE FOR: a strong credit history / a thin or damaged history · STARTING LIMIT: usually higher / usually lower · MAIN GOAL: spending & rewards / rebuilding a credit score / Which one do lenders offer over-60s?",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-credit-card-seniors-uk-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — формула рабочих кредитных крео владельца (AT 0819-GE02 / LT): плашки + «что банки не говорят»; стол с пенсионным письмом, очками, чаем и картой без логотипа",
+  "text": "CREDIT CARDS FOR PENSIONERS 2026: WHAT BANKS DON'T TELL OVER-60s?",
+  "cta": "Learn more"
+ }
+]

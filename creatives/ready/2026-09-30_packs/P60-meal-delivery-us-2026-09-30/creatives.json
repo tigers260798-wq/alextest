@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-meal-delivery-us-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — поднос с обедом сверху, 4 плитки-диеты из статьи (low-sodium / diabetic-friendly / heart-healthy / soft-food)",
+  "text": "Senior meal delivery 2026: pick a menu / Low-sodium / Diabetic-friendly / Heart-healthy / Soft-food (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-meal-delivery-us-2026-09-30/b.png",
+  "concept": "карточка-опросник — ценовой квиз; верный ответ $7–12 за порцию — ориентир 2026 из гипотезы и статьи, остальное — варианты-отвлекалки",
+  "text": "What does senior meal delivery cost? / Take a guess / 2026 guide / PRICE QUIZ / Question 1 of 3 / One delivered senior meal in 2026 usually costs about… / Under $3 / $7–$12 / Over $25 / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-meal-delivery-us-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — две половины: свежие против замороженных (свойства из статьи), $7–12 за порцию — из гипотезы",
+  "text": "Fresh or frozen meal delivery? / Senior meals: about $7–$12 each (US guide, 2026) / FRESH vs FROZEN / FRESH: 1–2 deliveries a week · Just reheat and eat · Eaten within a few days / FROZEN: Keeps for weeks or months · Eat when it suits · A little less fresh",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-meal-delivery-us-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — крыльцо: дверь, термосумка и контейнеры на скамейке, жёлтый стикер с ценой порции (ориентир 2026)",
+  "text": "MEAL DELIVERY FOR SENIORS 2026 / Ready-made meals at the door: what one really costs / Fresh or frozen, special diets, Meals on Wheels / $7–$12 a meal",
+  "cta": "Learn more"
+ }
+]

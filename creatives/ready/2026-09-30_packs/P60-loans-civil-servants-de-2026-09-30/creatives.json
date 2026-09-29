@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-loans-civil-servants-de-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 статусов на петролевом фоне, у каждой «Mehr erfahren»",
+  "text": "Beamtenkredit 2026 / Konditionen je nach Status – bitte wählen: / Beamte auf Lebenszeit / Beamte auf Probe / Beamtenanwärter / Öffentlicher Dienst (Tarif) (у каждой «Mehr erfahren»)",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-loans-civil-servants-de-2026-09-30/b.png",
+  "concept": "карточка-опросник — форма-калькулятор со степпером (ключ «beamtenkredit rechner»); без сумм и ставок",
+  "text": "Beamtenkredit-Rechner 2026 / 3 Angaben, die die Bank wirklich prüft / SCHRITT 2 VON 3 / Welche Laufzeit ist gewünscht? / Status · Laufzeit · Verwendung / bis 5 Jahre / bis 10 Jahre / bis 20 Jahre / bis zur Pension",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-loans-civil-servants-de-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — диагональный сплит: angestellt / verbeamtet",
+  "text": "Warum Banken Beamten andere Zinsen anbieten / Was die Bank sieht – der Unterschied in 3 Punkten / ANGESTELLT vs VERBEAMTET / ANGESTELLT: Kündigung möglich · Einkommen kann wegfallen · Zinsen: Standard / VERBEAMTET: Kündigung kaum möglich · Feste Besoldung · Zinsen: ?",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-loans-civil-servants-de-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — формула рабочих кредитных крео владельца (плашки + «что банки скрывают»); стол сверху: Bezügemitteilung без герба, калькулятор «2026», ручка, папка, кофе",
+  "text": "BEAMTENKREDIT 2026: WAS BANKEN BEAMTEN VERSCHWEIGEN?",
+  "cta": "Mehr erfahren"
+ }
+]

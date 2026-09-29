@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-debt-consolidation-ca-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 2×2 четырёх путей из статьи; без сумм, ставок и логотипов банков",
+  "text": "Debt consolidation in Canada 2026: 4 routes / Pick one to see how it works / Consolidation loan / Balance transfer / Credit counselling plan / Consumer proposal (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-debt-consolidation-ca-2026-09-30/b.png",
+  "concept": "карточка-опросник — квиз о механике (не «Are you in debt?», не о финансах зрителя)",
+  "text": "Debt consolidation: / what does it actually do? / 3 quick questions / QUIZ / Question 1 of 3 / What does debt consolidation do? / Erases the debt / One payment, not 4 / Stops all interest / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-debt-consolidation-ca-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — 4 долга стрелками сходятся в один платёж; ставка — «?», без цифр",
+  "text": "Several payments or one? / How debt consolidation works in Canada (2026) / Credit card + Store card + Line of credit + Car loan → ONE PAYMENT: One due date · Interest rate: ? · Compare the total cost / Loan, balance transfer or credit counselling?",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-debt-consolidation-ca-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — формула рабочих кредитных крео владельца (плашки + «что банки не говорят»); стол: выписки, карты без логотипов, стрелки в один конверт",
+  "text": "DEBT CONSOLIDATION CANADA 2026: WHAT BANKS DON'T TELL RETIREES?",
+  "cta": "Learn more"
+ }
+]

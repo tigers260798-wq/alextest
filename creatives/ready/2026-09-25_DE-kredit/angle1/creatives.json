@@ -1,0 +1,66 @@
+{
+ "docId": "DE-kredit-angle1-2026-09-25",
+ "kind": "static",
+ "geo": "DE",
+ "lang": "de",
+ "name": "DE кредиты · угол «мини-кредит в телефоне» · РК статика ×4",
+ "angle": "Узнать, как сейчас берут небольшую сумму прямо в телефоне: сам выбираешь сумму и срок, без визита в банк, и что при этом почти никто не читает.",
+ "article": {
+  "id": "A",
+  "title": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+  "titleRu": "Цифровые мини-кредиты 2026: мини-кредит в приложении или кредитка с лимитом 5 000 €?",
+  "provider": "IRONFLI — основной (статья A); VISYMO — 1 РК сплитом с теми же крео (locale de_DE), чтобы увидеть выплату по каждому ключу."
+ },
+ "payoutCheck": "Статья A новая (пишет копирайтер), в кабинете её ещё нет — выплату за 2 последних закрытых дня проверить нельзя. Проверить после первого закрытого дня.",
+ "platform": "FB+TT: один набор на обе площадки (правило владельца 23.09). У маркетолога план: TT + FB. Формат — видео 9:16 (как у коллег). TT IRONFLI $20/день; FB IRONFLI $5/день; FB VISYMO («G / Cosmic / visimo / Account 2») $5/день. Эти 4 — статика; видео к углу — отдельной РК/карточкой, не смешивать.",
+ "creatives": [
+  {
+   "id": "DEK1-1",
+   "file": "cr/DE-kredit-angle1-2026-09-25/DEK1-1.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · фото UGC: мужчина ~30 в трамвае с телефоном; хук белыми плашками в стиле субтитров TikTok на тёмной куртке, жёлтая кнопка",
+   "concept": "Визуал 1a: мужчина ~30 в трамвае улыбается в телефон. Хук «Kredit per App, ganz ohne Banktermin – doch eine Zahl liest fast niemand.»",
+   "primaryText": "Kredit per App, ganz ohne Banktermin – doch eine Zahl liest fast niemand. Betrag wählen, Laufzeit wählen: So funktionieren Minikredite wirklich.",
+   "headline": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a1-1.png; тексты — de5/hooks.json angle1 n1 (копирайтер)",
+   "note": "Хук и подстрока копирайтера дословно. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK1-2",
+   "file": "cr/DE-kredit-angle1-2026-09-25/DEK1-2.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · белая шапка с заголовком + POV-фото: рука двигает два ползунка без цифр на телефоне, кофе и круассан; зелёная кнопка на стыке",
+   "concept": "Визуал 1b: палец двигает ползунок «сумма/срок» (без цифр и логотипов). Хук = заголовок статьи A, «2026» выделен зелёным.",
+   "primaryText": "Zwei Regler, zwei Wege – und was am Ende wirklich zurückgezahlt wird.",
+   "headline": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a1-2.png; тексты — de5/hooks.json angle1 n2 (копирайтер)",
+   "note": "У копирайтера заголовок статьи A «…mit 5.000 € Limit?», в документе маркетолога рабочий «…5.000 € Rahmen?» — на картинке должен совпасть с финальным заголовком статьи. Сумма «5.000 €» на креативе — при отклонении убрать первой (прежние правила кредитов суммы запрещали; оставлено по слову владельца о кликбейте 24.09). На экране нет формы заявки — только два абстрактных ползунка. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK1-3",
+   "file": "cr/DE-kredit-angle1-2026-09-25/DEK1-3.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · диптих: слева серая очередь в банке с талончиком, справа та же женщина ~28 дома на диване с телефоном; плашки «Früher»/«Heute» по половинам, чёрная полоса снизу",
+   "concept": "Визуал 1c: «было/стало» — очередь в отделении против двух ползунков в телефоне.",
+   "primaryText": "Früher: Wartemarke in der Filiale. Heute: zwei Regler auf dem Handy. Wie Minikredite per App funktionieren – und wo der Haken steckt.",
+   "headline": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a1-3.png; тексты — de5/hooks.json angle1 n3 (копирайтер)",
+   "note": "Хук разрезан на две плашки по половинам кадра (текст не менялся). Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  },
+  {
+   "id": "DEK1-4",
+   "file": "cr/DE-kredit-angle1-2026-09-25/DEK1-4.jpg",
+   "platform": "FB+TT",
+   "format": "1:1 · уличный опрос: ведущая ~27 с микрофоном без логотипа, прохожий ~38 смеётся; хук — речевой пузырь от микрофона, красная кнопка",
+   "concept": "Визуал 1d: уличный опрос «Schon mal einen Kredit per App aufgenommen?»",
+   "primaryText": "Schon mal einen Kredit per App aufgenommen? Betrag und Laufzeit sind schnell gewählt. Was danach kommt, weiß kaum jemand.",
+   "headline": "Digitale Kleinkredite 2026: Minikredit per App oder Kreditkarte mit 5.000 € Limit?",
+   "cta": "Learn More (на картинке: «Mehr erfahren →»)",
+   "source": "gpt-image-1-mini medium 1024 → Pillow; основа de5/base/a1-4.png; тексты — de5/hooks.json angle1 n4 (копирайтер)",
+   "note": "Хук взят в кавычки „…“ как реплика ведущей — формат UGC-опроса, без логотипа канала. Если TT отклонит — первые подозреваемые: нарисованная кнопка на картинке. Новое ИИ-крео — гипотеза, не доказанное крео."
+  }
+ ]
+}

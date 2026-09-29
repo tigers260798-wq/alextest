@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/a16985405b06add96b728f5456e15220",
+  "concept": "сетка выбора (fake interactivity) — перевод доказанного LT-крео 0819-GE02 (заголовок + блок у стены + 4 плитки m² + красные кнопки): фото заменено иллюстрацией без логотипа, 100 m² — из ключа гипотезы; кнопки «Vaata lähemalt» = LT «Žiūrėti daugiau»",
+  "text": "Õhk-vesi soojuspumba hind 2026 / 100 m² / 150 m² / 200 m² / 280 m² (у каждой «Vaata lähemalt») / Hind koos paigaldusega · vali maja pindala",
+  "cta": "Vaata lähemalt"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/160dc37beac9f8395f9c1938fd87fb39",
+  "concept": "карточка-опросник — калькулятор-опросник в 3 шага (площадь → тип → монтаж), без цифр цены",
+  "text": "Soojuspumba hinnakalkulaator / Hind koos paigaldusega 3 sammuga / Pindala · Tüüp · Paigaldus / SAMM 2 / 3 / Millist soojuspumpa vajab 100 m² maja? / Õhk-õhk / Õhk-vesi / Maasoojuspump / Ei tea",
+  "cta": "Uuri lähemalt"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/8e4210540915912745c3479225dded90",
+  "concept": "сколько стоит / сравнение — две колонки «воздух-воздух vs воздух-вода» (оба типа — ключи гипотезы), цены «? €»",
+  "text": "Õhk-õhk või õhk-vesi soojuspump? / Mida kumbki kütab ja mis on hind koos paigaldusega / ÕHK-ÕHK vs ÕHK-VESI / KÜTAB: toaõhku / radiaatoreid ja põrandakütet · SOE TARBEVESI: ei / jah · HIND KOOS PAIGALDUSEGA: ? € / ? € / 100 m² maja: kumb tuleb odavam?",
+  "cta": "Uuri lähemalt"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/5d8b1c109e26a9daa9a279acfe8c8879",
+  "concept": "сцена-иллюстрация — зима: деревянный дом в снегу, ели, наружный блок насоса на подставке с паром; без логотипа; карточка в рамке",
+  "text": "SOOJUSPUMP 2026 / Kui palju maksab õhk-vesi soojuspump 100 m² majale? / Hinnad koos paigaldusega: mis mõjutab lõppsummat",
+  "cta": "Uuri lähemalt"
+ }
+]
