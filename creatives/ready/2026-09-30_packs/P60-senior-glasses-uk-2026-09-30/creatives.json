@@ -16,8 +16,8 @@
  {
   "letter": "c",
   "file": "cr/packs/P60-senior-glasses-uk-2026-09-30/c.png",
-  "concept": "сколько стоит / сравнение — диагональный сплит NHS / частно; цифры — из sourceNote (SpaMedica, Optegra, TreatCompare 2026); без «до/после»",
-  "text": "NHS or private cataract surgery? / 2026 guide figures, side by side / NHS vs PRIVATE / NHS: No direct cost if eligible · About 12–18 weeks' wait · Standard monofocal lens / PRIVATE: £2,500–£5,500 per eye · Premium lens options · Toric: +£300–£500 per eye",
+  "concept": "сколько стоит / сравнение — диагональный сплит NHS / частно; £2,500–5,500 и toric +£300–500 — из гипотезы и статьи (пометка «2026 guide»); без «до/после»",
+  "text": "NHS or private cataract surgery? / 2026 guide figures, side by side / NHS vs PRIVATE / NHS: No direct cost if eligible · Wait: often several months · Standard monofocal lens / PRIVATE: £2,500–£5,500 per eye · Premium lens options · Toric: +£300–£500 per eye",
   "cta": "Learn more"
  },
  {
