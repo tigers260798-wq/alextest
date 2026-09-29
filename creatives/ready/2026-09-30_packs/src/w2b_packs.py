@@ -312,7 +312,7 @@ def texts(t, cta):
     if t.get("opts"):
         parts.append(" / ".join(o if isinstance(o, str) else o[0] for o in t["opts"]))
     if t.get("tiles"):
-        parts.append(" / ".join(x[0] if isinstance(x[1], dict) else x[1] for x in t["tiles"]) + f" (у каждой «{cta}»)")
+        parts.append(" / ".join(f"{x[0]} ({x[1].get('tag', '')})" if isinstance(x[1], dict) else x[1] for x in t["tiles"]) + f" (у каждой «{cta}»)")
     if t.get("cols"):
         parts.append(" vs ".join(x[0] for x in t["cols"]))
         for x in t["cols"]:
@@ -333,7 +333,7 @@ def texts(t, cta):
     for k in ("foot",):
         if t.get(k) and t[k] not in out:
             parts.append(t[k])
-    return " / ".join(parts).replace("\n", " ").replace("­", "")
+    return " / ".join(parts).replace("\n", " ").replace("\u00ad", "").replace("\u00a0", " ")
 
 
 def build(n, letters="abcd"):
