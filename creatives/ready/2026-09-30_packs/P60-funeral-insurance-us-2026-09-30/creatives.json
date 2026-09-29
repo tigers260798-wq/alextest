@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/ac7ffa109933d2ca3744c256e41da7f1",
+  "concept": "сетка выбора (fake interactivity) — сверху панель: рамка с фото пожилой пары, монеты, полис с сердцем; 4 плитки суммы покрытия (в пределах «от нескольких тысяч до ~$25–40 тыс.» из article), взнос «$?»; возраста и «no exam needed» на картинке нет",
+  "text": "Final expense insurance 2026: monthly cost by cover amount / Pick a coverage amount: / $5,000 (a month: $?) / $10,000 (a month: $?) / $15,000 (a month: $?) / $25,000 (a month: $?) (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/dfdd3f62b77424b3b8ede189b30ec2ba",
+  "concept": "карточка-опросник — мятный фон, вопрос о механике полиса (graded death benefit 2–3 года — article гипотезы), не о зрителе",
+  "text": "Final expense quiz: / the first 2–3 years / QUIZ / Question 1 of 3 / Policies with no health questions: what often applies in the first 2–3 years? / Full payout from day one / A graded death benefit / A yearly medical exam / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/ab1ad34074a6cbfc9e9a8d3601dd602c",
+  "concept": "сколько стоит / сравнение — две колонки; покрытие до ~$40,000 и «короткие вопросы вместо медосмотра» — из article гипотезы, взнос «$?»",
+  "text": "Final expense or traditional life insurance? / What changes – and what each costs a month in 2026 / FINAL EXPENSE vs TRADITIONAL / COVERAGE: a few thousand to ~$40,000 / larger amounts · HEALTH CHECK: short questions or none / often a medical exam · A MONTH: $? / $? / Price depends on age, health and insurer",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/9aeab3a64e933120c7961bd2d2d2d44b",
+  "concept": "сцена-иллюстрация — кухня: пожилая женщина за столом с бумагами «POLICY OPTIONS», чай, очки, рамка с фото пары; без похоронной символики; карточка в рамке",
+  "text": "FINAL EXPENSE INSURANCE 2026 / Burial coverage without a medical exam: how it really works / The first 2–3 years, and what a month costs / POLICY OPTIONS",
+  "cta": "Learn more"
+ }
+]

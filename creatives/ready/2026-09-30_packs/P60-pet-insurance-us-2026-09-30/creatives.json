@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/9896aa9a033ba8384b83b57e691db4d1",
+  "concept": "сетка выбора (fake interactivity) — 2×2 типов планов из article гипотезы (accident-only / accident & illness / wellness / возрастные лимиты)",
+  "text": "Pet insurance 2026: which plan covers what? / Pick a plan type: / Accident-only / Accident & illness / Wellness add-on / Older pets: age limits (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/9e852db441398f48f8f307a760e683b1",
+  "concept": "карточка-опросник — тёмно-бирюзовый фон, телефон с тестом; вопрос о правилах страховки (исключение pre-existing — article), не о зрителе",
+  "text": "Pet insurance quiz: / the rule many owners miss / 4 things to check before buying a policy / PET INSURANCE QUIZ / Question 1 of 4 / Are pre-existing conditions usually covered? / Yes, always / Usually excluded / Only for cats / Not sure",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/0a9e718745debc23b1111bb7a509e743",
+  "concept": "сколько стоит / сравнение — сплит «страховка vs копилка на ветеринара» (сравнение из article), суммы «$?»",
+  "text": "Pet insurance or a vet savings fund? / How each handles an unexpected vet bill / PET INSURANCE vs SAVINGS FUND / PET INSURANCE: Premium: $? a month · Pays back part of the bill · Pre-existing: usually excluded / SAVINGS FUND: Set aside: $? a month · Covers only what's saved · Big bill in year one?",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/6351572b968812dbbf67adf62f6324f0",
+  "concept": "сцена-иллюстрация — гостиная: пожилая женщина на диване гладит собаку, кот на ковре, записка «VET BILL $?»; лиц нет",
+  "text": "Pet insurance for older dogs and cats: what it really costs in 2026 / Why premiums rise as pets age – and what's excluded / VET BILL $?",
+  "cta": "Learn more"
+ }
+]

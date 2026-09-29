@@ -426,8 +426,7 @@ def hero_funeral(c, box):
             A._head(t, px, ib[3] - bh * 0.56, 36, SKIN[0] if dx > 0 else SKIN[3], hair, kind)
         # чай слева, полис справа
         t.circle(cx - 320, cy + 10, 92, fill=WH)
-        t.text((cx - 320, cy - 22), "AGES", "sb", 26, (88, 138, 118), anchor="mm")
-        t.text((cx - 320, cy + 24), "50–85", "db", 44, (30, 46, 84), anchor="mm")
+        I.ICONS["coins"](t, cx - 320, cy + 14, 120, (30, 46, 84), bg=WH)
         t.circle(cx + 320, cy + 10, 92, fill=WH)
         I.ICONS["doc_heart"](t, cx + 320, cy + 10, 120, (30, 46, 84), bg=WH)
     S.clip_draw(c, box, 28, fn)
@@ -626,6 +625,17 @@ def sc_pet_sofa(c):
     for x in (140, 940):
         c.rect((x - 8, 860, x + 8, 900), fill=(90, 64, 44))
     c.rect((600, 590, 760, 700), fill=(250, 200, 90), r=24)  # подушка
+    # рамки на стене: лапка и собака
+    for fb, kind in (((200, 380, 340, 510), "paw"), ((740, 370, 900, 520), "dog")):
+        c.shadow(fb, r=6, alpha=60, blur=6, off=(0, 5))
+        c.rect(fb, fill=(150, 104, 70), r=6)
+        ib = (fb[0] + 12, fb[1] + 12, fb[2] - 12, fb[3] - 12)
+        c.rect(ib, fill=(252, 244, 228))
+        icx, icy = (ib[0] + ib[2]) / 2, (ib[1] + ib[3]) / 2
+        if kind == "paw":
+            w3_paw(c, icx, icy, 80, ORG2)
+        else:
+            w3_dog(c, icx, icy, 100, (196, 150, 96), muzzle=(236, 214, 180), ear=(150, 104, 60))
     # женщина
     A.seated(c, 370, 740, 930, 540, SKIN[3], (230, 230, 234), "short", (226, 120, 90), (60, 70, 100),
              arm_l=(320, 740), arm_r=(575, 630))
@@ -664,7 +674,7 @@ def sc_annuity_porch(c):
     c.rect((230, 560, 470, 780), fill=CH, r=30)
     for k in range(4):
         c.rect((250 + k * 56, 580, 280 + k * 56, 770), fill=mix(CH, WH, 0.12), r=10)
-    A.seated(c, 350, 800, 960, 470, SKIN[2], (210, 210, 214), "bald", (70, 110, 160), (80, 76, 70),
+    A.seated(c, 350, 800, 960, 470, SKIN[2], (206, 206, 210), "short", (70, 110, 160), (80, 76, 70),
              arm_l=(290, 790), arm_r=(440, 720))
     c.rect((210, 780, 490, 812), fill=CH, r=12)
     c.arc((170, 900, 530, 1000), 200, 340, CH, 14)
@@ -692,7 +702,7 @@ def sc_va_table(c):
         c.circle(x, y, r, fill=(120, 170, 110))
     A.wall_clock(c, 980, 560, 44)
     # мужчина слева, консультант справа
-    A.seated(c, 380, 960, 1100, 620, SKIN[3], (214, 214, 218), "bald", (84, 104, 76), (60, 64, 80),
+    A.seated(c, 380, 960, 1100, 620, SKIN[3], (214, 214, 218), "short", (176, 92, 70), (60, 64, 80),
              arm_l=(310, 872), arm_r=(480, 868))
     A.seated(c, 770, 960, 1100, 600, SKIN[1], (50, 36, 30), "long", (46, 70, 120), (50, 54, 70),
              arm_l=(690, 868), arm_r=(850, 872))
@@ -715,10 +725,10 @@ def sc_security_dusk(c):
     """Дом в сумерках: свет в окнах, фонарь у двери, клавиатура сигнализации, датчики на окнах, прожектор с датчиком движения.
     Верх (до y≈330) — белый заголовок на тёмном небе."""
     c.vgrad((0, 0, W, 560), (22, 30, 62), (70, 72, 120))
-    c.vgrad((0, 560, W, 800), (70, 72, 120), (200, 130, 110))
+    c.vgrad((0, 560, W, 882), (70, 72, 120), (200, 130, 110))
     rnd = random.Random(3)
-    for _ in range(40):
-        x, y = rnd.uniform(0, W), rnd.uniform(0, 520)
+    for _ in range(30):
+        x, y = rnd.uniform(0, W), rnd.uniform(310, 540)
         c.circle(x, y, rnd.uniform(1.5, 3), fill=WH, alpha=int(rnd.uniform(90, 200)))
     c.circle(930, 420, 40, fill=(250, 240, 200))
     c.circle(948, 408, 36, fill=(62, 66, 112))
@@ -843,10 +853,11 @@ def sc_electric_workshop(c):
     # розетки и выключатели
     for x, y, kind in ((400, 660, "sw"), (580, 560, "sock"), (580, 690, "sock"), (680, 560, "sw")):
         c.rect((x - 40, y - 40, x + 40, y + 40), fill=WH, r=8, outline=(170, 176, 186), width=3)
-        if kind == "sock":
-            c.rect((x - 12, y - 20, x - 4, y - 4), fill=(60, 60, 70))
-            c.rect((x + 4, y - 20, x + 12, y - 4), fill=(60, 60, 70))
-            c.rect((x - 4, y + 6, x + 4, y + 22), fill=(60, 60, 70))
+        if kind == "sock":  # британская розетка: заземление сверху, два плоских гнезда снизу, клавиша
+            c.rect((x - 26, y - 22, x - 18, y - 2), fill=(60, 60, 70))
+            c.rect((x - 36, y + 10, x - 18, y + 17), fill=(60, 60, 70))
+            c.rect((x - 6, y + 10, x + 12, y + 17), fill=(60, 60, 70))
+            c.rect((x + 18, y - 26, x + 32, y - 4), fill=(236, 238, 240), r=3, outline=(190, 194, 200), width=2)
         else:
             c.rect((x - 16, y - 24, x + 16, y + 24), fill=(236, 238, 240), r=4, outline=(190, 194, 200), width=2)
     c.line([(580, 600), (580, 650)], (160, 160, 170), 8)
@@ -866,12 +877,12 @@ def sc_electric_workshop(c):
     c.circle(560, 824, 38, fill=(220, 70, 50))  # катушка кабеля
     c.circle(560, 824, 14, fill=(90, 96, 110))
     # ученик (спецодежда, каска) с отвёрткой у стенда
-    A.standing(c, 900, 1010, 540, SKIN[1], (40, 30, 28), "short", (40, 60, 110), (40, 60, 110), shoe=(40, 40, 44),
-               arm_l=(770, 690), arm_r=(960, 820))
-    hx, hy = 900, 1010 - 540 * 0.79 - 540 * 0.085 * 1.25
+    A.standing(c, 900, 1030, 500, SKIN[1], (40, 30, 28), "short", (40, 60, 110), (40, 60, 110), shoe=(40, 40, 44),
+               arm_l=(770, 700), arm_r=(960, 830))
+    hx, hy = 900, 1030 - 500 * 0.79 - 500 * 0.085 * 1.25
     c.pie((hx - 56, hy - 64, hx + 56, hy + 30), 180, 360, (250, 200, 40))
     c.rect((hx - 64, hy - 20, hx + 64, hy - 8), fill=(250, 200, 40), r=5)
-    c.rect((736, 680, 778, 692), fill=(236, 190, 40), r=4)
+    c.rect((736, 690, 778, 702), fill=(236, 190, 40), r=4)
 
 
 def sc_salon_training(c):
@@ -1015,7 +1026,6 @@ def ee_grid(P, t):
     p = P["pal"]
     c = C(WH)
     c.hgrad((0, 0, W, W), (70, 140, 200), (240, 140, 60))
-    c.glow((0, 0, W, W), WH, alpha=0, blur=1)
     card = (18, 18, 1062, 1062)
     c.rect(card, fill=WH, r=34)
     c.block(t["title"], "db", t.get("size", 58), 44, 980, (20, 22, 26), max_lines=1)
@@ -1070,3 +1080,367 @@ def gbp_tags(P, t):
 
 
 FN = {"grid": T.grid, "quiz": T.quiz, "compare": T.compare, "scene_d": L.scene_d, "ee_grid": ee_grid, "gbp_tags": gbp_tags}
+
+
+# =====================================================================  ПАКЕТЫ
+# ---------------------------------------------------------------- 1. US · страхование похоронных расходов (final expense)
+NAVY1, SAGE1, ROSE1 = (30, 46, 84), (70, 128, 108), (206, 96, 80)
+PACKS[1] = dict(
+    doc="P60-funeral-insurance-us-2026-09-30", cta="Learn more",
+    pal=dict(bg=(252, 246, 238), ink=NAVY1, sub=(96, 100, 110), acc=SAGE1, btn=ROSE1, tile=WH, tile_ink=NAVY1, icon=NAVY1,
+             iconbg=(236, 244, 238)),
+    a=dict(fn="grid", layout="row4", title="Final expense insurance 2026: monthly cost by cover amount",
+           sub="Pick a coverage amount:", size=56, hero=hero_funeral, hero_h=340,
+           tiles=[(None, "$5,000"), (None, "$10,000"), (None, "$15,000"), (None, "$25,000")], tile_sub="a month: $?", big_size=46,
+           note="сверху панель: рамка с фото пожилой пары, монеты, полис с сердцем; 4 плитки суммы покрытия (в пределах «от нескольких тысяч до ~$25–40 тыс.» из article), взнос «$?»; возраста и «no exam needed» на картинке нет"),
+    b=dict(fn="quiz", layout="card", title="Final expense quiz:", title2="the first 2–3 years", size=58,
+           tag="QUIZ", step="Question 1 of 3", prog=0.33,
+           q="Policies with no health questions: what often applies in the first 2–3 years?",
+           opts=["Full payout from day one", "A graded death benefit", "A yearly medical exam", "Not sure"],
+           pal=dict(bg=(234, 244, 238), bg2=(206, 228, 216), acc=SAGE1, t2=ROSE1, deco=True),
+           note="мятный фон, вопрос о механике полиса (graded death benefit 2–3 года — article гипотезы), не о зрителе"),
+    c=dict(fn="compare", layout="twocol", title="Final expense or traditional life insurance?",
+           sub="What changes – and what each costs a month in 2026", size=54,
+           cols=[("FINAL EXPENSE", "doc_heart", SAGE1), ("TRADITIONAL", "doc_sign", NAVY1)],
+           rows=[("COVERAGE", "a few thousand to ~$40,000", "larger amounts"),
+                 ("HEALTH CHECK", "short questions or none", "often a medical exam"),
+                 ("A MONTH", "$?", "$?")],
+           foot="Price depends on age, health and insurer",
+           note="две колонки; покрытие до ~$40,000 и «короткие вопросы вместо медосмотра» — из article гипотезы, взнос «$?»"),
+    d=dict(fn="scene_d", scene="w3_funeral_kitchen", style="card", card_box=(80, 40, 1000, 470), frame=True, font="lserb",
+           kicker="FINAL EXPENSE INSURANCE 2026", title="Burial coverage without a medical exam: how it really works",
+           sub="The first 2–3 years, and what a month costs", size=56, lines=3, btn_size=40, btn_off=70,
+           pal=dict(frame=SAGE1, ink=NAVY1, sub=(96, 100, 110), acc=ROSE1, btn=ROSE1),
+           scene_text="POLICY OPTIONS",
+           note="кухня: пожилая женщина за столом с бумагами «POLICY OPTIONS», чай, очки, рамка с фото пары; без похоронной символики; карточка в рамке"),
+)
+
+# ---------------------------------------------------------------- 2. US · страховка питомцев (владельцы 60+)
+ORG2, TEAL2, INK2 = (236, 130, 40), (16, 122, 124), (36, 44, 60)
+PACKS[2] = dict(
+    doc="P60-pet-insurance-us-2026-09-30", cta="Learn more",
+    pal=dict(bg=(253, 247, 238), ink=INK2, sub=(96, 100, 110), acc=ORG2, btn=TEAL2, tile=WH, tile_ink=INK2, icon=INK2,
+             iconbg=(252, 232, 210)),
+    a=dict(fn="grid", layout="2x2", title="Pet insurance 2026: which plan covers what?", sub="Pick a plan type:", size=58,
+           tiles=[("w3_bandage", "Accident-only"), ("w3_pet_steth", "Accident & illness"), ("syringe", "Wellness add-on"),
+                  ("w3_old_dog", "Older pets: age limits")],
+           note="2×2 типов планов из article гипотезы (accident-only / accident & illness / wellness / возрастные лимиты)"),
+    b=dict(fn="quiz", layout="phone", title="Pet insurance quiz:", title2="the rule many owners miss",
+           sub="4 things to check before buying a policy", size=56, tag="PET INSURANCE QUIZ", step="Question 1 of 4", prog=0.25,
+           q="Are pre-existing conditions usually covered?", opts=["Yes, always", "Usually excluded", "Only for cats", "Not sure"],
+           pal=dict(bg=(16, 96, 100), bg2=(8, 52, 60), ink=WH, sub=(200, 230, 230), acc=ORG2, btn=ORG2),
+           note="тёмно-бирюзовый фон, телефон с тестом; вопрос о правилах страховки (исключение pre-existing — article), не о зрителе"),
+    c=dict(fn="compare", layout="split", title="Pet insurance or a vet savings fund?",
+           sub="How each handles an unexpected vet bill", size=56,
+           cols=[("PET INSURANCE", "w3_paw", TEAL2, ["Premium: $? a month", "Pays back part of the bill", "Pre-existing: usually excluded"]),
+                 ("SAVINGS FUND", "piggy", ORG2, ["Set aside: $? a month", "Covers only what's saved", "Big bill in year one?"])],
+           pal=dict(bg=(253, 247, 238), ink=INK2, sub=(96, 100, 110), btn=INK2, vs_bg=INK2, vs_ink=WH),
+           note="сплит «страховка vs копилка на ветеринара» (сравнение из article), суммы «$?»"),
+    d=dict(fn="scene_d", scene="w3_pet_sofa", style="top", size=56, lines=3, y=44,
+           title="Pet insurance for older dogs and cats: what it really costs in 2026",
+           sub="Why premiums rise as pets age – and what's excluded", btn_y=1000, btn_size=44,
+           pal=dict(ink=INK2, sub=(70, 80, 90), btn=TEAL2),
+           scene_text="VET BILL $?",
+           note="гостиная: пожилая женщина на диване гладит собаку, кот на ковре, записка «VET BILL $?»; лиц нет"),
+)
+
+# ---------------------------------------------------------------- 3. US · аннуитеты
+NAVY3, GREEN3, GOLD3, ORG3 = (24, 44, 86), (46, 128, 90), (226, 164, 48), (222, 120, 36)
+PACKS[3] = dict(
+    doc="P60-annuities-us-2026-09-30", cta="Learn more",
+    pal=dict(bg=(244, 249, 245), ink=NAVY3, sub=(90, 100, 110), acc=GREEN3, btn=ORG3, tile=WH, tile_ink=NAVY3, icon=NAVY3,
+             iconbg=(226, 242, 232)),
+    a=dict(fn="grid", layout="list4", title="Annuities 2026: how each type pays", sub="Pick a type to see how it works", size=58,
+           hero=hero_annuity, hero_h=280,
+           tiles=[("calendar", "Immediate annuity"), ("padlock", "Fixed annuity"), ("w3_wave", "Variable annuity"),
+                  ("w3_index", "Indexed annuity")],
+           scene_text="EVERY MONTH: $?",
+           note="панель «копилка → календарь с монетой каждый месяц, $?» + 4 строки-кнопки по типам аннуитетов из article"),
+    b=dict(fn="quiz", layout="card2x2", title="Annuity quiz:", title2="what sets the monthly payout?", size=60,
+           tag="QUIZ", step="Question 1 of 3", prog=0.33,
+           q="What does annuity income mostly depend on?",
+           opts=["Amount invested", "Age when payments start", "Payout option chosen", "All three"],
+           pal=dict(bg=(24, 44, 86), bg2=(12, 24, 52), ink=WH, sub=(206, 214, 230), acc=GREEN3, t2=GOLD3, deco=True),
+           note="тёмно-синий фон, вопрос о механике аннуитета (факторы выплаты — article), обещаний дохода нет"),
+    c=dict(fn="compare", layout="table", title="Immediate or deferred annuity?", sub="When income starts – and what to check first",
+           size=56, cols=[("IMMEDIATE", "calendar", GREEN3), ("DEFERRED", "hourglass", GOLD3)],
+           rows=[("Payments start", "soon after purchase", "at a future date"), ("Paid for", "set years or life", "set years or life"),
+                 ("Surrender period", "check the contract", "often several years"), ("A month", "?", "?")],
+           foot="Fees and payout options vary by insurer",
+           note="таблица немедленный / отложенный (из article), выплата в месяц — «?»"),
+    d=dict(fn="scene_d", scene="w3_annuity_porch", style="bars", y=40,
+           bars=[("IMMEDIATE ANNUITY EXPLAINED:", WH, GREEN3), ("HOW THE MONTHLY PAYOUT", NAVY3, None), ("IS WORKED OUT", NAVY3, None)],
+           bar_size=74, cond=0.8, btn_y=400, btn_size=44, max_w=960, pal=dict(btn=ORG3),
+           scene_text="$? / month",
+           note="плашки (формула рабочих крео владельца) + веранда: пожилой мужчина в кресле-качалке с кружкой, столик с калькулятором и календарём, стикер «$? / month»"),
+)
+
+# ---------------------------------------------------------------- 4. US · льготы VA (без утверждения, что зритель ветеран)
+NAVY4, OLIVE4, AMB4 = (26, 40, 72), (96, 120, 56), (206, 120, 36)
+PACKS[4] = dict(
+    doc="P60-va-benefits-us-2026-09-30", cta="Learn more",
+    pal=dict(bg=(246, 244, 236), ink=NAVY4, sub=(90, 94, 100), acc=OLIVE4, btn=AMB4, tile=WH, tile_ink=NAVY4, icon=NAVY4,
+             iconbg=(234, 236, 220)),
+    a=dict(fn="grid", layout="list4", title="VA benefits 2026: the 4 main types", sub="Pick one to see how it works", size=58,
+           hero=hero_va, hero_h=280,
+           tiles=[("doc_coin", "Disability compensation"), ("coins", "Veterans Pension"), ("care_hands", "Aid & Attendance"),
+                  ("med_bag", "VA health care")],
+           note="панель: папка с чек-листом, календарь, документ, дом, забота — без звёзд, флагов и эмблем; 4 вида льгот из article"),
+    b=dict(fn="quiz", layout="card", title="VA benefits quiz:", title2="the Aid & Attendance question", size=58,
+           tag="QUIZ", step="Question 1 of 4", prog=0.25,
+           q="Can a surviving spouse receive Aid & Attendance?",
+           opts=["Yes, in some cases", "No, never", "Only before age 65", "Not sure"],
+           pal=dict(bg=(238, 240, 228), bg2=(214, 222, 200), acc=OLIVE4, t2=AMB4, deco=True),
+           note="вопрос о правилах VA (Aid & Attendance для вдов/вдовцов — article), не о зрителе"),
+    c=dict(fn="compare", layout="twocol", title="Disability compensation or VA Pension?", sub="Two different VA payments – the 2026 basics",
+           size=54, cols=[("COMPENSATION", "doc_coin", NAVY4), ("VA PENSION", "coins", OLIVE4)],
+           rows=[("BASED ON", "a service-connected condition", "income, assets, wartime service"),
+                 ("WHO", "rated 10% to 100%", "65+ or permanently disabled"),
+                 ("A MONTH", "? – set by rating", "? – set by income limit")],
+           foot="2026 amounts – updated every year",
+           note="две колонки; рейтинг 10–100 %, 65+; суммы — «?» (в статье суммы нет, главный 29.09)"),
+    d=dict(fn="scene_d", scene="w3_va_table", style="card", card_box=(80, 40, 1000, 470), frame=True, font="lserb",
+           kicker="VA BENEFITS 2026", title="The VA benefits many older veterans don't know about",
+           sub="Pension, Aid & Attendance, disability pay – a plain guide", size=56, lines=3, btn_size=40, btn_off=70,
+           pal=dict(frame=NAVY4, ink=NAVY4, sub=(90, 94, 100), acc=OLIVE4, btn=AMB4),
+           scene_text="BENEFITS CHECKLIST",
+           note="столовая: пожилой мужчина и консультант с ноутбуком, «BENEFITS CHECKLIST», папка; без формы, флагов, эмблем; о ветеранах в 3-м лице"),
+)
+
+# ---------------------------------------------------------------- 5. US · охрана дома для пожилых
+NIGHT5, AMB5, TEAL5 = (20, 32, 58), (234, 150, 30), (0, 118, 118)
+PACKS[5] = dict(
+    doc="P60-home-security-us-2026-09-30", cta="Learn more",
+    pal=dict(bg=(242, 245, 250), ink=NIGHT5, sub=(84, 92, 110), acc=AMB5, btn=AMB5, tile=WH, tile_ink=NIGHT5, icon=NIGHT5,
+             iconbg=(255, 238, 206)),
+    a=dict(fn="grid", layout="2x2", title="Home security for seniors 2026: what to choose?", sub="Pick a part of the system:", size=56,
+           tiles=[("w3_door_sensor", "Door & window sensors"), ("pendant", "Panic button pendant"), ("w3_headset", "24/7 monitoring"),
+                  ("phone", "Self-monitored app")],
+           note="2×2 частей системы из article (датчики, тревожная кнопка, мониторинг 24/7, приложение)"),
+    b=dict(fn="quiz", layout="phone", title="Home alarm quiz:", title2="the Wi-Fi question", sub="What to check before choosing a system",
+           size=58, tag="HOME ALARM QUIZ", step="Question 1 of 4", prog=0.25,
+           q="The home internet goes down. What keeps the alarm working?",
+           opts=["Nothing", "Cellular backup", "A louder siren", "Not sure"],
+           pal=dict(bg=(24, 38, 70), bg2=(10, 18, 36), ink=WH, sub=(200, 210, 230), acc=AMB5, btn=AMB5),
+           note="ночной синий фон, телефон с тестом; вопрос о технике (сотовая связь как резерв — article)"),
+    c=dict(fn="compare", layout="split", title="Monitored or self-monitored alarm?", sub="What each one costs a month in 2026", size=56,
+           cols=[("MONITORED", "w3_headset", NIGHT5, ["About $20–$60 a month", "A center watches 24/7", "Equipment cost?"]),
+                 ("SELF-MONITORED", "phone", TEAL5, ["Low or no monthly fee", "Alerts go to a phone", "Who answers at 3 a.m.?"])],
+           pal=dict(bg=(242, 245, 250), ink=NIGHT5, sub=(84, 92, 110), btn=AMB5, vs_bg=AMB5, vs_ink=WH),
+           note="сплит; $20–$60/мес — ориентир из sourceNote гипотезы, оборудование — «?»"),
+    d=dict(fn="scene_d", scene="w3_security_dusk", style="top", size=58, y=44,
+           title="Senior alarm systems 2026: what families compare first",
+           sub="Sensors, panic button, battery backup – and the monthly fee", btn_y=1000, btn_size=44,
+           pal=dict(ink=WH, sub=(214, 220, 240), btn=AMB5),
+           note="дом в сумерках: свет в окнах, фонарь, клавиатура сигнализации, датчики на окнах, прожектор; людей нет, «до/после» нет"),
+)
+
+# ---------------------------------------------------------------- 6. ES · отели только для взрослых (путешествия)
+TURQ6, CORAL6, NAVY6, YEL6 = (0, 136, 158), (236, 92, 66), (20, 50, 80), (255, 214, 90)
+PACKS[6] = dict(
+    doc="NT-adults-only-resorts-es-2026-09-30", cta="Más información",
+    pal=dict(bg=(252, 247, 236), ink=NAVY6, sub=(90, 96, 104), acc=TURQ6, btn=CORAL6, tile=WH, tile_ink=NAVY6, icon=TURQ6,
+             iconbg=(222, 242, 244)),
+    a=dict(fn="grid", layout="list4", title="Hoteles solo adultos 2026: ¿dónde?", sub="Elige destino:", size=60,
+           hero=hero_beach, hero_h=290,
+           tiles=[("w3_palm", "Canarias"), ("w3_umbrella", "Baleares"), ("w3_sun", "Costa del Sol"), ("w3_boat", "Caribe")],
+           scene_text="SOLO ADULTOS",
+           note="панель пляжа (пальмы, зонт, шезлонги, табличка «SOLO ADULTOS») + 4 строки-направления; без «barato/oferta»"),
+    b=dict(fn="quiz", layout="card2x2", title="Resort solo adultos:", title2="¿qué pesa más al elegir?", size=60,
+           tag="TEST", step="Pregunta 1 de 3", prog=0.33,
+           q="¿Qué es lo primero que miras en un resort solo adultos?",
+           opts=["Todo incluido", "Frente a la playa", "Spa y tranquilidad", "Precio por noche"],
+           pal=dict(bg=(0, 136, 158), bg2=(0, 84, 104), ink=WH, sub=(210, 240, 244), acc=CORAL6, t2=YEL6, deco=True),
+           note="бирюзовый фон, опрос о предпочтениях (не о положении зрителя)"),
+    c=dict(fn="compare", layout="twocol", title="¿Hotel solo adultos u hotel familiar?", sub="Qué cambia – y cuánto cuesta la noche en 2026",
+           size=54, cols=[("SOLO ADULTOS", "w3_cocktail", TURQ6), ("FAMILIAR", "people2", CORAL6)],
+           rows=[("AMBIENTE", "tranquilo, sin niños", "animado, con niños"), ("PISCINA", "zonas de relax", "con zona infantil"),
+                 ("PRECIO / NOCHE", "? €", "? €")],
+           foot="Todo incluido y frente al mar: qué entra",
+           note="две колонки «только для взрослых vs семейный», цена ночи «? €» — цен в гипотезе нет"),
+    d=dict(fn="scene_d", scene="w3_resort_pool", style="bars", y=40,
+           bars=[("RESORTS EXCLUSIVOS", WH, TURQ6), ("EN LA PLAYA", WH, TURQ6), ("SOLO PARA ADULTOS", NAVY6, YEL6)],
+           bar_size=84, cond=0.8, btn_y=420, btn_size=44, max_w=960, pal=dict(btn=CORAL6),
+           note="плашки = ключ №1 гипотезы «Resorts exclusivos en la playa para adultos» + курорт: бассейн-инфинити у моря, двое взрослых на шезлонгах, пальмы"),
+)
+
+# ---------------------------------------------------------------- 7. DE · Египет всё включено
+BLUE7, ORG7, GOLD7 = (16, 64, 130), (232, 104, 30), (255, 214, 110)
+PACKS[7] = dict(
+    doc="NT-egypt-allinclusive-de-2026-09-30", cta="Mehr erfahren",
+    pal=dict(bg=(250, 246, 236), ink=BLUE7, sub=(90, 96, 104), acc=ORG7, btn=ORG7, tile=WH, tile_ink=BLUE7, icon=BLUE7,
+             iconbg=(252, 236, 210)),
+    a=dict(fn="grid", layout="row4", title="All-Inclusive-Urlaub in Ägypten 2026", sub="Mit Flug und Hotel – wie viele Nächte?", size=58,
+           hero=hero_egypt, hero_h=320, tiles=[(None, "7"), (None, "10"), (None, "14"), (None, "21")], tile_sub="Nächte · ? €",
+           big_size=86,
+           note="панель Красного моря (горы, отель с куполами, пальмы, соломенные зонты) + 4 плитки по числу ночей, цена «? €»; без «günstig»"),
+    b=dict(fn="quiz", layout="card", title="Ägypten All-Inclusive:", title2="welcher Badeort passt?", size=58,
+           tag="TEST", step="Frage 1 von 3", prog=0.33,
+           q="Welcher Badeort am Roten Meer passt zu Ihnen?", opts=["Hurghada", "Marsa Alam", "Sharm El-Sheikh", "El Gouna"],
+           pal=dict(bg=(16, 64, 130), bg2=(8, 36, 80), ink=WH, sub=(210, 222, 240), acc=ORG7, t2=GOLD7, deco=True),
+           note="синий фон, опрос о выборе курорта (Hurghada — из ключа гипотезы)"),
+    c=dict(fn="compare", layout="twocol", title="Pauschalreise oder Flug und Hotel einzeln?",
+           sub="Was 1 Woche All-Inclusive in Ägypten 2026 kostet", size=54,
+           cols=[("PAUSCHALREISE", "w3_plane", BLUE7), ("EINZELN", "w3_hotel", ORG7)],
+           rows=[("FLUG", "inklusive", "separat buchen"), ("TRANSFER", "oft inklusive", "selbst organisieren"),
+                 ("PREIS 7 NÄCHTE", "? €", "? €")],
+           foot="Hurghada, Marsa Alam, El Gouna im Vergleich",
+           note="две колонки «пакет с перелётом vs по отдельности» (ключ «mit Flug und Hotel»), цены «? €»"),
+    d=dict(fn="scene_d", scene="w3_red_sea", style="top", size=58, y=44,
+           title="Ägypten im November: was 1\u00a0Woche All-Inclusive kostet", sub="Mit Flug und Hotel – Hurghada, Marsa Alam, El Gouna",
+           btn_y=1000, btn_size=44, pal=dict(ink=BLUE7, sub=(40, 60, 90), btn=ORG7),
+           scene_text="1 Woche ? €",
+           note="пляж Красного моря: горы пустыни, отель с куполами, пальмы, соломенные зонты, шезлонги; стикер «1 Woche ? €»; ноябрь — из ключа гипотезы"),
+)
+
+# ---------------------------------------------------------------- 8. GB · курс электрика 3 месяца (обучение)
+SLATE8, YEL8, ORG8, BLUE8 = (30, 38, 52), (255, 196, 0), (226, 92, 22), (30, 90, 170)
+PACKS[8] = dict(
+    doc="NT-electrician-course-gb-2026-09-30", cta="Learn more",
+    pal=dict(bg=(246, 247, 250), ink=SLATE8, sub=(84, 90, 100), acc=ORG8, btn=ORG8, tile=WH, tile_ink=SLATE8, icon=SLATE8,
+             iconbg=(255, 240, 190)),
+    a=dict(fn="grid", layout="2x2", title="3 month electrician course 2026", sub="Pick a study format:", size=60,
+           tiles=[("w3_sun", "Daytime"), ("w3_moon", "Evenings"), ("calendar", "Weekends"), ("laptop", "Online theory")],
+           note="2×2 форматов обучения (днём / вечером / выходные / онлайн) — плейбук «обучение»; без обещаний работы и зарплаты"),
+    b=dict(fn="quiz", layout="card", title="Electrician course quiz:", title2="which level comes first?", size=58,
+           tag="QUIZ", step="Question 1 of 3", prog=0.33,
+           q="Which course level do beginners usually start with?", opts=["Level 1", "Level 2", "Level 3", "Not sure"],
+           pal=dict(bg=(34, 42, 58), bg2=(16, 20, 30), ink=WH, sub=(210, 214, 224), acc=ORG8, t2=YEL8, deco=True),
+           note="графитовый фон, вопрос об уровнях курса, не о зрителе; без диплома/работы/зарплаты"),
+    c=dict(fn="compare", layout="twocol", title="Fast-track or college electrician course?", sub="Length, format and cost in 2026", size=54,
+           cols=[("FAST-TRACK", "hourglass", ORG8), ("COLLEGE", "cap", BLUE8)],
+           rows=[("LENGTH", "about 3 months", "longer, often part time"), ("FORMAT", "intensive days", "weekly classes"),
+                 ("COST", "£?", "£?")],
+           foot="Levels, practical hours and what's included",
+           note="две колонки «ускоренный vs колледж», стоимость «£?» (ключ «electrician course cost», цен в гипотезе нет)"),
+    d=dict(fn="scene_d", scene="w3_electric_workshop", style="card", card_box=(80, 40, 1000, 470), frame=True,
+           kicker="3 MONTH ELECTRICIAN COURSE", title="What's inside a fast-track course",
+           sub="Levels, practical work and course cost in 2026", size=62, btn_size=40, btn_off=70,
+           pal=dict(frame=ORG8, ink=SLATE8, sub=(84, 90, 100), acc=ORG8, btn=ORG8),
+           note="учебная мастерская: стенд со щитком, розетками и кабель-каналами, верстак с инструментом, ученик в каске; карточка в рамке"),
+)
+
+# ---------------------------------------------------------------- 9. GB · короткий курс парикмахера (обучение)
+PLUM9, PINK9, INK9 = (110, 44, 100), (214, 84, 132), (50, 30, 50)
+PACKS[9] = dict(
+    doc="NT-hairdresser-course-gb-2026-09-30", cta="Learn more",
+    pal=dict(bg=(253, 244, 247), ink=INK9, sub=(100, 86, 100), acc=PLUM9, btn=PINK9, tile=WH, tile_ink=INK9, icon=PLUM9,
+             iconbg=(250, 226, 236)),
+    a=dict(fn="grid", layout="row4", title="Hairdressing courses for adults 2026", sub="Pick a format:", size=58,
+           hero=hero_salon, hero_h=300,
+           tiles=[("w3_scissors", "3-day course"), ("clock", "Part time"), ("w3_moon", "Evenings"), ("laptop", "Online")],
+           note="панель: голова-манекен, ножницы, расчёска, часы + 4 плитки форматов (3 дня — из ключа гипотезы)"),
+    b=dict(fn="quiz", layout="phone", title="3-day hairdressing course:", title2="what's covered?", sub="What to check before booking",
+           size=54, tag="COURSE QUIZ", step="Question 1 of 3", prog=0.33,
+           q="What can a 3-day hairdressing course cover?",
+           opts=["Cutting basics", "Colour basics", "Blow-dry & styling", "Depends on the course"],
+           pal=dict(bg=(110, 44, 100), bg2=(60, 20, 56), ink=WH, sub=(240, 214, 232), acc=PINK9, btn=PINK9),
+           note="сливовый фон, телефон с вопросом о содержании курса; без обещаний работы и зарплаты"),
+    c=dict(fn="gbp_tags", title="Hairdressing course cost 2026", sub="3 days, part time or online – what each costs", size=58,
+           tags=[("w3_scissors", "3-day course", PLUM9), ("clock", "Part-time course", PINK9), ("laptop", "Online course", (40, 120, 140))],
+           foot="Kit and practice heads: included or extra?", price="£?",
+           note="3 ценника «£?» на штанге — цен в гипотезе нет"),
+    d=dict(fn="scene_d", scene="w3_salon_training", style="bars", y=40,
+           bars=[("3-DAY HAIRDRESSING", WH, PLUM9), ("COURSE FOR ADULTS:", WH, PLUM9), ("WHAT'S INSIDE", PLUM9, (255, 214, 226))],
+           bar_size=80, cond=0.8, btn_y=400, btn_size=44, max_w=960, pal=dict(btn=PINK9),
+           note="плашки + учебный салон: зеркало, головы-манекены, ученица с ножницами у манекена, тележка; лиц нет"),
+)
+
+# ---------------------------------------------------------------- 10. EE · тепловой насос воздух-вода (товарка, перенос LT 0819-GE02)
+RED10, BLUE10, INK10 = (200, 30, 36), (20, 70, 140), (20, 24, 30)
+PACKS[10] = dict(
+    doc="NT-heatpump-ee-2026-09-30", cta="Uuri lähemalt",
+    pal=dict(bg=(236, 242, 250), ink=BLUE10, sub=(80, 90, 104), acc=BLUE10, btn=RED10, tile=WH, tile_ink=INK10, icon=BLUE10,
+             iconbg=(222, 234, 248)),
+    a=dict(fn="ee_grid", title="Õhk-vesi soojuspumba hind 2026", tiles=["100 m²", "150 m²", "200 m²", "280 m²"],
+           btn_lines=("VAATA", "LÄHEMALT"), foot="Hind koos paigaldusega · vali maja pindala", size=58, cta="Vaata lähemalt",
+           note="перевод доказанного LT-крео 0819-GE02 (заголовок + блок у стены + 4 плитки m² + красные кнопки): фото заменено иллюстрацией без логотипа, 100 m² — из ключа гипотезы; кнопки «Vaata lähemalt» = LT «Žiūrėti daugiau»"),
+    b=dict(fn="quiz", layout="calc", title="Soojuspumba hinnakalkulaator", sub="Hind koos paigaldusega 3 sammuga", size=58,
+           steps=[("Pindala", "done"), ("Tüüp", "now"), ("Paigaldus", "todo")], tag="SAMM 2 / 3", step="", prog=0.66,
+           q="Millist soojuspumpa vajab 100 m² maja?", opts=["Õhk-õhk", "Õhk-vesi", "Maasoojuspump", "Ei tea"],
+           pal=dict(bg=(236, 242, 250), bg2=(206, 222, 242), ink=BLUE10, sub=(70, 84, 104), acc=BLUE10, btn=RED10),
+           note="калькулятор-опросник в 3 шага (площадь → тип → монтаж), без цифр цены"),
+    c=dict(fn="compare", layout="twocol", title="Õhk-õhk või õhk-vesi soojuspump?", sub="Mida kumbki kütab ja mis on hind koos paigaldusega",
+           size=54, cols=[("ÕHK-ÕHK", "w3_split_unit", BLUE10), ("ÕHK-VESI", "w3_outdoor_unit", RED10)],
+           rows=[("KÜTAB", "toaõhku", "radiaatoreid ja põrandakütet"), ("SOE TARBEVESI", "ei", "jah"),
+                 ("HIND KOOS PAIGALDUSEGA", "? €", "? €")],
+           foot="100 m² maja: kumb tuleb odavam?",
+           note="две колонки «воздух-воздух vs воздух-вода» (оба типа — ключи гипотезы), цены «? €»"),
+    d=dict(fn="scene_d", scene="w3_winter_house", style="card", card_box=(60, 36, 1020, 450), frame=True,
+           kicker="SOOJUSPUMP 2026", title="Kui palju maksab õhk-vesi soojuspump 100 m² majale?",
+           sub="Hinnad koos paigaldusega: mis mõjutab lõppsummat", size=54, lines=3, btn_size=40, btn_off=64,
+           pal=dict(frame=BLUE10, ink=INK10, sub=(80, 90, 104), acc=BLUE10, btn=RED10),
+           note="зима: деревянный дом в снегу, ели, наружный блок насоса на подставке с паром; без логотипа; карточка в рамке"),
+)
+
+
+# =====================================================================  сборка
+def _clean(s):
+    return s.replace("\n", " ").replace("­", "").replace(" ", " ")
+
+
+def texts(t, cta):
+    """Весь текст на картинке — для creatives.json."""
+    out = []
+    for k in ("kicker", "title", "title2", "sub"):
+        if t.get(k):
+            out.append(t[k])
+    if t.get("bars"):
+        out.append(" ".join(b[0] for b in t["bars"]))
+    if t.get("steps"):
+        out.append(" · ".join(s[0] for s in t["steps"]))
+    for k in ("tag", "step", "q"):
+        if t.get(k):
+            out.append(t[k])
+    if t.get("opts"):
+        out.append(" / ".join(t["opts"]))
+    if t.get("tiles"):
+        labs = [x if isinstance(x, str) else x[1] for x in t["tiles"]]
+        if t.get("tile_sub"):
+            labs = [f"{x} ({t['tile_sub']})" for x in labs]
+        tc = t.get("cta", cta)
+        out.append(" / ".join(labs) + f" (у каждой «{tc}»)")
+    if t.get("cols"):
+        out.append(" vs ".join(x[0] for x in t["cols"]))
+        for x in t["cols"]:
+            if len(x) >= 4 and isinstance(x[-1], list):
+                out.append(x[0] + ": " + " · ".join(x[-1]))
+    if t.get("rows"):
+        out.append(" · ".join(f"{r[0]}: {r[1]} / {r[2]}" for r in t["rows"]))
+    if t.get("tags"):
+        out.append(" · ".join(f"{x[1]}: {t.get('price', '? €')}" for x in t["tags"]))
+    for k in ("foot", "scene_text"):
+        if t.get(k):
+            out.append(t[k])
+    return _clean(" / ".join(out))
+
+
+def build(n, letters="abcd"):
+    P = PACKS[n]
+    doc = P["doc"]
+    items = []
+    for Lt in "abcd":
+        t = P[Lt]
+        PPk = dict(P, pal={**P["pal"], **t.get("pal", {})})
+        if t.get("cta"):
+            PPk["cta"] = t["cta"]
+        if Lt in letters:
+            c = FN[t["fn"]](PPk, t)
+            c.save(f"{doc}/{Lt}.png")
+        items.append(dict(letter=Lt, file=f"cr/packs/{doc}/{Lt}.png", concept=CONCEPT[Lt] + " — " + t.get("note", ""),
+                          text=texts(t, P["cta"]), cta=t.get("cta", P["cta"])))
+    os.makedirs(os.path.join(OUT, doc), exist_ok=True)
+    with open(os.path.join(OUT, doc, "creatives.json"), "w", encoding="utf-8") as f:
+        json.dump(items, f, ensure_ascii=False, indent=1)
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:] or [str(k) for k in PACKS]
+    for a in args:
+        if a == "icons":
+            icon_sheet()
+        elif ":" in a:
+            n, ls = a.split(":")
+            build(int(n), ls.replace(",", ""))
+        else:
+            build(int(a))
