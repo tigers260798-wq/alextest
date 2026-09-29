@@ -2,15 +2,15 @@
  {
   "letter": "a",
   "file": "cr/packs/P60-joint-pain-uk-2026-09-30/a.png",
-  "concept": "сетка выбора (fake interactivity) — парк со скамейкой и кроссовками, 4 строки-варианта из статьи (без обещаний результата)",
-  "text": "Joint pain: the NHS options explained / Pick one to see how it works (2026 guide) / Physiotherapy / Steroid injections / Heat & cold packs / TENS machines (у каждой «Learn more»)",
+  "concept": "сетка выбора (fake interactivity) — парк со скамейкой и кроссовками, 4 строки-варианта под статью «Knee Pain Relief After 60…» (без обещаний результата; цены на картинке нет)",
+  "text": "Knee pain after 60: the options explained / Pick one to see how it works (2026 guide) / Physiotherapy / Steroid injections / Heat, cold & TENS / Private knee replacement cost (у каждой «Learn more»)",
   "cta": "Learn more"
  },
  {
   "letter": "b",
   "file": "cr/packs/P60-joint-pain-uk-2026-09-30/b.png",
   "concept": "карточка-опросник — вопрос о методе лечения, не о состоянии зрителя (ответ в статье: от нескольких недель до пары месяцев)",
-  "text": "Steroid joint injections: / how long does relief last? / A 3-question check / JOINT QUIZ / Question 1 of 3 / How long does relief from a steroid joint injection usually last? / A few days / A few weeks to 2 months / Several years / Not sure",
+  "text": "Steroid joint injections: / how long does relief last? / A 3-question check / JOINT QUIZ / Question 1 of 3 / How long does relief from a steroid joint injection usually last? / A few days / Weeks to 2 months / Several years / Not sure",
   "cta": "Learn more"
  },
  {
@@ -24,7 +24,7 @@
   "letter": "d",
   "file": "cr/packs/P60-joint-pain-uk-2026-09-30/d.png",
   "concept": "сцена-иллюстрация — парк: пожилая пара гуляет по тропинке (без лиц), скамейка; карточка в рамке; без «до/после»",
-  "text": "JOINT PAIN & ARTHRITIS · 2026 GUIDE / The NHS options many people never ask about / Physio, injections, TENS – what each one does",
+  "text": "KNEE & JOINT PAIN · 2026 GUIDE / The NHS options many people never ask about / Physio, injections, TENS – what each one does",
   "cta": "Learn more"
  }
 ]

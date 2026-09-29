@@ -23,8 +23,8 @@
  {
   "letter": "d",
   "file": "cr/packs/P60-car-insurance-uk-2026-09-30/d.png",
-  "concept": "сцена-иллюстрация — плашки + дом с гаражом, машина на дорожке, письмо RENEWAL; факт из статьи: у похожих профилей разные котировки",
-  "text": "CAR INSURANCE OVER 70: WHY SAME-AGE DRIVERS GET DIFFERENT QUOTES",
+  "concept": "сцена-иллюстрация — плашки + дом с гаражом, машина на дорожке, письмо RENEWAL; хук совпадает с заголовком статьи (ошибка при продлении — автопродление без сравнения)",
+  "text": "CAR INSURANCE OVER 60: THE RENEWAL MISTAKE THAT COSTS MONEY",
   "cta": "Learn more"
  }
 ]

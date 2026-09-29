@@ -1029,7 +1029,7 @@ def hero_badge60(c, box):
         t.shadow((cx - 120, cy - 120, cx + 120, cy + 120), r=120, alpha=70, blur=10, off=(0, 8))
         t.circle(cx, cy, 120, fill=(120, 60, 160))
         t.circle(cx, cy, 104, outline=WH, width=4)
-        t.text((cx, cy - 4), "60+", "db", 96, WH, anchor="mm")
+        t.text((cx, cy - 2), "60+", "db", 78, WH, anchor="mm")
     S.clip_draw(c, box, 28, fn)
 
 
@@ -1047,15 +1047,15 @@ def merge(P, t):
     n = len(items)
     g = 18
     ih = (bot - top - g * (n - 1)) / n
-    L1 = 440
+    L1 = 460
     for k, (ic, lab) in enumerate(items):
         y0 = top + k * (ih + g)
         box = (60, y0, L1, y0 + ih)
         c.card(box, fill=WH, r=22, sh_alpha=50, blur=10, off=(0, 5))
         c.circle(60 + ih / 2 + 4, y0 + ih / 2, ih * 0.36, fill=p["iconbg"])
         T.icon(c, ic, 60 + ih / 2 + 4, y0 + ih / 2, ih * 0.5, p["icon"], bg=p["iconbg"])
-        c.block(lab, "sb", 30, y0 + ih / 2 - 19, L1 - 60 - ih - 30, p["ink"], align="left", x=60 + ih + 16, max_lines=1)
-        c.circle(L1 - 30, y0 + ih / 2, 10, fill=p["dot"])
+        c.block(lab, "sb", 30, y0 + ih / 2 - 19, L1 - 60 - ih - 16 - 52, p["ink"], align="left", x=60 + ih + 16, max_lines=1)
+        c.circle(L1 - 26, y0 + ih / 2, 10, fill=p["dot"])
     R = (620, top + 10, 1020, bot - 10)
     ry = (R[1] + R[3]) / 2
     for k in range(n):

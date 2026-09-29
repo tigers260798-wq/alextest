@@ -318,6 +318,13 @@ def mini_room(c, box, style):
     c.rect((cx - w * 0.3, sy - h * 0.1, cx + w * 0.3, sy - h * 0.01), fill=mix(sofa, WH, 0.15), r=10)
     for x in (cx - w * 0.32, cx + w * 0.32):
         c.rect((x - 4, sy - h * 0.02, x + 4, sy + h * 0.04), fill=leg)
+    if style.get("tall"):
+        c.rect((x0 + w * 0.02, y0 + h * 0.06, x0 + w * 0.2, sy + h * 0.02), fill=(60, 44, 36), r=6)
+        for k in range(4):
+            yy = y0 + h * (0.2 + k * 0.14)
+            c.rect((x0 + w * 0.03, yy, x0 + w * 0.19, yy + 4), fill=(40, 30, 24))
+        c.rect((x1 - w * 0.2, y0 + h * 0.1, x1 - w * 0.03, sy + h * 0.02), fill=(70, 50, 40), r=6)
+        c.line([(x1 - w * 0.115, y0 + h * 0.12), (x1 - w * 0.115, sy)], (50, 36, 28), 3)
     kind = style["kind"]
     if kind == "plant":
         S.plant(c, x1 - w * 0.12, sy + h * 0.06, h * 0.0016, pot=(240, 240, 240), leaf=(70, 140, 90))
@@ -351,11 +358,11 @@ def style_grid(P, t):
         c.card(box, r=24, sh_alpha=60, blur=12, off=(0, 6))
         img = (x0 + 14, y0 + 14, x0 + tw - 14, y0 + th - 112)
         S.clip_draw(c, img, 16, lambda tt, b=img, s_=st: mini_room(tt, b, s_))
-        c.text((x0 + 30, y0 + th - 74), lab, "db", 34, p["tile_ink"], anchor="lm")
-        pb = c.pill(P["cta"], 0, -500, size=21, fill=p["btn"], padx=16, pady=9)
+        c.text((x0 + 28, y0 + th - 80), lab, "db", 30, p["tile_ink"], anchor="lm")
+        pb = c.pill(P["cta"], 0, -500, size=19, fill=p["btn"], padx=14, pady=9)
         pw = pb[2] - pb[0]
-        c.pill(P["cta"], x0 + tw - 22 - pw / 2, y0 + th - 38, size=21, fill=p["btn"], padx=16, pady=9)
-        c.text((x0 + 30, y0 + th - 36), st.get("tag", ""), "s", 22, (110, 116, 124), anchor="lm")
+        c.pill(P["cta"], x0 + tw - 20 - pw / 2, y0 + th - 78, size=19, fill=p["btn"], padx=14, pady=9)
+        c.text((x0 + 30, y0 + th - 34), st.get("tag", ""), "s", 23, (110, 116, 124), anchor="lm")
     return c
 
 
