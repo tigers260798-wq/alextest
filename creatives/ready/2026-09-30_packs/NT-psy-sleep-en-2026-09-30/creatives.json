@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "/_blob/516201c1cc2eae1f17226cbc21c9f25d",
+  "concept": "сетка выбора 2×2 (fake interactivity): 4 пути лечения бессонницы, у каждой плитки «Learn more» — иконки без логотипов: врач со стетоскопом, здание с луной, два облачка-диалога, ноутбук с луной; ни слова про таблетки, без «free» и «near me»; опора: раздел 5 «Insomnia treatment options: family doctor, sleep clinic or online CBT-I» (GP — the usual first step; sleep clinic — overnight sleep study; psychologist trained in CBT-I — in person or by video; online CBT-I — sleep diary and weekly steps)",
+  "text": "Insomnia treatment options · From the family doctor to online CBT-I – pick one: · Family doctor (GP) – Usually the first step · Sleep clinic – May include an overnight sleep study · Psychologist trained in CBT-I – In person or by video · Online CBT-I program – Sleep diary and weekly steps · ×4 «Learn more»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "/_blob/0e301b29f97d0797faf5d8be4f23b664",
+  "concept": "карточка-опросник: вопрос 1 из 7 теста ISI со шкалой 0–4 кружками-кнопками — фиолетовая ночь, белая карточка; вопрос теста без «you/your»; подпись «A self-assessment, not a diagnosis»; опора: раздел 1 «The Insomnia Severity Index: 7 questions about the last two weeks» (пункт 1 Difficulty falling asleep, 0 = none … 4 = very severe) + раздел 2 (self-assessment)",
+  "text": "The 7-question insomnia test sleep specialists use · Each answer 0–4 · total 0–28 · INSOMNIA SEVERITY INDEX (ISI) · Question 1 of 7 · Over the last 2 weeks: Difficulty falling asleep · 0 1 2 3 4 (0 = none, 4 = very severe) · A self-assessment, not a diagnosis · Learn more",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "/_blob/acd684c792372333bd062f023212d270",
+  "concept": "шкала-сравнение: 4 диапазона балла 0–28 полосой и строками — цвет от зелёного к красному, пороги 0 · 8 · 15 · 22 · 28; под шкалой — «A self-assessment, not a diagnosis»; опора: раздел 2 «How the 0–28 score is read – and why it is not a diagnosis» (0–7 / 8–14 / 15–21 / 22–28, self-assessment tool)",
+  "text": "Insomnia test score 0–28: what each range means · Insomnia Severity Index (ISI) · 7 questions · шкала 0 · 8 · 15 · 22 · 28 · 0–7 No clinically significant insomnia · 8–14 Subthreshold insomnia (a problem worth watching) · 15–21 Clinical insomnia (moderate severity) · 22–28 Severe clinical insomnia · A self-assessment, not a diagnosis · Learn more",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "/_blob/d48fd070f0cfbb944d483cc2c41c3858",
+  "concept": "сцена-иллюстрация: тумбочка ночью — будильник 03:47, блокнот «7 questions», стакан воды, пустая кровать, луна в окне — без людей и измученных лиц; заголовок-крючок из РК 2; три факта КПТ-И плашками; опора: лид («Lying awake at 3 a.m.») + раздел 4 «Cognitive behavioral therapy for insomnia: how CBT-I works, week by week» (sleep restriction: not below 5–5.5 h, +15 min a week; stimulus control: after about 20 minutes awake, get up) + adPosts РК 2 «Less time in bed, not more»",
+  "text": "Less time in bed, not more · How CBT-I for insomnia works, week by week · Not below 5–5.5 h in bed · +15 min a week · 20 min awake → get up · на блокноте: 7 questions · на будильнике: 03:47 · Learn more",
+  "cta": "Learn more"
+ }
+]
