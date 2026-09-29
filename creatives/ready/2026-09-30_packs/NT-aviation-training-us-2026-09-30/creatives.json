@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/NT-aviation-training-us-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — лестница из 6 карточек-ступеней снизу вверх (номер, ступень, строка из статьи, у каждой «Learn more») + самолёт в наборе высоты без номеров; налёт и сроки не вынесены; опора: раздел 1 «Pilot training programs: the certificate ladder» (6 ступеней, минимальный возраст 16 / 17 / 18 / 23)",
+  "text": "Pilot training programs: / the certificate ladder / 6 steps – pick one to see how it works / 1. Student pilot – First solo flight from age 16 / 2. Private pilot – Personal trips, from age 17 / 3. Instrument rating – Flying in cloud and low visibility / 4. Commercial pilot – Minimum age 18 / 5. Flight instructor – Teaching other pilots / 6. Airline transport pilot – The top level, from age 23 (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/NT-aviation-training-us-2026-09-30/b.png",
+  "concept": "карточка-опросник — тёмно-синее «небо», тест 2×2; вопрос о правиле, не о зрителе; опора: раздел 1: «Student pilot certificate… Solo flying is allowed from age 16» (верный ответ — 16)",
+  "text": "Pilot training quiz: / the first solo flight / QUIZ / Question 1 of 3 / From what age can a student pilot fly solo? / Age 14 / Age 16 / Age 18 / Age 21 / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/NT-aviation-training-us-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — таблица на 2 колонки: лётная школа vs школа авиамехаников; сроки — ровно как в статье, цен нет; опора: раздел 4 «Aircraft mechanic school or flight school: how the paths compare» (Length / How it is paid for / Training day / Medical requirements) + раздел 5 (вопросы перед записью)",
+  "text": "Flight school or aircraft mechanic school? / How the two aviation training paths compare / FLIGHT SCHOOL vs AIRCRAFT MECHANIC SCHOOL / Length: a few months (private) to 1–2 years (commercial) / usually 18–24 months · How it's paid: by the hour / tuition per term · Training day: in the air and in simulators / in hangars and workshops · Medical certificate: needed / not needed / Plus: 5 questions to ask before enrolling / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/NT-aviation-training-us-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — плашки (формула рабочих крео владельца) + перрон: учебный высокоплан без номеров и логотипов с колодками, конус ветра, открытый ангар с двигателем на стенде и тележкой с инструментом; опора: заголовок и финал статьи («the cockpit or the hangar») + разделы 3–4 (hangars and workshops, air and simulators)",
+  "text": "COCKPIT OR HANGAR? PILOT TRAINING OR AIRCRAFT MAINTENANCE SCHOOL, STEP BY STEP / кнопка «Learn more →»",
+  "cta": "Learn more"
+ }
+]

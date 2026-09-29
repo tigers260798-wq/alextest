@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-course-then-job-de-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 6 карточек курсов 3×2 (иконка, тип курса, название, кнопка); опора — раздел «Welche Kurse infrage kommen» (Umschulungen, kurze Lehrgänge, IT Umschulung Quereinsteiger); без логотипов ведомств, без зарплаты и обещания работы",
+  "text": "Bildungsgutschein 2026: / welche Weiterbildung kommt infrage? / Gefördert werden nur zugelassene Kurse – Beispiele: / Umschulung: Fachinformatiker / Umschulung: Kaufmann/-frau Büromanagement / Umschulung: Berufskraftfahrer / kurzer Lehrgang: Staplerschein / kurzer Lehrgang: Sachkunde Bewachung / ohne Vorkenntnisse: IT für Quereinsteiger (у каждой карточки «Mehr erfahren →»)",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-course-then-job-de-2026-09-30/b.png",
+  "concept": "карточка-опросник — тёмно-бирюзовый фон, карточка со степпером из 5 шагов заявки (шаг 2 активен) и вопросом о курсовой базе; опора — раздел «Bildungsgutschein beantragen: Schritt für Schritt» (5 шагов, Kursdatenbanken zeigen Inhalte, Dauer, Beginn, Zulassung; Gültigkeit meist drei Monate; Kurs erst mit Gutschein beginnen)",
+  "text": "Bildungsgutschein beantragen: / der Ablauf in 5 Schritten / Beratung ✓ · Kurs finden · Ziel begründen · Gutschein · Träger / SCHRITT 2 VON 5 / Was zeigt eine Kursdatenbank? / A Inhalte und Dauer / B Kursbeginn / C Ob der Kurs zugelassen ist / D Alles davon / Gutschein meist 3 Monate gültig · Kursstart erst mit Gutschein / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-course-then-job-de-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — лист-смета «кто что оплачивает»: ваучер (курс, экзамен), возможные доп. расходы, пособие; сумма Weiterbildungsgeld — «? €» до сверки; опора — раздел «Was während der Weiterbildung übernommen werden kann» + лид; не как безусловная оплата",
+  "text": "Geförderte Weiterbildung: / was übernommen werden kann (жёлтая подсветка) / лист «KOSTEN DER WEITERBILDUNG 2026»: Deckt der Bildungsgutschein: ✓ Lehrgangskosten ✓ Prüfungsgebühren / Kann zusätzlich übernommen werden: ✓ Fahrtkosten zum Kursort ✓ Kinderbetreuung ✓ Unterkunft, wenn der Kurs weit entfernt ist / Während des Kurses: Arbeitslosengeld läuft in vielen Fällen weiter · Weiterbildungsgeld bei Umschulung: ? € / Monat / Was im Einzelfall gilt, steht im Bescheid. / кнопка «Mehr erfahren →»",
+  "cta": "Mehr erfahren"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-course-then-job-de-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — склад: стеллажи с коробками, погрузчик без логотипа, наставник и обучающийся в сигнальных жилетах и касках (без лиц), на столе сертификат «Staplerschein» и каска; плашки = хук РК 3; опора — разделы «Vom Kurs in den Betrieb» и «Kurze Wege: Bewachung und Lager»; без «Job garantiert», зарплаты, логотипов",
+  "text": "BILDUNGSGUTSCHEIN 2026: / VOM KURS IN DEN BETRIEB / кнопка «Mehr erfahren →» / на сертификате: ZERTIFIKAT · Staplerschein",
+  "cta": "Mehr erfahren"
+ }
+]

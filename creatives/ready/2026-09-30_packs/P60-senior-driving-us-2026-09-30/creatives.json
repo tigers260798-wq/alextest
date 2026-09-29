@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-senior-driving-us-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — 4 плитки-темы курса с крупными иконками (кольцо, съезд на шоссе, фары ночью, датчики слепых зон); опора — раздел «What the course usually covers»; без возраста и здоровья зрителя, без «no road test» как гарантии",
+  "text": "What a driving refresher course usually covers / Most programs include – pick a topic: / 1 Roundabouts – and newer intersection designs / 2 Highway merging – left turns, safe following distance / 3 Night driving & glare – and driving in the rain / 4 Driver-assist features – backup camera, blind-spot warning (у каждой плитки «Learn more →»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-senior-driving-us-2026-09-30/b.png",
+  "concept": "карточка-опросник — слева заголовок (хук РК 2) и кнопка, справа телефон с чек-листом из 4 вопросов страховщику, первый отмечен; опора — раздел «Defensive driving course for insurance discount: how it may work» (4 вопроса); скидка только «Some insurers may offer»",
+  "text": "Course first, / then ask the insurer / 4 questions before paying for a driving safety course / кнопка «Learn more →» / на телефоне: INSURER CHECKLIST / Some insurers may offer a discount – ask first: / 1 of 4 checked / Is there a discount on this policy? (отмечен) / Which courses are accepted? / Does the online version count? / How long does the discount last?",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-senior-driving-us-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — две карточки-иллюстрации (ноутбук с модулями и тестом / класс с доской и инструктором), плашка «4–8 часов, сертификат», строка «от чего зависит премия»; опора — разделы «Online defensive driving course or classroom» и «Comparing the numbers before and after»; цен и процентов нет",
+  "text": "Defensive driving course: / online or classroom? / ONLINE: Self-paced short modules – A timer tracks the hours, then a final quiz (на экране ноутбука: Module 1 ✓ / Module 2 ✓ / Module 3 / Final quiz) / vs / CLASSROOM: 1–2 sessions – With an instructor and a group / Usually 4–8 hours in total · Certificate at the end / Premium depends on: record · car · mileage · coverage / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-senior-driving-us-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — салон машины в сумерках без людей: дорога, жёлтый знак кольца впереди, навигатор с маршрутом, руль, на пассажирском сиденье сертификат о прохождении курса; заголовок = заголовок статьи; опора — лид и раздел «What a refresher course is»",
+  "text": "Stay confident behind the wheel / How driving refresher courses work – and when some insurers may offer a discount / кнопка «Learn more →» / на сертификате: CERTIFICATE OF COMPLETION · Driving Safety Course",
+  "cta": "Learn more"
+ }
+]

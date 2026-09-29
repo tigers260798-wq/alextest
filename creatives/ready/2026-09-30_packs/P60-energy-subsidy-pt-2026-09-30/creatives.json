@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/P60-energy-subsidy-pt-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — фон-узор азулежу, 2×2 плитки «4 признака» с иконками (щиток, день/ночь, счётчик с «?», лист с «+»); опора — разделы «O que se paga na fatura da luz» и «Quatro sinais de que a fatura está mais alta do que devia»; безлично, без сумм и логотипов",
+  "text": "Fatura da luz 2026: / 4 coisas a rever / Sinais de que se paga mais do que o necessário / 1 Potência contratada – Valor fixo por dia, pago mesmo sem consumo / 2 Opção horária – Simples, bi-horária ou tri-horária / 3 Leituras estimadas – O acerto pode chegar de uma só vez / 4 Serviços extra – Assistência, seguros e pacotes à parte (у каждой плитки «Saiba mais →»)",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/P60-energy-subsidy-pt-2026-09-30/b.png",
+  "concept": "карточка-опросник — синий фон с полосой азулежу, карточка-тест со шкалой мощности и 4 кнопками-ступенями; опора — раздел «Potência contratada: como saber qual é a certa» (ступени 3,45 / 4,6 / 5,75 / 6,9 кВА; tarifa social до 6,9 кВА)",
+  "text": "Potência contratada: / qual é a certa? / TESTE RÁPIDO · Pergunta 1 de 2 / шкала kVA: 3,45 · 4,6 · 5,75 · 6,9, стрелка на «?» / Qual é a potência na fatura? / 3,45 kVA / 4,6 kVA / 5,75 kVA / 6,9 kVA / Tarifa social: só em contratos até 6,9 kVA / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/P60-energy-subsidy-pt-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — два суточных кольца «simples / bi-horária» и строка счёта из трёх блоков с «? €» (статья объясняет, из чего складывается сумма); опора — раздел «O que se paga na fatura da luz»; без сумм и процентов",
+  "text": "Simples ou bi-horária? / Qual combina com os hábitos da casa / SIMPLES: O mesmo preço do kWh – a qualquer hora do dia (кольцо суток одного цвета, 24 h) / ou / BI-HORÁRIA: Mais barato nas horas de vazio – sobretudo à noite e ao fim de semana; mais caro fora delas (кольцо суток: ночная часть зелёная, дневная оранжевая) / NA FATURA: Potência: ? € · Energia: ? € · Taxas e impostos: ? € / кнопка «Saiba mais →»",
+  "cta": "Saiba mais"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/P60-energy-subsidy-pt-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — кухня вечером: стена с азулежу, щиток с автоматами (один выключен) и счётчик, лампа, на столе счёт с подсвеченной строкой мощности, очки, чашка; карточка в рамке = хук РК 3; опора — разделы «O que se paga…» и «Potência contratada»",
+  "text": "A parte da fatura da luz que se paga todos os dias / Mesmo sem consumir: como saber se a potência contratada é a certa / кнопка «Saiba mais →» / на счётчике: kWh / на счёте: FATURA DA LUZ · Potência contratada ? kVA (подсветка) · Energia consumida ? kWh · Taxas e impostos ? € · Total ? €",
+  "cta": "Saiba mais"
+ }
+]

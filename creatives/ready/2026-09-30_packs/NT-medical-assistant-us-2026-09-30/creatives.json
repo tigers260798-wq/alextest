@@ -1,0 +1,30 @@
+[
+ {
+  "letter": "a",
+  "file": "cr/packs/NT-medical-assistant-us-2026-09-30/a.png",
+  "concept": "сетка выбора (fake interactivity) — шкала сроков: 5 строк-кнопок с полосой длины (sqrt-шкала), у коротких курсов метка «not a credential», у каждой «Learn more»; «3 days» не вынесено; опора: раздел 3 «How long it really takes» (5 пунктов: CPR — 1 день, не credential; review — от нескольких дней до недель, не заменяет обучение; ускоренная 4–6 мес.; сертификат/диплом 9–12 мес.; associate ~2 года) + РК 1 («From a 1-day CPR class to a 2-year degree»)",
+  "text": "Medical assistant certification: / how long does it really take? / From a 1-day CPR class to a 2-year degree / CPR class: 1 day [not a credential] / Exam review course: days to weeks [not a credential] / Accelerated program: 4–6 months / Certificate or diploma: 9–12 months / Associate degree: about 2 years (у каждой «Learn more»)",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "b",
+  "file": "cr/packs/NT-medical-assistant-us-2026-09-30/b.png",
+  "concept": "карточка-опросник — мятный фон, карточка-тест; вопрос о программе, не о зрителе; опора: раздел 4 «Medical assistant certification online: what works from home» (онлайн — терминология, кодирование и биллинг; кровь и уколы — лаборатория и практика в клинике)",
+  "text": "Medical assistant training: / what can be learned online? / QUIZ / Question 1 of 3 / Which of these can be studied from home? / Medical terminology / Billing and coding / Drawing blood / Giving injections / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "c",
+  "file": "cr/packs/NT-medical-assistant-us-2026-09-30/c.png",
+  "concept": "сколько стоит / сравнение — чек-«квитанция» из 4 статей расходов, все «$?», кроме единственной цифры статьи — сбор за экзамен $100–250; «free» — только в кавычках, как в статье; опора: раздел 5 «Medical assistant certification cost, and what free usually means» (обучение, книги/форма/набор, экзаменационный сбор ~$100–250, продление) + раздел 2 (renew every few years)",
+  "text": "Medical assistant certification: / what makes up the cost? / …and what a “free course with certificate” really is / CERTIFICATION COST · 4 parts of the total · Tuition … $? (depends on the school) · Books, scrubs, kit … $? (sometimes a background check too) · Exam fee … $100–250 (depends on the credential) · Renewal, later … $? (every few years) · TOTAL $? / кнопка «Learn more →»",
+  "cta": "Learn more"
+ },
+ {
+  "letter": "d",
+  "file": "cr/packs/NT-medical-assistant-us-2026-09-30/d.png",
+  "concept": "сцена-иллюстрация — учебный класс без людей: доска «VITAL SIGNS», ноутбук с модулем «Medical terminology», тонометр, учебная рука-манекен, стетоскоп, халат на стуле; карточка с хуком и двумя строками-пояснениями — сразу видно, что 3 дня — это отдельный короткий курс, а не сертификация; опора: раздел 3 «How long it really takes» («a course that lasts three days can be a useful first step, but the path to a national credential is measured in months»; сертификат 9–12 мес.) + раздел 4 (externship в клинике) + РК 1 (хук «3 days or 12 months?»)",
+  "text": "MEDICAL ASSISTANT CERTIFICATION / 3 days or 12 months? / 3-day course: one skill or exam review, not the credential / Certificate program: 9–12 months, externship, then the exam / кнопка «Learn more →»",
+  "cta": "Learn more"
+ }
+]
