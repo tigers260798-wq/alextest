@@ -1772,7 +1772,7 @@ def texts(t, cta):
         parts.append(" / ".join(ol))
     if t.get("cols"):
         for name, _, _, rows in t["cols"]:
-            parts.append(name + ": " + "; ".join(f"{a.lower()} — {b}" for a, b in rows))
+            parts.append(name + ": " + "; ".join(f"{a} — {b}" for a, b in rows))
     if t.get("ports"):
         parts.append("LIVERPOOL / " + " / ".join(f"{a} – {b}" for a, b, _ in t["ports"]) + f" (у каждой «{cta}»)")
     if t.get("callouts"):
@@ -1781,8 +1781,9 @@ def texts(t, cta):
         parts.append(t["extra_text"])
     if t.get("foot"):
         parts.append(t["foot"])
-    parts.append(f"кнопка «{cta} →»")
-    return " / ".join(p_ for p_ in parts if p_).replace("\n", " ")
+    if t["fn"] not in ("row4_hero", "grid2x2_art", "route_map"):
+        parts.append(f"кнопка «{cta} →»")
+    return " / ".join(p_ for p_ in parts if p_).replace("\n", " ").replace("\u00a0", " ")
 
 
 def build(n, letters="abcd"):

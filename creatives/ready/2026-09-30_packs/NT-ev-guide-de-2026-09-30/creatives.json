@@ -1,28 +1,28 @@
 [
  {
   "letter": "a",
-  "file": "cr/packs/NT-ev-guide-de-2026-09-30/a.png",
+  "file": "/_blob/a2fbded3b85936466ba431dfae018b22",
   "concept": "сетка выбора (fake interactivity) — сетка 2×2: 4 класса по скорости с рисунком машины (открытый с корзиной / с навесом / кабинка / двухместный 45 км/ч), у каждой «Mehr erfahren»; без возраста, брендов и цен; опора: раздел «Die Klassen im Überblick» (6 / 15 / 25 / 45 км/ч: права, страховой номер, Mofa-Prüfbescheinigung, класс AM в B) + разделы 2–4 (открытый / кабина / 2 места)",
-  "text": "Elektromobil kaufen 2026: / welche Klasse passt? / bis 6 km/h – ohne Führerschein, ohne Versicherungskennzeichen / bis 15 km/h – ohne Führerschein, mit Versicherungskennzeichen / bis 25 km/h – Kabine; Mofa-Prüfbescheinigung je nach Geburtsjahr / bis 45 km/h – Kabine; Führerschein Klasse AM, in Klasse B enthalten (у каждой «Mehr erfahren») / кнопка «Mehr erfahren →»",
+  "text": "Elektromobil kaufen 2026: / welche Klasse passt? / bis 6 km/h – ohne Führerschein, ohne Versicherungskennzeichen / bis 15 km/h – ohne Führerschein, mit Versicherungskennzeichen / bis 25 km/h – Kabine; Mofa-Prüfbescheinigung je nach Geburtsjahr / bis 45 km/h – Kabine; Führerschein Klasse AM, in Klasse B enthalten (у каждой «Mehr erfahren»)",
   "cta": "Mehr erfahren"
  },
  {
   "letter": "b",
-  "file": "cr/packs/NT-ev-guide-de-2026-09-30/b.png",
+  "file": "/_blob/31b80e00a962929c73cf36c1d3419602",
   "concept": "карточка-опросник — квиз про правило, не про зрителя: спидометр со стрелкой на 45 и двухместная кабинка; верный ответ «Klasse AM» — в статье; опора: раздел «Mit 45 km/h: Leichtkraftfahrzeug oder kleines Elektroauto» (Klasse AM, в B и старой Klasse 3)",
-  "text": "45 km/h: / welche Fahrerlaubnis? / QUIZ / Frage 1 von 3 / Was braucht man für ein Leichtkraftfahrzeug mit 45 km/h? / Keine / Mofa-Prüfbescheinigung / Klasse AM / Weiß nicht / на рисунке: спидометр 0 / 15 / 30 / 60, стрелка и «45 km/h» / кнопка «Mehr erfahren →»",
+  "text": "45 km/h: / welche Fahrerlaubnis? / QUIZ / Frage 1 von 3 / Was braucht man für ein Leichtkraftfahrzeug mit 45 km/h? / Keine / Mofa-Prüfbescheinigung / Klasse AM / Weiß nicht / на рисунке: спидометр 0 / 15 / 30 / 60, стрелка и «45 km/h» / кнопка «Mehr erfahren →»",
   "cta": "Mehr erfahren"
  },
  {
   "letter": "c",
-  "file": "cr/packs/NT-ev-guide-de-2026-09-30/c.png",
+  "file": "/_blob/854655fa1438e6f9bb4e0e82f6d29423",
   "concept": "сколько стоит / сравнение — сравнение двух аккумуляторов: тяжёлый свинцово-гелевый блок с гирей vs литиевый пакет с индикатором и розеткой; только пункты статьи; опора: раздел «Akku, Reichweite und Laden» (Blei-Gel vs Lithium, бытовая розетка, 6–8 часов)",
-  "text": "Blei-Gel oder Lithium? / Der Akku im Elektromobil: der Unterschied / BLEI-GEL: preis — günstiger; gewicht — schwer; haltbarkeit — meist einige hundert Ladezyklen / LITHIUM: preis — teurer; gewicht — leichter, lädt schneller; haltbarkeit — hält deutlich länger / Laden: normale Steckdose, meist 6–8 Stunden / кнопка «Mehr erfahren →»",
+  "text": "Blei-Gel oder Lithium? / Der Akku im Elektromobil: der Unterschied / BLEI-GEL: PREIS — günstiger; GEWICHT — schwer; HALTBARKEIT — meist einige hundert Ladezyklen / LITHIUM: PREIS — teurer; GEWICHT — leichter, lädt schneller; HALTBARKEIT — hält deutlich länger / Laden: normale Steckdose, meist 6–8 Stunden / кнопка «Mehr erfahren →»",
   "cta": "Mehr erfahren"
  },
  {
   "letter": "d",
-  "file": "cr/packs/NT-ev-guide-de-2026-09-30/d.png",
+  "file": "/_blob/dfd56ec670a2ffdf3781cd78e2f0f1cb",
   "concept": "сцена-иллюстрация — тихая улица у пекарни: открытый электромобиль с корзиной у тротуара и кабинка на обочине; без людей, логотипов и медицинских мотивов; опора: заголовок статьи + лид («für kurze Wege zum Bäcker…», от открытого с корзиной до кабинки)",
   "text": "RATGEBER 2026 / Elektromobil kaufen: 6, 15, 25 oder 45 km/h? / Wann ein Führerschein nötig ist und was es kostet / вывеска в сцене: BÄCKEREI / кнопка «Mehr erfahren →»",
   "cta": "Mehr erfahren"
