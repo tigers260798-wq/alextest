@@ -1,0 +1,33 @@
+[
+  {
+    "letter": "a",
+    "file": "cr/packs/NT-rehab-clinic-de-2026-09-30/a.png",
+    "concept": "сетка выбора списком: 4 направления (ортопедия, психосоматика, кардиология, неврология), у каждого «Mehr erfahren»",
+    "text": "Die besten Rehakliniken in Deutschland 2026 · Nach Fachrichtung vergleichen: · Orthopädie – Rücken, Hüfte, Knie · Psychosomatik – Körper und Psyche · Kardiologie – Herz und Kreislauf · Neurologie – Gehirn und Nerven",
+    "cta": "Mehr erfahren",
+    "note": "заголовок = ключ «Die Besten Rehakliniken in Deutschland»"
+  },
+  {
+    "letter": "b",
+    "file": "cr/packs/NT-rehab-clinic-de-2026-09-30/b.png",
+    "concept": "карточка-опросник: кто оплачивает Reha (вопрос на знание, не о зрителе)",
+    "text": "Reha beantragen 2026 · Das Quiz, bei dem viele danebenliegen · REHA-QUIZ · Frage 1 von 3 · Wer übernimmt die Kosten einer Reha? · Die Krankenkasse · Die Rentenversicherung · Beide – je nach Fall · Man zahlt selbst",
+    "cta": "Mehr erfahren",
+    "note": "Rentenversicherung — только словом, без логотипа DRV"
+  },
+  {
+    "letter": "c",
+    "file": "cr/packs/NT-rehab-clinic-de-2026-09-30/c.png",
+    "concept": "сравнение: стационарная или амбулаторная Reha, доплата «? €»",
+    "text": "Reha 2026: stationär oder ambulant? · STATIONÄR: Übernachtung in der Klinik · Tagesablauf Therapie und Erholung vor Ort · Zuzahlung 2026 ? € · AMBULANT: Übernachtung zu Hause · Tagesablauf Therapie tagsüber, abends daheim · Zuzahlung 2026 ? € · Und welche Klinik ist empfehlenswert?",
+    "cta": "Mehr erfahren"
+  },
+  {
+    "letter": "d",
+    "file": "cr/packs/NT-rehab-clinic-de-2026-09-30/d.png",
+    "concept": "сцена-иллюстрация: клиника у озера среди холмов, скамейка, дорожка; карточка с вопросом",
+    "text": "Welche Rehaklinik ist empfehlenswert? · Orthopädie · Psychosomatik · Kardiologie · Kliniken im Vergleich 2026",
+    "cta": "Mehr erfahren",
+    "note": "вопрос = ключ «Welche Psychosomatische Klinik ist Empfehlenswert» в общем виде"
+  }
+]
