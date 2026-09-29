@@ -25,7 +25,7 @@ model: opus
 - `kill_2usd` — спенд сегодня ≥ $2.00 И ROI сегодня ≤ 0. Отдельно пометь, у кого выручка сегодня > $0 и (вчера закрытый день ROI ≥ +30% при спенде ≥ $2 ИЛИ лайфтайм-спенд < $10) — это поблажка R1, решает анализатор.
 - `zero_rev_2usd` — спенд сегодня ≥ $2 и выручка $0.
 - `kill_25usd` — спенд сегодня ≥ $25 И ROI сегодня < 30%.
-- `dead_article` — статья, у которой за 2 закрытых дня спенд ≥ $10 и ROI ≤ −50% (с id всех её активных адгрупп).
+- `dead_article` — статья, у которой за 2 закрытых дня спенд ≥ $10 и ROI ≤ −50% (с id всех её активных адгрупп). Это только сигнал на разбор воронки (владелец 29.09: статья сама по себе не умирает): по каждой её адгруппе добавь за эти 2 дня площадку, показы, CTR, клики, лиды площадки, лиды / клики, RPL, CPC, RPC — анализатор по ним решит, что виновато: крео, статья с ключами, дешёвые ключи или дорогой клик.
 - `zero_rev_streak` — 3+ закрытых дня подряд выручка $0 при спенде за серию ≥ $3.
 - `r11_candidate` — спенд за 3 закрытых дня ≥ $7 и ROI < +30% и за 3 дня, и за 2 последних (лайфтайм < $10 не включать).
 - `new_under_10` — лайфтайм-спенд < $10 (их судит R12).
@@ -55,7 +55,7 @@ model: opus
  campaigns: [...строки get_performance_rows по кампаниям...],
  articles: [...спенд/выручка по статьям сегодня и вчера...],
  flags: {kill_2usd:[{id, r1_grace}], zero_rev_2usd:[id], kill_25usd:[id],
-         dead_article:[{article, adgroups:[id]}], zero_rev_streak:[id], r11_candidate:[id],
+         dead_article:[{article, adgroups:[{id, platform, impressions, ctr, clicks, leads, leadsPerClick, rpl, cpc, rpc}]}], zero_rev_streak:[id], r11_candidate:[id],
          new_under_10:[id], budget_up:[id], budget_down:[id], protected:[{id, reason}],
          fb_cap_candidate:[id], silent_account:[{account, silent, total}]},
  observations: [строки]}
